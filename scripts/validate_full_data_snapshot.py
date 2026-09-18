@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import gzip
 import hashlib
+import csv
+import io
 import json
 import re
 import sys
@@ -22,9 +24,22 @@ SENSITIVE_PATTERNS = {
     "google_api_key": re.compile(rb"AIza[0-9A-Za-z_-]{30,}"),
     "aws_access_key": re.compile(rb"AKIA[0-9A-Z]{16}"),
     "assigned_secret": re.compile(
-        rb"(?i)(?:api[_-]?key|access[_-]?token|client[_-]?secret|password|passwd|"
+        rb"(?i)(?:api[_-]?key|access[_-]?token|xsec[_-]?token|client[_-]?secret|password|passwd|"
         rb"authorization|cookie|sessionid)\s*[:=]\s*['\"]?[A-Za-z0-9._~+/=%-]{8,}"
     ),
+}
+
+SECRET_FIELD_NAMES = {
+    "api_key",
+    "apikey",
+    "access_token",
+    "xsec_token",
+    "client_secret",
+    "password",
+    "passwd",
+    "authorization",
+    "cookie",
+    "sessionid",
 }
 
 TEXT_SUFFIXES = {
@@ -68,6 +83,30 @@ def scan_xlsx(path: Path, errors: list[str]) -> None:
         errors.append(f"invalid XLSX archive: {path.relative_to(ROOT)}")
 
 
+def scan_csv_secret_columns(data: bytes, label: str, errors: list[str]) -> None:
+    try:
+        reader = csv.reader(io.StringIO(data.decode("utf-8-sig"), newline=""))
+        header = next(reader)
+    except (UnicodeDecodeError, csv.Error, StopIteration):
+        return
+    indexes = [
+        index
+        for index, name in enumerate(header)
+        if name.strip().lower() in SECRET_FIELD_NAMES
+    ]
+    for row_number, row in enumerate(reader, start=2):
+        for index in indexes:
+            if index >= len(row):
+                continue
+            value = row[index].strip()
+            if value and value != "[REDACTED]":
+                errors.append(
+                    f"unredacted CSV secret field {header[index]} at row "
+                    f"{row_number}: {label}"
+                )
+                return
+
+
 def main() -> int:
     if not MANIFEST.exists():
         print("FULL DATA SNAPSHOT VALIDATION FAILED\n- manifest missing")
@@ -105,6 +144,8 @@ def main() -> int:
                 errors.append(f"sanitized checksum mismatch: {relative}")
             if source_suffix in TEXT_SUFFIXES:
                 scan_sensitive(sanitized, relative, errors)
+            if source_suffix == ".csv":
+                scan_csv_secret_columns(sanitized, relative, errors)
             if source_suffix == ".xlsx":
                 scan_xlsx(path, errors)
 

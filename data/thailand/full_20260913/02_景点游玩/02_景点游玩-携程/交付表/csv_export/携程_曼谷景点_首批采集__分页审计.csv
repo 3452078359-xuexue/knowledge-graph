@@ -1,0 +1,11 @@
+﻿页码,实际请求URL,有效卡片数,新增去重数,采集时间（UTC）,页面提供的下一页URL,响应SHA256
+1,https://you.ctrip.com/sight/bangkok191.html,10,10,2026-08-31 02:25:30,https://you.ctrip.com/sight/bangkok191/s0-p2.html,2626c2d002a28dcc33d045e5286c0004ddfd4ec2117f6febea909bbe1d1bafa4
+2,https://you.ctrip.com/sight/bangkok191/s0-p2.html,10,10,2026-08-31 02:25:33,https://you.ctrip.com/sight/bangkok191/s0-p3.html,2b3b04555277262aa5759b0da10ffcc3694ae9ec1c369b90696567551fcccd1d
+3,https://you.ctrip.com/sight/bangkok191/s0-p3.html,10,10,2026-08-31 02:25:37,https://you.ctrip.com/sight/bangkok191/s0-p4.html,608b213ed2d7beb3d76c3daddc6b5c2a83d99808c7112fd95d011dba60e05711
+4,https://you.ctrip.com/sight/bangkok191/s0-p4.html,10,9,2026-08-31 02:25:41,https://you.ctrip.com/sight/bangkok191/s0-p5.html,afd15a9b917412fc930ca191613176e570f1c66ec106bf6d364d1d007589cd3f
+5,https://you.ctrip.com/sight/bangkok191/s0-p5.html,10,10,2026-08-31 02:25:45,https://you.ctrip.com/sight/bangkok191/s0-p6.html,350e6adfafcf5b48186922d619d9e5c35beb58f916edc6bd2ae2e3cfa4ca1a0a
+6,https://you.ctrip.com/sight/bangkok191/s0-p6.html,10,10,2026-08-31 02:25:49,https://you.ctrip.com/sight/bangkok191/s0-p7.html,99d673c401a22477240e437acee0d3609632159a7bcca670aea895cb95876ad8
+7,https://you.ctrip.com/sight/bangkok191/s0-p7.html,10,10,2026-08-31 02:25:53,https://you.ctrip.com/sight/bangkok191/s0-p8.html,84233d4a7693579db52db8bfa4df47fe2f8a489b439919d682f197d7017f74bc
+8,https://you.ctrip.com/sight/bangkok191/s0-p8.html,10,10,2026-08-31 02:25:58,https://you.ctrip.com/sight/bangkok191/s0-p9.html,2e86e3b3a7bdec1b263150ba23f60b11051895c2caad2e67339b691e0a46ba45
+9,https://you.ctrip.com/sight/bangkok191/s0-p9.html,10,10,2026-08-31 02:26:02,https://you.ctrip.com/sight/bangkok191/s0-p10.html,db22a6c59eedff924ace782131bdc49e5986816de5df3f14dcb90ec873ec8d83
+10,https://you.ctrip.com/sight/bangkok191/s0-p10.html,10,10,2026-08-31 02:26:06,https://you.ctrip.com/sight/bangkok191/s0-p11.html,9b7961856fbcaae351ec86a5049a80149b46b61794985a993ced2a509251f35f

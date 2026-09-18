@@ -1,0 +1,1571 @@
+﻿空间行政区关系汇总与审阅样本,,,,,,,,,
+"完整 178,426 条关系见同目录《贵阳市空间行政区关系明细表.csv》；本页按关系类型各保留最多 200 条审阅样本。",,,,,,,,,
+,,,,,,,,,
+关系类型,完整数量,用途,,,,,,,
+COLLECTED_IN,53446,采集批次,,,,,,,
+REF_ADMIN_SCOPE,40086,地名解析行政区范围,,,,,,,
+REF_DOMINANT_ZONE,2409,网格主导商圈,,,,,,,
+REF_LOCATED_IN_ADMIN_AREA,13182,商圈/网格所属行政区,,,,,,,
+REF_PARENT_ADMIN_AREA,156,行政区父子层级,,,,,,,
+REF_PARENT_CELL,11297,R8 网格归属 R7 父格,,,,,,,
+REF_TOWNSHIP_ID,4451,网格街镇实体引用,,,,,,,
+SOURCED_FROM,53399,字段来源,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+sourceId,sourceType,sourceName,relationType,targetId,targetType,targetName,role,fields,propertiesJson
+admin_520100,AdminArea,贵阳市,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520100,AdminArea,贵阳市,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_15925e6c,AdminArea,龙洞堡街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_15925e6c,AdminArea,龙洞堡街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_15925e6c,AdminArea,龙洞堡街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_228e4886,AdminArea,花果园街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_228e4886,AdminArea,花果园街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_228e4886,AdminArea,花果园街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_4617f930,AdminArea,望城街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_4617f930,AdminArea,望城街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_4617f930,AdminArea,望城街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_486fa6bc,AdminArea,湘雅街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_486fa6bc,AdminArea,湘雅街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_486fa6bc,AdminArea,湘雅街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_6da36c5b,AdminArea,兴关路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_6da36c5b,AdminArea,兴关路街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_6da36c5b,AdminArea,兴关路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_72701845,AdminArea,小车河街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_72701845,AdminArea,小车河街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_72701845,AdminArea,小车河街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_7ba526b0,AdminArea,沙冲路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_7ba526b0,AdminArea,沙冲路街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_7ba526b0,AdminArea,沙冲路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_849c4969,AdminArea,太慈桥街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_849c4969,AdminArea,太慈桥街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_849c4969,AdminArea,太慈桥街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_94571f14,AdminArea,遵义路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_94571f14,AdminArea,遵义路街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_94571f14,AdminArea,遵义路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_9861036f,AdminArea,兰花都街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_9861036f,AdminArea,兰花都街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_9861036f,AdminArea,兰花都街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_9d6994aa,AdminArea,油榨街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_9d6994aa,AdminArea,油榨街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_9d6994aa,AdminArea,油榨街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_af9284fc,AdminArea,五里冲街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_af9284fc,AdminArea,五里冲街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_af9284fc,AdminArea,五里冲街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_b6e1b3d1,AdminArea,水口寺街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_b6e1b3d1,AdminArea,水口寺街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_b6e1b3d1,AdminArea,水口寺街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_cdb92028,AdminArea,河滨街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_cdb92028,AdminArea,河滨街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_cdb92028,AdminArea,河滨街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_e0c4f035,AdminArea,永乐乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_e0c4f035,AdminArea,永乐乡,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_e0c4f035,AdminArea,永乐乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_e4faf8f5,AdminArea,小碧乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_e4faf8f5,AdminArea,小碧乡,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_e4faf8f5,AdminArea,小碧乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_eb14282b,AdminArea,中曹司街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_eb14282b,AdminArea,中曹司街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_eb14282b,AdminArea,中曹司街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_efe4b362,AdminArea,二戈街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_efe4b362,AdminArea,二戈街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_efe4b362,AdminArea,二戈街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_f12fe0b7,AdminArea,新华路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_f12fe0b7,AdminArea,新华路街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_f12fe0b7,AdminArea,新华路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_f19a2178,AdminArea,西湖路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_f19a2178,AdminArea,西湖路街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_f19a2178,AdminArea,西湖路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_fe73bbaf,AdminArea,云关乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_fe73bbaf,AdminArea,云关乡,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_fe73bbaf,AdminArea,云关乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_ff49230e,AdminArea,后巢乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_ff49230e,AdminArea,后巢乡,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_ff49230e,AdminArea,后巢乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102_fff54dc0,AdminArea,中华南路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102_fff54dc0,AdminArea,中华南路街道,REF_PARENT_ADMIN_AREA,admin_520102,AdminArea,南明区,,[],{}
+admin_520102_fff54dc0,AdminArea,中华南路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520102,AdminArea,南明区,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520102,AdminArea,南明区,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520102,AdminArea,南明区,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_2dd655c1,AdminArea,头桥街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_2dd655c1,AdminArea,头桥街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_2dd655c1,AdminArea,头桥街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_3116d741,AdminArea,黔灵东路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_3116d741,AdminArea,黔灵东路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_3116d741,AdminArea,黔灵东路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_391af20a,AdminArea,毓秀路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_391af20a,AdminArea,毓秀路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_391af20a,AdminArea,毓秀路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_524635d5,AdminArea,马王街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_524635d5,AdminArea,马王街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_524635d5,AdminArea,马王街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_5d6f13c1,AdminArea,杨惠街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_5d6f13c1,AdminArea,杨惠街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_5d6f13c1,AdminArea,杨惠街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_5f2b9856,AdminArea,茶园路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_5f2b9856,AdminArea,茶园路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_5f2b9856,AdminArea,茶园路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_65157fb0,AdminArea,盐务街街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_65157fb0,AdminArea,盐务街街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_65157fb0,AdminArea,盐务街街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_66b3834f,AdminArea,八鸽岩街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_66b3834f,AdminArea,八鸽岩街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_66b3834f,AdminArea,八鸽岩街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_9e495988,AdminArea,金关街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_9e495988,AdminArea,金关街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_9e495988,AdminArea,金关街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_a3fc0032,AdminArea,黔灵镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_a3fc0032,AdminArea,黔灵镇,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_a3fc0032,AdminArea,黔灵镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_b1ffc96e,AdminArea,三桥路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_b1ffc96e,AdminArea,三桥路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_b1ffc96e,AdminArea,三桥路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_b45a0a0f,AdminArea,普陀路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_b45a0a0f,AdminArea,普陀路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_b45a0a0f,AdminArea,普陀路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_c18a4a38,AdminArea,水东路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_c18a4a38,AdminArea,水东路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_c18a4a38,AdminArea,水东路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_d04d28e1,AdminArea,渔安街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_d04d28e1,AdminArea,渔安街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_d04d28e1,AdminArea,渔安街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_db6aa288,AdminArea,文昌阁街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_db6aa288,AdminArea,文昌阁街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_db6aa288,AdminArea,文昌阁街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_e1a634b9,AdminArea,市西河街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_e1a634b9,AdminArea,市西河街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_e1a634b9,AdminArea,市西河街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_e1dd8664,AdminArea,大营路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_e1dd8664,AdminArea,大营路街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_e1dd8664,AdminArea,大营路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103_fcbe3f2a,AdminArea,威清门街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103_fcbe3f2a,AdminArea,威清门街道,REF_PARENT_ADMIN_AREA,admin_520103,AdminArea,云岩区,,[],{}
+admin_520103_fcbe3f2a,AdminArea,威清门街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520103,AdminArea,云岩区,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520103,AdminArea,云岩区,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520103,AdminArea,云岩区,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_241a2404,AdminArea,黄河路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_241a2404,AdminArea,黄河路街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_241a2404,AdminArea,黄河路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_30e5f29c,AdminArea,清溪街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_30e5f29c,AdminArea,清溪街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_30e5f29c,AdminArea,清溪街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_4c2d3255,AdminArea,平桥街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_4c2d3255,AdminArea,平桥街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_4c2d3255,AdminArea,平桥街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_50a9d263,AdminArea,党武街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_50a9d263,AdminArea,党武街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_50a9d263,AdminArea,党武街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_62a722fb,AdminArea,高坡苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_62a722fb,AdminArea,高坡苗族乡,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_62a722fb,AdminArea,高坡苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_74414d97,AdminArea,黔陶布依族苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_74414d97,AdminArea,黔陶布依族苗族乡,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_74414d97,AdminArea,黔陶布依族苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_77a9c78a,AdminArea,孟关苗族布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_77a9c78a,AdminArea,孟关苗族布依族乡,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_77a9c78a,AdminArea,孟关苗族布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_7b692f2d,AdminArea,石板镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_7b692f2d,AdminArea,石板镇,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_7b692f2d,AdminArea,石板镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_9a68840d,AdminArea,马铃布依族苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_9a68840d,AdminArea,马铃布依族苗族乡,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_9a68840d,AdminArea,马铃布依族苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_a3265011,AdminArea,湖潮苗族布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_a3265011,AdminArea,湖潮苗族布依族乡,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_a3265011,AdminArea,湖潮苗族布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_b56f1c05,AdminArea,阳光街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_b56f1c05,AdminArea,阳光街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_b56f1c05,AdminArea,阳光街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_b73d6d87,AdminArea,久安乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_b73d6d87,AdminArea,久安乡,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_b73d6d87,AdminArea,久安乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_bbc4bdde,AdminArea,溪北街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_bbc4bdde,AdminArea,溪北街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_bbc4bdde,AdminArea,溪北街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_be1fc113,AdminArea,金筑街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_be1fc113,AdminArea,金筑街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_be1fc113,AdminArea,金筑街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_c30531ff,AdminArea,燕楼镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_c30531ff,AdminArea,燕楼镇,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_c30531ff,AdminArea,燕楼镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_dd1965ee,AdminArea,麦坪镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_dd1965ee,AdminArea,麦坪镇,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_dd1965ee,AdminArea,麦坪镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_f0ae4650,AdminArea,贵筑街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_f0ae4650,AdminArea,贵筑街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_f0ae4650,AdminArea,贵筑街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_f99ef789,AdminArea,青岩镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_f99ef789,AdminArea,青岩镇,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_f99ef789,AdminArea,青岩镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111_fcabe147,AdminArea,小孟街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111_fcabe147,AdminArea,小孟街道,REF_PARENT_ADMIN_AREA,admin_520111,AdminArea,花溪区,,[],{}
+admin_520111_fcabe147,AdminArea,小孟街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520111,AdminArea,花溪区,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520111,AdminArea,花溪区,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520111,AdminArea,花溪区,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_14e69cb5,AdminArea,观溪路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_14e69cb5,AdminArea,观溪路街道,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_14e69cb5,AdminArea,观溪路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_2165a4c5,AdminArea,东风镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_2165a4c5,AdminArea,东风镇,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_2165a4c5,AdminArea,东风镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_5ead4256,AdminArea,羊昌镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_5ead4256,AdminArea,羊昌镇,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_5ead4256,AdminArea,羊昌镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_6c20c1c8,AdminArea,偏坡布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_6c20c1c8,AdminArea,偏坡布依族乡,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_6c20c1c8,AdminArea,偏坡布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_7264ebff,AdminArea,下坝镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_7264ebff,AdminArea,下坝镇,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_7264ebff,AdminArea,下坝镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_94719a12,AdminArea,高新路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_94719a12,AdminArea,高新路街道,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_94719a12,AdminArea,高新路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_ad937f08,AdminArea,新光路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_ad937f08,AdminArea,新光路街道,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_ad937f08,AdminArea,新光路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_b3a53337,AdminArea,新场镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_b3a53337,AdminArea,新场镇,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_b3a53337,AdminArea,新场镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_d27d47ec,AdminArea,水田镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_d27d47ec,AdminArea,水田镇,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_d27d47ec,AdminArea,水田镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_d68b7812,AdminArea,新创路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_d68b7812,AdminArea,新创路街道,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_d68b7812,AdminArea,新创路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_ef16723e,AdminArea,百宜镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_ef16723e,AdminArea,百宜镇,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_ef16723e,AdminArea,百宜镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_fcf3be18,AdminArea,新堡布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_fcf3be18,AdminArea,新堡布依族乡,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_fcf3be18,AdminArea,新堡布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112_fdc34a25,AdminArea,龙广路街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112_fdc34a25,AdminArea,龙广路街道,REF_PARENT_ADMIN_AREA,admin_520112,AdminArea,乌当区,,[],{}
+admin_520112_fdc34a25,AdminArea,龙广路街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520112,AdminArea,乌当区,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520112,AdminArea,乌当区,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520112,AdminArea,乌当区,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_047fa68a,AdminArea,大山洞街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_047fa68a,AdminArea,大山洞街道,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_047fa68a,AdminArea,大山洞街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_3a1c8459,AdminArea,云城街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_3a1c8459,AdminArea,云城街道,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_3a1c8459,AdminArea,云城街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_57993920,AdminArea,麦架镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_57993920,AdminArea,麦架镇,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_57993920,AdminArea,麦架镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_9168c559,AdminArea,都拉营街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_9168c559,AdminArea,都拉营街道,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_9168c559,AdminArea,都拉营街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_a7b004f4,AdminArea,泉湖街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_a7b004f4,AdminArea,泉湖街道,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_a7b004f4,AdminArea,泉湖街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_ac74e0dc,AdminArea,都拉布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_ac74e0dc,AdminArea,都拉布依族乡,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_ac74e0dc,AdminArea,都拉布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_ca44efba,AdminArea,沙文镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_ca44efba,AdminArea,沙文镇,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_ca44efba,AdminArea,沙文镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_d038f32a,AdminArea,艳山红镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_d038f32a,AdminArea,艳山红镇,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_d038f32a,AdminArea,艳山红镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_e7f49ad6,AdminArea,龚家寨街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_e7f49ad6,AdminArea,龚家寨街道,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_e7f49ad6,AdminArea,龚家寨街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113_f1397b22,AdminArea,牛场布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113_f1397b22,AdminArea,牛场布依族乡,REF_PARENT_ADMIN_AREA,admin_520113,AdminArea,白云区,,[],{}
+admin_520113_f1397b22,AdminArea,牛场布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520113,AdminArea,白云区,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520113,AdminArea,白云区,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520113,AdminArea,白云区,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_019415c2,AdminArea,金华镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_019415c2,AdminArea,金华镇,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_019415c2,AdminArea,金华镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_0599608a,AdminArea,云潭街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_0599608a,AdminArea,云潭街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_0599608a,AdminArea,云潭街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_2bcc5816,AdminArea,宾阳街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_2bcc5816,AdminArea,宾阳街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_2bcc5816,AdminArea,宾阳街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_58583e9f,AdminArea,观山街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_58583e9f,AdminArea,观山街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_58583e9f,AdminArea,观山街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_88b6d8de,AdminArea,金华园街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_88b6d8de,AdminArea,金华园街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_88b6d8de,AdminArea,金华园街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_a1dc1c89,AdminArea,百花湖镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_a1dc1c89,AdminArea,百花湖镇,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_a1dc1c89,AdminArea,百花湖镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_a74c8b93,AdminArea,朱昌镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_a74c8b93,AdminArea,朱昌镇,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_a74c8b93,AdminArea,朱昌镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_e7929c9c,AdminArea,长岭街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_e7929c9c,AdminArea,长岭街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_e7929c9c,AdminArea,长岭街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_e8d024d1,AdminArea,金阳街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_e8d024d1,AdminArea,金阳街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_e8d024d1,AdminArea,金阳街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115_ec522881,AdminArea,世纪城街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115_ec522881,AdminArea,世纪城街道,REF_PARENT_ADMIN_AREA,admin_520115,AdminArea,观山湖区,,[],{}
+admin_520115_ec522881,AdminArea,世纪城街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520115,AdminArea,观山湖区,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520115,AdminArea,观山湖区,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520115,AdminArea,观山湖区,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_0e64d352,AdminArea,龙水乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_0e64d352,AdminArea,龙水乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_0e64d352,AdminArea,龙水乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_2c1f6852,AdminArea,云开街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_2c1f6852,AdminArea,云开街道,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_2c1f6852,AdminArea,云开街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_3a3204d5,AdminArea,冯三镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_3a3204d5,AdminArea,冯三镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_3a3204d5,AdminArea,冯三镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_43059459,AdminArea,禾丰布依族苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_43059459,AdminArea,禾丰布依族苗族乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_43059459,AdminArea,禾丰布依族苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_53b66c7e,AdminArea,花梨镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_53b66c7e,AdminArea,花梨镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_53b66c7e,AdminArea,花梨镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_59716774,AdminArea,龙岗镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_59716774,AdminArea,龙岗镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_59716774,AdminArea,龙岗镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_69b98235,AdminArea,宅吉乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_69b98235,AdminArea,宅吉乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_69b98235,AdminArea,宅吉乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_76103af7,AdminArea,南江布依族苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_76103af7,AdminArea,南江布依族苗族乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_76103af7,AdminArea,南江布依族苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_79999e90,AdminArea,毛云乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_79999e90,AdminArea,毛云乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_79999e90,AdminArea,毛云乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_89d688b6,AdminArea,双流镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_89d688b6,AdminArea,双流镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_89d688b6,AdminArea,双流镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_8d39e230,AdminArea,紫兴街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_8d39e230,AdminArea,紫兴街道,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_8d39e230,AdminArea,紫兴街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_9e667c6e,AdminArea,金中镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_9e667c6e,AdminArea,金中镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_9e667c6e,AdminArea,金中镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_a7e0447f,AdminArea,南龙乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_a7e0447f,AdminArea,南龙乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_a7e0447f,AdminArea,南龙乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_c87af828,AdminArea,米坪乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_c87af828,AdminArea,米坪乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_c87af828,AdminArea,米坪乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_d0012457,AdminArea,高寨苗族布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_d0012457,AdminArea,高寨苗族布依族乡,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_d0012457,AdminArea,高寨苗族布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_da465ae5,AdminArea,楠木渡镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_da465ae5,AdminArea,楠木渡镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_da465ae5,AdminArea,楠木渡镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_e00ab572,AdminArea,永温镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_e00ab572,AdminArea,永温镇,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_e00ab572,AdminArea,永温镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121_f260a58e,AdminArea,硒城街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121_f260a58e,AdminArea,硒城街道,REF_PARENT_ADMIN_AREA,admin_520121,AdminArea,开阳县,,[],{}
+admin_520121_f260a58e,AdminArea,硒城街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520121,AdminArea,开阳县,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520121,AdminArea,开阳县,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520121,AdminArea,开阳县,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_04341ec4,AdminArea,温泉镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_04341ec4,AdminArea,温泉镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_04341ec4,AdminArea,温泉镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_3efd1bde,AdminArea,鹿窝镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_3efd1bde,AdminArea,鹿窝镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_3efd1bde,AdminArea,鹿窝镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_571cd209,AdminArea,流长镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_571cd209,AdminArea,流长镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_571cd209,AdminArea,流长镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_67f2d7bc,AdminArea,青山苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_67f2d7bc,AdminArea,青山苗族乡,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_67f2d7bc,AdminArea,青山苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_8517d6a7,AdminArea,永靖镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_8517d6a7,AdminArea,永靖镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_8517d6a7,AdminArea,永靖镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_aa852f92,AdminArea,养龙司镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_aa852f92,AdminArea,养龙司镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_aa852f92,AdminArea,养龙司镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_b1dcf604,AdminArea,西山镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_b1dcf604,AdminArea,西山镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_b1dcf604,AdminArea,西山镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_bfd78acc,AdminArea,永阳街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_bfd78acc,AdminArea,永阳街道,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_bfd78acc,AdminArea,永阳街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_d0ba448f,AdminArea,九庄镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_d0ba448f,AdminArea,九庄镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_d0ba448f,AdminArea,九庄镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_f9ea557d,AdminArea,小寨坝镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_f9ea557d,AdminArea,小寨坝镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_f9ea557d,AdminArea,小寨坝镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122_fd710d7c,AdminArea,石硐镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122_fd710d7c,AdminArea,石硐镇,REF_PARENT_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+admin_520122_fd710d7c,AdminArea,石硐镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520122,AdminArea,息烽县,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520122,AdminArea,息烽县,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520122,AdminArea,息烽县,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_09dbe587,AdminArea,大石布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_09dbe587,AdminArea,大石布依族乡,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_09dbe587,AdminArea,大石布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_0fc3f65e,AdminArea,景阳街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_0fc3f65e,AdminArea,景阳街道,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_0fc3f65e,AdminArea,景阳街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_0fceef0c,AdminArea,洒坪镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_0fceef0c,AdminArea,洒坪镇,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_0fceef0c,AdminArea,洒坪镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_2ab30e0d,AdminArea,扎佐街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_2ab30e0d,AdminArea,扎佐街道,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_2ab30e0d,AdminArea,扎佐街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_4078a067,AdminArea,六屯镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_4078a067,AdminArea,六屯镇,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_4078a067,AdminArea,六屯镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_7b7958bc,AdminArea,六广镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_7b7958bc,AdminArea,六广镇,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_7b7958bc,AdminArea,六广镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_7b989cf7,AdminArea,谷堡镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_7b989cf7,AdminArea,谷堡镇,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_7b989cf7,AdminArea,谷堡镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_898265a9,AdminArea,阳明洞街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_898265a9,AdminArea,阳明洞街道,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_898265a9,AdminArea,阳明洞街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_927d3acb,AdminArea,六桶镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_927d3acb,AdminArea,六桶镇,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_927d3acb,AdminArea,六桶镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_a5261cba,AdminArea,龙场街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_a5261cba,AdminArea,龙场街道,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_a5261cba,AdminArea,龙场街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_dd16d05b,AdminArea,久长街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_dd16d05b,AdminArea,久长街道,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_dd16d05b,AdminArea,久长街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123_f986c231,AdminArea,小箐镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123_f986c231,AdminArea,小箐镇,REF_PARENT_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+admin_520123_f986c231,AdminArea,小箐镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520123,AdminArea,修文县,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520123,AdminArea,修文县,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520123,AdminArea,修文县,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_1ed148c3,AdminArea,站街镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_1ed148c3,AdminArea,站街镇,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_1ed148c3,AdminArea,站街镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_31a3ab2d,AdminArea,青龙山街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_31a3ab2d,AdminArea,青龙山街道,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_31a3ab2d,AdminArea,青龙山街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_327f1155,AdminArea,王庄布依族苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_327f1155,AdminArea,王庄布依族苗族乡,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_327f1155,AdminArea,王庄布依族苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_565cf703,AdminArea,流长苗族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_565cf703,AdminArea,流长苗族乡,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_565cf703,AdminArea,流长苗族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_59bb5209,AdminArea,犁倭镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_59bb5209,AdminArea,犁倭镇,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_59bb5209,AdminArea,犁倭镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_77a69158,AdminArea,麦格苗族布依族乡,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_77a69158,AdminArea,麦格苗族布依族乡,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_77a69158,AdminArea,麦格苗族布依族乡,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_8553273e,AdminArea,暗流镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_8553273e,AdminArea,暗流镇,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_8553273e,AdminArea,暗流镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_89c62622,AdminArea,红枫湖镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_89c62622,AdminArea,红枫湖镇,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_89c62622,AdminArea,红枫湖镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_8e228408,AdminArea,巢凤街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_8e228408,AdminArea,巢凤街道,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_8e228408,AdminArea,巢凤街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_af7501c2,AdminArea,滨湖街道,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_af7501c2,AdminArea,滨湖街道,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_af7501c2,AdminArea,滨湖街道,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_f254b501,AdminArea,新店镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_f254b501,AdminArea,新店镇,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_f254b501,AdminArea,新店镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181_fff4bc50,AdminArea,卫城镇,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181_fff4bc50,AdminArea,卫城镇,REF_PARENT_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+admin_520181_fff4bc50,AdminArea,卫城镇,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+admin_520181,AdminArea,清镇市,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+admin_520181,AdminArea,清镇市,REF_PARENT_ADMIN_AREA,admin_520100,AdminArea,贵阳市,,[],{}
+admin_520181,AdminArea,清镇市,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+city_520100,City,贵阳市,COLLECTED_IN,batch_mca_division_20260915,CollectionBatch,贵阳市行政区划官方名录核验,主批次,[],"{""role"":""主批次""}"
+city_520100,City,贵阳市,SOURCED_FROM,src_mca_division,DataSource,民政部与各区县政府官网行政区划,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008820ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008820ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008820ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008821ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008821ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008821ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008822ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008822ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008822ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008823ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008823ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008823ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008824ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008824ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008824ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008825ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008825ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008825ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008826ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008826ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008826ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400882cffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400882cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400882cffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008830ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008830ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008830ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008834ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008834ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008834ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008835ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008835ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008835ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008836ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008836ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008836ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008900ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008900ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008900ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008901ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008901ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008901ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008902ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008902ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008902ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008903ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008903ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008903ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008904ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008904ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008904ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008905ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008905ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008905ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008906ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008906ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008906ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008908ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008908ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008908ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008909ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008909ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008909ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400890affffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400890affffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400890affffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400890bffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400890bffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400890bffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400890cffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400890cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400890cffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400890dffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400890dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400890dffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400890effffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400890effffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400890effffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008910ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008910ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008910ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008911ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008911ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008911ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008912ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008912ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008912ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008913ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008913ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008913ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008914ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008914ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008914ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008915ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008915ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008915ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008916ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008916ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008916ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008918ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008918ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008918ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008919ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008919ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008919ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400891affffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400891affffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400891affffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400891bffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400891bffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400891bffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400891cffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400891cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400891cffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400891dffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400891dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400891dffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+87400891effffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+87400891effffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400891effffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008920ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008920ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008920ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008921ffffff,GeoCell,,COLLECTED_IN,batch_grid_recompute_ctrip_hotel_20260916,CollectionBatch,挂载携程酒店详情后的网格派生层重算,主批次,[],"{""role"":""主批次""}"
+874008921ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008921ffffff,GeoCell,,SOURCED_FROM,src_grid_derive,DataSource,H3 网格派生,主来源,[],"{""role"":""主来源"",""fields"":[]}"
+874008922ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008923ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008924ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008925ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008926ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008928ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008929ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400892affffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400892bffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400892cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400892dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+87400892effffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008930ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008931ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008932ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008933ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008934ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008935ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008936ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008950ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008952ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008953ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008954ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008956ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008970ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008972ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008974ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008975ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008976ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+874008994ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008996ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+8740089a0ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a1ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a2ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a3ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a4ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a5ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a6ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089a8ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089acffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089adffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089aeffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089b0ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+8740089b1ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089b2ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+8740089b3ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+8740089b4ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+8740089b5ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520181,AdminArea,清镇市,,[],{}
+8740089b6ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c20ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c21ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c22ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c23ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c24ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c25ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008c26ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008c30ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008c31ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008c34ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008c35ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008c36ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d00ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d01ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d02ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d03ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d04ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d05ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d06ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d08ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d09ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d0affffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d0bffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d0cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d0dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d0effffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d10ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d11ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d12ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d13ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d14ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d15ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d16ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d18ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d19ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d1affffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d1bffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d1cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d1dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d1effffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d20ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d21ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d22ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d23ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d24ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d25ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d26ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d28ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d29ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d2affffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d2bffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d2cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d2dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d2effffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d30ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d31ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d32ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d33ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d34ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d35ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d36ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d46ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d50ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d52ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d53ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d54ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d55ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d56ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d62ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d64ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d66ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d70ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d71ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d72ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d73ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d74ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d75ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d76ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520123,AdminArea,修文县,,[],{}
+874008d80ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d81ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d82ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d83ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d84ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d85ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d86ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d8cffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d8dffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d90ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d92ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d94ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d95ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008d96ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da0ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da1ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da2ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da3ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da4ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da5ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da6ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da8ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008da9ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008daaffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008dabffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008dacffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008dadffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008daeffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008db0ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008db1ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+874008db2ffffff,GeoCell,,REF_LOCATED_IN_ADMIN_AREA,admin_520122,AdminArea,息烽县,,[],{}
+8840088201fffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+8840088201fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088203fffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+8840088203fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088205fffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+8840088207fffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+8840088207fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088209fffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+8840088209fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008820bfffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+884008820dfffff,GeoCell,,REF_PARENT_CELL,874008820ffffff,GeoCell,,,[],{}
+884008820dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088211fffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+8840088211fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088213fffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+8840088215fffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+8840088215fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088217fffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+8840088219fffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+8840088219fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008821bfffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+884008821dfffff,GeoCell,,REF_PARENT_CELL,874008821ffffff,GeoCell,,,[],{}
+8840088229fffff,GeoCell,,REF_PARENT_CELL,874008822ffffff,GeoCell,,,[],{}
+8840088229fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008822bfffff,GeoCell,,REF_PARENT_CELL,874008822ffffff,GeoCell,,,[],{}
+884008822dfffff,GeoCell,,REF_PARENT_CELL,874008822ffffff,GeoCell,,,[],{}
+8840088239fffff,GeoCell,,REF_PARENT_CELL,874008823ffffff,GeoCell,,,[],{}
+8840088241fffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+8840088241fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088243fffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+8840088243fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088245fffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+8840088245fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088247fffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+8840088247fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088249fffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+8840088249fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008824bfffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+884008824bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008824dfffff,GeoCell,,REF_PARENT_CELL,874008824ffffff,GeoCell,,,[],{}
+8840088251fffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+8840088253fffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+8840088253fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088255fffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+8840088255fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088257fffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+8840088257fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088259fffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+8840088259fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008825bfffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+884008825bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008825dfffff,GeoCell,,REF_PARENT_CELL,874008825ffffff,GeoCell,,,[],{}
+884008825dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088261fffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+8840088263fffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+8840088263fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088265fffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+8840088267fffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+8840088267fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840088269fffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+884008826bfffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+884008826bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008826dfffff,GeoCell,,REF_PARENT_CELL,874008826ffffff,GeoCell,,,[],{}
+88400882c9fffff,GeoCell,,REF_PARENT_CELL,87400882cffffff,GeoCell,,,[],{}
+88400882cdfffff,GeoCell,,REF_PARENT_CELL,87400882cffffff,GeoCell,,,[],{}
+8840088309fffff,GeoCell,,REF_PARENT_CELL,874008830ffffff,GeoCell,,,[],{}
+884008830dfffff,GeoCell,,REF_PARENT_CELL,874008830ffffff,GeoCell,,,[],{}
+8840088341fffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+8840088343fffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+8840088345fffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+8840088347fffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+8840088349fffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+884008834bfffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+884008834dfffff,GeoCell,,REF_PARENT_CELL,874008834ffffff,GeoCell,,,[],{}
+8840088351fffff,GeoCell,,REF_PARENT_CELL,874008835ffffff,GeoCell,,,[],{}
+8840088355fffff,GeoCell,,REF_PARENT_CELL,874008835ffffff,GeoCell,,,[],{}
+8840088359fffff,GeoCell,,REF_PARENT_CELL,874008835ffffff,GeoCell,,,[],{}
+884008835bfffff,GeoCell,,REF_PARENT_CELL,874008835ffffff,GeoCell,,,[],{}
+884008835dfffff,GeoCell,,REF_PARENT_CELL,874008835ffffff,GeoCell,,,[],{}
+884008836bfffff,GeoCell,,REF_PARENT_CELL,874008836ffffff,GeoCell,,,[],{}
+8840089001fffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+8840089001fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089003fffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+8840089003fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089005fffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+8840089005fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089007fffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+8840089007fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089009fffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+884008900bfffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+884008900bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008900dfffff,GeoCell,,REF_PARENT_CELL,874008900ffffff,GeoCell,,,[],{}
+8840089011fffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+8840089011fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089013fffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+8840089015fffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+8840089015fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089017fffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+8840089017fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089019fffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+8840089019fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008901bfffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+884008901dfffff,GeoCell,,REF_PARENT_CELL,874008901ffffff,GeoCell,,,[],{}
+8840089021fffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+8840089023fffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+8840089023fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089025fffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+8840089027fffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+8840089027fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089029fffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+8840089029fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008902bfffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+884008902bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008902dfffff,GeoCell,,REF_PARENT_CELL,874008902ffffff,GeoCell,,,[],{}
+8840089031fffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+8840089033fffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+8840089035fffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+8840089037fffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+8840089037fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089039fffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+884008903bfffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+884008903bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008903dfffff,GeoCell,,REF_PARENT_CELL,874008903ffffff,GeoCell,,,[],{}
+884008903dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089041fffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+8840089043fffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+8840089045fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089045fffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+8840089045fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089047fffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+8840089049fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089049fffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+8840089049fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008904bfffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+884008904dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+884008904dfffff,GeoCell,,REF_PARENT_CELL,874008904ffffff,GeoCell,,,[],{}
+884008904dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089051fffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+8840089053fffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+8840089055fffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+8840089055fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089057fffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+8840089059fffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+8840089059fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008905bfffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+884008905bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008905dfffff,GeoCell,,REF_PARENT_CELL,874008905ffffff,GeoCell,,,[],{}
+884008905dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089061fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089061fffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+8840089061fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089063fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089063fffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+8840089063fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089065fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089065fffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+8840089065fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089067fffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+8840089069fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089069fffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+8840089069fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008906bfffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+884008906dfffff,GeoCell,,REF_PARENT_CELL,874008906ffffff,GeoCell,,,[],{}
+8840089081fffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+8840089083fffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+8840089085fffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+8840089085fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089087fffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+8840089087fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089089fffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+884008908bfffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+884008908dfffff,GeoCell,,REF_PARENT_CELL,874008908ffffff,GeoCell,,,[],{}
+884008908dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089091fffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+8840089093fffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+8840089093fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089095fffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+8840089097fffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+8840089099fffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+8840089099fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008909bfffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+884008909bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008909dfffff,GeoCell,,REF_PARENT_CELL,874008909ffffff,GeoCell,,,[],{}
+884008909dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890a1fffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890a1fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890a3fffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890a5fffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890a5fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890a7fffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890a7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890a9fffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890a9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890abfffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890abfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890adfffff,GeoCell,,REF_PARENT_CELL,87400890affffff,GeoCell,,,[],{}
+88400890b1fffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890b3fffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890b5fffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890b5fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890b7fffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890b7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890b9fffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890bbfffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890bbfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890bdfffff,GeoCell,,REF_PARENT_CELL,87400890bffffff,GeoCell,,,[],{}
+88400890bdfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890c1fffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890c3fffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890c5fffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890c7fffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890c7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890c9fffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890c9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890cbfffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890cbfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890cdfffff,GeoCell,,REF_PARENT_CELL,87400890cffffff,GeoCell,,,[],{}
+88400890d1fffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890d3fffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890d5fffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890d7fffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890d7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400890d9fffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890dbfffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890ddfffff,GeoCell,,REF_PARENT_CELL,87400890dffffff,GeoCell,,,[],{}
+88400890e1fffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890e3fffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890e5fffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890e7fffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890e9fffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890ebfffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890edfffff,GeoCell,,REF_PARENT_CELL,87400890effffff,GeoCell,,,[],{}
+88400890edfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089101fffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+8840089103fffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+8840089103fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089105fffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+8840089105fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089107fffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+8840089107fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089109fffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+884008910bfffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+884008910dfffff,GeoCell,,REF_PARENT_CELL,874008910ffffff,GeoCell,,,[],{}
+884008910dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089111fffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+8840089113fffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+8840089113fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089115fffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+8840089115fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089117fffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+8840089117fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089119fffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+8840089119fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008911bfffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+884008911bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008911dfffff,GeoCell,,REF_PARENT_CELL,874008911ffffff,GeoCell,,,[],{}
+884008911dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089121fffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+8840089123fffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+8840089125fffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+8840089127fffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+8840089129fffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+884008912bfffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+884008912dfffff,GeoCell,,REF_PARENT_CELL,874008912ffffff,GeoCell,,,[],{}
+8840089131fffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+8840089133fffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+8840089135fffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+8840089137fffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+8840089139fffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+884008913bfffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+884008913bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+884008913dfffff,GeoCell,,REF_PARENT_CELL,874008913ffffff,GeoCell,,,[],{}
+884008913dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089141fffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+8840089143fffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+8840089143fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089145fffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+8840089147fffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+8840089149fffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+884008914bfffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+884008914bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008914dfffff,GeoCell,,REF_PARENT_CELL,874008914ffffff,GeoCell,,,[],{}
+8840089151fffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+8840089153fffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+8840089153fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089155fffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+8840089155fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089157fffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+8840089159fffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+884008915bfffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+884008915dfffff,GeoCell,,REF_PARENT_CELL,874008915ffffff,GeoCell,,,[],{}
+884008915dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089161fffff,GeoCell,,REF_PARENT_CELL,874008916ffffff,GeoCell,,,[],{}
+8840089163fffff,GeoCell,,REF_PARENT_CELL,874008916ffffff,GeoCell,,,[],{}
+8840089165fffff,GeoCell,,REF_PARENT_CELL,874008916ffffff,GeoCell,,,[],{}
+8840089167fffff,GeoCell,,REF_PARENT_CELL,874008916ffffff,GeoCell,,,[],{}
+8840089169fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+884008916bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+884008916dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089181fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089183fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089187fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089199fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008919dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891b7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891b9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891bbfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891c5fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891cdfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+88400891d1fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891d3fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891d5fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891d7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891d9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891e1fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400891e9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089201fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089207fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089213fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+884008921bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+8840089221fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089221fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089223fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089223fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089225fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089225fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089227fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089227fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008922bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089249fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089255fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008925bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_59bb5209,AdminArea,犁倭镇,,[],{}
+884008925dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089263fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089267fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008926bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008928dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+88400892a5fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+88400892b7fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400892b9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+88400892cbfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+88400892cdfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+88400892d1fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+88400892d9fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+884008930dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+884008930dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089311fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089311fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089313fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089313fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089319fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+8840089319fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008931bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b3b2ebc80c,Zone,近王庄客运站 · 华联万家购物中心(王庄店),,[],{}
+884008931bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089321fffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+8840089321fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089325fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+884008932dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+884008932dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089341fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089341fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089343fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089343fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089345fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089345fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089347fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089347fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089349fffff,GeoCell,,REF_DOMINANT_ZONE,zone_22af7edfee,Zone,近清镇市卫城镇客车站 · 镇西卫城垣遗址,,[],{}
+8840089349fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008934bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+884008934bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008934dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+884008934dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089351fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089351fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089355fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089355fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089357fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089357fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_327f1155,AdminArea,王庄布依族苗族乡,,[],{}
+8840089359fffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+8840089359fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008935bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_44e93cc721,Zone,卫城,,[],{}
+884008935bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089361fffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+8840089361fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089363fffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+8840089363fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089365fffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+8840089365fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089367fffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+8840089367fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089369fffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+8840089369fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008936bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+884008936bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+884008936dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_f416f861d2,Zone,近红军杨顺清墓 · 清镇市卫城镇客车站,,[],{}
+884008936dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_fff4bc50,AdminArea,卫城镇,,[],{}
+8840089509fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089521fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008952bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+884008952dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089541fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089545fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089547fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089561fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089563fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089565fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089567fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089569fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089725fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_f254b501,AdminArea,新店镇,,[],{}
+8840089749fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_565cf703,AdminArea,流长苗族乡,,[],{}
+8840089a11fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a13fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a17fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a19fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a29fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a3bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a45fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a49fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a4bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a51fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a55fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a59fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a5bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a5dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a63fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089a6dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089b25fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520123_7b7958bc,AdminArea,六广镇,,[],{}
+8840089b27fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520123_7b7958bc,AdminArea,六广镇,,[],{}
+8840089b2bfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520123_7b7958bc,AdminArea,六广镇,,[],{}
+8840089b45fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520123_0fceef0c,AdminArea,洒坪镇,,[],{}
+8840089b49fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520123_0fceef0c,AdminArea,洒坪镇,,[],{}
+8840089b4dfffff,GeoCell,,REF_TOWNSHIP_ID,admin_520123_0fceef0c,AdminArea,洒坪镇,,[],{}
+8840089b51fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089b53fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089b57fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+8840089b59fffff,GeoCell,,REF_TOWNSHIP_ID,admin_520181_8553273e,AdminArea,暗流镇,,[],{}
+884008c253fffff,GeoCell,,REF_DOMINANT_ZONE,zone_4e0d3f128d,Zone,近青岗岭,,[],{}
+884008c257fffff,GeoCell,,REF_DOMINANT_ZONE,zone_4e0d3f128d,Zone,近青岗岭,,[],{}
+884008d003fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d00bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d011fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d015fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d017fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d025fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d027fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d029fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d02bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d031fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d035fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d037fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d039fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d03bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d03dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d089fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d091fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d093fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d099fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d09bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d0c3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d0d3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d0d7fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d0ddfffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d11bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d181fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d183fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d185fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d187fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1c1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1c3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1c7fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1c9fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1cbfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1cdfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1d1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1d5fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1d9fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1dbfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1ddfffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1e1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d1e3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_8d87731efa,Zone,近九庄红军坟 · 徐家祠堂,,[],{}
+884008d2b3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d521fffff,GeoCell,,REF_DOMINANT_ZONE,zone_4e0d3f128d,Zone,近青岗岭,,[],{}
+884008d527fffff,GeoCell,,REF_DOMINANT_ZONE,zone_4e0d3f128d,Zone,近青岗岭,,[],{}
+884008d549fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d54dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d563fffff,GeoCell,,REF_DOMINANT_ZONE,zone_4e0d3f128d,Zone,近青岗岭,,[],{}
+884008d567fffff,GeoCell,,REF_DOMINANT_ZONE,zone_4e0d3f128d,Zone,近青岗岭,,[],{}
+884008d705fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d721fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d725fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d727fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d729fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d72dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d761fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d765fffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d76dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_26ce0bd665,Zone,近回水石林 · 息烽县多滨洞旅游景区,,[],{}
+884008d80dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d821fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d829fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d82dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d845fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d849fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008d865fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d867fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d86bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d86dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d951fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d953fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d955fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d957fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008d959fffff,GeoCell,,REF_DOMINANT_ZONE,zone_1f2d4a769d,Zone,息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园,,[],{}
+884008da01fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da0dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da21fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da23fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da25fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da27fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da29fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da2dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da61fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da63fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da69fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da6bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008da6dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db0bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db11fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db19fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db1bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db1dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db51fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db53fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+884008db57fffff,GeoCell,,REF_DOMINANT_ZONE,zone_b2ad1997e6,Zone,近流长镇没量坑红军烈士纪念碑 · 磨盘山,,[],{}
+88400c0021fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0023fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0025fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0027fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0035fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0081fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c0083fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c0085fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c0087fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c008bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c008dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c0091fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c0093fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c0095fffff,GeoCell,,REF_DOMINANT_ZONE,zone_d2ae5adaf6,Zone,漓江路,,[],{}
+88400c0097fffff,GeoCell,,REF_DOMINANT_ZONE,zone_d2ae5adaf6,Zone,漓江路,,[],{}
+88400c0099fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c009bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c009dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00a1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00a3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00a5fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00a7fffff,GeoCell,,REF_DOMINANT_ZONE,zone_31a6541fc6,Zone,二戈寨,,[],{}
+88400c00a9fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00abfffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00adfffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00b1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00b3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_d2ae5adaf6,Zone,漓江路,,[],{}
+88400c00b5fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00b7fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00b9fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00bbfffff,GeoCell,,REF_DOMINANT_ZONE,zone_d2ae5adaf6,Zone,漓江路,,[],{}
+88400c00bdfffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00d1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00d3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00d5fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00d7fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00d9fffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00dbfffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00ddfffff,GeoCell,,REF_DOMINANT_ZONE,zone_dfebf59aee,Zone,花溪公园/十里河滩,,[],{}
+88400c00e3fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c00e7fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c0103fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0111fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0113fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0115fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0117fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c011bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c011dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0131fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0133fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0137fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0139fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c013bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0181fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0183fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0185fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0187fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0189fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c018bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c018dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+88400c0191fffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c0193fffff,GeoCell,,REF_DOMINANT_ZONE,zone_31a6541fc6,Zone,二戈寨,,[],{}
+88400c0195fffff,GeoCell,,REF_DOMINANT_ZONE,zone_31a6541fc6,Zone,二戈寨,,[],{}
+88400c0197fffff,GeoCell,,REF_DOMINANT_ZONE,zone_31a6541fc6,Zone,二戈寨,,[],{}
+88400c019bfffff,GeoCell,,REF_DOMINANT_ZONE,zone_31a6541fc6,Zone,二戈寨,,[],{}
+88400c019dfffff,GeoCell,,REF_DOMINANT_ZONE,zone_663f374e4e,Zone,二戈寨村,,[],{}
+88400c01a1fffff,GeoCell,,REF_DOMINANT_ZONE,zone_ebdbd4fa37,Zone,龙洞堡机场/东客站,,[],{}
+alias_0000bef3-4a2a-43cd-a7d3-a26f660be227,PlaceAlias,焱霖龙骨烫菜(银海元隆广场店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0000ffdd-2dff-4896-b1dd-b2e1df7e0552,PlaceAlias,聚鸿味烤鸡,REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_00018608-1730-48fc-a699-c264032d9c73,PlaceAlias,将相王者.黄焖鸡米饭,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_0001e67c-f4f8-4441-a0dd-6d41687598a3,PlaceAlias,陈记绿色肉饼店(贵棉小区店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_000822cd-61f8-4a57-b855-6288c78c6774,PlaceAlias,富鑫餐饮馆,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00117d5b-4583-450a-8337-37567dfbaec9,PlaceAlias,杨记特色香辣干锅(北新区路店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0014da79-dca9-4fe0-be7c-13da4f204ef8,PlaceAlias,但家香酥鸭(贵阳但家香酥鸭花溪民主路店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00167319-3058-4abd-bbd1-dd724ccc7472,PlaceAlias,平平酱爆烤肉(贵阳世纪城龙凯苑南区店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_001740df-7bab-4cdb-bcd2-37ed202b2309,PlaceAlias,麻辣小卤,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0018d57e-1230-4ca2-93be-11df03a812e6,PlaceAlias,纳雍甘姐烧烤,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_001de977-4c3b-4709-9cad-4404e2c422eb,PlaceAlias,融源酒楼,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_001f05d1-5ad2-4e79-a3bc-bacb7dc10515,PlaceAlias,美蛙鱼庄,REF_ADMIN_SCOPE,admin_520123,AdminArea,修文县,,[],{}
+alias_0021d8b2-e8a4-4cef-9b1c-1abf393550c1,PlaceAlias,瑞幸咖啡(时代广场店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_002330c9-d077-43c6-9019-ae89a44b7e8d,PlaceAlias,幸运咖(中铁逸都店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00258ab8-8ef6-441c-a41e-d7063a87c789,PlaceAlias,天天烧烤(四方河路店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_00276468-0ddf-4b8b-9e3b-8067ba083466,PlaceAlias,小街平价麻辣烫,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_002c5a95-1868-48ef-9336-3c3d8c59c3a9,PlaceAlias,上海食味坊(修文第一店),REF_ADMIN_SCOPE,admin_520123,AdminArea,修文县,,[],{}
+alias_0033cf5b-0846-4874-89c8-268aa89ad3a2,PlaceAlias,小伙伴鱿鱼炖土鸡(中天会展城店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_003663a5-2039-42a4-9751-21a17a51837c,PlaceAlias,金喜筒骨清水烫,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0037528d-620e-4e3f-9b87-1d75364915bd,PlaceAlias,王记四川特色烧烤(利海·米兰春天三期店),REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_0037e21e-8a77-42c7-9e4b-8c40b5851095,PlaceAlias,贵茶潮饮烘焙概念店,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_003a86f3-fdd5-4cf5-947e-6d94dd2f04a8,PlaceAlias,运源铜锅洋芋饭,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_003aa92d-e5fe-44f8-8567-2e7f464d2c44,PlaceAlias,心有客酸汤牛肉火锅(溪北店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_003de797-608d-4098-acbb-e545546167ac,PlaceAlias,徐记鱼府烤鱼鱼火锅,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00406db3-e973-490d-9937-a99c65fd4a29,PlaceAlias,立春迎滔串串香(青云路店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0040e553-83e0-4e13-a584-e54383b35d01,PlaceAlias,二恒烧烤(恒大金阳新世界御府店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00462f00-7379-48ee-9ac4-ca064e0a8993,PlaceAlias,一坨糯米饭,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0047aaae-e10b-4827-8340-d66166880b6b,PlaceAlias,老鬼家常菜,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00497459-097e-4bdd-8adf-6b1b3717ff2d,PlaceAlias,几禾酒楼(兰花广场店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_00498b84-19bc-4a63-86f6-afb84e74294f,PlaceAlias,黔牛王原汤牛肉粉(北衙路三分店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_004abc4c-72f9-4769-bc50-07547b641401,PlaceAlias,红姐快餐馆,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_004cf38e-fb71-4d0b-a4fc-a7f6ab9b1719,PlaceAlias,留香餐饮肠旺面(田园美庐小区店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_004f40b3-9e84-43aa-9935-d0eadfa365b9,PlaceAlias,老赵湘菜馆,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00524b38-9b76-4240-b7f2-85b91dc00fc1,PlaceAlias,十年老店转角火锅(蔡家街店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_005257fd-55b7-4c1d-99f3-02865420747d,PlaceAlias,菜思饭想花果园店,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_005a23f2-93a4-4a9c-8c39-bb9934acec53,PlaceAlias,四哥酸辣烫,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_005c93a5-d982-49ad-8da3-2391d299b8c5,PlaceAlias,遵义羊肉王火锅,REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_0063c2cb-d3ae-4419-bcd2-18abbb0e93f2,PlaceAlias,慕昔提咖啡(花溪店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00652014-fee5-4d5f-804a-1e9b987ba7b2,PlaceAlias,开阳网红甲鱼(紫江店),REF_ADMIN_SCOPE,admin_520121,AdminArea,开阳县,,[],{}
+alias_0065e82c-1dc8-4277-98f2-1771b3cc3aad,PlaceAlias,路易铜锅牛肉店,REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_006745d6-a32c-4b24-9e71-7b934a9a4569,PlaceAlias,巷子里餐饮,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_006831ae-cb83-436e-976f-f43ba8174121,PlaceAlias,十八碗休闲山庄(金阳店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0068cfc3-3caa-46e0-abbd-0b13ce711225,PlaceAlias,古茗(花果园购物中心店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0069e99e-ee0c-4178-b803-e26517909028,PlaceAlias,安顺破酥包(金阳红街店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_006ece66-39f9-47d8-98e0-acdccf0e3d20,PlaceAlias,老赤水黑豆花火锅(恒大店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_006f86f8-8101-4260-b5bb-50ca72bace64,PlaceAlias,百盛怪味鱼(汇灵巷17号院落店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_00718b16-7b54-4b6c-bda4-c381aeec9299,PlaceAlias,老曹兵老炮儿盖浇饭,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00719bc9-9103-48f9-a2ba-0fd6b4140579,PlaceAlias,大方一把手烙锅(盛源店),REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_0073f811-fe37-4b95-b148-ef3d64b85b72,PlaceAlias,春日1988韩国烤肉料理,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_0075d084-6d13-4e5f-8301-81236d529934,PlaceAlias,苗家砂锅酸辣烫,REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_0075e137-ed9e-4530-a8aa-8faaf33532ee,PlaceAlias,王家大院火锅楼,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_0076e79e-f9f1-4f54-b719-4e5b1b163189,PlaceAlias,老贵阳烤鸡荷叶烤脑花,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_007772e6-ae1c-4918-ad66-3ef61c57dff4,PlaceAlias,高镇辣鸡粉面,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_007eda0e-816d-4907-9df7-572ac5fad484,PlaceAlias,颜如意餐馆(分店),REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_0080da8b-b178-4ad3-89d0-6cc23f5caebf,PlaceAlias,鸭池河活油土烙锅(北门桥店),REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_00856c11-b418-4c1d-b1c8-85360ecc19a3,PlaceAlias,嘭嘭鲜烙锅,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0086b9d4-4a45-46b5-a384-cfeb4cfff91e,PlaceAlias,红鹰大锅牛肉粉(总店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00872d0e-ab4c-4cbc-b17a-922ebc25531b,PlaceAlias,嘻乐烘焙·生日蛋糕(贵阳店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_008f699c-fc80-4533-aa4d-5026372684b3,PlaceAlias,三园糕点店,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_008fd916-b48a-4852-926e-684840c8ecea,PlaceAlias,关东情铁锅炖(花溪美的国宾府店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_0091c55d-fca4-4ac0-bb3a-e19606a02a93,PlaceAlias,微微酸辣烫(水岸金都店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_009232bb-0bb0-4eef-afaf-1bb2e443a51a,PlaceAlias,杨氏沙园(贵阳市黔江路店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_0092b2c3-0fce-482c-9965-f88d809aeb9d,PlaceAlias,CoCo都可(未来方舟越界影城店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0093da9b-7532-4626-b15d-9b0ecbdc4d09,PlaceAlias,幺妹留一手特色烤鱼(花果园U区北区店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_009473d2-0b10-4bbd-b059-008c1eec59a6,PlaceAlias,蛙小帅美蛙鱼自助火锅,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_0095e3bb-100c-4f58-af7d-e959b546fca4,PlaceAlias,苗家砂锅酸辣烫(腾龙湾总店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00965964-e358-48aa-b761-510bd5208d09,PlaceAlias,小燕子清香羊肉粉(前进路店),REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_009cc79e-676a-4a03-bb19-68b51f110f12,PlaceAlias,1点点(贵阳乌当正德家邦店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_009feda3-af79-4aa0-a30b-4738534624a6,PlaceAlias,品味砂锅酸辣烫(贵阳恒大未来城一期店),REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00a0dc33-092e-48c3-8884-c771893fd413,PlaceAlias,四川球溪鲶鱼幺铺毛肚,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00a2660f-6b21-408b-8aac-46c79d581c6b,PlaceAlias,蒋家昆明铜锅洋芋饭,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00a39812-330a-47bb-8ac6-3de53d402262,PlaceAlias,泰熙家(玖福城店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00a4a336-1d11-4610-bdcc-83955792ca45,PlaceAlias,余庆乡村剔骨鸭,REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00aa0fba-e37d-4d35-935e-b047e060e724,PlaceAlias,黔牛王牛肉粉(化工路经房小区店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00aaa3cc-5b5d-4ef0-8fb0-df930f38dda4,PlaceAlias,戎曜山庄,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00aef391-7bde-4053-83b7-5758cc9a97fc,PlaceAlias,酒肆鲜烤,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00b77384-8ce5-4fd4-ae70-c7fcc8f4544f,PlaceAlias,藤小甜·甜品蛋糕(未来方舟店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00b8ad18-87ca-43fd-a6cf-8d038e89045a,PlaceAlias,COMMUNE幻师(未来方舟店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00b8c09e-3958-4fda-8dfb-6f0ee6447be4,PlaceAlias,蜜雪冰城(绿地伊顿店),REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00bd5dbc-9b9c-4c6f-b9dd-06c5e7c80d00,PlaceAlias,卓家小菜馆,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00bede40-ae70-4b3c-a94e-633f590bd2a2,PlaceAlias,大方特色豆干火锅,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00c26660-ffa2-4585-be0c-e65ccaa43b94,PlaceAlias,南门肠旺(护国路店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_00c39f9b-74f7-4b5c-8be2-4222ab2f6971,PlaceAlias,江西小院,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00c4ba28-0c58-44bf-9bf0-77c1184f4551,PlaceAlias,新疆喀什师傅餐厅,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_00c684d3-210c-468f-95c7-17181d7fc4f2,PlaceAlias,贵州龙(正德家邦店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_00c8561b-4cfc-47bc-9bac-8bca0cb1aa19,PlaceAlias,新疆特色羔羊串,REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00c8bcdb-5b0c-4480-b84e-62c491b5cdeb,PlaceAlias,书亦烧仙草(贵阳花果园J区店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_00c9dd47-ee6f-443b-9c92-359ea4d8407d,PlaceAlias,薛姨妈芋儿鸡火锅(悦景新城店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_00ca00dc-6a60-494c-87de-a391480275bc,PlaceAlias,张达鸭溪手工米皮(北大资源紫境府店),REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00cc7c7b-fd14-41e8-8171-bc77c57a5259,PlaceAlias,库迪咖啡(贵阳兴竹联行店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00d0dba2-6780-481f-be9b-911b69619cdb,PlaceAlias,陈德毕杀猪饭(贵筑店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00d11234-f110-477a-95ee-687323bd742a,PlaceAlias,柴味烤肉(盐务街店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00d47c45-7edb-4de6-9d28-242bce999ac2,PlaceAlias,明阳烤鸡,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00d6cacc-f403-4520-9a0f-3c58f5ba312d,PlaceAlias,黔渔翁豆花渎鱼(海纳广场店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00e21df1-f245-4699-b546-e20c5c66fd86,PlaceAlias,茶韵阁•茶室棋牌,REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00e6f2a5-dc95-46c9-87f2-456bcfd3a92a,PlaceAlias,西西花廊·花园餐厅·私宴(富力新天地店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00e81d52-e05f-4ef3-b917-4cb1dd9d04ce,PlaceAlias,宜苑楼荟萃餐厅,REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_00e90cb2-331b-421e-9f14-3e8a425dd2ff,PlaceAlias,花溪原汤牛肉粉,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00eaa6f6-9ae0-4868-a5b1-b58b5d6307df,PlaceAlias,李二一麻辣烫扎佐店,REF_ADMIN_SCOPE,admin_520123,AdminArea,修文县,,[],{}
+alias_00ed8e06-53e5-4df3-a2dc-43515dc3376f,PlaceAlias,小老弟烧烤,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_00ef2c03-8882-4ccd-9891-a219949940c7,PlaceAlias,肯德基车速取餐点(新添大道店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_00f09a61-fedd-498e-9594-754a208c277c,PlaceAlias,兴仁清真馆,REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_00f1294b-66a7-4050-99a1-78544d444899,PlaceAlias,大方豆干火锅(万科大都会花样店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00f51090-1503-48b1-bd3e-0c5908ec465a,PlaceAlias,空谷无界,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_00f739c8-a1f5-482b-a158-df059f311bd7,PlaceAlias,坎坎上烧椒牛肉,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_00f8e2b2-d849-460d-a73c-e5cc92516b8e,PlaceAlias,大黔厨柴火鸡,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00fb619d-80c4-40ee-a7e7-da4bb9f7054a,PlaceAlias,LAWCOFFEE法咖(共象·ART店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_00fb950c-524b-4d7e-8803-0d3b020cd06e,PlaceAlias,黔城渝味,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0101396a-7343-4b91-a34c-d635d2c05d40,PlaceAlias,四川地烤,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0101efc0-9eaf-425c-9cc5-b302fedd853f,PlaceAlias,齐记杭州小笼包(田园路店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_0103381e-1de6-4656-a371-cd490c765d1e,PlaceAlias,望城坡老贵阳烤鸡(贵阳总店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_010370b4-893c-45b1-a46a-70cf02962cf1,PlaceAlias,千串百味旋转小火锅(修开东路店),REF_ADMIN_SCOPE,admin_520123,AdminArea,修文县,,[],{}
+alias_0106cf4f-5b15-4d99-9ec8-71d4c128eed6,PlaceAlias,御麦坊新中式糕点(艺景春天店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0106feb3-e223-4e24-915c-fbc6554a526a,PlaceAlias,黔味姐妹清水烫(八鸽岩店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01079083-7470-436a-91f9-f3c4ee96f9f0,PlaceAlias,五星茶馆•一念间私房茶(枫林路地铁站B出口旁),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_010a686e-832c-417d-9cff-cc81bd7ea413,PlaceAlias,绿色农家菜(金龙店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_010acc28-0f4e-44d2-92fd-268e8ac8bb79,PlaceAlias,开醺小酒馆,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_010e227f-7262-4152-ac14-983c514228a3,PlaceAlias,祖名豆腐(富源巷店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_010ef5b8-e619-4d61-8f08-8946f1a07fb9,PlaceAlias,外婆传承凯里稻香鹅,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_010efb55-4ca8-45bf-aaac-76f413028c4d,PlaceAlias,芥生烤肉(福州街店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_011523db-3650-495e-bbb0-9d6159b9b2d1,PlaceAlias,况大嘴重庆火锅旗舰店,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01188373-d72c-4210-8a63-80d23ae2465c,PlaceAlias,七樾咖啡,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_01193d3b-459e-4eb6-a778-6ed1d20412f2,PlaceAlias,黔似锦酒楼(景秀银座组团店),REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_011e79ae-3197-430d-8096-8072c205e51e,PlaceAlias,陈家脆哨•薯片,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0128295e-8096-4dea-b930-4ee99bc68c3f,PlaceAlias,湖南粉面馆(金阳·红街店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01350a7c-46dc-4f06-b755-eb3bdcb6c19c,PlaceAlias,辰熙雪糕批发超市(南明幸福小区店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01355a3a-25d5-4c16-884d-b3d77cde75fb,PlaceAlias,北顺阁餐饮,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_01369c05-551c-4ee1-a4d4-d3258c339790,PlaceAlias,夜拌面 八鸽岩路店,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0137854e-183f-4bc0-b677-d478445d6bc5,PlaceAlias,辻九·Omakase(荔星中心店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0139c057-324b-4de2-ac38-52e1e3c51401,PlaceAlias,巧媳妇酸汤饭(七彩湖花园店),REF_ADMIN_SCOPE,admin_520113,AdminArea,白云区,,[],{}
+alias_013c7a37-110b-4219-84d2-a0f1be493839,PlaceAlias,林章秘制砂锅酸辣烫,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_013dae71-d1ec-4ae2-b52b-fa0487814683,PlaceAlias,魏家肠旺面,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_013e18e9-045a-4e8a-bfed-1c4de1114490,PlaceAlias,普陀人家,REF_ADMIN_SCOPE,admin_520123,AdminArea,修文县,,[],{}
+alias_0140260c-9a3e-4305-a2be-76020d9a64c6,PlaceAlias,遵义虾子羊肉粉(省畜牧兽医科研所住宅小区店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0143bec9-4a32-461d-b74b-6e9af676c7a7,PlaceAlias,吴赖烧烤,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0148726c-7f95-4f2d-b765-51f691c99b98,PlaceAlias,盘州何姐土锅牛肉馆(金麦花园),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0148bf2c-eb41-4a15-9c3b-8ae81c95edcd,PlaceAlias,英姐小菜馆,REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_014bf31b-eea0-416a-ac72-4d5c13dfcefa,PlaceAlias,兵味道主题餐厅,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0155ab92-e545-4155-8ae1-551caa00f8e6,PlaceAlias,渝之味重庆火锅,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01572c30-49c1-4558-a0cb-f5359cd09190,PlaceAlias,重庆复盛猪脚饭,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_01589f98-8fbf-4ee8-a1ac-d039e3319d1b,PlaceAlias,老四烤鲜肉,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_015916d8-6e77-47ba-b58f-30e4bb7bb247,PlaceAlias,盛富快餐(民生路店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_015ad0c9-45e1-4302-9f48-13ad9a5df64f,PlaceAlias,顺香园破酥包,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01626326-b8fe-4d95-9153-c67e45e04bda,PlaceAlias,但家香酥鸭(贵阳但家香酥鸭兴关路店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_0162b20e-a775-450d-a9fb-366a1d55384e,PlaceAlias,小狗总动员狗咖·猫咖(旗舰店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0167a2e2-4571-4969-90f9-e0d76d7ca282,PlaceAlias,水城羊肉粉,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_016d650b-53f6-4741-88b9-db10f54ef50f,PlaceAlias,醉逍遥大排档(翡翠公园1期店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_016dfb6a-2692-4d0a-9378-3a5666dabc4c,PlaceAlias,三玖鲜烤鸡,REF_ADMIN_SCOPE,admin_520122,AdminArea,息烽县,,[],{}
+alias_0171c8de-0192-4614-a77a-1a3e99739b63,PlaceAlias,宥禾烘焙(云著店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0174dc70-6dd9-46cb-a34a-212e6cb1759a,PlaceAlias,肯德基(市西路店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0175c440-916a-4629-be05-a6b548b8fe2d,PlaceAlias,遵义虾子钟家凉粉,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_017aac30-ff77-42ed-ab77-8ce126cf0bd7,PlaceAlias,炙语战斧牛排馆(海纳广场店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_017ea890-1702-4613-9d9d-7adbc0ed1d3b,PlaceAlias,众力羊肉粉(东新路店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01829fed-0045-4369-8d34-e83100914f7b,PlaceAlias,家门口老素粉,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0183948b-ba37-4b3c-a113-20ef6cab6735,PlaceAlias,大方特色豆干火锅,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01839ad1-7e85-438c-a2c8-5024a0d7dde6,PlaceAlias,姜记脆乌鱼(中天帝景传说广场店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01842394-cd27-4e4d-90ad-c2f991f1c52d,PlaceAlias,熊记大方豆干火锅,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0186beec-c0ca-4ffb-b2ee-63c71a571cfa,PlaceAlias,旋转小火锅(新云小区店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_0186fd14-71d6-43c0-9345-0a3a6175bf36,PlaceAlias,鸿运农庄彭俊辣子鸡,REF_ADMIN_SCOPE,admin_520123,AdminArea,修文县,,[],{}
+alias_0188cc41-53ba-4302-8e22-a5ee43b062f3,PlaceAlias,钟家武胜猪肝面,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_018b9a3c-621e-46c4-bafb-77356455426f,PlaceAlias,滕老四餐馆,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_0191f784-c371-4f23-bd8a-7065309521ed,PlaceAlias,熊猫龘龘超级糕工厂(大营路店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_0196b179-5b6f-43ed-a0de-eb45346eb99e,PlaceAlias,农夫荞饭野生菌柴火鸡(张记),REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_019d9880-b99f-4d64-95b1-7e530069429b,PlaceAlias,先锋冒菜(财富广场店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_019f94a9-3522-4b9b-8a23-54df1d600183,PlaceAlias,金沙沙土羊肉粉(后坝路店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01a31132-21d8-483e-ba93-19c8c11fd25e,PlaceAlias,熹柿酸笋火锅(未来方舟店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01a45751-939b-4e1a-acf3-d4db5395db60,PlaceAlias,四丫头思乡味,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_01a52d11-3c54-438d-80d4-ecac1786a0f4,PlaceAlias,壹北起碳事·老贵阳黔味融合烧烤,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01a5e14a-1081-49f9-a1c3-dff2be084a53,PlaceAlias,蜀湘曹氏鸭脖(云岭中路店),REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_01aa5a04-5367-4ef1-8d3f-b1fc656bd274,PlaceAlias,彭记特色小肠炖鸡,REF_ADMIN_SCOPE,admin_520121,AdminArea,开阳县,,[],{}
+alias_01ab27dc-4d1a-47c2-bb9a-0922a7404700,PlaceAlias,樊四爷蹄花粉,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01b1ab34-904d-4004-8197-f5b8066fc04b,PlaceAlias,万客来酒庄,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_01b517db-e66f-490f-83cb-dad56d848b5f,PlaceAlias,社会烙锅,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01b9e1e3-0784-4c24-9aeb-89f8f878d88c,PlaceAlias,念念冰(青云步行街西门),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01bcc296-eeb6-4aac-a6ae-0a48691f7a8b,PlaceAlias,瑞幸咖啡(贵大东校区店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_01bea5ba-39de-4d75-831c-648ac2e89bdd,PlaceAlias,盘州铜锅牛肉(枫林路店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01c02172-5585-4c44-bdfc-7b31174688f6,PlaceAlias,二娃铁签烤肉(黔东九华大院店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01c07493-1911-466c-b2d9-144072819faa,PlaceAlias,环北火凤凰·黄豆龙骨汤烫菜(益田假日世界购物中心店),REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01c2363e-61f8-45a6-9472-bbcd19025b09,PlaceAlias,文记炸酱粉面,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01c24971-cf55-49be-8f92-7aa193759135,PlaceAlias,泰吉全羊(兴隆街店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01c395a6-231a-409f-99a7-73a833dac0fe,PlaceAlias,毛毛哥·鲜鱼杂火锅(新添寨店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_01c4036f-aca7-4d57-b035-104d2e64f72a,PlaceAlias,多纳多披萨&牛排(小河万科店),REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_01cbd921-8404-4e76-880a-c5306c9286a2,PlaceAlias,农家粉(悦景新城店),REF_ADMIN_SCOPE,admin_520112,AdminArea,乌当区,,[],{}
+alias_01cbde0f-5d67-4b50-8610-b02704a58db1,PlaceAlias,麻爪爪(贵阳中铁逸都店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01d188ba-21bd-44c8-84c5-49b937050032,PlaceAlias,鸟撞云 WaveBird,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_01d5509e-4c23-48dd-b91c-f242b339dc21,PlaceAlias,范记家常菜馆,REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01dacae1-34c8-40c2-a6dd-e47823b3445f,PlaceAlias,廖幺哥羌族风味干香脆肚火锅,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_01dcbfe0-1ad5-4d5a-b9f4-041996e505e8,PlaceAlias,小云凤热汤丝娃娃,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_01ddc05c-9f47-4f75-a217-ea216a58aaea,PlaceAlias,荣膳荷羊肉粉(花果园店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01e021c9-2348-4566-a831-7aca14705d3a,PlaceAlias,习水特色豆腐皮火锅(畔山丽苑店),REF_ADMIN_SCOPE,admin_520102,AdminArea,南明区,,[],{}
+alias_01e9f336-7b05-4fd0-8681-d04fdab2aba5,PlaceAlias,宓境·私厨别院,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01f1125e-24fe-42fe-8048-ad40f3501f26,PlaceAlias,特色土家芷江鸭火锅,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01f837ff-2616-477c-a905-a90627e5c2e9,PlaceAlias,文记花溪牛肉粉,REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01f89cc0-0900-4d81-aaf8-4d0a15aef76d,PlaceAlias,幸福时刻,REF_ADMIN_SCOPE,admin_520181,AdminArea,清镇市,,[],{}
+alias_01fa608f-ea7c-47d7-9997-38ee2ba82679,PlaceAlias,孙嬢嬢家羊汤锅,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}
+alias_01facd96-f7f5-4a2b-9167-a1f692a33897,PlaceAlias,玉姣砂锅粉砂锅饭(碧海店),REF_ADMIN_SCOPE,admin_520115,AdminArea,观山湖区,,[],{}
+alias_01fd651c-49da-42ff-8f92-e4f4b4e8f094,PlaceAlias,老五肠旺面,REF_ADMIN_SCOPE,admin_520103,AdminArea,云岩区,,[],{}
+alias_02012751-5be7-4a91-acfb-2ac95036b091,PlaceAlias,周波烧烤店(兴隆路店),REF_ADMIN_SCOPE,admin_520122,AdminArea,息烽县,,[],{}
+alias_02033757-bc0d-4188-8d3d-4677bd88c705,PlaceAlias,曾家羊肉粉(南大街店),REF_ADMIN_SCOPE,admin_520122,AdminArea,息烽县,,[],{}
+alias_020b63a5-01f5-4ca5-8738-39c9dee507cc,PlaceAlias,奇雅派餐饮食府,REF_ADMIN_SCOPE,admin_520111,AdminArea,花溪区,,[],{}

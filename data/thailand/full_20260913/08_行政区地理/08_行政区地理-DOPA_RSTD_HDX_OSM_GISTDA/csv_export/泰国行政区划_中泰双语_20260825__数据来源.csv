@@ -1,0 +1,14 @@
+﻿数据来源与许可,数据来源与许可,数据来源与许可
+优先使用泰国官方数据；边界和中文标签按来源许可组合，并在表中逐条标注,优先使用泰国官方数据；边界和中文标签按来源许可组合，并在表中逐条标注,优先使用泰国官方数据；边界和中文标签按来源许可组合，并在表中逐条标注
+,,
+来源,网址,用途/许可说明
+DOPA现行行政单位数量（2025-12-19）,https://www.bora.dopa.go.th/wp-content/uploads/2025/12/tabdb_19122568.pdf,"76府、878县、7,256乡、75,693村；另加曼谷50区、180分区"
+DOPA年度人口登记文件,https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php,村级名录取2025-12人口登记快照；零人口/新设村可能不在文件中
+Royal Thai Survey Department / HDX,https://data.humdata.org/dataset/cod-ab-tha,中心点、面积；有效日2022-01-22；CC BY-IGO
+Thailand canonical admin names,https://github.com/DevelopedbyWill/thailand-canonical-admin-names,现行ADM1-3代码/泰英名称；CC BY 4.0
+Canonical DOI,https://doi.org/10.5281/zenodo.20049930,可复现版本归档
+GISTDA村庄点位,https://gistdaportal.gistda.or.th/arcgis/rest/services/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%81%E0%B8%84%E0%B8%A3%E0%B8%AD%E0%B8%87/MapServer/1,历史村庄点图层；仅匹配现行村代码的点位进入交付
+Wikidata,https://query.wikidata.org/,县区/乡分区已有中文标签及部分坐标；CC0
+OpenStreetMap,https://www.openstreetmap.org/copyright,曼谷180分区当前边界；ODbL；抓取日2026-08-25
+Google Maps DDS覆盖表,https://developers.google.com/maps/documentation/javascript/dds-boundaries/coverage,泰国支持COUNTRY和ADMIN_AREA_LEVEL_1，不支持ADMIN_AREA_LEVEL_2
+Google Maps DDS说明,https://developers.google.com/maps/documentation/javascript/dds-boundaries/overview,Google原生边界按Place ID着色，不提供边界坐标下载

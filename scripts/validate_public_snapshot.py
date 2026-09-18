@@ -76,6 +76,39 @@ def validate_csv_counts(errors: list[str]) -> None:
             fail(f"CSV row count mismatch: {relative}: {rows} != {expected}", errors)
 
 
+def validate_all_csv(errors: list[str]) -> tuple[int, int]:
+    csv.field_size_limit(sys.maxsize)
+    file_count = 0
+    data_rows = 0
+    for path in sorted(ROOT.rglob("*.csv")):
+        if ".git" in path.parts:
+            continue
+        file_count += 1
+        try:
+            with path.open("r", encoding="utf-8-sig", newline="") as handle:
+                reader = csv.reader(handle)
+                first_row = next(reader)
+                width = len(first_row)
+                if path.parent.name == "csv_export" and width == 0:
+                    fail(f"exported CSV has zero columns: {path.relative_to(ROOT)}", errors)
+                    continue
+                if any(cell != "" for cell in first_row):
+                    data_rows += 1
+                for row_number, row in enumerate(reader, start=2):
+                    if any(cell != "" for cell in row):
+                        data_rows += 1
+                    if path.parent.name == "csv_export" and len(row) != width:
+                        fail(
+                            f"exported CSV width mismatch at row {row_number}: "
+                            f"{path.relative_to(ROOT)}: {len(row)} != {width}",
+                            errors,
+                        )
+                        break
+        except (UnicodeDecodeError, csv.Error, StopIteration) as exc:
+            fail(f"invalid CSV: {path.relative_to(ROOT)}: {exc}", errors)
+    return file_count, data_rows
+
+
 def validate_geojson_counts(errors: list[str]) -> None:
     for relative, expected in EXPECTED_GEOJSON_FEATURES.items():
         path = ROOT / relative
@@ -107,6 +140,7 @@ def main() -> int:
     errors: list[str] = []
     validate_json(errors)
     validate_csv_counts(errors)
+    csv_files, csv_rows = validate_all_csv(errors)
     validate_geojson_counts(errors)
     validate_public_safety(errors)
 
@@ -118,7 +152,9 @@ def main() -> int:
 
     print("PUBLIC SNAPSHOT VALIDATION PASSED")
     print(f"- JSON files: {sum(1 for _ in ROOT.rglob('*.json'))}")
-    print(f"- Checked CSV contracts: {len(EXPECTED_CSV_ROWS)}")
+    print(f"- Parsed CSV files: {csv_files}")
+    print(f"- Parsed CSV data rows: {csv_rows}")
+    print(f"- Checked fixed CSV contracts: {len(EXPECTED_CSV_ROWS)}")
     print(f"- Checked GeoJSON contracts: {len(EXPECTED_GEOJSON_FEATURES)}")
     return 0
 

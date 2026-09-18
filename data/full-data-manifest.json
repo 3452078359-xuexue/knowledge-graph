@@ -1,22 +1,22 @@
 {
   "snapshotVersion": "full-data-v1",
-  "generatedAt": "2026-09-18T02:10:32.054306+00:00",
+  "generatedAt": "2026-09-18T03:31:35.008839+00:00",
   "regularFileLimitMiB": 45,
-  "privacyBoundary": "Sanitized private-repository snapshot; credentials, local paths, caches, duplicate archives, obsolete backups, debug inspections, and failure screenshots are excluded.",
+  "privacyBoundary": "Sanitized public-repository snapshot; credentials, local paths, caches, duplicate archives, obsolete backups, debug inspections, and failure screenshots are excluded. Workbook sheets are also published as UTF-8 CSV.",
   "packages": [
     {
       "label": "guiyang_v11_2_full",
       "sourcePackage": "贵州城市知识图谱",
       "destination": "data/guiyang/full_v11_2",
       "totals": {
-        "excluded_bytes": 157597450,
+        "excluded_bytes": 157599498,
         "excluded_files": 50,
-        "included_files": 160,
-        "sanitized_bytes": 1039134878,
-        "source_bytes": 1040807837,
+        "included_files": 186,
+        "sanitized_bytes": 1166084290,
+        "source_bytes": 1168193935,
         "storage_gzip": 4,
-        "storage_regular": 156,
-        "stored_bytes": 479806567
+        "storage_regular": 182,
+        "stored_bytes": 606755979
       },
       "files": [
         {
@@ -68,6 +68,114 @@
           "storedBytes": 2304,
           "sanitizedSha256": "29d96eefb18ff2f3bc28641654989295edf7506889fc6f10643b5b856b37afe4",
           "storedSha256": "29d96eefb18ff2f3bc28641654989295edf7506889fc6f10643b5b856b37afe4"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__H3网格样本.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__H3网格样本.csv",
+          "storage": "regular",
+          "sourceBytes": 2100435,
+          "sanitizedBytes": 2100435,
+          "storedBytes": 2100435,
+          "sanitizedSha256": "9166814a621c03d4a828507a3f09a1cadcaf1e105de0ba9f0c683a84bac9898f",
+          "storedSha256": "9166814a621c03d4a828507a3f09a1cadcaf1e105de0ba9f0c683a84bac9898f",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "H3网格样本"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__关系汇总样本.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__关系汇总样本.csv",
+          "storage": "regular",
+          "sourceBytes": 190435,
+          "sanitizedBytes": 190435,
+          "storedBytes": 190435,
+          "sanitizedSha256": "036ff55622154a67c76e93f21c8426a5b9606838257b1044f29f07280f8da63c",
+          "storedSha256": "036ff55622154a67c76e93f21c8426a5b9606838257b1044f29f07280f8da63c",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "关系汇总样本"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__商圈片区.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__商圈片区.csv",
+          "storage": "regular",
+          "sourceBytes": 149019,
+          "sanitizedBytes": 149019,
+          "storedBytes": 149019,
+          "sanitizedSha256": "1842ad83afaf12f6ec918b2a56694a39a20476102deb84671190af0471f1d469",
+          "storedSha256": "1842ad83afaf12f6ec918b2a56694a39a20476102deb84671190af0471f1d469",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "商圈片区"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__地名别名样本.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__地名别名样本.csv",
+          "storage": "regular",
+          "sourceBytes": 1389325,
+          "sanitizedBytes": 1389325,
+          "storedBytes": 1389325,
+          "sanitizedSha256": "ec1704a44a1cd8aacf5ac8f765a579ef762cdab420c0daf30650dc262ed1ce2a",
+          "storedSha256": "ec1704a44a1cd8aacf5ac8f765a579ef762cdab420c0daf30650dc262ed1ce2a",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "地名别名样本"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__城市.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__城市.csv",
+          "storage": "regular",
+          "sourceBytes": 595,
+          "sanitizedBytes": 595,
+          "storedBytes": 595,
+          "sanitizedSha256": "ccaa11224e7ce4a00e0c855386ea175463258a46df7c4970992c4a75b861ad0c",
+          "storedSha256": "ccaa11224e7ce4a00e0c855386ea175463258a46df7c4970992c4a75b861ad0c",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "城市"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__字段字典.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__字段字典.csv",
+          "storage": "regular",
+          "sourceBytes": 45596,
+          "sanitizedBytes": 45596,
+          "storedBytes": 45596,
+          "sanitizedSha256": "08b182bb7c4ae20d484505bf937c5f49aa8c6ece30f718f440ed30b8e2ae6d9a",
+          "storedSha256": "08b182bb7c4ae20d484505bf937c5f49aa8c6ece30f718f440ed30b8e2ae6d9a",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "字段字典"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__官方区划审核.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__官方区划审核.csv",
+          "storage": "regular",
+          "sourceBytes": 325214,
+          "sanitizedBytes": 325214,
+          "storedBytes": 325214,
+          "sanitizedSha256": "b72113b76c0dd76dabdba946963b33dfc2be3b05985a4f00bbc2af088875936c",
+          "storedSha256": "b72113b76c0dd76dabdba946963b33dfc2be3b05985a4f00bbc2af088875936c",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "官方区划审核"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__空间摘要.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__空间摘要.csv",
+          "storage": "regular",
+          "sourceBytes": 2438,
+          "sanitizedBytes": 2438,
+          "storedBytes": 2438,
+          "sanitizedSha256": "adc5bb8aed4608f39626206e696e21f90031efb5c1eec5f37ffece4c0b2ba364",
+          "storedSha256": "adc5bb8aed4608f39626206e696e21f90031efb5c1eec5f37ffece4c0b2ba364",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "空间摘要"
+        },
+        {
+          "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__行政区.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/csv_export/贵阳市空间行政区数据_结构化总表__行政区.csv",
+          "storage": "regular",
+          "sourceBytes": 336473,
+          "sanitizedBytes": 336473,
+          "storedBytes": 336473,
+          "sanitizedSha256": "fc130f67f0f9af15d74a79968c7afb21610aae99cb6a0b39db2150acb10cd821",
+          "storedSha256": "fc130f67f0f9af15d74a79968c7afb21610aae99cb6a0b39db2150acb10cd821",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+          "worksheet": "行政区"
         },
         {
           "sourcePath": "02_Data数据/01_贵阳市空间行政区数据/贵阳市H3空间网格数据.json",
@@ -460,6 +568,102 @@
           "storedSha256": "90061ef0c12388d2391c79c78175be40cf3d1be8e23152429536b53a1ad9698e"
         },
         {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__CollectionBatch.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__CollectionBatch.csv",
+          "storage": "regular",
+          "sourceBytes": 794,
+          "sanitizedBytes": 794,
+          "storedBytes": 794,
+          "sanitizedSha256": "3c3aa8ed7b9222d9d379543c11f311ffbfeb9aa80ae90f0459b410b9824ba654",
+          "storedSha256": "3c3aa8ed7b9222d9d379543c11f311ffbfeb9aa80ae90f0459b410b9824ba654",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_24238家.xlsx",
+          "worksheet": "CollectionBatch"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__DataSource.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__DataSource.csv",
+          "storage": "regular",
+          "sourceBytes": 710,
+          "sanitizedBytes": 710,
+          "storedBytes": 710,
+          "sanitizedSha256": "ab86b0879fa8f8e44dc55059b1f81b17123d206f0d72e6981ab3db4671e604fc",
+          "storedSha256": "ab86b0879fa8f8e44dc55059b1f81b17123d206f0d72e6981ab3db4671e604fc",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_24238家.xlsx",
+          "worksheet": "DataSource"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__挂载摘要.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__挂载摘要.csv",
+          "storage": "regular",
+          "sourceBytes": 1970,
+          "sanitizedBytes": 1970,
+          "storedBytes": 1970,
+          "sanitizedSha256": "6575a16f916814b3153c686489943d996b87456f390ba3bcb9f4dde38575222a",
+          "storedSha256": "6575a16f916814b3153c686489943d996b87456f390ba3bcb9f4dde38575222a",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_24238家.xlsx",
+          "worksheet": "挂载摘要"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__美食POI与地名索引.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_24238家__美食POI与地名索引.csv",
+          "storage": "regular",
+          "sourceBytes": 14744305,
+          "sanitizedBytes": 14744305,
+          "storedBytes": 14744305,
+          "sanitizedSha256": "68e320a319f8524e6065a9102c0c135ee4d7968e0102c058bd59d894183049cb",
+          "storedSha256": "68e320a319f8524e6065a9102c0c135ee4d7968e0102c058bd59d894183049cb",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_24238家.xlsx",
+          "worksheet": "美食POI与地名索引"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__区县冲突待核.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__区县冲突待核.csv",
+          "storage": "regular",
+          "sourceBytes": 138,
+          "sanitizedBytes": 138,
+          "storedBytes": 138,
+          "sanitizedSha256": "b2520d71ee454479a7fbfde27b46e882dd0a30939a893b3d6b39bdb42b909a2d",
+          "storedSha256": "b2520d71ee454479a7fbfde27b46e882dd0a30939a893b3d6b39bdb42b909a2d",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_关键字段补全_24238家.xlsx",
+          "worksheet": "区县冲突待核"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__父POI待核.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__父POI待核.csv",
+          "storage": "regular",
+          "sourceBytes": 133260,
+          "sanitizedBytes": 133260,
+          "storedBytes": 133260,
+          "sanitizedSha256": "8b3f9e295002748dfaf6ba6755c3d7a44969686acc6b73d51777f204be75f9eb",
+          "storedSha256": "8b3f9e295002748dfaf6ba6755c3d7a44969686acc6b73d51777f204be75f9eb",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_关键字段补全_24238家.xlsx",
+          "worksheet": "父POI待核"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__美食POI.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__美食POI.csv",
+          "storage": "regular",
+          "sourceBytes": 74029235,
+          "sanitizedBytes": 74029235,
+          "storedBytes": 74029235,
+          "sanitizedSha256": "2ba3ec08c92a00d3f3f90cd33261b0dac62a1bd6e80972f73ce6e6ed1dd566fc",
+          "storedSha256": "2ba3ec08c92a00d3f3f90cd33261b0dac62a1bd6e80972f73ce6e6ed1dd566fc",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_关键字段补全_24238家.xlsx",
+          "worksheet": "美食POI"
+        },
+        {
+          "sourcePath": "02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__补全摘要.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/csv_export/贵阳市美食POI_评分3.5以上_关键字段补全_24238家__补全摘要.csv",
+          "storage": "regular",
+          "sourceBytes": 2006,
+          "sanitizedBytes": 2006,
+          "storedBytes": 2006,
+          "sanitizedSha256": "cef0e15b1a50c84e06531343ff90b7537c2d3e2ddf1c6dca6e765b6d3432cd99",
+          "storedSha256": "cef0e15b1a50c84e06531343ff90b7537c2d3e2ddf1c6dca6e765b6d3432cd99",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_关键字段补全_24238家.xlsx",
+          "worksheet": "补全摘要"
+        },
+        {
           "sourcePath": "02_Data数据/03_贵阳市美食数据/贵阳市数据来源使用规则.json",
           "storedPath": "data/guiyang/full_v11_2/02_Data数据/03_贵阳市美食数据/贵阳市数据来源使用规则.json",
           "storage": "regular",
@@ -568,6 +772,114 @@
           "storedBytes": 1760,
           "sanitizedSha256": "afa9ee2ba78ce2b448aa5ce53dde3df53447928f8f27b1b52fddf5a26de7a102",
           "storedSha256": "afa9ee2ba78ce2b448aa5ce53dde3df53447928f8f27b1b52fddf5a26de7a102"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通摘要.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通摘要.csv",
+          "storage": "regular",
+          "sourceBytes": 1774,
+          "sanitizedBytes": 1774,
+          "storedBytes": 1774,
+          "sanitizedSha256": "f969328fb8e4fd12d485935ba2108a646011ab4c20b2bbc2dca9eb858ba20c19",
+          "storedSha256": "f969328fb8e4fd12d485935ba2108a646011ab4c20b2bbc2dca9eb858ba20c19",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "交通摘要"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通枢纽.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通枢纽.csv",
+          "storage": "regular",
+          "sourceBytes": 10916,
+          "sanitizedBytes": 10916,
+          "storedBytes": 10916,
+          "sanitizedSha256": "804d29957dffe5e076538bf33332519f5857555bdd3adaa049eb66d99af61fc7",
+          "storedSha256": "804d29957dffe5e076538bf33332519f5857555bdd3adaa049eb66d99af61fc7",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "交通枢纽"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通设施.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通设施.csv",
+          "storage": "regular",
+          "sourceBytes": 8390755,
+          "sanitizedBytes": 8390755,
+          "storedBytes": 8390755,
+          "sanitizedSha256": "602792ce15021aef9526ff8ac2e5f0687fe74cbb09dbd29c694bb16f117e6fcc",
+          "storedSha256": "602792ce15021aef9526ff8ac2e5f0687fe74cbb09dbd29c694bb16f117e6fcc",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "交通设施"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通路线.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__交通路线.csv",
+          "storage": "regular",
+          "sourceBytes": 4124209,
+          "sanitizedBytes": 4124209,
+          "storedBytes": 4124209,
+          "sanitizedSha256": "a8e838c98306656b62823ae1ee8f0c7dc94783fc80dbfe8081fcf0fa0365be5d",
+          "storedSha256": "a8e838c98306656b62823ae1ee8f0c7dc94783fc80dbfe8081fcf0fa0365be5d",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "交通路线"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__公交站点.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__公交站点.csv",
+          "storage": "regular",
+          "sourceBytes": 7246887,
+          "sanitizedBytes": 7246887,
+          "storedBytes": 7246887,
+          "sanitizedSha256": "9d61246031cac7ff095ff592237b9fe32bd6620d0864ba232551dccf748d6798",
+          "storedSha256": "9d61246031cac7ff095ff592237b9fe32bd6620d0864ba232551dccf748d6798",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "公交站点"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__公交线路.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__公交线路.csv",
+          "storage": "regular",
+          "sourceBytes": 490841,
+          "sanitizedBytes": 490841,
+          "storedBytes": 490841,
+          "sanitizedSha256": "78fc1963d14ed3836d6ad2fce28c9f045c408f62e7b38a115c1864d974b6c422",
+          "storedSha256": "78fc1963d14ed3836d6ad2fce28c9f045c408f62e7b38a115c1864d974b6c422",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "公交线路"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__关系明细.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__关系明细.csv",
+          "storage": "regular",
+          "sourceBytes": 13596547,
+          "sanitizedBytes": 13596547,
+          "storedBytes": 13596547,
+          "sanitizedSha256": "2bd2aeceb6e75f7bd7d04b0120b351179952db5fb4c737b9a0fa29f9e127f13d",
+          "storedSha256": "2bd2aeceb6e75f7bd7d04b0120b351179952db5fb4c737b9a0fa29f9e127f13d",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "关系明细"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__字段字典.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__字段字典.csv",
+          "storage": "regular",
+          "sourceBytes": 38339,
+          "sanitizedBytes": 38339,
+          "storedBytes": 38339,
+          "sanitizedSha256": "53d56bc5e679de8d8c55d43735493499ceddf19a7f6a972f291b21ab88819e86",
+          "storedSha256": "53d56bc5e679de8d8c55d43735493499ceddf19a7f6a972f291b21ab88819e86",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "字段字典"
+        },
+        {
+          "sourcePath": "02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__票价规则.csv",
+          "storedPath": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/csv_export/贵阳市交通数据_结构化总表__票价规则.csv",
+          "storage": "regular",
+          "sourceBytes": 33882,
+          "sanitizedBytes": 33882,
+          "storedBytes": 33882,
+          "sanitizedSha256": "c23258bf30e0b866baecbd31e4705aba4c9a2615434af2386560724f2e5dab89",
+          "storedSha256": "c23258bf30e0b866baecbd31e4705aba4c9a2615434af2386560724f2e5dab89",
+          "derivedFrom": "data/guiyang/full_v11_2/02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+          "worksheet": "票价规则"
         },
         {
           "sourcePath": "02_Data数据/05_贵阳市交通数据/贵阳市交通关系明细表.csv",
@@ -884,10 +1196,10 @@
           "storedPath": "data/guiyang/full_v11_2/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
           "storage": "regular",
           "sourceBytes": 4652085,
-          "sanitizedBytes": 4599741,
-          "storedBytes": 4599741,
-          "sanitizedSha256": "7bd7a9eb07fcba1990390d1c8b251fe9aae18767053980c5496a18de22659089",
-          "storedSha256": "7bd7a9eb07fcba1990390d1c8b251fe9aae18767053980c5496a18de22659089"
+          "sanitizedBytes": 4547397,
+          "storedBytes": 4547397,
+          "sanitizedSha256": "5d920e92c6b752ed23121d8a6c0623a704313d12b3b4ad54b07d9af6a3505102",
+          "storedSha256": "5d920e92c6b752ed23121d8a6c0623a704313d12b3b4ad54b07d9af6a3505102"
         },
         {
           "sourcePath": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
@@ -1004,20 +1316,20 @@
           "storedPath": "data/guiyang/full_v11_2/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260916_贵阳高价值POI点点补采/02_原始采集/贵阳高价值POI体验补采_点点AI问答.jsonl",
           "storage": "regular",
           "sourceBytes": 16928074,
-          "sanitizedBytes": 16764269,
-          "storedBytes": 16764269,
-          "sanitizedSha256": "33b0825d8094223421bb2eaa0cf684a86ec7fe3e1108fa74280b5db45a74f3e1",
-          "storedSha256": "33b0825d8094223421bb2eaa0cf684a86ec7fe3e1108fa74280b5db45a74f3e1"
+          "sanitizedBytes": 16600639,
+          "storedBytes": 16600639,
+          "sanitizedSha256": "7b4523396b9c86c09f6da82ef4e682e9ed95ffb25bb3488005d34042138b7ffb",
+          "storedSha256": "7b4523396b9c86c09f6da82ef4e682e9ed95ffb25bb3488005d34042138b7ffb"
         },
         {
           "sourcePath": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260916_贵阳高价值POI点点补采/02_原始采集/贵阳高价值POI体验补采_点点AI问答_参考帖子.csv",
           "storedPath": "data/guiyang/full_v11_2/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260916_贵阳高价值POI点点补采/02_原始采集/贵阳高价值POI体验补采_点点AI问答_参考帖子.csv",
           "storage": "regular",
           "sourceBytes": 13667706,
-          "sanitizedBytes": 13503906,
-          "storedBytes": 13503906,
-          "sanitizedSha256": "93f308a033c85d5a0320550e473c33e82dbdccaa191f71bd7fc92f6eaba701b5",
-          "storedSha256": "93f308a033c85d5a0320550e473c33e82dbdccaa191f71bd7fc92f6eaba701b5"
+          "sanitizedBytes": 13335538,
+          "storedBytes": 13335538,
+          "sanitizedSha256": "1fe8275748312428c7c136b0d3a633981414c8f07afa09bef68612902045d30f",
+          "storedSha256": "1fe8275748312428c7c136b0d3a633981414c8f07afa09bef68612902045d30f"
         },
         {
           "sourcePath": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260916_贵阳高价值POI点点补采/02_原始采集/采集运行状态.json",
@@ -1344,10 +1656,10 @@
           "storedPath": "data/guiyang/full_v11_2/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
           "storage": "regular",
           "sourceBytes": 4548175,
-          "sanitizedBytes": 4495831,
-          "storedBytes": 4495831,
-          "sanitizedSha256": "51ffb82aa9c1eb7283a30c1ad4f6a397068a30f988c872d34a5098798915b098",
-          "storedSha256": "51ffb82aa9c1eb7283a30c1ad4f6a397068a30f988c872d34a5098798915b098"
+          "sanitizedBytes": 4443487,
+          "storedBytes": 4443487,
+          "sanitizedSha256": "eb275e7bc285c70993afc1d980670ffb1d1612105fa0ceb59addd1c7d9ab4925",
+          "storedSha256": "eb275e7bc285c70993afc1d980670ffb1d1612105fa0ceb59addd1c7d9ab4925"
         },
         {
           "sourcePath": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
@@ -2036,6 +2348,7 @@
         },
         "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv": {
           "aws_access_key": 0,
+          "csv_secret_field_xsec_token": 1454,
           "google_api_key": 0,
           "local_absolute_path": 0,
           "url_parameter_xsec_token": 1454
@@ -2099,6 +2412,7 @@
           "local_absolute_path": 5
         },
         "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260916_贵阳高价值POI点点补采/02_原始采集/贵阳高价值POI体验补采_点点AI问答.jsonl": {
+          "assigned_secret": 4567,
           "aws_access_key": 0,
           "google_api_key": 0,
           "local_absolute_path": 5,
@@ -2106,6 +2420,7 @@
         },
         "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260916_贵阳高价值POI点点补采/02_原始采集/贵阳高价值POI体验补采_点点AI问答_参考帖子.csv": {
           "aws_access_key": 0,
+          "csv_secret_field_xsec_token": 4550,
           "google_api_key": 0,
           "local_absolute_path": 0,
           "url_parameter_xsec_token": 4550
@@ -2281,6 +2596,7 @@
         },
         "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv": {
           "aws_access_key": 0,
+          "csv_secret_field_xsec_token": 1454,
           "google_api_key": 0,
           "local_absolute_path": 0,
           "url_parameter_xsec_token": 1454
@@ -2639,14 +2955,14 @@
       "sourcePackage": "泰国数据业务分类整理_20260913",
       "destination": "data/thailand/full_20260913",
       "totals": {
-        "excluded_bytes": 94874703,
-        "excluded_files": 10,
-        "included_files": 288,
-        "sanitized_bytes": 559228869,
-        "source_bytes": 559979118,
+        "excluded_bytes": 94919783,
+        "excluded_files": 16,
+        "included_files": 317,
+        "sanitized_bytes": 614226888,
+        "source_bytes": 614977137,
         "storage_gzip": 2,
-        "storage_regular": 286,
-        "stored_bytes": 372895183
+        "storage_regular": 315,
+        "stored_bytes": 427893202
       },
       "files": [
         {
@@ -2968,6 +3284,102 @@
           "storedBytes": 8498,
           "sanitizedSha256": "7b15a2a324a47a9a887a442fdbedbf064385e9509ff410e41c199ee6498d7644",
           "storedSha256": "7b15a2a324a47a9a887a442fdbedbf064385e9509ff410e41c199ee6498d7644"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__价格快照.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__价格快照.csv",
+          "storage": "regular",
+          "sourceBytes": 21805,
+          "sanitizedBytes": 21805,
+          "storedBytes": 21805,
+          "sanitizedSha256": "03697c1df880edc115635c7957e2640bd772fc320a282f933e3cfbe07c990220",
+          "storedSha256": "03697c1df880edc115635c7957e2640bd772fc320a282f933e3cfbe07c990220",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "价格快照"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__全部发现.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__全部发现.csv",
+          "storage": "regular",
+          "sourceBytes": 74547,
+          "sanitizedBytes": 74547,
+          "storedBytes": 74547,
+          "sanitizedSha256": "4ba72f11f834d5a23808f434e6377b64c7ff005b0f6a42fc3ea3220d056c425f",
+          "storedSha256": "4ba72f11f834d5a23808f434e6377b64c7ff005b0f6a42fc3ea3220d056c425f",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "全部发现"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__分页审计.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__分页审计.csv",
+          "storage": "regular",
+          "sourceBytes": 2048,
+          "sanitizedBytes": 2048,
+          "storedBytes": 2048,
+          "sanitizedSha256": "0f6889c05b25ef978ff8492453accd66b0d191b8eeee018598917a2bb03105e9",
+          "storedSha256": "0f6889c05b25ef978ff8492453accd66b0d191b8eeee018598917a2bb03105e9",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "分页审计"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__周边与待核验.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__周边与待核验.csv",
+          "storage": "regular",
+          "sourceBytes": 7794,
+          "sanitizedBytes": 7794,
+          "storedBytes": 7794,
+          "sanitizedSha256": "db1e36919a3a070234a0725b4af9463eb5958d1ac9bd8b3e3168e5af62deae51",
+          "storedSha256": "db1e36919a3a070234a0725b4af9463eb5958d1ac9bd8b3e3168e5af62deae51",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "周边与待核验"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__字段说明.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__字段说明.csv",
+          "storage": "regular",
+          "sourceBytes": 2583,
+          "sanitizedBytes": 2583,
+          "storedBytes": 2583,
+          "sanitizedSha256": "265e1fab70d2ac83c9c23d8ab7874bad878d7f4c8e30f8040276de31a8923ca5",
+          "storedSha256": "265e1fab70d2ac83c9c23d8ab7874bad878d7f4c8e30f8040276de31a8923ca5",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "字段说明"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__本地景点.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__本地景点.csv",
+          "storage": "regular",
+          "sourceBytes": 50987,
+          "sanitizedBytes": 50987,
+          "storedBytes": 50987,
+          "sanitizedSha256": "7e4cecec54aa9e2ffc096f96113cf12fb3e43a23241ddb55880a79a88a2b533f",
+          "storedSha256": "7e4cecec54aa9e2ffc096f96113cf12fb3e43a23241ddb55880a79a88a2b533f",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "本地景点"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__活动与合集.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__活动与合集.csv",
+          "storage": "regular",
+          "sourceBytes": 17018,
+          "sanitizedBytes": 17018,
+          "storedBytes": 17018,
+          "sanitizedSha256": "ea72665a36ea240303775413dbce00f088036991d87d464067db828ead6135a6",
+          "storedSha256": "ea72665a36ea240303775413dbce00f088036991d87d464067db828ead6135a6",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "活动与合集"
+        },
+        {
+          "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__采集概览.csv",
+          "storedPath": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/csv_export/携程_曼谷景点_首批采集__采集概览.csv",
+          "storage": "regular",
+          "sourceBytes": 1602,
+          "sanitizedBytes": 1602,
+          "storedBytes": 1602,
+          "sanitizedSha256": "9068d9c6c8e137871d7cd9e269a93e1c7dbebd616898ddcb6eea968cb7c86f33",
+          "storedSha256": "9068d9c6c8e137871d7cd9e269a93e1c7dbebd616898ddcb6eea968cb7c86f33",
+          "derivedFrom": "data/thailand/full_20260913/02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷景点_首批采集.xlsx",
+          "worksheet": "采集概览"
         },
         {
           "sourcePath": "02_景点游玩/02_景点游玩-携程/交付表/携程_曼谷_价格快照.csv",
@@ -5150,6 +5562,150 @@
           "storedSha256": "c638b59e33f367dc9397dca9a9470fb8322f824ef12ddb703177b517a5d7f83f"
         },
         {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__住客点评.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__住客点评.csv",
+          "storage": "regular",
+          "sourceBytes": 161,
+          "sanitizedBytes": 161,
+          "storedBytes": 161,
+          "sanitizedSha256": "6dfec8058e9c6b5e3cda2af09b7d34f250f419d78ba7915ea78c92c4542b8dcc",
+          "storedSha256": "6dfec8058e9c6b5e3cda2af09b7d34f250f419d78ba7915ea78c92c4542b8dcc",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "住客点评"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__周边地点.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__周边地点.csv",
+          "storage": "regular",
+          "sourceBytes": 7426969,
+          "sanitizedBytes": 7426969,
+          "storedBytes": 7426969,
+          "sanitizedSha256": "ebdc447fd7cae50613b130b5e96c201fe18fa9d2495204a8d73657fe13884a8a",
+          "storedSha256": "ebdc447fd7cae50613b130b5e96c201fe18fa9d2495204a8d73657fe13884a8a",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "周边地点"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__售卖方案.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__售卖方案.csv",
+          "storage": "regular",
+          "sourceBytes": 13961303,
+          "sanitizedBytes": 13961303,
+          "storedBytes": 13961303,
+          "sanitizedSha256": "f71d89a9b22e523a806af2aa041c99a86431b3e8d11f602aaf2cc61b60aad36c",
+          "storedSha256": "f71d89a9b22e523a806af2aa041c99a86431b3e8d11f602aaf2cc61b60aad36c",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "售卖方案"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__房型.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__房型.csv",
+          "storage": "regular",
+          "sourceBytes": 1120075,
+          "sanitizedBytes": 1120075,
+          "storedBytes": 1120075,
+          "sanitizedSha256": "720cc4ab8d3c78fbe6cf77aa71c1be45bab4f0d413908d3eb6fe93db70319cc0",
+          "storedSha256": "720cc4ab8d3c78fbe6cf77aa71c1be45bab4f0d413908d3eb6fe93db70319cc0",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "房型"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__网络响应索引.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__网络响应索引.csv",
+          "storage": "regular",
+          "sourceBytes": 587865,
+          "sanitizedBytes": 587865,
+          "storedBytes": 587865,
+          "sanitizedSha256": "742c91b313c6145fb90e2836398a7216d875c1fb20de4e5240b27f0a2bc04fdf",
+          "storedSha256": "742c91b313c6145fb90e2836398a7216d875c1fb20de4e5240b27f0a2bc04fdf",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "网络响应索引"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__设施服务.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__设施服务.csv",
+          "storage": "regular",
+          "sourceBytes": 8892753,
+          "sanitizedBytes": 8892753,
+          "storedBytes": 8892753,
+          "sanitizedSha256": "20601666b9d405e49cafb0e55ba14aad201f627f408340b9c45db4db3189a830",
+          "storedSha256": "20601666b9d405e49cafb0e55ba14aad201f627f408340b9c45db4db3189a830",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "设施服务"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店_房型待补（风控）表.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店_房型待补（风控）表.csv",
+          "storage": "regular",
+          "sourceBytes": 169847,
+          "sanitizedBytes": 169847,
+          "storedBytes": 169847,
+          "sanitizedSha256": "8376c9f4f501224dc6966467a2107533bb753a634e746687b95e9fc3d2b6d6c6",
+          "storedSha256": "8376c9f4f501224dc6966467a2107533bb753a634e746687b95e9fc3d2b6d6c6",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "酒店_房型待补（风控）表"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店发现清单.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店发现清单.csv",
+          "storage": "regular",
+          "sourceBytes": 472282,
+          "sanitizedBytes": 472282,
+          "storedBytes": 472282,
+          "sanitizedSha256": "88097fd5f24bb0eb5c67ab6a6cc568d74d3b6ab20d6a389531455ee69514555b",
+          "storedSha256": "88097fd5f24bb0eb5c67ab6a6cc568d74d3b6ab20d6a389531455ee69514555b",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "酒店发现清单"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店图片.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店图片.csv",
+          "storage": "regular",
+          "sourceBytes": 13543755,
+          "sanitizedBytes": 13543755,
+          "storedBytes": 13543755,
+          "sanitizedSha256": "49cfc43685d7c077a4b5590caed0a513cd55cf347a0068fa8a10731bc5ccf58e",
+          "storedSha256": "49cfc43685d7c077a4b5590caed0a513cd55cf347a0068fa8a10731bc5ccf58e",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "酒店图片"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店基础信息.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店基础信息.csv",
+          "storage": "regular",
+          "sourceBytes": 1511124,
+          "sanitizedBytes": 1511124,
+          "storedBytes": 1511124,
+          "sanitizedSha256": "b31c17fb540380d82b6700d3203fa1e6f56a50b9d58ea20b8c44cfbf2c7e3011",
+          "storedSha256": "b31c17fb540380d82b6700d3203fa1e6f56a50b9d58ea20b8c44cfbf2c7e3011",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "酒店基础信息"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店政策.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/携程_酒店详情_全部数据__酒店政策.csv",
+          "storage": "regular",
+          "sourceBytes": 2509275,
+          "sanitizedBytes": 2509275,
+          "storedBytes": 2509275,
+          "sanitizedSha256": "bcbdde4f66fc5faad03d0a2be13c236810b6d8f30f295fe6038c78b0400824d4",
+          "storedSha256": "bcbdde4f66fc5faad03d0a2be13c236810b6d8f30f295fe6038c78b0400824d4",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/携程_酒店详情_全部数据.xlsx",
+          "worksheet": "酒店政策"
+        },
+        {
+          "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/酒店_房型待补（风控）表__酒店_房型待补（风控）表.csv",
+          "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/csv_export/酒店_房型待补（风控）表__酒店_房型待补（风控）表.csv",
+          "storage": "regular",
+          "sourceBytes": 169847,
+          "sanitizedBytes": 169847,
+          "storedBytes": 169847,
+          "sanitizedSha256": "8376c9f4f501224dc6966467a2107533bb753a634e746687b95e9fc3d2b6d6c6",
+          "storedSha256": "8376c9f4f501224dc6966467a2107533bb753a634e746687b95e9fc3d2b6d6c6",
+          "derivedFrom": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/酒店_房型待补（风控）表.xlsx",
+          "worksheet": "酒店_房型待补（风控）表"
+        },
+        {
           "sourcePath": "05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/detail_progress.json",
           "storedPath": "data/thailand/full_20260913/05_酒店住宿/05_酒店住宿-携程/酒店清单与详情/detail_progress.json",
           "storage": "regular",
@@ -5348,6 +5904,114 @@
           "storedBytes": 2931,
           "sanitizedSha256": "752ad74558effca9aea838e67ac9795958f59d0664e8c11ee318430421421919",
           "storedSha256": "752ad74558effca9aea838e67ac9795958f59d0664e8c11ee318430421421919"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__乡分区7436.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__乡分区7436.csv",
+          "storage": "regular",
+          "sourceBytes": 3780859,
+          "sanitizedBytes": 3780859,
+          "storedBytes": 3780859,
+          "sanitizedSha256": "e4bf971d7d0fd208eaef946e12cfab6cce3ccf334f310045acfffe735bc51f5a",
+          "storedSha256": "e4bf971d7d0fd208eaef946e12cfab6cce3ccf334f310045acfffe735bc51f5a",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "乡分区7436"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__使用说明.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__使用说明.csv",
+          "storage": "regular",
+          "sourceBytes": 4940,
+          "sanitizedBytes": 4940,
+          "storedBytes": 4940,
+          "sanitizedSha256": "28383632e1bcbf361c8eb2a240db8870608ba4607911a715c23d9233d1134f85",
+          "storedSha256": "28383632e1bcbf361c8eb2a240db8870608ba4607911a715c23d9233d1134f85",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "使用说明"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__县区928.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__县区928.csv",
+          "storage": "regular",
+          "sourceBytes": 461647,
+          "sanitizedBytes": 461647,
+          "storedBytes": 461647,
+          "sanitizedSha256": "a675b2ff1f0d9a73e8532a34fc474c958ed0f9e6139884df90a194c7845c2a5c",
+          "storedSha256": "a675b2ff1f0d9a73e8532a34fc474c958ed0f9e6139884df90a194c7845c2a5c",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "县区928"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__国家.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__国家.csv",
+          "storage": "regular",
+          "sourceBytes": 4136,
+          "sanitizedBytes": 4136,
+          "storedBytes": 4136,
+          "sanitizedSha256": "d7d048984fcd87999682ed30435b2c7fe3ef69ba02fda4227ff588caabbe2b4a",
+          "storedSha256": "d7d048984fcd87999682ed30435b2c7fe3ef69ba02fda4227ff588caabbe2b4a",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "国家"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__字段字典.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__字段字典.csv",
+          "storage": "regular",
+          "sourceBytes": 1498,
+          "sanitizedBytes": 1498,
+          "storedBytes": 1498,
+          "sanitizedSha256": "28027a3e98924317ff39afee3b0b0315e74da104cd32cdd4eae5e6f1ebbf8674",
+          "storedSha256": "28027a3e98924317ff39afee3b0b0315e74da104cd32cdd4eae5e6f1ebbf8674",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "字段字典"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__府级77.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__府级77.csv",
+          "storage": "regular",
+          "sourceBytes": 42231,
+          "sanitizedBytes": 42231,
+          "storedBytes": 42231,
+          "sanitizedSha256": "d5b9030e6ae51e0dd923d9110e55ddecb228e4bb05b87965f19e0ff77bfd3bea",
+          "storedSha256": "d5b9030e6ae51e0dd923d9110e55ddecb228e4bb05b87965f19e0ff77bfd3bea",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "府级77"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__数据来源.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__数据来源.csv",
+          "storage": "regular",
+          "sourceBytes": 2004,
+          "sanitizedBytes": 2004,
+          "storedBytes": 2004,
+          "sanitizedSha256": "a92a54f42d2abecd9716f5f34ae9a2799a24c475bbdebfdba9bcff67c47560b8",
+          "storedSha256": "a92a54f42d2abecd9716f5f34ae9a2799a24c475bbdebfdba9bcff67c47560b8",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "数据来源"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__数据覆盖.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__数据覆盖.csv",
+          "storage": "regular",
+          "sourceBytes": 1949,
+          "sanitizedBytes": 1949,
+          "storedBytes": 1949,
+          "sanitizedSha256": "5b0f13dbc6b67902381d368048981bd37c10986b4f70dee2fc5e00699f32bfe0",
+          "storedSha256": "5b0f13dbc6b67902381d368048981bd37c10986b4f70dee2fc5e00699f32bfe0",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "数据覆盖"
+        },
+        {
+          "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__村级样例380.csv",
+          "storedPath": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/csv_export/泰国行政区划_中泰双语_20260825__村级样例380.csv",
+          "storage": "regular",
+          "sourceBytes": 155115,
+          "sanitizedBytes": 155115,
+          "storedBytes": 155115,
+          "sanitizedSha256": "c88b654a78b509badcaa592bef18faf8de999cee20adade887826828ca94a006",
+          "storedSha256": "c88b654a78b509badcaa592bef18faf8de999cee20adade887826828ca94a006",
+          "derivedFrom": "data/thailand/full_20260913/08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/泰国行政区划_中泰双语_20260825.xlsx",
+          "worksheet": "村级样例380"
         },
         {
           "sourcePath": "08_行政区地理/08_行政区地理-DOPA_RSTD_HDX_OSM_GISTDA/数据质量报告.json",
@@ -7014,6 +7678,30 @@
       },
       "repairs": {},
       "exclusions": [
+        {
+          "path": ".DS_Store",
+          "reason": "operating_system_or_lock_file"
+        },
+        {
+          "path": "01_旅游综合/.DS_Store",
+          "reason": "operating_system_or_lock_file"
+        },
+        {
+          "path": "02_景点游玩/.DS_Store",
+          "reason": "operating_system_or_lock_file"
+        },
+        {
+          "path": "02_景点游玩/02_景点游玩-GoogleMapsPlaces/.DS_Store",
+          "reason": "operating_system_or_lock_file"
+        },
+        {
+          "path": "05_酒店住宿/.DS_Store",
+          "reason": "operating_system_or_lock_file"
+        },
+        {
+          "path": "05_酒店住宿/05_酒店住宿-GoogleMapsPlaces/.DS_Store",
+          "reason": "operating_system_or_lock_file"
+        },
         {
           "path": "分业务ZIP/01_旅游综合数据_按来源整理.zip",
           "reason": "non_canonical_directory"

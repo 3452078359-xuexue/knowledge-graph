@@ -1,0 +1,255 @@
+﻿entityType,entityChineseName,field,fieldChineseName,dataType,constraint,index,optional,description,currentNonEmptyCount,coveragePercent
+TransitHub,交通枢纽,id,标识,Text,NotNull,Text,,全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体,4,1
+TransitHub,交通枢纽,name,名称,Text,NotNull,TextAndVector,,,4,1
+TransitHub,交通枢纽,type,枢纽类型,Text,"NotNull,Enum=""机场,火车站,高铁站,客运站,地铁站,集散中心""",Text,,,4,1
+TransitHub,交通枢纽,level,枢纽级别,Text,"Enum=""国际,国家,区域,本地""",Text,,,4,1
+TransitHub,交通枢纽,accessGuide,到离指引,Text,,TextAndVector,,,3,0.75
+TransitHub,交通枢纽,serviceItems,服务项目,Text,MultiValue,TextAndVector,,,3,0.75
+TransitHub,交通枢纽,sourcePlaceId,来源地点ID,Text,,Text,,,4,1
+TransitHub,交通枢纽,amapPoiId,高德POI ID,Text,,Text,,,4,1
+TransitHub,交通枢纽,facilityClassCode,设施分类代码,Text,,Text,,,4,1
+TransitHub,交通枢纽,facilityClassName,设施分类名称,Text,,Text,,,4,1
+TransitHub,交通枢纽,detailType,设施细分类型,Text,,Text,,,4,1
+TransitHub,交通枢纽,address,地址,Text,,TextAndVector,,,4,1
+TransitHub,交通枢纽,province,省份,Text,,Text,,,4,1
+TransitHub,交通枢纽,city,城市,Text,,Text,,,4,1
+TransitHub,交通枢纽,district,区县,Text,,Text,,,4,1
+TransitHub,交通枢纽,adcode,行政区划代码,Text,,Text,,,4,1
+TransitHub,交通枢纽,telephone,联系电话,Text,,Text,,,3,0.75
+TransitHub,交通枢纽,website,网站,Text,,Text,,,0,0
+TransitHub,交通枢纽,sourceUrl,来源地址,Text,,Text,,,4,1
+TransitHub,交通枢纽,verificationStatus,核验状态,Text,,Text,,,3,0.75
+TransitHub,交通枢纽,qualityStatus,质量状态,Text,,Text,,,4,1
+TransitHub,交通枢纽,qualityNotes,质量说明,Text,,TextAndVector,,,3,0.75
+TransitHub,交通枢纽,scheduleNote,时刻动态说明,Text,,TextAndVector,,,3,0.75
+TransitHub,交通枢纽,sourceCoordinateText,来源坐标原文,Text,,Text,,交通专题表里的原始坐标审计文本；当 spatialFacility 已承载标准坐标时，仅保留原文，不再复制成第二套地图点位,4,1
+TransitHub,交通枢纽,spatialFacility,对应地图交通POI,TransitFacility,,,,只有来源地点ID精确命中高德空间底图时才建立；名称相似不建边。存在本引用时，地图展示与附近检索只使用目标 TransitFacility，本语义节点必须 geoPrecision=none 且不得再存 latitude/longitude/H3,4,1
+TransitHub,交通枢纽,locatedInAdminArea,所属行政区,AdminArea,,,,,4,1
+TransitHub,交通枢纽,latitude,纬度,Float,,,,,0,0
+TransitHub,交通枢纽,longitude,经度,Float,,,,,0,0
+TransitHub,交通枢纽,coordinateSystem,坐标系,Text,"Enum=""WGS84,GCJ02,BD09,unknown""",Text,,本实体自带坐标时才填写；有 spatialFacility 时坐标系随目标设施读取，本字段必须留空,0,0
+TransitHub,交通枢纽,h3Index,空间网格,Text,,Text,,由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致,0,0
+TransitHub,交通枢纽,h3IndexCoarse,粗粒度网格,Text,,Text,true,由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证,0,0
+TransitHub,交通枢纽,geoPrecision,坐标精度,Text,"NotNull,Enum=""exact,approx,none""",Text,,exact=本语义节点拥有独立核验坐标；none=本节点无直接坐标或空间位置由 spatialFacility 承担。只有 exact 直接参与 H3；存在 spatialFacility 时必须为 none,4,1
+TransitHub,交通枢纽,picture,图片,Text,MultiValue,Text,,,0,0
+TransitHub,交通枢纽,pictureDesc,图片说明,Text,MultiValue,TextAndVector,,与 picture 顺序一一对应，供展示与图片检索,0,0
+TransitHub,交通枢纽,sourceId,来源ID,Text,NotNull,Text,,该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources,4,1
+TransitHub,交通枢纽,fieldSources,字段级来源,Text,MultiValue,Text,,形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的,4,1
+TransitHub,交通枢纽,fieldUpdatedAt,字段级更新时间,Text,MultiValue,Text,,形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确,4,1
+TransitHub,交通枢纽,batchId,采集批次,Text,,Text,,指向 CollectionBatch.batchId；未登记批次的数据不得入库,4,1
+TransitHub,交通枢纽,externalIds,外部标识,Text,"NotNull,MultiValue",Text,,"跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体",4,1
+TransitHub,交通枢纽,lastVerifiedAt,最近核验时间,Text,,Text,,最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采,0,0
+TransitHub,交通枢纽,verifiedBy,核验人或来源,Text,,Text,true,人工复核填工号，权威源自动核验填 DataSource.id,0,0
+TransitHub,交通枢纽,dataQuality,数据质量,Text,"NotNull,Enum=""ingestable,needs_review,rejected,archived""",Text,,【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识,4,1
+TransitHub,交通枢纽,contentHash,内容哈希,Text,,Text,,对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边,4,1
+TransitHub,交通枢纽,createdAt,首次入库时间,Text,,Text,,,4,1
+TransitHub,交通枢纽,updatedAt,内容更新时间,Text,,Text,,内容变更时刻，不是抓取时刻,4,1
+TransitHub,交通枢纽,lastSeenAt,最近抓取时间,Text,,Text,,最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没,4,1
+TransitHub,交通枢纽,referencedBy,被引用数,Integer,,,,指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除,4,1
+TransitHub,交通枢纽,archivedAt,归档时间,Text,,Text,,软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯,0,0
+TransitHub,交通枢纽,archiveReason,归档原因,Text,,Text,,如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查,0,0
+TransitLine,公交线路,id,标识,Text,NotNull,Text,,全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体,302,1
+TransitLine,公交线路,name,线路名称,Text,NotNull,TextAndVector,,,302,1
+TransitLine,公交线路,shortName,线路简称,Text,,Text,,,302,1
+TransitLine,公交线路,type,线路类型,Text,"NotNull,Enum=""公交,快速公交,地铁,有轨电车,旅游专线,接驳""",Text,,,302,1
+TransitLine,公交线路,sourceMode,来源交通方式原文,Text,,Text,,,302,1
+TransitLine,公交线路,basicFare,基础票价,Float,,,,基准值；调价走 DynamicOverride,198,0.655629
+TransitLine,公交线路,isTouristLine,是否旅游专线,Text,"Enum=""是,否""",Text,,,302,1
+TransitLine,公交线路,operator,运营单位,Text,,Text,,,135,0.44702
+TransitLine,公交线路,lineCode,来源线路代码,Text,,Text,,,4,0.013245
+TransitLine,公交线路,evidenceStatus,证据状态,Text,,Text,,,298,0.986755
+TransitLine,公交线路,directionCount,方向数,Integer,,,,,298,0.986755
+TransitLine,公交线路,servedStopCount,覆盖站点数,Integer,,,,,302,1
+TransitLine,公交线路,operators,运营单位集合,Text,MultiValue,Text,,,135,0.44702
+TransitLine,公交线路,coverageStatus,覆盖状态,Text,,Text,,,302,1
+TransitLine,公交线路,qualityStatus,质量状态,Text,,Text,,,302,1
+TransitLine,公交线路,qualityNotes,质量说明,Text,,TextAndVector,,,302,1
+TransitLine,公交线路,completenessStatus,完整性状态,Text,,Text,,,298,0.986755
+TransitLine,公交线路,dataStatus,源数据状态,Text,,Text,,,0,0
+TransitLine,公交线路,sourceUrl,来源地址,Text,,Text,,,302,1
+TransitLine,公交线路,sourceId,来源ID,Text,NotNull,Text,,该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources,302,1
+TransitLine,公交线路,fieldSources,字段级来源,Text,MultiValue,Text,,形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的,302,1
+TransitLine,公交线路,fieldUpdatedAt,字段级更新时间,Text,MultiValue,Text,,形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确,302,1
+TransitLine,公交线路,batchId,采集批次,Text,,Text,,指向 CollectionBatch.batchId；未登记批次的数据不得入库,302,1
+TransitLine,公交线路,externalIds,外部标识,Text,"NotNull,MultiValue",Text,,"跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体",302,1
+TransitLine,公交线路,lastVerifiedAt,最近核验时间,Text,,Text,,最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采,0,0
+TransitLine,公交线路,verifiedBy,核验人或来源,Text,,Text,true,人工复核填工号，权威源自动核验填 DataSource.id,0,0
+TransitLine,公交线路,dataQuality,数据质量,Text,"NotNull,Enum=""ingestable,needs_review,rejected,archived""",Text,,【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识,302,1
+TransitLine,公交线路,contentHash,内容哈希,Text,,Text,,对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边,302,1
+TransitLine,公交线路,createdAt,首次入库时间,Text,,Text,,,302,1
+TransitLine,公交线路,updatedAt,内容更新时间,Text,,Text,,内容变更时刻，不是抓取时刻,302,1
+TransitLine,公交线路,lastSeenAt,最近抓取时间,Text,,Text,,最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没,302,1
+TransitLine,公交线路,referencedBy,被引用数,Integer,,,,指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除,302,1
+TransitLine,公交线路,archivedAt,归档时间,Text,,Text,,软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯,0,0
+TransitLine,公交线路,archiveReason,归档原因,Text,,Text,,如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查,0,0
+TransitRoute,交通路线,id,标识,Text,NotNull,Text,,全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体,372,1
+TransitRoute,交通路线,name,方向名称,Text,NotNull,TextAndVector,,,372,1
+TransitRoute,交通路线,direction,方向,Text,"NotNull,Enum=""上行,下行,环线,单向序列""",Text,,,372,1
+TransitRoute,交通路线,sourceMode,来源交通方式原文,Text,,Text,,,372,1
+TransitRoute,交通路线,belongsToLine,所属线路,TransitLine,,,,,372,1
+TransitRoute,交通路线,startStop,首站,Text,NotNull,Text,,,372,1
+TransitRoute,交通路线,endStop,末站,Text,NotNull,Text,,,372,1
+TransitRoute,交通路线,firstDeparture,首班时间,Text,,Text,,,242,0.650538
+TransitRoute,交通路线,lastDeparture,末班时间,Text,,Text,,给错会把游客留在景区，属高危字段,242,0.650538
+TransitRoute,交通路线,stopCount,站点数,Integer,,,,,372,1
+TransitRoute,交通路线,sourceDirection,来源方向原文,Text,,Text,,,372,1
+TransitRoute,交通路线,serviceDay,运营日期说明,Text,,Text,,,0,0
+TransitRoute,交通路线,fareDescription,票价说明,Text,,TextAndVector,,,368,0.989247
+TransitRoute,交通路线,distanceKm,线路长度千米,Float,,,,,368,0.989247
+TransitRoute,交通路线,operator,运营单位,Text,,Text,,,238,0.639785
+TransitRoute,交通路线,busType,车辆或线路类型,Text,,Text,,,346,0.930108
+TransitRoute,交通路线,polylineGcj02,GCJ02线路折线,Text,,Text,,来源折线原文，仅用于线路展示；不得当作站点坐标,372,1
+TransitRoute,交通路线,coordinateSystem,坐标系,Text,"Enum=""WGS84,GCJ02,BD09,unknown""",Text,,声明 polylineGcj02 的坐标系；当前结构化交通折线固定为 GCJ02,372,1
+TransitRoute,交通路线,coverageStatus,覆盖状态,Text,,Text,,,372,1
+TransitRoute,交通路线,qualityStatus,质量状态,Text,,Text,,,372,1
+TransitRoute,交通路线,qualityNotes,质量说明,Text,,TextAndVector,,,372,1
+TransitRoute,交通路线,dataStatus,源数据状态,Text,,Text,,,0,0
+TransitRoute,交通路线,sourceUrl,来源地址,Text,,Text,,,372,1
+TransitRoute,交通路线,sourceId,来源ID,Text,NotNull,Text,,该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources,372,1
+TransitRoute,交通路线,fieldSources,字段级来源,Text,MultiValue,Text,,形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的,372,1
+TransitRoute,交通路线,fieldUpdatedAt,字段级更新时间,Text,MultiValue,Text,,形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确,372,1
+TransitRoute,交通路线,batchId,采集批次,Text,,Text,,指向 CollectionBatch.batchId；未登记批次的数据不得入库,372,1
+TransitRoute,交通路线,externalIds,外部标识,Text,"NotNull,MultiValue",Text,,"跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体",372,1
+TransitRoute,交通路线,lastVerifiedAt,最近核验时间,Text,,Text,,最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采,0,0
+TransitRoute,交通路线,verifiedBy,核验人或来源,Text,,Text,true,人工复核填工号，权威源自动核验填 DataSource.id,0,0
+TransitRoute,交通路线,dataQuality,数据质量,Text,"NotNull,Enum=""ingestable,needs_review,rejected,archived""",Text,,【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识,372,1
+TransitRoute,交通路线,contentHash,内容哈希,Text,,Text,,对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边,372,1
+TransitRoute,交通路线,createdAt,首次入库时间,Text,,Text,,,372,1
+TransitRoute,交通路线,updatedAt,内容更新时间,Text,,Text,,内容变更时刻，不是抓取时刻,372,1
+TransitRoute,交通路线,lastSeenAt,最近抓取时间,Text,,Text,,最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没,372,1
+TransitRoute,交通路线,referencedBy,被引用数,Integer,,,,指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除,372,1
+TransitRoute,交通路线,archivedAt,归档时间,Text,,Text,,软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯,0,0
+TransitRoute,交通路线,archiveReason,归档原因,Text,,Text,,如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查,0,0
+TransitStop,公交站点,id,标识,Text,NotNull,Text,,全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体,3630,1
+TransitStop,公交站点,name,站点名称,Text,NotNull,TextAndVector,,,3630,1
+TransitStop,公交站点,type,站点类型,Text,"NotNull,Enum=""公交,地铁,快速公交""",Text,,,3630,1
+TransitStop,公交站点,sourceMode,来源交通方式原文,Text,,Text,,,3630,1
+TransitStop,公交站点,hasShelter,有无候车亭,Text,"Enum=""是,否""",Text,,,0,0
+TransitStop,公交站点,sourcePlaceId,来源地点ID,Text,,Text,,,3598,0.991185
+TransitStop,公交站点,amapPoiId,高德POI ID,Text,,Text,,,3598,0.991185
+TransitStop,公交站点,address,地址,Text,,TextAndVector,,,0,0
+TransitStop,公交站点,province,省份,Text,,Text,,,3630,1
+TransitStop,公交站点,city,城市,Text,,Text,,,3630,1
+TransitStop,公交站点,district,区县,Text,,Text,,,61,0.016804
+TransitStop,公交站点,adcode,行政区划代码,Text,,Text,,,61,0.016804
+TransitStop,公交站点,coordinateSystem,坐标系,Text,"Enum=""WGS84,GCJ02,BD09,unknown""",Text,,本实体自带坐标时才填写；有 spatialFacility 时坐标系随目标设施读取，本字段必须留空,2038,0.561433
+TransitStop,公交站点,servedLineCount,服务线路数,Integer,,,,,3630,1
+TransitStop,公交站点,servedDirectionCount,服务方向数,Integer,,,,,3537,0.97438
+TransitStop,公交站点,routeShortNames,线路简称集合,Text,MultiValue,Text,,,3630,1
+TransitStop,公交站点,coordinateSource,坐标来源,Text,,Text,,,3630,1
+TransitStop,公交站点,coordinateMethod,坐标获得方式,Text,,Text,,,3630,1
+TransitStop,公交站点,qualityStatus,质量状态,Text,,Text,,,3630,1
+TransitStop,公交站点,qualityNotes,质量说明,Text,,TextAndVector,,,1975,0.544077
+TransitStop,公交站点,dataStatus,源数据状态,Text,,Text,,,93,0.02562
+TransitStop,公交站点,sourceUrl,来源地址,Text,,Text,,,0,0
+TransitStop,公交站点,sourceCoordinateText,来源坐标原文,Text,,Text,,交通专题表里的原始坐标审计文本；当 spatialFacility 已承载标准坐标时，仅保留原文，不再复制成第二套地图点位,1592,0.438567
+TransitStop,公交站点,spatialFacility,对应地图交通POI,TransitFacility,,,,只有来源地点ID精确命中高德空间底图时才建立；名称相似不建边。存在本引用时，地图展示与附近检索只使用目标 TransitFacility，本语义节点必须 geoPrecision=none 且不得再存 latitude/longitude/H3,1592,0.438567
+TransitStop,公交站点,locatedInAdminArea,所属行政区,AdminArea,,,,,3514,0.968044
+TransitStop,公交站点,latitude,纬度,Float,,,,,2038,0.561433
+TransitStop,公交站点,longitude,经度,Float,,,,,2038,0.561433
+TransitStop,公交站点,h3Index,空间网格,Text,,Text,,由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致,2038,0.561433
+TransitStop,公交站点,h3IndexCoarse,粗粒度网格,Text,,Text,true,由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证,2038,0.561433
+TransitStop,公交站点,geoPrecision,坐标精度,Text,"NotNull,Enum=""exact,approx,none""",Text,,exact=本语义站点拥有独立核验坐标；none=本节点无直接坐标或空间位置由 spatialFacility 承担。只有 exact 直接参与 H3；存在 spatialFacility 时必须为 none,3630,1
+TransitStop,公交站点,sourceId,来源ID,Text,NotNull,Text,,该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources,3630,1
+TransitStop,公交站点,fieldSources,字段级来源,Text,MultiValue,Text,,形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的,3630,1
+TransitStop,公交站点,fieldUpdatedAt,字段级更新时间,Text,MultiValue,Text,,形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确,3630,1
+TransitStop,公交站点,batchId,采集批次,Text,,Text,,指向 CollectionBatch.batchId；未登记批次的数据不得入库,3630,1
+TransitStop,公交站点,externalIds,外部标识,Text,"NotNull,MultiValue",Text,,"跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体",3630,1
+TransitStop,公交站点,lastVerifiedAt,最近核验时间,Text,,Text,,最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采,0,0
+TransitStop,公交站点,verifiedBy,核验人或来源,Text,,Text,true,人工复核填工号，权威源自动核验填 DataSource.id,0,0
+TransitStop,公交站点,dataQuality,数据质量,Text,"NotNull,Enum=""ingestable,needs_review,rejected,archived""",Text,,【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识,3630,1
+TransitStop,公交站点,contentHash,内容哈希,Text,,Text,,对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边,3630,1
+TransitStop,公交站点,createdAt,首次入库时间,Text,,Text,,,3630,1
+TransitStop,公交站点,updatedAt,内容更新时间,Text,,Text,,内容变更时刻，不是抓取时刻,3630,1
+TransitStop,公交站点,lastSeenAt,最近抓取时间,Text,,Text,,最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没,3630,1
+TransitStop,公交站点,referencedBy,被引用数,Integer,,,,指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除,3630,1
+TransitStop,公交站点,archivedAt,归档时间,Text,,Text,,软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯,0,0
+TransitStop,公交站点,archiveReason,归档原因,Text,,Text,,如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查,0,0
+TransitFacility,交通设施,id,标识,Text,NotNull,Text,,,5279,1
+TransitFacility,交通设施,name,名称,Text,NotNull,TextAndVector,,,5279,1
+TransitFacility,交通设施,shortDesc,一句话摘要,Text,,TextAndVector,,,0,0
+TransitFacility,交通设施,description,描述,Text,,TextAndVector,,,0,0
+TransitFacility,交通设施,type,设施类型,Text,"NotNull,Enum=""机场,火车站,高铁站,客运站,地铁站,公交站,公交设施,停车场,交通服务,其他""",Text,,,5279,1
+TransitFacility,交通设施,facilityClassCode,设施分类代码,Text,,Text,,,166,0.031445
+TransitFacility,交通设施,facilityClassName,设施分类名称,Text,,Text,,,166,0.031445
+TransitFacility,交通设施,detailType,设施细分类型,Text,,Text,,,166,0.031445
+TransitFacility,交通设施,amapPoiId,高德POI ID,Text,,Text,,,5273,0.998863
+TransitFacility,交通设施,amapType,高德分类路径,Text,,Text,,,5273,0.998863
+TransitFacility,交通设施,amapTypecode,高德分类代码,Text,,Text,,,5273,0.998863
+TransitFacility,交通设施,province,省份,Text,,Text,,,5273,0.998863
+TransitFacility,交通设施,city,城市,Text,,Text,,,5273,0.998863
+TransitFacility,交通设施,district,区县,Text,,Text,,,5279,1
+TransitFacility,交通设施,adcode,行政区划代码,Text,,Text,,,5273,0.998863
+TransitFacility,交通设施,address,地址,Text,,TextAndVector,,,5137,0.973101
+TransitFacility,交通设施,telephone,联系电话,Text,,Text,,,44,0.008335
+TransitFacility,交通设施,website,网站,Text,,Text,,,0,0
+TransitFacility,交通设施,openingHours,开放时间,Text,,Text,,,568,0.107596
+TransitFacility,交通设施,sourceUrl,来源地址,Text,,Text,,,166,0.031445
+TransitFacility,交通设施,qualityStatus,质量状态,Text,,Text,,,166,0.031445
+TransitFacility,交通设施,qualityNotes,质量说明,Text,,TextAndVector,,,3,0.000568
+TransitFacility,交通设施,rating,平台评分,Float,,,,,8,0.001515
+TransitFacility,交通设施,averageCost,平台人均或费用,Float,,,,,0,0
+TransitFacility,交通设施,tags,平台标签,Text,MultiValue,TextAndVector,,,1,0.000189
+TransitFacility,交通设施,locatedInAdminArea,所属行政区,AdminArea,,,,,5279,1
+TransitFacility,交通设施,latitude,纬度,Float,,,,,5273,0.998863
+TransitFacility,交通设施,longitude,经度,Float,,,,,5273,0.998863
+TransitFacility,交通设施,coordinateSystem,坐标系,Text,"Enum=""WGS84,GCJ02,BD09,unknown""",Text,,有经纬度时必填。exact 必须与 City.spatialCoordinateSystem 一致；unknown 不得进入 H3 或附近检索,5273,0.998863
+TransitFacility,交通设施,h3Index,空间网格,Text,,Text,,由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9；查询必须先算 k 环再精确测距,5273,0.998863
+TransitFacility,交通设施,h3IndexCoarse,粗粒度网格,Text,,Text,,与 h3Index 成对派生的 H3 R7，用于 1km 以上的候选检索,5273,0.998863
+TransitFacility,交通设施,geoPrecision,坐标精度,Text,"NotNull,Enum=""exact,approx,none""",Text,,exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点或估算点，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空,5279,1
+TransitFacility,交通设施,visitorDemandScenarios,游客需求场景,Text,MultiValue,TextAndVector,,,8,0.001515
+TransitFacility,交通设施,ugcPoiSubtype,游客内容细分类型,Text,,TextAndVector,,,8,0.001515
+TransitFacility,交通设施,ugcLocationDescription,游客内容位置描述,Text,,TextAndVector,,,8,0.001515
+TransitFacility,交通设施,externalMapName,外文或地图名,Text,,Text,,,0,0
+TransitFacility,交通设施,directMentionCount,名称直接命中帖子数,Integer,,,,只代表本次证据集中名称直接命中的帖子数，不得解释为全网热度或排名,8,0.001515
+TransitFacility,交通设施,identityStatus,跨源身份状态,Text,"NotNull,Enum=""source_only,confirmed_match,provisional_match,ambiguous""",Text,,source_only=只有一个地点来源、尚未声称与其他来源是同一对象；confirmed_match=共享稳定外部ID或人工确认；provisional_match=按受控名称与地域规则暂定同一对象，不能当作绝对去重结果；ambiguous=存在候选但证据不足，保留独立节点并禁止融合字段,5279,1
+TransitFacility,交通设施,identityResolutionMethod,身份解析方法,Text,"NotNull,Enum=""source_external_id,shared_external_id,unique_name_city,unique_name_admin,unique_name_parent_admin,unique_name_admin_coordinate,manual_review,not_matched""",Text,,记录本节点当前身份结论采用的最强规则；名称规则不得冒充共享外部ID,5279,1
+TransitFacility,交通设施,possibleSameAs,可能同一交通POI,TransitFacility,MultiValue,,,仅保存待人工判断的候选，不做字段融合、不继承坐标、不参与唯一POI计数；确认后删除候选边并更新 identityStatus,0,0
+TransitFacility,交通设施,sourceId,来源ID,Text,NotNull,Text,,,5279,1
+TransitFacility,交通设施,fieldSources,字段级来源,Text,MultiValue,Text,,,5279,1
+TransitFacility,交通设施,fieldUpdatedAt,字段级更新时间,Text,MultiValue,Text,,,5279,1
+TransitFacility,交通设施,batchId,采集批次,Text,,Text,,,5279,1
+TransitFacility,交通设施,externalIds,外部标识,Text,"NotNull,MultiValue",Text,,跨源去重键；高德设施必须含 amap:ID,5279,1
+TransitFacility,交通设施,lastVerifiedAt,最近核验时间,Text,,Text,,,0,0
+TransitFacility,交通设施,verifiedBy,核验人或来源,Text,,Text,true,,0,0
+TransitFacility,交通设施,dataQuality,数据质量,Text,"NotNull,Enum=""ingestable,needs_review,rejected,archived""",Text,,,5279,1
+TransitFacility,交通设施,contentHash,内容哈希,Text,,Text,,,5279,1
+TransitFacility,交通设施,createdAt,首次入库时间,Text,,Text,,,5279,1
+TransitFacility,交通设施,updatedAt,内容更新时间,Text,,Text,,,5279,1
+TransitFacility,交通设施,lastSeenAt,最近抓取时间,Text,,Text,,,5279,1
+TransitFacility,交通设施,referencedBy,被引用数,Integer,,,,,5279,1
+TransitFacility,交通设施,archivedAt,归档时间,Text,,Text,,,0,0
+TransitFacility,交通设施,archiveReason,归档原因,Text,,Text,,,0,0
+TransportFareRule,票价规则,id,标识,Text,NotNull,Text,,,17,1
+TransportFareRule,票价规则,name,规则名称,Text,NotNull,TextAndVector,,,17,1
+TransportFareRule,票价规则,transportMode,交通方式,Text,"NotNull,Enum=""出租车,网约车,公交,地铁,其他""",Text,,,17,1
+TransportFareRule,票价规则,applicableAdminArea,适用行政区,AdminArea,,,,,17,1
+TransportFareRule,票价规则,vehicleCategory,车型或服务类别,Text,,Text,,,17,1
+TransportFareRule,票价规则,timeWindow,适用时段,Text,,Text,,,17,1
+TransportFareRule,票价规则,distanceOrCondition,距离或触发条件,Text,,TextAndVector,,,17,1
+TransportFareRule,票价规则,chargeComponent,收费组成,Text,,Text,,,17,1
+TransportFareRule,票价规则,rateValue,数值,Float,,,,,13,0.764706
+TransportFareRule,票价规则,currency,币种,Text,,Text,,,12,0.705882
+TransportFareRule,票价规则,rateUnit,计费单位,Text,,Text,,,16,0.941176
+TransportFareRule,票价规则,calculationRule,计算规则,Text,,TextAndVector,,,17,1
+TransportFareRule,票价规则,effectiveDate,生效日期,Text,,Text,,,17,1
+TransportFareRule,票价规则,currentness,时效状态,Text,,Text,,,17,1
+TransportFareRule,票价规则,sourceTitle,来源文件或标题,Text,,Text,,,17,1
+TransportFareRule,票价规则,sourceUrl,来源地址,Text,,Text,,,17,1
+TransportFareRule,票价规则,auditStatus,审核状态,Text,,Text,,,17,1
+TransportFareRule,票价规则,qualityNotes,质量说明,Text,,TextAndVector,,,17,1
+TransportFareRule,票价规则,sourceId,来源ID,Text,NotNull,Text,,,17,1
+TransportFareRule,票价规则,fieldSources,字段级来源,Text,MultiValue,Text,,,17,1
+TransportFareRule,票价规则,fieldUpdatedAt,字段级更新时间,Text,MultiValue,Text,,,17,1
+TransportFareRule,票价规则,batchId,采集批次,Text,,Text,,,17,1
+TransportFareRule,票价规则,externalIds,外部标识,Text,"NotNull,MultiValue",Text,,,17,1
+TransportFareRule,票价规则,lastVerifiedAt,最近核验时间,Text,,Text,,,0,0
+TransportFareRule,票价规则,verifiedBy,核验人或来源,Text,,Text,true,,0,0
+TransportFareRule,票价规则,dataQuality,数据质量,Text,"NotNull,Enum=""ingestable,needs_review,rejected,archived""",Text,,,17,1
+TransportFareRule,票价规则,contentHash,内容哈希,Text,,Text,,,17,1
+TransportFareRule,票价规则,createdAt,首次入库时间,Text,,Text,,,17,1
+TransportFareRule,票价规则,updatedAt,内容更新时间,Text,,Text,,,17,1
+TransportFareRule,票价规则,lastSeenAt,最近抓取时间,Text,,Text,,,17,1
+TransportFareRule,票价规则,referencedBy,被引用数,Integer,,,,,17,1
+TransportFareRule,票价规则,archivedAt,归档时间,Text,,Text,,,0,0
+TransportFareRule,票价规则,archiveReason,归档原因,Text,,Text,,,0,0

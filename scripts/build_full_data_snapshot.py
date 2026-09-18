@@ -11,8 +11,10 @@ and failure screenshots are intentionally excluded and recorded in a manifest.
 from __future__ import annotations
 
 import argparse
+import csv
 import gzip
 import hashlib
+import io
 import json
 import re
 import shutil
@@ -68,12 +70,24 @@ URL_SECRET_RE = re.compile(
     rb"[A-Za-z0-9._~+/=%-]{12,}"
 )
 ASSIGNED_SECRET_RE = re.compile(
-    rb"(?i)(\"?(?:api[_-]?key|access[_-]?token|client[_-]?secret|"
+    rb"(?i)(\"?(?:api[_-]?key|access[_-]?token|xsec[_-]?token|client[_-]?secret|"
     rb"password|passwd|authorization|cookie|sessionid)\"?\s*[:=]\s*)"
     rb"(\"[^\"]*\"|'[^']*'|[A-Za-z0-9._~+/=%-]{8,})"
 )
 GOOGLE_KEY_RE = re.compile(rb"AIza[0-9A-Za-z_-]{30,}")
 AWS_KEY_RE = re.compile(rb"AKIA[0-9A-Z]{16}")
+SECRET_FIELD_NAMES = {
+    "api_key",
+    "apikey",
+    "access_token",
+    "xsec_token",
+    "client_secret",
+    "password",
+    "passwd",
+    "authorization",
+    "cookie",
+    "sessionid",
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -115,7 +129,43 @@ def exclusion_reason(relative: Path) -> str | None:
     return None
 
 
-def redact_text(data: bytes) -> tuple[bytes, Counter[str]]:
+def redact_csv_secret_columns(data: bytes) -> tuple[bytes, Counter[str]]:
+    counts: Counter[str] = Counter()
+    has_bom = data.startswith(b"\xef\xbb\xbf")
+    try:
+        text = data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return data, counts
+
+    reader = csv.reader(io.StringIO(text, newline=""))
+    try:
+        header = next(reader)
+    except StopIteration:
+        return data, counts
+    secret_indexes = [
+        index
+        for index, name in enumerate(header)
+        if name.strip().lower() in SECRET_FIELD_NAMES
+    ]
+    if not secret_indexes:
+        return data, counts
+
+    output = io.StringIO(newline="")
+    writer = csv.writer(output, lineterminator="\n")
+    writer.writerow(header)
+    for row in reader:
+        for index in secret_indexes:
+            if index < len(row) and row[index].strip() and row[index] != "[REDACTED]":
+                counts[f"csv_secret_field_{header[index].strip().lower()}"] += 1
+                row[index] = "[REDACTED]"
+        writer.writerow(row)
+    encoded = output.getvalue().encode("utf-8")
+    if has_bom:
+        encoded = b"\xef\xbb\xbf" + encoded
+    return encoded, counts
+
+
+def redact_text(data: bytes, suffix: str) -> tuple[bytes, Counter[str]]:
     counts: Counter[str] = Counter()
 
     data, count = LOCAL_PATH_RE.subn(b"[LOCAL_HOME]/", data)
@@ -137,6 +187,9 @@ def redact_text(data: bytes) -> tuple[bytes, Counter[str]]:
     counts["google_api_key"] += count
     data, count = AWS_KEY_RE.subn(b"[REDACTED_AWS_KEY]", data)
     counts["aws_access_key"] += count
+    if suffix == ".csv":
+        data, csv_counts = redact_csv_secret_columns(data)
+        counts.update(csv_counts)
     return data, counts
 
 
@@ -232,7 +285,9 @@ def copy_package(
         output_bytes = source_bytes
         file_redactions: Counter[str] = Counter()
         if source_path.suffix.lower() in TEXT_SUFFIXES:
-            output_bytes, file_redactions = redact_text(source_bytes)
+            output_bytes, file_redactions = redact_text(
+                source_bytes, source_path.suffix.lower()
+            )
         if file_redactions:
             redactions[relative.as_posix()] = dict(sorted(file_redactions.items()))
         output_bytes, file_repairs = apply_known_repairs(label, relative, output_bytes)
@@ -311,7 +366,7 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "regularFileLimitMiB": args.max_regular_file_mib,
         "privacyBoundary": (
-            "Sanitized private-repository snapshot; credentials, local paths, caches, "
+            "Sanitized public-repository snapshot; credentials, local paths, caches, "
             "duplicate archives, obsolete backups, debug inspections, and failure "
             "screenshots are excluded."
         ),

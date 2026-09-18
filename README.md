@@ -1,11 +1,17 @@
 # 城市旅游知识图谱
 
+<p align="center">
+  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+</p>
+
 面向城市旅游问答、附近检索、行程决策和多来源证据治理的知识图谱工程。当前公开快照覆盖两个数据域：
 
 - 贵阳：城市、行政区、商圈、H3 网格、地名解析、景区、美食、酒店、交通和证据治理。
 - 泰国：旅游 Schema、数据目录、质量边界，以及 ADM0–ADM3 中泰双语行政区数据。
 
 > 本仓库包含经过脱敏、去重和大文件压缩的贵阳与泰国数据快照，但不是本地采集盘的逐字节镜像。API Key、访问令牌、浏览器状态、本机绝对路径、重复备份和不适合公开的运行文件均已排除；逐文件范围、SHA-256 与排除原因见 [`data/full-data-manifest.json`](data/full-data-manifest.json)。
+
+**公开状态：** 仓库与脱敏数据快照向所有人公开。项目自研代码采用 [MIT License](LICENSE)；自研数据结构和派生成果的使用边界见 [DATA-LICENSE.md](DATA-LICENSE.md)。第三方平台记录仍受原始来源条款和内容权利约束，本仓库不能代替原权利人进行再授权。
 
 ## 当前规模
 
@@ -14,8 +20,10 @@
 | 贵阳 Schema | 30 个实体、1,098 个属性、18 种声明关系 | OpenSPG DSL、解析版和平台版 |
 | 贵阳图谱 | 96,753 个节点、398,717 条关系，联合校验 0 error / 0 warning | 设计、验证报告、行政区和 H3 空间骨架 |
 | 贵阳空间层 | R8 11,297 格、R7 1,714 格、157 个行政区 | 13,011 个 H3 单元及行政区结构化表 |
-| 泰国整理包 | 257 个登记文件，覆盖旅游、景点、美食、交通、酒店和行政区 | Schema、文件清单、质量边界、ADM0–ADM3 数据 |
+| 泰国整理包 | 288 个规范源文件，覆盖旅游、景点、美食、交通、酒店和行政区 | 288 个源文件 + 29 个逐工作表 CSV，共 317 个清单项 |
 | 泰国行政区 | ADM0 1、ADM1 77、ADM2 928、ADM3 7,436 | CSV 与 GeoJSON，附来源和质量说明 |
+| CSV 公开数据 | 8 个 XLSX 共 55 个工作表已逐表导出 | 344 个 CSV；新导出 322,911 行 / 182 MB，附 SHA-256 清单 |
+| 全量公开快照 | 贵阳 160 + 泰国 288 个规范源文件 | 加上 55 个派生 CSV 共 503 个清单文件，存储约 1.03 GB |
 
 ## 总体设计
 
@@ -50,8 +58,6 @@
 </p>
 
 <p align="center"><sub>原创项目图 / Original project diagram · R7 大范围召回 · R8 空间骨架 · R9 POI 细筛</sub></p>
-
-**阅读语言 / Language:** 中文正文在前；[English companion summary](#10-english-companion-summary) 在本节末尾。Uber 原文及其全部原图请访问 [official article and figures](https://www.uber.com/us/en/blog/h3/)。
 
 ### 文献定位与版权说明 / Source and copyright
 
@@ -356,40 +362,6 @@ H3 4.x 使用基于 WGS84 / EPSG:4326 等积球半径的球面坐标语义。H3 
 
 H3 的能力边界同样明确：它不是行政区边界库、不是真实距离引擎、不是道路路由器，也不是“最热门”排序模型。它在本项目中的职责是可扩展、可分层的空间候选召回。
 
-### 10. English companion summary
-
-This section is an original English companion to the Chinese project guide above. It summarizes the engineering ideas from Uber’s article and current H3 4.x documentation; it is not a reproduction or full translation of the copyrighted source.
-
-| Topic | English summary |
-| --- | --- |
-| Why grids | Exact point-by-point city analysis is expensive, while administrative or hand-drawn zones are irregular and mutable. H3 gives events and POIs stable, comparable spatial buckets. |
-| Why hexagons | A regular hexagon has one center-to-center distance for its six edge-sharing neighbors. This makes local traversal and radial approximation more uniform than square or triangular grids. |
-| Global construction | H3 builds grids on the planar faces of a sphere-circumscribed icosahedron and projects them to the sphere. Resolution 0 contains 122 base cells: 110 hexagons and 12 pentagons. |
-| Hierarchy | H3 exposes resolutions 0–15. Each finer level has roughly one seventh of the parent level’s average cell area. Parent-child relationships are index relationships, not administrative containment claims. |
-| Point versus centroid | `latLngToCell` returns the cell containing a point. The cell centroid is not the original POI location and must not be used as a substitute for exact-distance ranking. |
-| Neighborhoods | `gridDisk(k)` returns cells within `k` grid steps. Candidate cells must still be followed by exact point-distance filtering because a grid disk only approximates a metric radius. |
-| Compression | `compactCells` replaces complete child sets with coarser parents; `uncompactCells` expands a mixed-resolution set to a requested resolution while preserving coverage. |
-| Directed edges | H3 can encode movement between neighboring cells, but those edges are not road, walking, or transit routes. |
-| Guiyang design | R9 is used for fine POI retrieval, R8 for the city framework, and R7 for broad retrieval. `PlaceAlias` resolves named places to spatial anchors before neighborhood expansion. |
-| CRS boundary | H3 expects ordinary spherical latitude/longitude semantics and does not convert GCJ-02, WGS84, or BD-09. A CRS migration requires recomputing every derived H3 index. |
-
-#### Bilingual glossary / 中英术语表
-
-| 中文 | English | H3 4.x API or project field |
-| --- | --- | --- |
-| 经纬度落格 | Point-to-cell indexing | `latLngToCell` |
-| 单元中心 | Cell centroid | `cellToLatLng` |
-| 单元边界 | Cell boundary | `cellToBoundary` |
-| 实心邻域 | Filled grid neighborhood | `gridDisk` |
-| 空心环 | Hollow grid ring | `gridRing` |
-| 网格跳数 | Grid distance in hops | `gridDistance` |
-| 父子层级 | Parent-child hierarchy | `cellToParent` / `cellToChildren` |
-| 多边形覆盖 | Polygon-to-cell coverage | `polygonToCells` |
-| 集合压缩 | Cell-set compaction | `compactCells` |
-| 定向邻接边 | Directed neighbor edge | `cellsToDirectedEdge` |
-| 地名空间锚点 | Place-name spatial anchor | `PlaceAlias.targetCell` |
-| 精确坐标 / 近似坐标 / 无坐标 | Exact / approximate / no coordinate | `geoPrecision` |
-
 更完整的技术记录见 [H3 参考与项目映射](docs/references/h3-spatial-index.md)。
 
 ## 数据来源边界
@@ -399,10 +371,17 @@ This section is an original English companion to the Chinese project guide above
 | 官方行政区、开放边界、开放交通 | 空间框架与公共事实 | 按来源许可和署名公开 |
 | 高德、Google Maps / Places | POI 发现、坐标与业务字段 | 不公开原始响应或全量平台数据 |
 | 携程、Trip.com | 酒店与景点快照 | 不公开受限详情、评论和动态价格 |
-| 小红书 / 点点 AI | 需求发现与体验证据 | 不公开帖子全文、作者信息或临时访问参数 |
+| 小红书 / 点点 AI | 需求发现与体验证据 | 仅公开仓库中已脱敏的研究快照；不包含临时访问参数、登录状态或本机隐私信息，再利用需遵守来源平台条款 |
 | 百度百科、官网、政府网站 | 历史文化与事实核验 | 保存引用和证据，不镜像整篇受版权保护内容 |
 
 详见[公开数据与治理策略](docs/governance/publication-policy.zh-CN.md)。
+
+## 开放使用与权利边界
+
+- 仓库公开意味着任何人都可以浏览、检索和下载当前文件。
+- 代码按 [MIT License](LICENSE) 使用。项目自研 Schema、数据字典、H3 派生结构和原创文档的许可说明见 [DATA-LICENSE.md](DATA-LICENSE.md)。
+- 高德、Google、携程 / Trip.com、小红书、百度百科等第三方记录保留原来源权利边界；公开可访问不等于本项目有权将其重新许可为无限制数据。
+- 所有 API Key、Cookie、登录态、本机路径和临时访问令牌均被排除或替换为 `[REDACTED]`。
 
 ## 仓库目录
 
@@ -416,8 +395,10 @@ schemas/
   thailand/            泰国旅游 Schema
 data/
   full-data-manifest.json     全量快照逐文件清单、校验和与排除说明
+  csv-export-manifest.json    XLSX 工作表到 CSV 的行列数、校验和和来源映射
   guiyang/full_v11_2/         贵阳 v11.2 脱敏数据快照
   thailand/full_20260913/     泰国 2026-09-13 脱敏数据快照
+  **/csv_export/              每个 XLSX 工作表对应一份 UTF-8 CSV
   guiyang/spatial/     贵阳城市、行政区和 H3 网格
   guiyang/validation/  图谱验证报告
   thailand/catalog/    泰国本地全量数据目录与质量边界
@@ -438,6 +419,9 @@ python scripts/validate_public_snapshot.py
 
 # 全量快照逐文件 SHA-256、缺失项和敏感信息复核
 python scripts/validate_full_data_snapshot.py
+
+# 从 8 个 XLSX 可重现地导出 55 个工作表 CSV，并刷新清单
+python scripts/export_xlsx_to_csv.py
 
 # 贵阳 R9/R8/R7、PlaceAlias 与框架网格一致性检查
 python scripts/validate_guiyang_h3_index.py

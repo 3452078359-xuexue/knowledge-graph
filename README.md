@@ -43,32 +43,57 @@
 
 完整设计见[贵阳知识图谱技术设计](docs/architecture/guiyang-knowledge-graph-design.zh-CN.md)。
 
-## H3 技术依据
+## H3 技术依据 / H3 Technical Basis
 
-### 文献定位与版权说明
+<p align="center">
+  <img src="docs/assets/h3-bilingual-overview.svg" alt="贵阳知识图谱 H3 层级空间索引中英双语总览 / Bilingual overview of the H3 hierarchy in the Guiyang knowledge graph" width="100%">
+</p>
+
+<p align="center"><sub>原创项目图 / Original project diagram · R7 大范围召回 · R8 空间骨架 · R9 POI 细筛</sub></p>
+
+**阅读语言 / Language:** 中文正文在前；[English companion summary](#10-english-companion-summary) 在本节末尾。Uber 原文及其全部原图请访问 [official article and figures](https://www.uber.com/us/en/blog/h3/)。
+
+### 文献定位与版权说明 / Source and copyright
 
 本项目的网格设计主要参考 Isaac Brodsky 于 2018 年 6 月 27 日发布的 Uber Engineering 文章 [H3: Uber’s Hexagonal Hierarchical Spatial Index](https://www.uber.com/us/en/blog/h3/)，并以 [H3 4.x 官方文档](https://h3geo.org/docs/)校正当前 API 名称和统计值。该文章是官方工程实践说明，不是同行评审学术论文。
 
 以下文字是面向本项目的中文技术摘要；图表均为本仓库依据公开技术事实重新绘制的 Mermaid 图，不复制 Uber 原文或原始配图。原始图像、完整上下文和作者表述请以 Uber 页面为准。
 
-### 1. 为什么需要网格
+> 原文短引 / Short excerpt: “Grid systems are critical to analyzing large spatial data sets.” 中文意译：网格系统是分析大规模空间数据的重要基础。
+
+| 书目信息 | 中文 | English |
+| --- | --- | --- |
+| 标题 / Title | H3：Uber 的六边形层级空间索引 | H3: Uber’s Hexagonal Hierarchical Spatial Index |
+| 作者 / Author | Isaac Brodsky | Isaac Brodsky |
+| 发布 / Published | 2018 年 6 月 27 日，Uber Engineering | June 27, 2018, Uber Engineering |
+| 类型 / Type | 官方工程文章，非同行评审论文 | Official engineering article, not a peer-reviewed paper |
+| 原文与原图 / Original | [打开 Uber 原始页面](https://www.uber.com/us/en/blog/h3/) | [Read the article and view all original figures](https://www.uber.com/us/en/blog/h3/) |
+
+### 1. 为什么需要网格 / Why grids
 
 城市每天产生大量带位置的事件和 POI。直接按每个经纬度做全城分析，粒度过细且计算昂贵；直接使用行政区、邮编区或人工商圈，又会遇到边界形状和面积不一致、边界随管理口径变化、跨城市不可比较等问题。
 
 H3 的思路是把点先装入稳定、可寻址的空间桶，再在桶上聚合、检索和比较。网格不要求与街道或社区边界重合；需要表达商圈、景区范围或服务区时，可以用一组 H3 单元表示，成员判断接近集合查询。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart LR
-    A[经纬度点事件或 POI] --> B[latLngToCell 落入 H3 单元]
-    B --> C[(按 H3 索引分桶)]
-    C --> D[按格聚合数量、供需、质量等指标]
-    D --> E[可视化、候选召回、调度或业务决策]
-    E --> F[必要时回到原始坐标做精确计算]
+    A[经纬度事件或 POI<br/>Geospatial events or POIs] --> B[latLngToCell<br/>映射到 H3 单元]
+    B --> C[(H3 空间分桶<br/>Spatial buckets)]
+    C --> D[按格聚合<br/>Aggregate metrics]
+    D --> E[候选召回与业务决策<br/>Retrieval and decisions]
+    E --> F[原始坐标精确计算<br/>Exact point calculation]
+    classDef input fill:#f7fee7,stroke:#65a30d,color:#172033,stroke-width:1.5px;
+    classDef process fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    classDef store fill:#f5f3ff,stroke:#8b5cf6,color:#172033,stroke-width:1.5px;
+    class A input;
+    class B,D,E,F process;
+    class C store;
 ```
 
 这对应 Uber 原文图 2 的核心过程：原始点 → 点所在六边形 → 按六边形汇总后的空间指标。
 
-### 2. 为什么选择六边形
+### 2. 为什么选择六边形 / Why hexagons
 
 | 网格形状 | 相邻中心距离类型 | 工程影响 |
 | --- | ---: | --- |
@@ -79,26 +104,40 @@ flowchart LR
 六边形不能消除所有投影误差，也不等于真实圆形半径；它的优势是邻接关系更均匀。Uber 文章还强调，网格可减少移动事件跨越任意业务边界时产生的量化问题，并使不同城市使用形状和尺度可比较的空间单元。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart LR
-    T[三角格<br/>3 类邻距] --> X[邻域计算复杂度]
-    S[方格<br/>2 类邻距] --> X
-    H[六边格<br/>1 类邻距] --> Y[统一的一阶邻接]
-    Y --> Z[近邻搜索、平滑、近似半径]
+    T[三角格 / Triangle<br/>3 类邻距] --> X[多种邻距<br/>Mixed neighbor distances]
+    S[方格 / Square<br/>2 类邻距] --> X
+    H[六边格 / Hexagon<br/>1 类邻距] --> Y[统一一阶邻接<br/>Uniform adjacency]
+    Y --> Z[近邻、平滑、近似半径<br/>Search, smoothing, radius]
+    classDef alternative fill:#fff7ed,stroke:#f59e0b,color:#172033,stroke-width:1.5px;
+    classDef chosen fill:#f7fee7,stroke:#65a30d,color:#172033,stroke-width:2px;
+    classDef result fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    class T,S alternative;
+    class H chosen;
+    class X,Y,Z result;
 ```
 
-### 3. H3 如何覆盖地球
+### 3. H3 如何覆盖地球 / How H3 covers the globe
 
 H3 是离散全球网格系统（DGGS）。它不是简单地在墨卡托平面上铺六边形，而是在包围球体的二十面体各平面上建立网格，再通过以面为中心的球心投影映射到球面。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart TD
-    A((地球球面)) --> B[外接二十面体<br/>20 个三角形面]
-    B --> C[每个面使用以面为中心的球心投影]
-    C --> D[在二十面体面上建立层级网格]
-    D --> E[反投影回球面]
-    E --> F[Resolution 0：122 个基础单元]
-    F --> G[110 个六边形]
-    F --> H[12 个五边形]
+    A((地球球面<br/>Earth sphere)) --> B[外接二十面体<br/>20-face icosahedron]
+    B --> C[以面为中心的球心投影<br/>Face-centered gnomonic projection]
+    C --> D[二十面体面上的层级网格<br/>Hierarchical face grids]
+    D --> E[反投影回球面<br/>Project back to sphere]
+    E --> F[Resolution 0<br/>122 个基础单元 / base cells]
+    F --> G[110 个六边形<br/>hexagons]
+    F --> H[12 个五边形<br/>pentagons]
+    classDef globe fill:#f7fee7,stroke:#65a30d,color:#172033,stroke-width:2px;
+    classDef process fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    classDef special fill:#faf5ff,stroke:#8b5cf6,color:#172033,stroke-width:1.5px;
+    class A globe;
+    class B,C,D,E,F process;
+    class G,H special;
 ```
 
 关键约束：
@@ -108,21 +147,28 @@ flowchart TD
 - 遍历、环扩展和局部坐标算法必须处理五边形畸变，不能假设所有格子都有六个普通邻居。
 - Resolution 0 有 122 个基础单元：110 个六边形和 12 个五边形。全局第 `r` 级单元总数为 `2 + 120 × 7^r`。
 
-### 4. 层级分辨率
+### 4. 层级分辨率 / Hierarchical resolutions
 
 H3 提供 Resolution 0–15 共 16 级。每升一级，普通六边形平均面积约变为上一级的 `1/7`，典型长度尺度约缩小为 `1/√7`。普通六边形有 7 个直接子单元；五边形有 6 个直接子单元（5 个六边形和 1 个五边形）。
 
 每个单元使用一个 64 位 H3 索引编码模式、分辨率、基础单元和逐级方向位；在 JSON、CSV 和 JavaScript 环境中通常保存为十六进制字符串，避免无符号 64 位整数在不同语言之间发生精度或符号问题。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart TD
-    R7[父单元 R7<br/>粗粒度候选召回] --> R8A[子单元 R8]
-    R7 --> R8B[子单元 R8]
-    R7 --> R8C[子单元 R8]
-    R7 --> R8D[其余 R8 子单元]
-    R8A --> R9A[R9 细单元]
+    R7[父单元 R7<br/>Broad retrieval] --> R8A[R8 子单元<br/>framework cell]
+    R7 --> R8B[R8 子单元]
+    R7 --> R8C[R8 子单元]
+    R7 --> R8D[其余 R8 子单元<br/>other children]
+    R8A --> R9A[R9 细单元<br/>fine POI cell]
     R8A --> R9B[R9 细单元]
     R8A --> R9C[其余 R9 子单元]
+    classDef coarse fill:#f5f3ff,stroke:#8b5cf6,color:#172033,stroke-width:2px;
+    classDef framework fill:#ecfeff,stroke:#0891b2,color:#172033,stroke-width:1.5px;
+    classDef fine fill:#fff7ed,stroke:#f59e0b,color:#172033,stroke-width:1.5px;
+    class R7 coarse;
+    class R8A,R8B,R8C,R8D framework;
+    class R9A,R9B,R9C fine;
 ```
 
 层级索引适合父子查询和集合压缩，但父子边界不是普通平面上的完美七等分。父单元与全部子单元的覆盖关系是 H3 层级定义，不应把“父 ID”误当作精确行政边界或几何包含证明。
@@ -135,22 +181,29 @@ flowchart TD
 | R8 | 0.737328 km² | 0.531414 km | 城市空间骨架、行政区与商圈分析单元 |
 | R9 | 0.105333 km² | 0.200786 km | POI 小半径细筛和地名精细锚点 |
 
-### 5. 点、格心和边界不是同一个位置
+### 5. 点、格心和边界不是同一个位置 / Point, centroid, and boundary
 
 H3 把输入点映射到“包含该点的单元”，但单元中心不是原始点。原文图 9 专门说明了原始点与格心可能存在明显偏移。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart LR
-    P[POI 原始坐标] --> C[包含它的 H3 单元]
-    C --> M[单元中心点]
-    P --> D[精确距离计算]
-    M --> A[粗粒度展示或格级聚合]
-    M -. 不可替代 .-> D
+    P[POI 原始坐标<br/>Original point] --> C[包含它的 H3 单元<br/>Containing cell]
+    C --> M[单元中心点<br/>Cell centroid]
+    P --> D[精确距离计算<br/>Exact distance]
+    M --> A[格级展示与聚合<br/>Cell-level display]
+    M -. 不可替代 / cannot replace .-> D
+    classDef source fill:#f7fee7,stroke:#65a30d,color:#172033,stroke-width:2px;
+    classDef cell fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    classDef warning fill:#fff7ed,stroke:#f59e0b,color:#172033,stroke-width:1.5px;
+    class P source;
+    class C,M,A cell;
+    class D warning;
 ```
 
 因此本项目禁止用 H3 格心冒充 POI 坐标，也禁止把继承景区中心的 `approx` 子景点放入就近排序。H3 用于缩小候选集；最终距离必须使用通过质量门槛的原始经纬度。
 
-### 6. 主要空间操作
+### 6. 主要空间操作 / Core spatial operations
 
 Uber 2018 年文章使用的是 H3 早期 API 名称，H3 4.x 已更名：
 
@@ -166,63 +219,86 @@ Uber 2018 年文章使用的是 H3 早期 API 名称，H3 4.x 已更名：
 | 集合压缩 | `compact` / `uncompact` | `compactCells` / `uncompactCells` | 大范围格集压缩与恢复 |
 | 定向边 | directed edge API | `cellsToDirectedEdge` 等 | 相邻格之间的移动表达 |
 
-#### 邻域与 k 环
+#### 邻域与 k 环 / Neighborhoods and k-rings
 
 `gridRing(k)` 返回与中心恰好相距 `k` 跳的空心环；`gridDisk(k)` 返回距离不超过 `k` 的实心邻域。普通无限六边网格中，`k > 0` 的单环最大为 `6k` 个单元；五边形附近必须使用能处理畸变的安全实现。
 
 `gridDistance` 返回两个同分辨率单元之间的最少网格跳数；分辨率不同、距离过远或路径跨越五边形畸变时可能无法计算。网格跳数只适合拓扑粗排，不能替代球面距离、步行距离或驾车时间。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart TD
-    O((k=0<br/>中心格)) --> A[k=1<br/>第一圈邻居]
-    A --> B[k=2<br/>邻居的邻居]
-    B --> C[k=n<br/>覆盖目标半径的候选格]
-    C --> P[查询各格内 POI]
-    P --> D[按原始坐标计算精确距离]
-    D --> R[半径过滤与业务排序]
+    O((k=0<br/>中心格 / origin)) --> A[k=1<br/>第一圈 / first ring]
+    A --> B[k=2<br/>第二圈 / second ring]
+    B --> C[k=n<br/>候选格 / candidate cells]
+    C --> P[逐格查询 POI<br/>Query POIs by cell]
+    P --> D[原始坐标精确距离<br/>Exact point distance]
+    D --> R[半径过滤与业务排序<br/>Filter and rank]
+    classDef origin fill:#f7fee7,stroke:#65a30d,color:#172033,stroke-width:2px;
+    classDef ring fill:#f5f3ff,stroke:#8b5cf6,color:#172033,stroke-width:1.5px;
+    classDef process fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    class O origin;
+    class A,B,C ring;
+    class P,D,R process;
 ```
 
 只查中心格会漏掉位于相邻格、但实际距离很近的 POI；只依赖 k 环又会产生边角位置的超半径候选。因此标准流程必须是“安全 k 环召回 + 精确距离过滤”。
 
-#### 集合压缩与恢复
+#### 集合压缩与恢复 / Compact and uncompact
 
 如果一组同分辨率子单元完整覆盖某个父单元，`compactCells` 可用父单元替换这些子单元，形成混合分辨率但覆盖等价的更小集合；`uncompactCells` 可恢复到指定分辨率。Uber 原文给出的示例把 10,633 个 R6 单元压缩为 901 个不高于 R6 的单元。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart LR
-    A[大量同分辨率子单元] -->|compactCells| B[较少的混合分辨率单元]
-    B -->|uncompactCells 到目标级别| C[统一分辨率单元集合]
-    C --> D[覆盖范围保持等价]
+    A[大量同级子单元<br/>Many same-resolution cells] -->|compactCells| B[较少的混合级单元<br/>Compact mixed resolutions]
+    B -->|uncompactCells| C[目标分辨率格集<br/>Target-resolution set]
+    C --> D[覆盖范围等价<br/>Equivalent coverage]
+    classDef source fill:#fff7ed,stroke:#f59e0b,color:#172033,stroke-width:1.5px;
+    classDef compact fill:#f5f3ff,stroke:#8b5cf6,color:#172033,stroke-width:2px;
+    classDef result fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    class A source;
+    class B compact;
+    class C,D result;
 ```
 
-#### 定向边
+#### 定向边 / Directed edges
 
 H3 可把两个相邻单元之间的移动编码成定向边，并从边恢复起点和终点。这适合表达格级流量或移动，但不是道路拓扑；真实驾车、步行和公共交通仍需 Route、TransitRoute 或专业路径规划数据。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart LR
-    A[起点 H3 单元] -->|有方向的相邻边| B[终点 H3 单元]
-    B --> C[格级 OD、流量或趋势统计]
-    C -. 不能替代 .-> D[真实道路与交通路线]
+    A[起点 H3 单元<br/>Origin cell] -->|定向邻接边 / directed edge| B[终点 H3 单元<br/>Destination cell]
+    B --> C[格级 OD 与流量<br/>Cell-level movement]
+    C -. 不能替代 / cannot replace .-> D[真实道路和交通路线<br/>Road and transit routes]
+    classDef cell fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    classDef metric fill:#f5f3ff,stroke:#8b5cf6,color:#172033,stroke-width:1.5px;
+    classDef route fill:#fff7ed,stroke:#f59e0b,color:#172033,stroke-width:1.5px;
+    class A,B cell;
+    class C metric;
+    class D route;
 ```
 
-### 7. Uber 原文图表与本 README 的对应关系
+### 7. Uber 原文图表与本 README 的对应关系 / Figure crosswalk
 
-| Uber 原文图 | 原图主题 | 本 README 的表达 |
-| ---: | --- | --- |
-| 1 | 全球六边形划分 | “H3 如何覆盖地球”流程图 |
-| 2 | 点事件 → 六边形 → 按数量着色 | “为什么需要网格”流程图 |
-| 3–4 | 邮编区与六边形聚类对比 | 网格与传统边界的文字说明 |
-| 5 | 球体、二十面体与球心投影 | 二十面体投影流程图 |
-| 6 | 三角形、方形、六边形邻距 | 三种网格对比表和流程图 |
-| 7 | 单个二十面体面上的 H3 网格 | 122 个基础单元及构造说明 |
-| 8 | 分辨率逐级细化 | R7 → R8 → R9 层级图 |
-| 9 | 原始点、所在格与格心偏移 | 点与格心职责图 |
-| 10 | k=0、1、2 的邻域 | k 环候选召回图 |
-| 11 | compact / uncompact | 集合压缩与恢复图 |
-| 12 | 相邻单元定向边 | 定向边图 |
+| Uber 原文图 | 原图主题（中文） | Original topic | 本 README 的原创表达 |
+| ---: | --- | --- | --- |
+| 1 | 全球六边形划分 | Global hexagonal partition | “H3 如何覆盖地球”流程图 |
+| 2 | 点事件 → 六边形 → 按数量着色 | Points → cells → aggregated shading | “为什么需要网格”流程图 |
+| 3–4 | 邮编区与六边形聚类对比 | Postal zones vs. hex clusters | 网格与传统边界的说明 |
+| 5 | 球体、二十面体与球心投影 | Sphere, icosahedron, gnomonic projection | 二十面体投影流程图 |
+| 6 | 三角形、方形、六边形邻距 | Neighbor distances by cell shape | 三种网格对比图 |
+| 7 | 单个二十面体面上的 H3 网格 | Grid on one icosahedron face | 基础单元构造说明 |
+| 8 | 分辨率逐级细化 | Hierarchical subdivision | R7 → R8 → R9 层级图 |
+| 9 | 原始点、所在格与格心偏移 | Point, containing cell, and centroid | 点与格心职责图 |
+| 10 | k=0、1、2 的邻域 | Grid neighborhoods at k=0, 1, 2 | k 环候选召回图 |
+| 11 | compact / uncompact | Compact and uncompact cell sets | 集合压缩与恢复图 |
+| 12 | 相邻单元定向边 | Directed edge between neighbors | 定向边图 |
 
-### 8. 在贵阳知识图谱中的落地
+> **原图入口 / Original figures:** [Uber 原文与全部 12 幅图](https://www.uber.com/us/en/blog/h3/) · [Figure 1 官方图片](https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format%3Dauto/width%3D552/height%3D0/srcb64%3DaHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9jYjhkZjIwZS0xNmJmLTVjZjctODg0MS03MWQ4YWY5YjFhODIucG5n) · Figure 2 [原始点](https://cn-geo1.uber.com/image-proc/resize/udam/format%3Dauto/quality%3D0/width%3D280/srcb64%3DaHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy85NzFkYzVhMC1lYmRhLTUxNWQtODk0MS02ZDQzNjQ1ODdlN2EucG5n)、[六边形分桶](https://cn-geo1.uber.com/image-proc/resize/udam/format%3Dauto/quality%3D0/width%3D280/srcb64%3DaHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9kZGY1ODBkNC02NGExLTUxODYtYjI1NS04M2I3MjBmNTViODkucG5n)、[聚合着色](https://cn-geo1.uber.com/image-proc/resize/udam/format%3Dauto/quality%3D0/width%3D280/srcb64%3DaHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8wZGQwYTcxOS0yNDQwLTUwNzgtYTExZC1lNzE3YWFmZjc2ODEucG5n)。链接指向 Uber 官方资源，仓库不镜像这些版权图片。
+
+### 8. 在贵阳知识图谱中的落地 / Application in the Guiyang graph
 
 贵阳采用双分辨率 POI 索引和双层空间骨架：
 
@@ -232,22 +308,31 @@ flowchart LR
 - 最终筛选：H3 只负责候选召回，之后必须执行精确距离、实体质量、营业状态和业务规则过滤。
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#ffffff","primaryColor":"#eef6ff","primaryTextColor":"#172033","primaryBorderColor":"#3b82f6","lineColor":"#64748b","secondaryColor":"#f5f3ff","tertiaryColor":"#f7fee7","fontFamily":"Arial"}}}%%
 flowchart TD
-    Q{用户问题}
-    Q -->|甲秀楼附近有什么| N[PlaceAlias 解析地名]
-    Q -->|我附近有什么| U[读取用户授权定位]
-    Q -->|贵阳最热门或评分最高| G[全域业务过滤与排序]
-    N --> H[取得 H3 锚点]
+    Q{用户问题<br/>User query}
+    Q -->|甲秀楼附近 / near Jiaxiu Tower| N[PlaceAlias<br/>地名解析 / place resolution]
+    Q -->|我附近 / near me| U[授权定位<br/>Authorized location]
+    Q -->|最热门 / top ranked| G[全域业务排序<br/>Global business ranking]
+    N --> H[H3 空间锚点<br/>Spatial anchor]
     U --> H
-    H --> S{按半径选分辨率}
-    S -->|小半径| R9[R9 gridDisk 候选]
-    S -->|大半径| R7[R7 gridDisk 候选]
-    R9 --> E[逐格等值召回 POI]
+    H --> S{按半径选分辨率<br/>Choose resolution}
+    S -->|小半径 / local| R9[R9 gridDisk<br/>细粒度候选]
+    S -->|大半径 / broad| R7[R7 gridDisk<br/>粗粒度候选]
+    R9 --> E[逐格召回 POI<br/>Retrieve by cell]
     R7 --> E
-    E --> D[原始坐标精确距离过滤]
-    D --> B[质量与业务精排]
+    E --> D[原始坐标精确距离<br/>Exact point distance]
+    D --> B[质量与业务精排<br/>Quality and business ranking]
     G --> B
-    B --> A[POI 事实 + SourceEvidence 证据组装答案]
+    B --> A[POI 事实 + SourceEvidence<br/>Grounded answer]
+    classDef query fill:#f7fee7,stroke:#65a30d,color:#172033,stroke-width:1.5px;
+    classDef decision fill:#faf5ff,stroke:#8b5cf6,color:#172033,stroke-width:1.5px;
+    classDef spatial fill:#eff6ff,stroke:#3b82f6,color:#172033,stroke-width:1.5px;
+    classDef rank fill:#fff7ed,stroke:#f59e0b,color:#172033,stroke-width:1.5px;
+    class Q,N,U query;
+    class S decision;
+    class H,R9,R7,E,D spatial;
+    class G,B,A rank;
 ```
 
 三类典型查询：
@@ -260,7 +345,7 @@ flowchart TD
 
 当前校验快照已经验证：38,107 个 POI 具有可精确使用的 R9/R7 索引，空间框架包含 13,011 个 R8/R7 单元，40,106 个 `PlaceAlias` 条目具有可用空间锚点。详见 [`data/guiyang/H3_INDEX_VALIDATION.json`](data/guiyang/H3_INDEX_VALIDATION.json)。
 
-### 9. 坐标系与实现边界
+### 9. 坐标系与实现边界 / CRS and implementation boundaries
 
 H3 4.x 使用基于 WGS84 / EPSG:4326 等积球半径的球面坐标语义。H3 库不会自动执行 GCJ-02、WGS84 或 BD-09 转换：
 
@@ -270,6 +355,40 @@ H3 4.x 使用基于 WGS84 / EPSG:4326 等积球半径的球面坐标语义。H3 
 4. 如果迁移坐标基准，必须从标准坐标重算全部 R9/R8/R7 索引、`PlaceAlias` 锚点和派生关系，不能只改经纬度文本。
 
 H3 的能力边界同样明确：它不是行政区边界库、不是真实距离引擎、不是道路路由器，也不是“最热门”排序模型。它在本项目中的职责是可扩展、可分层的空间候选召回。
+
+### 10. English companion summary
+
+This section is an original English companion to the Chinese project guide above. It summarizes the engineering ideas from Uber’s article and current H3 4.x documentation; it is not a reproduction or full translation of the copyrighted source.
+
+| Topic | English summary |
+| --- | --- |
+| Why grids | Exact point-by-point city analysis is expensive, while administrative or hand-drawn zones are irregular and mutable. H3 gives events and POIs stable, comparable spatial buckets. |
+| Why hexagons | A regular hexagon has one center-to-center distance for its six edge-sharing neighbors. This makes local traversal and radial approximation more uniform than square or triangular grids. |
+| Global construction | H3 builds grids on the planar faces of a sphere-circumscribed icosahedron and projects them to the sphere. Resolution 0 contains 122 base cells: 110 hexagons and 12 pentagons. |
+| Hierarchy | H3 exposes resolutions 0–15. Each finer level has roughly one seventh of the parent level’s average cell area. Parent-child relationships are index relationships, not administrative containment claims. |
+| Point versus centroid | `latLngToCell` returns the cell containing a point. The cell centroid is not the original POI location and must not be used as a substitute for exact-distance ranking. |
+| Neighborhoods | `gridDisk(k)` returns cells within `k` grid steps. Candidate cells must still be followed by exact point-distance filtering because a grid disk only approximates a metric radius. |
+| Compression | `compactCells` replaces complete child sets with coarser parents; `uncompactCells` expands a mixed-resolution set to a requested resolution while preserving coverage. |
+| Directed edges | H3 can encode movement between neighboring cells, but those edges are not road, walking, or transit routes. |
+| Guiyang design | R9 is used for fine POI retrieval, R8 for the city framework, and R7 for broad retrieval. `PlaceAlias` resolves named places to spatial anchors before neighborhood expansion. |
+| CRS boundary | H3 expects ordinary spherical latitude/longitude semantics and does not convert GCJ-02, WGS84, or BD-09. A CRS migration requires recomputing every derived H3 index. |
+
+#### Bilingual glossary / 中英术语表
+
+| 中文 | English | H3 4.x API or project field |
+| --- | --- | --- |
+| 经纬度落格 | Point-to-cell indexing | `latLngToCell` |
+| 单元中心 | Cell centroid | `cellToLatLng` |
+| 单元边界 | Cell boundary | `cellToBoundary` |
+| 实心邻域 | Filled grid neighborhood | `gridDisk` |
+| 空心环 | Hollow grid ring | `gridRing` |
+| 网格跳数 | Grid distance in hops | `gridDistance` |
+| 父子层级 | Parent-child hierarchy | `cellToParent` / `cellToChildren` |
+| 多边形覆盖 | Polygon-to-cell coverage | `polygonToCells` |
+| 集合压缩 | Cell-set compaction | `compactCells` |
+| 定向邻接边 | Directed neighbor edge | `cellsToDirectedEdge` |
+| 地名空间锚点 | Place-name spatial anchor | `PlaceAlias.targetCell` |
+| 精确坐标 / 近似坐标 / 无坐标 | Exact / approximate / no coordinate | `geoPrecision` |
 
 更完整的技术记录见 [H3 参考与项目映射](docs/references/h3-spatial-index.md)。
 

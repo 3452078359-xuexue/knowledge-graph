@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-09-17 11:25:14",
+  "batchId": "xhs-diandian-high-value-poi-20260916",
+  "batchStatus": "进行中",
+  "plannedQuestions": 216,
+  "collectedQuestions": 184,
+  "rawAnswerRecords": 184,
+  "rawSourceRows": 4567,
+  "sourceEvidencePendingReview": 2140,
+  "reviewItems": 184,
+  "machineRouting": {
+    "待审核_跨区行程上下文": 367,
+    "待语义审核": 850,
+    "待审核_疑似协同营销": 66,
+    "待审核_分店上下文不足": 707,
+    "排除_正文未直接命中名称": 1819,
+    "排除_时间窗口": 305,
+    "待审核_行政区冲突": 25,
+    "待审核_别名或改名": 125,
+    "排除_正文不完整": 20,
+    "排除_异地同名实体": 3
+  },
+  "safety": {
+    "stablePoiFieldsModified": false,
+    "sourceEvidenceAccepted": 0,
+    "fullPostBodyStoredInGraph": false,
+    "fullPostRetrievalKey": "SourceEvidence.externalIds 中的 xhs:<note_id>；snapshotRef=xhs-post-kb://<note_id>"
+  }
+}

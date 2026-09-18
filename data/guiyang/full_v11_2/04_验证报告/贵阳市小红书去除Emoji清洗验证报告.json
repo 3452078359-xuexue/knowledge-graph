@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-09-16T22:52:33.196425-07:00",
+  "status": "passed_not_loaded_into_graph",
+  "publishedPath": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji",
+  "sourceLayerModifiedByEmojiCleaning": false,
+  "graphModified": false,
+  "totals": {
+    "files": 7,
+    "records": 6791,
+    "rowsChanged": 5110,
+    "cellsChanged": 8671,
+    "keycapsConverted": 5084,
+    "emojiSequencesRemoved": 50085,
+    "platformTokensRemoved": 7461,
+    "specialCharactersRemoved": 475,
+    "residualEmojiControlsRemoved": 523,
+    "charactersRemovedNet": 107008
+  },
+  "checks": {
+    "allFilesPassed": true,
+    "sourceStableDuringValidation": true,
+    "allEmojiCountsZero": true,
+    "candidateEvidenceForeignKeysValid": true,
+    "allTargetFieldResidualCountsZero": true,
+    "allEvidenceFragmentsRemainContiguousSubstrings": true,
+    "nonTargetFieldsUnchanged": true,
+    "sourceFilesStableDuringPublish": true,
+    "schemaAndGraphDataUnchanged": true
+  },
+  "crossChecks": {
+    "formalPostIdsUnique": true,
+    "batchPostIdsUnique": true,
+    "candidateEvidenceForeignKeysValid": true,
+    "fragmentSubstringRate": {
+      "matched": 606,
+      "totalNonEmpty": 606
+    },
+    "structuralTopicTokensPreserved": true
+  },
+  "workingCopyAudit": {
+    "auditedAt": "2026-09-16T22:52:33.196425-07:00",
+    "initialSnapshotEntriesRemainInFilesArray": true,
+    "changedFiles": [
+      {
+        "key": "formal_poi",
+        "destination": "01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+        "changeOccurredBeforeEmojiCleaning": true,
+        "initialSnapshotSha256": "f3ac9a69c5482b4a5f8875b77a41dc1695199f1ef8b84528899cd29749f1d416",
+        "currentWorkingCopySha256": "3ba840f9466fedc4a8ca9312dc53e2ba6b3a3e11c6aa8d675b844362b3e2c132",
+        "originalSourceSha256": "f3ac9a69c5482b4a5f8875b77a41dc1695199f1ef8b84528899cd29749f1d416",
+        "initialColumns": 12,
+        "currentColumns": 11,
+        "missingColumnsComparedWithOriginal": [
+          "外文/地图名"
+        ],
+        "commonColumnContentChanged": false,
+        "policy": "保留用户/外部编辑，本次不恢复、不覆盖；原始 12 列文件仍在 sourcePath"
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/01_正式数据_当前唯一版/03_小红书帖子知识库.csv",
+      "records": 2145,
+      "columns": 16,
+      "bytes": 4168953,
+      "sha256": "65e959ea21e03b443d5defc0f02705f3f1c1799973a0b829ec46f08987379af5"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+      "records": 282,
+      "columns": 11,
+      "bytes": 450508,
+      "sha256": "60a888c96cee8f273b5f74892d416b77a9fa48b6d2d28a89b07bc7493593f04a"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
+      "records": 1246,
+      "columns": 16,
+      "bytes": 2127431,
+      "sha256": "ac40727b38293b1736b749eea7b863a172c9adb102614628770c2613fe2a5e50"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/04_点点AI_全部问题与问答.csv",
+      "records": 20,
+      "columns": 43,
+      "bytes": 252093,
+      "sha256": "3d0b83f44a5b33ac5f1600b610cb6af87cb190f4a4295f1a6113e65f6fd57e0d"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
+      "records": 1454,
+      "columns": 30,
+      "bytes": 4548175,
+      "sha256": "25d30a3e72e4a6d177ff0a0c07c7f9ea6754a90122f464c0ed90fd725a50ba4c"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI候选审核表.csv",
+      "records": 626,
+      "columns": 26,
+      "bytes": 588034,
+      "sha256": "47057be6f193655e1cb7983585b590b91a196adf99fa992333140c1741891fac"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI证据审核表.csv",
+      "records": 1018,
+      "columns": 16,
+      "bytes": 2321613,
+      "sha256": "e14125dce0656f7e45df0dbe5f2dea7f90b8a84a4899dfda7e5f5a335abd951c"
+    }
+  ]
+}

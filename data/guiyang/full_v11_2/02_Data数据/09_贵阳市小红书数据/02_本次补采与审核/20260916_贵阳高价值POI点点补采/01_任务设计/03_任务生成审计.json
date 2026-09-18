@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-09-17T06:43:45.634181+00:00",
+  "batchDate": "20260916",
+  "purpose": "高价值标准POI小红书直接体验证据补采",
+  "rankingMeaning": "采集优先级，不是热度或推荐排名",
+  "allowedDistricts": [
+    "云岩区",
+    "南明区",
+    "观山湖区",
+    "花溪区",
+    "乌当区",
+    "白云区",
+    "清镇市"
+  ],
+  "excludedDistricts": [
+    "修文县",
+    "息烽县",
+    "开阳县"
+  ],
+  "sourceRecordCounts": {
+    "FoodAndBeverage": 24238,
+    "Accommodation": 4796,
+    "ScenicArea": 20,
+    "TransitHub": 4
+  },
+  "sourceDistrictCounts": {
+    "FoodAndBeverage": {
+      "云岩区": 4057,
+      "南明区": 4671,
+      "清镇市": 1846,
+      "息烽县": 361,
+      "修文县": 666,
+      "乌当区": 1076,
+      "花溪区": 4625,
+      "白云区": 1929,
+      "观山湖区": 4489,
+      "开阳县": 518
+    },
+    "Accommodation": {
+      "南明区": 1128,
+      "观山湖区": 1299,
+      "花溪区": 769,
+      "云岩区": 637,
+      "修文县": 106,
+      "乌当区": 127,
+      "白云区": 228,
+      "清镇市": 284,
+      "龙里县": 53,
+      "开阳县": 97,
+      "平坝区": 1,
+      "息烽县": 66,
+      "（空）": 1
+    },
+    "ScenicArea": {
+      "花溪区": 6,
+      "（空）": 7,
+      "南明区": 2,
+      "云岩区": 1,
+      "观山湖区": 1,
+      "乌当区": 2,
+      "开阳县": 1
+    },
+    "TransitHub": {
+      "南明区": 2,
+      "观山湖区": 1,
+      "乌当区": 1
+    }
+  },
+  "formalEvidenceMapping": {
+    "matched": 71,
+    "ambiguous_or_unmatched": 211
+  },
+  "selectedCounts": {
+    "total": 216,
+    "byBusinessType": {
+      "餐饮美食": 120,
+      "住宿酒店": 80,
+      "景点观光": 12,
+      "交通服务": 4
+    },
+    "byPriority": {
+      "P0": 116,
+      "P1": 100
+    },
+    "byDistrict": {
+      "南明区": 54,
+      "花溪区": 36,
+      "云岩区": 41,
+      "观山湖区": 42,
+      "乌当区": 18,
+      "白云区": 11,
+      "清镇市": 14
+    },
+    "withNoMappedXhsEvidence": 203,
+    "withOneMappedXhsEvidence": 12,
+    "withTwoOrMoreMappedXhsEvidence": 1
+  },
+  "foodDistrictQuotas": {
+    "云岩区": 25,
+    "南明区": 30,
+    "观山湖区": 20,
+    "花溪区": 20,
+    "乌当区": 10,
+    "白云区": 7,
+    "清镇市": 8
+  },
+  "hotelDistrictQuotas": {
+    "云岩区": 15,
+    "南明区": 20,
+    "观山湖区": 20,
+    "花溪区": 10,
+    "乌当区": 5,
+    "白云区": 4,
+    "清镇市": 6
+  },
+  "questionTemplateVersion": "exact_poi_experience_v1",
+  "inputFiles": [
+    {
+      "path": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/03_贵阳市美食数据/贵阳市美食POI数据.json",
+      "sha256": "3e9eea42ca74da5001e477cdf79e96bdfcf55a96e0f5145426fef45cc2504368"
+    },
+    {
+      "path": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/04_贵阳市酒店数据/贵阳市酒店住宿数据.json",
+      "sha256": "d577051e6ae84df572cd143c4a8ec82f38e45b48b50cf4fa7c73b51d4549d63d"
+    },
+    {
+      "path": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/02_贵阳市景区数据/贵阳市景区数据.json",
+      "sha256": "93209c03e1629f3facbdddf59bca44ef84a3560ba44af88e1e200cb4a3e7775b"
+    },
+    {
+      "path": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/05_贵阳市交通数据/贵阳市交通枢纽数据.json",
+      "sha256": "cbe736231196da07cbdfaebcb7e352b7ef0f37748ee7755edd857b29f7b766ac"
+    },
+    {
+      "path": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/01_贵阳市空间行政区数据/贵阳市地名别名索引数据.json",
+      "sha256": "d02ecfed6aea2006f145c6925d13aa3150ba491d4716eb0ae3dee3e5752c201f"
+    },
+    {
+      "path": "[LOCAL_HOME]/Desktop/Thailand---泰国/一小红书-贵州贵阳旅游推荐/01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+      "sha256": "f3ac9a69c5482b4a5f8875b77a41dc1695199f1ef8b84528899cd29749f1d416"
+    }
+  ],
+  "outputs": [
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/20260916_贵阳高价值POI点点补采/01_任务设计/01_高价值POI补采优先级.csv",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/20260916_贵阳高价值POI点点补采/01_任务设计/02_点点AI高价值POI问题表.csv"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿GTFS route_type,交通类型中文,GTFS英文含义,输出文件夹,当前线路数,本次是否生成
+0,有轨电车与轻轨,"Tram, Streetcar, Light rail",01_有轨电车与轻轨,5,是
+1,地铁,"Subway, Metro",02_地铁,4,是
+2,铁路,Rail,03_铁路,189,是
+3,公交车,Bus,04_公交车,1796,是
+4,轮渡,Ferry,05_轮渡,74,是
+5,缆车,Cable tram,06_缆车,0,否
+6,空中缆车,Aerial lift,07_空中缆车,0,否
+7,登山缆索铁路,Funicular,08_登山缆索铁路,0,否
+11,无轨电车,Trolleybus,09_无轨电车,0,否
+12,单轨铁路,Monorail,10_单轨铁路,0,否
+UNKNOWN,未分类／关联异常,Unknown or orphan source rows,99_未分类,0,是

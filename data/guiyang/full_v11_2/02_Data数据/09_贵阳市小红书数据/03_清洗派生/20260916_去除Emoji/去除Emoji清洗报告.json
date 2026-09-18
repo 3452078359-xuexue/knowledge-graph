@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-09-16T22:49:06.030286-07:00",
+  "sourceRoot": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据",
+  "outputRoot": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji",
+  "policy": {
+    "sourceBackupModified": false,
+    "processingMode": "derived_layer",
+    "removed": [
+      "Unicode emoji/pictographic sequences",
+      "小红书平台表情标记",
+      "对象占位符和私有字符"
+    ],
+    "preserved": [
+      "普通中文/英文/数字/标点",
+      "URL 与 ID",
+      "[话题]",
+      "[地点]"
+    ],
+    "keycapPolicy": "1️⃣ 等数字键帽转换为普通数字，避免丢失列表编号"
+  },
+  "totals": {
+    "files": 7,
+    "records": 6791,
+    "rowsChanged": 5110,
+    "cellsChanged": 8671,
+    "keycapsConverted": 5084,
+    "emojiSequencesRemoved": 50085,
+    "platformTokensRemoved": 7461,
+    "specialCharactersRemoved": 475,
+    "residualEmojiControlsRemoved": 523,
+    "charactersRemovedNet": 107008
+  },
+  "files": {
+    "01_正式数据_当前唯一版/03_小红书帖子知识库.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/01_正式数据_当前唯一版/03_小红书帖子知识库.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/01_正式数据_当前唯一版/03_小红书帖子知识库.csv",
+      "records": 2145,
+      "columns": 16,
+      "rowsChanged": 1726,
+      "cellsChanged": 2582,
+      "fieldChanges": {
+        "帖子正文": 1655,
+        "标题": 729,
+        "作者": 198
+      },
+      "hashRowsUpdated": 1655,
+      "cleaningStats": {
+        "keycapsConverted": 1382,
+        "emojiSequencesRemoved": 15878,
+        "platformTokensRemoved": 1839,
+        "specialCharactersRemoved": 193,
+        "residualEmojiControlsRemoved": 231,
+        "charactersRemovedNet": 30675
+      },
+      "sourceBytes": 4260223,
+      "outputBytes": 4168953,
+      "sourceSha256": "8682c41ab53480b79ae1ec86a20689ec90d4b664c13db5bed7682f302c8e78be",
+      "outputSha256": "65e959ea21e03b443d5defc0f02705f3f1c1799973a0b829ec46f08987379af5"
+    },
+    "01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+      "records": 282,
+      "columns": 11,
+      "rowsChanged": 240,
+      "cellsChanged": 240,
+      "fieldChanges": {
+        "证据内容": 240
+      },
+      "hashRowsUpdated": 0,
+      "cleaningStats": {
+        "keycapsConverted": 93,
+        "emojiSequencesRemoved": 1500,
+        "platformTokensRemoved": 227,
+        "specialCharactersRemoved": 0,
+        "residualEmojiControlsRemoved": 17,
+        "charactersRemovedNet": 3074
+      },
+      "sourceBytes": 459666,
+      "outputBytes": 450508,
+      "sourceSha256": "3ba840f9466fedc4a8ca9312dc53e2ba6b3a3e11c6aa8d675b844362b3e2c132",
+      "outputSha256": "60a888c96cee8f273b5f74892d416b77a9fa48b6d2d28a89b07bc7493593f04a"
+    },
+    "02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
+      "records": 1246,
+      "columns": 16,
+      "rowsChanged": 972,
+      "cellsChanged": 1376,
+      "fieldChanges": {
+        "标题": 342,
+        "帖子正文": 921,
+        "作者": 113
+      },
+      "hashRowsUpdated": 921,
+      "cleaningStats": {
+        "keycapsConverted": 660,
+        "emojiSequencesRemoved": 6872,
+        "platformTokensRemoved": 1292,
+        "specialCharactersRemoved": 74,
+        "residualEmojiControlsRemoved": 49,
+        "charactersRemovedNet": 16017
+      },
+      "sourceBytes": 2173399,
+      "outputBytes": 2127431,
+      "sourceSha256": "846d95ae5027fc70606ebfbc0f69a591993a72e152d3690b3b18a9f2b220afd8",
+      "outputSha256": "ac40727b38293b1736b749eea7b863a172c9adb102614628770c2613fe2a5e50"
+    },
+    "02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/04_点点AI_全部问题与问答.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/04_点点AI_全部问题与问答.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/04_点点AI_全部问题与问答.csv",
+      "records": 20,
+      "columns": 43,
+      "rowsChanged": 0,
+      "cellsChanged": 0,
+      "fieldChanges": {},
+      "hashRowsUpdated": 0,
+      "cleaningStats": {},
+      "sourceBytes": 252093,
+      "outputBytes": 252093,
+      "sourceSha256": "3d0b83f44a5b33ac5f1600b610cb6af87cb190f4a4295f1a6113e65f6fd57e0d",
+      "outputSha256": "3d0b83f44a5b33ac5f1600b610cb6af87cb190f4a4295f1a6113e65f6fd57e0d"
+    },
+    "02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
+      "records": 1454,
+      "columns": 30,
+      "rowsChanged": 1138,
+      "cellsChanged": 2724,
+      "fieldChanges": {
+        "帖子正文": 1086,
+        "标准化正文": 1086,
+        "标题": 416,
+        "作者": 136
+      },
+      "hashRowsUpdated": 1086,
+      "cleaningStats": {
+        "keycapsConverted": 1751,
+        "emojiSequencesRemoved": 16169,
+        "platformTokensRemoved": 2785,
+        "specialCharactersRemoved": 147,
+        "residualEmojiControlsRemoved": 127,
+        "charactersRemovedNet": 36753
+      },
+      "sourceBytes": 4652085,
+      "outputBytes": 4548175,
+      "sourceSha256": "a8c8db57b2cb7b23c4726f9d1c6daeafefbaa68f7d93f95e2eb80bc1352d12c1",
+      "outputSha256": "25d30a3e72e4a6d177ff0a0c07c7f9ea6754a90122f464c0ed90fd725a50ba4c"
+    },
+    "02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI候选审核表.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI候选审核表.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI候选审核表.csv",
+      "records": 626,
+      "columns": 26,
+      "rowsChanged": 201,
+      "cellsChanged": 201,
+      "fieldChanges": {
+        "证据标题": 201
+      },
+      "hashRowsUpdated": 0,
+      "cleaningStats": {
+        "keycapsConverted": 2,
+        "emojiSequencesRemoved": 356,
+        "platformTokensRemoved": 0,
+        "specialCharactersRemoved": 0,
+        "residualEmojiControlsRemoved": 0,
+        "charactersRemovedNet": 433
+      },
+      "sourceBytes": 590234,
+      "outputBytes": 588034,
+      "sourceSha256": "056bc0b88c1491ec84290eb0ca487429fcfac5d35870a2134aca476a6104348d",
+      "outputSha256": "47057be6f193655e1cb7983585b590b91a196adf99fa992333140c1741891fac"
+    },
+    "02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI证据审核表.csv": {
+      "source": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI证据审核表.csv",
+      "output": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI证据审核表.csv",
+      "records": 1018,
+      "columns": 16,
+      "rowsChanged": 833,
+      "cellsChanged": 1548,
+      "fieldChanges": {
+        "帖子正文": 821,
+        "证据片段": 427,
+        "标题": 300
+      },
+      "hashRowsUpdated": 0,
+      "cleaningStats": {
+        "keycapsConverted": 1196,
+        "emojiSequencesRemoved": 9310,
+        "platformTokensRemoved": 1318,
+        "specialCharactersRemoved": 61,
+        "residualEmojiControlsRemoved": 99,
+        "charactersRemovedNet": 20056
+      },
+      "sourceBytes": 2380832,
+      "outputBytes": 2321613,
+      "sourceSha256": "9b2710872047c16e916cdd015de584995c9e1b036ced122288190cf58743de6e",
+      "outputSha256": "e14125dce0656f7e45df0dbe5f2dea7f90b8a84a4899dfda7e5f5a335abd951c"
+    }
+  },
+  "publishedAt": "2026-09-16T22:52:33.196425-07:00",
+  "publishedRoot": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji"
+}

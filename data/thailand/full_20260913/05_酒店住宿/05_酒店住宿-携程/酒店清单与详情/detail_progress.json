@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-09-04 02:15:18",
+  "updated_at": "2026-09-04 02:37:25",
+  "last_index": 869,
+  "total_hotels": 869,
+  "last_hotel_id": "48670965",
+  "success_this_run": 175,
+  "partial_this_run": 1,
+  "failure_this_run": 0,
+  "skipped_this_run": 693,
+  "processed_this_run": 176,
+  "completed_total": 869
+}

@@ -1,0 +1,77 @@
+﻿交通类型代码,交通类型中文,stop_id,stop_name,stop_lat,stop_lon,zone_id,wheelchair_boarding,stop_name_泰文,stop_name_英文,分类依据
+0,有轨电车与轻轨,1,BTS บางหว้า;BTS Bang Wa,13.720766616303294,100.45783572591478,1,1,BTS บางหว้า,BTS Bang Wa,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,2,BTS วุฒากาศ;BTS Wutthakat,13.713027703243709,100.4690198270623,2,1,BTS วุฒากาศ,BTS Wutthakat,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,3,BTS ตลาดพลู;BTS Talat Phlu,13.714217137174076,100.47669270882209,3,1,BTS ตลาดพลู,BTS Talat Phlu,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,4,BTS โพธิ์นิมิตร;BTS Pho Nimit,13.719228973048402,100.48592620841143,4,1,BTS โพธิ์นิมิตร,BTS Pho Nimit,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5,BTS วงเวียนใหญ่;BTS Wongwian Yai,13.721087702375542,100.49514031743301,5,1,BTS วงเวียนใหญ่,BTS Wongwian Yai,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,6,BTS กรุงธนบุรี;BTS Krung Thon Buri,13.720901703441616,100.50261293124643,6,1,BTS กรุงธนบุรี,BTS Krung Thon Buri,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,7,BTS สะพานตากสิน;BTS Saphan Taksin,13.718801931907006,100.51414464359566,7,1,BTS สะพานตากสิน,BTS Saphan Taksin,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,8,BTS สุรศักดิ์;BTS Surasak,13.719196163347588,100.52141563759317,8,1,BTS สุรศักดิ์,BTS Surasak,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,9,BTS ช่องนนทรี;BTS Chong Nonsi,13.723786338511877,100.52941446705861,9,1,BTS ช่องนนทรี,BTS Chong Nonsi,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,10,BTS ศาลาแดง;BTS Sala Daeng,13.72852833338344,100.53434444774771,10,1,BTS ศาลาแดง,BTS Sala Daeng,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,11,BTS ราชดำริ;BTS Ratchadamri,13.73945390065426,100.53944426878158,11,1,BTS ราชดำริ,BTS Ratchadamri,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,12,BTS สยาม;BTS Siam,13.745608079660181,100.53420190547386,12,1,BTS สยาม,BTS Siam,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13,BTS สนามกีฬาแห่งชาติ;BTS National Stadium,13.746497916783781,100.52908565730013,13,1,BTS สนามกีฬาแห่งชาติ,BTS National Stadium,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,14,BTS สำโรง;BTS Samrong,13.646175284292461,100.59564352557456,14,1,BTS สำโรง,BTS Samrong,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,15,BTS เเบริ่ง;BTS Bearing,13.661163860926209,100.60183913369437,15,1,BTS เเบริ่ง,BTS Bearing,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,16,BTS บางนา;BTS Bang Na,13.668117734860864,100.60466175093777,16,1,BTS บางนา,BTS Bang Na,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,17,BTS อุดมสุข;BTS Udom Suk,13.679871178547872,100.6094849863011,17,1,BTS อุดมสุข,BTS Udom Suk,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,18,BTS ปุณณวิถี;BTS Punnawithi,13.68932551122064,100.6090339388925,18,1,BTS ปุณณวิถี,BTS Punnawithi,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,19,BTS บางจาก;BTS Bang Chak,13.696783305691042,100.60537325866582,19,1,BTS บางจาก,BTS Bang Chak,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,20,BTS อ่อนนุช;BTS On Nut,13.705604441283308,100.60103081718678,20,1,BTS อ่อนนุช,BTS On Nut,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,21,BTS พระโขนง;BTS Phra Khanong,13.715164194142291,100.59127215888024,21,1,BTS พระโขนง,BTS Phra Khanong,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,22,BTS เอกมัย;BTS Ekkamai,13.71958046993935,100.5850718908323,22,1,BTS เอกมัย,BTS Ekkamai,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,23,BTS ทองหล่อ;BTS Thong Lo,13.724239682098336,100.57853366764722,23,1,BTS ทองหล่อ,BTS Thong Lo,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,24,BTS พร้อมพงษ์;BTS Phrom Phong,13.730416524364847,100.56975332969493,24,1,BTS พร้อมพงษ์,BTS Phrom Phong,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,25,BTS อโศก;BTS Asok,13.737060368134365,100.5603259474249,25,1,BTS อโศก,BTS Asok,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,26,BTS นานา;BTS Nana,13.740526512630016,100.55544264995163,26,1,BTS นานา,BTS Nana,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,27,BTS เพลินจิต;BTS Phloen Chit,13.743050120689588,100.54880588051687,27,1,BTS เพลินจิต,BTS Phloen Chit,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,28,BTS ชิดลม;BTS Chit Lom,13.744071583572714,100.54306079436026,28,1,BTS ชิดลม,BTS Chit Lom,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,30,BTS ราชเทวี;BTS Ratchathewi,13.751899107441432,100.53154128650783,30,1,BTS ราชเทวี,BTS Ratchathewi,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,32,BTS พญาไท;BTS Phaya Thai,13.756910704970037,100.5338157484245,32,1,BTS พญาไท,BTS Phaya Thai,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,33,BTS อนุสาวรีย์ชัยสมรภูมิ;BTS Victory Monument,13.76274965189834,100.53709294202633,33,1,BTS อนุสาวรีย์ชัยสมรภูมิ,BTS Victory Monument,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,34,BTS สนามเป้า;BTS Sanam Pao,13.772624585098885,100.54209703590752,34,1,BTS สนามเป้า,BTS Sanam Pao,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,35,BTS อารีย์;BTS Ari,13.779724136074272,100.5446444736763,35,1,BTS อารีย์,BTS Ari,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,36,BTS สะพานควาย;BTS Saphan Khwai,13.79375601808324,100.54972483215585,36,1,BTS สะพานควาย,BTS Saphan Khwai,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,37,BTS หมอชิต;BTS Mo Chit,13.802386877821885,100.55372863742627,37,1,BTS หมอชิต,BTS Mo Chit,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5409,SRT จตุจักร [สายสีแดงเข้ม);SRT Chatuchak (Dark Red Line),13.8262376132103,100.54946064949,5409,2,SRT จตุจักร [สายสีแดงเข้ม),SRT Chatuchak (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5410,SRT วัดเสมียนนารี (สายสีแดงเข้ม);SRT Wat Samian Nari (Dark Red Line),13.8417116871433,100.557650774717,5410,2,SRT วัดเสมียนนารี (สายสีแดงเข้ม),SRT Wat Samian Nari (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5411,SRT บางเขน (สายสีแดงเข้ม);SRT Bang Khen (Dark Red Line),13.849454197578138,100.56174516677856,5411,2,SRT บางเขน (สายสีแดงเข้ม),SRT Bang Khen (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5412,SRT ทุ่งสองห้อง (สายสีแดงเข้ม);SRT Thung Song Hong [Dark Red Line),13.8601026578644,100.567475706339,5412,2,SRT ทุ่งสองห้อง (สายสีแดงเข้ม),SRT Thung Song Hong [Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5413,SRT หลักสี่ (สายสีแดงเข้ม);SRT Lak Si (Dark Red Line),13.8863480240497,100.581841617823,5413,2,SRT หลักสี่ (สายสีแดงเข้ม),SRT Lak Si (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5415,SRT ดอนเมือง (สายสีแดงเข้ม);SRT Don Mueang (Dark Red Line),13.9147773672768,100.597914755344,5415,2,SRT ดอนเมือง (สายสีแดงเข้ม),SRT Don Mueang (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5416,SRT หลักหก (สายสีแดงเข้ม);SRT Lak Hok (Dark Red Line),13.9658334,100.6053409,5416,2,SRT หลักหก (สายสีแดงเข้ม),SRT Lak Hok (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,5417,SRT รังสิต (สายสีแดงเข้ม);SRT Rangsit (Dark Red Line),13.9905124207755,100.602196902037,5417,2,SRT รังสิต (สายสีแดงเข้ม),SRT Rangsit (Dark Red Line),stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13601,BTS ปู่เจ้า;BTS Pu Chao,13.6374556009276,100.592020601034,13601,1,BTS ปู่เจ้า,BTS Pu Chao,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13602,BTS ช้างเอราวัณ;BTS Chang Erawan,13.6214427777687,100.590152442455,13602,1,BTS ช้างเอราวัณ,BTS Chang Erawan,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13603,BTS โรงเรียนนายเรือ;BTS Royal Thai Naval Academy,13.6085936774828,100.594851672649,13603,1,BTS โรงเรียนนายเรือ,BTS Royal Thai Naval Academy,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13604,BTS ปากน้ำ;BTS Pak Nam,13.6020658900177,100.597099363804,13604,1,BTS ปากน้ำ,BTS Pak Nam,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13605,BTS ศรีนครินทร์;BTS Srinagarindra,13.5921383028305,100.608929246664,13605,1,BTS ศรีนครินทร์,BTS Srinagarindra,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13606,BTS แพรกษา;BTS Phraek Sa,13.5842804061102,100.607900619507,13606,1,BTS แพรกษา,BTS Phraek Sa,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13607,BTS สายลวด;BTS Sai Luat,13.5777493415592,100.605435669422,13607,1,BTS สายลวด,BTS Sai Luat,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13608,BTS เคหะฯ;BTS Kheha,13.5671649851318,100.607927441597,13608,1,BTS เคหะฯ,BTS Kheha,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13612,BTS ห้าแยกลาดพร้าว;BTS Ha Yeak Lat Phrao,13.8164145649644,100.561961084604,13612,1,BTS ห้าแยกลาดพร้าว,BTS Ha Yeak Lat Phrao,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13638,BTS พหลโยธิน 24;BTS Phahon Yothin 24,13.82424386615215,100.56647792458534,13638,1,BTS พหลโยธิน 24,BTS Phahon Yothin 24,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13639,BTS รัชโยธิน;BTS Ratchayothin,13.829859130975516,100.56977033615112,13639,1,BTS รัชโยธิน,BTS Ratchayothin,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13640,BTS เสนานิคม;BTS Sena Nikhom,13.836492573998763,100.57367965579033,13640,1,BTS เสนานิคม,BTS Sena Nikhom,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13641,BTS มหาวิทยาลัยเกษตรศาสตร์;BTS Kasetsart University,13.84241745642748,100.57714238762856,13641,1,BTS มหาวิทยาลัยเกษตรศาสตร์,BTS Kasetsart University,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13828,BTS กรมป่าไม้;BTS Royal Forest Department,13.8503188009662,100.581830888987,13828,1,BTS กรมป่าไม้,BTS Royal Forest Department,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13829,BTS บางบัว;BTS Bang Bau,13.855995936067199,100.58516755700111,13829,1,BTS บางบัว,BTS Bang Bau,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13830,BTS กรมทหารราบที่ 11;BTS 11th Infantry Regiment,13.867344581912818,100.5918462574482,13830,1,BTS กรมทหารราบที่ 11,BTS 11th Infantry Regiment,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13831,BTS วัดพระศรีมหาธาตุ;BTS Wat Phrasri Mahathat,13.875536719814582,100.59672251343727,13831,1,BTS วัดพระศรีมหาธาตุ,BTS Wat Phrasri Mahathat,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13834,BTS กรุงธนบุรี [สายสีทอง];BTS Khrung Thon Buri,13.7210992512925,100.503687411547,13834,1,BTS กรุงธนบุรี [สายสีทอง],BTS Khrung Thon Buri,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13835,BTS เจริญนคร;BTS Charoen Nakhon,13.7264642515125,100.509035736322,13835,2,BTS เจริญนคร,BTS Charoen Nakhon,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13836,BTS คลองสาน;BTS Khlong San,13.7303387528304,100.50769329071,13836,2,BTS คลองสาน,BTS Khlong San,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13837,BTS พหลโยธิน 59;BTS Phahonyothin 59,13.882481322137204,100.60079544782639,13837,1,BTS พหลโยธิน 59,BTS Phahonyothin 59,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13838,BTS สายหยุด;BTS Sai Yud,13.888451899405403,100.60429707169533,13838,1,BTS สายหยุด,BTS Sai Yud,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13839,BTS สะพานใหม่;BTS Saphan Mai,13.896587311896138,100.6091371178627,13839,1,BTS สะพานใหม่,BTS Saphan Mai,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13840,BTS โรงพยาบาลภูมิพลอดุลยเดช;BTS Bhumibol Adulyadej Hospital,13.910740608049272,100.61743050813675,13840,1,BTS โรงพยาบาลภูมิพลอดุลยเดช,BTS Bhumibol Adulyadej Hospital,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13841,BTS พิพิธภัณฑ์กองทัพอากาศ;BTS Royal Thai Air Force Museum,13.917909354433739,100.62169522047043,13841,1,BTS พิพิธภัณฑ์กองทัพอากาศ,BTS Royal Thai Air Force Museum,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13842,BTS แยก คปอ.;BTS Yaek Kor Por Aor,13.924935994182283,100.62581241130829,13842,1,BTS แยก คปอ.,BTS Yaek Kor Por Aor,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13843,BTS คูคต;BTS Khu Khot,13.93233599419662,100.646563321352,13843,1,BTS คูคต,BTS Khu Khot,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13844,BTS เซนต์หลุยส์;BTS Saint Louis,13.72074097226031,100.52664443850517,13844,1,BTS เซนต์หลุยส์,BTS Saint Louis,stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13845,SRT การเคหะ [สายสีแดงเข้ม];SRT Kan Kheha [Dark Red Line],13.8984463482845,100.588769763708,13845,2,SRT การเคหะ [สายสีแดงเข้ม],SRT Kan Kheha [Dark Red Line],stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13846,SRT สถานีกลางกรุงเทพอภิวัฒน์ [สายสีแดง];SRT Krung Thep Aphiwat Central Terminal Station [Red Line],13.8046961672143,100.541766732931,13846,2,SRT สถานีกลางกรุงเทพอภิวัฒน์ [สายสีแดง],SRT Krung Thep Aphiwat Central Terminal Station [Red Line],stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13847,SRT ตลิ่งชัน [สายสีแดงอ่อน];SRT Taling Chan [Light Red Line],13.789244381265998,100.44008418917656,13847,2,SRT ตลิ่งชัน [สายสีแดงอ่อน],SRT Taling Chan [Light Red Line],stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13848,SRT บางบำหรุ [สายสีแดงอ่อน];SRT Bang Bamru [Light Red Line],13.7921826958138,100.477441996336,13848,2,SRT บางบำหรุ [สายสีแดงอ่อน],SRT Bang Bamru [Light Red Line],stop_times停靠＋fare_rules票价区域
+0,有轨电车与轻轨,13849,SRT บางซ่อน [สายสีแดงอ่อน];SRT Bang Son [Light Red Line],13.8221159683554,100.534240454435,13849,2,SRT บางซ่อน [สายสีแดงอ่อน],SRT Bang Son [Light Red Line],stop_times停靠＋fare_rules票价区域

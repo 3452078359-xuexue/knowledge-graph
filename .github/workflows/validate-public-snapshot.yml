@@ -17,3 +17,4 @@ jobs:
           python-version: "3.12"
       - run: python scripts/validate_public_snapshot.py
       - run: python scripts/lint_guiyang_schema.py schemas/guiyang/CityTourism.schema
+      - run: test ! -f data/full-data-manifest.json || python scripts/validate_full_data_snapshot.py

@@ -1,0 +1,980 @@
+[
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_114787193",
+    "name": "陌上轻雅酒店(贵阳龙洞堡机场巫山峡谷景区店)",
+    "r8": "88400c0141fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_111435560",
+    "name": "旅途浮光酒店(贵阳机场双龙航空港经济区店)",
+    "r8": "88400c0337fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_2310342",
+    "name": "北斗湾·贵州饭店",
+    "r8": "88400c321bfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_67247212",
+    "name": "维也纳国际酒店(贵阳机场双龙空港店)",
+    "r8": "88400c0147fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_8557985",
+    "name": "龙里云安娜酒店(双龙巫山峡谷景区店)",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_5970012",
+    "name": "贵阳安纳塔拉度假酒店",
+    "r8": "88400c015dfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_105143463",
+    "name": "景然苑·山居(贵阳龙洞堡机场双龙航空港经济区店)",
+    "r8": "88400c0143fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_52749953",
+    "name": "卢浮宫金熙酒店(贵阳龙洞堡机场双龙航空港经济区店)",
+    "r8": "88400c014bfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_106762285",
+    "name": "琪遇民宿",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_130841920",
+    "name": "爽逸同呈酒店(贵阳机场双龙航空港经济区店)",
+    "r8": "88400c0141fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_9151211",
+    "name": "龙里24度坞别院(双龙镇店)",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_130254040",
+    "name": "春水居民宿(贵阳龙洞堡机场巫山峡谷景区店)",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_2062931",
+    "name": "纪龙酒店(龙里县中医医院店)",
+    "r8": "88400c1a31fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_123822974",
+    "name": "多彩全球大酒店",
+    "r8": "88400c1893fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_69307118",
+    "name": "云栖谷双龙镇洪龙酒店",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_81309089",
+    "name": "宜尚酒店(双龙空港物流园店)",
+    "r8": "88400c1891fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_77367202",
+    "name": "云河民宿",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_60317314",
+    "name": "龙里南卓·瞰龙别院",
+    "r8": "88400c1adbfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_12783356",
+    "name": "龙里夜郎·云溪酒店公寓",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_133359597",
+    "name": "竞放电竞酒店(巫山峡谷景区店)",
+    "r8": "88400c0141fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_129983776",
+    "name": "云宜电竞酒店",
+    "r8": "88400c0327fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_113545932",
+    "name": "乡遇白晶谷民宿(白晶环线南段分店)",
+    "r8": "88400c0151fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_22604968",
+    "name": "龙里双龙时光客栈",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_107961693",
+    "name": "龙里一半小院民宿",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_125364739",
+    "name": "栖野花舍民宿",
+    "r8": "88400c002dfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_124118114",
+    "name": "龙里竹霖客栈",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_75464772",
+    "name": "问水境酒店(贵阳双龙航空港经济区问水温泉店)",
+    "r8": "88400c0143fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_82674612",
+    "name": "龙里朋友圈商务宾馆",
+    "r8": "88400c0159fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_134296572",
+    "name": "龙里予安民宿",
+    "r8": "88400c0161fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_110965947",
+    "name": "普宿2023度假别墅(白晶环线东段分店)",
+    "r8": "88400c0143fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_53794607",
+    "name": "柏霖温泉度假酒店",
+    "r8": "88400c0143fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_128742276",
+    "name": "悠山美墅·悠享公寓",
+    "r8": "88400c014dfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_135335497",
+    "name": "Yourancy悠然别墅",
+    "r8": "88400c014dfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_115824593",
+    "name": "隐与·清风与落民宿",
+    "r8": "88400c0947fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_126283336",
+    "name": "百悦智能酒店",
+    "r8": "88400c1893fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_97485326",
+    "name": "龙里双龙88公寓",
+    "r8": "88400c18bbfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_48473995",
+    "name": "龙里众佳酒店",
+    "r8": "88400c1891fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_78351028",
+    "name": "龙里天晟酒店",
+    "r8": "88400c0145fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_132873537",
+    "name": "龙里无忧花园",
+    "r8": "88400c0151fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_30804023",
+    "name": "嘉诚民宿",
+    "r8": "88400c0159fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_12110545",
+    "name": "龙里龙景宾馆",
+    "r8": "88400c18bbfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_83387936",
+    "name": "聚丰缘酒店",
+    "r8": "88400c0159fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_72179431",
+    "name": "龙里温馨旅馆",
+    "r8": "88400c0159fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_100330928",
+    "name": "龙里双龙66公寓",
+    "r8": "88400c18bbfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_27365008",
+    "name": "泰立酒店(龙洞堡机场店)",
+    "r8": "88400c0159fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_85141873",
+    "name": "富源酒店(龙里龙云寺店)",
+    "r8": "88400c18b3fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_72164234",
+    "name": "龙里七妹宾馆",
+    "r8": "88400c1891fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_111585712",
+    "name": "龙里福鸿宾馆",
+    "r8": "88400c0159fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_110034752",
+    "name": "魅力花园太阳谷旅居安养中心",
+    "r8": "88400c0147fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_125773677",
+    "name": "自得公寓(双龙镇太阳谷店)",
+    "r8": "88400c0147fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_132340864",
+    "name": "醒狮民宿",
+    "r8": "88400c549bfffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_133033257",
+    "name": "昌盛宾馆",
+    "r8": "88400c18b3fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_135230450",
+    "name": "易嘉民宿",
+    "r8": "88400c0147fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "Accommodation",
+    "id": "hotel_ctrip_75224101",
+    "name": "龙里龙井民宿",
+    "r8": "88400c0141fffff",
+    "reason": "admin_scope"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_fcfbbfdf98cefff35684",
+    "name": "170一片区",
+    "r8": "88400c30ebfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_02ae0678a865c26b92aa",
+    "name": "170厂区",
+    "r8": "88400c30ebfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_f574469eda7d35a36c8e",
+    "name": "170厂区",
+    "r8": "88400c30ebfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_99e80b03da7ba33ff914",
+    "name": "七星湖路口",
+    "r8": "88400c3239fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_c8dd76de6700d7e4effe",
+    "name": "七星湖路口",
+    "r8": "88400c3239fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_95acec068c256de5871a",
+    "name": "中铁国际生态城",
+    "r8": "88400c0143fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_5c66c74267e1ac3e1c9c",
+    "name": "临时站",
+    "r8": "88400c3003fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_ed06965b20f8504c33b9",
+    "name": "临时站",
+    "r8": "88400c0159fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_635263554aed1ba9aa1a",
+    "name": "临时站",
+    "r8": "88400c0109fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_ce1c2da3d10215d00953",
+    "name": "临时站",
+    "r8": "88400c014bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_62a6a17f871183a53207",
+    "name": "临时站",
+    "r8": "88400c0147fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_7404b78e85b2229afee5",
+    "name": "临时站",
+    "r8": "88400c0141fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_e5fe4e4fc3268db4d351",
+    "name": "临时站(关口)",
+    "r8": "88400c3003fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_f2c899771fd01216b18e",
+    "name": "临时站1",
+    "r8": "88400c0337fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_509ab4ea08e71e397aae",
+    "name": "临时站1",
+    "r8": "88400c0143fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_f969ec181e874adc50ab",
+    "name": "临时站1",
+    "r8": "88400c014bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_b6c231a6b8503ebe83c4",
+    "name": "临时站1",
+    "r8": "88400c0141fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_38c1b133a23db73fcdf0",
+    "name": "九八五高中",
+    "r8": "88400c1a9bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_47dd6d5c050e208f1fb8",
+    "name": "云上屯",
+    "r8": "88400c335bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_9da3d4b00464328cb256",
+    "name": "云上屯",
+    "r8": "88400c335bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_f05a7f6a4ae1a668458e",
+    "name": "人力资源市场",
+    "r8": "88400c1a31fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_c12e9ef750ba0f3d4d79",
+    "name": "八一公园",
+    "r8": "88400c1aedfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_cca4bde1322b3e88a7e4",
+    "name": "六○一1区",
+    "r8": "88400c30c1fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_5c442f8ee1cf8491df4b",
+    "name": "六○一2区",
+    "r8": "88400c30c1fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_764e5fe96b8228b79ca1",
+    "name": "六○一2区",
+    "r8": "88400c30c5fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_ae07b7e3bc91d32715e8",
+    "name": "六○一库",
+    "r8": "88400c30cdfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_094aedad40ce11e9f21b",
+    "name": "关口寨",
+    "r8": "88400c3003fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_ceda4187902b49e343f5",
+    "name": "兴龙广场",
+    "r8": "88400c1a31fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_e0624ca5b774fc521260",
+    "name": "兴龙广场",
+    "r8": "88400c1a31fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_a2a03be75f1b94f6fbf1",
+    "name": "厉家庄",
+    "r8": "88400c1a8dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_a5c6ade4f0bdcd7f30a5",
+    "name": "双龙悦城(招呼站)",
+    "r8": "88400c002dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_42480e1cb71c0b411234",
+    "name": "双龙镇",
+    "r8": "88400c0147fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_1b0890ba89146a0b0815",
+    "name": "唐王寨",
+    "r8": "88400c1a9bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_506c5b119f705e4e6a6e",
+    "name": "大坝安置点",
+    "r8": "88400c323dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_386aca7b7acf0df2c804",
+    "name": "大坝安置点",
+    "r8": "88400c323dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_ad7daaedb478d06b12ef",
+    "name": "太阳谷",
+    "r8": "88400c0147fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_66f62bdddf1de7a41d08",
+    "name": "安娜塔拉酒店",
+    "r8": "88400c0143fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_639d02e60d190b7e6511",
+    "name": "悦龙南山",
+    "r8": "88400c0337fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_1acda6a3d580dcb91183",
+    "name": "招呼站",
+    "r8": "88400c30c9fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_84192f0b4b1c877adab9",
+    "name": "摩都购物中心",
+    "r8": "88400c014bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_632c9e7d12ccd026d627",
+    "name": "新场",
+    "r8": "88400c1ad7fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_9c541183a0a72e3396fe",
+    "name": "朵花温泉",
+    "r8": "88400c1193fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_901c2e081bf37708747a",
+    "name": "杨柳哨",
+    "r8": "88400c321dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_6a285019fcf390362faf",
+    "name": "杨柳哨",
+    "r8": "88400c321dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_95f936862bc1e5babf00",
+    "name": "杨梅树工业园",
+    "r8": "88400c1197fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_58b8016e5e74dbabae10",
+    "name": "杨梅树工业园",
+    "r8": "88400c1197fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_7b09ebf785dfbbe161ea",
+    "name": "沙坝路口",
+    "r8": "88400ca9b1fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_0a7e8b9e6df9abe450cd",
+    "name": "沙坝路口",
+    "r8": "88400ca9b1fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_088d3abddc8003b1d7b7",
+    "name": "泫水路公交枢纽",
+    "r8": "88400c3241fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_7e3421b3a9509ae7cede",
+    "name": "泫水路公交枢纽",
+    "r8": "88400c3241fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_1cfbbd16c277e29d697a",
+    "name": "洋塘村",
+    "r8": "88400c30ebfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_15ecb0e44ec2bf29c4ef",
+    "name": "滥坝村",
+    "r8": "88400c3011fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_45041fff1b29555ea9e6",
+    "name": "滥坝村",
+    "r8": "88400c3011fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_c831885da25bbb4c3585",
+    "name": "火龙山",
+    "r8": "88400ca9b5fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_f0f05a43f6ee63d995d3",
+    "name": "火龙山",
+    "r8": "88400ca9b5fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_925e1e28a583380d893c",
+    "name": "电子信息产业园",
+    "r8": "88400c326bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_adb9df83cca8f9a45cfd",
+    "name": "电子信息产业园",
+    "r8": "88400c326bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_895a5455413a08485355",
+    "name": "电子科技学院(东)",
+    "r8": "88400c3267fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_4f7dbdcaa3608c9659c7",
+    "name": "电子科技学院(东)",
+    "r8": "88400c3267fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_9b14a2644b50f147283d",
+    "name": "白晶九号",
+    "r8": "88400c0141fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_a97673a2d18c6963010e",
+    "name": "白晶幼儿园",
+    "r8": "88400c0109fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_1fe4dfe28bb6eb87fade",
+    "name": "白晶谷",
+    "r8": "88400c0143fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_cfa00a63432aa7a93558",
+    "name": "省城市职业学院",
+    "r8": "88400c1535fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_73231810e20bcb1334ea",
+    "name": "耐克训练营",
+    "r8": "88400c014bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_4b9e343ba536bd7f8a1f",
+    "name": "聚源路口",
+    "r8": "88400c3269fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_9a756e51c7bc5839da80",
+    "name": "聚源路口",
+    "r8": "88400c3269fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_5a196c9877630f2c8877",
+    "name": "草原路",
+    "r8": "88400c1a3bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_3024d9c71599c591c695",
+    "name": "贵州医科大学贵安校区(东)",
+    "r8": "88400c3043fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_40081472ed2672c6f444",
+    "name": "贵州医科大学贵安校区(东)",
+    "r8": "88400c3041fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_9c245e2c45185d7980f6",
+    "name": "贵州医科大学贵安校区(西)",
+    "r8": "88400c3043fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_5f83bce3e4a757ffc415",
+    "name": "贵州医科大学贵安校区(西)",
+    "r8": "88400c3043fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_307e72537984e94c1d2e",
+    "name": "贵州轻工职业大学",
+    "r8": "88400c3255fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_66b64b7c96f8344f2c72",
+    "name": "贵州轻工职业技术学院贵安校区",
+    "r8": "88400c3255fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_dd2148917b6b9ad19f68",
+    "name": "贵龙新苑",
+    "r8": "88400c0159fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_d7372ae68404da234cce",
+    "name": "阳谷路(中)",
+    "r8": "88400c3255fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_5eb0774f3d4e271ddff6",
+    "name": "阳谷路(中)",
+    "r8": "88400c3243fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_86d8916c65d9f9d7f805",
+    "name": "阿涝苗寨",
+    "r8": "88400c3007fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_b7697dc45b4bbfd4ed01",
+    "name": "香榭街",
+    "r8": "88400c0155fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_72e6facfcfc81f0058c5",
+    "name": "马场火车站",
+    "r8": "88400c30cdfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_42c78743440dd5052b81",
+    "name": "马场火车站",
+    "r8": "88400c30cdfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_6e2bdd4adae576368d6d",
+    "name": "马场路口",
+    "r8": "88400c3005fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_100857332ba8c4953ed0",
+    "name": "马场路口",
+    "r8": "88400c3005fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_b241d3f8aef7ac5075c9",
+    "name": "马场镇",
+    "r8": "88400c3003fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_3d97db0a6f0626332173",
+    "name": "马场镇",
+    "r8": "88400c3003fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_c19cc00c6daa07ebc570",
+    "name": "马场镇(东)",
+    "r8": "88400c3009fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_b165e6a9d6406f507cd9",
+    "name": "马场镇口",
+    "r8": "88400c300bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_355dffdfd40c346380cc",
+    "name": "马场镇口",
+    "r8": "88400c300bfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_f500a6ee0cdf7fdf2a2d",
+    "name": "黄瓜坡",
+    "r8": "88400ca997fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_bde946773c93a211254b",
+    "name": "黄瓜坡",
+    "r8": "88400ca997fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_b2fd6c0da64951f5a22d",
+    "name": "龙城国际",
+    "r8": "88400c1a35fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_0c429bdc2cf77cbbab27",
+    "name": "龙城国际",
+    "r8": "88400c1a35fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_ffbc047b088111e823bc",
+    "name": "龙溪科创中心",
+    "r8": "88400c0265fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_36aec7ff6fb0ef007ead",
+    "name": "龙溪科创中心",
+    "r8": "88400c0265fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_538594dd5d864782603f",
+    "name": "龙里工行",
+    "r8": "88400c1a31fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_fb33fbf1f8c59233bd8b",
+    "name": "龙里工行",
+    "r8": "88400c1a31fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_bfcf41612e4bee4cb3fe",
+    "name": "龙里新客运站",
+    "r8": "88400c185dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_c3216e74b9cc07cac4bc",
+    "name": "龙里新客运站",
+    "r8": "88400c185dfffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_94868b3542b79e84a044",
+    "name": "龙里水乡",
+    "r8": "88400c1ad7fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_bd563efd2673b06fbd0e",
+    "name": "龙里河大桥",
+    "r8": "88400c0249fffff"
+  },
+  {
+    "type": "TransitStop",
+    "id": "transitstop_bus_26c10bd7c5217862d9db",
+    "name": "龙门镇",
+    "r8": "88400c1a81fffff"
+  }
+]

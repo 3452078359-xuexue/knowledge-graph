@@ -1,0 +1,4602 @@
+{
+  "datasetName": "贵阳市小红书高价值POI补采ReviewItem审核暂存",
+  "city": "贵阳市",
+  "entityType": "ReviewItem",
+  "recordCount": 184,
+  "sourcePolicy": "审核暂存：AI回答不得直接入稳定层；SourceEvidence decision 全为待复核。",
+  "generatedAt": "2026-09-17 11:25:14",
+  "records": [
+    {
+      "id": "review_xhs_3862df6ed90881f26dfd43572b04",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_4039cbf8-f08b-4ae2-8442-36c87f234d8a"
+      ],
+      "currentClaim": "点点AI已为“黔大叔大牌档(甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_4039cbf8-f08b-4ae2-8442-36c87f234d8a"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "64216b02ffa0bbc80ca714c3f55c8944b399678e64a9e760c3f2ded48ac97860"
+    },
+    {
+      "id": "review_xhs_343dc305d26f127623808831f2a4",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_6ff1be14-40bd-4679-9032-99dc77f90812"
+      ],
+      "currentClaim": "点点AI已为“8号花园餐厅(甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_6ff1be14-40bd-4679-9032-99dc77f90812"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "916e003c79a3dcc34185aee536aaa470d9744a2ddc883a592d2827e91036838d"
+    },
+    {
+      "id": "review_xhs_bd3c202b69c79f9ff6b656fd5784",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_e5387afd-85f0-4cab-8629-974318135888"
+      ],
+      "currentClaim": "点点AI已为“李兰英胖姨妈粉面店(护国路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_e5387afd-85f0-4cab-8629-974318135888"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b6d8339e104d84c78bb191488809971e07ee65fcd318545a3c93e8d3974211a6"
+    },
+    {
+      "id": "review_xhs_75c1abcb4aa4ed27faaf267b83bd",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_15f21042-41cd-4a8d-8b41-343317c2daf3"
+      ],
+      "currentClaim": "点点AI已为“花园烧烤”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_15f21042-41cd-4a8d-8b41-343317c2daf3"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "8ac53dc0461abb384ecf3fb3719a620c951dc0091cf6f1497521ced1224face0"
+    },
+    {
+      "id": "review_xhs_b4ba7c0f9f36de3e3a2f88b2694f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_87c2bc2a-d2f5-4851-9b9c-49f2d69c10e7"
+      ],
+      "currentClaim": "点点AI已为“西街食府(青岩古镇店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_87c2bc2a-d2f5-4851-9b9c-49f2d69c10e7"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "09054b0b63b63bae8465b8c6d2c8ff90d4e8757bd1d61069d2cec682d8710d9c"
+    },
+    {
+      "id": "review_xhs_313c691f7bce9c0b2c408edb96e9",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_3d5ad18d-0e1a-4f7c-91e7-6c7911b1be21"
+      ],
+      "currentClaim": "点点AI已为“大虎老火锅(博爱路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_3d5ad18d-0e1a-4f7c-91e7-6c7911b1be21"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9d747bd315f5f45040ec11617c194e9acc6ccfd61d262e5b0bc332024fa72e6b"
+    },
+    {
+      "id": "review_xhs_c1a3c527a15b372ee6a3642fda27",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_73045659-c439-4354-9272-521a6dc84596"
+      ],
+      "currentClaim": "点点AI已为“姜JIANG'S餐厅(南浦路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_73045659-c439-4354-9272-521a6dc84596"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "85d49abc09d4f87bc0c5f70b4215059e6ff9c0e476e0260f78a5e91ba663521a"
+    },
+    {
+      "id": "review_xhs_4ecc2264b626c4d8ec4f137742f8",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_53bbe12f-08cf-463c-85da-b5c3b5978159"
+      ],
+      "currentClaim": "点点AI已为“毛辣果虾酸牛肉(甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_53bbe12f-08cf-463c-85da-b5c3b5978159"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9e1b25844631ec7b38968b82e9f33ebabe75ed7865864c523ac950743e20cc91"
+    },
+    {
+      "id": "review_xhs_fd8c70d7d046d6d56c9c7300dbe0",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_5ed05f5c-2152-4a67-a714-f3e80775eef6"
+      ],
+      "currentClaim": "点点AI已为“煮意现舂鲜货火锅(南浦路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_5ed05f5c-2152-4a67-a714-f3e80775eef6"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f5d93e54801c56fbba5216ad28a927a5df0757b4e9dfe0b569b28d2aaa8d6f37"
+    },
+    {
+      "id": "review_xhs_1ba99a0d3835a5cd3c14d1f01b16",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_af31d179-da81-4383-ba18-932c75f2bc06"
+      ],
+      "currentClaim": "点点AI已为“兴隆餐馆(兴隆街店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_af31d179-da81-4383-ba18-932c75f2bc06"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3e304a92c1e5a13687979c2ecab8b063215236ed61debb4e1b7c2ad6101e5e00"
+    },
+    {
+      "id": "review_xhs_1c1eee3c721148350197625a4a8a",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_c3b08b70-e757-47f8-b2c8-220bea8fab23"
+      ],
+      "currentClaim": "点点AI已为“包整(甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_c3b08b70-e757-47f8-b2c8-220bea8fab23"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "37d485a65cdddc31f089ae90195364c206a9512a95bcf4006b3e9e0bf07676d0"
+    },
+    {
+      "id": "review_xhs_5f26aa83d6d84e0a0017f8d72da8",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_3b7dff4d-db06-442b-b30a-49643757041d"
+      ],
+      "currentClaim": "点点AI已为“聚谊堂老北京涮羊肉(林城大厦店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_3b7dff4d-db06-442b-b30a-49643757041d"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9433367c3e2ad0d7af94df0430cd34785683f326335a4c34d9c1f59048bd7180"
+    },
+    {
+      "id": "review_xhs_b2726c790c7478fec1363e847ea8",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_8a0f0d91-d551-4fa5-ab6d-90ca744c99a8"
+      ],
+      "currentClaim": "点点AI已为“阿萨中东料理·清真(贵阳万象城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_8a0f0d91-d551-4fa5-ab6d-90ca744c99a8"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "943d228471139d6a2ca19a80950c09711450e5aa0cc663abb965de6a03fcdb62"
+    },
+    {
+      "id": "review_xhs_d1c7633c6192e4492831dc466250",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f9c35abd-fa10-477e-9c7f-09afa7f2bcec"
+      ],
+      "currentClaim": "点点AI已为“王万妈卤猪脚(青岩老店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f9c35abd-fa10-477e-9c7f-09afa7f2bcec"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "547dbec9e91f616731c12d4c6bce6d8943cc4b29765dd169dd7d600a6a61f567"
+    },
+    {
+      "id": "review_xhs_5384bd48796d93eea6e6caa25ddf",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_0af64cc7-da51-49ee-ad4e-5814b7a88155"
+      ],
+      "currentClaim": "点点AI已为“花溪王记牛肉粉店(十字街总店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_0af64cc7-da51-49ee-ad4e-5814b7a88155"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "164e3cbb37ffe838b36633f4286b460d62f28c378815361a8d6f87163703174b"
+    },
+    {
+      "id": "review_xhs_1c467836e3c78e96430a167d81e9",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_2f3250c9-1978-48b4-abd2-7215e28e2b8f"
+      ],
+      "currentClaim": "点点AI已为“NEED创意韩国料理(贵阳万象城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_2f3250c9-1978-48b4-abd2-7215e28e2b8f"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d1fdc82fbef6fee26532e23fb9850828d6f6c52b697ccbca2fa5778f2d9dfec8"
+    },
+    {
+      "id": "review_xhs_aadac1162622b249c3ee30670075",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_0107ecfd-c15d-4aea-8c6e-79873a5e7331"
+      ],
+      "currentClaim": "点点AI已为“罗小二贵州烙锅烤肉(甲秀楼总店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_0107ecfd-c15d-4aea-8c6e-79873a5e7331"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "56d0579750efe068ab036493d9729ee67782253871bfc6bd28bb9bb95e4a3be9"
+    },
+    {
+      "id": "review_xhs_c93422ecc70d19139c2b5fc508ca",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_5022c4b8-07ce-4b55-872e-ef10c57233ba"
+      ],
+      "currentClaim": "点点AI已为“乔治公社(文昌路)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_5022c4b8-07ce-4b55-872e-ef10c57233ba"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3e600636511d0a9ea13d9d7934c96bc3303a6fbd00eb778a0e5bcc6e9ef97616"
+    },
+    {
+      "id": "review_xhs_7067a60d0a97631ead5c3595df22",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_6568089b-12d2-4429-9bd9-16df76b99b2c"
+      ],
+      "currentClaim": "点点AI已为“佳乡烟火·织金土烙锅(小十字全国总店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_6568089b-12d2-4429-9bd9-16df76b99b2c"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0137984ed6e454a257f50e5121030a611b7b66ef745a9e195bf13766539d4f25"
+    },
+    {
+      "id": "review_xhs_a59e572864ec700ff67e9f1abc84",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_15eeb09d-62ad-4c98-a0ef-9659f77dfa14"
+      ],
+      "currentClaim": "点点AI已为“新大新豆米火锅1993(南国花锦店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_15eeb09d-62ad-4c98-a0ef-9659f77dfa14"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b7560d50a89c23b307fd54a832063e9e182ff1ae733ed19ec0051882243df25e"
+    },
+    {
+      "id": "review_xhs_ada23b827fcd69ffc1723e6429a0",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_b30bfc3b-6db8-4eb6-af5b-0c7269f6b94a"
+      ],
+      "currentClaim": "点点AI已为“新大新豆米火锅1993(恒峰店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_b30bfc3b-6db8-4eb6-af5b-0c7269f6b94a"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "fc71b4d331f924347b06bae102d5dcd49a910ceb0d58b0b96fd4d5b0ad22c27d"
+    },
+    {
+      "id": "review_xhs_d9e3f8166711e3fd4c7f00e83d5d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_80737871-1ac5-4765-8204-0de239944939"
+      ],
+      "currentClaim": "点点AI已为“陈氏人家豆米火锅(文昌阁店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_80737871-1ac5-4765-8204-0de239944939"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "fe0e16acd51552cc817e91b6ed0fb39fc95b9c3f9fe07fb02462438d72fb97e7"
+    },
+    {
+      "id": "review_xhs_5be3d2d3f6297b8a4b449f398f9d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_ee54f358-fcf4-45c1-9a87-e20ac97ec643"
+      ],
+      "currentClaim": "点点AI已为“三孃豌杂面(贵棉小区店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_ee54f358-fcf4-45c1-9a87-e20ac97ec643"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "75d7adb42dbe99b18acad1ce194c04452c71ebe2581d71737bfc5e0834e1bcbe"
+    },
+    {
+      "id": "review_xhs_6facea87d7e23666539d9c2b71af",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_d7230f03-6d20-47d5-87e0-351257780912"
+      ],
+      "currentClaim": "点点AI已为“北京御铺烤鸭(油榨街店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_d7230f03-6d20-47d5-87e0-351257780912"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d9ea4aa4714dceb97e2b185dbc2b11650bdb5e80d87e9ff06d1bc47073886e1c"
+    },
+    {
+      "id": "review_xhs_af3daef366e94ec809829ede34ec",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_0d7d1649-cab7-4150-b613-52e44a3ccbfd"
+      ],
+      "currentClaim": "点点AI已为“大胖刘烙锅(青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_0d7d1649-cab7-4150-b613-52e44a3ccbfd"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "59f3a05175b57e37ac80016f4bcbb542e0c14d7947cbceba42cc09f3a189ac7b"
+    },
+    {
+      "id": "review_xhs_2460ff72a36e6cdb06231b678933",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_9dd6bb39-e7f3-40c0-b6b3-ad3b76f245bb"
+      ],
+      "currentClaim": "点点AI已为“广味园(青云路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_9dd6bb39-e7f3-40c0-b6b3-ad3b76f245bb"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "43ff67cd8a490705c956e1c94c90070879d82f73d092786ca8f7d1d2c8f829c2"
+    },
+    {
+      "id": "review_xhs_831272959e475f7467f779913d1d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_0143c400-ac61-4887-8da7-f8d4f9e6d7ca"
+      ],
+      "currentClaim": "点点AI已为“新侗家食府(蟠桃宫店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_0143c400-ac61-4887-8da7-f8d4f9e6d7ca"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3f3ab96d2e20541f5b2466ec4aaddd691e417edd64c4ab1b6510784b59b837b5"
+    },
+    {
+      "id": "review_xhs_484f685f89181285771d5dd82e7e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_d42e9917-a98e-4c14-8f29-e88d59343177"
+      ],
+      "currentClaim": "点点AI已为“盛意食府(省医家属区宿舍店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_d42e9917-a98e-4c14-8f29-e88d59343177"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c1cc8ecb753137af27cc773ab32eb655cdcebe5d6a7b5c2937c70292192abb13"
+    },
+    {
+      "id": "review_xhs_dabe6b379aab0d865b41f71e4528",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_4ea271e8-1f30-45c2-8d24-e765a43f02ce"
+      ],
+      "currentClaim": "点点AI已为“7号花园餐厅(北站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_4ea271e8-1f30-45c2-8d24-e765a43f02ce"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7f735cd1120f2685f2c08224883e0b8c727881bdbd2a139d36e0b920e87b163e"
+    },
+    {
+      "id": "review_xhs_b2e3f93ea8812c4c8f2fc386fa89",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_273716bf-8187-4051-ab11-dd7822a25216"
+      ],
+      "currentClaim": "点点AI已为“老凯俚酸汤鱼— —苗岭风情园(会展城)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_273716bf-8187-4051-ab11-dd7822a25216"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "16564e24ce3fd34d775662e94f1f53464b4734ed2513ac02cc4dca69f1f1b5fe"
+    },
+    {
+      "id": "review_xhs_5c7de7ba6649be74d7550e07defa",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_dfb63692-79ab-4949-b443-d058bb505ddd"
+      ],
+      "currentClaim": "点点AI已为“老吴烧烤徐州羊肉串(红华新天地店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_dfb63692-79ab-4949-b443-d058bb505ddd"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "a0b11a723fe496b12ef1837fd706798f9c1e33ae737067ee44bf5b2102a91a3d"
+    },
+    {
+      "id": "review_xhs_ee42102a03e691764ff437476819",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_34f3da1d-c3fa-4c8a-98b4-15c00c4393e7"
+      ],
+      "currentClaim": "点点AI已为“观山湖区祥粤楼餐饮店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_34f3da1d-c3fa-4c8a-98b4-15c00c4393e7"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "2daf0ced83775b80c4707c7f74d00c1e2d6408bb193183a1a64dfca5e9de6fb4"
+    },
+    {
+      "id": "review_xhs_087c563197ee23e6f3a60f471fac",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_ada1f2ae-269e-48a7-be18-49b0b6700b9e"
+      ],
+      "currentClaim": "点点AI已为“醉苗侗凯里酸汤鱼(护国路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_ada1f2ae-269e-48a7-be18-49b0b6700b9e"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "05e684f8349556b6438488155ca63dd9907e718835a992f66de217b1731bc3ac"
+    },
+    {
+      "id": "review_xhs_6168e4eed1947c16761d12053e06",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_08f5b598-1598-4a64-973b-3efec76228b2"
+      ],
+      "currentClaim": "点点AI已为“丁姨妈贵州臭豆腐烙锅(甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_08f5b598-1598-4a64-973b-3efec76228b2"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "50f335e824c5bbab800404a6174b30b8c7538b8c37f46dd064c6c2236748fbb4"
+    },
+    {
+      "id": "review_xhs_69bc92a7aaa4f933a5fd7cd58a55",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_aa3a2c4f-8cb3-412d-8aea-216f9995e608"
+      ],
+      "currentClaim": "点点AI已为“醉苗侗酸汤火锅(甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_aa3a2c4f-8cb3-412d-8aea-216f9995e608"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d38df56b74f5d49d0c034241ae6fedf021deec0b7d32e97269648b0db9c234ae"
+    },
+    {
+      "id": "review_xhs_50d09950d2a4f3cfece191941c5e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_86abf321-cdf8-424c-9ad1-b9fd51f6a081"
+      ],
+      "currentClaim": "点点AI已为“锦蓝苑私房菜”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_86abf321-cdf8-424c-9ad1-b9fd51f6a081"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "a548bdd33a21716344f97b9f7c0a6bb9f76a221fdc4f802f14e0c6c0b2187387"
+    },
+    {
+      "id": "review_xhs_01a0743654b86b1391f45a79e517",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_958d4005-db2a-40cf-858a-28b2df550991"
+      ],
+      "currentClaim": "点点AI已为“麦当劳(大南门餐厅)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_958d4005-db2a-40cf-858a-28b2df550991"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9b21dfc2488c004b27c386352a4ed2dc14b6c4aef1dd2c8ff558a01e8b311a90"
+    },
+    {
+      "id": "review_xhs_2a635e4c0d61a88557f23d2d0628",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_007de76c-1030-47f9-8059-a9e929a492fa"
+      ],
+      "currentClaim": "点点AI已为“城南状元食府”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_007de76c-1030-47f9-8059-a9e929a492fa"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "ecdde238e3acf93eea8b06203e041299e767714a6f15c507ff7a80f5c30f1f4d"
+    },
+    {
+      "id": "review_xhs_de26cac7af750985afd9d3cdeb6d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_8e716e5c-a211-4a2b-8eee-2b18fb02e6e6"
+      ],
+      "currentClaim": "点点AI已为“柏拉图西餐厅(花溪店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_8e716e5c-a211-4a2b-8eee-2b18fb02e6e6"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "199e04020f752145ea2c09982fa890e95d7c6c950215cd26734d1909234a2f67"
+    },
+    {
+      "id": "review_xhs_4b8d6f4c0250282c1f0d32bcfb46",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_0852724a-75ae-447c-b21e-e8cbf63e176b"
+      ],
+      "currentClaim": "点点AI已为“江边渔村(小十字总店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_0852724a-75ae-447c-b21e-e8cbf63e176b"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "41e21625021c340832626513105bf023192f751c320b8843c87718ba22963e57"
+    },
+    {
+      "id": "review_xhs_4445af59a57cb9d944adc3562110",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_60d891e1-975d-491f-a1a3-2a3f93cf8aae"
+      ],
+      "currentClaim": "点点AI已为“虎岚和牛寿喜烧日料自助”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_60d891e1-975d-491f-a1a3-2a3f93cf8aae"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e34009f148006022605b0422387e8f0420f2de2a92cc422311c24d5ccf06c95c"
+    },
+    {
+      "id": "review_xhs_0a42f8bf1210d844d036f42fd6de",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f3336565-46c9-41a7-bec9-13f19e672cb2"
+      ],
+      "currentClaim": "点点AI已为“川心美蛙鱼头火锅(护国路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f3336565-46c9-41a7-bec9-13f19e672cb2"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9f94d7497a0f47f4ff51668121f28bbe5a70e53ba7315edd5f3e85bc2c23f05c"
+    },
+    {
+      "id": "review_xhs_7980847c69f2cf8a0d227bd83f5a",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_e71a88b5-4ba6-42b4-9174-6635cd0a3115"
+      ],
+      "currentClaim": "点点AI已为“灌木咖啡(万象城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_e71a88b5-4ba6-42b4-9174-6635cd0a3115"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f643c33b3c887096d306a2c335e464f2626c1771c6147b16769107829ebc7186"
+    },
+    {
+      "id": "review_xhs_eb0d2d7156895338a7872b3615d4",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f874c4f6-0494-40aa-ad47-1b417eeaf3fe"
+      ],
+      "currentClaim": "点点AI已为“黔小豆豆米豆豉酸汤火锅”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f874c4f6-0494-40aa-ad47-1b417eeaf3fe"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "966baeea999eccc9131f9671b2ab0b51e7dd0836cccb94e29274264b5ad919c4"
+    },
+    {
+      "id": "review_xhs_26f086b66b5f83231a37892bb585",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_b241007b-c285-4f15-a932-47ffeabe6d75"
+      ],
+      "currentClaim": "点点AI已为“喜多·漫食界·宴会厅”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_b241007b-c285-4f15-a932-47ffeabe6d75"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "6c45368a06607f428b3f144f086467c16f3a140851eb93dba55f1b4bf9c3b2dc"
+    },
+    {
+      "id": "review_xhs_4d68e42fc5ebb785be7d604edaa8",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_1d759efd-43ad-49e9-a003-0dd9f2f19939"
+      ],
+      "currentClaim": "点点AI已为“一烙锅(友谊店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_1d759efd-43ad-49e9-a003-0dd9f2f19939"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "5300624a412b6191e94829b98e443a2f0a558aac1df48a842f53f4a306a5ccd3"
+    },
+    {
+      "id": "review_xhs_65cc3db162db061f58b18ad3474a",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f8b2841e-b6a2-4387-96bf-9464ce7e65b5"
+      ],
+      "currentClaim": "点点AI已为“大胖刘烙锅(煤矿村全国总店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f8b2841e-b6a2-4387-96bf-9464ce7e65b5"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "1e07605e0da2dd43f839f2fe1015f6372d857645e0a20e939496ae435fc48490"
+    },
+    {
+      "id": "review_xhs_f72d7501f33332ae115a2efd0ad7",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_4b81d0b1-5d56-44ee-a11b-1dfd1196177c"
+      ],
+      "currentClaim": "点点AI已为“去茶山(贵阳万象城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_4b81d0b1-5d56-44ee-a11b-1dfd1196177c"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9f8ab7a4826e2401da15a0346efe1672f05c1a9165f4a75bd6ee2325a3f1e782"
+    },
+    {
+      "id": "review_xhs_f6e24b7c3aa92c26b26b453b9148",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_e73e12a0-7c7c-4794-a69a-5c35fa3f2fbc"
+      ],
+      "currentClaim": "点点AI已为“他先生豆米豆豉酸辣烫(恒丰步行街店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_e73e12a0-7c7c-4794-a69a-5c35fa3f2fbc"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "64ed0cd42c2617fed2d0585e10dfc804292854debcdb45e358521d2ca7077729"
+    },
+    {
+      "id": "review_xhs_699ecf411de805be718a035156e5",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_b689720a-c251-428a-b97a-952eeb9f6375"
+      ],
+      "currentClaim": "点点AI已为“侗家食府(北京路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_b689720a-c251-428a-b97a-952eeb9f6375"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b8fc187de31809f6ba19b52d15c469c8af094a5594ba17e4ef5d029424fd8f5f"
+    },
+    {
+      "id": "review_xhs_eb98e9387fd24ce348e550a3e264",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_ca2c0a4a-24da-4434-8438-0fc34df0e8f8"
+      ],
+      "currentClaim": "点点AI已为“土家风味豆米火锅·干锅剔骨鸡(黔灵山公园店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_ca2c0a4a-24da-4434-8438-0fc34df0e8f8"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "060ad99d1a2e1446bd32b8bc3ee66fd0a498982dd06e223813406db03b2fd61f"
+    },
+    {
+      "id": "review_xhs_0fbd6afbcf4ba6dffa3fb7f36438",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_299bf1ef-60d8-4159-a7d1-ae359b74aba2"
+      ],
+      "currentClaim": "点点AI已为“拐角楼食府”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_299bf1ef-60d8-4159-a7d1-ae359b74aba2"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c96a3e94f7984597d8aec3bba1e43a441dea42ff1f0717a331a6cdf94a5ee586"
+    },
+    {
+      "id": "review_xhs_0b0e8fcc0b9ff060b8ef30fe6ace",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_3483c5b1-7d35-4a47-93e9-57d773338509"
+      ],
+      "currentClaim": "点点AI已为“榕江牛瘪牛肉火锅”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_3483c5b1-7d35-4a47-93e9-57d773338509"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0976a429a819976a2d2f43796fd0fad31834bc41c71501ec58572703459b6a5a"
+    },
+    {
+      "id": "review_xhs_e533cf7253d08a63959eba6dfd1f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_3652869c-59d4-4b68-9f6b-95760e34b743"
+      ],
+      "currentClaim": "点点AI已为“牛健佳土黄牛肉粉总店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_3652869c-59d4-4b68-9f6b-95760e34b743"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "551dab4c886eb7f40b94454a5f7cf8dedc64f9f416a38f0e54b276f11bfe9adf"
+    },
+    {
+      "id": "review_xhs_8271e99b16731377254651b2ee68",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_ce010292-ebf2-4a7d-a31f-83806222cd44"
+      ],
+      "currentClaim": "点点AI已为“田棒棒重庆火锅(贵阳店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_ce010292-ebf2-4a7d-a31f-83806222cd44"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "94edd572498626c65ac5da067c68e578c03c581f249bcb2f7a4eb2f37fc5d139"
+    },
+    {
+      "id": "review_xhs_5ef3558c88956bf53fb099d71c09",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_fd96ffdd-b806-4fe8-947b-6cf8693c4b81"
+      ],
+      "currentClaim": "点点AI已为“福九水派重庆火锅(原灶上鲜)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_fd96ffdd-b806-4fe8-947b-6cf8693c4b81"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "df763c2c229888a3ffc68eead5ead644ebf609d97793640c4a76fce02f34dd4b"
+    },
+    {
+      "id": "review_xhs_3220c0ba42a260da00e3fef642ae",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_9910f4f1-7883-42f1-a587-fb58052e04c3"
+      ],
+      "currentClaim": "点点AI已为“菌极鲜野生菌火锅店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_9910f4f1-7883-42f1-a587-fb58052e04c3"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "a2d6685867a836fe54a3367fbc88d946d1771b68462b233ca0481a75070a0f1d"
+    },
+    {
+      "id": "review_xhs_ff74e052b0ea5ff51d1d89a0c098",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_bc682d5a-9dce-45f4-a855-59954bd50a53"
+      ],
+      "currentClaim": "点点AI已为“侗家老贵州黔菜馆”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_bc682d5a-9dce-45f4-a855-59954bd50a53"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7295c863a44c5444988c84bb8b126d864d133b08b81afb56864a1e2476ef620d"
+    },
+    {
+      "id": "review_xhs_8917b18926de948d0ef7ad3e63c3",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_125ae11f-f0b2-4879-bcb0-a0717f1711bb"
+      ],
+      "currentClaim": "点点AI已为“好雅味黔菜”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_125ae11f-f0b2-4879-bcb0-a0717f1711bb"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7b34fa01047ffda652a88dd650a513e6dd8e7d5bdc4c376fe6a3ca2d4edcf3c3"
+    },
+    {
+      "id": "review_xhs_c84ad45db37670a2b4a303fa235b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_295925ca-6403-49b6-bdb3-b2a6f356508b"
+      ],
+      "currentClaim": "点点AI已为“燎垣烤肉”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_295925ca-6403-49b6-bdb3-b2a6f356508b"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "dd0ec5b98fbb6765584304f16f0d5bc7e3a3df47e3eae565cf8d7bb0aed981ab"
+    },
+    {
+      "id": "review_xhs_6305d0f56ba9df2a1c9f1a50b82e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_108795351"
+      ],
+      "currentClaim": "点点AI已为“SANHE叁合酒店(贵阳甲秀楼青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_108795351"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3e27708c47279f4d7fc5456f2ea77ec1b86ae4b87f05f130ddf7395ff705a990"
+    },
+    {
+      "id": "review_xhs_b3f1674fa6644a350e815abf8511",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_51814634"
+      ],
+      "currentClaim": "点点AI已为“贵阳会展中心希尔顿欢朋酒店(阿云朵仓店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_51814634"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "2ec6834caefc029cd6f458dc93487fa4f76583f9546fe905b45da91abef9c45f"
+    },
+    {
+      "id": "review_xhs_9a1e8f10724d6b95ad3b162957ad",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_100964056"
+      ],
+      "currentClaim": "点点AI已为“贵阳南明吉源希尔顿惠庭酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_100964056"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "79c45b413b1a9cab001cb230eea1cec62d78fc6e019af055af5d07ca67cf3697"
+    },
+    {
+      "id": "review_xhs_8844bd8dc116b4bb83ea3f1d15de",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_101173416"
+      ],
+      "currentClaim": "点点AI已为“中濠国际酒店(贵阳喷水池甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_101173416"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "48012656f9efd22e058af63b22d2220019984dac83c70bc077c8281bfbc3a112"
+    },
+    {
+      "id": "review_xhs_bb8093abf20050521917aa549038",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_112369895"
+      ],
+      "currentClaim": "点点AI已为“贵阳北站西广场美仑酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_112369895"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e737e6b12782551b1f25dff55e072f334be345b5af8dcdaf9ec50b7a04c170eb"
+    },
+    {
+      "id": "review_xhs_4a15b13dcf3b41f6c9da15b60b28",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_419905"
+      ],
+      "currentClaim": "点点AI已为“贵阳凯宾斯基大酒店(甲秀楼护国路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_419905"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "ac8ff7435094942686f4c26b916294c3e14b44159f95ba8d61adbeee984f3532"
+    },
+    {
+      "id": "review_xhs_42138df69e64183a38c5bbe22793",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_130110283"
+      ],
+      "currentClaim": "点点AI已为“贵阳半山酒店(甲秀楼青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_130110283"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "68c11bf68be2dcfc3a4a7f45a00d300acca37dd7bfb8585cd7a78e8099457265"
+    },
+    {
+      "id": "review_xhs_847509d6b2b1a4c1d2a9af08a030",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_428581"
+      ],
+      "currentClaim": "点点AI已为“贵阳雅高铂尔曼大酒店(甲秀楼鸿通城购物中心店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_428581"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "8e6e2ec8e7b5492c326de79545cbcb9e4ccd1d68f4d6dcc46dd657213f0b578d"
+    },
+    {
+      "id": "review_xhs_8315de182485f7aa26aafb7c35e9",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_102608903"
+      ],
+      "currentClaim": "点点AI已为“贵阳大十字广场喷水池高空亚朵酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_102608903"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "22e85c83a506fdc2fd9398f4ca9d87aae8f1de5ac1dbba917a777ff4bdca3f9e"
+    },
+    {
+      "id": "review_xhs_2503b0ef3e85c008770b8f92ee23",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_78385390"
+      ],
+      "currentClaim": "点点AI已为“Grandnite Hotel·顾奈城市酒店(贵阳观山湖会展城金融城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_78385390"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "702120a6f051dfba59b9d02921e1933f1f8151627d6aaae84db16ba580026126"
+    },
+    {
+      "id": "review_xhs_5d4f105a37b0459bae63a982d191",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_386659"
+      ],
+      "currentClaim": "点点AI已为“贵阳中天凯悦酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_386659"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3fceb677c2048d568b800021f15a7ab847b44d3eb8606a7a455af4fc51b72fb1"
+    },
+    {
+      "id": "review_xhs_0237e39991af6bca0aca69d7368d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_26690794"
+      ],
+      "currentClaim": "点点AI已为“丽橙酒店·悦(贵阳大十字广场甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_26690794"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "aae6fdd10ea694cb4dfcf2c983a016c8013fe0137f9900b21943dc5b22b662a3"
+    },
+    {
+      "id": "review_xhs_0dd6e63cec3f72bfce952c33459c",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_115067409"
+      ],
+      "currentClaim": "点点AI已为“贵阳南明火车站希尔顿欢朋酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_115067409"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "511b85e62873be019ee6ccb7c8dad0e5797bf59489911b242844e030a9936cc8"
+    },
+    {
+      "id": "review_xhs_dea65c929edecbdbd0d1ce40c193",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_126993360"
+      ],
+      "currentClaim": "点点AI已为“YSEE悦见酒店(贵阳喷水池民生路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_126993360"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "1208a8ee352979997623f4fe6e53e796a8ff7eba33087cd72441bc8874205c0f"
+    },
+    {
+      "id": "review_xhs_c83292703b59814cda48b274f58d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_96808096"
+      ],
+      "currentClaim": "点点AI已为“See GuiYang·雲翼高空酒店(贵阳甲秀楼民生路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_96808096"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7a42c812282157fab6d2ea23d960ab90a3659efd63bcce97b830f1e536edeca6"
+    },
+    {
+      "id": "review_xhs_ec7338bc3a62b0e66108654e4d92",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_119370169"
+      ],
+      "currentClaim": "点点AI已为“ANDZO·安屿洲酒店(贵阳观山湖公园林城西路地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_119370169"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b9f8d8744f88b50627c84b747da9ecd5bc77e52c8fdb5cc5fd0af057ea6fdf76"
+    },
+    {
+      "id": "review_xhs_48a746c57d33812dc9decfef5635",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_91549604"
+      ],
+      "currentClaim": "点点AI已为“贵州饭店·贵宾楼(黔灵公园北京路地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_91549604"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "1db7816f0ff5e90cc2887afa59e180fb3cd45f40c09c94fc1d9e6a9133addf52"
+    },
+    {
+      "id": "review_xhs_f33a53dc905ef09393cdb0ef87c4",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_6561071"
+      ],
+      "currentClaim": "点点AI已为“贵阳亨特索菲特酒店(甲秀楼民生路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_6561071"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "6e51212bd28392e0d2a968a8825a2353fe69de60ea67ef5a3f6a7cbe12cd30a1"
+    },
+    {
+      "id": "review_xhs_ef8d20e61b7998712d2f43d7b09a",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_437432"
+      ],
+      "currentClaim": "点点AI已为“贵州峰润喀斯特酒店(甲秀楼青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_437432"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f1f9901826c0fc448611026667cf8fcd112a314f2dd4ab41e28bdd9ee37436fd"
+    },
+    {
+      "id": "review_xhs_6e5235ac79740aec789a50fc44e5",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_2365773"
+      ],
+      "currentClaim": "点点AI已为“贵阳云岩喷水池地铁站亚朵轻居酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_2365773"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b1d8f6f15645904e96bc7775fdb2fa1721fa2c476e4d273dd741c22e5374d4f0"
+    },
+    {
+      "id": "review_xhs_057b8d51cc5417a9b9ad0b1046ec",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_50282883"
+      ],
+      "currentClaim": "点点AI已为“贵阳东景希尔顿酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_50282883"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "8b09223b3e2e7a1d3bdacc43c1f043705951679a8d5e8e3e7118a620a864758f"
+    },
+    {
+      "id": "review_xhs_f6f38612461c6eed02ebf1967b0a",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_45900425"
+      ],
+      "currentClaim": "点点AI已为“贵阳温德姆花园酒店(观山湖会展中心金融城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_45900425"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "fac3906094f913fd721423b9b32ce3beeff1d2c3a732c36d55745a68e72222d7"
+    },
+    {
+      "id": "review_xhs_01f8283145b78fda916bc29c5b67",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_54847596"
+      ],
+      "currentClaim": "点点AI已为“贵阳喷水池桔子水晶酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_54847596"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "fe0b8ddcf07204619a585ae4616d9d9ff34c93a73d7ac3fdac1c037bfe5f0c78"
+    },
+    {
+      "id": "review_xhs_adb60b8aa6b18afbb70512649338",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_70428431"
+      ],
+      "currentClaim": "点点AI已为“HUACHENG华呈·V时光漫步酒店(观山湖公园林城西路地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_70428431"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "109ce9b4792b32a7ae63c94f192e0f2414620ef46d118f9c3e9544b1fedf8766"
+    },
+    {
+      "id": "review_xhs_85f7252129054f6a1d7995f0ad55",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_430142"
+      ],
+      "currentClaim": "点点AI已为“贵阳雅高诺富特酒店(喷水池甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_430142"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7f5335db7d0fb624a95ac50d37116d87e987a0523661b9d9691ef07f1d2da912"
+    },
+    {
+      "id": "review_xhs_89c15b87b4e55351c025336e4ed6",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_109887776"
+      ],
+      "currentClaim": "点点AI已为“和光·ALIENSPACE外星人电竞酒店(贵阳火车北站国际会展中心店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_109887776"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e057c7a52fe108368f77c80a8dfd1d6c508417d01bcce1ffe8b0026d37bf8851"
+    },
+    {
+      "id": "review_xhs_96630a94a65040a0f2f42717b2c4",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_104266230"
+      ],
+      "currentClaim": "点点AI已为“木玖居·花叙|莫奈花园Holiday Villa观景美宿(青岩古镇店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_104266230"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d834b0032f8dc09f6929ab6776535ae48a3ab308a2defeeee0273988a93811e2"
+    },
+    {
+      "id": "review_xhs_c617d1990e143477b09a9d4925bc",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_128158533"
+      ],
+      "currentClaim": "点点AI已为“晚枫酒店·MAPLE HOTEL(万象汇购物中心奥林匹克体育中心店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_128158533"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "801f58e80d16dc718e284990235b23226609f31aa39284a066e45ab43ca965a4"
+    },
+    {
+      "id": "review_xhs_94600de72b9940958437cdffc963",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_29663837"
+      ],
+      "currentClaim": "点点AI已为“贵阳泊联汇酒店(喷水池大十字店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_29663837"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0b2819c3c9cbd9846a3697844538444885561e5f65173528c59e5ee981b2f367"
+    },
+    {
+      "id": "review_xhs_a14ce4e75d39d15440b674f688ab",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_49707998"
+      ],
+      "currentClaim": "点点AI已为“全季酒店(贵阳甲秀楼民生路好吃街店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_49707998"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "97f64819efd463af6e58efe12e04ff7c18bfd88f3d667aa8774a5106fe2aecd5"
+    },
+    {
+      "id": "review_xhs_7897ce70b2d57f86948dd42b4d3b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_6286939"
+      ],
+      "currentClaim": "点点AI已为“贵阳北站西广场亚朵酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_6286939"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "516f15df12237bed845ce5ed9b29de5ca3ade1dfa401c1c47470f9950f15dec0"
+    },
+    {
+      "id": "review_xhs_0d7084555ae53cc74b657b92f5c6",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_125382389"
+      ],
+      "currentClaim": "点点AI已为“贵阳南明兴业希尔顿欢朋酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_125382389"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "dbc3b5d691199ce0cf6d9bbe139c95474adf1a770c4ec11554403775b58acb78"
+    },
+    {
+      "id": "review_xhs_14b30ba08dee7de3014650b22ef7",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_73689228"
+      ],
+      "currentClaim": "点点AI已为“喆啡JAMES JOYCE COFFETEL酒店(贵阳火车站地铁站青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_73689228"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3d4eb3a2cb0c2fd673701423dc829691c8fb7dddb0ba3c8ef74652154f2a6200"
+    },
+    {
+      "id": "review_xhs_6323d93a19c11cc5c7b44fd6b3f6",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_45052036"
+      ],
+      "currentClaim": "点点AI已为“美岸·燕舍|南明河畔·溯野度假观景民宿(贵阳青云市集甲秀楼店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_45052036"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9797ee61070eecaa67e2f0bd8128181a6586e391cb57b308d051244816e74d22"
+    },
+    {
+      "id": "review_xhs_b7a23bc9b0e1fcab728d639e40f1",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_131826024"
+      ],
+      "currentClaim": "点点AI已为“一池 APOOL(喷水池民生路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_131826024"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "768e6432450cd7d5628b384bc5cda1c9663ef70d1d07cf7598ed49aef01c0fa1"
+    },
+    {
+      "id": "review_xhs_d77fd2b27fe8941a6fb58f70d186",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_749658"
+      ],
+      "currentClaim": "点点AI已为“如家酒店(贵阳青云市集火车站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_749658"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f478e0f8d8045cec3ce3bd9ba5e68e21c4a26adae6d77de73e106f8b0cbe5d8f"
+    },
+    {
+      "id": "review_xhs_a734fd60b31eadd32bbee8974c82",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_1340370"
+      ],
+      "currentClaim": "点点AI已为“贵阳恒世纪酒店(观山湖区诚信路地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_1340370"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "bd69229872c00cfeb70e526fd7d9b1362cc7b23c52ffd1f090aa2d55ef8d6524"
+    },
+    {
+      "id": "review_xhs_df84817dceb396d66f881e01e0f0",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_66732670"
+      ],
+      "currentClaim": "点点AI已为“贵阳观山湖公园兴义路亚朵酒店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_66732670"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0e9dbf66e16fe093accf408b3584eb142ab63870d76339746ef3944c9d945d5e"
+    },
+    {
+      "id": "review_xhs_5ee0ecba18a804922673b7ff440d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_130296102"
+      ],
+      "currentClaim": "点点AI已为“全季酒店(贵阳北站西广场店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_130296102"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "1b7d593e445ac1d2312997f74e63aa3430ade2b2018eb475c84bc1bcb4975fe4"
+    },
+    {
+      "id": "review_xhs_f92d73ab4d7693f48660eb84b1e5",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_68108441"
+      ],
+      "currentClaim": "点点AI已为“贵阳循美·栖溪院子(花溪公园十里河滩度假店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_68108441"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "329a522aab19b7f0595ed516d8ee1bd4357dd80bc887993e6e583b28c55c4386"
+    },
+    {
+      "id": "review_xhs_6ce6f47387b2d873ed163753e08c",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "sa_4898566"
+      ],
+      "currentClaim": "点点AI已为“天河潭风景区”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:sa_4898566"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "398cbe662d7c4cc822f6f757086833495911d40ffed43bcf09225797a0f9fdb0"
+    },
+    {
+      "id": "review_xhs_c2374ac84ab45856f30b8d7b354d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "sa_404936"
+      ],
+      "currentClaim": "点点AI已为“青岩古镇”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:sa_404936"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "404092cdef20ffdc6478b03cf4e6cfc59aa99de7f8bd358bab707afad3ffc7d6"
+    },
+    {
+      "id": "review_xhs_ddaa81cc2278b09a8e77f7806a88",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "sa_112398"
+      ],
+      "currentClaim": "点点AI已为“花溪公园”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:sa_112398"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "358741c2e4e02468ed5747f922c1843906d84338831f52c6b085be78bbd4ed2b"
+    },
+    {
+      "id": "review_xhs_6ca07d257d1353f770c736ba6485",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "sa_6479802"
+      ],
+      "currentClaim": "点点AI已为“黔灵山公园”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:sa_6479802"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "5da10e49e87576e28e70a7b09f0d2700062307afbadf66040548b88e2a929d32"
+    },
+    {
+      "id": "review_xhs_8610f0385e10800449033a3bc80d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "sa_956442"
+      ],
+      "currentClaim": "点点AI已为“花溪夜郎谷”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:sa_956442"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "61ebf142315df6d7866eb1bdbc404f1d554ba5b9b1b573a5a63e83801bf7647a"
+    },
+    {
+      "id": "review_xhs_784d4b8bdb2bb81a3a690617613f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "sa_412694"
+      ],
+      "currentClaim": "点点AI已为“甲秀楼”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:sa_412694"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b917264a91feee821e56c7c784810206da297e2d5cdcf33021ded94d0676ebd2"
+    },
+    {
+      "id": "review_xhs_35375e77fb26f9c9c369ac769c5c",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "scenic_amap_B035301FIE"
+      ],
+      "currentClaim": "点点AI已为“贵阳森林公园”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:scenic_amap_B035301FIE"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "18e2f594011c5fb56bf8ac0bb42a670632164a31ed3f178be72179bc5660f2af"
+    },
+    {
+      "id": "review_xhs_993c25015bbea65e856cdcc3d3ae",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "scenic_amap_B03530RNBF"
+      ],
+      "currentClaim": "点点AI已为“孔学堂”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:scenic_amap_B03530RNBF"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e8972cfa678013c0295e7f66f8b78d8263df2d21867bbb5cb3835b981706b1ea"
+    },
+    {
+      "id": "review_xhs_744c18b551c98e6386dd2b77033e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "scenic_amap_B03530Q0QW"
+      ],
+      "currentClaim": "点点AI已为“香纸沟”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:scenic_amap_B03530Q0QW"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "697e16ae6d0cca8ff865dcaef2f068e1855cae51bf1db19396fecd12ae31cdc1"
+    },
+    {
+      "id": "review_xhs_eaa53b48201ab3e630dbddb27336",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "scenic_amap_B03530OTGJ"
+      ],
+      "currentClaim": "点点AI已为“贵阳市十里河滩国家湿地公园”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:scenic_amap_B03530OTGJ"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "1b2cdcd01d965109cd8f8a95a78f70df448f16846e9b88ecc0a2e9cb73b75886"
+    },
+    {
+      "id": "review_xhs_4338a174cff8e92a9a5d3cc45d3f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "scenic_amap_B03530OZ78"
+      ],
+      "currentClaim": "点点AI已为“观山湖公园”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:scenic_amap_B03530OZ78"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "5cd612a16b09394f2a1645ee9a11c74fdfb85bf6984b097fabd031a1e961bbe5"
+    },
+    {
+      "id": "review_xhs_fc45cb0a62bf74dd96b9ffc6d87b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "scenic_amap_B0FFGYAZIA"
+      ],
+      "currentClaim": "点点AI已为“情人谷”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:scenic_amap_B0FFGYAZIA"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c276d60bd99e300b8422efa7b6681d586bd44b3c46aa626cb6f5c0b8cdb7e10a"
+    },
+    {
+      "id": "review_xhs_d944193cd1a2889c8c11a9123b4b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "transithub_airport_B035302E3I"
+      ],
+      "currentClaim": "点点AI已为“贵阳龙洞堡国际机场”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "accessGuide"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:transithub_airport_B035302E3I"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "91db87e01d37174e3bc0ce21239a30f1db5abf0a8e9ef0f5a6de162debd358e9"
+    },
+    {
+      "id": "review_xhs_a065c8d4ff762fad06fa29c9dfae",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "transithub_rail_036cee120df5af5ffc3f"
+      ],
+      "currentClaim": "点点AI已为“贵阳站”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "accessGuide"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:transithub_rail_036cee120df5af5ffc3f"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e191e3d3513c1e7c4f0cc3a05e64c1275a8f4ba7ba45bd167799209cb6e46448"
+    },
+    {
+      "id": "review_xhs_132b98260ed4c116de3c00ea361b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "transithub_rail_0dbfaa60581647b5c786"
+      ],
+      "currentClaim": "点点AI已为“贵阳北站”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "accessGuide"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:transithub_rail_0dbfaa60581647b5c786"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "8764ba2ebf290c33ab9b719a2d290820cd4d03b804d184814ce2758534a194b3"
+    },
+    {
+      "id": "review_xhs_ed9e61fdddf63f608c6a6a1d6b8e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "transithub_rail_a5b7a470997456fa4fd4"
+      ],
+      "currentClaim": "点点AI已为“贵阳东站”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "accessGuide"
+      ],
+      "priority": "高",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:transithub_rail_a5b7a470997456fa4fd4"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "dda111419d4741d233cb88b9c3fb4b50dc3bf56f25b9a96c87e6f9e549275926"
+    },
+    {
+      "id": "review_xhs_2aaaf2676761927686d5287d3c28",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_ae789f8d-2aeb-41f1-a8b2-ecd4e18e282e"
+      ],
+      "currentClaim": "点点AI已为“觉园素斋”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_ae789f8d-2aeb-41f1-a8b2-ecd4e18e282e"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f64a2f018f332ed60d6e1683b067d0736512dcaee7d8c1d4ca38269e73cc909f"
+    },
+    {
+      "id": "review_xhs_dcda915fe914f0941d441d6e4bbd",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_a7558bf5-2fe0-4764-82f9-c6d1972d7689"
+      ],
+      "currentClaim": "点点AI已为“银鹤料理(太平路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_a7558bf5-2fe0-4764-82f9-c6d1972d7689"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "44867eba9a1f44adca1394315a50d6fce791c402b0142cfc5f720ecd013075cb"
+    },
+    {
+      "id": "review_xhs_859f7e80cbb9aab4520844ce788c",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_35d02479-2d16-45af-900c-bdd96f18e12e"
+      ],
+      "currentClaim": "点点AI已为“陈氏人家豆米火锅(花溪店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_35d02479-2d16-45af-900c-bdd96f18e12e"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c7f3a9f5adfde31288400f6238834618afeabc6033df9f3e27b91b5c312024d7"
+    },
+    {
+      "id": "review_xhs_55609e2c2c7f1fd8234d0594a607",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_8f1ba967-1539-415d-a459-cd02c13af3ba"
+      ],
+      "currentClaim": "点点AI已为“黔凤辣子鸡(黔灵公园店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_8f1ba967-1539-415d-a459-cd02c13af3ba"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "a9080e30461e02257cbd87321afc4baa3e72fb3b8bd4187946a7a1fdc2525bd6"
+    },
+    {
+      "id": "review_xhs_d24286fb8026f3c5907b40a40fdb",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_c9a69f99-82a1-4c56-b1bc-2ec5ad7b5846"
+      ],
+      "currentClaim": "点点AI已为“黔肠旺面馆”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_c9a69f99-82a1-4c56-b1bc-2ec5ad7b5846"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b583e1dff1124a30feaf376d80fbd660b65375262da4179e1f070ccaf40a74d9"
+    },
+    {
+      "id": "review_xhs_71826d75937dc30b7f7d07b72c7e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_6a95b52d-c5e7-4952-937d-542b69041b32"
+      ],
+      "currentClaim": "点点AI已为“鸟撞云 WaveBird”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_6a95b52d-c5e7-4952-937d-542b69041b32"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "237b481a0d87c1a2e120f83c525b307eceaabe35b9c5c5759c3e3385729b6775"
+    },
+    {
+      "id": "review_xhs_6dbc86ff31d8a5d6d5d7e1d16b38",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_2561c80a-b920-4f5e-ab51-70bc5f353008"
+      ],
+      "currentClaim": "点点AI已为“陈氏人家豆米火锅(恒丰步行街总店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_2561c80a-b920-4f5e-ab51-70bc5f353008"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "dbe5840e24023b46df160aa1f75b563bf80d32d8ffaace9bcb5d5086839165fe"
+    },
+    {
+      "id": "review_xhs_64b46250442fbe5cccca50c85366",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_a7cc02b3-086a-4e3f-989f-87f073bb0d3a"
+      ],
+      "currentClaim": "点点AI已为“冯记卤猪脚”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_a7cc02b3-086a-4e3f-989f-87f073bb0d3a"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e7a709e4800ac9d0654cf255c8d77c738e5337a65a34d4ed023ef78c18250f24"
+    },
+    {
+      "id": "review_xhs_314bf3ca985dc49a8e75672716bf",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_92aa5f83-7be2-4875-9eb3-7c27ccdddd71"
+      ],
+      "currentClaim": "点点AI已为“梓木山庄”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_92aa5f83-7be2-4875-9eb3-7c27ccdddd71"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3ac6db81ca4b0855467ac026494e23d92a819a8684d1fd91f682384bb77ad3c7"
+    },
+    {
+      "id": "review_xhs_ade211fd616ad193e01b21772cfd",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_c11d06ca-9b29-4815-8cae-19e71fbf03c6"
+      ],
+      "currentClaim": "点点AI已为“翰林苑(北明清街)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_c11d06ca-9b29-4815-8cae-19e71fbf03c6"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "4d29f9bf4e72480ed045bf05935c29eb4831384457b9cda59d39296670903c63"
+    },
+    {
+      "id": "review_xhs_285036696ccd012349750f75350e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_75be9c40-cbed-41b0-a4ac-5f16cbb2ee1a"
+      ],
+      "currentClaim": "点点AI已为“忆苗香酸汤火锅(银座店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_75be9c40-cbed-41b0-a4ac-5f16cbb2ee1a"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c21b4a484b61bc7d589002ab9cc13b0cc03a5001d66776633fc2c724c082746c"
+    },
+    {
+      "id": "review_xhs_19b1ac974bdf8ae747af2f95206c",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_1850c646-8b65-4e96-922e-859fe6db1c78"
+      ],
+      "currentClaim": "点点AI已为“胡烙也·酱香烙锅(喷水池店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_1850c646-8b65-4e96-922e-859fe6db1c78"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d0151cea354f11317e15d7ddae77c3312bb015a5082b6ea61ed425dd7aa0d3be"
+    },
+    {
+      "id": "review_xhs_c54a948e6e3a47069b8f0dff3da1",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_73266f97-ba6b-4ba1-af95-522ee0b548ef"
+      ],
+      "currentClaim": "点点AI已为“珍味鲜野生菌火锅(乡贤里店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_73266f97-ba6b-4ba1-af95-522ee0b548ef"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0dd6e994b5ced5b4b2742425bc96a3c96f12d96dfd06f2c4b3883e6d5bd5c838"
+    },
+    {
+      "id": "review_xhs_ab226fc8a13cacae11f916819b77",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_8305840e-d7d2-4e5d-bdf3-ab2c704e0754"
+      ],
+      "currentClaim": "点点AI已为“蒋记龙府大竹签烤肉(花溪店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_8305840e-d7d2-4e5d-bdf3-ab2c704e0754"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "02b79f8d4632b070d2c359e9ad7cdfc10c442fa3f7c46c963283811682bd0319"
+    },
+    {
+      "id": "review_xhs_ee5774e7e039e2f6870b51ff5e49",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_87973bfb-30b1-46c7-ab2d-32cfc7348931"
+      ],
+      "currentClaim": "点点AI已为“黔牛阁酸汤牛肉(观山湖店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_87973bfb-30b1-46c7-ab2d-32cfc7348931"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "bc839aefb4d4a18502064ddf2ada4b3706075b58ebbbe242ba05bcbca57c3d93"
+    },
+    {
+      "id": "review_xhs_17f78d090ccb9f91077d219addf1",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f337d77a-a5c0-4018-8f8b-4088802cbc29"
+      ],
+      "currentClaim": "点点AI已为“绫罗宴”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f337d77a-a5c0-4018-8f8b-4088802cbc29"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "21052c0864527784ae15d2c6bc06465a5ba30ece581b35a3866d39d750e150cb"
+    },
+    {
+      "id": "review_xhs_3d25608740c04ec6059e799a480b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_ec12aeb6-5f7c-4909-b45d-a160eb731b00"
+      ],
+      "currentClaim": "点点AI已为“雪咖啡(花溪朝阳村店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_ec12aeb6-5f7c-4909-b45d-a160eb731b00"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "b7f3b10198647c206fb3af42b926c646e4661b263f7d109a75b697d7b3249550"
+    },
+    {
+      "id": "review_xhs_168ebf569436d034ba28c7244cc0",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f2cd9d6d-0a07-4e5f-a904-fbe9c8337c26"
+      ],
+      "currentClaim": "点点AI已为“Docki²甜品集合店”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f2cd9d6d-0a07-4e5f-a904-fbe9c8337c26"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "5c7f21ba5aed92e509c51e741ccadfd38d6e21e21e2044f0a278238b19031b8b"
+    },
+    {
+      "id": "review_xhs_f00fed55e041a1dd5d41e1b491e9",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_d698efe4-07d3-4a0a-98f3-5caccc1ea2c4"
+      ],
+      "currentClaim": "点点AI已为“杨丫老鸭汤(会展城店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_d698efe4-07d3-4a0a-98f3-5caccc1ea2c4"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d133b73d7d8bd280e57d552e4bbc78f76414e01d8f7dd65166d32a2c980a65f9"
+    },
+    {
+      "id": "review_xhs_7d1dc4330aa8107abd52c74132ea",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_1b799c7d-e70b-4177-82bc-8f8ab41e61da"
+      ],
+      "currentClaim": "点点AI已为“渡江鱼府(生态鱼)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_1b799c7d-e70b-4177-82bc-8f8ab41e61da"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "ffc37fa117a28ce5a68602b853768b5d31b3e4c987ccabb882cd3a751f6af9ec"
+    },
+    {
+      "id": "review_xhs_db36053107a2881a72a55cabfd2a",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_beff4472-d1a1-437d-9036-cb2b1beaeaa7"
+      ],
+      "currentClaim": "点点AI已为“菌鲜森(美的财智中心店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_beff4472-d1a1-437d-9036-cb2b1beaeaa7"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "68c21e3f990feade342ab58392ee6844f23c001c32c76d613c1a6acef25517d1"
+    },
+    {
+      "id": "review_xhs_19a1cea09fb1783023a72189de36",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_157b0606-244a-4ed9-b2f7-2e6936faab49"
+      ],
+      "currentClaim": "点点AI已为“虎岚和牛烧肉海鲜料理自助”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_157b0606-244a-4ed9-b2f7-2e6936faab49"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c9c5de9c4ca3baf7305fb652aca2a8f147ff34001fd6a4c1389eae2fa679a017"
+    },
+    {
+      "id": "review_xhs_4ab0d2a3b4bdbfa3802a65675d88",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_2e4337ab-85c1-464b-92c2-d5ef52efbda6"
+      ],
+      "currentClaim": "点点AI已为“黔鸭坊(思雅美食工厂店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_2e4337ab-85c1-464b-92c2-d5ef52efbda6"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "fa67de522dcd42bca3c6840b9f14861e02e6b03da066d631569202386e773a51"
+    },
+    {
+      "id": "review_xhs_500aa65e58707a921b66774880dd",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_e3715038-0a1b-4ce4-92c5-cb211dca958d"
+      ],
+      "currentClaim": "点点AI已为“李火辣老火锅(花溪店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_e3715038-0a1b-4ce4-92c5-cb211dca958d"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "820b3fdd40524ffa4402fbc8b99b92d6cdd37fda638e005474e942ef6015a3ae"
+    },
+    {
+      "id": "review_xhs_3ca6c4ac2ebe665840e01d9861ab",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_967d4936-c2af-4809-80c9-8059211ba159"
+      ],
+      "currentClaim": "点点AI已为“品悦·融合菜(金融MAX·D座店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_967d4936-c2af-4809-80c9-8059211ba159"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f94737bcb706f017c82f5b81bb61e670cd848a58c677631060b2d83ddc70a6bb"
+    },
+    {
+      "id": "review_xhs_dc86909ed1d4b21ae9ab36045856",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_5ef55e68-748a-4965-8308-be63d2aad4a1"
+      ],
+      "currentClaim": "点点AI已为“老凯俚酸汤鱼(夜郎国店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_5ef55e68-748a-4965-8308-be63d2aad4a1"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "add4585a6841b678ccf2222be2748f0628990092e9592c7aa12aa60c5b14e315"
+    },
+    {
+      "id": "review_xhs_ae6f5081ab3acd5187cb510572b6",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_73daef61-950b-4389-9e66-25659d5eef29"
+      ],
+      "currentClaim": "点点AI已为“贵阳市·黔城香蹄花粉面馆”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_73daef61-950b-4389-9e66-25659d5eef29"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "112c8abec93106cd12fb638c3eef4c6baf05117e45ec26be6819d6967e33ecc2"
+    },
+    {
+      "id": "review_xhs_1c91af5a40a3f470fdc8089b2e3b",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_9cb23756-2cfe-4989-90f6-c5e31b6a9555"
+      ],
+      "currentClaim": "点点AI已为“黔上黔(阿云朵仓店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_9cb23756-2cfe-4989-90f6-c5e31b6a9555"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "35a37c1300f5a2780ccb3d36a0ca61bd86eef73c071c27c478c82594a4b30f41"
+    },
+    {
+      "id": "review_xhs_6de403c7f297d46b3e0a9aa55922",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_a43b0f77-ba28-4321-8ae8-39f33bcfb1a2"
+      ],
+      "currentClaim": "点点AI已为“胖子烤鱼”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_a43b0f77-ba28-4321-8ae8-39f33bcfb1a2"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "2417f8be25a1f861b95d13337d1debab33da3100d5f723930f7ec841277752f5"
+    },
+    {
+      "id": "review_xhs_3d091678d88daa3615480011b3ae",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_03632766-aba2-469b-ae8f-58ca05cc63a7"
+      ],
+      "currentClaim": "点点AI已为“珍味鲜野生菌火锅(华润分店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_03632766-aba2-469b-ae8f-58ca05cc63a7"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c9609a15c50a8575a101bea3fcf70dbe73b1653bf01c05f38059550d008022fb"
+    },
+    {
+      "id": "review_xhs_b7ab9c80a1a8682850cb336bb70d",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_0d101851-925d-427e-bb08-8775d0c79b0f"
+      ],
+      "currentClaim": "点点AI已为“称盘鲜黄牛肉”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_0d101851-925d-427e-bb08-8775d0c79b0f"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f21f98c87694275975afd15415e59de9b8790c9dc7ff80d7ac35bb215101ac4a"
+    },
+    {
+      "id": "review_xhs_4d76b77e44039124a1a512e6af28",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_991a8ea5-fb10-424d-aa77-9c27c1fb6500"
+      ],
+      "currentClaim": "点点AI已为“金必轩(北街)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_991a8ea5-fb10-424d-aa77-9c27c1fb6500"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "613d843d0db510fee785d308ee47007705f4547c276433f8a5472565f390ddd0"
+    },
+    {
+      "id": "review_xhs_503d93f879fe3a3d41b6bab68fa0",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_4fd75b44-ff11-4a2e-aa01-aac0abbbbdb8"
+      ],
+      "currentClaim": "点点AI已为“鲜源龙虾馆(烧烤海鲜)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_4fd75b44-ff11-4a2e-aa01-aac0abbbbdb8"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "a005fd260b4856a925c3ad891b3fb95d6f71b1b1160d8007d77bd290522fb8af"
+    },
+    {
+      "id": "review_xhs_a342750ef7625581d75740a2abf8",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_3bae7b2d-8ce3-4022-a231-d09cf7479c1f"
+      ],
+      "currentClaim": "点点AI已为“乡贤小院(花溪公园店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_3bae7b2d-8ce3-4022-a231-d09cf7479c1f"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "c7737c255c6d0203cca5e680d0ece2699d3834997c3956feed5c8f395f7dbf0c"
+    },
+    {
+      "id": "review_xhs_2b74146c81e3902fd0d8973fc432",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_8649f725-8886-4fb1-a74a-d851b3bdade8"
+      ],
+      "currentClaim": "点点AI已为“黔布衣班家院子(花溪旗舰店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_8649f725-8886-4fb1-a74a-d851b3bdade8"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0dc6dc7b222593d6b22deedb2eaba2aee5e52d7c3cff77ec484944d344ac5d47"
+    },
+    {
+      "id": "review_xhs_a8cd4ca5cb289ce1abed251ccbaf",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_de97b496-e294-4a79-ac85-2a692d961e44"
+      ],
+      "currentClaim": "点点AI已为“贵州龙(正德家邦店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_de97b496-e294-4a79-ac85-2a692d961e44"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "bab3d4742a2e080e36cacac5d2a993a38c3efd32a783b4ecea96c94b31b7e464"
+    },
+    {
+      "id": "review_xhs_bd6a1c67c8afd63625b8b2df8c90",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_2afbaef4-e67c-4afc-b5c1-7bbbf441e510"
+      ],
+      "currentClaim": "点点AI已为“兄弟毛肚(火炬大道店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_2afbaef4-e67c-4afc-b5c1-7bbbf441e510"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "5774dbcf4e20b89693fe6f65c64638a762c0e340c4158da93d0f84fd2a2856b0"
+    },
+    {
+      "id": "review_xhs_69f7ab502f6bb8f8e4130c17eca4",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f6e64ef4-51e6-49d3-99ff-c5bb280c43b3"
+      ],
+      "currentClaim": "点点AI已为“新天一烤大排档(乌当店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f6e64ef4-51e6-49d3-99ff-c5bb280c43b3"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0bfd5a3d9d442cdb99218971743a12761e8cfd137252fb69408843b4597692fb"
+    },
+    {
+      "id": "review_xhs_dcd5dd25967c69ee13caa4e5fb74",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_77f6cfb8-d2a9-421e-a814-5931de75123c"
+      ],
+      "currentClaim": "点点AI已为“聚鑫·私厨(新天国际店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_77f6cfb8-d2a9-421e-a814-5931de75123c"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "9212c12bbec154b40e16f68d818e852ff0a1e5d88217f8a29612c13a96575907"
+    },
+    {
+      "id": "review_xhs_febfb35652c20107f844a2164e53",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_fb95e72c-54dd-4172-8bde-b5c292ba0436"
+      ],
+      "currentClaim": "点点AI已为“喜香园酒楼(白云店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_fb95e72c-54dd-4172-8bde-b5c292ba0436"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "8ac5267f6b760e091b920d879c67f2d9250d50d12d75a286cd05ad7e44cadb2e"
+    },
+    {
+      "id": "review_xhs_0006e58714775dbd60220f0e195c",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_abf88bfa-46be-4aa6-acda-294b9afe6705"
+      ],
+      "currentClaim": "点点AI已为“大天元翠岭酒楼”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_abf88bfa-46be-4aa6-acda-294b9afe6705"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "480995551a3cac7ae984b6e60561d051daa0f717702d0ff23174712b57c9b7ba"
+    },
+    {
+      "id": "review_xhs_72cbbab52d90c7eaf86ef4846b9f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_84154f38-2133-4106-bc88-593a36456efc"
+      ],
+      "currentClaim": "点点AI已为“柴味烤肉(嘉馨花园店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_84154f38-2133-4106-bc88-593a36456efc"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "4e45b095d2e1d08ad77352b14a7af8baf401c90a6850b66bbed49a344148d40b"
+    },
+    {
+      "id": "review_xhs_d0bde85ba588e6c608021ed01612",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_03c81520-79ab-476d-a8c8-8800f9f112f6"
+      ],
+      "currentClaim": "点点AI已为“魏家麻辣烫(新天商业中心店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_03c81520-79ab-476d-a8c8-8800f9f112f6"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "2dca103aadbac183e8b18e6a4f2cb25263a72c92bb59eb0c7bacf4a5add4bce3"
+    },
+    {
+      "id": "review_xhs_a67f57786b28c194318e5fa99124",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_903ef84b-7ac3-41e1-b9fb-b6c62fb7d39d"
+      ],
+      "currentClaim": "点点AI已为“竹庄黔竹盛宴”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_903ef84b-7ac3-41e1-b9fb-b6c62fb7d39d"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "86305d2297e25bf082d5a8d9f5871bb1a6b16b533178899a3c2b6d5b4350911e"
+    },
+    {
+      "id": "review_xhs_ed848baaad73015b078873d64cf0",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_64e1bb87-c47e-4f5b-9e54-10b7919523b7"
+      ],
+      "currentClaim": "点点AI已为“肯德基(新添大道店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_64e1bb87-c47e-4f5b-9e54-10b7919523b7"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "e09d909a27b4e0f60da86e2a63119de5ed589ac0f2001e0132eaf89c7a1d2e91"
+    },
+    {
+      "id": "review_xhs_e5c89813a4b8252f27fb774865b2",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_36255f5f-3425-46cd-bf22-d37d651507dc"
+      ],
+      "currentClaim": "点点AI已为“麦当劳(贵阳新添大道北段餐厅)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_36255f5f-3425-46cd-bf22-d37d651507dc"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "073269ec1e4adcbddbd28fea6dd4df1155d2963ca12b60bcad8ce8731094eb66"
+    },
+    {
+      "id": "review_xhs_bf32c7bf5e4436712b190ee27760",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_e97e871d-ddcb-4f5f-a602-6d01a0577ed7"
+      ],
+      "currentClaim": "点点AI已为“云诺宴(紫境府店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_e97e871d-ddcb-4f5f-a602-6d01a0577ed7"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7eeec94a166a236b85864d9aac0d132bbcd425923aa12eb9020c51e37ba88986"
+    },
+    {
+      "id": "review_xhs_e2b61d0e147d1d3e5425dcb1fbe8",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_b3a4810a-bb3a-4121-82f9-88538aeeaa93"
+      ],
+      "currentClaim": "点点AI已为“德克士(阳光花园店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_b3a4810a-bb3a-4121-82f9-88538aeeaa93"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f16a0feaf65ac1dffe007ac60e2d97c3bd99c1cba1e11cd0193562ee406146c5"
+    },
+    {
+      "id": "review_xhs_94826abeb8a97458143f55c4125e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f4373ceb-143f-4337-8b6c-75ec9bc89e82"
+      ],
+      "currentClaim": "点点AI已为“豪享来(白云南路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f4373ceb-143f-4337-8b6c-75ec9bc89e82"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "018e4085627ad97d07fa2c1c1c22fe9ac1c4407e313897e402f38fea458c2103"
+    },
+    {
+      "id": "review_xhs_1b769bc1f5ab061a9ce30b891e60",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_c3183883-8c45-4964-9fb7-c9b9abd309fa"
+      ],
+      "currentClaim": "点点AI已为“麦当劳(白云七冶餐厅)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_c3183883-8c45-4964-9fb7-c9b9abd309fa"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "a49d3beddf6ff0986648cb71055d980a61ae447a80990634eb123bf9d2e98dbf"
+    },
+    {
+      "id": "review_xhs_1cd1ab02db4b57b2d7d88181129e",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_f67d61a4-337d-4216-b304-3792333f889f"
+      ],
+      "currentClaim": "点点AI已为“伴山别院食鲜记餐厅”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_f67d61a4-337d-4216-b304-3792333f889f"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "7dc0eb9a2e78233c35ce4b4686cf481631c95f15d11e2c9e5b69707d7eb871c7"
+    },
+    {
+      "id": "review_xhs_9cfeceeca6ce007561c8b8286bb3",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_1f313d7b-97f9-4997-947c-20eea4e3628f"
+      ],
+      "currentClaim": "点点AI已为“食话说辣(乌当店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_1f313d7b-97f9-4997-947c-20eea4e3628f"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "3d3f862a4f58a405dea23f93e927aed366dec3415432ed9f3b32e21ffc045ab1"
+    },
+    {
+      "id": "review_xhs_f7445492d38680548c399c41ea14",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_09948eb4-d8d9-4a96-a1b7-fc6d4ca5ee39"
+      ],
+      "currentClaim": "点点AI已为“叉叉裤老火锅(阳光市场店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_09948eb4-d8d9-4a96-a1b7-fc6d4ca5ee39"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "cb3a570d99f530d8f6fb9b518d0a72582b9d3beec75aa57b305e12134b2b0e88"
+    },
+    {
+      "id": "review_xhs_ad2c071791628807544f934a587f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_9e4aa887-0685-4249-a38b-d18d48f136a5"
+      ],
+      "currentClaim": "点点AI已为“丝意丝娃娃(海通步行街店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_9e4aa887-0685-4249-a38b-d18d48f136a5"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "8668c2173a84278dc017a37e2258f2c52020c137afdb7a11f81c8576156a7e54"
+    },
+    {
+      "id": "review_xhs_5b5a4b6cac4c7178b17363413f77",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_fbd82092-5c12-4b08-8007-4bb88cf6675c"
+      ],
+      "currentClaim": "点点AI已为“中环烙锅美食广场”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_fbd82092-5c12-4b08-8007-4bb88cf6675c"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "70d2e63e904e60e854b7074b4a604283ede878b43dd17fd094186dcb53d52060"
+    },
+    {
+      "id": "review_xhs_227a229a7f9472b5276e75aa09eb",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_3211c4a5-bb08-4afa-9796-a412a4a078f1"
+      ],
+      "currentClaim": "点点AI已为“CHAGEE霸王茶姬(云岭中路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_3211c4a5-bb08-4afa-9796-a412a4a078f1"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "bd2b93917c961e6ea31e0d04f74ad1e852d4afbc216c32d0f4818c48e13664dc"
+    },
+    {
+      "id": "review_xhs_aab54ad777de4a9a92f9f0c11846",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_baacdaff-3b27-44b2-a9c5-f5593cec5004"
+      ],
+      "currentClaim": "点点AI已为“德克士(清镇鸿丰店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_baacdaff-3b27-44b2-a9c5-f5593cec5004"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "46becd66d417ca34c9d40cf9b1bc44923890a21e80f9eb9ccb655a435402ba82"
+    },
+    {
+      "id": "review_xhs_87758ef92507927078b60c39d5f3",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_7172678a-c403-4d7c-af29-9a7c6d1ad0d4"
+      ],
+      "currentClaim": "点点AI已为“美桦家常菜馆”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_7172678a-c403-4d7c-af29-9a7c6d1ad0d4"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "f4f668d86dc20ac4c21dc041ef72e90bd8af577fb5aaa7524a7760ef897e9175"
+    },
+    {
+      "id": "review_xhs_99a3e98be9bcac551d4ac9291474",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_7bd60e42-6700-4cc0-942b-13aa75b5c044"
+      ],
+      "currentClaim": "点点AI已为“乐阅咖啡(清镇店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_7bd60e42-6700-4cc0-942b-13aa75b5c044"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "237b7f5b90d8f0720ee95863892c070257c1358fd2a21931dc88f14b668abd2e"
+    },
+    {
+      "id": "review_xhs_ebaf63c3308903ae6c220f480cec",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "food_aef3c963-0920-4b76-885f-d540d0daa30e"
+      ],
+      "currentClaim": "点点AI已为“何记1994(中环旗舰店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:food_aef3c963-0920-4b76-885f-d540d0daa30e"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "452e4295665d5c91c9c0c7ca002efee02afe9f236b9360553801e4c5d3ba89a4"
+    },
+    {
+      "id": "review_xhs_fc051c4e7a8bc8635cf516355338",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_127024005"
+      ],
+      "currentClaim": "点点AI已为“ANDZO·安屿洲X酒店(贵阳甲秀楼青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_127024005"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "ad2aa7f852bcf98540a32cd7bfa6cdb33cb04b264afa0b354747fd208bbfbca7"
+    },
+    {
+      "id": "review_xhs_155b8f2ebf1616a0e4cdffe71e61",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_100589991"
+      ],
+      "currentClaim": "点点AI已为“LIFE境·美术馆(贵阳花果园购物中心松花路地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_100589991"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "94cb32e80312d6fd1e1e223e43b9838d16ff2edcd30eb6ef19179ad60354ce84"
+    },
+    {
+      "id": "review_xhs_d88cf9336b789c9ce4b409d7fdb9",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_72915758"
+      ],
+      "currentClaim": "点点AI已为“维也纳酒店(贵阳花溪公园学士路地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_72915758"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "d077d5a0867f6555a3a74a32dc3bc91a2f83144c34a4723fa991927276248e0f"
+    },
+    {
+      "id": "review_xhs_79b0ad7611bae195c6839aa95636",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_130402317"
+      ],
+      "currentClaim": "点点AI已为“朵兰达LAB酒店(贵阳喷水池民生路店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_130402317"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "4b77f19cba6cd10259c04239690fe9a9b980058905239f9000ac4f677ac0631c"
+    },
+    {
+      "id": "review_xhs_47a22cffbda93f1cb6c6156844fe",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_110851780"
+      ],
+      "currentClaim": "点点AI已为“城市便捷酒店(贵阳黔灵山公园喷水池店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_110851780"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "37e2c7cc6e43aed064984d45f0b4f25a2a78276cf2d532eea5cc52b840596418"
+    },
+    {
+      "id": "review_xhs_a635b7a749716e00fbfff028b7ab",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_6025105"
+      ],
+      "currentClaim": "点点AI已为“溢彩甲秀美宿(贵阳甲秀楼青云市集店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_6025105"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "63ef90667f0471341865cd8b94a5ef1f89ee645bd65f04a3269c196d854eebc3"
+    },
+    {
+      "id": "review_xhs_67b5f11e30a245900ab10795b0dc",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_134810469"
+      ],
+      "currentClaim": "点点AI已为“贵阳甲秀楼猴子酒店(喷水池地铁站店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_134810469"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "33e15142fb414485bff4900ebdf8d44a454c975a53887e8a37c975ddac003ced"
+    },
+    {
+      "id": "review_xhs_6e07c259cf422106bc6255afbf2f",
+      "category": "小红书POI体验证据语义审核",
+      "targetIds": [
+        "hotel_ctrip_95121849"
+      ],
+      "currentClaim": "点点AI已为“贵阳禧竹山房|国风庭院|亲子民宿(青岩古镇西门店)”返回候选小红书帖子，尚未逐帖判定分店、正负面与可引用体验字段。",
+      "reason": "AI问答只作来源发现；帖子必须逐篇核验直接指向、分店归属、时间窗口和连续原文证据。",
+      "requiredEvidence": "至少一篇近36个月完整正文直接命中标准实体；涉及聚合体验或热度时需至少三篇独立近期帖子并核验独立提及占比。",
+      "status": "待处理",
+      "affectedFields": [
+        "visitorDemandScenarios",
+        "ugcPoiSubtype",
+        "ugcLocationDescription"
+      ],
+      "priority": "中",
+      "externalIds": [
+        "review:xhs:xhs-diandian-high-value-poi-20260916:hotel_ctrip_95121849"
+      ],
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "0438ceed0b9d7a204c36b2d871b3c3269ebf8bcb8647412d642368f713743186"
+    }
+  ]
+}

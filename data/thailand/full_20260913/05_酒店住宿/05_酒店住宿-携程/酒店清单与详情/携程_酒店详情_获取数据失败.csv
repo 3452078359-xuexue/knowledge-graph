@@ -1,0 +1,917 @@
+﻿酒店ID,详情URL,失败原因,尝试次数,时间
+46185819,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=46185819&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.1.1.2",1,2026-08-31 22:57:37
+94083838,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=94083838&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,RuntimeError: 详情页已打开，但没有提取到有效酒店名称。请先运行 --prepare-login，或检查是否出现平台验证。,1,2026-09-01 02:33:56
+126927067,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=126927067&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:05:42
+703059,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703059&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:05:51
+133480985,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=133480985&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:08:26
+8043021,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=8043021&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:08:35
+703117,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703117&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:08:45
+21330578,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=21330578&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:08:54
+996652,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996652&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:09:01
+97680839,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=97680839&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:09:17
+121671207,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=121671207&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:09:25
+22135305,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=22135305&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:09:32
+996684,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996684&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:09:42
+46554625,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=46554625&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:09:50
+97714816,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=97714816&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:10:00
+1734150,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1734150&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:11:28
+700964,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700964&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:11:34
+1708428,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1708428&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:11:40
+1497032,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1497032&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 03:59:12
+123077027,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=123077027&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:14:46
+122361567,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=122361567&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:14:56
+996755,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996755&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:15:05
+2507748,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=2507748&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:15:15
+21683727,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=21683727&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:15:23
+1520088,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1520088&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:30:58
+996665,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996665&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:31:08
+35090853,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=35090853&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:31:18
+996644,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996644&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:31:26
+996351,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996351&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:31:35
+702872,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702872&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:31:45
+28559691,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=28559691&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:31:52
+4971873,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=4971873&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:02
+1619365,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1619365&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:10
+12215324,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=12215324&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:20
+114597216,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114597216&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:27
+702333,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702333&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:40
+702109,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702109&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:49
+114543500,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114543500&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:32:55
+122482670,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=122482670&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:49:46
+996515,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996515&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:49:53
+8059895,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=8059895&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:02
+996361,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996361&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:08
+47124469,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=47124469&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:17
+1713796,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1713796&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:24
+53297680,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=53297680&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:41
+701051,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701051&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:51
+114651663,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114651663&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:50:59
+33430002,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=33430002&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:51:09
+132250203,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=132250203&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:51:16
+100811418,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=100811418&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 04:51:24
+701920,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701920&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:06:35
+701908,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701908&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:06:42
+134161721,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=134161721&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:06:49
+122760211,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=122760211&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:06:57
+701885,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701885&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:07:04
+702101,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702101&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:07:11
+5907269,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=5907269&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:07:20
+114329911,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114329911&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:22:55
+7614733,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=7614733&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:39:27
+702830,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702830&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:39:34
+114665902,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114665902&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:39:42
+700707,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700707&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:15
+26439754,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=26439754&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:23
+101482459,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=101482459&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:32
+702466,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702466&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:38
+103565011,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=103565011&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:45
+1463080,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1463080&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:51
+114057699,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114057699&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:55:58
+5994318,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=5994318&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:04
+55958642,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=55958642&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:14
+133407226,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=133407226&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:20
+105314847,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=105314847&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:27
+126227255,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=126227255&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:34
+996764,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996764&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:50
+6078508,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=6078508&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:56:57
+88774819,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=88774819&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:57:05
+133340077,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=133340077&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:57:13
+49991441,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=49991441&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:57:20
+71398109,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=71398109&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:59:14
+133036863,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=133036863&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:59:30
+1306258,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1306258&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:59:37
+23513875,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=23513875&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:59:44
+702288,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702288&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:59:52
+7295728,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=7295728&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 05:59:58
+118879141,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=118879141&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:00:07
+117149724,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=117149724&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:00:15
+127417119,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=127417119&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:00:30
+702533,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702533&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:07:37
+13998953,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=13998953&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:07:45
+86224380,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=86224380&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:07:55
+996735,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996735&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:08:01
+703041,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703041&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:08:07
+701445,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701445&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:23:42
+133326968,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=133326968&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:23:51
+112950210,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=112950210&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:24:01
+996352,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996352&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:24:07
+86087437,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=86087437&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:24:16
+701901,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701901&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 06:39:48
+4123564,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=4123564&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:08:44
+702125,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702125&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:08:52
+996725,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996725&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:09:02
+8147849,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=8147849&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:09:09
+1708512,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1708512&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:09:16
+14968718,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=14968718&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:24:49
+44127673,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=44127673&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:24:59
+91723108,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=91723108&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:25:06
+996716,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996716&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:25:38
+702114,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702114&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:25:45
+129179707,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=129179707&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:25:53
+81067775,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=81067775&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:26:01
+13660499,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=13660499&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:26:09
+7303749,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=7303749&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:41:43
+132461702,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=132461702&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:41:51
+701990,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701990&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:42:00
+703036,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703036&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:42:07
+996754,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996754&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:42:15
+82085191,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=82085191&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:42:24
+700739,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700739&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 07:57:59
+90957672,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=90957672&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:26:06
+24738513,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=24738513&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:26:15
+3003104,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=3003104&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:26:24
+4661916,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=4661916&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:26:31
+7703208,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=7703208&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:42:06
+702901,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702901&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:42:12
+703053,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703053&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:42:18
+120171671,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=120171671&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:42:25
+25657104,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=25657104&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:42:33
+12143984,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=12143984&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:42:40
+700748,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700748&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:58:15
+996700,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996700&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:58:24
+702297,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702297&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:58:32
+1721184,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1721184&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:58:40
+1549991,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1549991&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:58:49
+107850091,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=107850091&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 08:58:58
+96528078,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=96528078&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:10:43
+101005795,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=101005795&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:10:51
+711098,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=711098&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:11:00
+1703230,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1703230&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:11:09
+996638,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996638&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:44:09
+78191292,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=78191292&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:44:18
+24218148,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=24218148&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 09:44:28
+89775157,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=89775157&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:00:00
+701933,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701933&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:00:06
+3930490,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=3930490&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:00:13
+8379299,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=8379299&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:00:23
+701106,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701106&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:00:31
+1497043,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1497043&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:11:35
+703108,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703108&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:11:42
+996661,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996661&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:11:52
+1508346,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1508346&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:11:58
+104572299,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=104572299&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:12:07
+702910,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702910&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:12:15
+996769,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996769&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:27:48
+702782,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702782&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:27:55
+9669896,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=9669896&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:28:04
+7281575,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=7281575&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:28:13
+86185640,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=86185640&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:36:25
+700734,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700734&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 10:36:34
+2326889,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=2326889&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:09:02
+703080,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703080&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:09:08
+126910332,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=126910332&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:09:15
+47093615,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=47093615&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:09:23
+14121045,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=14121045&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:09:30
+112094533,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=112094533&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:12:35
+134166485,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=134166485&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:12:45
+116718432,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=116718432&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:12:54
+701842,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701842&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:13:00
+5612802,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=5612802&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:13:09
+996682,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996682&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:13:19
+700726,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700726&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:28:50
+6206028,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=6206028&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:28:59
+21132724,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=21132724&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:29:33
+119802552,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=119802552&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:29:41
+996680,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996680&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:29:50
+996746,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996746&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:29:57
+702954,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702954&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:30:03
+123707817,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=123707817&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:30:12
+996640,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996640&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 11:30:26
+3066067,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=3066067&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:03:38
+928337,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=928337&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:03:45
+11627081,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=11627081&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:04:17
+1708359,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1708359&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:04:25
+996280,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996280&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:04:34
+100332179,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=100332179&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:04:43
+702565,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702565&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:04:52
+4122995,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=4122995&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:05:00
+702502,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702502&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:13:41
+701023,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701023&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:13:50
+996701,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996701&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:13:57
+100911424,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=100911424&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:14:03
+122925890,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=122925890&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:14:11
+132594981,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=132594981&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:14:21
+702311,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702311&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:29:55
+703141,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703141&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:30:04
+60668033,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=60668033&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:30:11
+1716070,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1716070&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:30:20
+701166,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701166&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:30:30
+64033445,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=64033445&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 12:46:03
+703072,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703072&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:15:03
+134967076,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=134967076&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:15:11
+8041567,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=8041567&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:15:18
+702051,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702051&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:30:52
+25825890,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=25825890&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:02
+6657721,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=6657721&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:08
+701674,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701674&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:17
+702313,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702313&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:26
+10993819,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=10993819&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:34
+110521219,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=110521219&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:46
+2075417,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=2075417&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:31:55
+996691,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996691&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:02
+8719595,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=8719595&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:09
+996343,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996343&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:16
+112903102,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=112903102&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:24
+112951438,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=112951438&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:38
+56711110,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=56711110&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:45
+703084,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703084&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:51
+703011,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703011&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:32:58
+700733,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=700733&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 13:33:08
+127627998,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=127627998&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:15:42
+113526499,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=113526499&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:15:50
+996752,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996752&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:15:57
+112502334,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=112502334&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:16:06
+129335221,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=129335221&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:16:15
+5033550,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=5033550&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:31:48
+3802657,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=3802657&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:31:55
+97713726,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=97713726&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:32:01
+3289967,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=3289967&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:32:09
+103247597,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=103247597&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:32:15
+123919148,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=123919148&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:32:23
+702123,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702123&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:32:31
+702085,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702085&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:48:04
+110089274,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=110089274&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:48:13
+702490,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702490&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:48:19
+21092707,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=21092707&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:48:29
+702904,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702904&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:48:36
+759927,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=759927&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 14:48:46
+113031415,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=113031415&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:04:19
+131315759,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=131315759&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:04:25
+702028,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702028&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:18:06
+114057723,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=114057723&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:33:39
+996698,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996698&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:33:46
+996750,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996750&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:33:53
+702473,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702473&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:33:59
+701061,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701061&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:34:07
+701178,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701178&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:34:13
+104439405,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=104439405&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:34:20
+996021,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=996021&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:49:52
+702572,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702572&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:49:58
+6412858,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=6412858&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:50:04
+3929693,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=3929693&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:50:37
+54794192,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=54794192&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:51:11
+133079953,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=133079953&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:51:19
+1729988,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1729988&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:51:27
+23499113,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=23499113&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 15:51:36
+701834,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701834&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 16:07:10
+24312179,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=24312179&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 16:07:18
+702094,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702094&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 16:07:26
+924201,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=924201&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 16:07:36
+2921653,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=2921653&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:10:36
+22118795,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=22118795&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:10:44
+756545,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=756545&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:10:51
+9341541,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=9341541&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:11:01
+25606293,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=25606293&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:11:10
+132853075,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=132853075&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:18:23
+701030,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701030&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:18:33
+701063,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701063&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:18:41
+1517773,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1517773&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:18:47
+75500611,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=75500611&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:18:54
+108616248,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=108616248&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 17:19:03
+1522186,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1522186&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:19:25
+19828735,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=19828735&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:19:33
+7624626,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=7624626&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:19:41
+9316838,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=9316838&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:19:48
+35589169,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=35589169&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:19:58
+86167102,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=86167102&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:20:04
+702558,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702558&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:21:04
+5702247,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=5702247&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:21:11
+701125,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=701125&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:21:19
+711801,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=711801&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:23:12
+103862197,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=103862197&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:23:19
+131833640,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=131833640&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:23:29
+122442069,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=122442069&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:23:38
+702334,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702334&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:23:45
+1738393,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1738393&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:23:54
+702357,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702357&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:04
+702201,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702201&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:14
+1457632,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1457632&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:22
+13674268,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=13674268&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:29
+703006,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=703006&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:39
+10116850,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=10116850&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:48
+1573826,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1573826&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:24:58
+702441,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702441&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:07
+103753365,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=103753365&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:15
+76394801,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=76394801&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:25
+1011479,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1011479&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:34
+108840105,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=108840105&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:41
+1513097,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1513097&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:51
+5218158,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=5218158&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:25:57
+1500545,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=1500545&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:26:57
+102936632,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=102936632&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:04
+46300190,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=46300190&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:13
+25405838,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=25405838&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:19
+702305,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=702305&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:28
+909890,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=909890&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:37
+118878690,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=118878690&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:44
+48670965,https://hotels.ctrip.com/hotels/detail/?cityEnName=Bangkok&cityId=359&hotelId=48670965&checkIn=2026-09-28&checkOut=2026-09-29&adult=1&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&hotelType=normal&display=incavg,"PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.2.0b2",1,2026-09-01 18:27:51

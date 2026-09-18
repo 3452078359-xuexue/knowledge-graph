@@ -1,0 +1,23 @@
+﻿交通类型代码,交通类型中文,route_id,service_id,trip_id,trip_headsign,direction_id,shape_id,wheelchair_accessible,trip_headsign_泰文,trip_headsign_英文
+0,有轨电车与轻轨,2,1,5,บางหว้า;Bang Wa,0,3,1,บางหว้า,Bang Wa
+0,有轨电车与轻轨,2,1,6,สนามกีฬาแห่งชาติ;National Stadium,1,2,1,สนามกีฬาแห่งชาติ,National Stadium
+0,有轨电车与轻轨,2,2,7,บางหว้า;Bang Wa,0,3,1,บางหว้า,Bang Wa
+0,有轨电车与轻轨,2,2,8,สนามกีฬาแห่งชาติ;National Stadium,1,2,1,สนามกีฬาแห่งชาติ,National Stadium
+0,有轨电车与轻轨,1,1,5274,BTS หมอชิต;BTS Mo Chit,1,1824,1,BTS หมอชิต,BTS Mo Chit
+0,有轨电车与轻轨,1,1,5275,BTS คูคต;BTS Khu khot,0,1825,1,BTS คูคต,BTS Khu khot
+0,有轨电车与轻轨,1,1,5276,BTS เคหะฯ;BTS Kheha,0,1826,1,BTS เคหะฯ,BTS Kheha
+0,有轨电车与轻轨,1,1,5277,BTS คูคต;BTS Khu Khot,1,1827,1,BTS คูคต,BTS Khu Khot
+0,有轨电车与轻轨,1,2,5278,BTS เคหะฯ;BTS kheha,0,1828,1,BTS เคหะฯ,BTS kheha
+0,有轨电车与轻轨,1,2,5279,BTS คูคต;BTS Khu Khot,1,1829,1,BTS คูคต,BTS Khu Khot
+0,有轨电车与轻轨,1,1,5280,BTS สำโรง;ฺBTS Samrong,0,1830,1,BTS สำโรง,
+0,有轨电车与轻轨,1,1,5281,BTS หมอชิต;BTS Mo Chit,1,1831,1,BTS หมอชิต,BTS Mo Chit
+0,有轨电车与轻轨,1,1,5282,BTS เคหะฯ;BTS Kheha,0,1832,1,BTS เคหะฯ,BTS Kheha
+0,有轨电车与轻轨,1,1,5283,BTS สำโรง;BTS Samsong,1,1833,1,BTS สำโรง,BTS Samsong
+0,有轨电车与轻轨,2025,1,5321,คลองสาน;Khlong San,1,1871,1,คลองสาน,Khlong San
+0,有轨电车与轻轨,2025,1,5322,กรุงธนบุรี [สายสีทอง];Krung ThonBuri [Gold Line],0,1872,1,กรุงธนบุรี [สายสีทอง],Krung ThonBuri [Gold Line]
+0,有轨电车与轻轨,2025,2,5323,คลองสาน;Khlong San,1,1873,1,คลองสาน,Khlong San
+0,有轨电车与轻轨,2025,2,5324,กรุงธนบุรี [สายสีทอง];Krung Thon Buri [Gold Line],0,1874,1,กรุงธนบุรี [สายสีทอง],Krung Thon Buri [Gold Line]
+0,有轨电车与轻轨,2026,3,5325,รังสิต;Rangsit,0,1875,2,รังสิต,Rangsit
+0,有轨电车与轻轨,2026,3,5326,สถานีกลางกรุงเทพอภิวัฒน์;Krung Thep Aphiwat Central Terminal Station,1,1876,2,สถานีกลางกรุงเทพอภิวัฒน์,Krung Thep Aphiwat Central Terminal Station
+0,有轨电车与轻轨,2027,3,5327,ตลิ่งชัน;Taling Chan,0,1877,2,ตลิ่งชัน,Taling Chan
+0,有轨电车与轻轨,2027,3,5328,สถานีกลางกรุงเทพอภิวัฒน์;Krung Thep Aphiwat Central Terminal Station,1,1878,2,สถานีกลางกรุงเทพอภิวัฒน์,Krung Thep Aphiwat Central Terminal Station

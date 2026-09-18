@@ -1,0 +1,136 @@
+{
+  "validatedAt": "2026-09-18T02:16:37.065868+00:00",
+  "h3Library": "h3-py",
+  "h3Version": "4.4.2",
+  "coordinateContract": {
+    "projectCoordinateSystem": "GCJ02",
+    "fineResolution": 9,
+    "coarseResolution": 7,
+    "frameworkResolutions": [
+      8,
+      7
+    ],
+    "warning": "These H3 IDs are derived from the project's GCJ02 runtime coordinates. They must not be mixed with H3 IDs derived from WGS84 coordinates."
+  },
+  "statistics": {
+    "exact_points_validated": 38107,
+    "geocells_validated": 13011,
+    "place_alias_targetCellR9_validated": 40106,
+    "place_alias_targetCell_validated": 40106
+  },
+  "coordinateSystems": {
+    "GCJ02": 38479
+  },
+  "byEntity": {
+    "Accommodation": {
+      "exact": 4795,
+      "none": 1,
+      "records": 4796
+    },
+    "AdminArea": {
+      "none": 157,
+      "records": 157
+    },
+    "Area": {
+      "exact": 1733,
+      "records": 1733
+    },
+    "City": {
+      "none": 1,
+      "records": 1
+    },
+    "CollectionBatch": {
+      "records": 19
+    },
+    "DataSource": {
+      "records": 12
+    },
+    "Dish": {
+      "records": 5
+    },
+    "FAQ": {
+      "records": 54
+    },
+    "Facility": {
+      "exact": 17,
+      "records": 17
+    },
+    "FoodAndBeverage": {
+      "exact": 24238,
+      "records": 24238
+    },
+    "GeoCell": {
+      "r7": 1714,
+      "r8": 11297,
+      "records": 13011
+    },
+    "Intent": {
+      "records": 54
+    },
+    "KnowledgeUnit": {
+      "records": 154
+    },
+    "PlaceAlias": {
+      "records": 40106
+    },
+    "RawSourceAnswer": {
+      "records": 56
+    },
+    "ReviewItem": {
+      "records": 50
+    },
+    "Route": {
+      "records": 1
+    },
+    "Scenario": {
+      "records": 27
+    },
+    "ScenicArea": {
+      "exact": 13,
+      "records": 13
+    },
+    "SourceEvidence": {
+      "records": 2417
+    },
+    "TransitFacility": {
+      "exact": 5273,
+      "none": 6,
+      "records": 5279
+    },
+    "TransitHub": {
+      "none": 4,
+      "records": 4
+    },
+    "TransitLine": {
+      "records": 302
+    },
+    "TransitRoute": {
+      "records": 372
+    },
+    "TransitStop": {
+      "exact": 2038,
+      "none": 1592,
+      "records": 3630
+    },
+    "TransportFareRule": {
+      "records": 17
+    },
+    "Zone": {
+      "none": 171,
+      "records": 171
+    }
+  },
+  "errorCount": 0,
+  "errors": [],
+  "warningCount": 2,
+  "warnings": [
+    {
+      "entityType": "ScenicArea",
+      "message": "catalog=20, payload=13, actual=13; H3 validation uses actual canonical records"
+    },
+    {
+      "entityType": "Area",
+      "message": "catalog=1783, payload=1733, actual=1733; H3 validation uses actual canonical records"
+    }
+  ]
+}

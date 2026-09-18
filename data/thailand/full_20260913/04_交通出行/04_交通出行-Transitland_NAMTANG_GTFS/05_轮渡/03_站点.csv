@@ -1,0 +1,160 @@
+﻿交通类型代码,交通类型中文,stop_id,stop_name,stop_lat,stop_lon,zone_id,wheelchair_boarding,stop_name_泰文,stop_name_英文,分类依据
+4,轮渡,92,ท่าเรือสาทร;Sathon (Taksin) Pier,13.7186313490843,100.512707009912,92,2,ท่าเรือสาทร,Sathon (Taksin) Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,93,ท่าเรือโอเรียนเต็ล (ปิดปรับปรุง);Prietal Pier (Close),13.723321871902,100.513557270169,93,2,ท่าเรือโอเรียนเต็ล (ปิดปรับปรุง),Prietal Pier (Close),stop_times停靠＋fare_rules票价区域
+4,轮渡,94,ท่าเรือสี่พระยา;Si Phraya Pier,13.7284790262418,100.513178743422,94,2,ท่าเรือสี่พระยา,Si Phraya Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,95,ท่าเรือกรมเจ้าท่า;Marine Department Pier,13.7324580414895,100.511931851506,95,2,ท่าเรือกรมเจ้าท่า,Marine Department Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,96,ท่าเรือราชวงศ์;Rajchawongse Pier,13.738450049824,100.504578910768,96,2,ท่าเรือราชวงศ์,Rajchawongse Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,97,ท่าเรือสะพานพุทธ;Memorial Bridge Pier,13.7398644905801,100.498139262199,97,2,ท่าเรือสะพานพุทธ,Memorial Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,98,ท่าเรือปากคลองตลาด (ยอดพิมาน);YodpimanRiver Walk Pier,13.7406063927715,100.495777241886,98,2,ท่าเรือปากคลองตลาด (ยอดพิมาน),YodpimanRiver Walk Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,99,ท่าเรือราชินี;Rajinee Pier,13.7416107904152,100.494029447436,99,2,ท่าเรือราชินี,Rajinee Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,101,ท่าเรือท่าช้าง;Tha Chang Pier,13.7523211663322,100.488207377493,101,2,ท่าเรือท่าช้าง,Tha Chang Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,102,ท่าเรือพรานนก (วังหลัง);Wang Lang Pier,13.7561929604838,100.486905835569,102,2,ท่าเรือพรานนก (วังหลัง),Wang Lang Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,103,ท่าเรือรถไฟ;Thonburi Railway Pier,13.7592166865432,100.487622655928,103,2,ท่าเรือรถไฟ,Thonburi Railway Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,104,ท่าเรือพระปิ่นเกล้า;Phra Pin Klao Bridge Pier,13.7629747148732,100.490694120526,104,2,ท่าเรือพระปิ่นเกล้า,Phra Pin Klao Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,105,ท่าเรือพระอาทิตย์;Phra Arthit Pier,13.7636748607936,100.494107231498,105,2,ท่าเรือพระอาทิตย์,Phra Arthit Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,106,ท่าเรือสะพานพระราม 8;Rama 8 Bridge Pier,13.7676255983996,100.497641712427,106,2,ท่าเรือสะพานพระราม 8,Rama 8 Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,107,ท่าเรือเทเวศน์;Thewej Pier,13.7720109952824,100.500119738281,107,2,ท่าเรือเทเวศน์,Thewej Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,108,ท่าเรือสะพานกรุงธน (ซังฮี้);Krung Thon Bridge (Sang Hi) Pier,13.7818183297458,100.501196309924,108,2,ท่าเรือสะพานกรุงธน (ซังฮี้),Krung Thon Bridge (Sang Hi) Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,109,ท่าพายัพ;Payap Pier,13.78750494935388,100.50816804170607,109,2,ท่าพายัพ,Payap Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,110,ท่าเรือกรมชลประทานสามเสน;Irrigation Department Pier,13.7887126543911,100.509591624141,110,2,ท่าเรือกรมชลประทานสามเสน,Irrigation Department Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,111,ท่าเรือเขียวไข่กา;Kheaw Khai ka Pier,13.7910293857145,100.511753484607,111,2,ท่าเรือเขียวไข่กา,Kheaw Khai ka Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,112,ท่าเรือเกียกกาย;Kaik Kai Pier,13.7987328811162,100.51711589098,112,2,ท่าเรือเกียกกาย,Kaik Kai Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,113,ท่าเรือวัดสร้อยทอง;Wat Soi Thong Pier,13.8121100952885,100.517532303929,113,2,ท่าเรือวัดสร้อยทอง,Wat Soi Thong Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,114,ท่าเรือสะพานพระราม 7;Rama 7 Bridge Pier,13.8129009307525,100.513379909098,114,2,ท่าเรือสะพานพระราม 7,Rama 7 Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,115,ท่าเรือพิบูลย์สงคราม 1;Pibulsongklam 1 Pier,13.8177145831704,100.505708456039,115,2,ท่าเรือพิบูลย์สงคราม 1,Pibulsongklam 1 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,116,ท่าเรือวัดเขมา (ปิดปรับปรุง);Wat Khema Pier (Close),13.8218109116462,100.50206836313,116,2,ท่าเรือวัดเขมา (ปิดปรับปรุง),Wat Khema Pier (Close),stop_times停靠＋fare_rules票价区域
+4,轮渡,117,ท่าเรือวัดตึก;Wat Tuek Pier,13.824493573814,100.498912408948,117,2,ท่าเรือวัดตึก,Wat Tuek Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,118,ท่าเรือวัดเขียน;Wat Kien Pier,13.8281838116199,100.496841743588,118,2,ท่าเรือวัดเขียน,Wat Kien Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,119,ท่าเรือสะพานพระราม 5;Rama 5 Bridge Pier,13.8322740959534,100.493891984224,119,2,ท่าเรือสะพานพระราม 5,Rama 5 Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,120,ท่านนทบุรี;Nonthaburi Pier,13.842141399324158,100.49088723957539,120,2,ท่านนทบุรี,Nonthaburi Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,121,ท่าเรือวัดวรจรรยาวาส;Wat Worachanyawas Pier,13.7093874779135,100.506828278303,121,2,ท่าเรือวัดวรจรรยาวาส,Wat Worachanyawas Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,122,ท่าเรือวัดราชสิงขร;Wat Rajchasingkorn Pier,13.7065289048386,100.503895282745,122,2,ท่าเรือวัดราชสิงขร,Wat Rajchasingkorn Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,123,ท่าเรือกระทรวงพาณิชย์;Ministry of Commerce Pier,13.8846158276838,100.486402250826,123,2,ท่าเรือกระทรวงพาณิชย์,Ministry of Commerce Pier,stop_times停靠
+4,轮渡,124,ท่าเรือวัดกลางเกร็ด;Wat Klangkret Pier,13.9046134123482,100.491563156247,124,2,ท่าเรือวัดกลางเกร็ด,Wat Klangkret Pier,stop_times停靠
+4,轮渡,125,ท่าเรือปากเกร็ด;Pakkret Pier,13.9154546012614,100.49477878958,125,2,ท่าเรือปากเกร็ด,Pakkret Pier,stop_times停靠
+4,轮渡,126,ท่าเรือสาทร (ข้ามฟาก);Sathon Pier (Ferry),13.7193179476851,100.512902140617,126,2,ท่าเรือสาทร (ข้ามฟาก),Sathon Pier (Ferry),stop_times停靠
+4,轮渡,127,ท่าเรือสี่พระยา (ข้ามฟาก);Si Phraya Pier (Ferry),13.7292571167963,100.512947067618,127,2,ท่าเรือสี่พระยา (ข้ามฟาก),Si Phraya Pier (Ferry),stop_times停靠
+4,轮渡,128,ท่าเรืออัษฎางค์ (ปากคลองตลาด) (ข้ามฟาก);Asdand Pier (Ferry),13.7413903053091,100.494305044413,128,2,ท่าเรืออัษฎางค์ (ปากคลองตลาด) (ข้ามฟาก),Asdand Pier (Ferry),stop_times停靠
+4,轮渡,130,ท่าเรือนนทบุรี (ข้ามฟาก);Nonthaburi Pier (Ferry),13.8421374928534,100.490901321173,130,2,ท่าเรือนนทบุรี (ข้ามฟาก),Nonthaburi Pier (Ferry),stop_times停靠
+4,轮渡,131,ท่าเรือเทศบาลบางศรีเมือง (ข้ามฟาก);Bang Sri Mueang Municipality Pier (Ferry),13.841922311319,100.489242374897,131,2,ท่าเรือเทศบาลบางศรีเมือง (ข้ามฟาก),Bang Sri Mueang Municipality Pier (Ferry),stop_times停靠
+4,轮渡,132,ท่าเรือวัดอาวุธวิสิตาราม (ท่าวัดอาวุธฯ) (ข้ามฟาก);Wat Awutvikasitara Pier (Ferry),13.7894778457758,100.506934225559,132,2,ท่าเรือวัดอาวุธวิสิตาราม (ท่าวัดอาวุธฯ) (ข้ามฟาก),Wat Awutvikasitara Pier (Ferry),stop_times停靠
+4,轮渡,133,ท่าเรือพายัพ (ข้ามฟาก);Payap Pier (Ferry),13.7874717365631,100.50821967423,133,2,ท่าเรือพายัพ (ข้ามฟาก),Payap Pier (Ferry),stop_times停靠
+4,轮渡,134,ท่าเรือวัดบวรมงคล (ข้ามฟาก);Wat buanmongkhon Pier (Ferry),13.7742406223432,100.498106405139,134,2,ท่าเรือวัดบวรมงคล (ข้ามฟาก),Wat buanmongkhon Pier (Ferry),stop_times停靠
+4,轮渡,135,ท่าเรือวัดคฤหบดี (ข้ามฟาก);Wat Kharue Habodi Pier (Ferry),13.771963452251,100.497061349452,135,2,ท่าเรือวัดคฤหบดี (ข้ามฟาก),Wat Kharue Habodi Pier (Ferry),stop_times停靠
+4,轮渡,136,ท่าเรือวัดระฆัง (ข้ามฟาก);Wat Rakang Pier (Ferry),13.752504515418,100.486597381532,136,2,ท่าเรือวัดระฆัง (ข้ามฟาก),Wat Rakang Pier (Ferry),stop_times停靠
+4,轮渡,137,ท่าเรือมหาราช (ข้ามฟาก);Tha Maharaj Pier (Ferry),13.7552019774659,100.488591268659,137,2,ท่าเรือมหาราช (ข้ามฟาก),Tha Maharaj Pier (Ferry),stop_times停靠
+4,轮渡,138,ท่าเรือสะพานตากสิน (ข้ามฟาก);Taksin Bridge Pier (Ferry),13.7201276624291,100.511211678386,138,2,ท่าเรือสะพานตากสิน (ข้ามฟาก),Taksin Bridge Pier (Ferry),stop_times停靠
+4,轮渡,139,ท่าเรือวัดสุวรรณ (ข้ามฟาก);Wat Suwan Pier (Ferry),13.7240863000036,100.511872172356,139,2,ท่าเรือวัดสุวรรณ (ข้ามฟาก),Wat Suwan Pier (Ferry),stop_times停靠
+4,轮渡,140,ท่าเรือรถไฟคลองสาน (ข้ามฟาก);Klong San Pier (Ferry),13.7290555104918,100.51157142967,140,2,ท่าเรือรถไฟคลองสาน (ข้ามฟาก),Klong San Pier (Ferry),stop_times停靠
+4,轮渡,141,ท่าเรือสวัสดี (ข้ามฟาก);Sawaddee Pier (Ferry),13.736203797444238,100.50926238298418,141,2,ท่าเรือสวัสดี (ข้ามฟาก),Sawaddee Pier (Ferry),stop_times停靠
+4,轮渡,142,ท่าเรือวัดทองธรรมชาติ (ข้ามฟาก);Wat Thongthummachat Pier (Ferry),13.7351638765906,100.508269630373,142,2,ท่าเรือวัดทองธรรมชาติ (ข้ามฟาก),Wat Thongthummachat Pier (Ferry),stop_times停靠
+4,轮渡,143,ท่าราชวงศ์ (ข้ามฟาก);Ratchawong Pier (Ferry),13.738466985384324,100.50456583499908,143,2,ท่าราชวงศ์ (ข้ามฟาก),Ratchawong Pier (Ferry),stop_times停靠
+4,轮渡,144,ท่าเรือรถไฟ (ข้ามฟาก);Thonburi Railway Station Pier (Ferry),13.759231666672,100.487537831068,144,2,ท่าเรือรถไฟ (ข้ามฟาก),Thonburi Railway Station Pier (Ferry),stop_times停靠
+4,轮渡,145,ท่าเรือวัดกัลยาณมิตร (ข้ามฟาก);Wat Kalayanamit Pier (Ferry),13.7405497242937,100.492635034025,145,2,ท่าเรือวัดกัลยาณมิตร (ข้ามฟาก),Wat Kalayanamit Pier (Ferry),stop_times停靠
+4,轮渡,146,ท่าเรือท่าเตียน (ข้ามฟาก);Tha Tien Pier (Ferry),13.7461507182614,100.490086600184,146,2,ท่าเรือท่าเตียน (ข้ามฟาก),Tha Tien Pier (Ferry),stop_times停靠
+4,轮渡,148,ท่าเรือคลองเตย (ข้ามฟาก);Klongtoey Pier (Ferry),13.7072399683696,100.563648529351,148,2,ท่าเรือคลองเตย (ข้ามฟาก),Klongtoey Pier (Ferry),stop_times停靠
+4,轮渡,149,ท่าเรือทั่วไป (ข้ามฟาก);thua Pai Pier (Ferry),13.7044141291106,100.562871837929,149,2,ท่าเรือทั่วไป (ข้ามฟาก),thua Pai Pier (Ferry),stop_times停靠
+4,轮渡,150,ท่าเรือพระราม 3 (ข้ามฟาก);Rama 3 Pier (Ferry),13.6703256656802,100.538424365222,150,2,ท่าเรือพระราม 3 (ข้ามฟาก),Rama 3 Pier (Ferry),stop_times停靠
+4,轮渡,151,ท่าเรือคลองลัดโพธิ์ (ข้ามฟาก);Klong Latpho Pier (Ferry),13.6679738603361,100.538712702692,151,2,ท่าเรือคลองลัดโพธิ์ (ข้ามฟาก),Klong Latpho Pier (Ferry),stop_times停靠
+4,轮渡,152,ท่าเรือวัดบางพึ่ง (ข้ามฟาก);Wat Bang Phueng Pier (Ferry),13.6751135808086,100.523558221757,152,2,ท่าเรือวัดบางพึ่ง (ข้ามฟาก),Wat Bang Phueng Pier (Ferry),stop_times停靠
+4,轮渡,153,ท่าเรือคลองลัดหลวง (ข้ามฟาก);Klong Latluang Pier (Ferry),13.670001190262,100.527793094516,153,2,ท่าเรือคลองลัดหลวง (ข้ามฟาก),Klong Latluang Pier (Ferry),stop_times停靠
+4,轮渡,154,ท่าเรือวัชรีวงศ์ (ข้ามฟาก);Watchareewong Pier (Ferry),13.9164400203548,100.493575148284,154,2,ท่าเรือวัชรีวงศ์ (ข้ามฟาก),Watchareewong Pier (Ferry),stop_times停靠
+4,轮渡,155,ท่าเรือวัดเตย (ข้ามฟาก);Wat Toey Pier (Ferry),13.9178475221801,100.495159998536,155,2,ท่าเรือวัดเตย (ข้ามฟาก),Wat Toey Pier (Ferry),stop_times停靠
+4,轮渡,156,ท่าเรือวัดอรุณราชวราราม (ท่าวัดอรุณฯ) (ข้ามฟาก);Wat Arun Ratchawararam Pier (Ferry),13.7449942500149,100.489162243903,156,2,ท่าเรือวัดอรุณราชวราราม (ท่าวัดอรุณฯ) (ข้ามฟาก),Wat Arun Ratchawararam Pier (Ferry),stop_times停靠
+4,轮渡,157,ท่าเรือดินแดง (ข้ามฟาก);Dindang Pier (Ferry),13.7369356149597,100.503918081522,157,2,ท่าเรือดินแดง (ข้ามฟาก),Dindang Pier (Ferry),stop_times停靠
+4,轮渡,158,ท่าโอเรียนเต็ล (ข้ามฟาก);Oriental Pier (Ferry),13.723332945867593,100.51356833428144,158,2,ท่าโอเรียนเต็ล (ข้ามฟาก),Oriental Pier (Ferry),stop_times停靠
+4,轮渡,159,ท่าเรือวัดบางนานอก (ข้ามฟาก);Wat Bangnanok Pier (Ferry),13.676564237655,100.58741658926,159,2,ท่าเรือวัดบางนานอก (ข้ามฟาก),Wat Bangnanok Pier (Ferry),stop_times停靠
+4,轮渡,160,ท่าเรือวัดบางน้ำผึ้งนอก (ข้ามฟาก);Wat Bangnamphuengnok Pier (Ferry),13.6824732996913,100.587228499353,160,2,ท่าเรือวัดบางน้ำผึ้งนอก (ข้ามฟาก),Wat Bangnamphuengnok Pier (Ferry),stop_times停靠
+4,轮渡,161,ท่าเรือเภตรา (ข้ามฟาก);PheTra Pier (Ferry),13.6571120528243,100.537353493273,161,2,ท่าเรือเภตรา (ข้ามฟาก),PheTra Pier (Ferry),stop_times停靠
+4,轮渡,162,ท่าเรือพระประแดง (ข้ามฟาก);Phrapadang Pier (Ferry),13.6584787654877,100.535003207624,162,2,ท่าเรือพระประแดง (ข้ามฟาก),Phrapadang Pier (Ferry),stop_times停靠
+4,轮渡,163,ท่าเรือท่าช้าง (ข้ามฟาก);Tha Chang Pier (Ferry),13.7524042107849,100.488227829337,163,2,ท่าเรือท่าช้าง (ข้ามฟาก),Tha Chang Pier (Ferry),stop_times停靠
+4,轮渡,164,ท่าเรือเทเวศร์ (ข้ามฟาก);Thewet Pier (Ferry),13.77211226842,100.500273294747,164,2,ท่าเรือเทเวศร์ (ข้ามฟาก),Thewet Pier (Ferry),stop_times停靠
+4,轮渡,165,ท่าเรือพระจันทร์ (ข้ามฟาก);Tha Phra Chan Pier (Ferry),13.7565935209467,100.488763265312,165,2,ท่าเรือพระจันทร์ (ข้ามฟาก),Tha Phra Chan Pier (Ferry),stop_times停靠
+4,轮渡,166,ท่าเรือพรานนก (วังหลัง) (ข้ามฟาก);Phannok (Wang Lang) Pier (Ferry),13.7559526238771,100.486862584949,166,2,ท่าเรือพรานนก (วังหลัง) (ข้ามฟาก),Phannok (Wang Lang) Pier (Ferry),stop_times停靠
+4,轮渡,167,ท่าเรือสาธุประดิษฐ์ (ข้ามฟาก);Sathupradit Pier (Ferry),13.6769737297846,100.527209378779,167,2,ท่าเรือสาธุประดิษฐ์ (ข้ามฟาก),Sathupradit Pier (Ferry),stop_times停靠
+4,轮渡,168,ท่าปากเกร็ด (ข้ามฟาก);Pakkret Pier (Ferry),13.91546338804202,100.49477946013211,168,2,ท่าปากเกร็ด (ข้ามฟาก),Pakkret Pier (Ferry),stop_times停靠
+4,轮渡,169,ท่าเรือวิบูลย์ศรี (ข้ามฟาก);Wiboon Si Pier (Ferry),13.5949135328973,100.595509149134,169,2,ท่าเรือวิบูลย์ศรี (ข้ามฟาก),Wiboon Si Pier (Ferry),stop_times停靠
+4,轮渡,170,ท่าเรือพระสมุทรเจดีย์ (ข้ามฟาก);Phra Samut Chedi Pier (Ferry),13.5971375492687,100.586729227599,170,2,ท่าเรือพระสมุทรเจดีย์ (ข้ามฟาก),Phra Samut Chedi Pier (Ferry),stop_times停靠
+4,轮渡,171,ท่าเรือผ่านฟ้าลีลาศ;Panfa Leelard Pier,13.7555292103302,100.506329095075,171,2,ท่าเรือผ่านฟ้าลีลาศ,Panfa Leelard Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,172,ท่าเรือตลาดโบ๊เบ๊;Bobae Market Pier,13.7534347777451,100.515941650939,172,2,ท่าเรือตลาดโบ๊เบ๊,Bobae Market Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,173,ท่าเรือสะพานเจริญผล;Charoen Phon Bridge Pier,13.7498111209588,100.524315823166,173,2,ท่าเรือสะพานเจริญผล,Charoen Phon Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,174,ท่าเรือสะพานหัวช้าง;Saphan Hua Chang Pier,13.7491955477693,100.530890945914,174,2,ท่าเรือสะพานหัวช้าง,Saphan Hua Chang Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,175,ท่าเรือประตูน้ำ;Pratunam Pier,13.7492308560895,100.54150724007,175,2,ท่าเรือประตูน้ำ,Pratunam Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,176,ท่าเรือชิดลม;Chidlom Pier,13.7486932348214,100.54455589503,176,2,ท่าเรือชิดลม,Chidlom Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,177,ท่าเรือสะพานวิทยุ;Witthayu Bridge Pier,13.7482825650648,100.54827041924,177,2,ท่าเรือสะพานวิทยุ,Witthayu Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,178,ท่าเรือนานาเหนือ;Nana Nuea Pier,13.748250071134,100.553995234291,178,2,ท่าเรือนานาเหนือ,Nana Nuea Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,179,ท่าเรือนานาชาติ;Nana Chard Pier,13.7483624813485,100.559148173009,179,2,ท่าเรือนานาชาติ,Nana Chard Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,180,ท่าเรืออโศก;Asok Pier,13.7478761489786,100.562907639474,180,2,ท่าเรืออโศก,Asok Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,181,ท่าเรือมศว.ประสานมิตร;Prasan Mit Pier,13.7473118920778,100.565818992158,181,2,ท่าเรือมศว.ประสานมิตร,Prasan Mit Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,182,ท่าเรืออิตัลไทย;Ital-Thai Tower Pier,13.7459325171425,100.573476019104,182,2,ท่าเรืออิตัลไทย,Ital-Thai Tower Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,183,ท่าเรือสุเหร่าบ้านดอน;Baan Don Mosque Pier,13.7441565226963,100.581444893185,183,2,ท่าเรือสุเหร่าบ้านดอน,Baan Don Mosque Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,184,ท่าเรือทองหล่อ;Thong Lo Pier,13.7431932616241,100.585840456188,184,2,ท่าเรือทองหล่อ,Thong Lo Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,185,ท่าเรือชาญอิสระ;Charn Issara Pier,13.7427152828962,100.588415681502,185,2,ท่าเรือชาญอิสระ,Charn Issara Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,186,ท่าเรือร.ร.วิจิตร;Vijit School Pier,13.7415256635658,100.594079084511,186,2,ท่าเรือร.ร.วิจิตร,Vijit School Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,187,ท่าเรือสะพานคลองตัน;Klong Tan Pier,13.7419391960273,100.598299067247,187,2,ท่าเรือสะพานคลองตัน,Klong Tan Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,188,ท่าเรือราม 1;Ram 1 Pier,13.7433274406217,100.598905161023,188,2,ท่าเรือราม 1,Ram 1 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,189,ท่าเรือเดอะมอลล์ 3;The Mall 3 Pier,13.7543496109685,100.607759740904,189,2,ท่าเรือเดอะมอลล์ 3,The Mall 3 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,190,ท่าเรือรามคำแหง 29;Ramkhamhaeng 29 Pier,13.7580855569628,100.611868368934,190,2,ท่าเรือรามคำแหง 29,Ramkhamhaeng 29 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,191,ท่าเรือวัดเทพลีลา;Wat Thepleela Pier,13.7599606350165,100.613765207884,191,2,ท่าเรือวัดเทพลีลา,Wat Thepleela Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,192,ท่าเรือม.รามคำแหง;Ramkhamhaeng University Pier,13.7615589214088,100.618320508897,192,2,ท่าเรือม.รามคำแหง,Ramkhamhaeng University Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,193,ท่าเรือสะพานมิตรมหาดไทย;Saphan Mit Mahat Thai Pier,13.7621710394906,100.623718640319,193,2,ท่าเรือสะพานมิตรมหาดไทย,Saphan Mit Mahat Thai Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,194,ท่าเรือวัดกลาง;Wat Klang Pier Pier,13.7634397422578,100.633516050875,194,2,ท่าเรือวัดกลาง,Wat Klang Pier Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,195,ท่าเรือเดอะมอลล์บางกะปิ;The Mall Bang Kapi Pier,13.7646214585161,100.643440046678,195,2,ท่าเรือเดอะมอลล์บางกะปิ,The Mall Bang Kapi Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,196,ท่าเรือบางกะปิ;Bang Kapi Pier,13.7649883859435,100.647392753753,196,2,ท่าเรือบางกะปิ,Bang Kapi Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,197,ท่าเรือวัดศรีบุญเรือง;Wat Sriboonreung Pier,13.7672708596567,100.651547659239,197,2,ท่าเรือวัดศรีบุญเรือง,Wat Sriboonreung Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,303,ท่าเรือประตูน้ำภาษีเจริญ;Phasi Charoen Dam Pier,13.722118033369926,100.46815265881988,303,2,ท่าเรือประตูน้ำภาษีเจริญ,Phasi Charoen Dam Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,304,ท่าเรืออู่รถเมล์สาย 9;Bus Line 9 Pier,13.721349100970835,100.4662511199092,304,2,ท่าเรืออู่รถเมล์สาย 9,Bus Line 9 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,305,ท่าเรือสะพานประชารัฐ;Phracharat Bridge Pier,13.7204339767267,100.4632561096551,305,2,ท่าเรือสะพานประชารัฐ,Phracharat Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,306,ท่าเรือสะพานตากสิน - เพชรเกษม;Taksin-Phet Kasem Pier,13.718668805890891,100.45837551355362,306,2,ท่าเรือสะพานตากสิน - เพชรเกษม,Taksin-Phet Kasem Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,307,ท่าเรือวัดอ่างแแก้ว;Wat Angkeaw Pier,13.71722857962035,100.454550389201,307,2,ท่าเรือวัดอ่างแแก้ว,Wat Angkeaw Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,308,ท่าเรือเพชรเกษม 31;Phet Kasem 31 Pier,13.71399355758011,100.44501406163008,308,2,ท่าเรือเพชรเกษม 31,Phet Kasem 31 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,309,ท่าเรือวัดรางบัว;Wat Rangbua Pier,13.711661617864742,100.43871978528794,309,2,ท่าเรือวัดรางบัว,Wat Rangbua Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,310,ท่าเรือเพชรเกษม 35;Phet Kasem 35 Pier,13.709566335532605,100.43248561511422,310,2,ท่าเรือเพชรเกษม 35,Phet Kasem 35 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,311,ท่าเรือเพชรเกษม 37;Phet Kasem 37 Pier,13.709127661028026,100.4311872828597,311,2,ท่าเรือเพชรเกษม 37,Phet Kasem 37 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,312,ท่าเรือเพชรเกษม 39;Phet Kasem 39 Pier,13.708409656663976,100.4291752850215,312,2,ท่าเรือเพชรเกษม 39,Phet Kasem 39 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,313,ท่าเรือวัดนิมมานรดี;Wat Nimmanoradee Pier,13.707643864968007,100.42702642274557,313,2,ท่าเรือวัดนิมมานรดี,Wat Nimmanoradee Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,314,ท่าเรือเกษตร - บางแค;Kaset-Bangkae Pier,13.705624223073636,100.42119536722267,314,2,ท่าเรือเกษตร - บางแค,Kaset-Bangkae Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,315,ท่าเรือสะพานกาญจนาภิเษก;Kanchanaphisek Bridge Pier,13.700344548309637,100.40633864700794,315,2,ท่าเรือสะพานกาญจนาภิเษก,Kanchanaphisek Bridge Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,316,ท่าเรือวัดม่วง;Wat Muang Pier,13.695429745266877,100.39256042707,316,2,ท่าเรือวัดม่วง,Wat Muang Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,317,ท่าเรือเพชรเกษม 69;Phet Kasem 69 Pier,13.691759418872818,100.38142858910591,317,2,ท่าเรือเพชรเกษม 69,Phet Kasem 69 Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,13590,ท่าเรือสถานีรถไฟหัวลำโพง;Hua Lamphong Railway Station Pier,13.738805370651072,100.51579087972641,13590,2,ท่าเรือสถานีรถไฟหัวลำโพง,Hua Lamphong Railway Station Pier,stop_times停靠
+4,轮渡,13591,ท่าเรือหัวลำโพง;Hua Lamphong Pier,13.740902762173826,100.51580563187599,13591,2,ท่าเรือหัวลำโพง,Hua Lamphong Pier,stop_times停靠
+4,轮渡,13592,ท่าเรือนพวงษ์;Noppawong Pier,13.744843462548742,100.51630049943924,13592,2,ท่าเรือนพวงษ์,Noppawong Pier,stop_times停靠
+4,轮渡,13593,ท่าเรือยศเส;Yotse Pier,13.746917351625621,100.5164909362793,13593,2,ท่าเรือยศเส,Yotse Pier,stop_times停靠
+4,轮渡,13594,ท่าเรือกระทรวงพลังงาน;Ministry of Energy Pier,13.749263481639483,100.51703006029129,13594,2,ท่าเรือกระทรวงพลังงาน,Ministry of Energy Pier,stop_times停靠
+4,轮渡,13595,ท่าเรือแยกหลานหลวง;Lan Luang intersection Pier,13.755511029143202,100.51683023571968,13595,2,ท่าเรือแยกหลานหลวง,Lan Luang intersection Pier,stop_times停靠
+4,轮渡,13596,ท่าเรือนครสวรรค์;Nakhon Sawan Pier,13.75983836108119,100.51306709647179,13596,2,ท่าเรือนครสวรรค์,Nakhon Sawan Pier,stop_times停靠
+4,轮渡,13597,ท่าเรือราชดำเนินนอก;Rajadamnoen Nok Pier,13.762911213162841,100.51002815365791,13597,2,ท่าเรือราชดำเนินนอก,Rajadamnoen Nok Pier,stop_times停靠
+4,轮渡,13598,ท่าเรือประชาธิปไตย;PhrachaThipphratai Pier,13.7651308319482,100.50787165761,13598,2,ท่าเรือประชาธิปไตย,PhrachaThipphratai Pier,stop_times停靠
+4,轮渡,13599,ท่าเรือเทเวศร์;Thewes Pier,13.768628251899425,100.50472006201744,13599,2,ท่าเรือเทเวศร์,Thewes Pier,stop_times停靠
+4,轮渡,13600,ท่าเรือตลาดเทวราช;Dhevaraj Market Pier,13.771234674983004,100.5018675327301,13600,2,ท่าเรือตลาดเทวราช,Dhevaraj Market Pier,stop_times停靠
+4,轮渡,13945,ท่าเรือบางโพ;Bang Pho Pier,13.806333235951547,100.51908060908318,13945,2,ท่าเรือบางโพ,Bang Pho Pier,stop_times停靠
+4,轮渡,13946,ท่าเรือท่าช้าง;Tha Chang Pier,13.748644710042312,100.48905596137047,13946,2,ท่าเรือท่าช้าง,Tha Chang Pier,stop_times停靠
+4,轮渡,13947,ท่าเรือสะพานพระนั่งเกล้า;Phra Nang Klao Brigde,13.870197280684147,100.47778531908989,13947,2,ท่าเรือสะพานพระนั่งเกล้า,Phra Nang Klao Brigde,stop_times停靠
+4,轮渡,13948,ท่าเรือวัดใหม่ช่องลม;Wat Mai Chong Lom Pier,13.745678491703226,100.57441055774689,13948,2,ท่าเรือวัดใหม่ช่องลม,Wat Mai Chong Lom Pier,stop_times停靠＋fare_rules票价区域
+4,轮渡,13951,ท่าเรือไอคอนสยาม;Iconsiam,13.72645904030422,100.51191508769989,13951,2,ท่าเรือไอคอนสยาม,Iconsiam,stop_times停靠
+4,轮渡,14192,ท่าเรือแคท ทาวเวอร์;CAT Tower Pier,13.72724853704019,100.51354855298996,14192,2,ท่าเรือแคท ทาวเวอร์,CAT Tower Pier,stop_times停靠
+4,轮渡,15986,ท่าเรือโรงเรียนพร้อมมิตรพิทยา;Prommitr Wittaya School Pier,13.770339819358787,100.65559834241867,15986,2,ท่าเรือโรงเรียนพร้อมมิตรพิทยา,Prommitr Wittaya School Pier,stop_times停靠
+4,轮渡,15987,ท่าเรือพาซิโอ;Paseo Pier,13.77582352416094,100.66587790846825,15987,2,ท่าเรือพาซิโอ,Paseo Pier,stop_times停靠
+4,轮渡,15988,ท่าเรือเสรีไทย 26;Seri Thai 26 Pier,13.780950215876407,100.67474529147148,15988,2,ท่าเรือเสรีไทย 26,Seri Thai 26 Pier,stop_times停靠
+4,轮渡,15989,ท่าเรือคลองระหัส;Khlong Rahat Pier,13.783144916125696,100.67876726388931,15989,2,ท่าเรือคลองระหัส,Khlong Rahat Pier,stop_times停靠
+4,轮渡,15990,ท่าเรือหมู่บ้านร่มไทร;Romsai Village Pier,13.784715709695538,100.68160772323608,15990,2,ท่าเรือหมู่บ้านร่มไทร,Romsai Village Pier,stop_times停靠
+4,轮渡,15991,ท่าเรือสุเหร่าแดง;Surao Daeng Pier,13.788963051337298,100.68940758705139,15991,2,ท่าเรือสุเหร่าแดง,Surao Daeng Pier,stop_times停靠
+4,轮渡,15992,ท่าเรือชุมชนหลอแหลใหญ่;Chomchon Lo Lae Pier,13.792904244350046,100.69626465439796,15992,2,ท่าเรือชุมชนหลอแหลใหญ่,Chomchon Lo Lae Pier,stop_times停靠
+4,轮渡,15993,ท่าเรือประตูน้ำบางชันเหนือ;Pratunam Bangchan Nuea Pier,13.797564300117413,100.7047189772129,15993,2,ท่าเรือประตูน้ำบางชันเหนือ,Pratunam Bangchan Nuea Pier,stop_times停靠
+4,轮渡,15994,ท่าเรือประตูน้ำบางชันใต้;Pratunam Bangchan Tai Pier,13.797199626108142,100.7040336728096,15994,2,ท่าเรือประตูน้ำบางชันใต้,Pratunam Bangchan Tai Pier,stop_times停靠
+4,轮渡,15995,ท่าเรือวัดบำเพ็ญเหนือ;Wat BamPhen Nuea Pier,13.800623632123097,100.71030467748642,15995,2,ท่าเรือวัดบำเพ็ญเหนือ,Wat BamPhen Nuea Pier,stop_times停靠
+4,轮渡,15996,ท่าเรือตลาดมีนบุรี;Talat Min Buri Pier,13.810969581451827,100.72895273566246,15996,2,ท่าเรือตลาดมีนบุรี,Talat Min Buri Pier,stop_times停靠
+4,轮渡,15997,ท่าเรือสำนักงานเขตมีนบุรี;Khet Minburi Pier,13.812110420869752,100.73119640350342,15997,2,ท่าเรือสำนักงานเขตมีนบุรี,Khet Minburi Pier,stop_times停靠
+4,轮渡,16060,ท่าเรือคลองจิหลาด;Klong Jilad Ferry Pier,8.045835288724026,98.90588209033012,16060,2,ท่าเรือคลองจิหลาด,Klong Jilad Ferry Pier,stop_times停靠
+4,轮渡,16061,ท่าเรืออ่าวต้นไทร;Ao Ton Sai Pier,7.737351102974743,98.77047210931778,16061,2,ท่าเรืออ่าวต้นไทร,Ao Ton Sai Pier,stop_times停靠
+4,轮渡,16084,ท่าเรือศาลาด่าน;Saladan Pier,7.648349662368177,99.04170647263527,16084,2,ท่าเรือศาลาด่าน,Saladan Pier,stop_times停靠
+4,轮渡,16085,ท่าเรือคงคา;Kong Ka Pier,8.062010155052821,98.9197826385498,16085,2,ท่าเรือคงคา,Kong Ka Pier,stop_times停靠
+4,轮渡,16086,ท่าเรือหาดนพรัตน์ธาราฯ;Noparatthara Pier,8.047593428791778,98.79863396286964,16086,2,ท่าเรือหาดนพรัตน์ธาราฯ,Noparatthara Pier,stop_times停靠
+4,轮渡,16087,ท่าเรือรัษฎา;Rassada Pier,7.872645292176639,98.4144289791584,16087,2,ท่าเรือรัษฎา,Rassada Pier,stop_times停靠
+4,轮渡,16088,ท่าเทียบเรืออ่าวท่าเลน;Thalen Pier,8.145148904007979,98.74850079417229,16088,2,ท่าเทียบเรืออ่าวท่าเลน,Thalen Pier,stop_times停靠
+4,轮渡,16089,ท่าเรือมะเนาะ;Manok Pier,8.093533416436278,98.58723029494286,16089,2,ท่าเรือมะเนาะ,Manok Pier,stop_times停靠
+4,轮渡,16090,ท่าเรือช่องหลาด;Chong Lard Pier,8.078845617009334,98.58618155121803,16090,2,ท่าเรือช่องหลาด,Chong Lard Pier,stop_times停靠
+4,轮渡,16592,วัดอรุณฯ;Wat Arun,13.743953716819806,100.4896728694439,16592,2,วัดอรุณฯ,Wat Arun,stop_times停靠
+4,轮渡,16593,ท่าเตียน;Tah Tian,13.74496200821064,100.49108371138573,16593,2,ท่าเตียน,Tah Tian,stop_times停靠
+4,轮渡,16642,ท่าเรือบ้านพักติวานนท์;Baan Pak Tiwanon,13.8983278807246,100.49114137887955,16642,2,ท่าเรือบ้านพักติวานนท์,Baan Pak Tiwanon,stop_times停靠

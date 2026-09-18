@@ -1,0 +1,92 @@
+﻿交通类型代码,交通类型中文,zone_id,stop_id,stop_name,stop_name_泰文,stop_name_英文,票价规则引用次数,映射状态
+2,铁路,212,212,SRT กรุงเทพ;SRT Bangkok,SRT กรุงเทพ,SRT Bangkok,673,已匹配stops.zone_id
+2,铁路,213,213,SRT ตลาดใหม่ดอนเมือง;SRT Talatmai Don Muang,SRT ตลาดใหม่ดอนเมือง,SRT Talatmai Don Muang,23,已匹配stops.zone_id
+2,铁路,214,214,SRT ดอนเมือง;SRT Don Muang,SRT ดอนเมือง,SRT Don Muang,331,已匹配stops.zone_id
+2,铁路,215,215,SRT หลักหก;SRT Lak Hok,SRT หลักหก,SRT Lak Hok,92,已匹配stops.zone_id
+2,铁路,216,216,SRT คลองหนึ่ง;SRT Khlong Nhung,SRT คลองหนึ่ง,SRT Khlong Nhung,116,已匹配stops.zone_id
+2,铁路,217,217,SRT คลองรังสิต;SRT Khlong Rangsit,SRT คลองรังสิต,SRT Khlong Rangsit,197,已匹配stops.zone_id
+2,铁路,218,218,SRT การเคหะ กม.19;SRT Khan Keha Khomo Sipkao,SRT การเคหะ กม.19,SRT Khan Keha Khomo Sipkao,143,已匹配stops.zone_id
+2,铁路,219,219,SRT ม.ธรรมศาสตร์;SRT Thammasat University,SRT ม.ธรรมศาสตร์,SRT Thammasat University,133,已匹配stops.zone_id
+2,铁路,220,220,SRT โรงพยาบาลรามาธิบดี;SRT RAMATHIBODI HOSPITAL,SRT โรงพยาบาลรามาธิบดี,SRT RAMATHIBODI HOSPITAL,207,已匹配stops.zone_id
+2,铁路,222,222,SRT รังสิต;SRT Rangsit,SRT รังสิต,SRT Rangsit,332,已匹配stops.zone_id
+2,铁路,223,223,SRT เชียงราก;SRT Chiang Rak,SRT เชียงราก,SRT Chiang Rak,223,已匹配stops.zone_id
+2,铁路,225,225,SRT ยมราช;SRT Yommaraj,SRT ยมราช,SRT Yommaraj,36,已匹配stops.zone_id
+2,铁路,226,226,SRT มักกะสัน;SRT Makkasan,SRT มักกะสัน,SRT Makkasan,328,已匹配stops.zone_id
+2,铁路,228,228,SRT สามเสน;SRT Sam Sen,SRT สามเสน,SRT Sam Sen,390,已匹配stops.zone_id
+2,铁路,229,229,SRT คลองตัน;SRT Khlong Tan,SRT คลองตัน,SRT Khlong Tan,326,已匹配stops.zone_id
+2,铁路,230,230,SRT หัวหมาก;SRT Hua Mak,SRT หัวหมาก,SRT Hua Mak,326,已匹配stops.zone_id
+2,铁路,231,231,SRT บ้านทับช้าง;SRT Ban Thap Chang,SRT บ้านทับช้าง,SRT Ban Thap Chang,316,已匹配stops.zone_id
+2,铁路,232,232,SRT ซอยวัดลานบุญ;SRT Soi Wat Lan Boon,SRT ซอยวัดลานบุญ,SRT Soi Wat Lan Boon,242,已匹配stops.zone_id
+2,铁路,233,233,SRT ลาดกระบัง;SRT Lat Krabang,SRT ลาดกระบัง,SRT Lat Krabang,326,已匹配stops.zone_id
+2,铁路,234,234,SRT หัวตะเข้;SRT Hua Takhe,SRT หัวตะเข้,SRT Hua Takhe,328,已匹配stops.zone_id
+2,铁路,236,236,SRT คลองหลวงแพ่ง;SRT Khlong Luang Phaeng,SRT คลองหลวงแพ่ง,SRT Khlong Luang Phaeng,269,已匹配stops.zone_id
+2,铁路,237,237,SRT อุรุพงษ์;SRT Urupong,SRT อุรุพงษ์,SRT Urupong,175,已匹配stops.zone_id
+2,铁路,238,238,SRT พญาไท;SRT Phayathai,SRT พญาไท,SRT Phayathai,316,已匹配stops.zone_id
+2,铁路,240,240,SRT อโศก;SRT Asoke,SRT อโศก,SRT Asoke,316,已匹配stops.zone_id
+2,铁路,241,241,SRT สุขุมวิท 71;SRT Sukhumvit 71,SRT สุขุมวิท 71,SRT Sukhumvit 71,211,已匹配stops.zone_id
+2,铁路,242,242,SRT พระจอมเกล้า;SRT Pra Chom Klao,SRT พระจอมเกล้า,SRT Pra Chom Klao,316,已匹配stops.zone_id
+2,铁路,243,243,SRT ธนบุรี;SRT Thon Buri,SRT ธนบุรี,SRT Thon Buri,221,已匹配stops.zone_id
+2,铁路,244,244,SRT บางระมาด;SRT Bang Ramat,SRT บางระมาด,SRT Bang Ramat,221,已匹配stops.zone_id
+2,铁路,245,245,SRT ชุมทางตลิ่งชัน;SRT Taling Chan Junction,SRT ชุมทางตลิ่งชัน,SRT Taling Chan Junction,315,已匹配stops.zone_id
+2,铁路,246,246,SRT บางบำหรุ;SRT Bang Bamru,SRT บางบำหรุ,SRT Bang Bamru,104,已匹配stops.zone_id
+2,铁路,247,247,SRT บ้านฉิมพลี;SRT Banchimphli,SRT บ้านฉิมพลี,SRT Banchimphli,221,已匹配stops.zone_id
+2,铁路,248,248,SRT ศาลาธรรมสพน์;SRT Sala Thammasop,SRT ศาลาธรรมสพน์,SRT Sala Thammasop,285,已匹配stops.zone_id
+2,铁路,249,249,SRT ศาลายา;SRT Sala Ya,SRT ศาลายา,SRT Sala Ya,325,已匹配stops.zone_id
+2,铁路,250,250,SRT วัดสุวรรณ;SRT Wat Suwan,SRT วัดสุวรรณ,SRT Wat Suwan,215,已匹配stops.zone_id
+2,铁路,251,251,SRT คลองมหาสวัสดิ์;SRT Khlong Maha Sawat,SRT คลองมหาสวัสดิ์,SRT Khlong Maha Sawat,215,已匹配stops.zone_id
+2,铁路,252,252,SRT วัดงิ้วราย;SRT Wat Ngiu Rai,SRT วัดงิ้วราย,SRT Wat Ngiu Rai,215,已匹配stops.zone_id
+2,铁路,253,253,SRT นครชัยศรี;SRT Nakhon Chaisi,SRT นครชัยศรี,SRT Nakhon Chaisi,215,已匹配stops.zone_id
+2,铁路,254,254,SRT ท่าแฉลบ;SRT Tha Chalaep,SRT ท่าแฉลบ,SRT Tha Chalaep,187,已匹配stops.zone_id
+2,铁路,255,255,SRT ต้นสำโรง;SRT Ton Samrong,SRT ต้นสำโรง,SRT Ton Samrong,215,已匹配stops.zone_id
+2,铁路,256,256,SRT นครปฐม;SRT Nakhon Pathom,SRT นครปฐม,SRT Nakhon Pathom,255,已匹配stops.zone_id
+2,铁路,257,257,SRT พระราชวังสนามจันทร์;SRT Sanam Chandra Palace,SRT พระราชวังสนามจันทร์,SRT Sanam Chandra Palace,157,已匹配stops.zone_id
+2,铁路,258,258,SRT โพรงมะเดื่อ;SRT Phrong Madua,SRT โพรงมะเดื่อ,SRT Phrong Madua,215,已匹配stops.zone_id
+2,铁路,264,264,SRT ประดิพัทธ์;SRT Pra Dipat,SRT ประดิพัทธ์,SRT Pra Dipat,23,已匹配stops.zone_id
+2,铁路,266,266,SRT กรุงเทพอภิวัฒน์;SRT Bangkok (Krung Thep Aphiwat),SRT กรุงเทพอภิวัฒน์,SRT Bangkok (Krung Thep Aphiwat),435,已匹配stops.zone_id
+2,铁路,267,267,SRT นิคมรถไฟ กม.11;SRT Nikhom Rotphai Khomo Sip-et,SRT นิคมรถไฟ กม.11,SRT Nikhom Rotphai Khomo Sip-et,293,已匹配stops.zone_id
+2,铁路,268,268,SRT จรัญสนิทวงศ์;SRT Jaran Sanitwong,SRT จรัญสนิทวงศ์,SRT Jaran Sanitwong,221,已匹配stops.zone_id
+2,铁路,269,269,SRT พุทธมณฑล สาย 2;SRT Phuttamonthon Sai 2,SRT พุทธมณฑล สาย 2,SRT Phuttamonthon Sai 2,184,已匹配stops.zone_id
+2,铁路,270,270,SRT วงเวียนใหญ่;SRT Wongwian Yai,SRT วงเวียนใหญ่,SRT Wongwian Yai,946,已匹配stops.zone_id
+2,铁路,271,271,SRT ตลาดพลู;SRT Talat Phlu,SRT ตลาดพลู,SRT Talat Phlu,946,已匹配stops.zone_id
+2,铁路,272,272,SRT คลองต้นไทร;SRT Khlong Ton Sai,SRT คลองต้นไทร,SRT Khlong Ton Sai,188,已匹配stops.zone_id
+2,铁路,273,273,SRT จอมทอง;SRT Chom Thong,SRT จอมทอง,SRT Chom Thong,420,已匹配stops.zone_id
+2,铁路,274,274,SRT วัดไทร;SRT Wat Sai,SRT วัดไทร,SRT Wat Sai,946,已匹配stops.zone_id
+2,铁路,275,275,SRT วัดสิงห์;SRT Wat Sing,SRT วัดสิงห์,SRT Wat Sing,946,已匹配stops.zone_id
+2,铁路,276,276,SRT บางบอน;SRT Bang Bon,SRT บางบอน,SRT Bang Bon,946,已匹配stops.zone_id
+2,铁路,277,277,SRT การเคหะ;SRT Khan Keha,SRT การเคหะ,SRT Khan Keha,946,已匹配stops.zone_id
+2,铁路,278,278,SRT รางสะแก;SRT Rang Sakae,SRT รางสะแก,SRT Rang Sakae,96,已匹配stops.zone_id
+2,铁路,279,279,SRT รางโพธิ์;SRT Rang Pho,SRT รางโพธิ์,SRT Rang Pho,946,已匹配stops.zone_id
+2,铁路,280,280,SRT สามแยก;SRT Sam Yaek,SRT สามแยก,SRT Sam Yaek,946,已匹配stops.zone_id
+2,铁路,281,281,SRT พรมแดน;SRT Phrom Daen,SRT พรมแดน,SRT Phrom Daen,946,已匹配stops.zone_id
+2,铁路,282,282,SRT บางน้ำจืด;SRT Bang Nam Jued,SRT บางน้ำจืด,SRT Bang Nam Jued,946,已匹配stops.zone_id
+2,铁路,283,283,SRT คอกควาย;SRT Khok Khwai,SRT คอกควาย,SRT Khok Khwai,946,已匹配stops.zone_id
+2,铁路,284,284,SRT บ้านขอม;SRT Ban Khom,SRT บ้านขอม,SRT Ban Khom,946,已匹配stops.zone_id
+2,铁路,285,285,SRT มหาชัย;SRT Maha Chai,SRT มหาชัย,SRT Maha Chai,946,已匹配stops.zone_id
+2,铁路,286,286,SRT บ้านแหลม;SRT Ban Laem,SRT บ้านแหลม,SRT Ban Laem,208,已匹配stops.zone_id
+2,铁路,287,287,SRT ท่าฉลอม;SRT Tha Chalom,SRT ท่าฉลอม,SRT Tha Chalom,208,已匹配stops.zone_id
+2,铁路,288,288,SRT บ้านชีผ้าขาว;SRT Ban Chi Phakhao,SRT บ้านชีผ้าขาว,SRT Ban Chi Phakhao,208,已匹配stops.zone_id
+2,铁路,289,289,SRT บางสีคต;SRT Bang Si Khot,SRT บางสีคต,SRT Bang Si Khot,208,已匹配stops.zone_id
+2,铁路,290,290,SRT บางกระเจ้า;SRT Bang Krachao,SRT บางกระเจ้า,SRT Bang Krachao,208,已匹配stops.zone_id
+2,铁路,291,291,SRT บ้านบ่อ;SRT Ban Bo,SRT บ้านบ่อ,SRT Ban Bo,208,已匹配stops.zone_id
+2,铁路,292,292,SRT บางโทรัด;SRT Bang Thorat,SRT บางโทรัด,SRT Bang Thorat,208,已匹配stops.zone_id
+2,铁路,293,293,SRT บ้านกาหลง;SRT Ban Ka Long,SRT บ้านกาหลง,SRT Ban Ka Long,208,已匹配stops.zone_id
+2,铁路,294,294,SRT บ้านนาขวาง;SRT Ban Na Khwang,SRT บ้านนาขวาง,SRT Ban Na Khwang,208,已匹配stops.zone_id
+2,铁路,295,295,SRT บ้านนาโคก;SRT Ban Na Khok,SRT บ้านนาโคก,SRT Ban Na Khok,208,已匹配stops.zone_id
+2,铁路,296,296,SRT เขตเมือง;SRT Ked Muang,SRT เขตเมือง,SRT Ked Muang,208,已匹配stops.zone_id
+2,铁路,297,297,SRT คลองจาก;SRT Khlong Chak,SRT คลองจาก,SRT Khlong Chak,244,已匹配stops.zone_id
+2,铁路,298,298,SRT ทุ่งสีทอง;SRT Thung Si Thong,SRT ทุ่งสีทอง,SRT Thung Si Thong,946,已匹配stops.zone_id
+2,铁路,300,300,SRT บางเขน;SRT Bang Khen,SRT บางเขน,SRT Bang Khen,293,已匹配stops.zone_id
+2,铁路,301,301,SRT ทุ่งสองห้อง;SRT Thung Song Hong,SRT ทุ่งสองห้อง,SRT Thung Song Hong,166,已匹配stops.zone_id
+2,铁路,302,302,SRT หลักสี่;SRT Lak Si,SRT หลักสี่,SRT Lak Si,293,已匹配stops.zone_id
+2,铁路,318,318,SRT ลาดใหญ่;SRT Lad Yai,SRT ลาดใหญ่,SRT Lad Yai,208,已匹配stops.zone_id
+2,铁路,319,319,SRT บางกระบูน;SRT Bang Krabun,SRT บางกระบูน,SRT Bang Krabun,208,已匹配stops.zone_id
+2,铁路,320,320,SRT แม่กลอง;SRT Mae Klong,SRT แม่กลอง,SRT Mae Klong,208,已匹配stops.zone_id
+2,铁路,321,321,ARL พญาไท;ARL Phaya Thai,ARL พญาไท,ARL Phaya Thai,14,已匹配stops.zone_id
+2,铁路,322,322,ARL ลาดกระบัง;ARL Lat Krabang,ARL ลาดกระบัง,ARL Lat Krabang,14,已匹配stops.zone_id
+2,铁路,323,323,ARL บ้านทับช้าง;ARL Ban Thap Chang,ARL บ้านทับช้าง,ARL Ban Thap Chang,14,已匹配stops.zone_id
+2,铁路,324,324,ARL มักกะสัน;ARL Makkasan,ARL มักกะสัน,ARL Makkasan,14,已匹配stops.zone_id
+2,铁路,325,325,ARL หัวหมาก;ARL Hua Mak,ARL หัวหมาก,ARL Hua Mak,14,已匹配stops.zone_id
+2,铁路,326,326,ARL ท่าอากาศยานสุวรรณภูมิ;ARL Suvarnabhumi Airport,ARL ท่าอากาศยานสุวรรณภูมิ,ARL Suvarnabhumi Airport,14,已匹配stops.zone_id
+2,铁路,327,327,ARL ราชปรารภ;ARL Ratchaprarop,ARL ราชปรารภ,ARL Ratchaprarop,14,已匹配stops.zone_id
+2,铁路,328,328,ARL รามคำแหง;ARL Ramkhamhaeng,ARL รามคำแหง,ARL Ramkhamhaeng,14,已匹配stops.zone_id
+2,铁路,221,,,,,120,未找到对应stops.zone_id

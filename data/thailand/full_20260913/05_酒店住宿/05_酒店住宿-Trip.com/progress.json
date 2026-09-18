@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-09-06 19:32:23",
+  "target_hotels": 1,
+  "attempted_this_run": 1,
+  "success_this_run": 1,
+  "failed_this_run": 0,
+  "skipped_success_this_run": 0,
+  "stopped_by_platform_signal": false,
+  "stop_reason": "",
+  "last_hotel_id": "701087",
+  "saved_hotels": 751,
+  "saved_room_rows": 5649,
+  "room_csv": "[LOCAL_HOME]/Desktop/Thailand---泰国/02_携程曼谷酒店/03_Trip海外房型/trip_bangkok_rooms_20260928_20260929/Trip_酒店房型.csv",
+  "status_csv": "[LOCAL_HOME]/Desktop/Thailand---泰国/02_携程曼谷酒店/03_Trip海外房型/trip_bangkok_rooms_20260928_20260929/Trip_酒店采集状态.csv"
+}

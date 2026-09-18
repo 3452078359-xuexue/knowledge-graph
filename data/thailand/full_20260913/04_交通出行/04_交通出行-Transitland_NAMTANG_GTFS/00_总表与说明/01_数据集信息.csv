@@ -1,0 +1,11 @@
+﻿项目,值,说明
+数据集名称,泰国NAMTANG交通数据按GTFS交通类型分类CSV,按route_type分类并拆分细表
+Feed Onestop ID,f-th~namtang,Transitland稳定Feed标识
+生成UTC,2026-09-01T07:33:14Z,本地分类生成时间
+获取方式,NAMTANG官方GTFS源（由Transitland Feed元数据指向；Key未落盘）,API Key未写入数据集
+源文件最后修改UTC,2026-08-31T18:02:08Z,由下载响应提供
+Transitland Feed页,https://www.transit.land/feeds/f-th~namtang,Feed版本及许可核验入口
+NAMTANG源GTFS,https://namtang-api.otp.go.th/download/namtang-gtfs.zip,Transitland Feed元数据中的当前源地址
+分类字段,routes.route_type,依照GTFS Schedule规范
+CSV编码,UTF-8 with BOM,兼容Excel泰文/中文显示
+许可,CC-BY-4.0,"署名：Office of Transport and Traffic Policy and Planning, Thailand"

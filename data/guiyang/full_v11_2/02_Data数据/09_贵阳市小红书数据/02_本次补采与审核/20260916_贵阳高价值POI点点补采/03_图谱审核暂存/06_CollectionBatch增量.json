@@ -1,0 +1,33 @@
+{
+  "datasetName": "贵阳市小红书高价值POI补采CollectionBatch审核暂存",
+  "city": "贵阳市",
+  "entityType": "CollectionBatch",
+  "recordCount": 1,
+  "sourcePolicy": "审核暂存：AI回答不得直接入稳定层；SourceEvidence decision 全为待复核。",
+  "generatedAt": "2026-09-17 11:25:14",
+  "records": [
+    {
+      "id": "batch_xhs_fd526b2bdbf06467070c2a48",
+      "batchId": "xhs-diandian-high-value-poi-20260916",
+      "name": "贵阳高价值标准POI小红书体验帖子补采",
+      "sourceType": "社媒",
+      "gridPass": "补采",
+      "plannedCount": 216,
+      "collectedCount": 184,
+      "coverageRatio": 0.851852,
+      "status": "进行中",
+      "startedAt": "2026-09-16 23:44:45",
+      "finishedAt": "",
+      "pipelineVersion": "xhs-exact-poi-v1",
+      "notes": "点点AI只作来源发现；全部来源进入语义审核，未审核前不得写回POI体验字段。",
+      "externalIds": [
+        "collection-batch:xhs-diandian-high-value-poi-20260916"
+      ],
+      "lastVerifiedAt": "",
+      "createdAt": "2026-09-17 11:25:14",
+      "updatedAt": "2026-09-17 11:25:14",
+      "lastSeenAt": "2026-09-17 11:25:14",
+      "contentHash": "5ed11cd8040184ca90c27a7484cfd2f99983276268bae422ddc59ec8cf92ab72"
+    }
+  ]
+}

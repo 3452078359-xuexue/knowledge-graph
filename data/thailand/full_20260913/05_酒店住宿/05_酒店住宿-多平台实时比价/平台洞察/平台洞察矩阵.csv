@@ -1,0 +1,63 @@
+﻿平台名称,覆盖酒店数,平台类型,归属集团,价格性质,主域名,Google落地层级,平台酒店ID提取率,URL模板率,访问限制,URL固化难度
+Agoda,291,A1一级OTA,Booking Holdings,真实源,agoda.com,L0中转页,100%,0%,未见限制,B 一次跳转
+Bluepillow.com,286,B元搜索,Bluepillow,二手索引,bluepillow.com,L1搜索页,100%,98%,未见限制,B 一次跳转
+Hotels.com,230,A1一级OTA,Expedia Group,真实源,hotels.com,L1搜索页,100%,100%,未见限制,B 一次跳转
+Travelocity.com,224,C白标联盟,Expedia白标,白标转售,travelocity.com,L1搜索页,100%,100%,登录/验证码,C 需破限
+eDreams,220,A1一级OTA,eDreams ODIGEO,真实源,accommodation.edreams.net,L1搜索页,100%,99%,部分限制,C 需破限
+Expedia.com,210,A1一级OTA,Expedia Group,真实源,expedia.com,L1搜索页,100%,100%,登录/验证码,C 需破限
+Orbitz.com,209,C白标联盟,Expedia白标,白标转售,orbitz.com,L1搜索页,100%,100%,登录/验证码,C 需破限
+CheapTickets.com,209,C白标联盟,Expedia白标,白标转售,cheaptickets.com,L1搜索页,100%,100%,登录/验证码,C 需破限
+Trip.com,199,A1一级OTA,Trip.com Group,真实源,us.trip.com,L1搜索页,100%,100%,未见限制,B 一次跳转
+Booking.com,193,A1一级OTA,Booking Holdings,真实源,booking.com,L1搜索页,100%,99%,未见限制,B 一次跳转
+Vio.com,184,C白标联盟,Vio网络(主品牌),白标转售,deals.vio.com,L0中转页,100%,100%,未见限制,B 一次跳转
+EaseMyTrip.com,182,A1一级OTA,EaseMyTrip(印度),真实源,easemytrip.com,L1搜索页,100%,0%,未见限制,B 一次跳转
+Etrip.net,170,C白标联盟,Vio网络,白标转售,deals.etrip.net,L0中转页,100%,100%,未见限制,B 一次跳转
+Priceline,155,A1一级OTA,Booking Holdings,真实源,priceline.com,L0中转页,100%,0%,未见限制,B 一次跳转
+Traveloka.com,153,A1一级OTA,Traveloka(东南亚),真实源,traveloka.com,L1搜索页,100%,0%,未见限制,B 一次跳转
+goseek.com,147,C白标联盟,Vio网络,白标转售,deals.goseek.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Wego,145,B元搜索,Wego(中东/东南亚),二手索引,wego.com,L1搜索页,100%,100%,登录/验证码,C 需破限
+hutchgo (Hutchison Travel Limited),136,D渠道商,和记旅游(香港),渠道价,hutchgo.com,L0中转页,100%,0%,未见限制,B 一次跳转
+dealbase.com,117,C白标联盟,Vio网络,白标转售,deals.dealbase.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Tripadvisor.com,100,B元搜索,Tripadvisor,二手索引,tripadvisor.com,L2详情页,100%,0%,未见限制,B 一次跳转
+momondo.com,96,B元搜索,Booking Holdings,二手索引,momondo.com,L2详情页,100%,96%,未见限制,A 直拼
+KAYAK.com,92,B元搜索,Booking Holdings,二手索引,kayak.com,L2详情页,100%,95%,明确拒绝机器人,D 放弃
+klook,91,A1一级OTA,Klook(亚太),真实源,api.klktech.com,L2详情页,100%,100%,未见限制,A 直拼
+Qantas Hotels,91,D渠道商,澳洲航空,会员渠道价,qantas.com,L2详情页,100%,100%,登录/验证码,C 需破限
+Evendo,89,C白标联盟,独立白标,白标转售,evendo.com,L0中转页,100%,100%,登录/验证码,C 需破限
+Hostelworld,85,A1一级OTA,Hostelworld(青旅垂直),真实源,hostelworld.com,L2详情页,100%,100%,未见限制,A 直拼
+Hotelscombined.com,83,B元搜索,Booking Holdings,二手索引,hotelscombined.com,L2详情页,100%,96%,未见限制,A 直拼
+Tripening Hotels,83,C白标联盟,独立白标,白标转售,tripening.com,L2详情页,100%,100%,未见限制,A 直拼
+müv AI,75,C白标联盟,独立白标,白标转售,muvtravel.com,L0中转页,100%,0%,未见限制,B 一次跳转
+Kiwi.com,70,C白标联盟,Vio网络,白标转售,hotels-tracker.kiwi.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Tiket.com,51,A1一级OTA,Tiket(印尼),真实源,tiket.com,L2详情页,100%,100%,未见限制,A 直拼
+Stayforlong.com,42,A1一级OTA,Stayforlong(长住垂直),真实源,stayforlong.com,L2详情页,100%,100%,部分限制,C 需破限
+Reserving,38,C白标联盟,独立白标,白标转售,h-en.reserving.com,L1搜索页,100%,0%,未见限制,B 一次跳转
+TravelUP,34,C白标联盟,独立白标,白标转售,travelup.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Closest Hotel,24,C白标联盟,独立白标,白标转售,closesthotel.com,L0中转页,100%,0%,未见限制,B 一次跳转
+trivago DEALS,22,C白标联盟,Traveluro后端,白标转售,trivago.deals,L2详情页,100%,100%,未见限制,A 直拼
+Clicktrip.com,21,C白标联盟,独立白标,白标转售,clicktrip.com,L2详情页,100%,0%,未见限制,B 一次跳转
+Traveluro,20,C白标联盟,Traveluro(主品牌),白标转售,traveluro.com,L2详情页,100%,100%,未见限制,A 直拼
+Expedia.co.th,17,A1一级OTA,Expedia Group,真实源,expedia.co.th,L1搜索页,100%,100%,登录/验证码,C 需破限
+Catchit.com,17,A1一级OTA,Catchit,真实源,catchit.com,L2详情页,100%,0%,未见限制,B 一次跳转
+HOPEGOO,16,A1一级OTA,HOPEGOO,真实源,hopegoo.com,L2详情页,100%,100%,未见限制,A 直拼
+Hotel prive,15,C白标联盟,独立白标,白标转售,hotelprive.net,L0中转页,100%,0%,未见限制,B 一次跳转
+AsiaYo,13,A1一级OTA,AsiaYo(台湾),真实源,asiayo.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Luxury Escapes,7,A1一级OTA,Luxury Escapes(澳洲高端),真实源,luxuryescapes.com,L1搜索页,100%,100%,未见限制,B 一次跳转
+TRAVELKO,5,B元搜索,TRAVELKO(日本),二手索引,travelko.com,L1搜索页,100%,0%,未见限制,B 一次跳转
+BookMyBooking.com,5,C白标联盟,独立白标,白标转售,bookmybooking.com,L2详情页,100%,0%,未见限制,B 一次跳转
+Ascend Travel,5,C白标联盟,独立白标,白标转售,hotel.ascendtravel.com,L0中转页,100%,0%,未见限制,B 一次跳转
+Lion Travel 雄獅旅遊,4,D渠道商,雄狮旅游(台湾),渠道价,hotel.liontravel.com,L2详情页,100%,0%,未见限制,B 一次跳转
+Skyscanner,3,B元搜索,Skyscanner(Trip系),二手索引,skyscanner.net,L1搜索页,100%,100%,未见限制,B 一次跳转
+ZenHotels.com,3,A1一级OTA,Emerging Travel(RateHawk),真实源,zenhotels.com,L1搜索页,100%,0%,未见限制,B 一次跳转
+lastminute.com,2,D渠道商,lastminute(欧洲),渠道价,us.lastminute.com,L2详情页,100%,0%,未见限制,B 一次跳转
+Halalbooking,2,A1一级OTA,Halalbooking(清真垂直),真实源,halalbooking.com,L0中转页,100%,100%,未见限制,B 一次跳转
+SKYLARK,2,C白标联盟,独立白标,白标转售,skylark.com,L2详情页,100%,100%,未见限制,A 直拼
+Pilot,2,B元搜索,Pilot,二手索引,pilotplans.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Michelin Guide Hotels,2,B元搜索,Michelin,二手索引,guide.michelin.com,L1搜索页,100%,100%,未见限制,B 一次跳转
+Long Stay Discounts,2,C白标联盟,独立白标,白标转售,longstaydiscounts.com,L0中转页,100%,100%,未见限制,B 一次跳转
+trivago.com,2,B元搜索,trivago(Expedia系),二手索引,trivago.com,L0中转页,100%,0%,未见限制,B 一次跳转
+Best Hotel Deals,1,C白标联盟,独立白标,白标转售,besthoteldealsglobal.com,L2详情页,100%,0%,未见限制,B 一次跳转
+Prestigia.com,1,A1一级OTA,Prestigia,真实源,prestigia.com,L0中转页,100%,100%,未见限制,B 一次跳转
+Tripbtoz,1,A1一级OTA,Tripbtoz(韩国),真实源,tripbtoz.com,L2详情页,100%,100%,未见限制,A 直拼
+Bookhotel.direct,1,A1一级OTA,Bookhotel.direct,真实源,always.bookhotel.direct,L0中转页,100%,100%,未见限制,B 一次跳转
+Globehunters UK,1,D渠道商,Globehunters(英国),渠道价,hotel.globehunters.com,L0中转页,0%,0%,未见限制,B 一次跳转

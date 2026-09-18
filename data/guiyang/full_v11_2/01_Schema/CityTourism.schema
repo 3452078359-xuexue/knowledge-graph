@@ -1,0 +1,3609 @@
+namespace CityTourism
+
+City(城市): EntityType
+    desc: 图谱的根对象，一个实例只应有一个。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        adminCode(行政区划代码): Text
+            index: Text
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        bestSeason(推荐季节): Text
+            index: TextAndVector
+            chunk: whole
+        spatialCoordinateSystem(空间索引统一坐标系): Text
+            desc: 本图项目所有可进入地图、H3 候选集和精确距离计算的坐标必须统一到这一坐标系；查询坐标也必须先转换到同一坐标系。当前贵阳项目固定为 GCJ02，因为空间底图和地图运行时均来自高德。不同坐标系绝不能混入同一组 H3 索引
+            index: Text
+            constraint: NotNull,Enum="WGS84,GCJ02,BD09"
+        h3FineResolution(H3细分辨率): Integer
+            desc: h3Index 的项目级分辨率；当前为 R9，服务 1km 以内候选检索
+            constraint: NotNull
+        h3CoarseResolution(H3粗分辨率): Integer
+            desc: h3IndexCoarse 的项目级分辨率；当前为 R7，服务 1km 以上候选检索，必须小于 h3FineResolution
+            constraint: NotNull
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 本实体所存经纬度的坐标系；有坐标时必填。exact 必须等于 City.spatialCoordinateSystem；unknown 不得进入 H3 或附近检索
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+AdminArea(行政区): EntityType
+    desc: 法定行政单元，市/区县/街道。有 adminCode 是与 Zone 的判别依据。 分区计数只沿 locatedInAdminArea 单条归属，不得经景区或片区传递，否则跨区对象会重复计数。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        adminCode(行政区划代码): Text
+            index: Text
+            constraint: NotNull
+        level(层级): Text
+            index: Text
+            constraint: NotNull,Enum="市,区县,街道乡镇"
+        parentAdminArea(上级行政区): AdminArea
+            desc: 市级为空
+        boundaryH3Cells(边界网格): Text
+            desc: 本行政区范围由高德行政区域查询的 polyline 经 h3shape_to_cells(R8) 转出的格子集合。行政区是面不是点，只存中心点判定不了包含关系；转成格子后「这个坐标属于哪个区」退化为等值匹配，图库不需要支持任何多边形运算。与 GeoCell 同分辨率，两者可直接做集合运算
+            index: Text
+            constraint: MultiValue
+            optional: true
+        registryVerified(区划已官方核对): Text
+            desc: 本条区划是否经政府公开区划信息核对。区县级已用民政部数据逐条比对全部为是；街道乡镇级仅部分区完成核对，未核对的暂用地图厂商注册表并置为否 —— 未核对不等于错误，但不得当作官方口径对外
+            index: Text
+            constraint: NotNull,Enum="是,否"
+        registrySource(区划来源): Text
+            desc: 形如 mca:202301xzqh@2026-09-15 或 amap:district:520102@2026-09-14。区划会调整，来源与时点必须可追溯到具体版本
+            index: Text
+        registryLagTownships(登记但边界未切分的下级): Text
+            desc: 在本级区划注册表中已登记、但地图厂商的逆地理编码边界尚未切分出来的下级街道乡镇。实测贵阳 7 区共 8 个：南明区的花果园街道与湘雅街道已登记，但花果园地块的坐标仍被判给后巢乡/太慈桥街道/遵义路街道。 这类差异不得靠猜测改写 —— 区县级归属不受影响，乡级须标记 townshipLagRisk 交人工核定
+            index: Text
+            constraint: MultiValue
+            optional: true
+        boundarySource(边界来源): Text
+            desc: 记录边界从哪来与何时取的，形如 amap:district:520102@2026-09-14。行政区划会调整，边界必须可追溯到具体版本
+            index: Text
+            optional: true
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 本实体所存经纬度的坐标系；有坐标时必填。exact 必须等于 City.spatialCoordinateSystem；unknown 不得进入 H3 或附近检索
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+Zone(城市片区): EntityType
+    desc: 商圈、历史街区、夜游片区、美食聚集区。只表达空间范围，不表达运营主体或票务。 无 adminCode —— 挂载校验据此判断是否挂错层级。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        zoneType(片区类型): Text
+            index: Text
+            constraint: NotNull,Enum="商圈,历史街区,夜游片区,美食聚集区,交通枢纽片区,大学城,产业新区"
+        aliases(别名): Text
+            desc: 各平台对本片区的叫法及来源前缀，形如 amap:喷水池、dianping:喷水池/太平路、ctrip:喷水池商圈。实测高德 83 个、点评 132 个、携程 240 个商圈名三者共有 0 个、高德与点评仅重合 18 个 —— 名称对齐不可行，只能按格子重叠做地理对齐，对齐结果记入本字段
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        h3Cells(覆盖网格): Text
+            desc: dominantZone 指向本片区的全部 GeoCell 编码。片区不画边界，「边界」就是这组格子 —— 物化是为了让「花果园有什么吃的」一次取到候选格，而不是每次扫全部网格反查 dominantZone。与 cellCount 必须一致，由重算维护
+            index: Text
+            constraint: MultiValue
+            optional: true
+        anchorPoiIds(地标锚点): Text
+            desc: 本片区内最具辨识度的几个 POI，用于「花果园在哪」这类问题给出人能理解的定位，也用于同名消歧 —— 只给格子编码等于没回答
+            index: Text
+            constraint: MultiValue
+            optional: true
+        cellCount(覆盖格子数): Integer
+            desc: dominantZone 指向本片区的 GeoCell 数量，由重算维护。片区不存边界 —— 边界是「哪些格子指向我」的反查结果，改片区定义只需改格子的一个属性，POI 一行不用动
+            optional: true
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        locatedInAdminArea(所属行政区): AdminArea
+        nightActivity(是否夜间活跃): Text
+            constraint: Enum="是,否"
+            index: Text
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 本实体所存经纬度的坐标系；有坐标时必填。exact 必须等于 City.spatialCoordinateSystem；unknown 不得进入 H3 或附近检索
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+ScenicArea(景区): EntityType
+    desc: 有独立运营边界或票务体系的游览主体。票价与开放时间随时间变化，现值走 DynamicOverride，本实体只存基准值。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        grade(景区等级): Text
+            desc: 须来自文旅主管部门 A 级景区名录，不接受从简介推测
+            index: Text
+            constraint: Enum="5A,4A,3A,2A,A,省级,无,未评定"
+        address(地址): Text
+            index: Text
+        amapPoiId(高德POI ID): Text
+            desc: 高德主源节点直接填写；其他来源仅在共享外部ID，或已记录 identityStatus=provisional_match 的受控名称与地域规则通过时填写。普通名称相似不得写入
+            index: Text
+        amapType(高德分类路径): Text
+            index: Text
+        amapTypecode(高德分类代码): Text
+            index: Text
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        phone(电话): Text
+            index: Text
+        openingHours(开放时间): Text
+            desc: 基准值；临时调整走 DynamicOverride
+            index: Text
+        bookingRequired(是否需预约): Text
+            desc: 「免费但要预约」是行前决策最不能错的一条 —— 答成「免费」而漏掉预约，游客按这个答案出门会白跑。未确认时必须填未确认，不得默认为否
+            index: Text
+            constraint: NotNull,Enum="是,否,部分时段需要,未确认"
+        bookingChannel(预约渠道): Text
+            desc: 形如 微信公众号「XX景区」、官网、美团。只说要预约不说在哪预约，等于没答
+            index: TextAndVector
+            chunk: whole
+        advanceBookingDays(需提前天数): Integer
+            desc: 需提前几天预约。0 表示当天可约；本字段为空且 bookingRequired=是 时，回答须说明「需预约但提前期未确认」
+            optional: true
+        realNameRequired(是否需实名): Text
+            desc: 是否需要身份证实名。带老人小孩出行时决定要不要提前备好证件
+            index: Text
+            constraint: Enum="是,否,未确认"
+            optional: true
+        ticketPrice(门票价格): Text
+            desc: 基准价；实时票价与优惠走 DynamicOverride
+            index: Text
+        recommendedDuration(建议游览时长): Text
+            index: Text
+        bestSeason(最佳季节): Text
+            index: TextAndVector
+            chunk: whole
+        indoorOutdoor(室内外): Text
+            desc: 雨天推荐的唯一依据，不得用业态猜
+            index: Text
+            constraint: Enum="室内,室外,混合,有顶棚"
+        walkIntensity(步行强度): Text
+            desc: 台阶量级差异属安全信息，梵净山与甲秀楼不是一个量级
+            index: Text
+            constraint: Enum="轻松,中等,吃力"
+        accessibility(无障碍设施): Text
+            index: Text
+            constraint: MultiValue
+        areaSize(占地面积): Text
+            desc: 百科基本信息表来源，如「200 亩」；原文保留不换算
+            index: Text
+        climate(气候条件): Text
+            desc: 百科基本信息表来源，如「亚热带湿润气候」
+            index: Text
+        honor(所获荣誉): Text
+            desc: 百科「所获荣誉」章节归纳；与景区等级不同，等级须来自文旅名录
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        locatedInAdminArea(所属行政区): AdminArea
+            desc: 分区统计的唯一权威归属；缺它则「本区有哪些 4A 景区」无法查询
+        locatedInZone(所属片区): Zone
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 有经纬度时必填。exact 必须与 City.spatialCoordinateSystem 一致；approx 可保留已知来源坐标系但不进入 H3；unknown 只能配 approx，不能配 exact
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        visitorDemandScenarios(游客需求场景): Text
+            desc: 来自游客内容的需求表达，只作检索与候选路由，不覆盖开放时间、票价等官方事实
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        ugcPoiSubtype(游客内容细分类型): Text
+            index: TextAndVector
+            chunk: whole
+        ugcLocationDescription(游客内容位置描述): Text
+            index: TextAndVector
+            chunk: whole
+        externalMapName(外文或地图名): Text
+            index: Text
+        directMentionCount(名称直接命中帖子数): Integer
+            desc: 只代表本次证据集中名称直接命中的帖子数，不得解释为全网热度或排名
+        trendingScore(热度分): Float
+            desc: 【派生字段，每次热度重算刷新】游客内容里的相对热度，非绝对量，只在同批次同类型内可比。 必须与 trendingMethod、trendingWindow、trendingComputedAt 一同读取 —— 单看这个数无法判断它算的是什么、什么时候算的、还算不算数。 与 rating/reviewCount 是两件事：评分说的是去过的人满意不满意，热度说的是现在多少人在说它。老字号可以高分低热，新开的网红店常常高热中分
+            optional: true
+        trendingRank(热度榜位): Integer
+            desc: 【派生字段】本实体在同类型同窗口内的热度名次，从 1 起。存名次而不是只存分数，是因为跨批次的分数不可比而名次可比
+            optional: true
+        trendingWindow(热度窗口): Text
+            desc: 【派生字段】热度统计的时间窗。「网红」本身就是一个带时效的判断 —— 语料跨度八年，不切窗会把八年前火过的和上个月火的排在一起。近30天用于答「最近什么火」，近90天用于答「这阵子什么火」，近365天用于答「今年什么火」，全量只用于答「什么有名」，那已经不是网红而是知名度
+            index: Text
+            optional: true
+            constraint: Enum="近30天,近90天,近365天,全量"
+        trendingMethod(热度口径): Text
+            desc: 【派生字段】热度怎么算出来的。 名称命中数=数有多少篇提到它，缺陷是一句带过和整篇写它算一样重，实测这个口径排出的第一名是一家酒店； 点赞加权=把提到它的帖子点赞加总，缺陷是行程攻略类帖子会把全额点赞记给它列出的每一个地方，实测东山寺 87.8%、青岩古镇 74.1% 的赞来自这类帖子，排出来的是「攻略出现频率榜」； 独立提及加权=按帖子提到的 POI 个数分摊点赞，攻略贡献被稀释； 互动加权=点赞之外并入收藏评论。 口径不同结果完全不同，不声明口径的热度分等于没有
+            index: Text
+            optional: true
+            constraint: Enum="名称命中数,点赞加权,独立提及加权,互动加权,平台榜单,人工指定"
+        soloMentionRatio(独立提及占比): Float
+            desc: 【派生字段】提及本实体的内容中，「专门写它」的占比 —— 分母是全部提及，分子是同篇提及 POI 数不超过 2 个的那些。 这是区分「自己火」和「被行程单捎带」的关键：实测东山寺该值仅 12.2%，几乎全部曝光来自三日游攻略的顺路一站；而但家香酥鸭为 87.1%，是真有人专门发帖写它。 两者的点赞总量接近，但只有后者答「网红美食」是对的
+            optional: true
+        trendingEvidence(热度依据): Text
+            desc: 【派生字段】可复核的计算过程，形如「窗口近90天｜提及57帖｜点赞17,442｜独立提及49帖｜分摊后12,830｜口径独立提及加权」。 热度是唯一一类「数字本身没有出处」的派生量 —— 坐标能回查、评分能回查、热度分回查的是一段计算，不写下来就无法复核
+            index: Text
+            optional: true
+        trendingComputedAt(热度计算时间): Text
+            desc: 【派生字段】本热度分的计算时间。超过窗口长度未重算的热度分应视为过期，对外不再出示
+            index: Text
+            optional: true
+        identityStatus(跨源身份状态): Text
+            desc: source_only=只有一个地点来源、尚未声称与其他来源是同一对象；confirmed_match=共享稳定外部ID或人工确认；provisional_match=按受控名称与地域规则暂定同一对象，不能当作绝对去重结果；ambiguous=存在候选但证据不足，保留独立节点并禁止融合字段
+            index: Text
+            constraint: NotNull,Enum="source_only,confirmed_match,provisional_match,ambiguous"
+        identityResolutionMethod(身份解析方法): Text
+            desc: 记录本节点当前身份结论采用的最强规则；名称规则不得冒充共享外部ID
+            index: Text
+            constraint: NotNull,Enum="source_external_id,shared_external_id,unique_name_city,unique_name_admin,unique_name_parent_admin,unique_name_admin_coordinate,manual_review,not_matched"
+        possibleSameAs(可能同一景区): ScenicArea
+            desc: 仅保存待人工判断的候选，不做字段融合、不继承坐标、不参与唯一POI计数；确认后删除候选边并更新 identityStatus
+            constraint: MultiValue
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        HasFacility(拥有配套设施): Facility
+            desc: 显式归属，取代按距离猜 —— 附近的停车场可能属于隔壁小区。
+            properties:
+                facilityRole(设施角色): Text
+                    desc: 取值域待业务确认，暂按自由文本入库
+                    index: Text
+                    constraint: NotNull
+
+Area(景点): EntityType
+    desc: 可独立游览、打卡或接受讲解的对象，可在景区内或景区外。不用于表示餐饮、住宿、商店。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        tags(景点标签): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: paragraph
+        areaType(景点类型): Text
+            index: Text
+            constraint: NotNull,Enum="地标,观景台,博物馆,寺庙,公园,街区,剧场,酒吧,温泉,亲子乐园,影院,运动场馆,桥梁,牌坊,宗祠庙宇,石刻题刻,广场,瀑布,湖泊,洞穴,古建筑,故居墓园,美食街,小吃街,步行街,市集,夜市,农贸市场,未分类"
+        visitDuration(建议停留时长): Text
+            index: Text
+        indoorOutdoor(室内外): Text
+            index: Text
+            constraint: Enum="室内,室外,混合,有顶棚"
+        audience(适合人群): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        openingHours(开放时间): Text
+            index: Text
+        address(地址): Text
+            index: TextAndVector
+            chunk: whole
+        amapPoiId(高德POI ID): Text
+            desc: 高德主源节点直接填写；其他来源仅在共享外部ID，或已记录 identityStatus=provisional_match 的受控名称与地域规则通过时填写。普通名称相似不得写入
+            index: Text
+        amapType(高德分类路径): Text
+            index: Text
+        amapTypecode(高德分类代码): Text
+            index: Text
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        nightAvailable(是否夜间可玩): Text
+            constraint: Enum="是,否"
+            index: Text
+        locatedInScenicArea(所属景区): ScenicArea
+            desc: 景区外景点为空
+        locatedInAdminArea(所属行政区): AdminArea
+        locatedInZone(所属片区): Zone
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 有经纬度时必填。exact 必须与 City.spatialCoordinateSystem 一致；approx 可保留已知来源坐标系但不进入 H3；unknown 只能配 approx，不能配 exact
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        photoPicture(拍照机位图): Text
+            index: Text
+        needsGeoFill(待补坐标): Text
+            desc: 百科子景点常无坐标。为是时不参与就近检索与地图展示，只参与问答召回。 不标记会让「附近有什么」静默漏结果或报错，比没有数据更糟。
+            constraint: Enum="是,否"
+            index: Text
+        sourceEntry(来源词条): Text
+            desc: 由哪个百科词条拆出；空表示非百科来源
+            index: Text
+        sourceSection(来源章节): Text
+            desc: 该子景点来自词条的哪个子标题
+            index: Text
+        sourceParentSection(来源父章节): Text
+            desc: 通路判定依据。父章节属「主要景点/重要景点/其他景点/著名景点/景区布局」才建实体；父章节判定比标题名可靠 —— 「牌坊」与「文物遗存」光看名字分不出来
+            index: Text
+        entityConfidence(实体性强弱): Text
+            desc: strong=正文在讲这个对象本身（有形制尺寸位置）；weak=标题是专名但正文讲的是典故或别的对象（如放鸽桥正文只讲命名故事、麟山正文讲整园沿革）。weak 的不参与就近推荐，只作可列举对象
+            index: Text
+            constraint: Enum="strong,weak,unknown"
+        visitorDemandScenarios(游客需求场景): Text
+            desc: 来自游客内容的需求表达，只作检索与候选路由，不覆盖开放时间等官方事实
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        ugcPoiSubtype(游客内容细分类型): Text
+            index: TextAndVector
+            chunk: whole
+        ugcLocationDescription(游客内容位置描述): Text
+            index: TextAndVector
+            chunk: whole
+        externalMapName(外文或地图名): Text
+            index: Text
+        directMentionCount(名称直接命中帖子数): Integer
+            desc: 只代表本次证据集中名称直接命中的帖子数，不得解释为全网热度或排名
+        trendingScore(热度分): Float
+            desc: 【派生字段，每次热度重算刷新】游客内容里的相对热度，非绝对量，只在同批次同类型内可比。 必须与 trendingMethod、trendingWindow、trendingComputedAt 一同读取 —— 单看这个数无法判断它算的是什么、什么时候算的、还算不算数。 与 rating/reviewCount 是两件事：评分说的是去过的人满意不满意，热度说的是现在多少人在说它。老字号可以高分低热，新开的网红店常常高热中分
+            optional: true
+        trendingRank(热度榜位): Integer
+            desc: 【派生字段】本实体在同类型同窗口内的热度名次，从 1 起。存名次而不是只存分数，是因为跨批次的分数不可比而名次可比
+            optional: true
+        trendingWindow(热度窗口): Text
+            desc: 【派生字段】热度统计的时间窗。「网红」本身就是一个带时效的判断 —— 语料跨度八年，不切窗会把八年前火过的和上个月火的排在一起。近30天用于答「最近什么火」，近90天用于答「这阵子什么火」，近365天用于答「今年什么火」，全量只用于答「什么有名」，那已经不是网红而是知名度
+            index: Text
+            optional: true
+            constraint: Enum="近30天,近90天,近365天,全量"
+        trendingMethod(热度口径): Text
+            desc: 【派生字段】热度怎么算出来的。 名称命中数=数有多少篇提到它，缺陷是一句带过和整篇写它算一样重，实测这个口径排出的第一名是一家酒店； 点赞加权=把提到它的帖子点赞加总，缺陷是行程攻略类帖子会把全额点赞记给它列出的每一个地方，实测东山寺 87.8%、青岩古镇 74.1% 的赞来自这类帖子，排出来的是「攻略出现频率榜」； 独立提及加权=按帖子提到的 POI 个数分摊点赞，攻略贡献被稀释； 互动加权=点赞之外并入收藏评论。 口径不同结果完全不同，不声明口径的热度分等于没有
+            index: Text
+            optional: true
+            constraint: Enum="名称命中数,点赞加权,独立提及加权,互动加权,平台榜单,人工指定"
+        soloMentionRatio(独立提及占比): Float
+            desc: 【派生字段】提及本实体的内容中，「专门写它」的占比 —— 分母是全部提及，分子是同篇提及 POI 数不超过 2 个的那些。 这是区分「自己火」和「被行程单捎带」的关键：实测东山寺该值仅 12.2%，几乎全部曝光来自三日游攻略的顺路一站；而但家香酥鸭为 87.1%，是真有人专门发帖写它。 两者的点赞总量接近，但只有后者答「网红美食」是对的
+            optional: true
+        trendingEvidence(热度依据): Text
+            desc: 【派生字段】可复核的计算过程，形如「窗口近90天｜提及57帖｜点赞17,442｜独立提及49帖｜分摊后12,830｜口径独立提及加权」。 热度是唯一一类「数字本身没有出处」的派生量 —— 坐标能回查、评分能回查、热度分回查的是一段计算，不写下来就无法复核
+            index: Text
+            optional: true
+        trendingComputedAt(热度计算时间): Text
+            desc: 【派生字段】本热度分的计算时间。超过窗口长度未重算的热度分应视为过期，对外不再出示
+            index: Text
+            optional: true
+        identityStatus(跨源身份状态): Text
+            desc: source_only=只有一个地点来源、尚未声称与其他来源是同一对象；confirmed_match=共享稳定外部ID或人工确认；provisional_match=按受控名称与地域规则暂定同一对象，不能当作绝对去重结果；ambiguous=存在候选但证据不足，保留独立节点并禁止融合字段
+            index: Text
+            constraint: NotNull,Enum="source_only,confirmed_match,provisional_match,ambiguous"
+        identityResolutionMethod(身份解析方法): Text
+            desc: 记录本节点当前身份结论采用的最强规则；名称规则不得冒充共享外部ID
+            index: Text
+            constraint: NotNull,Enum="source_external_id,shared_external_id,unique_name_city,unique_name_admin,unique_name_parent_admin,unique_name_admin_coordinate,manual_review,not_matched"
+        possibleSameAs(可能同一景点): Area
+            desc: 仅保存待人工判断的候选，不做字段融合、不继承坐标、不参与唯一POI计数；确认后删除候选边并更新 identityStatus
+            constraint: MultiValue
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        ConnectsTo(景点连接关系): Area
+            desc: 同一 startNode→endNode 之间允许存在多条记录，每条对应一种交通方式。 duration 必填 —— 只给距离不给用时，不构成对「怎么去」的回答。
+            properties:
+                transportMode(建议交通方式): Text
+                    desc: 取值域待业务确认，暂按自由文本入库
+                    index: Text
+                    constraint: NotNull
+                duration(用时): Text
+                    index: Text
+                    constraint: NotNull
+                distance(距离): Float
+                fromStop(上车站点): Text
+                    index: Text
+                toStop(下车站点): Text
+                    index: Text
+        NearbyResource(邻近资源): FoodAndBeverage
+            desc: 景点周边可推荐的餐饮。walkMinutes 必填，单纯的距离不构成推荐理由。
+            properties:
+                walkMinutes(步行分钟): Integer
+                    constraint: NotNull
+                rank(推荐位次): Integer
+        SuitableFor(适合场景): Scenario
+            desc: 「下雨天去哪」「带老人去哪」靠本关系落地，禁止按业态自动推断。
+            properties:
+                fitness(适配度): Text
+                    desc: 本景点对该场景的适配程度。原先声明为 Float，但字段名与语义都指向等级 —— 实测填「低」被校验器拦下，说明类型与语义不匹配。改为分级枚举：不适合=明确不推荐（如雨天的露天景点），勉强可去=有替代方案时不选
+                    index: Text
+                    constraint: NotNull,Enum="很适合,适合,勉强可去,不适合"
+                reviewStatus(审核状态): Text
+                    desc: 取值域待业务确认，暂按自由文本入库
+                    index: Text
+                    constraint: NotNull
+        AccessibleVia(可经由到达): TransitHub
+            desc: 该景点可由哪个枢纽到达。真实游客问题里「从荔波高铁站去小七孔怎么坐车」是最高频的一类，缺这条边只能靠坐标猜
+            properties:
+                transportMode(交通方式): Text
+                    index: Text
+                    constraint: NotNull
+                duration(用时): Text
+                    index: Text
+                    constraint: NotNull
+                boardingPoint(上车点): Text
+                    index: Text
+        DerivedFromEntry(拆自百科词条): ScenicArea
+            desc: 子景点由哪个百科词条拆出。百科的「主要景点/重要景点/其他景点」章节与 二级标题（如太阳广场、卧龙飞瀑）是子景点实体，不是知识主题。
+            properties:
+                sectionName(来源章节): Text
+                    index: Text
+                    constraint: NotNull
+                extractMethod(抽取方式): Text
+                    index: Text
+                    constraint: NotNull,Enum="章节标题,基本信息表,正文列举"
+                reviewStatus(审核状态): Text
+                    desc: 取值域待业务确认，暂按自由文本入库
+                    index: Text
+                    constraint: NotNull
+
+Facility(设施): EntityType
+    desc: 卫生间、停车场、游客中心、母婴室、寄存点、充电桩。餐馆、酒店、商店不属于本类。 与被服务对象的归属必须显式填写，靠距离猜会把隔壁小区的停车场算成景区的。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(设施类型): Text
+            index: Text
+            constraint: NotNull,Enum="卫生间,停车场,游客中心,母婴室,寄存,充电桩,取款"
+        locationDesc(相对位置描述): Text
+            index: Text
+        isFree(是否免费): Text
+            constraint: Enum="是,否"
+            index: Text
+        capacity(容量): Integer
+            desc: 车位数或可容纳人数
+        openingHours(开放时间): Text
+            index: Text
+        locatedInArea(所在景点): Area
+        locatedInScenicArea(所属景区): ScenicArea
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 本实体所存经纬度的坐标系；有坐标时必填。exact 必须等于 City.spatialCoordinateSystem；unknown 不得进入 H3 或附近检索
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+FoodAndBeverage(餐饮小吃): EntityType
+    desc: 提供餐食或饮品的经营场所。菜品概念用 Dish，实时排队与当日菜价走 DynamicOverride。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(餐饮类型): Text
+            index: Text
+            constraint: NotNull,Enum="正餐,小吃,咖啡,茶馆,酒吧,火锅"
+        cuisine(风味): Text
+            desc: 餐饮风味与菜系标签。高德来源优先合并 business.tag / keytag / rectag 并去重；这些是平台标签，不等同于人工审核后的标准菜系，必须结合 fieldSources 使用
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        mealTime(适用餐段): Text
+            index: Text
+        priceLevel(人均消费): Text
+            desc: 基准值；实时价格走 DynamicOverride
+            index: Text
+        telephone(联系电话): Text
+            desc: 来源平台公开返回的商家联系电话，可多值；只保存来源原文拆分结果，不推断、不补写私人号码。号码缺失表示平台未返回，不表示商家没有电话
+            index: Text
+            constraint: MultiValue
+        dianpingShopId(大众点评店铺ID): Text
+            desc: 大众点评稳定店铺标识，用于批次去重与回链
+            index: Text
+        dianpingUrl(大众点评地址): Text
+            index: Text
+        amapPoiId(高德POI ID): Text
+            desc: 仅在高德外部ID命中或同区同名唯一匹配时填写；弱模糊匹配不得写入
+            index: Text
+        amapType(高德分类路径): Text
+            index: Text
+        amapTypecode(高德分类代码): Text
+            index: Text
+        parentPoiId(父POI ID): Text
+            desc: 高德基础字段 parent 返回的稳定父 POI ID。餐饮位于商场、综合体或其他父设施内时填写；不得从地址文本猜测，也不得与 indoor.cpid 混写 —— 实测两者同时存在的 169 家全部取值不同，语义层级并不相同
+            index: Text
+        parentPoiName(所在商场或父POI名称): Text
+            desc: 必须通过 parentPoiId 调用高德 POI ID 查询取得，或来自同批高德原始快照中该 ID 的名称；不得只凭地址中的括号、楼层或商场词样推断。用于回答「这家店在哪个商场」
+            index: TextAndVector
+            chunk: whole
+        parentPoiType(父POI分类): Text
+            desc: parentPoiId 对应父 POI 的高德分类路径，辅助区分购物中心、商务楼宇、交通枢纽等父设施
+            index: Text
+        parentPoiTypecode(父POI分类代码): Text
+            desc: parentPoiId 对应父 POI 的高德分类代码
+            index: Text
+        indoorBuildingPoiId(室内建筑POI ID): Text
+            desc: 高德 indoor.cpid。按官方定义，商铺类 POI 的 cpid 是其所在建筑物 POI ID；它与 parentPoiId 是两个独立层级，必须分别保存
+            index: Text
+        indoorBuildingPoiName(室内建筑名称): Text
+            desc: 通过 indoorBuildingPoiId 调用高德 POI ID 查询取得的建筑物名称；不得用 parentPoiName 代填
+            index: TextAndVector
+            chunk: whole
+        indoorFloor(室内楼层索引): Text
+            desc: 高德 indoor.floor，通常是数字楼层索引；仅在接口明确返回时填写
+            index: Text
+        indoorTrueFloor(室内楼层名称): Text
+            desc: 高德 indoor.truefloor，通常为 F8、B1 等可展示楼层名称；仅在接口明确返回时填写
+            index: Text
+        address(地址): Text
+            index: TextAndVector
+            chunk: whole
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        township(所属街道乡镇): Text
+            desc: 由本 POI 的精确 GCJ02 坐标调用高德逆地理编码返回的 township；与区县 adcode 不同，街镇级代码见 townshipAdcode。来源名称原样保留，不把地图厂商旧称静默改写成官方名称
+            index: Text
+        townshipAdcode(街道乡镇代码): Text
+            desc: 高德逆地理编码 addressComponent.towncode，通常为 12 位街道乡镇代码；不得用区县 adcode 或文本商圈代填
+            index: Text
+        townshipAssignMethod(街道乡镇赋值方法): Text
+            desc: POI坐标逆地理编码=对本实体精确坐标直接调用；网格中心继承=只继承所在 GeoCell 格中心结果，边界附近可能偏差，不能冒充点位级核验；人工确认=有独立证据复核
+            index: Text
+            constraint: Enum="POI坐标逆地理编码,网格中心继承,人工确认"
+        businessArea(商圈): Text
+            desc: 地图平台的商圈标签，用于检索与展示，不是行政区边界，也不与大众点评商圈自动等价；缺失时不得从地址或附近商场名硬推
+            index: TextAndVector
+            chunk: whole
+        platformCategory(平台分类): Text
+            index: Text
+        rating(平台评分): Float
+        reviewCount(点评数): Integer
+        averageSpend(人均消费数值): Float
+            desc: 平台采集时点的人均数值；动态变化，回答时必须结合 fieldUpdatedAt
+        recommendedDishes(平台推荐菜): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        detailedRatings(细项评分): Text
+            index: Text
+            constraint: MultiValue
+        rankings(平台榜单): Text
+            index: Text
+            constraint: MultiValue
+        platformTags(平台标签): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        trafficSummary(交通摘要): Text
+            index: TextAndVector
+            chunk: whole
+        sourceCoordinateText(来源坐标原文): Text
+            desc: 保存来源给出的经纬度原文及坐标系核验结论。来源未声明坐标系时默认不得写入 canonical latitude/longitude；仅当官方平台口径与同一采集字段的跨源同店三假设距离检验共同确认坐标系，且保留核验报告时，才可按项目统一坐标系写入 exact 坐标并派生 H3、参与附近排序
+            index: Text
+        openingHours(营业时间): Text
+            index: Text
+        dietarySupport(忌口适配): Text
+            index: Text
+            constraint: MultiValue,Enum="清真,素食"
+        locatedInArea(所在景点): Area
+        locatedInZone(所属片区): Zone
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 有经纬度时必填。exact 必须与 City.spatialCoordinateSystem 一致；approx 可保留已知来源坐标系但不进入 H3；unknown 只能配 approx，不能配 exact
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            desc: 来源平台公开返回的 POI 图片 URL，可多值；为空表示本次接口未返回图片，不得用搜索引擎图片自动替代
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        visitorDemandScenarios(游客需求场景): Text
+            desc: 来自游客内容的需求表达，只作检索与候选路由，不覆盖菜价、营业时间等事实
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        ugcPoiSubtype(游客内容细分类型): Text
+            index: TextAndVector
+            chunk: whole
+        ugcLocationDescription(游客内容位置描述): Text
+            index: TextAndVector
+            chunk: whole
+        externalMapName(外文或地图名): Text
+            index: Text
+        directMentionCount(名称直接命中帖子数): Integer
+            desc: 只代表本次证据集中名称直接命中的帖子数，不得解释为全网热度或排名
+        trendingScore(热度分): Float
+            desc: 【派生字段，每次热度重算刷新】游客内容里的相对热度，非绝对量，只在同批次同类型内可比。 必须与 trendingMethod、trendingWindow、trendingComputedAt 一同读取 —— 单看这个数无法判断它算的是什么、什么时候算的、还算不算数。 与 rating/reviewCount 是两件事：评分说的是去过的人满意不满意，热度说的是现在多少人在说它。老字号可以高分低热，新开的网红店常常高热中分
+            optional: true
+        trendingRank(热度榜位): Integer
+            desc: 【派生字段】本实体在同类型同窗口内的热度名次，从 1 起。存名次而不是只存分数，是因为跨批次的分数不可比而名次可比
+            optional: true
+        trendingWindow(热度窗口): Text
+            desc: 【派生字段】热度统计的时间窗。「网红」本身就是一个带时效的判断 —— 语料跨度八年，不切窗会把八年前火过的和上个月火的排在一起。近30天用于答「最近什么火」，近90天用于答「这阵子什么火」，近365天用于答「今年什么火」，全量只用于答「什么有名」，那已经不是网红而是知名度
+            index: Text
+            optional: true
+            constraint: Enum="近30天,近90天,近365天,全量"
+        trendingMethod(热度口径): Text
+            desc: 【派生字段】热度怎么算出来的。 名称命中数=数有多少篇提到它，缺陷是一句带过和整篇写它算一样重，实测这个口径排出的第一名是一家酒店； 点赞加权=把提到它的帖子点赞加总，缺陷是行程攻略类帖子会把全额点赞记给它列出的每一个地方，实测东山寺 87.8%、青岩古镇 74.1% 的赞来自这类帖子，排出来的是「攻略出现频率榜」； 独立提及加权=按帖子提到的 POI 个数分摊点赞，攻略贡献被稀释； 互动加权=点赞之外并入收藏评论。 口径不同结果完全不同，不声明口径的热度分等于没有
+            index: Text
+            optional: true
+            constraint: Enum="名称命中数,点赞加权,独立提及加权,互动加权,平台榜单,人工指定"
+        soloMentionRatio(独立提及占比): Float
+            desc: 【派生字段】提及本实体的内容中，「专门写它」的占比 —— 分母是全部提及，分子是同篇提及 POI 数不超过 2 个的那些。 这是区分「自己火」和「被行程单捎带」的关键：实测东山寺该值仅 12.2%，几乎全部曝光来自三日游攻略的顺路一站；而但家香酥鸭为 87.1%，是真有人专门发帖写它。 两者的点赞总量接近，但只有后者答「网红美食」是对的
+            optional: true
+        trendingEvidence(热度依据): Text
+            desc: 【派生字段】可复核的计算过程，形如「窗口近90天｜提及57帖｜点赞17,442｜独立提及49帖｜分摊后12,830｜口径独立提及加权」。 热度是唯一一类「数字本身没有出处」的派生量 —— 坐标能回查、评分能回查、热度分回查的是一段计算，不写下来就无法复核
+            index: Text
+            optional: true
+        trendingComputedAt(热度计算时间): Text
+            desc: 【派生字段】本热度分的计算时间。超过窗口长度未重算的热度分应视为过期，对外不再出示
+            index: Text
+            optional: true
+        identityStatus(跨源身份状态): Text
+            desc: source_only=只有一个地点来源、尚未声称与其他来源是同一对象；confirmed_match=共享稳定外部ID或人工确认；provisional_match=按受控名称与地域规则暂定同一对象，不能当作绝对去重结果；ambiguous=存在候选但证据不足，保留独立节点并禁止融合字段
+            index: Text
+            constraint: NotNull,Enum="source_only,confirmed_match,provisional_match,ambiguous"
+        identityResolutionMethod(身份解析方法): Text
+            desc: 记录本节点当前身份结论采用的最强规则；名称规则不得冒充共享外部ID
+            index: Text
+            constraint: NotNull,Enum="source_external_id,shared_external_id,unique_name_city,unique_name_admin,unique_name_parent_admin,unique_name_admin_coordinate,manual_review,not_matched"
+        possibleSameAs(可能同一餐饮POI): FoodAndBeverage
+            desc: 名称与行政区相同只能形成候选，不能直接融合点评与高德字段；确认后删除候选边并更新 identityStatus
+            constraint: MultiValue
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        ServesDish(提供菜品): Dish
+            desc: 店名匹配只产候选，必须经人工复核才可对外。
+            properties:
+                isSignature(是否招牌): Text
+                    constraint: NotNull,Enum="是,否"
+                matchMethod(判定方式): Text
+                    desc: 取值域待业务确认，暂按自由文本入库
+                    index: Text
+                reviewStatus(审核状态): Text
+                    desc: 取值域待业务确认，暂按自由文本入库
+                    index: Text
+                    constraint: NotNull
+
+Accommodation(住宿): EntityType
+    desc: 提供过夜服务的经营场所。房型与房价属实时数据，一律走 DynamicOverride，不写死在本实体。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(住宿类型): Text
+            index: Text
+            constraint: NotNull,Enum="酒店,客栈,青旅,民宿,度假村,营地"
+        ctripHotelId(携程酒店ID): Text
+            desc: 携程一级列表稳定标识，仅用于跨批次去重与回链，不由名称拼接
+            index: Text
+        amapPoiId(高德POI ID): Text
+            desc: 仅在酒店ID精确匹配到高德/历史高德事实时填写；未匹配不得用名称猜测
+            index: Text
+        amapType(高德分类路径): Text
+            index: Text
+        amapTypecode(高德分类代码): Text
+            index: Text
+        telephone(联系电话): Text
+            index: Text
+        address(地址): Text
+            index: TextAndVector
+            chunk: whole
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        rating(平台评分): Float
+            desc: 当前携程一级列表展示评分；属于平台时点事实，须结合 fieldUpdatedAt 使用
+        reviewCount(点评数): Integer
+            desc: 当前携程一级列表展示的点评数量
+        ratingDescription(评分描述): Text
+            index: TextAndVector
+            chunk: whole
+        nearbyLandmark(附近地标): Text
+            index: TextAndVector
+            chunk: whole
+        ctripUrl(携程详情地址): Text
+            index: Text
+        platformReviewSnippet(平台展示短评): Text
+            desc: 携程一级列表卡片展示的用户短评，属于 UGC 片段，只作检索线索，不得覆盖官方事实
+            index: TextAndVector
+            chunk: whole
+        platformTags(平台榜单与热卖标签): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        ctripLevel(携程等级数): Integer
+            desc: 携程平台等级，不等同于国家旅游饭店星级，因此不能写入 starLevel
+        ctripLevelIconType(携程等级图标类型): Text
+            index: Text
+        businessArea(商圈): Text
+            index: TextAndVector
+            chunk: whole
+        transportSummary(交通摘要): Text
+            index: TextAndVector
+            chunk: whole
+        openingRenovationInfo(开业装修信息): Text
+            index: Text
+        historicalFactStatus(历史事实层状态): Text
+            desc: 本地历史 OTA 事实层的地域、名称与可用性结论；原始详情文件缺失时仍须保持 needs_review
+            index: Text
+        starLevel(星级): Integer
+        priceLevel(价格区间): Text
+            desc: 基准区间；实时房价走 DynamicOverride
+            index: Text
+        amenities(设施服务): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        checkinPolicy(入住政策): Text
+            index: TextAndVector
+            chunk: topic
+        targetAudience(适宜客群): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        locatedInZone(所属片区): Zone
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 有经纬度时必填。exact 必须与 City.spatialCoordinateSystem 一致；approx 可保留已知来源坐标系但不进入 H3；unknown 只能配 approx，不能配 exact
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        locationMatchStatus(位置匹配状态): Text
+            desc: 记录坐标/地址的匹配结论；只有已匹配状态才允许写入地址、经纬度和 H3
+            index: Text
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        visitorDemandScenarios(游客需求场景): Text
+            desc: 来自游客内容的需求表达，只作检索与候选路由，不覆盖房价、库存等动态事实
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        ugcPoiSubtype(游客内容细分类型): Text
+            index: TextAndVector
+            chunk: whole
+        ugcLocationDescription(游客内容位置描述): Text
+            index: TextAndVector
+            chunk: whole
+        externalMapName(外文或地图名): Text
+            index: Text
+        directMentionCount(名称直接命中帖子数): Integer
+            desc: 只代表本次证据集中名称直接命中的帖子数，不得解释为全网热度或排名
+        trendingScore(热度分): Float
+            desc: 【派生字段，每次热度重算刷新】游客内容里的相对热度，非绝对量，只在同批次同类型内可比。 必须与 trendingMethod、trendingWindow、trendingComputedAt 一同读取 —— 单看这个数无法判断它算的是什么、什么时候算的、还算不算数。 与 rating/reviewCount 是两件事：评分说的是去过的人满意不满意，热度说的是现在多少人在说它。老字号可以高分低热，新开的网红店常常高热中分
+            optional: true
+        trendingRank(热度榜位): Integer
+            desc: 【派生字段】本实体在同类型同窗口内的热度名次，从 1 起。存名次而不是只存分数，是因为跨批次的分数不可比而名次可比
+            optional: true
+        trendingWindow(热度窗口): Text
+            desc: 【派生字段】热度统计的时间窗。「网红」本身就是一个带时效的判断 —— 语料跨度八年，不切窗会把八年前火过的和上个月火的排在一起。近30天用于答「最近什么火」，近90天用于答「这阵子什么火」，近365天用于答「今年什么火」，全量只用于答「什么有名」，那已经不是网红而是知名度
+            index: Text
+            optional: true
+            constraint: Enum="近30天,近90天,近365天,全量"
+        trendingMethod(热度口径): Text
+            desc: 【派生字段】热度怎么算出来的。 名称命中数=数有多少篇提到它，缺陷是一句带过和整篇写它算一样重，实测这个口径排出的第一名是一家酒店； 点赞加权=把提到它的帖子点赞加总，缺陷是行程攻略类帖子会把全额点赞记给它列出的每一个地方，实测东山寺 87.8%、青岩古镇 74.1% 的赞来自这类帖子，排出来的是「攻略出现频率榜」； 独立提及加权=按帖子提到的 POI 个数分摊点赞，攻略贡献被稀释； 互动加权=点赞之外并入收藏评论。 口径不同结果完全不同，不声明口径的热度分等于没有
+            index: Text
+            optional: true
+            constraint: Enum="名称命中数,点赞加权,独立提及加权,互动加权,平台榜单,人工指定"
+        soloMentionRatio(独立提及占比): Float
+            desc: 【派生字段】提及本实体的内容中，「专门写它」的占比 —— 分母是全部提及，分子是同篇提及 POI 数不超过 2 个的那些。 这是区分「自己火」和「被行程单捎带」的关键：实测东山寺该值仅 12.2%，几乎全部曝光来自三日游攻略的顺路一站；而但家香酥鸭为 87.1%，是真有人专门发帖写它。 两者的点赞总量接近，但只有后者答「网红美食」是对的
+            optional: true
+        trendingEvidence(热度依据): Text
+            desc: 【派生字段】可复核的计算过程，形如「窗口近90天｜提及57帖｜点赞17,442｜独立提及49帖｜分摊后12,830｜口径独立提及加权」。 热度是唯一一类「数字本身没有出处」的派生量 —— 坐标能回查、评分能回查、热度分回查的是一段计算，不写下来就无法复核
+            index: Text
+            optional: true
+        trendingComputedAt(热度计算时间): Text
+            desc: 【派生字段】本热度分的计算时间。超过窗口长度未重算的热度分应视为过期，对外不再出示
+            index: Text
+            optional: true
+        identityStatus(跨源身份状态): Text
+            desc: source_only=只有一个地点来源、尚未声称与其他来源是同一对象；confirmed_match=共享稳定外部ID或人工确认；provisional_match=按受控名称与地域规则暂定同一对象，不能当作绝对去重结果；ambiguous=存在候选但证据不足，保留独立节点并禁止融合字段
+            index: Text
+            constraint: NotNull,Enum="source_only,confirmed_match,provisional_match,ambiguous"
+        identityResolutionMethod(身份解析方法): Text
+            desc: 记录本节点当前身份结论采用的最强规则；名称规则不得冒充共享外部ID
+            index: Text
+            constraint: NotNull,Enum="source_external_id,shared_external_id,unique_name_city,unique_name_admin,unique_name_parent_admin,unique_name_admin_coordinate,manual_review,not_matched"
+        possibleSameAs(可能同一住宿POI): Accommodation
+            desc: 仅保存待人工判断的候选，不做字段融合、不继承坐标、不参与唯一POI计数；确认后删除候选边并更新 identityStatus
+            constraint: MultiValue
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+Shopping(购物场所): EntityType
+    desc: 销售商品的经营场所：特产店、文创店、集市、商场。具体商品用 Product。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(场所类型): Text
+            index: Text
+            constraint: NotNull,Enum="特产店,文创,集市,商场,免税"
+        productCategories(商品类目): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        openingHours(营业时间): Text
+            index: Text
+        locatedInZone(所属片区): Zone
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 本实体所存经纬度的坐标系；有坐标时必填。exact 必须等于 City.spatialCoordinateSystem；unknown 不得进入 H3 或附近检索
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点、继承点或估算点，只用于范围展示或归属说明，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+Dish(菜品): EntityType
+    desc: 可由多个餐饮场所提供的食物或饮品概念，如酸汤鱼。不保存某家店当日的菜单价格。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(菜品类型): Text
+            index: Text
+            constraint: NotNull,Enum="地方小吃,地方菜,民族菜,火锅,饮品"
+        flavor(口味): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        origin(发源地): Text
+            index: Text
+        originScenicArea(发源景区): ScenicArea
+            desc: 地方小吃常与某古镇景区绑定，如青岩卤猪脚。用于「青岩有什么好吃的」这类问句
+        sourceEntry(来源词条): Text
+            desc: 由哪个百科词条的美食特产章节拆出
+            index: Text
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+Product(商品): EntityType
+    desc: 可购买的门票、套票、特产、体验票。现价与库存属实时数据，走 DynamicOverride。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(商品名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        description(商品描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(商品类型): Text
+            index: Text
+            constraint: NotNull,Enum="门票,套票,特产,体验票,接驳票"
+        eligibility(适用人群): Text
+            desc: 本票型适用于谁，如 儿童1.2米以下免票、60岁以上半价、学生凭证半价。「带孩子/老人有没有优惠票」此前全 schema 零字段可答
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        bookingRequired(是否需预约): Text
+            desc: 【共享词表 BookingRequired】未确认时必须填未确认，不得默认为否
+            index: Text
+            constraint: Enum="是,否,部分时段需要,未确认"
+        bookingChannel(预约渠道): Text
+            desc: 形如 微信公众号「XX景区」、官网、美团。只说要预约不说在哪预约，等于没答
+            index: TextAndVector
+            chunk: whole
+        advanceBookingDays(需提前天数): Integer
+            desc: 需提前几天预约。0 表示当天可约
+            optional: true
+        refundPolicy(退改规则): Text
+            desc: 能否退改、几天前可退。行前决策要权衡「先买会不会亏」
+            index: TextAndVector
+            chunk: whole
+        validPeriod(有效期): Text
+            desc: 形如 当日有效、3日内有效。套票与联票尤其需要
+            index: Text
+        price(基准价): Float
+            desc: 参考量级；现价走 DynamicOverride
+        unit(计价单位): Text
+            index: Text
+        isOnSale(是否有活动): Text
+            constraint: Enum="是,否"
+            index: Text
+        saleDesc(活动描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        tips(购买须知): Text
+            index: Text
+        soldAt(售卖地点): Shopping
+        ticketFor(对应景区): ScenicArea
+        locatedInAdminArea(所属行政区): AdminArea
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+Route(路线): EntityType
+    desc: 推荐游览路线。固定顺序，入口与出口明确。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(路线名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        description(路线描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        entryPoint(入口景点): Area
+        exitPoint(出口景点): Area
+        includes(包含景点): Area
+            desc: 【已弃用，仅为兼容旧数据保留】单值且类型限死 Area，既排不了顺序也装不下 ScenicArea —— 青岩古镇、黔灵山公园都是 ScenicArea，按本字段根本进不了行程。新数据一律走 RouteVisits 关系
+            optional: true
+        duration(游览时长): Text
+            index: Text
+        suitableFor(适合人群): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        rainCompatible(是否雨天可行): Text
+            constraint: Enum="是,否"
+            index: Text
+        tips(路线贴士): Text
+            index: Text
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        RouteVisits(路线游览): Area
+            desc: 一条路线按顺序游览哪些景点。dayIndex 与 sequence 共同定序 —— 原 includes 字段单值且无序，表达不了「第二天上午先去A再去B」。与 RouteStaysAt 的 dayIndex 口径一致，两者合起来才拼得出完整日程
+            properties:
+                dayIndex(第几天): Integer
+                    desc: 从 1 开始。一日游全部为 1
+                    constraint: NotNull
+                sequence(当日顺序): Integer
+                    desc: 当天内的先后，从 1 开始。同日同序号视为可任选其一
+                    constraint: NotNull
+                suggestedDuration(建议停留): Text
+                    desc: 形如 2小时。与景点自身的 visitDuration 可能不同 —— 行程里的停留是取舍后的安排
+                    index: Text
+                isOptional(可选项): Text
+                    desc: 为是时表示时间紧可跳过。行程必须能表达「这站可选」，否则只能给一条僵硬的死路线
+                    index: Text
+                    constraint: Enum="是,否"
+        RouteVisitsScenicArea(路线游览景区): ScenicArea
+            desc: 同 RouteVisits，但目标是景区而非景区内的景点。分成两个关系而非放宽单个关系的目标类型，是因为本 DSL 的 relations 只能声明单一 endNode；查询层需合并两者按 dayIndex+sequence 排序
+            properties:
+                dayIndex(第几天): Integer
+                    constraint: NotNull
+                sequence(当日顺序): Integer
+                    constraint: NotNull
+                suggestedDuration(建议停留): Text
+                    index: Text
+                isOptional(可选项): Text
+                    index: Text
+                    constraint: Enum="是,否"
+        RouteEatsAt(路线用餐): FoodAndBeverage
+            desc: 行程中的用餐安排。住宿有 dayIndex、景点有了 RouteVisits，唯独吃饭没有 —— 而「中午在哪吃」是行程里最常被问的一环
+            properties:
+                dayIndex(第几天): Integer
+                    constraint: NotNull
+                mealTime(餐次): Text
+                    index: Text
+                    constraint: NotNull,Enum="早餐,午餐,晚餐,夜宵"
+                isOptional(可选项): Text
+                    index: Text
+                    constraint: Enum="是,否"
+        RouteStaysAt(路线住宿): Accommodation
+            desc: 多日路线的住宿安排。缺它则「三天两晚怎么安排」只能给景点、串不了住宿
+            properties:
+                dayIndex(第几天): Integer
+                    constraint: NotNull
+                isRecommended(是否推荐): Text
+                    constraint: Enum="是,否"
+        RouteUsesProduct(路线用到商品): Product
+            desc: 路线包含的门票、套票或接驳票，用于回答「这条线大概要花多少钱」
+            properties:
+                isIncluded(是否含在价内): Text
+                    constraint: NotNull,Enum="是,否"
+        RouteStartsFrom(路线出发枢纽): TransitHub
+            desc: 外地游客从哪个枢纽接入本路线
+
+TransitHub(交通枢纽): EntityType
+    desc: 机场、火车站、客运站、地铁站、旅游集散中心。承载跨城到达，与只承载市内停靠的 TransitStop 分开。若已通过 spatialFacility 连接地图 POI，本实体只保留交通语义，不再复制坐标与 H3。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        type(枢纽类型): Text
+            index: Text
+            constraint: NotNull,Enum="机场,火车站,高铁站,客运站,地铁站,集散中心"
+        level(枢纽级别): Text
+            index: Text
+            constraint: Enum="国际,国家,区域,本地"
+        accessGuide(到离指引): Text
+            index: TextAndVector
+            chunk: topic
+        serviceItems(服务项目): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourcePlaceId(来源地点ID): Text
+            index: Text
+        amapPoiId(高德POI ID): Text
+            index: Text
+        facilityClassCode(设施分类代码): Text
+            index: Text
+        facilityClassName(设施分类名称): Text
+            index: Text
+        detailType(设施细分类型): Text
+            index: Text
+        address(地址): Text
+            index: TextAndVector
+            chunk: whole
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        telephone(联系电话): Text
+            index: Text
+        website(网站): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+        verificationStatus(核验状态): Text
+            index: Text
+        qualityStatus(质量状态): Text
+            index: Text
+        qualityNotes(质量说明): Text
+            index: TextAndVector
+            chunk: paragraph
+        scheduleNote(时刻动态说明): Text
+            index: TextAndVector
+            chunk: whole
+        sourceCoordinateText(来源坐标原文): Text
+            desc: 交通专题表里的原始坐标审计文本；当 spatialFacility 已承载标准坐标时，仅保留原文，不再复制成第二套地图点位
+            index: Text
+        spatialFacility(对应地图交通POI): TransitFacility
+            desc: 只有来源地点ID精确命中高德空间底图时才建立；名称相似不建边。存在本引用时，地图展示与附近检索只使用目标 TransitFacility，本语义节点必须 geoPrecision=none 且不得再存 latitude/longitude/H3
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 本实体自带坐标时才填写；有 spatialFacility 时坐标系随目标设施读取，本字段必须留空
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=本语义节点拥有独立核验坐标；none=本节点无直接坐标或空间位置由 spatialFacility 承担。只有 exact 直接参与 H3；存在 spatialFacility 时必须为 none
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        picture(图片): Text
+            index: Text
+            constraint: MultiValue
+        pictureDesc(图片说明): Text
+            desc: 与 picture 顺序一一对应，供展示与图片检索
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+TransitLine(公交线路): EntityType
+    desc: 用户口中的一条线，如 203 路。上下行是它的两个 TransitRoute。 把方向直接建在线路上，「203 路经过哪些站」就无法回答 —— 两个方向的站序不同。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(线路名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortName(线路简称): Text
+            index: Text
+        type(线路类型): Text
+            index: Text
+            constraint: NotNull,Enum="公交,快速公交,地铁,有轨电车,旅游专线,接驳"
+        sourceMode(来源交通方式原文): Text
+            index: Text
+        basicFare(基础票价): Float
+            desc: 基准值；调价走 DynamicOverride
+        isTouristLine(是否旅游专线): Text
+            constraint: Enum="是,否"
+            index: Text
+        operator(运营单位): Text
+            index: Text
+        lineCode(来源线路代码): Text
+            index: Text
+        evidenceStatus(证据状态): Text
+            index: Text
+        directionCount(方向数): Integer
+        servedStopCount(覆盖站点数): Integer
+        operators(运营单位集合): Text
+            index: Text
+            constraint: MultiValue
+        coverageStatus(覆盖状态): Text
+            index: Text
+        qualityStatus(质量状态): Text
+            index: Text
+        qualityNotes(质量说明): Text
+            index: TextAndVector
+            chunk: paragraph
+        completenessStatus(完整性状态): Text
+            index: Text
+        dataStatus(源数据状态): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        LineHasRoute(线路含方向): TransitRoute
+            desc: 一条线路的上下行或环线。用户问「203 路」时先落到线路，再按方向取站序
+            properties:
+                direction(方向): Text
+                    index: Text
+                    constraint: NotNull,Enum="上行,下行,环线,单向序列"
+
+TransitRoute(线路方向): EntityType
+    desc: 一条线路的一个方向。首末班时间随季节调整，现值走 DynamicOverride。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(方向名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        direction(方向): Text
+            index: Text
+            constraint: NotNull,Enum="上行,下行,环线,单向序列"
+        sourceMode(来源交通方式原文): Text
+            index: Text
+        belongsToLine(所属线路): TransitLine
+        startStop(首站): Text
+            index: Text
+            constraint: NotNull
+        endStop(末站): Text
+            index: Text
+            constraint: NotNull
+        firstDeparture(首班时间): Text
+            index: Text
+        lastDeparture(末班时间): Text
+            desc: 给错会把游客留在景区，属高危字段
+            index: Text
+        stopCount(站点数): Integer
+        sourceDirection(来源方向原文): Text
+            index: Text
+        serviceDay(运营日期说明): Text
+            index: Text
+        fareDescription(票价说明): Text
+            index: TextAndVector
+            chunk: whole
+        distanceKm(线路长度千米): Float
+        operator(运营单位): Text
+            index: Text
+        busType(车辆或线路类型): Text
+            index: Text
+        polylineGcj02(GCJ02线路折线): Text
+            desc: 来源折线原文，仅用于线路展示；不得当作站点坐标
+            index: Text
+        coordinateSystem(坐标系): Text
+            desc: 声明 polylineGcj02 的坐标系；当前结构化交通折线固定为 GCJ02
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        coverageStatus(覆盖状态): Text
+            index: Text
+        qualityStatus(质量状态): Text
+            index: Text
+        qualityNotes(质量说明): Text
+            index: TextAndVector
+            chunk: paragraph
+        dataStatus(源数据状态): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        RouteStopsAt(线路途经站点): TransitStop
+            desc: 同一方向内 seq 从 1 开始且连续；环线同一站点出现两次是合法的两条记录。
+            properties:
+                seq(站序): Integer
+                    constraint: NotNull
+                isTerminal(是否首末站): Text
+                    constraint: Enum="是,否"
+
+TransitStop(公交站点): EntityType
+    desc: 线路停靠的语义站点。道路两侧同名站是两个实体，不合并 —— 合并会让上下行站序错乱。若已通过 spatialFacility 连接地图 POI，本实体不复制坐标与 H3，避免地图重复出点。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(站点名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        type(站点类型): Text
+            index: Text
+            constraint: NotNull,Enum="公交,地铁,快速公交"
+        sourceMode(来源交通方式原文): Text
+            index: Text
+        hasShelter(有无候车亭): Text
+            constraint: Enum="是,否"
+            index: Text
+        sourcePlaceId(来源地点ID): Text
+            index: Text
+        amapPoiId(高德POI ID): Text
+            index: Text
+        address(地址): Text
+            index: TextAndVector
+            chunk: whole
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        coordinateSystem(坐标系): Text
+            desc: 本实体自带坐标时才填写；有 spatialFacility 时坐标系随目标设施读取，本字段必须留空
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        servedLineCount(服务线路数): Integer
+        servedDirectionCount(服务方向数): Integer
+        routeShortNames(线路简称集合): Text
+            index: Text
+            constraint: MultiValue
+        coordinateSource(坐标来源): Text
+            index: Text
+        coordinateMethod(坐标获得方式): Text
+            index: Text
+        qualityStatus(质量状态): Text
+            index: Text
+        qualityNotes(质量说明): Text
+            index: TextAndVector
+            chunk: paragraph
+        dataStatus(源数据状态): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+        sourceCoordinateText(来源坐标原文): Text
+            desc: 交通专题表里的原始坐标审计文本；当 spatialFacility 已承载标准坐标时，仅保留原文，不再复制成第二套地图点位
+            index: Text
+        spatialFacility(对应地图交通POI): TransitFacility
+            desc: 只有来源地点ID精确命中高德空间底图时才建立；名称相似不建边。存在本引用时，地图展示与附近检索只使用目标 TransitFacility，本语义节点必须 geoPrecision=none 且不得再存 latitude/longitude/H3
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9 单元（平均边长约 200.8m），用于 1km 以内的就近检索。用法固定为「算含一圈安全冗余的 k 环 → 批量等值查 → 再算精确距离」：相距 50m 的两个 POI 可能落在不同格，只查同一格会静默漏召回。超过 1km 改用 h3IndexCoarse；按安全环估算，R9 在 5km 约 817 格、10km 约 2791 格。编码必须能通过 is_valid_cell，且分辨率与坐标重算结果一致
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R7 单元（平均边长约 1.406km），用于 1km 以上的就近检索。按含一圈安全冗余的 k 环估算，3km、5km、10km 分别查 37、61、127 格；同场景 R9 分别约 331、817、2791 格。检索层按半径选字段并在粗筛后计算精确距离；本字段与 h3Index 必须成对填写并能由坐标重算验证
+            index: Text
+            optional: true
+        geoPrecision(坐标精度): Text
+            desc: exact=本语义站点拥有独立核验坐标；none=本节点无直接坐标或空间位置由 spatialFacility 承担。只有 exact 直接参与 H3；存在 spatialFacility 时必须为 none
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            desc: 形如 name:src_amap、summary:src_baike。多源融合后整个实体只标一个主源说不清「名称来自高德、简介来自百科」，出问题时无法定位是哪个源写错的
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            desc: 形如 ticketPrice:2026-09-10。用于回答「这个票价是什么时候采的」，比实体级 updatedAt 精确
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        NextStop(下一站): TransitStop
+            desc: 同一方向上相邻两站。有它才能算换乘，没有它「怎么坐公交去」答不了。
+            properties:
+                routeId(所属方向): Text
+                    index: Text
+                    constraint: NotNull
+                seq(站序): Integer
+                    constraint: NotNull
+                distance(站间距): Float
+
+TransitFacility(地图交通设施): EntityType
+    desc: 高德等地图来源中的可定位交通 POI，承担地图展示和附近检索。结构化线路、方向和站序仍分别使用 TransitLine、TransitRoute、TransitStop；两层只在来源地点ID精确命中时连接。
+    properties:
+        id(标识): Text
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortDesc(一句话摘要): Text
+            index: TextAndVector
+            chunk: whole
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        type(设施类型): Text
+            index: Text
+            constraint: NotNull,Enum="机场,火车站,高铁站,客运站,地铁站,公交站,公交设施,停车场,交通服务,其他"
+        facilityClassCode(设施分类代码): Text
+            index: Text
+        facilityClassName(设施分类名称): Text
+            index: Text
+        detailType(设施细分类型): Text
+            index: Text
+        amapPoiId(高德POI ID): Text
+            index: Text
+        amapType(高德分类路径): Text
+            index: Text
+        amapTypecode(高德分类代码): Text
+            index: Text
+        province(省份): Text
+            index: Text
+        city(城市): Text
+            index: Text
+        district(区县): Text
+            index: Text
+        adcode(行政区划代码): Text
+            index: Text
+        address(地址): Text
+            index: TextAndVector
+            chunk: whole
+        telephone(联系电话): Text
+            index: Text
+        website(网站): Text
+            index: Text
+        openingHours(开放时间): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+        qualityStatus(质量状态): Text
+            index: Text
+        qualityNotes(质量说明): Text
+            index: TextAndVector
+            chunk: paragraph
+        rating(平台评分): Float
+        averageCost(平台人均或费用): Float
+        tags(平台标签): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        locatedInAdminArea(所属行政区): AdminArea
+        latitude(纬度): Float
+        longitude(经度): Float
+        coordinateSystem(坐标系): Text
+            desc: 有经纬度时必填。exact 必须与 City.spatialCoordinateSystem 一致；unknown 不得进入 H3 或附近检索
+            index: Text
+            constraint: Enum="WGS84,GCJ02,BD09,unknown"
+        h3Index(空间网格): Text
+            desc: 由同一组经纬度通过 h3-py 4.x latlng_to_cell 派生的真实 H3 R9；查询必须先算 k 环再精确测距
+            index: Text
+        h3IndexCoarse(粗粒度网格): Text
+            desc: 与 h3Index 成对派生的 H3 R7，用于 1km 以上的候选检索
+            index: Text
+        geoPrecision(坐标精度): Text
+            desc: exact=已核验的独立点位，必须有项目统一坐标系及成对 R9/R7 H3，可参与地图与附近排序；approx=中心点或估算点，不写 H3、不参与附近排序；none=无直接坐标，坐标、坐标系和 H3 均为空
+            index: Text
+            constraint: NotNull,Enum="exact,approx,none"
+        visitorDemandScenarios(游客需求场景): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        ugcPoiSubtype(游客内容细分类型): Text
+            index: TextAndVector
+            chunk: whole
+        ugcLocationDescription(游客内容位置描述): Text
+            index: TextAndVector
+            chunk: whole
+        externalMapName(外文或地图名): Text
+            index: Text
+        directMentionCount(名称直接命中帖子数): Integer
+            desc: 只代表本次证据集中名称直接命中的帖子数，不得解释为全网热度或排名
+        identityStatus(跨源身份状态): Text
+            desc: source_only=只有一个地点来源、尚未声称与其他来源是同一对象；confirmed_match=共享稳定外部ID或人工确认；provisional_match=按受控名称与地域规则暂定同一对象，不能当作绝对去重结果；ambiguous=存在候选但证据不足，保留独立节点并禁止融合字段
+            index: Text
+            constraint: NotNull,Enum="source_only,confirmed_match,provisional_match,ambiguous"
+        identityResolutionMethod(身份解析方法): Text
+            desc: 记录本节点当前身份结论采用的最强规则；名称规则不得冒充共享外部ID
+            index: Text
+            constraint: NotNull,Enum="source_external_id,shared_external_id,unique_name_city,unique_name_admin,unique_name_parent_admin,unique_name_admin_coordinate,manual_review,not_matched"
+        possibleSameAs(可能同一交通POI): TransitFacility
+            desc: 仅保存待人工判断的候选，不做字段融合、不继承坐标、不参与唯一POI计数；确认后删除候选边并更新 identityStatus
+            constraint: MultiValue
+        sourceId(来源ID): Text
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键；高德设施必须含 amap:ID
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            index: Text
+        verifiedBy(核验人或来源): Text
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            index: Text
+        referencedBy(被引用数): Integer
+        archivedAt(归档时间): Text
+            index: Text
+        archiveReason(归档原因): Text
+            index: Text
+
+TransportFareRule(交通计费规则): EntityType
+    desc: 出租车等交通方式的分时、分段计费规则。一条记录只表达一个收费组成部分，避免把起步价、里程价和附加费揉成不可计算的长文本。
+    properties:
+        id(标识): Text
+            index: Text
+            constraint: NotNull
+        name(规则名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        transportMode(交通方式): Text
+            index: Text
+            constraint: NotNull,Enum="出租车,网约车,公交,地铁,其他"
+        applicableAdminArea(适用行政区): AdminArea
+        vehicleCategory(车型或服务类别): Text
+            index: Text
+        timeWindow(适用时段): Text
+            index: Text
+        distanceOrCondition(距离或触发条件): Text
+            index: TextAndVector
+            chunk: whole
+        chargeComponent(收费组成): Text
+            index: Text
+        rateValue(数值): Float
+        currency(币种): Text
+            index: Text
+        rateUnit(计费单位): Text
+            index: Text
+        calculationRule(计算规则): Text
+            index: TextAndVector
+            chunk: paragraph
+        effectiveDate(生效日期): Text
+            index: Text
+        currentness(时效状态): Text
+            index: Text
+        sourceTitle(来源文件或标题): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+        auditStatus(审核状态): Text
+            index: Text
+        qualityNotes(质量说明): Text
+            index: TextAndVector
+            chunk: paragraph
+        sourceId(来源ID): Text
+            index: Text
+            constraint: NotNull
+        fieldSources(字段级来源): Text
+            index: Text
+            constraint: MultiValue
+        fieldUpdatedAt(字段级更新时间): Text
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            index: Text
+        externalIds(外部标识): Text
+            index: Text
+            constraint: NotNull,MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            index: Text
+        verifiedBy(核验人或来源): Text
+            index: Text
+            optional: true
+        dataQuality(数据质量): Text
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            index: Text
+        referencedBy(被引用数): Integer
+        archivedAt(归档时间): Text
+            index: Text
+        archiveReason(归档原因): Text
+            index: Text
+
+DataSource(数据源): EntityType
+    desc: 数据来源登记表。多源融合的优先级由本实体决定 —— 之前 authorityLevel 只标在单条证据上，是「这条证据可不可信」，回答不了「高德和百科同时写 ticketPrice 该听谁的」。未登记的来源不得入库。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            chunk: whole
+            constraint: NotNull
+        sourceType(来源类型): Text
+            index: Text
+            constraint: NotNull,Enum="官方,政府,地图厂商,OTA平台,百科,社媒,人工"
+        authorityLevel(权威级别): Text
+            desc: 融合时的优先级。同一字段多源写入时高权威覆盖低权威；同级则以 observedAt 较新者为准
+            index: Text
+            constraint: NotNull,Enum="官方,权威,媒体,用户生成"
+        trustedFields(可信字段): Text
+            desc: 本来源只在这些字段上可信，其余字段即使权威级别高也不得写入。例如高德在坐标与地址上可信、在景区等级上不可信；百科在历史文化上可信、在票价上只能作参考
+            index: Text
+            constraint: MultiValue
+        forbiddenFields(禁写字段): Text
+            desc: 本来源绝对不得写入的字段。社媒来源禁写 ticketPrice/grade/openingHours —— 这类官方事实被 UGC 覆盖是最高频的错误来源
+            index: Text
+            constraint: MultiValue
+        publishable(可否对外): Text
+            desc: 为否时该来源的数据只进复核队列，不进对外检索
+            index: Text
+            constraint: NotNull,Enum="是,否"
+        refreshDays(刷新周期): Integer
+            desc: 超过该天数未刷新的字段视为过期，回答时须降级标注
+        externalIds(外部标识): Text
+            desc: 跨源去重键
+            index: Text
+            constraint: MultiValue
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+CollectionBatch(采集批次): EntityType
+    desc: 一次采集的范围与覆盖率账本。按行政区排期，未采集的区域也必须以 planned 显式登记 —— 缺席要可见，否则「全市覆盖」会静默退化成「部分城区覆盖」。贵阳乌当区只采到 528 个 POI 长期无人发现，就是缺这一层。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        batchId(批次号): Text
+            index: Text
+            constraint: NotNull
+        name(批次名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        sourceType(来源类型): Text
+            index: Text
+            constraint: NotNull,Enum="官方,政府,地图厂商,OTA平台,百科,社媒,人工"
+        targetAdminArea(目标行政区): AdminArea
+        gridPass(采集轮次): Text
+            desc: 单轮粗网格必然漏采，细网格与补采需分别登记
+            index: Text
+            constraint: Enum="粗网格,细网格,人工,补采"
+        plannedCount(计划数量): Integer
+        collectedCount(实采数量): Integer
+        coverageRatio(覆盖率): Float
+            desc: 低于 0.95 不得标记为已完成
+        status(批次状态): Text
+            index: Text
+            constraint: NotNull,Enum="已排期,进行中,已完成,部分完成,失败"
+        startedAt(开始时间): Text
+            index: Text
+        finishedAt(结束时间): Text
+            index: Text
+        pipelineVersion(管道版本): Text
+            index: Text
+        notes(备注): Text
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。同一对象被多次采集时按本字段合并，不新建。缺它则每跑一次采集就多一份副本
+            index: Text
+            constraint: MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+KnowledgeUnit(知识单元): EntityType
+    desc: 可直接支撑回答的稳定知识证据。长知识先拆成知识单元再切分向量。 问答能回答多少，由本实体的数量与质量决定，不由 POI 数量决定。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        title(标题): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        answer(审核后知识正文): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: topic
+        summary(摘要): Text
+            index: TextAndVector
+            chunk: whole
+        topic(主题): Text
+            index: Text
+            constraint: NotNull,Enum="history,culture,naming,layout,geography,honor,ticket,opening,transport,specialty,management,traffic"
+        knowledgeSubtype(知识子类): Text
+            desc: 对 topic 的可扩展细分，如建设沿革、建筑空间格局、非物质文化遗产认定、地貌与景观资源；不把持续增长的子类硬编码进枚举
+            index: Text
+        temporalScope(时间范围): Text
+            desc: 该知识陈述覆盖的时期或年代，如“1938年及抗日战争时期”“长期稳定”。历史断言不得只靠正文里的零散年份猜测适用范围
+            index: Text
+        sourceDocumentTitle(来源文档标题): Text
+            desc: 产生本知识单元的原始词条、页面或文档标题。父级页面支撑子景区时必须保留父页标题，避免误以为存在同名独立词条
+            index: Text
+        sourceSection(来源章节原名): Text
+            desc: 归一前的原始来源章节名，保留以便回查章节归一与目标对齐是否误判
+            index: Text
+        sourceParentSection(来源父章节): Text
+            desc: 与 sourceSection 一起构成归一判定的依据，便于回查
+            index: Text
+        extractionMethod(提取方式): Text
+            desc: 区分原文直接摘录、单份证据内归纳、多源合并与人工撰写；归纳和合并必须能回到断言级证据
+            index: Text
+            constraint: Enum="原文摘录,证据内归纳,多源合并,人工撰写"
+        evidenceStrength(证据强度): Text
+            desc: 直接陈述表示单份原文明确支持；多段归纳表示同页多段共同支持；交叉印证表示另有独立来源核验；推断候选不得进入对外检索
+            index: Text
+            constraint: Enum="直接陈述,多段归纳,交叉印证,推断候选"
+        titleContentMatch(标题与内容是否一致): Text
+            desc: 为否时说明标题是子景点名但正文讲的是别的对象，此时 targetId 应指向正文真正描述的对象而非标题同名实体。百科作者常把子标题当章节骨架用
+            index: Text
+            constraint: Enum="是,否,未判定"
+        targetType(目标实体类型): Text
+            desc: 取值为本 schema 的实体类型英文名
+            index: Text
+            constraint: NotNull
+        targetId(目标实体ID): Text
+            index: Text
+            constraint: NotNull
+        rootScenicArea(所属景区): ScenicArea
+            desc: 本条所描述对象最终归属的景区，无论 targetId 指向的是景区本身、子景点还是特色菜。targetId 是软引用、图上不是边，「一个景区下各个景点分别有什么典故」只能逐个子景点索引寻址（9 万条规模实测退化为全表扫）；本字段是真实体引用即图上的边，把这类查询压成一跳。由灌数器顺着 locatedInScenicArea / originScenicArea 回溯写入，子景点改挂景区时必须同步重算
+            optional: true
+        rootAdminArea(所属行政区): AdminArea
+            desc: 同上，用于「贵阳有哪些知识」这类按行政区收口的查询。城市级知识没有 rootScenicArea 时靠本字段归位
+            optional: true
+        supersededBy(被取代): KnowledgeUnit
+            desc: 本条已被哪条新知识取代，如「2024 年免费」被「2026 年恢复收费」取代。取代是时间线上的先后，与 ConflictsWith 的并列矛盾不是一回事；被取代的不进对外检索但保留，否则查不出「当时为什么这么答」
+            optional: true
+        stability(稳定性): Text
+            desc: 易变内容应改由 DynamicOverride 承载。 按 topic 判定：history/naming/culture/geography 为稳定； ticket/opening/transport 为易变，必须同时写 DynamicOverride。
+            index: Text
+            constraint: NotNull,Enum="稳定,半稳定,易变"
+        confidence(置信度): Float
+        status(状态): Text
+            index: Text
+            constraint: NotNull,Enum="待审,已核实,已驳回"
+        intentKeys(关联意图): Text
+            desc: 取值为 Intent.intentKey
+            index: Text
+            constraint: MultiValue
+        audienceScenarios(适用场景): Text
+            index: Text
+            constraint: MultiValue
+        keywords(关键词): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        lastVerifiedAt(最近核验时间): Text
+            index: Text
+        sourceIds(来源ID): Text
+            index: Text
+            constraint: MultiValue
+        externalIds(外部标识): Text
+            desc: 跨源去重键，形如 baike:956442#ku#历史沿革。同一词条同一章节被多次采集时按本字段合并，不新建
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 本条由哪一批采集产生。灌错一批时靠本字段精确圈定回滚范围；缺了它只能按 sourceIds 粗筛，会误伤同一来源其它批次的数据
+            index: Text
+        evidenceId(来源证据): SourceEvidence
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走归档
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「已被新知识取代」「证据源失效」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+    relations:
+        ConflictsWith(说法冲突): KnowledgeUnit
+            desc: 同一对象同一主题下两条知识给出不同说法。实测 138 条知识里有 21 组同(对象,主题)并存，检索会把它们全部召回，回答层无从知道哪条作数。冲突必须显式连边并在 resolution 里裁决，不能靠"取第一条"
+            properties:
+                resolution(裁决): Text
+                    desc: 未裁决的冲突不得进对外检索 —— 宁可答不出，也不能在两个说法里随机挑一个
+                    index: Text
+                    constraint: NotNull,Enum="本条为准,对方为准,并存(视角不同),待裁决"
+                conflictField(冲突点): Text
+                    desc: 具体哪里矛盾，如「建成年代」「门票是否免费」。同一对象的两条知识多数只在一处矛盾，其余内容仍可用
+                    index: Text
+                resolvedBy(裁决人): Text
+                    index: Text
+                    optional: true
+        RelatedKnowledge(知识单元关联): KnowledgeUnit
+            desc: 游客不单独问历史。13483 条真实问题里问历史的只有两条，都是这个形式： 「小七孔古桥的历史和主要看点是什么，什么时候去人少、倒影和拍照效果最好？」 历史必须与看点、最佳时间、拍照点关联，否则答了历史答不完整个问题。
+            properties:
+                relationRole(关联角色): Text
+                    index: Text
+                    constraint: NotNull,Enum="补充看点,补充最佳时间,补充拍照点,前后承接,同主题"
+                rank(展示位次): Integer
+FAQ(常见问题): EntityType
+    desc: 游客真实问题及归一化表达，用于问法召回。不重复存储大段答案，正文在关联的知识单元里。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        question(游客问题): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        shortAnswer(审核后短回答): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        aliases(相似问法): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        intentKey(意图): Text
+            desc: 取值为 Intent.intentKey
+            index: Text
+        answerKuId(回答知识单元): KnowledgeUnit
+        matchedIntent(匹配意图): Intent
+        matchedScenario(匹配场景): Scenario
+        targetType(目标实体类型): Text
+            desc: 取值为本 schema 的实体类型英文名
+            index: Text
+        targetId(目标实体ID): Text
+            index: Text
+        rootScenicArea(所属景区): ScenicArea
+            desc: 本条所描述对象最终归属的景区，无论 targetId 指向的是景区本身、子景点还是特色菜。targetId 是软引用、图上不是边，「一个景区下各个景点分别有什么典故」只能逐个子景点索引寻址（9 万条规模实测退化为全表扫）；本字段是真实体引用即图上的边，把这类查询压成一跳。由灌数器顺着 locatedInScenicArea / originScenicArea 回溯写入，子景点改挂景区时必须同步重算
+            optional: true
+        rootAdminArea(所属行政区): AdminArea
+            desc: 同上，用于「贵阳有哪些知识」这类按行政区收口的查询。城市级知识没有 rootScenicArea 时靠本字段归位
+            optional: true
+        audience(适用场景): Text
+            index: Text
+            constraint: MultiValue
+        priority(优先级): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+        status(状态): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+            constraint: NotNull
+        askCount(被问次数): Integer
+            desc: 真实被问次数，用于排优先级
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        externalIds(外部标识): Text
+            desc: 去重键。同一个问法重复入库必须合并，否则同一问题会命中多条内容相同的 FAQ
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 本条由哪一批采集产生。灌错一批时靠本字段精确圈定回滚范围
+            index: Text
+        sourceId(来源ID): Text
+            desc: 该 FAQ 的主来源，指向 DataSource.id
+            index: Text
+            constraint: NotNull
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】FAQ 是直接面向游客的实体，却此前没有对外闸门 —— 未复核的问答会和已核实的一起被召回
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        fieldSources(字段级来源): Text
+            desc: 形如 shortAnswer:src_official。短答案与长答案可能来自不同源，出错时要定位到具体字段
+            index: Text
+            constraint: MultiValue
+        dynamicOverlayRequired(是否需要动态覆盖): Text
+            desc: 为是时，回答前必须查 DynamicOverride 取现值
+            constraint: Enum="是,否"
+            index: Text
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走归档
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「已被新知识取代」「证据源失效」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+Intent(游客意图): EntityType
+    desc: 问句意图的归一化定义。决定一条知识能被哪类问题召回。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        intentKey(意图键): Text
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        category(分类): Text
+            index: Text
+            constraint: NotNull,Enum="行前决策,行中服务,客服问答"
+        description(描述): Text
+            index: TextAndVector
+            chunk: paragraph
+        examples(示例问法): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        keywords(关键词): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id
+            index: Text
+            constraint: NotNull
+        externalIds(外部标识): Text
+            desc: 跨源去重键。此前本实体没有去重键 —— 同一个意图/场景重采两次就是两条记录，问句路由会命中重复项
+            index: Text
+            constraint: NotNull,MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；灌错一批时靠本字段精确圈定回滚范围
+            index: Text
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】决定能否进入对外检索；needs_review 只进人工队列不对外；archived 为软删除
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        priority(优先级): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+        status(状态): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+            constraint: NotNull
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+Scenario(游客场景): EntityType
+    desc: 由目标、人群与约束构成的可复用情境：亲子慢玩、雨天游览、带老人省力、半日游、自驾。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        name(名称): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        scenarioKey(场景键): Text
+            desc: 场景的稳定业务键，形如 weather.rain、audience.kids。Intent 有 intentKey、FAQ 可按 intentKey 挂意图，但场景这一侧此前没有键 —— FAQ.matchedScenario 只能按实体 id 挂，换一套数据就对不上
+            index: Text
+            constraint: NotNull
+        audience(适用人群): Text
+            desc: 本场景面向谁。场景的价值正在于「亲子 × 雨天」这类组合 —— 只有场景没有人群，就只能表达「雨天去哪」，答不了「带孩子雨天去哪」
+            index: Text
+            constraint: MultiValue
+        scenarioType(场景类型): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+        summary(摘要): Text
+            index: TextAndVector
+            chunk: whole
+        goals(目标): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        constraints(约束): Text
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        intentKeys(关联意图): Text
+            desc: 取值为 Intent.intentKey
+            index: Text
+            constraint: MultiValue
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id
+            index: Text
+            constraint: NotNull
+        externalIds(外部标识): Text
+            desc: 跨源去重键。此前本实体没有去重键 —— 同一个意图/场景重采两次就是两条记录，问句路由会命中重复项
+            index: Text
+            constraint: NotNull,MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；灌错一批时靠本字段精确圈定回滚范围
+            index: Text
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】决定能否进入对外检索；needs_review 只进人工队列不对外；archived 为软删除
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        priority(优先级): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+        status(状态): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+            constraint: NotNull
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+SourceEvidence(来源证据): EntityType
+    desc: 为某条知识或字段提供出处。缺证据的语义事实不得进入稳定层。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        objectType(对象类型): Text
+            desc: 取值为本 schema 的实体类型英文名
+            index: Text
+            constraint: NotNull
+        objectId(对象ID): Text
+            index: Text
+            constraint: NotNull
+        field(佐证字段): Text
+            desc: 本条证据具体佐证对象的哪个字段，如 ticketPrice。留空表示词条级证据（只证明这个对象存在、整体信息来自此处）。实测一条词条级证据要为 67 条断言背书，那样的「可追溯」只能追到词条、追不到断言 —— 回答「60 元是谁说的、原文哪句」时必须有本字段
+            index: Text
+            optional: true
+        claimValue(佐证时的取值): Text
+            desc: 采集当时该字段的值。实体字段后来被更高权威覆盖后，本字段仍保留旧值，用于回答「当时为什么是这个价」以及核对覆盖是否合理
+            index: Text
+            optional: true
+        sourceId(来源ID): Text
+            index: Text
+            constraint: NotNull
+        sourceType(来源类型): Text
+            index: Text
+            constraint: NotNull,Enum="官方,政府,地图厂商,OTA平台,百科,社媒,人工"
+        sourceName(来源名称): Text
+            index: Text
+        sourceUrl(来源地址): Text
+            index: Text
+            constraint: NotNull
+        quote(原文摘录): Text
+            index: TextAndVector
+            chunk: whole
+        snapshotRef(页面快照): Text
+            desc: 原页失效即断链，故须留存
+            index: Text
+        authorityLevel(权威级别): Text
+            desc: 用户生成不得覆盖官方事实
+            index: Text
+            constraint: NotNull,Enum="官方,权威,媒体,用户生成"
+        checkedAt(核验时间): Text
+            index: Text
+            constraint: NotNull
+        validUntil(有效期): Text
+            index: Text
+        decision(入库判定): Text
+            index: Text
+            constraint: NotNull,Enum="采纳,待复核,驳回"
+        rawResultId(原始回答ID): Text
+            index: Text
+        entryId(词条ID): Text
+            desc: 百科规范词条 ID，跨次抓取用它对齐，不用词条名
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。同一对象被多次采集时按本字段合并，不新建。缺它则每跑一次采集就多一份副本
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 本条由哪一批采集产生。灌错一批时靠本字段精确圈定回滚范围；缺了它只能按 sourceIds 粗筛，会误伤同一来源其它批次的数据
+            index: Text
+        catalogCoverage(目录覆盖率): Float
+            desc: 百科完整度检查产出。覆盖率不足说明抓取不全，据此定 confidence
+        isAntiCrawl(是否反爬页): Text
+            desc: 为是时整条证据作废，不得进入稳定层
+            constraint: Enum="是,否"
+            index: Text
+        notes(核验说明): Text
+            index: Text
+        corroborationStatus(交叉核验状态): Text
+            desc: 记录断言是否经独立来源核验。存在冲突时 decision 不得为采纳；仅单一来源的高风险断言不得提升为已核实知识
+            index: Text
+            constraint: Enum="未核验,已交叉印证,有冲突,仅单一来源"
+        corroboratingSourceUrls(交叉核验来源): Text
+            desc: 与本证据独立的核验页面地址，可为政府、景区官网、国家级公共名录或其他权威来源；不得把搜索结果页当来源
+            index: Text
+            constraint: MultiValue
+        conflictNotes(来源冲突说明): Text
+            desc: 记录不同来源在数值、名称、等级或时间上的具体冲突及冻结结论，避免下次采集又把已知冲突静默覆盖
+            index: Text
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走归档
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「已被新知识取代」「证据源失效」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+DynamicOverride(动态覆盖): EntityType
+    desc: 随时间变化的现值：票价、营业时间、临时关闭、末班时间、房价。稳定层字段保留基准值，现值只在本实体；回答前按 targetType+targetId+field 查询覆盖。同一 targetType+targetId+field 同时只应有一条生效记录，失效写 validUntil 而不是删除。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        targetType(目标类型): Text
+            desc: 取值为本 schema 的实体类型英文名
+            index: Text
+            constraint: NotNull
+        targetId(目标ID): Text
+            index: Text
+            constraint: NotNull
+        field(覆盖字段): Text
+            desc: 取值为被覆盖实体的字段英文名
+            index: Text
+            constraint: NotNull
+        value(当前值): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        validFrom(生效时间): Text
+            index: Text
+            constraint: NotNull
+        validUntil(失效时间): Text
+            index: Text
+        sourceId(来源ID): Text
+            index: Text
+        status(状态): Text
+            index: Text
+            constraint: NotNull,Enum="生效,已失效,待核验"
+        authorityLevel(权威级别): Text
+            desc: 【共享词表 AuthorityLevel】同一 targetId+field 同时生效多条时的裁决依据：高权威压低权威，同级取 createdAt 较新者。缺了它，官网说 50 元、OTA 说 45 元时谁赢取决于遍历顺序，同一个问题不同时刻会给出不同票价
+            index: Text
+            constraint: NotNull,Enum="官方,权威,媒体,用户生成"
+        priority(人工优先级): Integer
+            desc: 仅在权威级别相同且需要人工指定胜负时使用；数值大者优先。常规情况留空，由权威级别与时间自动裁决
+            optional: true
+        supersededBy(被取代): DynamicOverride
+            desc: 本条被哪条覆盖取代。同一 targetId+field 只应有一条生效记录，冲突时败方写本字段并置 status=已失效，而不是删除 —— 删掉就查不出「当时为什么答的是这个价」
+            optional: true
+        batchId(采集批次): Text
+            desc: 灌错一批时靠本字段精确圈定回滚范围。缺了它只能按 sourceId 粗筛，会误伤同一来源其它批次的数据
+            index: Text
+        externalIds(外部标识): Text
+            desc: 去重键，形如 official:notice:2026国庆公告。同一条官网公告重采两次必须合并为一条，否则同一天会同时生效两条内容相同的覆盖
+            index: Text
+            constraint: MultiValue
+        lastVerifiedAt(最近核验时间): Text
+            desc: 最近一次被人或权威源确认「现在仍然成立」的时间，区别于 lastSeenAt（只说明抓到过）。票价、营业时间挂在实体上，没有本字段就回答不了「这个价核过没有、多久没核了」；与来源的 refreshDays 一起判定该不该重采
+            index: Text
+        verifiedBy(核验人或来源): Text
+            desc: 人工复核填工号，权威源自动核验填 DataSource.id
+            index: Text
+            optional: true
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容变化才推进。同权威级别的覆盖撞车时以本字段较新者胜出
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走归档
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「已被新知识取代」「证据源失效」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+ReviewItem(待核验事项): EntityType
+    desc: 人工核验队列。低置信、冲突与过期内容进入本队列，不直接进稳定层。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        category(分类): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+            constraint: NotNull
+        targetIds(目标ID): Text
+            index: Text
+            constraint: NotNull,MultiValue
+        currentClaim(当前说法): Text
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        reason(待核原因): Text
+            index: Text
+        requiredEvidence(所需证据): Text
+            index: Text
+        status(状态): Text
+            desc: 工单生命周期。无枚举时各采集器和各审核员会写出「已完成」「完成」「done」三种值，统计与流转判断全部失效
+            index: Text
+            constraint: NotNull,Enum="待处理,处理中,已完成,已驳回,已挂起"
+        reviewDecision(复核结论): Text
+            desc: 复核判了什么，与 status 不是一回事：「查证后确认原值属实」和「查证后改为 80 元」都会让 status=已完成，回头分不清当时的结论。已完成的工单必须有本字段。不复用 decision 这个名字：SourceEvidence.decision 说的是「这条证据采不采纳」，与本字段不是同一个概念，同名会让共享词表校验失效
+            index: Text
+            constraint: Enum="原值属实,已修正,证据不足维持待审,判定为错误数据已驳回,合并至其它实体"
+        decidedBy(裁决人): Text
+            desc: 最后是谁批的。assignee 是指派给谁，不等于谁批的 —— 对外数据出错时要追责到具体的人
+            index: Text
+        decidedAt(裁决时间): Text
+            index: Text
+        resolvedEvidence(裁决依据): Text
+            desc: 最终凭哪几条 SourceEvidence 判的。requiredEvidence 说的是「需要什么证据」，本字段记的是「实际用了什么」；两者对不上说明放行标准被绕过了
+            index: Text
+            constraint: MultiValue
+        affectedFields(涉及字段): Text
+            desc: 本工单针对目标实体的哪些字段。放行判定按字段粒度进行 —— 票价复核通过不代表开放时间也可以对外
+            index: Text
+            constraint: MultiValue
+        priority(优先级): Text
+            desc: 排队顺序。对外可见性被卡住的排最前
+            index: Text
+            constraint: Enum="紧急,高,中,低"
+        assignee(责任人): Text
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。同一对象被多次采集时按本字段合并，不新建。缺它则每跑一次采集就多一份副本
+            index: Text
+            constraint: MultiValue
+        batchId(采集批次): Text
+            desc: 本条由哪一批采集产生。灌错一批时靠本字段精确圈定回滚范围；缺了它只能按 sourceIds 粗筛，会误伤同一来源其它批次的数据
+            index: Text
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+RawSourceAnswer(原始回答): EntityType
+    desc: 仅作来源追溯，不进入稳定检索和向量化。
+    properties:
+        id(标识): Text
+            desc: 全局唯一稳定标识，独立铸造，不由名称或来源拼接派生 —— 用「名称+章节」拼 id 会在同一对象被多次采集时产生重复实体
+            index: Text
+            constraint: NotNull
+        batch(批次): Text
+            index: Text
+            constraint: NotNull
+        questionId(问题ID): Text
+            index: Text
+            constraint: NotNull
+        resultId(回答ID): Text
+            index: Text
+            constraint: NotNull
+        question(问题原文): Text
+            index: Text
+            constraint: NotNull
+        answer(回答原文): Text
+            index: Text
+            constraint: NotNull
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id
+            index: Text
+            constraint: NotNull
+        externalIds(外部标识): Text
+            desc: 跨源去重键，形如 raw:问题ID:回答ID。此前本实体没有去重键 —— 同一次问答重新导入就会产生重复留痕
+            index: Text
+            constraint: NotNull,MultiValue
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId。注意与本实体已有的 batch 字段区分：batch 是采集轮次的自由文本，batchId 是登记在册的批次主键
+            index: Text
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】决定能否进入对外检索；needs_review 只进人工队列不对外；archived 为软删除
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        status(采集状态): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+            constraint: NotNull
+        selected(是否选用): Text
+            constraint: Enum="是,否"
+            index: Text
+        decision(审核判定): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+        targetIds(目标ID): Text
+            index: Text
+            constraint: MultiValue
+        dynamicStatus(动态状态): Text
+            desc: 取值域待业务确认，暂按自由文本入库
+            index: Text
+        rawAnswerDirectAdmission(是否直接入稳定层): Text
+            constraint: Enum="是,否"
+            index: Text
+        sourceUrl(来源会话): Text
+            index: Text
+        askedAt(提问时间): Text
+            index: Text
+        finishedAt(完成时间): Text
+            index: Text
+
+        createdAt(创建时间): Text
+            index: Text
+        updatedAt(更新时间): Text
+            desc: 内容真的变了才推进，由 contentHash 判定。回答「这条什么时候改的」，也是复核队列的排序依据
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        contentHash(内容指纹): Text
+            desc: 用于判断内容是否真的变了，避免无变化的重复抓取推进 updatedAt
+            index: Text
+
+GeoCell(城市网格): EntityType
+    desc: H3 空间单元，是全图空间判定的唯一真相。R8（边长约 461m、面积约 0.74 km²，步行 5 分钟尺度）为主层，R7 父格用于 1km 以上的大半径粗筛。 【骨架层与派生层】本实体的字段分两类，寿命完全不同，后期挂载新数据时只重算派生层、骨架层原样不动： 骨架层 = id / h3Resolution / 中心坐标 / parentCell（由 H3 算法决定，永不变）+ locatedInAdminArea / adminAssignMethod（由核验过的行政区边界决定，仅区划调整或边界源更新时变）； 派生层 = poiCount / categoryMix / dominantCategory / poiSourceMix / adminPurity / adminPoiMix / adminEvidence / collectionCoverage / dominantZone / zoneConfidence / zoneAssignMethod / zoneEvidence / zoneAliasesSeen（每次挂数据重算）。街镇一族（township*）介于两者之间：名称与代码相对稳定，取值只依赖格中心坐标与地图厂商的逆地理编码，不依赖格内有无 POI —— 早先版本的采集脚本加了 poiCount>0 的过滤，导致覆盖长期停在 39%，那是脚本缺陷不是设计意图；实测无 POI 的荒地格逆地理编码成功率 99.92%（1,312 格实调）。因此本族字段应当一次性补齐到全域，而不是随 POI 数据覆盖逐步增补。贵阳全域边界内的 R8 与其 R7 父格必须完整建成骨架，包括 poiCount=0 的格子；否则尚未采到数据的县域会在后续增量挂载时被误判成市域外。商圈不是独立划分而是格子的标签：让格子挂标签后，「坐标→片区」退化为一次 id 查找。 本实体不承载业务事实，只承载空间归属与密度信号；POI 的属性一律留在 POI 上。
+    properties:
+        id(标识): Text
+            desc: 直接采用 H3 单元编码本身（如 8841a4b2c1fffff），天然全局唯一，且可由任一落格坐标重算验证，不需要另铸 ID。 本实体不设 coordinateSystem 字段：网格一律建在 City.spatialCoordinateSystem 上（当前 GCJ02），坐标系未知的点按 geoPrecision 规则本就不许落格，逐格再存一份坐标系只会给漂移留口子
+            index: Text
+            constraint: NotNull
+        h3Resolution(分辨率): Integer
+            desc: 取值 8 或 7。R8 为主层，每个 R8 格另有一个 R7 父格实体，两层同表存放，靠本字段区分；parentCell 是实体引用即图上的边，没有 R7 实体就是悬空引用。POI 侧的 h3Index 是 R9，入库时由 cell_to_parent 上卷一级挂到本格。R8 兼顾步行尺度的空间归属与稳定的密度统计，R7 负责大半径粗筛；具体格数与密度分布属于每个构建批次的审计结果，不写死在 Schema 中
+            constraint: NotNull
+        centerLatitude(中心纬度): Float
+            desc: 由 cell_to_latlng 派生，仅用于地图展示与粗略距离估算；精确距离一律用 POI 自身坐标算，不得用格子中心代替
+        centerLongitude(中心经度): Float
+        parentCell(粗粒度父格): GeoCell
+            desc: R7 父格，用于 1km 以上的大半径粗筛。H3 天然分层，本字段可由 id 计算，物化是为了让「先粗筛再细查」在图上走边而不是算函数
+            optional: true
+        locatedInAdminArea(所属行政区): AdminArea
+            desc: 判定优先用核验过的行政区边界转出的 AdminArea.boundaryH3Cells 做等值匹配；边界缺失时才退化为格内 POI 的 district 众数。边界来源、快照日期和授权范围必须由 SourceEvidence/DataSource 追溯，不能把地图厂商边界直接称为官方边界
+            constraint: NotNull
+        adminAmbiguous(跨界格子): Text
+            desc: 为是表示本格可能跨越行政区界。判定不靠邻格猜测，而是拿格内 POI 自带的 district 与格心边界归属交叉核验；每批次的跨界格数、受影响 POI 数与纯度分布写入审计报告，不写死在 Schema 中。跨界格不得用于分区统计，分区汇总必须按 POI 逐条计
+            index: Text
+            constraint: NotNull,Enum="是,否"
+        adminPurity(行政区纯度): Float
+            desc: 格内 POI 中 district 与本格行政区一致的比例。为空表示格内无自带行政区的 POI，无法核验。低于 1 即跨界
+        adminPoiMix(格内POI行政区构成): Text
+            desc: 形如 南明区:45、云岩区:12。让跨界的具体程度可见，而不是只给一个是否标记
+            index: Text
+            constraint: MultiValue
+        adminEvidence(行政区判定依据): Text
+            desc: 一句话说明本格行政区怎么定的、核验结果如何。回答「为什么这格算这个区」
+            index: Text
+            optional: true
+        adminAssignMethod(行政区判定方式): Text
+            desc: 边界匹配=格心落在已核验来源的 polyline 转出的多边形内。注意这是格心判定，一个格子在构造上只可能属于一个区——不能据此宣称「没有跨界格」，跨界与否须另用格内 POI 的 district 核验，见 adminPurity；POI众数=边界未就绪时的退化方案；人工确认=复核过
+            index: Text
+            constraint: NotNull,Enum="边界匹配,POI众数,人工确认"
+        township(所属街道乡镇): Text
+            desc: 格中心逆地理编码返回的街道乡镇名。区县级可由边界判定，街镇级因地图厂商不提供边界，只能对格中心点做逆地理编码取得；因此可信度低于区县级。 取值不以格内有无 POI 为条件 —— 荒地格同样能取到，实测成功率 99.92%。 两类格子取不到：一是逆地理编码返回空（极少，实测 1,312 格中 1 格）；二是格中心经逆地理编码确认落在贵阳市外的边界格（实测 423 格，散落龙里、平坝、播州、黔西等 38 个外市乡镇），这类【必须留空】—— 写进去等于把外地乡镇塞进贵阳的街镇名单。成因是行政区边界取自地图厂商的简化 polyline，H3 格心判定在边界带会越界。 因此全域街镇覆盖的理论上限是 96.2% 而非 100%。该名称必须经 townshipRegistryStatus 与官方名单核对；厂商旧称或全称差异保留原文，并通过 townshipId 映射到官方规范实体，不静默改写来源值
+            index: Text
+            optional: true
+        townshipId(街镇实体): AdminArea
+            desc: 指向 level=街道乡镇 的 AdminArea 实体。有名称还要有实体引用，才能反查「这个街道有哪些格子」
+            optional: true
+        townshipAdcode(街镇区划代码): Text
+            desc: 12 位统计用区划代码，前 6 位须等于所属区县的 adminCode
+            index: Text
+            optional: true
+        townshipSource(街镇来源): Text
+            desc: 形如 amap_regeo@2026-09-15。街镇值来自哪次调用、何时取的，区划调整后据此判断是否需要重取
+            index: Text
+            optional: true
+        townshipRegistryStatus(街镇在册状态): Text
+            desc: 该街镇名是否在官方区划名单中。来源别名已映射表示来源名称本身不在册，但已有公开证据可无歧义映射到 townshipId 指向的官方规范名；不在册且未映射的可能是地图厂商旧名或非街道级单位，不得当作官方区划
+            index: Text
+            constraint: Enum="官方名单在册,来源别名已映射,高德注册表在册(官方未核对),不在册,未取得"
+            optional: true
+        townshipLagRisk(街镇口径待核): Text
+            desc: 为是表示本格的商圈叫法指向某个已登记但地图厂商边界尚未切分出来的街道。实测南明区花果园街道已在官方名单，但逆地理编码仍把该地块判给切分前的后巢乡。区县级不受影响，乡级须人工核定
+            index: Text
+            constraint: Enum="是,否"
+            optional: true
+        townshipCandidate(街镇候选): Text
+            desc: 口径待核时的候选街道名，供人工核定时参考。不得据此自动改写 township —— 没有边界就没有依据
+            index: Text
+            constraint: MultiValue
+            optional: true
+        poiSourceMix(POI来源构成): Text
+            desc: 形如 amap:1200、kg:45。格内 POI 各来自哪个源、各多少个。跨源合并时同一对象可能出现两次，实测高德底图与图谱按 amapPoiId 重叠达 22,021 个，本字段让去重结果可核对
+            index: Text
+            constraint: MultiValue
+        dominantZone(主导片区): Zone
+            desc: 格内 POI 商圈标签的众数，占比需达 60%。达不到或无标签时必须留空 —— 留空表示「这一带没有公认的片区名」，回答时降级为行政区级说法，不得强行安一个片区
+            optional: true
+        zoneNameSeen(主导片区名称): Text
+            desc: dominantZone 指向的 Zone 实体名称的冗余副本。dominantZone 是实体引用，图上是边；展示与日志里直接读名称可省一次跳转，但改片区名时必须同步 —— 以 Zone.name 为准，本字段只是缓存
+            index: Text
+            optional: true
+        zoneConfidence(片区置信度): Float
+            desc: POI标签众数取真实众数占比；格中心逆地理编码固定 0.85；由邻格传播推定的按传播距离衰减。不同证据等级不得混用，具体留出验证准确率属于构建批次审计指标，不写死在 Schema 中
+        zoneAssignMethod(片区判定方式): Text
+            desc: POI标签众数=格内 POI 自带的 business_area 字段众数，占比需达 60%，置信度即实际占比，证据最强；逆地理编码=格内无众数时退而拿格中心点问 regeo，只代表中心点所属商圈不代表整格，置信固定 0.85；邻格传播=前两者都没有时由 3 环内同行政区的已标注格推出，留出验证准确率仅 66%，只可用于召回兜底不得用于统计；人工确认=复核过；未判定=以上都不成立，必须留空。 不可把前两者合称「平台标注」—— 置信 1.0 的众数与置信 0.85 的中心点猜测证据强度相差很远，混成一个标签下游就分不清
+            index: Text
+            constraint: NotNull,Enum="POI标签众数,逆地理编码,邻格传播,人工确认,未判定"
+        zoneEvidence(片区判定依据): Text
+            desc: 一句话说明本格的片区是怎么得出的，含参与判定的叫法数量与占比。回答「为什么这格算这个商圈」，出错时可直接定位是哪一级判据失准
+            index: Text
+            optional: true
+        zoneAliasesSeen(格内出现过的商圈名): Text
+            desc: 格内 POI 带过的全部商圈名及来源平台，形如 amap:喷水池、dianping:喷水池/太平路。高德 83 个、点评 132 个、携程 240 个商圈名三者共有 0 个，名称对齐不可行；落在同一批格子上的不同平台名即同一片区的不同叫法，靠本字段完成地理对齐
+            index: Text
+            constraint: MultiValue
+        landmarkNames(地标关键名称): Text
+            desc: 本格内最具辨识度的地标名，按显著度排序。游客问「喷水池美食」时，喷水池只是地名，真正该被提到的是那一带的「青云市集」这条小吃街 —— 没有本字段，答案只能把几百家单店平铺给游客，得不到重点。 显著度依次为：聚集型地标（美食街、市集、步行街）> 知名景区景点 > 交通枢纽 > 大型商业体。单个餐厅酒店不算地标，它们是被地标聚起来的对象
+            index: TextAndVector
+            constraint: MultiValue
+            chunk: whole
+        clusterLandmarks(聚集型地标): Text
+            desc: 本格内的美食街、小吃街、市集、步行街、夜市等聚集体，形如 amap:B0FFxxx:青云市集。它们介于单个商户与商圈之间：不是一家店，也不覆盖整个商圈，而是一条街上的几十家店。回答「这一带吃什么」时应先给聚集体再给单店
+            index: Text
+            constraint: MultiValue
+        poiCount(POI数): Integer
+            desc: 格内 POI 总数，实测中位 3、最大 699。既是推荐时判断「这一带够不够逛」的依据，也是采集覆盖度的体检指标
+            constraint: NotNull
+        categoryMix(业态构成): Text
+            desc: 形如 餐饮:42、住宿:8、景点:1。回答「这一带以什么为主」，也是「找个能吃能住能逛的地方」这类复合推荐的直接依据。实测 R8 格中 907 格只有单一业态、149 格有 5 类
+            index: Text
+            constraint: MultiValue
+        dominantCategory(主导业态): Text
+            desc: categoryMix 中占比最高的一类，供快速筛选
+            index: Text
+        nightActive(夜间活跃): Text
+            desc: 格内是否有夜间营业 POI。夜游、夜宵、深夜抵达三类场景直接按本字段筛格子，比逐个查 POI 的营业时间快一个数量级
+            index: Text
+            constraint: NotNull,Enum="是,否,未知"
+        collectionCoverage(采集覆盖状态): Text
+            desc: 本格的采集完整度自评。用于发现采集漏洞而非描述真实密度。 判定必须两步走，不能只看密度：① 密度断崖只是【可疑信号】—— 实测高德快照中乌当区仅 528 个 POI 而相邻各区为 5000 至 17000；② 可疑不等于漏采，必须拿地图厂商的周边检索逐格交叉验证才能定性。 实测：对据此标为「疑似漏采」的乌当区格子三轮抽样共 132 格（周边检索半径 531 米，并校验返回 POI 确实落在本格内），真缺口约 17%（单轮 11.7% 与 24.1%，置信区间重叠），其余约八成地图厂商自己也返回 0 个 POI —— 那里是真荒地不是漏采。 但少数派不可忽略：抽出的真缺口里多数是农家乐、风味馆、烧烤这类旅游相关餐饮，正是本图谱最需要的品类。 所以本字段的正确用法是【分诊而非定论】：「疑似漏采」只表示该格值得逐格核验，不表示已认定漏采；只凭密度比较就整区翻案，会把有实据的缺口连同误判一起抹掉。 反过来缺了本字段，真正的漏采又会被当成「那一带本来就没东西」。两种误判方向相反，代价都很高
+            index: Text
+            constraint: NotNull,Enum="充分,偏低,疑似漏采,未采"
+        poiCountAt(POI数统计时点): Text
+            desc: poiCount 与 categoryMix 的统计时刻。POI 会增减，这两个字段是快照不是现值
+            index: Text
+        sourceId(来源ID): Text
+            desc: 该实体的主来源，指向 DataSource.id。多源融合时它只代表主源，逐字段的出处见 fieldSources
+            index: Text
+            constraint: NotNull
+        batchId(采集批次): Text
+            desc: 指向 CollectionBatch.batchId；未登记批次的数据不得入库
+            index: Text
+        externalIds(外部标识): Text
+            desc: 跨源去重键。形如 amap:B0FFH..., baike:956442。同一对象在多次采集或多来源出现时，必须先按本字段查重命中已有实体再决定新建或更新；不得用名称拼 id 去重 —— 实测同一词条出现在两个采集目录时会产生重复实体
+            index: Text
+            constraint: NotNull,MultiValue
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】唯一的对外闸门。置为 ingestable 必须同时满足四条，缺一不可，且四条全部可由本 schema 的字段机器判定，不靠人记规则：① lastVerifiedAt 非空；② 每个对外字段的 fieldSources 指向的 DataSource.publishable=是，百科等不可发布来源写的字段必须先由官方源覆盖或人工确认；③ 该字段有断言级 SourceEvidence（带 field 与 quote），词条级证据不算；④ updatedAt 不晚于 lastVerifiedAt —— 核验之后内容又变过的必须自动退回 needs_review，否则改了价照样对外。needs_review 只进人工队列不对外；archived 为软删除，引用保留但不出现在任何对外查询 —— 删除一个景区平均波及 34 条引用，其中 18 条是 targetId 软引用不在图上，硬删会留下指向空对象的知识
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        contentHash(内容哈希): Text
+            desc: 对业务字段与关系一并求哈希；哈希不变时不得推进 updatedAt，否则无法回答「哪些真的变了」。必须把关系算进去 —— 关系是内容不是元数据。漏算会让「第一遍灌实体、第二遍补关系」的分步挂载中，第二遍因指纹未变被判为未变而整个吞掉，图上永远建不起边
+            index: Text
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            desc: 内容变更时刻，不是抓取时刻
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            desc: 最近一次抓到本记录的时间。contentHash 未变时只推进本字段、不推进 updatedAt —— 否则重复抓取会把「最近更新」刷屏，人工复核队列也会被无变化的记录淹没
+            index: Text
+        referencedBy(被引用数): Integer
+            desc: 指向本实体的硬引用与软引用总数，入库时由灌数器维护。删除或下线前先读本字段判断波及面；为 0 才可安全硬删，否则一律走 dataQuality=archived 软删除
+        archivedAt(归档时间): Text
+            desc: 软删除时刻。归档后实体与引用全部保留，仅从对外查询中过滤，证据与历史知识仍可追溯
+            index: Text
+        archiveReason(归档原因): Text
+            desc: 如「景区永久关闭」「重复实体已合并至 XX」。合并去重时被并方也走归档而非删除，以便回查
+            index: Text
+
+PlaceAlias(地名索引): EntityType
+    desc: 把游客说的地名解析到具体实体与一组 H3 网格的统一入口。 游客问的是「甲秀楼附近有什么」而不是「8841a4b2c1fffff 附近有什么」，但地名到网格之间隔着三种完全不同的语义：POI 级是以点为中心的半径，片区级是该片区覆盖的一片格子，行政区级是整个辖区。 没有本实体时，每个查询方都要自己实现一遍匹配与消歧，结果必然各不相同；而同名冲突（实测「金华镇」既是街道乡镇又是商圈名）会让不同实现给出不同答案。 本实体不存储业务事实，只存「名字 → 目标实体 → 解析方式」的映射。
+    properties:
+        id(标识): Text
+            index: Text
+            constraint: NotNull
+        alias(地名): Text
+            desc: 游客可能说出的名字，含简称、旧名、错别字常见写法。同一个目标实体可以有多条本实体记录
+            index: TextAndVector
+            constraint: NotNull
+            chunk: whole
+        normalizedAlias(归一后地名): Text
+            desc: 去除「市/区/县/街道/镇/乡」等行政后缀与括号注释后的主名，用于宽松匹配。如「贵阳市南明区」归一为「南明」
+            index: Text
+        targetType(目标类型): Text
+            desc: 取值为本 schema 的实体类型英文名
+            index: Text
+            constraint: NotNull,Enum="ScenicArea,Area,Zone,AdminArea,FoodAndBeverage,Accommodation,Shopping,TransitHub,TransitStop,TransitFacility,Facility"
+        targetId(目标ID): Text
+            index: Text
+            constraint: NotNull
+        resolveMode(解析方式): Text
+            desc: 决定「附近」怎么算，四种语义不可混用：点半径=以目标坐标为中心按查询半径算 k 环，适用于单个 POI；片区格集=取目标 Zone 的 h3Cells 再按需外扩一环，适用于商圈；辖区格集=取 AdminArea 的 boundaryH3Cells，通常上千格，只适合「XX区有什么」而不适合「XX区附近有什么」；地理编码兜底=图谱里没有对应实体，靠地图厂商的地理编码取坐标后按点半径处理。 用错语义的后果：拿辖区格集去答「附近」，会把整个区的 POI 都算成附近。 兜底那一种为什么必要：实测「喷水池」是贵阳最常被提及的地名之一（真实语料 450 次），但它在地图厂商数据里没有独立商圈实体，只作为平台别名出现在北京路、中华北路等 5 个相邻商圈的标签里，5 个候选优先级相同、解析随机 —— 而地理编码能直接给出它的准确坐标。这类「人人都在说但没有实体」的地名，只能靠兜底
+            index: Text
+            constraint: NotNull,Enum="点半径,片区格集,辖区格集,地理编码兜底"
+        geocodeLat(兜底纬度): Float
+            desc: resolveMode=地理编码兜底 时由地图厂商地理编码给出的坐标。图谱里没有对应实体，这对坐标就是唯一定位依据，按点半径处理
+            optional: true
+        geocodeLng(兜底经度): Float
+            optional: true
+        targetCell(目标所在格): Text
+            desc: 【派生字段，每次建格重算】目标实体坐标所在的 R8 网格 id。 为什么要在地名索引里冗余一份格子：resolveMode=点半径 的条目占全索引 97%，而它们的坐标存在目标实体上（ScenicArea/FoodAndBeverage/…）——查一个地名要先查索引拿 targetId、再查目标实体拿坐标、再算格子，三跳。 索引存在的意义就是把「这个名字在哪」一次答完，不带格子的名字索引是半个索引。 resolveMode=片区格集/辖区格集 时本字段存目标格集的重心格，只用于粗排距离，圈选仍以 Zone.h3Cells / AdminArea.boundaryH3Cells 为准
+            index: Text
+            optional: true
+        targetCellR9(目标所在细格): Text
+            desc: 【派生字段】R9 网格 id，174 米级。点半径查询在 R9 上算 k 环再上卷到 R8，比直接在 R8 上算少圈进约一环的无关区域
+            index: Text
+            optional: true
+        cellComputedAt(落格时间): Text
+            desc: 【派生字段】本条目落格的时间。目标实体坐标变动或网格重建后本字段过期，与 GeoCell.poiCountAt 同批刷新
+            index: Text
+            optional: true
+        adminScope(归属行政区): AdminArea
+            desc: 本地名所属的行政区，用于同名消歧。实测「金华镇」既是观山湖区的街道乡镇又是商圈名 —— 只有名字不足以定位，必须带上行政区上下文
+        priority(优先级): Integer
+            desc: 同一地名命中多个目标时的排序。数值大者优先。景区通常应高于同名商圈 —— 游客说「青岩」多半指古镇而非商圈标签。 解析时必须按优先级降序取【第一个能定位的】候选，而不是取最高优先级的候选：优先级表达的是「这个名字多半指谁」，能不能定位是另一回事。 实测「花果园」最高优先候选是花果园街道（优先级 65），但该街道在地图厂商数据里尚未单独划界、名下 0 格，取它等于解析失败；降序落到商圈候选（优先级 55）才拿得到格子。 取最高优先级后不做兜底，会让 8 个无格街镇名下的 16 条地名全部解析不出结果
+            constraint: NotNull
+        mentionCount(真实提及次数): Integer
+            desc: 本说法在真实游客内容中被提及的次数，来自帖子与问答语料的全文统计。用于在同类型别名内部排序 —— 官方名与平台别名的 priority 是按类型拍的，谁更常被说出口只有语料知道。实测「黔灵」被提及 628 次而某些官方全称一次都没有，召回时前者应当优先
+            optional: true
+        aliasSource(别名来源): Text
+            desc: 本别名从哪来。官方名=实体自身 name；平台别名=地图或 OTA 的叫法；用户问法=真实语料中出现过的说法，证据最强但需人工确认；人工补录=去修饰、拆复合名等规则生成。 注意「用户问法」需先剔除通用词：「公园酒店」去掉修饰后剩「酒店」被提及 2,221 次，但那是品类不是地名，当成某家酒店的别名会让所有含「酒店」的问句都命中它
+            index: Text
+            constraint: NotNull,Enum="官方名,平台别名,用户问法,人工补录"
+        status(状态): Text
+            index: Text
+            constraint: NotNull,Enum="启用,停用,待确认"
+        sourceId(来源ID): Text
+            index: Text
+            constraint: NotNull
+        externalIds(外部标识): Text
+            desc: 去重键，形如 alias:甲秀楼:ScenicArea:sa_xxx。同一别名指向同一目标只应有一条
+            index: Text
+            constraint: NotNull,MultiValue
+        batchId(采集批次): Text
+            index: Text
+        dataQuality(数据质量): Text
+            desc: 【共享词表 DataQuality】待确认的别名不得进入对外解析
+            index: Text
+            constraint: NotNull,Enum="ingestable,needs_review,rejected,archived"
+        createdAt(首次入库时间): Text
+            index: Text
+        updatedAt(内容更新时间): Text
+            index: Text
+        lastSeenAt(最近抓取时间): Text
+            index: Text
+        contentHash(内容哈希): Text
+            index: Text

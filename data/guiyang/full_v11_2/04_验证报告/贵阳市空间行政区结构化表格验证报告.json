@@ -1,0 +1,210 @@
+{
+  "generatedAt": "2026-09-17T04:05:07.527Z",
+  "source": {
+    "standardizedData": "贵阳市全部标准化数据.json",
+    "graphData": "贵阳市知识图谱节点关系数据.json",
+    "schema": "贵州城市知识图谱Schema解析.json",
+    "officialAdminRegistry": "贵阳市官方行政区原始数据.json"
+  },
+  "workbook": {
+    "file": "贵阳市空间行政区数据_结构化总表.xlsx",
+    "path": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/01a09fcc-e18b-7263-b908-c316ad04e02a/贵阳市空间行政区数据_结构化总表.xlsx",
+    "bytes": 1897631,
+    "sha256": "3547bc6bdce0d0a03e697a4f69a9e6e4475778d38b6f7d20b5a663cb5385da21",
+    "sheets": [
+      "空间摘要",
+      "城市",
+      "行政区",
+      "商圈片区",
+      "H3网格样本",
+      "地名别名样本",
+      "关系汇总样本",
+      "官方区划审核",
+      "字段字典"
+    ],
+    "entityRows": {
+      "City": 1,
+      "AdminArea": 157,
+      "Zone": 171,
+      "GeoCell": 3714,
+      "PlaceAlias": 3247
+    },
+    "relationDetailCsv": "贵阳市空间行政区关系明细表.csv",
+    "relationSampleRows": 1556
+  },
+  "entities": {
+    "City": {
+      "chineseName": "城市",
+      "records": 1,
+      "columns": 31,
+      "csv": "贵阳市城市结构化表.csv",
+      "spatiallyAddressable": 0,
+      "dataQuality": {
+        "needs_review": 1
+      }
+    },
+    "AdminArea": {
+      "chineseName": "行政区",
+      "records": 157,
+      "columns": 31,
+      "csv": "贵阳市行政区结构化表.csv",
+      "spatiallyAddressable": 148,
+      "dataQuality": {
+        "needs_review": 157
+      }
+    },
+    "Zone": {
+      "chineseName": "商圈片区",
+      "records": 171,
+      "columns": 34,
+      "csv": "贵阳市商圈片区结构化表.csv",
+      "spatiallyAddressable": 170,
+      "dataQuality": {
+        "needs_review": 171
+      }
+    },
+    "GeoCell": {
+      "chineseName": "H3网格",
+      "records": 13011,
+      "columns": 44,
+      "csv": "贵阳市H3空间网格结构化表.csv",
+      "spatiallyAddressable": 13011,
+      "dataQuality": {
+        "needs_review": 13011
+      }
+    },
+    "PlaceAlias": {
+      "chineseName": "地名别名",
+      "records": 40106,
+      "columns": 24,
+      "csv": "贵阳市地名别名索引结构化表.csv",
+      "spatiallyAddressable": 40106,
+      "dataQuality": {
+        "ingestable": 38433,
+        "needs_review": 1673
+      }
+    }
+  },
+  "framework": {
+    "officialAdminVerified": 157,
+    "adminLevels": {
+      "市": 1,
+      "区县": 10,
+      "街道乡镇": 146
+    },
+    "h3Resolutions": {
+      "7": 1714,
+      "8": 11297
+    },
+    "adminAmbiguousCells": 276,
+    "zoneAssignmentMethods": {
+      "未判定": 10602,
+      "POI标签众数": 1197,
+      "邻格传播": 1163,
+      "逆地理编码": 49
+    },
+    "aliasTargetTypes": {
+      "FoodAndBeverage": 24238,
+      "Accommodation": 6012,
+      "TransitFacility": 5273,
+      "TransitStop": 1938,
+      "Area": 1898,
+      "Zone": 419,
+      "AdminArea": 296,
+      "Facility": 17,
+      "ScenicArea": 15
+    },
+    "aliasesWithR8AndR9": 40106
+  },
+  "totals": {
+    "entities": 53446,
+    "relations": 178426,
+    "relationCounts": {
+      "COLLECTED_IN": 53446,
+      "SOURCED_FROM": 53399,
+      "REF_PARENT_ADMIN_AREA": 156,
+      "REF_LOCATED_IN_ADMIN_AREA": 13182,
+      "REF_PARENT_CELL": 11297,
+      "REF_TOWNSHIP_ID": 4451,
+      "REF_DOMINANT_ZONE": 2409,
+      "REF_ADMIN_SCOPE": 40086
+    },
+    "fieldDictionaryRows": 164
+  },
+  "validation": {
+    "passed": true,
+    "checksPassed": 11,
+    "checksTotal": 11,
+    "checks": [
+      {
+        "name": "实体总数",
+        "passed": true,
+        "detail": "53446"
+      },
+      {
+        "name": "空间实体关系行数",
+        "passed": true,
+        "detail": "178426"
+      },
+      {
+        "name": "关系样本覆盖全部类型",
+        "passed": true,
+        "detail": "{\"COLLECTED_IN\":200,\"SOURCED_FROM\":200,\"REF_PARENT_ADMIN_AREA\":156,\"REF_LOCATED_IN_ADMIN_AREA\":200,\"REF_PARENT_CELL\":200,\"REF_TOWNSHIP_ID\":200,\"REF_DOMINANT_ZONE\":200,\"REF_ADMIN_SCOPE\":200}"
+      },
+      {
+        "name": "实体ID唯一",
+        "passed": true,
+        "detail": "53446"
+      },
+      {
+        "name": "关系源全部存在",
+        "passed": true,
+        "detail": "178426"
+      },
+      {
+        "name": "官方区划全部核验",
+        "passed": true,
+        "detail": "157"
+      },
+      {
+        "name": "地名一跳定位完整",
+        "passed": true,
+        "detail": "40106"
+      },
+      {
+        "name": "H3骨架分辨率",
+        "passed": true,
+        "detail": "{\"7\":1714,\"8\":11297}"
+      },
+      {
+        "name": "工作簿分层样本覆盖",
+        "passed": true,
+        "detail": "{\"GeoCell\":3714,\"PlaceAlias\":3247}"
+      },
+      {
+        "name": "公式错误扫描",
+        "passed": true,
+        "detail": "0"
+      },
+      {
+        "name": "工作簿导出",
+        "passed": true,
+        "detail": "1897631"
+      }
+    ],
+    "failures": [],
+    "formulaErrorCount": 0
+  },
+  "previewFiles": [
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/01_空间摘要.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/02_城市.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/03_行政区.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/04_商圈片区.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/05_H3网格样本.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/06_地名别名样本.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/07_关系汇总样本.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/08_官方区划审核.png",
+    "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/spatial_admin_structured_20260916/previews/09_字段字典.png"
+  ],
+  "summaryInspect": "{\"kind\":\"table\",\"sheet\":\"空间摘要\",\"address\":\"A1:J30\",\"rows\":30,\"cols\":10,\"values\":[[null,null,null,null,null,null,null,null,null,null],[\"贵阳市空间行政区数据结构化总表\",null,null,null,null,null,null,null,null,null],[\"城市、行政区、商圈片区、H3 网格和地名别名按 Schema 完整字段导出；官方区划来源单独审核。\",null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null],[\"Schema实体\",\"中文名称\",\"记录数\",\"字段列数\",\"可空间寻址\",\"needs_review\",\"ingestable\",\"寻址覆盖率\",\"主要空间方式\",\"说明\"],[\"City\",\"城市\",1,31,0,1,0,0,\"城市空间配置\",\"工作簿全量\"],[\"AdminArea\",\"行政区\",157,31,148,157,0,0.9426751592356688,\"层级/边界关系\",\"市/区县/街镇三级，全量\"],[\"Zone\",\"商圈片区\",171,34,170,171,0,0.9941520467836257,\"h3Cells\",\"工作簿全量\"],[\"GeoCell\",\"H3网格\",13011,44,13011,13011,0,1,\"H3 R8/R7 单元\",\"全量见 CSV；工作簿分层样本 3714 条\"],[\"PlaceAlias\",\"地名别名\",40106,24,40106,1673,38433,1,\"targetCell + targetCellR9\",\"全量见 CSV；工作簿按目标类型样本 3247 条\"],[null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null],[\"框架检查项\",\"满足数\",\"总数\",\"比例\",\"说明\",null,\"关系类型\",\"数量\",\"用途\",null],[\"官方行政区已核验\",157,157,1,\"民政区划参照\",null,\"COLLECTED_IN\",53446,\"采集批次\",null],[\"H3 R8 骨架格\",11297,13011,0.8682653139651064,\"细网格骨架\",null,\"REF_ADMIN_SCOPE\",40086,\"地名解析行政区范围\",null],[\"H3 R7 父格\",1714,13011,0.13173468603489355,\"粗网格骨架\",null,\"REF_DOMINANT_ZONE\",2409,\"网格主导商圈\",null],[\"行政区边界歧义格\",276,13011,0.021212819921604797,\"分区统计须按 POI 逐条计算\",null,\"REF_LOCATED_IN_ADMIN_AREA\",13182,\"商圈/网格所属行政区\",null],[\"已判定商圈格\",2409,13011,0.18515102605487666,\"POI众数/逆地理/邻格传播\",null,\"REF_PARENT_ADMIN_AREA\",156,\"行政区父子层级\",null],[\"地名可一跳定位\",40106,40106,1,\"R8 + R9 目标格\",null,\"REF_PARENT_CELL\",11297,\"R8 网格归属 R7 父格\",null],[\"地名可对外使用\",38433,40106,0.9582855433102279,\"其余进入复核队列\",null,\"REF_TOWNSHIP_ID\",4451,\"网格街镇实体引用\",null],[null,null,null,null,null,null,\"SOURCED_FROM\",53399,\"字段来源\",null],[null,null,null,null,null,null,null,null,null,null],[\"使用约定\",\"说明\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"GeoCell\",\"骨架格保持稳定。挂载新 POI 时只更新 poiCount、分类和来源等派生字段。\",null,null,null,null,null,null,null,null],[\"adminAmbiguous\",\"行政边界歧义格不能按格子汇总行政区数量，必须回到 POI 的 locatedInAdminArea。\",null,null,null,null,null,null,null,null],[\"PlaceAlias\",\"按优先级选择第一个可定位候选，从 targetCell 一跳到格，再按查询半径扩展邻格。\",null,null,null,null,null,null,null,null],[\"Zone\",\"商圈是空间检索标签，不等于行政区；zoneAssignMethod 的不同证据强度不能混用。\",null,null,null,null,null,null,null,null],[\"来源\",\"实体源为标准化全量数据；官方区划审核源为《贵阳市官方行政区原始数据.json》。\",null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null]]}"
+}

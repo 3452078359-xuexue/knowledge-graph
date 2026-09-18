@@ -1,0 +1,587 @@
+{
+  "algorithm": "SHA-256",
+  "generatedAt": "2026-09-16T22:52:33.196425-07:00",
+  "fileCount": 116,
+  "files": [
+    {
+      "file": "01_Schema/CityTourism.schema",
+      "bytes": 254268,
+      "sha256": "fe88d2f237d45d48381c51a0c99b7b49ceb18c851849c40f829584f09fca593a"
+    },
+    {
+      "file": "01_Schema/贵州城市知识图谱Schema平台版.json",
+      "bytes": 373157,
+      "sha256": "868bb1d27d2e96d196f738a8e611561906344938743054574f6b9a0bc4c8cc03"
+    },
+    {
+      "file": "01_Schema/贵州城市知识图谱Schema解析.json",
+      "bytes": 444384,
+      "sha256": "0bbb4ab94dcb14af1bb7bed3567c0853f1bbc04b67bab66ab4a3b11c8dc3f863"
+    },
+    {
+      "file": "01_Schema/贵州城市知识图谱技术设计.md",
+      "bytes": 21781,
+      "sha256": "3d2885f50db14b5733575baf8b0a86b2dfb2fbbc7bc3fca04085708812965a24"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/README.md",
+      "bytes": 2304,
+      "sha256": "29d96eefb18ff2f3bc28641654989295edf7506889fc6f10643b5b856b37afe4"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市H3空间网格数据.json",
+      "bytes": 16099638,
+      "sha256": "c2a7090054605ed01773213316e5b3c012f3a54c8b6c16c6c91097b9748e3c2e"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市H3空间网格结构化表.csv",
+      "bytes": 6628764,
+      "sha256": "d5d58dab45e5d626036946f7ad36f4ff049215bbeec1574aa019dd6cb8a07da7"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市H3网格框架原始数据.json",
+      "bytes": 14135916,
+      "sha256": "7d89c5081ed7bcf17449cfd75f242a2b54334543c098f8b997122287cb419e5e"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市商圈框架原始数据.json",
+      "bytes": 197981,
+      "sha256": "16ce68afb72aa7acc8196270c780e5ec42e25c9ae1d965ee89b1a50ba1ebdaf9"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市商圈片区数据.json",
+      "bytes": 246124,
+      "sha256": "429684446a17dd95c4d902f445fc6cf6199ad08255dcbe9986be7956698d939e"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市商圈片区结构化表.csv",
+      "bytes": 149019,
+      "sha256": "1842ad83afaf12f6ec918b2a56694a39a20476102deb84671190af0471f1d469"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市地名别名索引数据.json",
+      "bytes": 30640303,
+      "sha256": "d02ecfed6aea2006f145c6925d13aa3150ba491d4716eb0ae3dee3e5752c201f"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市地名别名索引结构化表.csv",
+      "bytes": 18758403,
+      "sha256": "3e025dbb902d24f6ba9ed833e4fc6fcce714828825c86c8900602baa09d1237c"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市城市数据.json",
+      "bytes": 686,
+      "sha256": "da8e7eab7e542f6b85e8d5f695bf5d066254e3b2c6ab58a13e38015599ba7a3b"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市城市结构化表.csv",
+      "bytes": 595,
+      "sha256": "ccaa11224e7ce4a00e0c855386ea175463258a46df7c4970992c4a75b861ad0c"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市官方行政区原始数据.json",
+      "bytes": 448222,
+      "sha256": "d07bffc6a75a00925f4956d5125e0a1b159411610f0304d94dd921f3dd431563"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市官方行政区审核表.csv",
+      "bytes": 355160,
+      "sha256": "03628ba6e4d90fe2ac8fa50b808a5366c1327eb450933c0933d4337db513b453"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市空间框架完整数据.json",
+      "bytes": 43852528,
+      "sha256": "eb81650dca6d1a7d5bea6f68fc744f761b02c200f8b5d7b3b844853971f7a9b2"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区关系明细表.csv",
+      "bytes": 28900969,
+      "sha256": "3ebdc686cd8769dc8fb69d94c5484e8093f854f44ac8bffb59355cb63c1ae153"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx",
+      "bytes": 1897631,
+      "sha256": "3547bc6bdce0d0a03e697a4f69a9e6e4475778d38b6f7d20b5a663cb5385da21"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市行政区数据.json",
+      "bytes": 373440,
+      "sha256": "21df66e39f60236c5d19f49fcb6fa5a37006a0b5be6d56e0c7c4fbd8c411c4a4"
+    },
+    {
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市行政区结构化表.csv",
+      "bytes": 366419,
+      "sha256": "349fefaa5ac8a39f7e50cc0fcbe68aa4c7c1204488cde248d0e88180514b82fe"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/README.md",
+      "bytes": 1672,
+      "sha256": "efea936f78d6ccad9697ff45d85743e79ebbd5fb33482ebac4fbaf7d903ab601"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市子景点数据.json",
+      "bytes": 3761350,
+      "sha256": "f1d3949ac76d1fb7e9a9c6d2c76dfe40eac0e5d4304c2c21d80ad63127626fbe"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市子景点结构化表.csv",
+      "bytes": 3078378,
+      "sha256": "c62fce219b4a9f173ca539f5e97fb28cd62832834c7b030424a6d7cc13a23e3b"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区关系明细表.csv",
+      "bytes": 2479083,
+      "sha256": "9750b29c6fc39f1e5d61b7da374b19c7c31ec0c0ec0a95f902fc42c6899d9667"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区数据.json",
+      "bytes": 52130,
+      "sha256": "93209c03e1629f3facbdddf59bca44ef84a3560ba44af88e1e200cb4a3e7775b"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区数据_结构化总表.xlsx",
+      "bytes": 1363437,
+      "sha256": "bcf52a6303eab6ce59cf17b624019b0289fbbf90d5c217b7a57439dd4709953a"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区百度百科质量审核表.csv",
+      "bytes": 44000,
+      "sha256": "35edc58eb5cba73c68c60b697bb6f67431c6dd641d57903735e93c07a92c4408"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区百度百科质量报告.json",
+      "bytes": 51967,
+      "sha256": "212be81bc08c52b5835ef4d6e138c7300966b8aaced0dc6c050a7005859c4f8d"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区百度百科采集数据.json",
+      "bytes": 550868,
+      "sha256": "450c76c205f9866cc24e35ab1a9e7c350dd8090fbe30c516bed8e418d795903c"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区百科知识单元表.csv",
+      "bytes": 14440,
+      "sha256": "b303a832a6eec5897278d310f984faeb036121b327a77cb5d0cafe6aaec71e7d"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区百科知识登记表.json",
+      "bytes": 25213,
+      "sha256": "1528aea6b302534711d8c5b3d410a3766e19fa1c760cd14e12c1b6b551321353"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区结构化表.csv",
+      "bytes": 43317,
+      "sha256": "5980ed6583530e9c8e04fc678a3b8ecb084d1cd799f1e587f2aeb9db056d6113"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区设施数据.json",
+      "bytes": 26123,
+      "sha256": "3a68f1b9808063dd3cb5300ec6d857cb6729b61b0ddd16653a9838f2f07ab606"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区设施结构化表.csv",
+      "bytes": 21433,
+      "sha256": "db3423600d14114a02cd294427699b02560eb5fb4efc1c012275c54a4df3b238"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区高德核验登记表.csv",
+      "bytes": 17481,
+      "sha256": "1ff7aceffc4676bc02af089ad5b71516854772d2c14c11c2201e8688a3e18999"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区高德登记表.json",
+      "bytes": 21885,
+      "sha256": "cf4919d38ab1da9a820c88e028bf9be5bed778e8257ed10bb409bc94bdeeb84d"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市游览路线数据.json",
+      "bytes": 1936,
+      "sha256": "10b977fc719216788b578b37d008f01726d0bc5fc859d7306899cffefee937bc"
+    },
+    {
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市游览路线结构化表.csv",
+      "bytes": 1149,
+      "sha256": "ffe2f87321149171a886b39232d4355b73a2327869e8a7d2f7dfbf7a3c7c6532"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/README.md",
+      "bytes": 1134,
+      "sha256": "90061ef0c12388d2391c79c78175be40cf3d1be8e23152429536b53a1ad9698e"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市数据来源使用规则.json",
+      "bytes": 193,
+      "sha256": "50f634e3d173fbc25160f5eec16e9855131cd444480d408d3f440c8cc49c2c32"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_24238家.xlsx",
+      "bytes": 8290581,
+      "sha256": "02b310fbf57f02fe6584a1e5b924f9c381fdc660455132c1e9f1bad4f02d9fe7"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_关键字段补全_24238家.xlsx",
+      "bytes": 13600526,
+      "sha256": "aa003da8c9c2961435e91d4a5d32c43cb2d9cc83c0556cb0f02686917090db04"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市美食POI数据.json",
+      "bytes": 95154958,
+      "sha256": "3e9eea42ca74da5001e477cdf79e96bdfcf55a96e0f5145426fef45cc2504368"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市菜品数据.json",
+      "bytes": 3664,
+      "sha256": "408128120e93de8b819448ab27c95ca79c84ca8509c8a874f4f6ed5e75c4fa71"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市高德美食原始采集数据.json",
+      "bytes": 53665534,
+      "sha256": "a5d742a4ac1248fba09c41e896db4ece81fc78b5f3aabc3b1fd143f57f956cb1"
+    },
+    {
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市高德美食采集说明.json",
+      "bytes": 987,
+      "sha256": "aa3205e4cfc365e9418f265cb7956fa208436d5e7aa4aaae8e9c93b0ebd1dad8"
+    },
+    {
+      "file": "02_Data数据/04_贵阳市酒店数据/README.md",
+      "bytes": 1297,
+      "sha256": "306f3858c661bddb70b42f2d7e8a9f418549bd0edd40b3f7a14d23b6d16a0b5d"
+    },
+    {
+      "file": "02_Data数据/04_贵阳市酒店数据/贵阳市携程酒店数据.csv",
+      "bytes": 22459056,
+      "sha256": "d84670433f36f3e867801a158e26bebec6a85d8d359dbd25f4c1e6afa921c62d"
+    },
+    {
+      "file": "02_Data数据/04_贵阳市酒店数据/贵阳市酒店住宿数据.json",
+      "bytes": 30770888,
+      "sha256": "d577051e6ae84df572cd143c4a8ec82f38e45b48b50cf4fa7c73b51d4549d63d"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/README.md",
+      "bytes": 1760,
+      "sha256": "afa9ee2ba78ce2b448aa5ce53dde3df53447928f8f27b1b52fddf5a26de7a102"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通关系明细表.csv",
+      "bytes": 13650005,
+      "sha256": "e511d2c9d38cfde39050c4e38da2405222b509e46ecaf191fb4cb47186d622a4"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx",
+      "bytes": 7757348,
+      "sha256": "7240e36438b38d07e18c75963b6ef19c9295943323c5659acac7eebdbecc522a"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通枢纽数据.json",
+      "bytes": 12248,
+      "sha256": "cbe736231196da07cbdfaebcb7e352b7ef0f37748ee7755edd857b29f7b766ac"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通枢纽结构化表.csv",
+      "bytes": 10921,
+      "sha256": "79c719adee7ea7ee0ba5b18827248ec3f9a03ef88b489565a5b6ea05f562aac4"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通票价规则数据.json",
+      "bytes": 39956,
+      "sha256": "01d57d8b41cba2bfc8cce0b9a403b6bfbbaa6c8659e48700e77e4fb0fecbbd8e"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通票价规则结构化表.csv",
+      "bytes": 33910,
+      "sha256": "c1492a1f81d7a472814cd17737028a35d519d028a80aeb220b3c2b3cb7a5b369"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通设施数据.json",
+      "bytes": 10242260,
+      "sha256": "2322abe49dccc266f0a800ecfcaac81dbcf8842658bd151d7e30559b7df3efa2"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通设施结构化表.csv",
+      "bytes": 8396037,
+      "sha256": "eee6df48ad06ce8cd797a62030a7da61b8428b32ae6d1fd622e39ce9d0453d3d"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通路线数据.json",
+      "bytes": 4900469,
+      "sha256": "96f0563d2b2a2c9a3c6253e0c0c34606f8437e67ff7406b0f2f3347a9f43cb41"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通路线结构化表.csv",
+      "bytes": 4124582,
+      "sha256": "89500f5e5e17522ae89b61cea8bc04b58e16a2d94c996392435cbc43e3f9bb4a"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市公交站点数据.json",
+      "bytes": 9543623,
+      "sha256": "8f77dc036d774cb209c8301b7caae1b6f0dd747d6bdfedf3e9e89b9fb6b45609"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市公交站点结构化表.csv",
+      "bytes": 7250518,
+      "sha256": "69febe93c325daf977802deac965529a43241fec52522709f75d9279e61bf2a7"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市公交线路数据.json",
+      "bytes": 626039,
+      "sha256": "d4614503592139f3950fd056b89636c1c69352d33cfdd6abf3e853368bb5d9f9"
+    },
+    {
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市公交线路结构化表.csv",
+      "bytes": 491534,
+      "sha256": "a7cf29b385df9ef8aef66f346bcf9bf20f42f853fe5408ef189a897dd1d89426"
+    },
+    {
+      "file": "02_Data数据/06_贵阳市购物商品数据/README.md",
+      "bytes": 335,
+      "sha256": "78286d1be4e5f431f722edddd8abe27309ae7da5eb3cc878efe8b25c55087f73"
+    },
+    {
+      "file": "02_Data数据/06_贵阳市购物商品数据/贵阳市旅游商品数据.json",
+      "bytes": 254,
+      "sha256": "ca2b726b64be81ce80584ece279cf8c2656af72acadd35fee116de3828f4ef2b"
+    },
+    {
+      "file": "02_Data数据/06_贵阳市购物商品数据/贵阳市购物场所数据.json",
+      "bytes": 255,
+      "sha256": "be04f09e68be2385a8211ad0066303090600fc70a1a3ead04096dff6cc924fc2"
+    },
+    {
+      "file": "02_Data数据/07_贵阳市知识问答数据/README.md",
+      "bytes": 462,
+      "sha256": "3f83a4ae71665b6aff5f40a9e2a1d3b1db3555087579d917f1c6caca55eec914"
+    },
+    {
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市常见问答数据.json",
+      "bytes": 314316,
+      "sha256": "1543b457d698e1dea499c3dc611810bf5241ad79e064236128fafce133bae77e"
+    },
+    {
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市查询意图数据.json",
+      "bytes": 115437,
+      "sha256": "38c607605efbb8e73647b1587991972b3ce7cc51c88c36a0b4808e1a8bce45f9"
+    },
+    {
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市游客场景数据.json",
+      "bytes": 22616,
+      "sha256": "7bd16509543036531f73570c527a33932b1b10fec9c3a450a148e975d86ddec9"
+    },
+    {
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市知识单元数据.json",
+      "bytes": 259564,
+      "sha256": "0fdef9ebaaa7d1b2f11dc7b42e0958feea1b85b180965dffb9ddbbdaeaaedcbc"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/README.md",
+      "bytes": 664,
+      "sha256": "76fb5d4cf29ea7fab00f50bfad6e30123bca95cbd3b3127576264fa2d2284cd3"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市动态覆盖数据.json",
+      "bytes": 255,
+      "sha256": "19007705b2d0ea59b6b8347f354daf11405f251956984ba4e1cb29d5877a55c3"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市原始来源回答数据.json",
+      "bytes": 480475,
+      "sha256": "a1cbf9f391f99b21ca5da2f35e40d1a2748a7e1a3a34e911abdff83f3c78dbd4"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市审核任务数据.json",
+      "bytes": 33442,
+      "sha256": "20345c6680e254322ada1d085f0337165ba3f586285906e8ea3260d8a95b861f"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市数据来源数据.json",
+      "bytes": 6452,
+      "sha256": "cb89361fbafca20cf38c0dd6cbb80935b821138b0ae4a18a39d7ee5547b0f512"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市来源证据数据.json",
+      "bytes": 5539743,
+      "sha256": "1870ae6a3f201bfe72bcc871a7624b11904b69704434c69317ccbbfee7c84a70"
+    },
+    {
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市采集批次数据.json",
+      "bytes": 17317,
+      "sha256": "5f46c022e70edcdabc3e3114731393c1ba26f7d0590e919c492820554d43bf51"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+      "bytes": 459666,
+      "sha256": "3ba840f9466fedc4a8ca9312dc53e2ba6b3a3e11c6aa8d675b844362b3e2c132"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/01_正式数据_当前唯一版/03_小红书帖子知识库.csv",
+      "bytes": 4260223,
+      "sha256": "8682c41ab53480b79ae1ec86a20689ec90d4b664c13db5bed7682f302c8e78be"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
+      "bytes": 4652085,
+      "sha256": "a8c8db57b2cb7b23c4726f9d1c6daeafefbaa68f7d93f95e2eb80bc1352d12c1"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
+      "bytes": 2173399,
+      "sha256": "846d95ae5027fc70606ebfbc0f69a591993a72e152d3690b3b18a9f2b220afd8"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/04_点点AI_全部问题与问答.csv",
+      "bytes": 252093,
+      "sha256": "3d0b83f44a5b33ac5f1600b610cb6af87cb190f4a4295f1a6113e65f6fd57e0d"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI候选审核表.csv",
+      "bytes": 590234,
+      "sha256": "056bc0b88c1491ec84290eb0ca487429fcfac5d35870a2134aca476a6104348d"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI证据审核表.csv",
+      "bytes": 2380832,
+      "sha256": "9b2710872047c16e916cdd015de584995c9e1b036ced122288190cf58743de6e"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+      "bytes": 450508,
+      "sha256": "60a888c96cee8f273b5f74892d416b77a9fa48b6d2d28a89b07bc7493593f04a"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/01_正式数据_当前唯一版/03_小红书帖子知识库.csv",
+      "bytes": 4168953,
+      "sha256": "65e959ea21e03b443d5defc0f02705f3f1c1799973a0b829ec46f08987379af5"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/02_原始采集/02_范围内20题合格参考帖子.csv",
+      "bytes": 4548175,
+      "sha256": "25d30a3e72e4a6d177ff0a0c07c7f9ea6754a90122f464c0ed90fd725a50ba4c"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/03_小红书帖子知识库.csv",
+      "bytes": 2127431,
+      "sha256": "ac40727b38293b1736b749eea7b863a172c9adb102614628770c2613fe2a5e50"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/04_点点AI_全部问题与问答.csv",
+      "bytes": 252093,
+      "sha256": "3d0b83f44a5b33ac5f1600b610cb6af87cb190f4a4295f1a6113e65f6fd57e0d"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI候选审核表.csv",
+      "bytes": 588034,
+      "sha256": "47057be6f193655e1cb7983585b590b91a196adf99fa992333140c1741891fac"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/02_本次补采与审核/20260914_贵阳特色热门美食体验/03_处理结果/POI证据审核表.csv",
+      "bytes": 2321613,
+      "sha256": "e14125dce0656f7e45df0dbe5f2dea7f90b8a84a4899dfda7e5f5a335abd951c"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/README.md",
+      "bytes": 1779,
+      "sha256": "b518465ba143104ab8ce84971fe31d4912d464f163ca29098116b0eefea7bb13"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/去除Emoji清洗报告.json",
+      "bytes": 10092,
+      "sha256": "ee9d8466b3e2ad6fcf9630f43f4bd441ed812fac370f7998956ace31c3368fde"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji/去除Emoji独立验证报告.json",
+      "bytes": 7422,
+      "sha256": "ba78134c14dd1e4a95f13fde4f8c11e54f48ac69c37cf9066b72243a67521076"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/README.md",
+      "bytes": 3129,
+      "sha256": "f7744f87d2177ac8dc649d31fc0c7b1ab3e1652a1bfb60e46f53089b2c03aae7"
+    },
+    {
+      "file": "02_Data数据/09_贵阳市小红书数据/小红书数据备份清单.json",
+      "bytes": 11533,
+      "sha256": "98065f819f9735db2127a2af382258c2684adce9e9957b6d71b9fcebb38af3ba"
+    },
+    {
+      "file": "03_图谱导入/贵阳市全部标准化数据.json",
+      "bytes": 199301357,
+      "sha256": "d4d4c33481bb7ac2cd4bc2fc2792640c29f4d344623928d3c9d2082b3d30c0fd"
+    },
+    {
+      "file": "03_图谱导入/贵阳市图谱项目元数据.json",
+      "bytes": 276008,
+      "sha256": "74243ee90debca858c4bbc041b815667f771aa5d2aea4a765d7434b9d22c7007"
+    },
+    {
+      "file": "03_图谱导入/贵阳市知识图谱节点关系数据.json",
+      "bytes": 280523153,
+      "sha256": "bb2788cef77405c63176e22b0f9c1abd8d6e59760f7090e9ba4b937656991eed"
+    },
+    {
+      "file": "04_验证报告/原交付包文件校验值.json",
+      "bytes": 1492,
+      "sha256": "7a952fbb838891789a041725aa19dc2cf66d48303ec5e0bf87395d339f9bc7c6"
+    },
+    {
+      "file": "04_验证报告/贵阳市交通结构化表格验证报告.json",
+      "bytes": 6399,
+      "sha256": "9c2b1459ee5b9cc8fc129de9f0f4f3329fd97db9413e0c5e2edd1aef614c3c75"
+    },
+    {
+      "file": "04_验证报告/贵阳市小红书去除Emoji清洗验证报告.json",
+      "bytes": 4771,
+      "sha256": "f39390325a415b8a476f77f91560d3f2d3b6e47c9fb27ef0b452680293404e95"
+    },
+    {
+      "file": "04_验证报告/贵阳市小红书来源备份验证报告.json",
+      "bytes": 11934,
+      "sha256": "1f460f6a0fc108a0b61d92668c09809868548e21e0f15d7ccf2ce9ed0713ef9e"
+    },
+    {
+      "file": "04_验证报告/贵阳市携程酒店数据更新报告.json",
+      "bytes": 1571,
+      "sha256": "84284eea0ad64f7385386863d91e9852572f11ea28347eaffafaa470119e0c6f"
+    },
+    {
+      "file": "04_验证报告/贵阳市景区结构化表格验证报告.json",
+      "bytes": 6379,
+      "sha256": "f2dc5fe009dbc4c51d138e6a0983372b6c64373d3192cdeda6899a1931ce917a"
+    },
+    {
+      "file": "04_验证报告/贵阳市知识图谱验证报告.json",
+      "bytes": 34102,
+      "sha256": "9b27ebd6af5f861d56d5bfb2e179188d465f302d9536af63da1cc2cf9b7f1557"
+    },
+    {
+      "file": "04_验证报告/贵阳市空间框架外点位清单.json",
+      "bytes": 23884,
+      "sha256": "92fc7eea61d1854a207aae317828ccf4954d3bf10381bae7fc8b71cc1ec00c37"
+    },
+    {
+      "file": "04_验证报告/贵阳市空间行政区结构化表格独立复核.json",
+      "bytes": 1217,
+      "sha256": "7e913a70bf9139d527a1c779714965fc2d22b35584050c8930f1ea395b4303d9"
+    },
+    {
+      "file": "04_验证报告/贵阳市空间行政区结构化表格验证报告.json",
+      "bytes": 10171,
+      "sha256": "6bbf8822fa9e184c37ebad782821ecbf517671428ec89162f350ea276bce1d95"
+    },
+    {
+      "file": "04_验证报告/贵阳市高德美食关键字段补全报告.json",
+      "bytes": 3325,
+      "sha256": "fd5cc9509fd433f581455420b7f4e6fe907cde8e9dc1e0b7e946cd9429c5f664"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3175,
+      "sha256": "e6ed2a5f3520d2cb63fd693467f0d2484af755ea09dbfd323e4f2ebafaba5989"
+    },
+    {
+      "file": "数据目录.json",
+      "bytes": 21738,
+      "sha256": "5d1a2ed2e02282f65904f40076e986fb801fe2d670789a29e3f003643a22af63"
+    }
+  ]
+}

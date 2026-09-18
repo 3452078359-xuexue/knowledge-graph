@@ -1,0 +1,77 @@
+﻿交通类型代码,交通类型中文,zone_id,stop_id,stop_name,stop_name_泰文,stop_name_英文,票价规则引用次数,映射状态
+0,有轨电车与轻轨,1,1,BTS บางหว้า;BTS Bang Wa,BTS บางหว้า,BTS Bang Wa,126,已匹配stops.zone_id
+0,有轨电车与轻轨,2,2,BTS วุฒากาศ;BTS Wutthakat,BTS วุฒากาศ,BTS Wutthakat,126,已匹配stops.zone_id
+0,有轨电车与轻轨,3,3,BTS ตลาดพลู;BTS Talat Phlu,BTS ตลาดพลู,BTS Talat Phlu,126,已匹配stops.zone_id
+0,有轨电车与轻轨,4,4,BTS โพธิ์นิมิตร;BTS Pho Nimit,BTS โพธิ์นิมิตร,BTS Pho Nimit,126,已匹配stops.zone_id
+0,有轨电车与轻轨,5,5,BTS วงเวียนใหญ่;BTS Wongwian Yai,BTS วงเวียนใหญ่,BTS Wongwian Yai,126,已匹配stops.zone_id
+0,有轨电车与轻轨,6,6,BTS กรุงธนบุรี;BTS Krung Thon Buri,BTS กรุงธนบุรี,BTS Krung Thon Buri,126,已匹配stops.zone_id
+0,有轨电车与轻轨,7,7,BTS สะพานตากสิน;BTS Saphan Taksin,BTS สะพานตากสิน,BTS Saphan Taksin,126,已匹配stops.zone_id
+0,有轨电车与轻轨,8,8,BTS สุรศักดิ์;BTS Surasak,BTS สุรศักดิ์,BTS Surasak,126,已匹配stops.zone_id
+0,有轨电车与轻轨,9,9,BTS ช่องนนทรี;BTS Chong Nonsi,BTS ช่องนนทรี,BTS Chong Nonsi,126,已匹配stops.zone_id
+0,有轨电车与轻轨,10,10,BTS ศาลาแดง;BTS Sala Daeng,BTS ศาลาแดง,BTS Sala Daeng,126,已匹配stops.zone_id
+0,有轨电车与轻轨,11,11,BTS ราชดำริ;BTS Ratchadamri,BTS ราชดำริ,BTS Ratchadamri,126,已匹配stops.zone_id
+0,有轨电车与轻轨,12,12,BTS สยาม;BTS Siam,BTS สยาม,BTS Siam,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13,13,BTS สนามกีฬาแห่งชาติ;BTS National Stadium,BTS สนามกีฬาแห่งชาติ,BTS National Stadium,126,已匹配stops.zone_id
+0,有轨电车与轻轨,14,14,BTS สำโรง;BTS Samrong,BTS สำโรง,BTS Samrong,126,已匹配stops.zone_id
+0,有轨电车与轻轨,15,15,BTS เเบริ่ง;BTS Bearing,BTS เเบริ่ง,BTS Bearing,126,已匹配stops.zone_id
+0,有轨电车与轻轨,16,16,BTS บางนา;BTS Bang Na,BTS บางนา,BTS Bang Na,126,已匹配stops.zone_id
+0,有轨电车与轻轨,17,17,BTS อุดมสุข;BTS Udom Suk,BTS อุดมสุข,BTS Udom Suk,126,已匹配stops.zone_id
+0,有轨电车与轻轨,18,18,BTS ปุณณวิถี;BTS Punnawithi,BTS ปุณณวิถี,BTS Punnawithi,126,已匹配stops.zone_id
+0,有轨电车与轻轨,19,19,BTS บางจาก;BTS Bang Chak,BTS บางจาก,BTS Bang Chak,126,已匹配stops.zone_id
+0,有轨电车与轻轨,20,20,BTS อ่อนนุช;BTS On Nut,BTS อ่อนนุช,BTS On Nut,126,已匹配stops.zone_id
+0,有轨电车与轻轨,21,21,BTS พระโขนง;BTS Phra Khanong,BTS พระโขนง,BTS Phra Khanong,126,已匹配stops.zone_id
+0,有轨电车与轻轨,22,22,BTS เอกมัย;BTS Ekkamai,BTS เอกมัย,BTS Ekkamai,126,已匹配stops.zone_id
+0,有轨电车与轻轨,23,23,BTS ทองหล่อ;BTS Thong Lo,BTS ทองหล่อ,BTS Thong Lo,126,已匹配stops.zone_id
+0,有轨电车与轻轨,24,24,BTS พร้อมพงษ์;BTS Phrom Phong,BTS พร้อมพงษ์,BTS Phrom Phong,126,已匹配stops.zone_id
+0,有轨电车与轻轨,25,25,BTS อโศก;BTS Asok,BTS อโศก,BTS Asok,126,已匹配stops.zone_id
+0,有轨电车与轻轨,26,26,BTS นานา;BTS Nana,BTS นานา,BTS Nana,126,已匹配stops.zone_id
+0,有轨电车与轻轨,27,27,BTS เพลินจิต;BTS Phloen Chit,BTS เพลินจิต,BTS Phloen Chit,126,已匹配stops.zone_id
+0,有轨电车与轻轨,28,28,BTS ชิดลม;BTS Chit Lom,BTS ชิดลม,BTS Chit Lom,126,已匹配stops.zone_id
+0,有轨电车与轻轨,30,30,BTS ราชเทวี;BTS Ratchathewi,BTS ราชเทวี,BTS Ratchathewi,126,已匹配stops.zone_id
+0,有轨电车与轻轨,32,32,BTS พญาไท;BTS Phaya Thai,BTS พญาไท,BTS Phaya Thai,126,已匹配stops.zone_id
+0,有轨电车与轻轨,33,33,BTS อนุสาวรีย์ชัยสมรภูมิ;BTS Victory Monument,BTS อนุสาวรีย์ชัยสมรภูมิ,BTS Victory Monument,126,已匹配stops.zone_id
+0,有轨电车与轻轨,34,34,BTS สนามเป้า;BTS Sanam Pao,BTS สนามเป้า,BTS Sanam Pao,126,已匹配stops.zone_id
+0,有轨电车与轻轨,35,35,BTS อารีย์;BTS Ari,BTS อารีย์,BTS Ari,126,已匹配stops.zone_id
+0,有轨电车与轻轨,36,36,BTS สะพานควาย;BTS Saphan Khwai,BTS สะพานควาย,BTS Saphan Khwai,126,已匹配stops.zone_id
+0,有轨电车与轻轨,37,37,BTS หมอชิต;BTS Mo Chit,BTS หมอชิต,BTS Mo Chit,126,已匹配stops.zone_id
+0,有轨电车与轻轨,5409,5409,SRT จตุจักร [สายสีแดงเข้ม);SRT Chatuchak (Dark Red Line),SRT จตุจักร [สายสีแดงเข้ม),SRT Chatuchak (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5410,5410,SRT วัดเสมียนนารี (สายสีแดงเข้ม);SRT Wat Samian Nari (Dark Red Line),SRT วัดเสมียนนารี (สายสีแดงเข้ม),SRT Wat Samian Nari (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5411,5411,SRT บางเขน (สายสีแดงเข้ม);SRT Bang Khen (Dark Red Line),SRT บางเขน (สายสีแดงเข้ม),SRT Bang Khen (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5412,5412,SRT ทุ่งสองห้อง (สายสีแดงเข้ม);SRT Thung Song Hong [Dark Red Line),SRT ทุ่งสองห้อง (สายสีแดงเข้ม),SRT Thung Song Hong [Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5413,5413,SRT หลักสี่ (สายสีแดงเข้ม);SRT Lak Si (Dark Red Line),SRT หลักสี่ (สายสีแดงเข้ม),SRT Lak Si (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5415,5415,SRT ดอนเมือง (สายสีแดงเข้ม);SRT Don Mueang (Dark Red Line),SRT ดอนเมือง (สายสีแดงเข้ม),SRT Don Mueang (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5416,5416,SRT หลักหก (สายสีแดงเข้ม);SRT Lak Hok (Dark Red Line),SRT หลักหก (สายสีแดงเข้ม),SRT Lak Hok (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,5417,5417,SRT รังสิต (สายสีแดงเข้ม);SRT Rangsit (Dark Red Line),SRT รังสิต (สายสีแดงเข้ม),SRT Rangsit (Dark Red Line),20,已匹配stops.zone_id
+0,有轨电车与轻轨,13601,13601,BTS ปู่เจ้า;BTS Pu Chao,BTS ปู่เจ้า,BTS Pu Chao,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13602,13602,BTS ช้างเอราวัณ;BTS Chang Erawan,BTS ช้างเอราวัณ,BTS Chang Erawan,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13603,13603,BTS โรงเรียนนายเรือ;BTS Royal Thai Naval Academy,BTS โรงเรียนนายเรือ,BTS Royal Thai Naval Academy,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13604,13604,BTS ปากน้ำ;BTS Pak Nam,BTS ปากน้ำ,BTS Pak Nam,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13605,13605,BTS ศรีนครินทร์;BTS Srinagarindra,BTS ศรีนครินทร์,BTS Srinagarindra,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13606,13606,BTS แพรกษา;BTS Phraek Sa,BTS แพรกษา,BTS Phraek Sa,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13607,13607,BTS สายลวด;BTS Sai Luat,BTS สายลวด,BTS Sai Luat,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13608,13608,BTS เคหะฯ;BTS Kheha,BTS เคหะฯ,BTS Kheha,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13612,13612,BTS ห้าแยกลาดพร้าว;BTS Ha Yeak Lat Phrao,BTS ห้าแยกลาดพร้าว,BTS Ha Yeak Lat Phrao,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13638,13638,BTS พหลโยธิน 24;BTS Phahon Yothin 24,BTS พหลโยธิน 24,BTS Phahon Yothin 24,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13639,13639,BTS รัชโยธิน;BTS Ratchayothin,BTS รัชโยธิน,BTS Ratchayothin,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13640,13640,BTS เสนานิคม;BTS Sena Nikhom,BTS เสนานิคม,BTS Sena Nikhom,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13641,13641,BTS มหาวิทยาลัยเกษตรศาสตร์;BTS Kasetsart University,BTS มหาวิทยาลัยเกษตรศาสตร์,BTS Kasetsart University,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13828,13828,BTS กรมป่าไม้;BTS Royal Forest Department,BTS กรมป่าไม้,BTS Royal Forest Department,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13829,13829,BTS บางบัว;BTS Bang Bau,BTS บางบัว,BTS Bang Bau,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13830,13830,BTS กรมทหารราบที่ 11;BTS 11th Infantry Regiment,BTS กรมทหารราบที่ 11,BTS 11th Infantry Regiment,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13831,13831,BTS วัดพระศรีมหาธาตุ;BTS Wat Phrasri Mahathat,BTS วัดพระศรีมหาธาตุ,BTS Wat Phrasri Mahathat,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13834,13834,BTS กรุงธนบุรี [สายสีทอง];BTS Khrung Thon Buri,BTS กรุงธนบุรี [สายสีทอง],BTS Khrung Thon Buri,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13835,13835,BTS เจริญนคร;BTS Charoen Nakhon,BTS เจริญนคร,BTS Charoen Nakhon,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13836,13836,BTS คลองสาน;BTS Khlong San,BTS คลองสาน,BTS Khlong San,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13837,13837,BTS พหลโยธิน 59;BTS Phahonyothin 59,BTS พหลโยธิน 59,BTS Phahonyothin 59,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13838,13838,BTS สายหยุด;BTS Sai Yud,BTS สายหยุด,BTS Sai Yud,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13839,13839,BTS สะพานใหม่;BTS Saphan Mai,BTS สะพานใหม่,BTS Saphan Mai,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13840,13840,BTS โรงพยาบาลภูมิพลอดุลยเดช;BTS Bhumibol Adulyadej Hospital,BTS โรงพยาบาลภูมิพลอดุลยเดช,BTS Bhumibol Adulyadej Hospital,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13841,13841,BTS พิพิธภัณฑ์กองทัพอากาศ;BTS Royal Thai Air Force Museum,BTS พิพิธภัณฑ์กองทัพอากาศ,BTS Royal Thai Air Force Museum,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13842,13842,BTS แยก คปอ.;BTS Yaek Kor Por Aor,BTS แยก คปอ.,BTS Yaek Kor Por Aor,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13843,13843,BTS คูคต;BTS Khu Khot,BTS คูคต,BTS Khu Khot,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13844,13844,BTS เซนต์หลุยส์;BTS Saint Louis,BTS เซนต์หลุยส์,BTS Saint Louis,126,已匹配stops.zone_id
+0,有轨电车与轻轨,13845,13845,SRT การเคหะ [สายสีแดงเข้ม];SRT Kan Kheha [Dark Red Line],SRT การเคหะ [สายสีแดงเข้ม],SRT Kan Kheha [Dark Red Line],20,已匹配stops.zone_id
+0,有轨电车与轻轨,13846,13846,SRT สถานีกลางกรุงเทพอภิวัฒน์ [สายสีแดง];SRT Krung Thep Aphiwat Central Terminal Station [Red Line],SRT สถานีกลางกรุงเทพอภิวัฒน์ [สายสีแดง],SRT Krung Thep Aphiwat Central Terminal Station [Red Line],28,已匹配stops.zone_id
+0,有轨电车与轻轨,13847,13847,SRT ตลิ่งชัน [สายสีแดงอ่อน];SRT Taling Chan [Light Red Line],SRT ตลิ่งชัน [สายสีแดงอ่อน],SRT Taling Chan [Light Red Line],8,已匹配stops.zone_id
+0,有轨电车与轻轨,13848,13848,SRT บางบำหรุ [สายสีแดงอ่อน];SRT Bang Bamru [Light Red Line],SRT บางบำหรุ [สายสีแดงอ่อน],SRT Bang Bamru [Light Red Line],8,已匹配stops.zone_id
+0,有轨电车与轻轨,13849,13849,SRT บางซ่อน [สายสีแดงอ่อน];SRT Bang Son [Light Red Line],SRT บางซ่อน [สายสีแดงอ่อน],SRT Bang Son [Light Red Line],8,已匹配stops.zone_id

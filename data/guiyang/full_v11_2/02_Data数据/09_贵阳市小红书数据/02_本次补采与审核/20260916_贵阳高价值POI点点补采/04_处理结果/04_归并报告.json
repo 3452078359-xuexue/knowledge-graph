@@ -1,0 +1,18 @@
+{
+  "project_root": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/20260916_贵阳高价值POI点点补采",
+  "manifest": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/20260916_贵阳高价值POI点点补采/00_批次清单.csv",
+  "included_batch_count": 1,
+  "unique_question_count": 216,
+  "raw_result_count": 199,
+  "deduplicated_result_count": 199,
+  "strict_extractable_result_count": 184,
+  "uncollected_question_count": 32,
+  "raw_source_count": 4567,
+  "unique_xhs_post_count": 4031,
+  "incomplete_post_count": 57,
+  "ignored_external_source_count": 17,
+  "ignored_xhs_source_without_id_count": 0,
+  "warnings": [],
+  "qa_ledger": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/20260916_贵阳高价值POI点点补采/04_处理结果/04_点点AI_全部问题与问答.csv",
+  "post_kb": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/20260916_贵阳高价值POI点点补采/04_处理结果/03_小红书帖子知识库.csv"
+}

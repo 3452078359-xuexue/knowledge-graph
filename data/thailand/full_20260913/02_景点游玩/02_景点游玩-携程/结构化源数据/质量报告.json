@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-08-30T19:31:07-07:00",
+  "status": "batch_complete",
+  "city": "曼谷",
+  "pages_collected": 10,
+  "raw_card_count": 100,
+  "unique_records": 99,
+  "main_local_sights": 60,
+  "scope_counts": {
+    "本地": 87,
+    "周边": 12,
+    "待核验": 0
+  },
+  "entity_counts": {
+    "景点/场所": 39,
+    "演艺/游船/体验产品": 25,
+    "特色体验合集": 10,
+    "限时活动": 25
+  },
+  "detail_ok": 61,
+  "main_detail_ok": 60,
+  "main_detail_pending": 0,
+  "main_detail_failed": 0,
+  "detail_failed": 0,
+  "detail_pending": 28,
+  "unrated_main": 1,
+  "field_coverage_main": {
+    "name_zh": {
+      "present": 60,
+      "total": 60
+    },
+    "name_en": {
+      "present": 60,
+      "total": 60
+    },
+    "name_th": {
+      "present": 53,
+      "total": 60
+    },
+    "rating": {
+      "present": 59,
+      "total": 60
+    },
+    "review_count": {
+      "present": 60,
+      "total": 60
+    },
+    "address": {
+      "present": 60,
+      "total": 60
+    },
+    "telephone": {
+      "present": 47,
+      "total": 60
+    },
+    "opening_hours": {
+      "present": 59,
+      "total": 60
+    },
+    "latitude": {
+      "present": 60,
+      "total": 60
+    },
+    "longitude": {
+      "present": 60,
+      "total": 60
+    },
+    "coordinate_system": {
+      "present": 60,
+      "total": 60
+    }
+  },
+  "validation_issues": [],
+  "failure_events": 0,
+  "reported_total": 3000,
+  "reported_total_description": "1万+",
+  "discovery_stop_reason": "page_limit",
+  "next_list_url": "https://you.ctrip.com/sight/bangkok191/s0-p11.html",
+  "is_complete_city_inventory": false,
+  "limitations": [
+    "公开列表混合本地、周边、活动和合集；主表只纳入本地且非限时活动/合集的记录。",
+    "城市范围主要依据携程目的地 ID；地址与外府冲突时单列待核验，不等同于行政边界测绘。",
+    "totalCount 和 totalCountDesc 是站点显示口径/上限，不据此声称全量或计算行政区覆盖率。",
+    "price=0 不代表免费；仅 isFree=true 才记免费。价格是带时间的列表展示快照。",
+    "无评分留空，真实零点评保留 0；热度与 5 分制评分分列。",
+    "不采点评正文、用户身份、长篇介绍，不下载图片；保留官方页面 URL 与图片链接。"
+  ]
+}

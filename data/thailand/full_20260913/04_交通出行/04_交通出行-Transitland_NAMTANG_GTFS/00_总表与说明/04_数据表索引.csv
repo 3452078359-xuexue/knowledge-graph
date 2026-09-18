@@ -1,0 +1,79 @@
+﻿交通类型代码,交通类型中文,数据表,相对路径,数据行数,主键建议,关键关联字段,说明
+0,有轨电车与轻轨,agencies,01_有轨电车与轻轨/01_运营机构.csv,2,agency_id,agency_id,该交通类型涉及的运营机构；跨类型机构会在多个文件夹出现。
+0,有轨电车与轻轨,routes,01_有轨电车与轻轨/02_线路.csv,5,route_id,agency_id,线路主表，以 GTFS route_type 作为文件夹分类依据。
+0,有轨电车与轻轨,stops,01_有轨电车与轻轨/03_站点.csv,76,stop_id,stop_id / zone_id,由该类型行程停靠或票价区域引用的站点。
+0,有轨电车与轻轨,route_stops,01_有轨电车与轻轨/04_线路站点关联.csv,78,route_id + stop_id,route_id / stop_id,由 trips 与 stop_times 派生的线路—站点去重关系。
+0,有轨电车与轻轨,trips,01_有轨电车与轻轨/05_行程.csv,22,trip_id,route_id / service_id / shape_id,线路下的具体运行行程。
+0,有轨电车与轻轨,stop_times,01_有轨电车与轻轨/06_站序时刻.csv,382,trip_id + stop_sequence,trip_id / stop_id / route_id,行程的逐站到发时刻与停靠顺序。
+0,有轨电车与轻轨,frequencies,01_有轨电车与轻轨/07_班次频率.csv,395,trip_id + start_time,trip_id / route_id,频率型服务的时间区间与班距。
+0,有轨电车与轻轨,calendar,01_有轨电车与轻轨/08_服务日历.csv,3,service_id,service_id,每周运行日及有效日期范围；跨类型服务会重复出现。
+0,有轨电车与轻轨,calendar_dates,01_有轨电车与轻轨/09_服务日例外.csv,42,service_id + date,service_id,服务日的新增或取消例外。
+0,有轨电车与轻轨,fare_attributes,01_有轨电车与轻轨/10_票价属性.csv,4085,fare_id,fare_id / agency_id,GTFS-Fares V1 票价金额、币种、支付及换乘属性。
+0,有轨电车与轻轨,fare_rules,01_有轨电车与轻轨/11_票价规则.csv,4085,fare_id + route_id + origin_id + destination_id,fare_id / route_id / stops.zone_id,票价适用的线路与起终点区域规则；route_id可按GTFS规范留空。
+0,有轨电车与轻轨,fare_zone_stops,01_有轨电车与轻轨/12_票价区域站点.csv,76,zone_id + stop_id,zone_id / stop_id,将 fare_rules 的起终点区域映射回 stops.zone_id；未匹配区域保留为空站点警告行。
+0,有轨电车与轻轨,shapes,01_有轨电车与轻轨/13_线路轨迹点.csv,2512,shape_id + shape_pt_sequence,shape_id,线路轨迹点；通过 trips.shape_id 关联，未引用轨迹进入未分类。
+1,地铁,agencies,02_地铁/01_运营机构.csv,2,agency_id,agency_id,该交通类型涉及的运营机构；跨类型机构会在多个文件夹出现。
+1,地铁,routes,02_地铁/02_线路.csv,4,route_id,agency_id,线路主表，以 GTFS route_type 作为文件夹分类依据。
+1,地铁,stops,02_地铁/03_站点.csv,107,stop_id,stop_id / zone_id,由该类型行程停靠或票价区域引用的站点。
+1,地铁,route_stops,02_地铁/04_线路站点关联.csv,109,route_id + stop_id,route_id / stop_id,由 trips 与 stop_times 派生的线路—站点去重关系。
+1,地铁,trips,02_地铁/05_行程.csv,36,trip_id,route_id / service_id / shape_id,线路下的具体运行行程。
+1,地铁,stop_times,02_地铁/06_站序时刻.csv,608,trip_id + stop_sequence,trip_id / stop_id / route_id,行程的逐站到发时刻与停靠顺序。
+1,地铁,frequencies,02_地铁/07_班次频率.csv,1412,trip_id + start_time,trip_id / route_id,频率型服务的时间区间与班距。
+1,地铁,calendar,02_地铁/08_服务日历.csv,3,service_id,service_id,每周运行日及有效日期范围；跨类型服务会重复出现。
+1,地铁,calendar_dates,02_地铁/09_服务日例外.csv,42,service_id + date,service_id,服务日的新增或取消例外。
+1,地铁,fare_attributes,02_地铁/10_票价属性.csv,3253,fare_id,fare_id / agency_id,GTFS-Fares V1 票价金额、币种、支付及换乘属性。
+1,地铁,fare_rules,02_地铁/11_票价规则.csv,3253,fare_id + route_id + origin_id + destination_id,fare_id / route_id / stops.zone_id,票价适用的线路与起终点区域规则；route_id可按GTFS规范留空。
+1,地铁,fare_zone_stops,02_地铁/12_票价区域站点.csv,107,zone_id + stop_id,zone_id / stop_id,将 fare_rules 的起终点区域映射回 stops.zone_id；未匹配区域保留为空站点警告行。
+1,地铁,shapes,02_地铁/13_线路轨迹点.csv,3194,shape_id + shape_pt_sequence,shape_id,线路轨迹点；通过 trips.shape_id 关联，未引用轨迹进入未分类。
+2,铁路,agencies,03_铁路/01_运营机构.csv,2,agency_id,agency_id,该交通类型涉及的运营机构；跨类型机构会在多个文件夹出现。
+2,铁路,routes,03_铁路/02_线路.csv,189,route_id,agency_id,线路主表，以 GTFS route_type 作为文件夹分类依据。
+2,铁路,stops,03_铁路/03_站点.csv,188,stop_id,stop_id / zone_id,由该类型行程停靠或票价区域引用的站点。
+2,铁路,route_stops,03_铁路/04_线路站点关联.csv,2183,route_id + stop_id,route_id / stop_id,由 trips 与 stop_times 派生的线路—站点去重关系。
+2,铁路,trips,03_铁路/05_行程.csv,199,trip_id,route_id / service_id / shape_id,线路下的具体运行行程。
+2,铁路,stop_times,03_铁路/06_站序时刻.csv,2245,trip_id + stop_sequence,trip_id / stop_id / route_id,行程的逐站到发时刻与停靠顺序。
+2,铁路,frequencies,03_铁路/07_班次频率.csv,18,trip_id + start_time,trip_id / route_id,频率型服务的时间区间与班距。
+2,铁路,calendar,03_铁路/08_服务日历.csv,6,service_id,service_id,每周运行日及有效日期范围；跨类型服务会重复出现。
+2,铁路,calendar_dates,03_铁路/09_服务日例外.csv,84,service_id + date,service_id,服务日的新增或取消例外。
+2,铁路,fare_attributes,03_铁路/10_票价属性.csv,14759,fare_id,fare_id / agency_id,GTFS-Fares V1 票价金额、币种、支付及换乘属性。
+2,铁路,fare_rules,03_铁路/11_票价规则.csv,14759,fare_id + route_id + origin_id + destination_id,fare_id / route_id / stops.zone_id,票价适用的线路与起终点区域规则；route_id可按GTFS规范留空。
+2,铁路,fare_zone_stops,03_铁路/12_票价区域站点.csv,91,zone_id + stop_id,zone_id / stop_id,将 fare_rules 的起终点区域映射回 stops.zone_id；未匹配区域保留为空站点警告行。
+2,铁路,shapes,03_铁路/13_线路轨迹点.csv,31940,shape_id + shape_pt_sequence,shape_id,线路轨迹点；通过 trips.shape_id 关联，未引用轨迹进入未分类。
+3,公交车,agencies,04_公交车/01_运营机构.csv,94,agency_id,agency_id,该交通类型涉及的运营机构；跨类型机构会在多个文件夹出现。
+3,公交车,routes,04_公交车/02_线路.csv,1796,route_id,agency_id,线路主表，以 GTFS route_type 作为文件夹分类依据。
+3,公交车,stops,04_公交车/03_站点.csv,16327,stop_id,stop_id / zone_id,由该类型行程停靠或票价区域引用的站点。
+3,公交车,route_stops,04_公交车/04_线路站点关联.csv,77817,route_id + stop_id,route_id / stop_id,由 trips 与 stop_times 派生的线路—站点去重关系。
+3,公交车,trips,04_公交车/05_行程.csv,4211,trip_id,route_id / service_id / shape_id,线路下的具体运行行程。
+3,公交车,stop_times,04_公交车/06_站序时刻.csv,155174,trip_id + stop_sequence,trip_id / stop_id / route_id,行程的逐站到发时刻与停靠顺序。
+3,公交车,frequencies,04_公交车/07_班次频率.csv,7866,trip_id + start_time,trip_id / route_id,频率型服务的时间区间与班距。
+3,公交车,calendar,04_公交车/08_服务日历.csv,3,service_id,service_id,每周运行日及有效日期范围；跨类型服务会重复出现。
+3,公交车,calendar_dates,04_公交车/09_服务日例外.csv,42,service_id + date,service_id,服务日的新增或取消例外。
+3,公交车,fare_attributes,04_公交车/10_票价属性.csv,919109,fare_id,fare_id / agency_id,GTFS-Fares V1 票价金额、币种、支付及换乘属性。
+3,公交车,fare_rules,04_公交车/11_票价规则.csv,919109,fare_id + route_id + origin_id + destination_id,fare_id / route_id / stops.zone_id,票价适用的线路与起终点区域规则；route_id可按GTFS规范留空。
+3,公交车,fare_zone_stops,04_公交车/12_票价区域站点.csv,6322,zone_id + stop_id,zone_id / stop_id,将 fare_rules 的起终点区域映射回 stops.zone_id；未匹配区域保留为空站点警告行。
+3,公交车,shapes,04_公交车/13_线路轨迹点.csv,3820395,shape_id + shape_pt_sequence,shape_id,线路轨迹点；通过 trips.shape_id 关联，未引用轨迹进入未分类。
+4,轮渡,agencies,05_轮渡/01_运营机构.csv,30,agency_id,agency_id,该交通类型涉及的运营机构；跨类型机构会在多个文件夹出现。
+4,轮渡,routes,05_轮渡/02_线路.csv,74,route_id,agency_id,线路主表，以 GTFS route_type 作为文件夹分类依据。
+4,轮渡,stops,05_轮渡/03_站点.csv,159,stop_id,stop_id / zone_id,由该类型行程停靠或票价区域引用的站点。
+4,轮渡,route_stops,05_轮渡/04_线路站点关联.csv,346,route_id + stop_id,route_id / stop_id,由 trips 与 stop_times 派生的线路—站点去重关系。
+4,轮渡,trips,05_轮渡/05_行程.csv,188,trip_id,route_id / service_id / shape_id,线路下的具体运行行程。
+4,轮渡,stop_times,05_轮渡/06_站序时刻.csv,1061,trip_id + stop_sequence,trip_id / stop_id / route_id,行程的逐站到发时刻与停靠顺序。
+4,轮渡,frequencies,05_轮渡/07_班次频率.csv,380,trip_id + start_time,trip_id / route_id,频率型服务的时间区间与班距。
+4,轮渡,calendar,05_轮渡/08_服务日历.csv,4,service_id,service_id,每周运行日及有效日期范围；跨类型服务会重复出现。
+4,轮渡,calendar_dates,05_轮渡/09_服务日例外.csv,63,service_id + date,service_id,服务日的新增或取消例外。
+4,轮渡,fare_attributes,05_轮渡/10_票价属性.csv,1935,fare_id,fare_id / agency_id,GTFS-Fares V1 票价金额、币种、支付及换乘属性。
+4,轮渡,fare_rules,05_轮渡/11_票价规则.csv,1935,fare_id + route_id + origin_id + destination_id,fare_id / route_id / stops.zone_id,票价适用的线路与起终点区域规则；route_id可按GTFS规范留空。
+4,轮渡,fare_zone_stops,05_轮渡/12_票价区域站点.csv,73,zone_id + stop_id,zone_id / stop_id,将 fare_rules 的起终点区域映射回 stops.zone_id；未匹配区域保留为空站点警告行。
+4,轮渡,shapes,05_轮渡/13_线路轨迹点.csv,4813,shape_id + shape_pt_sequence,shape_id,线路轨迹点；通过 trips.shape_id 关联，未引用轨迹进入未分类。
+UNKNOWN,未分类／关联异常,agencies,99_未分类/01_运营机构.csv,0,agency_id,agency_id,该交通类型涉及的运营机构；跨类型机构会在多个文件夹出现。
+UNKNOWN,未分类／关联异常,routes,99_未分类/02_线路.csv,0,route_id,agency_id,线路主表，以 GTFS route_type 作为文件夹分类依据。
+UNKNOWN,未分类／关联异常,stops,99_未分类/03_站点.csv,221,stop_id,stop_id / zone_id,由该类型行程停靠或票价区域引用的站点。
+UNKNOWN,未分类／关联异常,route_stops,99_未分类/04_线路站点关联.csv,0,route_id + stop_id,route_id / stop_id,由 trips 与 stop_times 派生的线路—站点去重关系。
+UNKNOWN,未分类／关联异常,trips,99_未分类/05_行程.csv,0,trip_id,route_id / service_id / shape_id,线路下的具体运行行程。
+UNKNOWN,未分类／关联异常,stop_times,99_未分类/06_站序时刻.csv,0,trip_id + stop_sequence,trip_id / stop_id / route_id,行程的逐站到发时刻与停靠顺序。
+UNKNOWN,未分类／关联异常,frequencies,99_未分类/07_班次频率.csv,0,trip_id + start_time,trip_id / route_id,频率型服务的时间区间与班距。
+UNKNOWN,未分类／关联异常,calendar,99_未分类/08_服务日历.csv,0,service_id,service_id,每周运行日及有效日期范围；跨类型服务会重复出现。
+UNKNOWN,未分类／关联异常,calendar_dates,99_未分类/09_服务日例外.csv,0,service_id + date,service_id,服务日的新增或取消例外。
+UNKNOWN,未分类／关联异常,fare_attributes,99_未分类/10_票价属性.csv,0,fare_id,fare_id / agency_id,GTFS-Fares V1 票价金额、币种、支付及换乘属性。
+UNKNOWN,未分类／关联异常,fare_rules,99_未分类/11_票价规则.csv,0,fare_id + route_id + origin_id + destination_id,fare_id / route_id / stops.zone_id,票价适用的线路与起终点区域规则；route_id可按GTFS规范留空。
+UNKNOWN,未分类／关联异常,fare_zone_stops,99_未分类/12_票价区域站点.csv,0,zone_id + stop_id,zone_id / stop_id,将 fare_rules 的起终点区域映射回 stops.zone_id；未匹配区域保留为空站点警告行。
+UNKNOWN,未分类／关联异常,shapes,99_未分类/13_线路轨迹点.csv,4011,shape_id + shape_pt_sequence,shape_id,线路轨迹点；通过 trips.shape_id 关联，未引用轨迹进入未分类。

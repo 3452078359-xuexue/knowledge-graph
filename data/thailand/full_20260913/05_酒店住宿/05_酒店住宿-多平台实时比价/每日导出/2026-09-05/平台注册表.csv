@@ -1,0 +1,68 @@
+﻿标准平台ID,标准名称,展示名称集合,平台类型,归属集团,价格性质,上游源平台ID,同源组ID,是否同源代表,主域名,Google落地层级,平台酒店ID提取规则,可达性,采集通道,采集优先级,当前覆盖酒店数,洞察覆盖酒店数,robots策略,注册表版本,更新时间
+official_cloudbeds,Cloudbeds 官网预订引擎,[],E官网IBE,官网IBE,直订价,,official_ibe,是,cloudbeds.com,mixed,upstream_adapter:official,unknown,precision,official,51,0,unknown,v1.1,2026-09-04T10:18:34-07:00
+official_derbysoft,DerbySoft 官网预订引擎,[],E官网IBE,官网IBE,直订价,,official_ibe,是,derbysoftca.com,mixed,upstream_adapter:official,unknown,precision,official,12,0,unknown,v1.1,2026-09-04T10:18:34-07:00
+official_other,其他官网预订引擎,[],E官网IBE,官网IBE,直订价,,official_ibe,是,,mixed,upstream_adapter:official,unknown,precision,official,103,0,unknown,v1.1,2026-09-04T10:18:34-07:00
+official_synxis,SynXis/Sabre 官网预订引擎,[],E官网IBE,官网IBE,直订价,,official_ibe,是,synxis.com,mixed,upstream_adapter:official,unknown,precision,official,0,0,unknown,v1.1,2026-09-04T10:18:34-07:00
+official_travelanium,Travelanium 官网预订引擎,[],E官网IBE,官网IBE,直订价,,official_ibe,是,travelanium.net,mixed,upstream_adapter:official,unknown,precision,official,5,0,unknown,v1.1,2026-09-04T10:18:34-07:00
+official_triptease,Triptease 官网预订引擎,[],E官网IBE,官网IBE,直订价,,official_ibe,是,triptease.io,mixed,upstream_adapter:official,unknown,precision,official,4,0,unknown,v1.1,2026-09-04T10:18:34-07:00
+agoda,Agoda,"[""Agoda""]",A1一级OTA,Booking Holdings,真实源,,,否,agoda.com,L0,upstream_adapter:agoda,open,precision,first,345,291,unknown,v1.1,2026-09-04T10:18:34-07:00
+booking,Booking.com,"[""Booking.com""]",A1一级OTA,Booking Holdings,真实源,,,否,booking.com,L1,upstream_adapter:booking,open,precision,first,236,193,unknown,v1.1,2026-09-04T10:18:34-07:00
+hostelworld,Hostelworld,"[""Hostelworld""]",A1一级OTA,Hostelworld(青旅垂直),真实源,,,否,hostelworld.com,L2,upstream_adapter:hostelworld,open,precision,first,97,85,unknown,v1.1,2026-09-04T10:18:34-07:00
+hotels,Hotels.com,"[""Hotels.com""]",A1一级OTA,Expedia Group,真实源,,expedia_inventory,是,hotels.com,L1,upstream_adapter:expedia_family,open,precision,first,270,230,unknown,v1.1,2026-09-04T10:18:34-07:00
+klook,klook,"[""klook""]",A1一级OTA,Klook(亚太),真实源,,,否,api.klktech.com,L2,upstream_adapter:klook,open,precision,first,107,91,unknown,v1.1,2026-09-04T10:18:34-07:00
+traveloka,Traveloka.com,"[""Traveloka.com""]",A1一级OTA,Traveloka(东南亚),真实源,,,否,traveloka.com,L1,upstream_adapter:traveloka,open,precision,first,173,153,unknown,v1.1,2026-09-04T10:18:34-07:00
+trip,Trip.com,"[""Trip.com""]",A1一级OTA,Trip.com Group,真实源,,,否,us.trip.com,L1,upstream_adapter:trip,open,precision,first,232,199,unknown,v1.1,2026-09-04T10:18:34-07:00
+vio,Vio.com,"[""Vio.com""]",C白标联盟,Vio网络(主品牌),白标转售,,vio_network,是,deals.vio.com,L0,upstream_adapter:meta_redirect,open,precision,first,212,184,unknown,v1.1,2026-09-04T10:18:34-07:00
+easemytrip,EaseMyTrip.com,"[""EaseMyTrip.com""]",A1一级OTA,EaseMyTrip(印度),真实源,,,否,easemytrip.com,L1,upstream_adapter:easemytrip,open,precision,second,212,182,unknown,v1.1,2026-09-04T10:18:34-07:00
+hutchgo,hutchgo (Hutchison Travel Limited),"[""hutchgo (Hutchison Travel Limited)""]",D渠道商,和记旅游(香港),渠道价,,,否,hutchgo.com,L0,upstream_adapter:hutchgo,open,precision,second,158,136,unknown,v1.1,2026-09-04T10:18:34-07:00
+priceline,Priceline,"[""Priceline""]",A1一级OTA,Booking Holdings,真实源,,,否,priceline.com,L0,upstream_adapter:priceline,open,precision,second,184,155,unknown,v1.1,2026-09-04T10:18:34-07:00
+qantas,Qantas Hotels,"[""Qantas Hotels""]",D渠道商,澳洲航空,会员渠道价,,,否,qantas.com,L2,upstream_adapter:qantas,login_or_captcha,precision,second,110,91,manual_review,v1.1,2026-09-04T10:18:34-07:00
+stayforlong,Stayforlong.com,"[""Stayforlong.com""]",A1一级OTA,Stayforlong(长住垂直),真实源,,,否,stayforlong.com,L2,upstream_adapter:stayforlong,partial,precision,second,47,42,unknown,v1.1,2026-09-04T10:18:34-07:00
+tiket,Tiket.com,"[""Tiket.com""]",A1一级OTA,Tiket(印尼),真实源,,,否,tiket.com,L2,upstream_adapter:tiket,open,precision,second,56,51,unknown,v1.1,2026-09-04T10:18:34-07:00
+zenhotels,ZenHotels.com,"[""ZenHotels.com""]",A1一级OTA,Emerging Travel(RateHawk),真实源,,,否,zenhotels.com,L1,upstream_adapter:zenhotels,open,precision,second,4,3,unknown,v1.1,2026-09-04T10:18:34-07:00
+bluepillow,Bluepillow.com,"[""Bluepillow.com""]",B元搜索,Bluepillow,二手索引,,,否,bluepillow.com,L1,upstream_adapter:bluepillow,open,probe,probe,330,286,unknown,v1.1,2026-09-04T10:18:34-07:00
+hotelscombined,Hotelscombined.com,"[""Hotelscombined.com""]",B元搜索,Booking Holdings,二手索引,,kayak_network,是,hotelscombined.com,L2,upstream_adapter:hotelscombined,open,probe,probe,100,83,unknown,v1.1,2026-09-04T10:18:34-07:00
+tripadvisor,Tripadvisor.com,"[""Tripadvisor.com""]",B元搜索,Tripadvisor,二手索引,,,否,tripadvisor.com,L2,upstream_adapter:tripadvisor,open,probe,probe,118,100,unknown,v1.1,2026-09-04T10:18:34-07:00
+wego,Wego,"[""Wego""]",B元搜索,Wego(中东/东南亚),二手索引,,,否,wego.com,L1,upstream_adapter:wego,login_or_captcha,probe,probe,170,145,manual_review,v1.1,2026-09-04T10:18:34-07:00
+ascend_travel,Ascend Travel,"[""Ascend Travel""]",C白标联盟,独立白标,白标转售,,,否,hotel.ascendtravel.com,L0,upstream_adapter:ascend,open,none,none,6,5,unknown,v1.1,2026-09-04T10:18:34-07:00
+asiayo,AsiaYo,"[""AsiaYo""]",A1一级OTA,AsiaYo(台湾),真实源,,,否,asiayo.com,L0,upstream_adapter:asiayo,open,none,none,14,13,unknown,v1.1,2026-09-04T10:18:34-07:00
+best_hotel_deals,Best Hotel Deals,"[""Best Hotel Deals""]",C白标联盟,独立白标,白标转售,,,否,besthoteldealsglobal.com,L2,upstream_adapter:besthoteldeals,open,none,none,1,1,unknown,v1.1,2026-09-04T10:18:34-07:00
+bookhotel_direct,Bookhotel.direct,"[""Bookhotel.direct""]",A1一级OTA,Bookhotel.direct,真实源,,,否,always.bookhotel.direct,L0,upstream_adapter:bookhoteldirect,open,none,none,1,1,unknown,v1.1,2026-09-04T10:18:34-07:00
+bookmybooking,BookMyBooking.com,"[""BookMyBooking.com""]",C白标联盟,独立白标,白标转售,,,否,bookmybooking.com,L2,upstream_adapter:bookmybooking,open,none,none,5,5,manual_review,v1.1,2026-09-04T10:18:34-07:00
+catchit,Catchit.com,"[""Catchit.com""]",A1一级OTA,Catchit,真实源,,,否,catchit.com,L2,upstream_adapter:catchit,open,none,none,19,17,unknown,v1.1,2026-09-04T10:18:34-07:00
+cheaptickets,CheapTickets.com,"[""CheapTickets.com""]",C白标联盟,Expedia白标,白标转售,expedia,expedia_inventory,否,cheaptickets.com,L1,upstream_adapter:expedia_family,login_or_captcha,api,none,246,209,manual_review,v1.1,2026-09-04T10:18:34-07:00
+clicktrip,Clicktrip.com,"[""Clicktrip.com""]",C白标联盟,独立白标,白标转售,,,否,clicktrip.com,L2,upstream_adapter:clicktrip,open,none,none,23,21,unknown,v1.1,2026-09-04T10:18:34-07:00
+closest_hotel,Closest Hotel,"[""Closest Hotel""]",C白标联盟,独立白标,白标转售,,,否,closesthotel.com,L0,upstream_adapter:closesthotel,open,none,none,26,24,unknown,v1.1,2026-09-04T10:18:34-07:00
+dealbase,dealbase.com,"[""dealbase.com""]",C白标联盟,Vio网络,白标转售,vio,vio_network,否,deals.dealbase.com,L0,upstream_adapter:meta_redirect,open,none,none,135,117,unknown,v1.1,2026-09-04T10:18:34-07:00
+edreams,eDreams,"[""eDreams""]",A1一级OTA,eDreams ODIGEO,真实源,,,否,accommodation.edreams.net,L1,upstream_adapter:expedia_family,partial,none,none,256,220,unknown,v1.1,2026-09-04T10:18:34-07:00
+etrip,Etrip.net,"[""Etrip.net""]",C白标联盟,Vio网络,白标转售,vio,vio_network,否,deals.etrip.net,L0,upstream_adapter:meta_redirect,open,none,none,197,170,unknown,v1.1,2026-09-04T10:18:34-07:00
+evendo,Evendo,"[""Evendo""]",C白标联盟,独立白标,白标转售,,,否,evendo.com,L0,upstream_adapter:evendo,login_or_captcha,none,none,102,89,manual_review,v1.1,2026-09-04T10:18:34-07:00
+expedia,Expedia.com,"[""Expedia.co.th"", ""Expedia.com""]",A1一级OTA,Expedia Group,真实源,,expedia_inventory,否,expedia.com,L1,upstream_adapter:expedia_family,login_or_captcha,api,none,264,210,manual_review,v1.1,2026-09-04T10:18:34-07:00
+globehunters,Globehunters UK,"[""Globehunters UK""]",D渠道商,Globehunters(英国),渠道价,,,否,hotel.globehunters.com,L0,upstream_adapter:generic,open,none,none,1,1,unknown,v1.1,2026-09-04T10:18:34-07:00
+goseek,goseek.com,"[""goseek.com""]",C白标联盟,Vio网络,白标转售,vio,vio_network,否,deals.goseek.com,L0,upstream_adapter:meta_redirect,open,none,none,168,147,unknown,v1.1,2026-09-04T10:18:34-07:00
+halalbooking,Halalbooking,"[""Halalbooking""]",A1一级OTA,Halalbooking(清真垂直),真实源,,,否,halalbooking.com,L0,upstream_adapter:halalbooking,open,none,none,2,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+hopegoo,HOPEGOO,"[""HOPEGOO""]",A1一级OTA,HOPEGOO,真实源,,,否,hopegoo.com,L2,upstream_adapter:hopegoo,open,none,none,21,16,unknown,v1.1,2026-09-04T10:18:34-07:00
+hotel_prive,Hotel prive,"[""Hotel prive""]",C白标联盟,独立白标,白标转售,,,否,hotelprive.net,L0,upstream_adapter:hotelprive,open,none,none,18,15,unknown,v1.1,2026-09-04T10:18:34-07:00
+kayak,KAYAK.com,"[""KAYAK.com""]",B元搜索,Booking Holdings,二手索引,,kayak_network,否,kayak.com,L2,upstream_adapter:kayak_family,robots_denied,none,none,110,92,manual_review,v1.1,2026-09-04T10:18:34-07:00
+kiwi,Kiwi.com,"[""Kiwi.com""]",C白标联盟,Vio网络,白标转售,vio,vio_network,否,hotels-tracker.kiwi.com,L0,upstream_adapter:kiwi,open,none,none,87,70,manual_review,v1.1,2026-09-04T10:18:34-07:00
+lastminute,lastminute.com,"[""lastminute.com""]",D渠道商,lastminute(欧洲),渠道价,,,否,us.lastminute.com,L2,upstream_adapter:lastminute,open,none,none,2,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+lion_travel,Lion Travel 雄獅旅遊,"[""Lion Travel 雄獅旅遊""]",D渠道商,雄狮旅游(台湾),渠道价,,,否,hotel.liontravel.com,L2,upstream_adapter:liontravel,open,none,none,4,4,unknown,v1.1,2026-09-04T10:18:34-07:00
+long_stay_discounts,Long Stay Discounts,"[""Long Stay Discounts""]",C白标联盟,独立白标,白标转售,,,否,longstaydiscounts.com,L0,upstream_adapter:longstaydiscounts,open,none,none,2,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+luxury_escapes,Luxury Escapes,"[""Luxury Escapes""]",A1一级OTA,Luxury Escapes(澳洲高端),真实源,,,否,luxuryescapes.com,L1,upstream_adapter:luxuryescapes,open,none,none,7,7,unknown,v1.1,2026-09-04T10:18:34-07:00
+michelin,Michelin Guide Hotels,"[""Michelin Guide Hotels""]",B元搜索,Michelin,二手索引,,,否,guide.michelin.com,L1,upstream_adapter:michelin,open,none,none,2,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+momondo,momondo.com,"[""momondo.com""]",B元搜索,Booking Holdings,二手索引,,kayak_network,否,momondo.com,L2,upstream_adapter:kayak_family,open,none,none,111,96,unknown,v1.1,2026-09-04T10:18:34-07:00
+muv,müv AI,"[""müv AI""]",C白标联盟,独立白标,白标转售,,,否,muvtravel.com,L0,upstream_adapter:muv,open,none,none,93,75,unknown,v1.1,2026-09-04T10:18:34-07:00
+orbitz,Orbitz.com,"[""Orbitz.com""]",C白标联盟,Expedia白标,白标转售,expedia,expedia_inventory,否,orbitz.com,L1,upstream_adapter:expedia_family,login_or_captcha,api,none,246,209,manual_review,v1.1,2026-09-04T10:18:34-07:00
+pilot,Pilot,"[""Pilot""]",B元搜索,Pilot,二手索引,,,否,pilotplans.com,L0,upstream_adapter:pilot,open,none,none,2,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+prestigia,Prestigia.com,"[""Prestigia.com""]",A1一级OTA,Prestigia,真实源,,,否,prestigia.com,L0,upstream_adapter:prestigia,open,none,none,1,1,unknown,v1.1,2026-09-04T10:18:34-07:00
+reserving,Reserving,"[""Reserving""]",C白标联盟,独立白标,白标转售,,,否,h-en.reserving.com,L1,upstream_adapter:reserving,open,none,none,49,38,unknown,v1.1,2026-09-04T10:18:34-07:00
+skylark,SKYLARK,"[""SKYLARK""]",C白标联盟,独立白标,白标转售,,,否,skylark.com,L2,upstream_adapter:skylark,open,none,none,2,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+skyscanner,Skyscanner,"[""Skyscanner""]",B元搜索,Skyscanner(Trip系),二手索引,,,否,skyscanner.net,L1,upstream_adapter:skyscanner,open,none,none,3,3,unknown,v1.1,2026-09-04T10:18:34-07:00
+travelko,TRAVELKO,"[""TRAVELKO""]",B元搜索,TRAVELKO(日本),二手索引,,,否,travelko.com,L1,upstream_adapter:travelko,open,none,none,5,5,unknown,v1.1,2026-09-04T10:18:34-07:00
+travelocity,Travelocity.com,"[""Travelocity.com""]",C白标联盟,Expedia白标,白标转售,expedia,expedia_inventory,否,travelocity.com,L1,upstream_adapter:expedia_family,login_or_captcha,api,none,261,224,manual_review,v1.1,2026-09-04T10:18:34-07:00
+travelup,TravelUP,"[""TravelUP""]",C白标联盟,独立白标,白标转售,,,否,travelup.com,L0,upstream_adapter:travelup,open,none,none,41,34,unknown,v1.1,2026-09-04T10:18:34-07:00
+traveluro,Traveluro,"[""Traveluro""]",C白标联盟,Traveluro(主品牌),白标转售,,traveluro_network,是,traveluro.com,L2,upstream_adapter:traveluro,open,none,none,20,20,unknown,v1.1,2026-09-04T10:18:34-07:00
+tripbtoz,Tripbtoz,"[""Tripbtoz""]",A1一级OTA,Tripbtoz(韩国),真实源,,,否,tripbtoz.com,L2,upstream_adapter:tripbtoz,open,none,none,1,1,unknown,v1.1,2026-09-04T10:18:34-07:00
+tripening,Tripening Hotels,"[""Tripening Hotels""]",C白标联盟,独立白标,白标转售,,,否,tripening.com,L2,upstream_adapter:tripening,open,none,none,96,83,manual_review,v1.1,2026-09-04T10:18:34-07:00
+trivago,trivago.com,"[""trivago.com""]",B元搜索,trivago(Expedia系),二手索引,,,否,trivago.com,L0,upstream_adapter:trivago,open,none,none,3,2,unknown,v1.1,2026-09-04T10:18:34-07:00
+trivago_deals,trivago DEALS,"[""trivago DEALS""]",C白标联盟,Traveluro后端,白标转售,traveluro,traveluro_network,否,trivago.deals,L2,upstream_adapter:trivago_deals,open,none,none,24,22,unknown,v1.1,2026-09-04T10:18:34-07:00

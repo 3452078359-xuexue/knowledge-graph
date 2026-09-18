@@ -1,0 +1,133 @@
+{
+  "version": "11.2.0-amap-food-fields",
+  "generatedAt": "2026-09-16T20:22:49.906099-07:00",
+  "sourcePolicy": "美食仅使用高德；不与大众点评对齐；评分阈值 business.rating >= 3.5",
+  "api": {
+    "keyAccepted": true,
+    "poiDetailEndpoint": "https://restapi.amap.com/v5/place/detail",
+    "reverseGeocodeEndpoint": "https://restapi.amap.com/v3/geocode/regeo",
+    "uniqueCoordinates": 24041,
+    "reverseGeocodeCompleted": 24041,
+    "uniqueResolvedParentOrBuildingIds": 2148,
+    "stopReason": "",
+    "missingFieldDetailRefetchProbe": {
+      "samplePoiCount": 63,
+      "detailReturnedCount": 62,
+      "tested": {
+        "telephone": 20,
+        "businessArea": 20,
+        "cuisineTag": 20,
+        "photos": 20
+      },
+      "improvements": {
+        "telephone": 0,
+        "businessArea": 0,
+        "cuisineTag": 0,
+        "photos": 0
+      },
+      "conclusion": "对缺字段样本再次调用 POI ID 查询未新增电话、商圈、tag 或照片，不对全量做无收益重查"
+    }
+  },
+  "food": {
+    "records": 24238,
+    "coverage": {
+      "telephone": {
+        "count": 18017,
+        "total": 24238,
+        "percent": 74.33
+      },
+      "recommendedDishes": {
+        "count": 13757,
+        "total": 24238,
+        "percent": 56.76
+      },
+      "cuisine": {
+        "count": 24238,
+        "total": 24238,
+        "percent": 100.0
+      },
+      "businessArea": {
+        "count": 11468,
+        "total": 24238,
+        "percent": 47.31
+      },
+      "platformTags": {
+        "count": 24238,
+        "total": 24238,
+        "percent": 100.0
+      },
+      "picture": {
+        "count": 22752,
+        "total": 24238,
+        "percent": 93.87
+      },
+      "township": {
+        "count": 24231,
+        "total": 24238,
+        "percent": 99.97
+      },
+      "townshipAdcode": {
+        "count": 24231,
+        "total": 24238,
+        "percent": 99.97
+      },
+      "parentPoiId": {
+        "count": 13540,
+        "total": 24238,
+        "percent": 55.86
+      },
+      "parentPoiName": {
+        "count": 11875,
+        "total": 24238,
+        "percent": 48.99
+      },
+      "parentPoiTypecode": {
+        "count": 11875,
+        "total": 24238,
+        "percent": 48.99
+      },
+      "indoorBuildingPoiId": {
+        "count": 169,
+        "total": 24238,
+        "percent": 0.7
+      },
+      "indoorBuildingPoiName": {
+        "count": 0,
+        "total": 24238,
+        "percent": 0.0
+      },
+      "indoorFloor": {
+        "count": 169,
+        "total": 24238,
+        "percent": 0.7
+      },
+      "indoorTrueFloor": {
+        "count": 169,
+        "total": 24238,
+        "percent": 0.7
+      }
+    },
+    "reverseGeocodeTownshipEmpty": 7,
+    "poiAdcodeVsReverseAdcodeConflicts": 0,
+    "parentNamesNotInferred": true,
+    "parentAndIndoorBuildingBothPresent": 169,
+    "parentAndIndoorBuildingIdsDifferent": 169
+  },
+  "adminBugFix": {
+    "foodRowsPreviouslyPointingToNonDistrictAdminArea": 24238,
+    "foodRowsNowPointingToDistrictAdminArea": 24238,
+    "foodPlaceAliasesFixed": 24238
+  },
+  "validation": {
+    "schemaEntities": 30,
+    "schemaProperties": 1098,
+    "records": 96753,
+    "fields": 3015458,
+    "errors": 0,
+    "warnings": 0,
+    "nodes": 96753,
+    "relations": 398717,
+    "uniqueNodeIds": true,
+    "danglingRelations": 0
+  }
+}

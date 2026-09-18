@@ -1,0 +1,250 @@
+{
+  "generatedAt": "2026-09-16T20:40:21.616570-07:00",
+  "source": {
+    "fullData": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/03_图谱导入/贵阳市全部标准化数据.json",
+    "graphData": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/03_图谱导入/贵阳市知识图谱节点关系数据.json",
+    "schema": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/01_Schema/贵州城市知识图谱Schema解析.json",
+    "amapRegistry": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/02_贵阳市景区数据/贵阳市景区高德登记表.json",
+    "baikeRegistry": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/02_贵阳市景区数据/贵阳市景区百科知识登记表.json",
+    "baikeQuality": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/02_Data数据/02_贵阳市景区数据/贵阳市景区百度百科质量报告.json"
+  },
+  "workbook": {
+    "file": "贵阳市景区数据_结构化总表.xlsx",
+    "bytes": 1363437,
+    "sha256": "bcf52a6303eab6ce59cf17b624019b0289fbbf90d5c217b7a57439dd4709953a",
+    "sheets": [
+      "景区摘要",
+      "景区",
+      "子景点",
+      "游览路线",
+      "景区设施",
+      "关系明细",
+      "百科知识单元",
+      "高德核验登记",
+      "百科质量审核",
+      "字段字典"
+    ]
+  },
+  "entities": {
+    "ScenicArea": {
+      "chineseName": "景区",
+      "records": 20,
+      "columns": 67,
+      "csv": "贵阳市景区结构化表.csv",
+      "coordinateComplete": 13,
+      "h3Complete": 13,
+      "dataQuality": {
+        "needs_review": 13,
+        "rejected": 7
+      }
+    },
+    "Area": {
+      "chineseName": "子景点",
+      "records": 1783,
+      "columns": 66,
+      "csv": "贵阳市子景点结构化表.csv",
+      "coordinateComplete": 1744,
+      "h3Complete": 1744,
+      "dataQuality": {
+        "needs_review": 1783
+      }
+    },
+    "Route": {
+      "chineseName": "游览路线",
+      "records": 1,
+      "columns": 27,
+      "csv": "贵阳市游览路线结构化表.csv",
+      "coordinateComplete": 0,
+      "h3Complete": 0,
+      "dataQuality": {
+        "needs_review": 1
+      }
+    },
+    "Facility": {
+      "chineseName": "景区设施",
+      "records": 17,
+      "columns": 35,
+      "csv": "贵阳市景区设施结构化表.csv",
+      "coordinateComplete": 17,
+      "h3Complete": 17,
+      "dataQuality": {
+        "needs_review": 17
+      }
+    }
+  },
+  "sourceAudits": {
+    "amapRegistryRows": 24,
+    "amapStatus": {
+      "accepted_exact_alias_admin": 23,
+      "ambiguous": 1
+    },
+    "baikeQualityRows": 10,
+    "baikeDecision": {
+      "accepted": 8,
+      "incomplete_no_entry": 2
+    },
+    "knowledgeUnits": 16,
+    "knowledgeTopics": {
+      "geography": 6,
+      "honor": 2,
+      "culture": 3,
+      "history": 3,
+      "layout": 2
+    }
+  },
+  "totals": {
+    "entities": 1821,
+    "relations": 8652,
+    "fieldDictionaryRows": 195,
+    "relationCounts": {
+      "COLLECTED_IN": 1821,
+      "HasFacility": 17,
+      "REF_LOCATED_IN_ADMIN_AREA": 1820,
+      "REF_LOCATED_IN_SCENIC_AREA": 233,
+      "REF_LOCATED_IN_ZONE": 1135,
+      "RouteVisits": 4,
+      "RouteVisitsScenicArea": 4,
+      "SOURCED_FROM": 3618
+    }
+  },
+  "validation": {
+    "passed": true,
+    "checksPassed": 24,
+    "checksTotal": 24,
+    "checks": [
+      {
+        "name": "工作表完整",
+        "passed": true,
+        "detail": [
+          "景区摘要",
+          "景区",
+          "子景点",
+          "游览路线",
+          "景区设施",
+          "关系明细",
+          "百科知识单元",
+          "高德核验登记",
+          "百科质量审核",
+          "字段字典"
+        ]
+      },
+      {
+        "name": "景区行列数",
+        "passed": true,
+        "detail": "20 rows / 67 cols"
+      },
+      {
+        "name": "景区字段顺序",
+        "passed": true,
+        "detail": "67"
+      },
+      {
+        "name": "景区CSV行数",
+        "passed": true,
+        "detail": "20"
+      },
+      {
+        "name": "子景点行列数",
+        "passed": true,
+        "detail": "1783 rows / 66 cols"
+      },
+      {
+        "name": "子景点字段顺序",
+        "passed": true,
+        "detail": "66"
+      },
+      {
+        "name": "子景点CSV行数",
+        "passed": true,
+        "detail": "1783"
+      },
+      {
+        "name": "游览路线行列数",
+        "passed": true,
+        "detail": "1 rows / 27 cols"
+      },
+      {
+        "name": "游览路线字段顺序",
+        "passed": true,
+        "detail": "27"
+      },
+      {
+        "name": "游览路线CSV行数",
+        "passed": true,
+        "detail": "1"
+      },
+      {
+        "name": "景区设施行列数",
+        "passed": true,
+        "detail": "17 rows / 35 cols"
+      },
+      {
+        "name": "景区设施字段顺序",
+        "passed": true,
+        "detail": "35"
+      },
+      {
+        "name": "景区设施CSV行数",
+        "passed": true,
+        "detail": "17"
+      },
+      {
+        "name": "关系明细行数",
+        "passed": true,
+        "detail": "8652"
+      },
+      {
+        "name": "百科知识单元行数",
+        "passed": true,
+        "detail": "16"
+      },
+      {
+        "name": "高德核验行数",
+        "passed": true,
+        "detail": "24"
+      },
+      {
+        "name": "百科质量审核行数",
+        "passed": true,
+        "detail": "10"
+      },
+      {
+        "name": "字段字典行数",
+        "passed": true,
+        "detail": "195"
+      },
+      {
+        "name": "摘要公式",
+        "passed": true,
+        "detail": "26"
+      },
+      {
+        "name": "景区实体ID唯一",
+        "passed": true,
+        "detail": "1821"
+      },
+      {
+        "name": "关系源全部存在",
+        "passed": true,
+        "detail": "8652"
+      },
+      {
+        "name": "知识单元断言证据完整",
+        "passed": true,
+        "detail": "16"
+      },
+      {
+        "name": "exact坐标与H3完整",
+        "passed": true,
+        "detail": "1774"
+      },
+      {
+        "name": "rejected景区不进入H3",
+        "passed": true,
+        "detail": "7"
+      }
+    ],
+    "failures": []
+  },
+  "preview": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/scenic_structured_20260916/previews/贵阳市景区结构化总表_摘要预览.png"
+}

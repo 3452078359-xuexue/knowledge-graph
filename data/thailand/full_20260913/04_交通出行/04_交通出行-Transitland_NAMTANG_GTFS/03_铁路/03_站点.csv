@@ -1,0 +1,189 @@
+﻿交通类型代码,交通类型中文,stop_id,stop_name,stop_lat,stop_lon,zone_id,wheelchair_boarding,stop_name_泰文,stop_name_英文,分类依据
+2,铁路,212,SRT กรุงเทพ;SRT Bangkok,13.7392,100.51689,212,2,SRT กรุงเทพ,SRT Bangkok,stop_times停靠＋fare_rules票价区域
+2,铁路,213,SRT ตลาดใหม่ดอนเมือง;SRT Talatmai Don Muang,13.91468,100.59808,213,2,SRT ตลาดใหม่ดอนเมือง,SRT Talatmai Don Muang,stop_times停靠＋fare_rules票价区域
+2,铁路,214,SRT ดอนเมือง;SRT Don Muang,13.91971,100.60102,214,2,SRT ดอนเมือง,SRT Don Muang,stop_times停靠＋fare_rules票价区域
+2,铁路,215,SRT หลักหก;SRT Lak Hok,13.96584,100.60538,215,2,SRT หลักหก,SRT Lak Hok,stop_times停靠＋fare_rules票价区域
+2,铁路,216,SRT คลองหนึ่ง;SRT Khlong Nhung,14.02334,100.59818,216,2,SRT คลองหนึ่ง,SRT Khlong Nhung,stop_times停靠＋fare_rules票价区域
+2,铁路,217,SRT คลองรังสิต;SRT Khlong Rangsit,13.98619,100.60256,217,2,SRT คลองรังสิต,SRT Khlong Rangsit,stop_times停靠＋fare_rules票价区域
+2,铁路,218,SRT การเคหะ กม.19;SRT Khan Keha Khomo Sipkao,13.89837,100.58902,218,2,SRT การเคหะ กม.19,SRT Khan Keha Khomo Sipkao,stop_times停靠＋fare_rules票价区域
+2,铁路,219,SRT ม.ธรรมศาสตร์;SRT Thammasat University,14.07947,100.58852,219,2,SRT ม.ธรรมศาสตร์,SRT Thammasat University,stop_times停靠＋fare_rules票价区域
+2,铁路,220,SRT โรงพยาบาลรามาธิบดี;SRT RAMATHIBODI HOSPITAL,13.76658,100.52461,220,2,SRT โรงพยาบาลรามาธิบดี,SRT RAMATHIBODI HOSPITAL,stop_times停靠＋fare_rules票价区域
+2,铁路,222,SRT รังสิต;SRT Rangsit,13.99064,100.60208,222,2,SRT รังสิต,SRT Rangsit,stop_times停靠＋fare_rules票价区域
+2,铁路,223,SRT เชียงราก;SRT Chiang Rak,14.05533,100.59265,223,2,SRT เชียงราก,SRT Chiang Rak,stop_times停靠＋fare_rules票价区域
+2,铁路,224,SRT นวนคร;SRT Nava Nakhon,14.11446,100.58442,224,2,SRT นวนคร,SRT Nava Nakhon,stop_times停靠
+2,铁路,225,SRT ยมราช;SRT Yommaraj,13.75819,100.52126,225,2,SRT ยมราช,SRT Yommaraj,stop_times停靠＋fare_rules票价区域
+2,铁路,226,SRT มักกะสัน;SRT Makkasan,13.75373,100.5474,226,2,SRT มักกะสัน,SRT Makkasan,stop_times停靠＋fare_rules票价区域
+2,铁路,228,SRT สามเสน;SRT Sam Sen,13.77944,100.52982,228,2,SRT สามเสน,SRT Sam Sen,stop_times停靠＋fare_rules票价区域
+2,铁路,229,SRT คลองตัน;SRT Khlong Tan,13.74417,100.58982,229,2,SRT คลองตัน,SRT Khlong Tan,stop_times停靠＋fare_rules票价区域
+2,铁路,230,SRT หัวหมาก;SRT Hua Mak,13.73817,100.64022,230,2,SRT หัวหมาก,SRT Hua Mak,stop_times停靠＋fare_rules票价区域
+2,铁路,231,SRT บ้านทับช้าง;SRT Ban Thap Chang,13.73288,100.6909,231,2,SRT บ้านทับช้าง,SRT Ban Thap Chang,stop_times停靠＋fare_rules票价区域
+2,铁路,232,SRT ซอยวัดลานบุญ;SRT Soi Wat Lan Boon,13.72969,100.71825,232,2,SRT ซอยวัดลานบุญ,SRT Soi Wat Lan Boon,stop_times停靠＋fare_rules票价区域
+2,铁路,233,SRT ลาดกระบัง;SRT Lat Krabang,13.72759,100.74858,233,2,SRT ลาดกระบัง,SRT Lat Krabang,stop_times停靠＋fare_rules票价区域
+2,铁路,234,SRT หัวตะเข้;SRT Hua Takhe,13.72835,100.78283,234,2,SRT หัวตะเข้,SRT Hua Takhe,stop_times停靠＋fare_rules票价区域
+2,铁路,236,SRT คลองหลวงแพ่ง;SRT Khlong Luang Phaeng,13.72018,100.86316,236,2,SRT คลองหลวงแพ่ง,SRT Khlong Luang Phaeng,stop_times停靠＋fare_rules票价区域
+2,铁路,237,SRT อุรุพงษ์;SRT Urupong,13.75807,100.52825,237,2,SRT อุรุพงษ์,SRT Urupong,stop_times停靠＋fare_rules票价区域
+2,铁路,238,SRT พญาไท;SRT Phayathai,13.75702,100.53339,238,2,SRT พญาไท,SRT Phayathai,stop_times停靠＋fare_rules票价区域
+2,铁路,240,SRT อโศก;SRT Asoke,13.75037,100.56254,240,2,SRT อโศก,SRT Asoke,stop_times停靠＋fare_rules票价区域
+2,铁路,241,SRT สุขุมวิท 71;SRT Sukhumvit 71,13.74278,100.60067,241,2,SRT สุขุมวิท 71,SRT Sukhumvit 71,stop_times停靠＋fare_rules票价区域
+2,铁路,242,SRT พระจอมเกล้า;SRT Pra Chom Klao,13.72826,100.77548,242,2,SRT พระจอมเกล้า,SRT Pra Chom Klao,stop_times停靠＋fare_rules票价区域
+2,铁路,243,SRT ธนบุรี;SRT Thon Buri,13.76057,100.47888,243,2,SRT ธนบุรี,SRT Thon Buri,stop_times停靠＋fare_rules票价区域
+2,铁路,244,SRT บางระมาด;SRT Bang Ramat,13.77844,100.45306,244,2,SRT บางระมาด,SRT Bang Ramat,stop_times停靠＋fare_rules票价区域
+2,铁路,245,SRT ชุมทางตลิ่งชัน;SRT Taling Chan Junction,13.7893,100.44014,245,2,SRT ชุมทางตลิ่งชัน,SRT Taling Chan Junction,stop_times停靠＋fare_rules票价区域
+2,铁路,246,SRT บางบำหรุ;SRT Bang Bamru,13.79211,100.47733,246,2,SRT บางบำหรุ,SRT Bang Bamru,stop_times停靠＋fare_rules票价区域
+2,铁路,247,SRT บ้านฉิมพลี;SRT Banchimphli,13.79925,100.42059,247,2,SRT บ้านฉิมพลี,SRT Banchimphli,stop_times停靠＋fare_rules票价区域
+2,铁路,248,SRT ศาลาธรรมสพน์;SRT Sala Thammasop,13.801,100.37081,248,2,SRT ศาลาธรรมสพน์,SRT Sala Thammasop,stop_times停靠＋fare_rules票价区域
+2,铁路,249,SRT ศาลายา;SRT Sala Ya,13.8026,100.32448,249,2,SRT ศาลายา,SRT Sala Ya,stop_times停靠＋fare_rules票价区域
+2,铁路,250,SRT วัดสุวรรณ;SRT Wat Suwan,13.80576,100.28375,250,2,SRT วัดสุวรรณ,SRT Wat Suwan,stop_times停靠＋fare_rules票价区域
+2,铁路,251,SRT คลองมหาสวัสดิ์;SRT Khlong Maha Sawat,13.80892,100.2508,251,2,SRT คลองมหาสวัสดิ์,SRT Khlong Maha Sawat,stop_times停靠＋fare_rules票价区域
+2,铁路,252,SRT วัดงิ้วราย;SRT Wat Ngiu Rai,13.80808,100.21623,252,2,SRT วัดงิ้วราย,SRT Wat Ngiu Rai,stop_times停靠＋fare_rules票价区域
+2,铁路,253,SRT นครชัยศรี;SRT Nakhon Chaisi,13.80629,100.17615,253,2,SRT นครชัยศรี,SRT Nakhon Chaisi,stop_times停靠＋fare_rules票价区域
+2,铁路,254,SRT ท่าแฉลบ;SRT Tha Chalaep,13.81232,100.13175,254,2,SRT ท่าแฉลบ,SRT Tha Chalaep,stop_times停靠＋fare_rules票价区域
+2,铁路,255,SRT ต้นสำโรง;SRT Ton Samrong,13.82556,100.09131,255,2,SRT ต้นสำโรง,SRT Ton Samrong,stop_times停靠＋fare_rules票价区域
+2,铁路,256,SRT นครปฐม;SRT Nakhon Pathom,13.82441,100.05938,256,2,SRT นครปฐม,SRT Nakhon Pathom,stop_times停靠＋fare_rules票价区域
+2,铁路,257,SRT พระราชวังสนามจันทร์;SRT Sanam Chandra Palace,13.82381,100.04092,257,2,SRT พระราชวังสนามจันทร์,SRT Sanam Chandra Palace,stop_times停靠＋fare_rules票价区域
+2,铁路,258,SRT โพรงมะเดื่อ;SRT Phrong Madua,13.82235,99.99247,258,2,SRT โพรงมะเดื่อ,SRT Phrong Madua,stop_times停靠＋fare_rules票价区域
+2,铁路,264,SRT ประดิพัทธ์;SRT Pra Dipat,13.79218,100.53501,264,2,SRT ประดิพัทธ์,SRT Pra Dipat,stop_times停靠＋fare_rules票价区域
+2,铁路,266,SRT กรุงเทพอภิวัฒน์;SRT Bangkok (Krung Thep Aphiwat),13.80559,100.54229,266,2,SRT กรุงเทพอภิวัฒน์,SRT Bangkok (Krung Thep Aphiwat),stop_times停靠＋fare_rules票价区域
+2,铁路,267,SRT นิคมรถไฟ กม.11;SRT Nikhom Rotphai Khomo Sip-et,13.82331,100.54792,267,2,SRT นิคมรถไฟ กม.11,SRT Nikhom Rotphai Khomo Sip-et,stop_times停靠＋fare_rules票价区域
+2,铁路,268,SRT จรัญสนิทวงศ์;SRT Jaran Sanitwong,13.7631,100.47338,268,2,SRT จรัญสนิทวงศ์,SRT Jaran Sanitwong,stop_times停靠＋fare_rules票价区域
+2,铁路,269,SRT พุทธมณฑล สาย 2;SRT Phuttamonthon Sai 2,13.80013,100.39505,269,2,SRT พุทธมณฑล สาย 2,SRT Phuttamonthon Sai 2,stop_times停靠＋fare_rules票价区域
+2,铁路,270,SRT วงเวียนใหญ่;SRT Wongwian Yai,13.72461,100.49194,270,2,SRT วงเวียนใหญ่,SRT Wongwian Yai,stop_times停靠＋fare_rules票价区域
+2,铁路,271,SRT ตลาดพลู;SRT Talat Phlu,13.72082,100.478,271,2,SRT ตลาดพลู,SRT Talat Phlu,stop_times停靠＋fare_rules票价区域
+2,铁路,272,SRT คลองต้นไทร;SRT Khlong Ton Sai,13.70706,100.47003,272,2,SRT คลองต้นไทร,SRT Khlong Ton Sai,stop_times停靠＋fare_rules票价区域
+2,铁路,273,SRT จอมทอง;SRT Chom Thong,13.70174,100.46486,273,2,SRT จอมทอง,SRT Chom Thong,stop_times停靠＋fare_rules票价区域
+2,铁路,274,SRT วัดไทร;SRT Wat Sai,13.69107,100.45729,274,2,SRT วัดไทร,SRT Wat Sai,stop_times停靠＋fare_rules票价区域
+2,铁路,275,SRT วัดสิงห์;SRT Wat Sing,13.68327,100.44778,275,2,SRT วัดสิงห์,SRT Wat Sing,stop_times停靠＋fare_rules票价区域
+2,铁路,276,SRT บางบอน;SRT Bang Bon,13.66643,100.42885,276,2,SRT บางบอน,SRT Bang Bon,stop_times停靠＋fare_rules票价区域
+2,铁路,277,SRT การเคหะ;SRT Khan Keha,13.66344,100.42553,277,2,SRT การเคหะ,SRT Khan Keha,stop_times停靠＋fare_rules票价区域
+2,铁路,278,SRT รางสะแก;SRT Rang Sakae,13.64952,100.40988,278,2,SRT รางสะแก,SRT Rang Sakae,stop_times停靠＋fare_rules票价区域
+2,铁路,279,SRT รางโพธิ์;SRT Rang Pho,13.63903,100.39801,279,2,SRT รางโพธิ์,SRT Rang Pho,stop_times停靠＋fare_rules票价区域
+2,铁路,280,SRT สามแยก;SRT Sam Yaek,13.63032,100.38817,280,2,SRT สามแยก,SRT Sam Yaek,stop_times停靠＋fare_rules票价区域
+2,铁路,281,SRT พรมแดน;SRT Phrom Daen,13.62097,100.37807,281,2,SRT พรมแดน,SRT Phrom Daen,stop_times停靠＋fare_rules票价区域
+2,铁路,282,SRT บางน้ำจืด;SRT Bang Nam Jued,13.60512,100.36024,282,2,SRT บางน้ำจืด,SRT Bang Nam Jued,stop_times停靠＋fare_rules票价区域
+2,铁路,283,SRT คอกควาย;SRT Khok Khwai,13.58691,100.33986,283,2,SRT คอกควาย,SRT Khok Khwai,stop_times停靠＋fare_rules票价区域
+2,铁路,284,SRT บ้านขอม;SRT Ban Khom,13.5635,100.31401,284,2,SRT บ้านขอม,SRT Ban Khom,stop_times停靠＋fare_rules票价区域
+2,铁路,285,SRT มหาชัย;SRT Maha Chai,13.54627,100.27669,285,2,SRT มหาชัย,SRT Maha Chai,stop_times停靠＋fare_rules票价区域
+2,铁路,286,SRT บ้านแหลม;SRT Ban Laem,13.54189,100.26991,286,2,SRT บ้านแหลม,SRT Ban Laem,stop_times停靠＋fare_rules票价区域
+2,铁路,287,SRT ท่าฉลอม;SRT Tha Chalom,13.53445,100.26695,287,2,SRT ท่าฉลอม,SRT Tha Chalom,stop_times停靠＋fare_rules票价区域
+2,铁路,288,SRT บ้านชีผ้าขาว;SRT Ban Chi Phakhao,13.52486,100.24091,288,2,SRT บ้านชีผ้าขาว,SRT Ban Chi Phakhao,stop_times停靠＋fare_rules票价区域
+2,铁路,289,SRT บางสีคต;SRT Bang Si Khot,13.51571,100.21412,289,2,SRT บางสีคต,SRT Bang Si Khot,stop_times停靠＋fare_rules票价区域
+2,铁路,290,SRT บางกระเจ้า;SRT Bang Krachao,13.50876,100.19737,290,2,SRT บางกระเจ้า,SRT Bang Krachao,stop_times停靠＋fare_rules票价区域
+2,铁路,291,SRT บ้านบ่อ;SRT Ban Bo,13.5017,100.18083,291,2,SRT บ้านบ่อ,SRT Ban Bo,stop_times停靠＋fare_rules票价区域
+2,铁路,292,SRT บางโทรัด;SRT Bang Thorat,13.49467,100.16113,292,2,SRT บางโทรัด,SRT Bang Thorat,stop_times停靠＋fare_rules票价区域
+2,铁路,293,SRT บ้านกาหลง;SRT Ban Ka Long,13.4874,100.13752,293,2,SRT บ้านกาหลง,SRT Ban Ka Long,stop_times停靠＋fare_rules票价区域
+2,铁路,294,SRT บ้านนาขวาง;SRT Ban Na Khwang,13.48582,100.1209,294,2,SRT บ้านนาขวาง,SRT Ban Na Khwang,stop_times停靠＋fare_rules票价区域
+2,铁路,295,SRT บ้านนาโคก;SRT Ban Na Khok,13.47726,100.10327,295,2,SRT บ้านนาโคก,SRT Ban Na Khok,stop_times停靠＋fare_rules票价区域
+2,铁路,296,SRT เขตเมือง;SRT Ked Muang,13.45684,100.07458,296,2,SRT เขตเมือง,SRT Ked Muang,stop_times停靠＋fare_rules票价区域
+2,铁路,297,SRT คลองจาก;SRT Khlong Chak,13.55168,100.28932,297,2,SRT คลองจาก,SRT Khlong Chak,stop_times停靠＋fare_rules票价区域
+2,铁路,298,SRT ทุ่งสีทอง;SRT Thung Si Thong,13.61264,100.36873,298,2,SRT ทุ่งสีทอง,SRT Thung Si Thong,stop_times停靠＋fare_rules票价区域
+2,铁路,300,SRT บางเขน;SRT Bang Khen,13.84727,100.56063,300,2,SRT บางเขน,SRT Bang Khen,stop_times停靠＋fare_rules票价区域
+2,铁路,301,SRT ทุ่งสองห้อง;SRT Thung Song Hong,13.86013,100.5676,301,2,SRT ทุ่งสองห้อง,SRT Thung Song Hong,stop_times停靠＋fare_rules票价区域
+2,铁路,302,SRT หลักสี่;SRT Lak Si,13.8841,100.58078,302,2,SRT หลักสี่,SRT Lak Si,stop_times停靠＋fare_rules票价区域
+2,铁路,318,SRT ลาดใหญ่;SRT Lad Yai,13.43584,100.04498,318,2,SRT ลาดใหญ่,SRT Lad Yai,stop_times停靠＋fare_rules票价区域
+2,铁路,319,SRT บางกระบูน;SRT Bang Krabun,13.42292,100.01994,319,2,SRT บางกระบูน,SRT Bang Krabun,stop_times停靠＋fare_rules票价区域
+2,铁路,320,SRT แม่กลอง;SRT Mae Klong,13.40749,99.99849,320,2,SRT แม่กลอง,SRT Mae Klong,stop_times停靠＋fare_rules票价区域
+2,铁路,321,ARL พญาไท;ARL Phaya Thai,13.7566412159498,100.53498089531914,321,1,ARL พญาไท,ARL Phaya Thai,stop_times停靠＋fare_rules票价区域
+2,铁路,322,ARL ลาดกระบัง;ARL Lat Krabang,13.727634903231579,100.74842437213107,322,1,ARL ลาดกระบัง,ARL Lat Krabang,stop_times停靠＋fare_rules票价区域
+2,铁路,323,ARL บ้านทับช้าง;ARL Ban Thap Chang,13.73279942075091,100.69075070333975,323,1,ARL บ้านทับช้าง,ARL Ban Thap Chang,stop_times停靠＋fare_rules票价区域
+2,铁路,324,ARL มักกะสัน;ARL Makkasan,13.750833163678905,100.56122519248193,324,1,ARL มักกะสัน,ARL Makkasan,stop_times停靠＋fare_rules票价区域
+2,铁路,325,ARL หัวหมาก;ARL Hua Mak,13.737988986030562,100.64517308583572,325,1,ARL หัวหมาก,ARL Hua Mak,stop_times停靠＋fare_rules票价区域
+2,铁路,326,ARL ท่าอากาศยานสุวรรณภูมิ;ARL Suvarnabhumi Airport,13.694133503391848,100.75126500698755,326,1,ARL ท่าอากาศยานสุวรรณภูมิ,ARL Suvarnabhumi Airport,stop_times停靠＋fare_rules票价区域
+2,铁路,327,ARL ราชปรารภ;ARL Ratchaprarop,13.754883778545631,100.54217911630396,327,1,ARL ราชปรารภ,ARL Ratchaprarop,stop_times停靠＋fare_rules票价区域
+2,铁路,328,ARL รามคำแหง;ARL Ramkhamhaeng,13.742942062306419,100.60005603456344,328,1,ARL รามคำแหง,ARL Ramkhamhaeng,stop_times停靠＋fare_rules票价区域
+2,铁路,16947,SRT อยุธยา;SRT Ayutthaya,14.356609227982272,100.58319345116615,16947,2,SRT อยุธยา,SRT Ayutthaya,stop_times停靠
+2,铁路,16948,SRT สระบุรี;SRT Saraburi,14.527455292286055,100.91627284884453,16948,2,SRT สระบุรี,SRT Saraburi,stop_times停靠
+2,铁路,16949,SRT ชุมทางแก่งคอย;SRT Kaeng Khoi Junction,14.587538108563443,101.00530073046684,16949,2,SRT ชุมทางแก่งคอย,SRT Kaeng Khoi Junction,stop_times停靠
+2,铁路,16950,SRT ปากช่อง;SRT Pak Chong,14.704997898607663,101.41040414571762,16950,2,SRT ปากช่อง,SRT Pak Chong,stop_times停靠
+2,铁路,16951,STR นครราชสีมา;STR Nakhon Ratchasima,14.972248946921221,102.07891255617142,16951,2,STR นครราชสีมา,STR Nakhon Ratchasima,stop_times停靠
+2,铁路,16952,SRT ชุมทางถนนจิระ;SRT Thanon Chira Junction,14.967624988261509,102.10191249847412,16952,2,SRT ชุมทางถนนจิระ,SRT Thanon Chira Junction,stop_times停靠
+2,铁路,16953,SRT ลำปลายมาศ;SRT Lam Plai Mat,15.02461488078104,102.82968163490295,16953,2,SRT ลำปลายมาศ,SRT Lam Plai Mat,stop_times停靠
+2,铁路,16954,SRT บุรีรัมย์;SRT Buri Ram,15.003510195526628,103.1078964471817,16954,2,SRT บุรีรัมย์,SRT Buri Ram,stop_times停靠
+2,铁路,16955,SRT กระสัง;SRT Krasang,14.927190577941717,103.30272138118744,16955,2,SRT กระสัง,SRT Krasang,stop_times停靠
+2,铁路,16956,SRT สุรินทร์;SRT Surin,14.891805846967568,103.49410504102707,16956,2,SRT สุรินทร์,SRT Surin,stop_times停靠
+2,铁路,16957,SRT ศีขรภูมิ;SRT Sikhoraphum,14.945611556494706,103.78639206290245,16957,2,SRT ศีขรภูมิ,SRT Sikhoraphum,stop_times停靠
+2,铁路,16958,SRT อุทุมพรพิสัย;SRT Uthumphon Phisai,15.106469837714565,104.14042487740517,16958,2,SRT อุทุมพรพิสัย,SRT Uthumphon Phisai,stop_times停靠
+2,铁路,16959,SRT ศรีสะเกษ ;SRT Si Sa Ket,15.11638099588345,104.32740166783333,16959,2,SRT ศรีสะเกษ,SRT Si Sa Ket,stop_times停靠
+2,铁路,16960,SRT กันทรารมย์;SRT Kanthararom,15.1079639857708,104.57837462425232,16960,2,SRT กันทรารมย์,SRT Kanthararom,stop_times停靠
+2,铁路,16961,SRT อุบลราชธานี;SRT Ubon Ratchathani,15.20148133457499,104.85848844051361,16961,2,SRT อุบลราชธานี,SRT Ubon Ratchathani,stop_times停靠
+2,铁路,16962,SRT ลพบุรี;SRT Lopburi,14.798545813218983,100.61533972620964,16962,2,SRT ลพบุรี,SRT Lopburi,stop_times停靠
+2,铁路,16963,SRT เชียงรากน้อย;SRT Chiang Rak Noi,14.131319006519512,100.58199718594551,16963,2,SRT เชียงรากน้อย,SRT Chiang Rak Noi,stop_times停靠
+2,铁路,16964,SRT คลองพุทรา;SRT Khlong Phutsa,14.185856311108497,100.57827427983284,16964,2,SRT คลองพุทรา,SRT Khlong Phutsa,stop_times停靠
+2,铁路,16965,SRT บางปะอิน;SRT Bang Pa-in,14.239504365661897,100.58457747101784,16965,2,SRT บางปะอิน,SRT Bang Pa-in,stop_times停靠
+2,铁路,16966,SRT บ้านโพ;SRT Ban Pho,14.28212927103701,100.58870136737823,16966,2,SRT บ้านโพ,SRT Ban Pho,stop_times停靠
+2,铁路,16967,SRT บ้านม้า;SRT Ban Ma ,14.384077022977788,100.59713020920753,16967,2,SRT บ้านม้า,SRT Ban Ma,stop_times停靠
+2,铁路,16968,SRT คลองบางตาล;SRT Khlong Bang Tan,13.821266887430275,99.95916813611984,16968,2,SRT คลองบางตาล,SRT Khlong Bang Tan,stop_times停靠
+2,铁路,16969,SRT ชุมทางหนองปลาดุก;SRT Nong Pla Duk Junction,13.817755930988248,99.91115659475327,16969,2,SRT ชุมทางหนองปลาดุก,SRT Nong Pla Duk Junction,stop_times停靠
+2,铁路,16970,SRT บ้านโป่ง;SRT Ban Pong,13.810926604515297,99.87562268972397,16970,2,SRT บ้านโป่ง,SRT Ban Pong,stop_times停靠
+2,铁路,16971,SRT มาบพระจันทร์;SRT Map Phra Chan,14.40234890797992,100.632154494524,16971,2,SRT มาบพระจันทร์,SRT Map Phra Chan,stop_times停靠
+2,铁路,16972,SRT นครชุมน์;SRT Nakhon Chum,13.765944947408235,99.85537737607956,16972,2,SRT นครชุมน์,SRT Nakhon Chum,stop_times停靠
+2,铁路,16973,SRT คลองตาคต;SRT Khlong Ta Khot,13.7339721795922,99.8499271273613,16973,2,SRT คลองตาคต,SRT Khlong Ta Khot,stop_times停靠
+2,铁路,16974,SRT โพธาราม;SRT Photharam ,13.69366131243684,99.8507210612297,16974,2,SRT โพธาราม,SRT Photharam,stop_times停靠
+2,铁路,16975,SRT เจ็ดเสมียน ;SRT Chet Samian,13.636333461396982,99.8212543129921,16975,2,SRT เจ็ดเสมียน,SRT Chet Samian,stop_times停靠
+2,铁路,16976,SRT บ้านกล้วย ;SRT Ban Kluai,13.588424475347214,99.81553047895432,16976,2,SRT บ้านกล้วย,SRT Ban Kluai,stop_times停靠
+2,铁路,16977,SRT ราชบุรี;SRT Ratchaburi,13.530544349757022,99.82390969991684,16977,2,SRT ราชบุรี,SRT Ratchaburi,stop_times停靠
+2,铁路,16978,SRT บ้านดอนกลาง;SRT Ban Donklang,14.415751149510623,100.65967932343483,16978,2,SRT บ้านดอนกลาง,SRT Ban Donklang,stop_times停靠
+2,铁路,16979,SRT พระแก้ว;SRT Phra Kaeo,14.428690211479207,100.68558275699615,16979,2,SRT พระแก้ว,SRT Phra Kaeo,stop_times停靠
+2,铁路,16980,SRT ชุมทางบ้านภาชี;SRT Ban Phachi Junction,14.450745409479175,100.72065263986588,16980,2,SRT ชุมทางบ้านภาชี,SRT Ban Phachi Junction,stop_times停靠
+2,铁路,16981,SRT ดอนหญ้านาง;SRT Don Ya Nang,14.479589713809235,100.72838813066483,16981,2,SRT ดอนหญ้านาง,SRT Don Ya Nang,stop_times停靠
+2,铁路,16982,SRT หนองวิวัฒน์;SRT Nong Wiwat,14.505646615129923,100.72708189487457,16982,2,SRT หนองวิวัฒน์,SRT Nong Wiwat,stop_times停靠
+2,铁路,16983,SRT บ้านปลักแรด;SRT Ban Plak Raet,14.53002576504501,100.72597950696945,16983,2,SRT บ้านปลักแรด,SRT Ban Plak Raet,stop_times停靠
+2,铁路,16984,SRT ท่าเรือ;SRT Tha Ruea,14.562421543584762,100.72439700365067,16984,2,SRT ท่าเรือ,SRT Tha Ruea,stop_times停靠
+2,铁路,16985,SRT บ้านหมอ;SRT Ban Mo,14.617035477938366,100.72635903954506,16985,2,SRT บ้านหมอ,SRT Ban Mo,stop_times停靠
+2,铁路,16986,SRT หนองโดน;SRT Nong Don,14.68337936659173,100.70625051856041,16986,2,SRT หนองโดน,SRT Nong Don,stop_times停靠
+2,铁路,16987,SRT บ้านกลับ;SRT Ban Klap,14.720909794331416,100.6781704723835,16987,2,SRT บ้านกลับ,SRT Ban Klap,stop_times停靠
+2,铁路,16988,SRT บ้านป่าหวาย;SRT Ban Pa Wai,14.759449202756665,100.64329639077187,16988,2,SRT บ้านป่าหวาย,SRT Ban Pa Wai,stop_times停靠
+2,铁路,16989,SRT หนองกวย;SRT Nong Kuai,14.47372038591411,100.75718030333519,16989,2,SRT หนองกวย,SRT Nong Kuai,stop_times停靠
+2,铁路,16990,SRT หนองแซง;SRT Nong Saeng,14.490468336154906,100.78381597995758,16990,2,SRT หนองแซง,SRT Nong Saeng,stop_times停靠
+2,铁路,16991,SRT หนองสีดา;SRT Nong Sida,14.51630584541237,100.82509517669678,16991,2,SRT หนองสีดา,SRT Nong Sida,stop_times停靠
+2,铁路,16992,SRT บ้านป๊อกแป๊ก;SRT Ban Pok Paek,14.522235063476005,100.86441099643707,16992,2,SRT บ้านป๊อกแป๊ก,SRT Ban Pok Paek,stop_times停靠
+2,铁路,16993,SRT หนองบัว;SRT Nong Bua,14.555486110663963,100.96260264515877,16993,2,SRT หนองบัว,SRT Nong Bua,stop_times停靠
+2,铁路,16994,SRT ชุมทางบางซื่อ;SRT Bang Sue Junction,13.804766494985815,100.54027274250984,16994,2,SRT ชุมทางบางซื่อ,SRT Bang Sue Junction,stop_times停靠
+2,铁路,16995,SRT กรุงเทพอภิวัฒน์	;SRT Bangkok (Krung Thep Aphiwat)	,13.80410489214825,100.53986236453056,16995,2,SRT กรุงเทพอภิวัฒน์,SRT Bangkok (Krung Thep Aphiwat),stop_times停靠
+2,铁路,16996,SRT เพชรบุรี;SRT Phetchaburi,13.11645720449451,99.94103372097015,16996,2,SRT เพชรบุรี,SRT Phetchaburi,stop_times停靠
+2,铁路,16997,SRT หัวหิน	;SRT Hua Hin,12.567135221866184,99.95473846793175,16997,2,SRT หัวหิน,SRT Hua Hin,stop_times停靠
+2,铁路,16998,SRT ประจวบคีรีขันธ์;SRT Prachuap Khiri Khan	,11.807711056047454,99.79377508163452,16998,2,SRT ประจวบคีรีขันธ์,SRT Prachuap Khiri Khan,stop_times停靠
+2,铁路,16999,SRT ชุมพร	;SRT Chumphon,10.503051717337925,99.17584642767906,16999,2,SRT ชุมพร,SRT Chumphon,stop_times停靠
+2,铁路,17000,SRT สุราษฎร์ธานี;SRT Surat Thani	,9.104162511816336,99.23037305474281,17000,2,SRT สุราษฎร์ธานี,SRT Surat Thani,stop_times停靠
+2,铁路,17001,SRT ชุมทางทุ่งสง	;SRT Thung Song Junction	,8.17111013508789,99.67925146222115,17001,2,SRT ชุมทางทุ่งสง,SRT Thung Song Junction,stop_times停靠
+2,铁路,17002,SRT พัทลุง;SRT Phatthalung,7.620998384066136,100.08577778935432,17002,2,SRT พัทลุง,SRT Phatthalung,stop_times停靠
+2,铁路,17003,SRT ชุมทางหาดใหญ่	;SRT Hat Yai Junction	,7.003773985965188,100.46728178858757,17003,2,SRT ชุมทางหาดใหญ่,SRT Hat Yai Junction,stop_times停靠
+2,铁路,17004,SRT ปากท่อ;SRT Pak Tho,13.374733070502193,99.84351128339767,17004,2,SRT ปากท่อ,SRT Pak Tho,stop_times停靠
+2,铁路,17005,SRT วังก์พง;SRT Wang Phong,12.402303738655277,99.93264243006706,17005,2,SRT วังก์พง,SRT Wang Phong,stop_times停靠
+2,铁路,17006,SRT บางสะพานใหญ่;SRT Bang Saphan Yai,11.214317205131604,99.50975596904755,17006,2,SRT บางสะพานใหญ่,SRT Bang Saphan Yai,stop_times停靠
+2,铁路,17007,SRT ชะอวด;SRT Cha-uat,7.967160035528556,99.9977570772171,17007,2,SRT ชะอวด,SRT Cha-uat,stop_times停靠
+2,铁路,17008,SRT บางแก้ว;SRT Bang Kaeo,7.422048980869835,100.16724586486816,17008,2,SRT บางแก้ว,SRT Bang Kaeo,stop_times停靠
+2,铁路,17009,SRT จะนะ;SRT Chana,6.909235238977445,100.74006915092468,17009,2,SRT จะนะ,SRT Chana,stop_times停靠
+2,铁路,17010,SRT ปัตตานี;SRT Pattani,6.729499009949888,101.09395310282707,17010,2,SRT ปัตตานี,SRT Pattani,stop_times停靠
+2,铁路,17011,SRT ยะลา;SRT Yala,6.5598979383544025,101.29341423511505,17011,2,SRT ยะลา,SRT Yala,stop_times停靠
+2,铁路,17012,SRT รือเสาะ;SRT Ruso,6.394049496888123,101.51524230837822,17012,2,SRT รือเสาะ,SRT Ruso,stop_times停靠
+2,铁路,17013,SRT ตันหยงมัส;SRT Tanyong Mat,6.292510980666956,101.71381697058678,17013,2,SRT ตันหยงมัส,SRT Tanyong Mat,stop_times停靠
+2,铁路,17014,SRT สุไหงปาดี;SRT Su-Ngai Padi,6.085902182174508,101.88096418976784,17014,2,SRT สุไหงปาดี,SRT Su-Ngai Padi,stop_times停靠
+2,铁路,17015,SRT สุไหงโก-ลก;SRT Su-Ngai Kolok,6.025758564747828,101.96337640285492,17015,2,SRT สุไหงโก-ลก,SRT Su-Ngai Kolok,stop_times停靠
+2,铁路,17016,SRT นครสวรรค์;SRT Nakhon Sawan,15.663156395635664,100.15849649906158,17016,2,SRT นครสวรรค์,SRT Nakhon Sawan,stop_times停靠
+2,铁路,17017,SRT ตะพานหิน;SRT  Taphan Hin,16.220661285707678,100.42411834001541,17017,2,SRT ตะพานหิน,SRT  Taphan Hin,stop_times停靠
+2,铁路,17018,SRT พิจิตร;SRT Phichit,16.44786991244159,100.34649923443794,17018,2,SRT พิจิตร,SRT Phichit,stop_times停靠
+2,铁路,17019,SRT พิษณุโลก;SRT Phitsanulok,16.815014311265276,100.26567488908768,17019,2,SRT พิษณุโลก,SRT Phitsanulok,stop_times停靠
+2,铁路,17020,SRT อุตรดิตถ์;SRT Uttaradit,17.620406572470735,100.09732335805893,17020,2,SRT อุตรดิตถ์,SRT Uttaradit,stop_times停靠
+2,铁路,17021,SRT ศิลาอาสน์;SRT Sila-at,17.639275412586557,100.10097652673721,17021,2,SRT ศิลาอาสน์,SRT Sila-at,stop_times停靠
+2,铁路,17022,SRT เด่นชัย;SRT Den Sai,17.980686058849006,100.04601135849953,17022,2,SRT เด่นชัย,SRT Den Sai,stop_times停靠
+2,铁路,17023,SRT บ้านปิน;SRT Ban Pin,18.09613518688717,99.86699670553207,17023,2,SRT บ้านปิน,SRT Ban Pin,stop_times停靠
+2,铁路,17024,SRT นครลำปาง;SRT Nakhon Lampang,18.279613196674642,99.47260603308678,17024,2,SRT นครลำปาง,SRT Nakhon Lampang,stop_times停靠
+2,铁路,17025,SRT ขุนตาน;SRT Khun Tan,18.500418207123072,99.2653101682663,17025,2,SRT ขุนตาน,SRT Khun Tan,stop_times停靠
+2,铁路,17026,SRT ลำพูน;SRT Lamphun,18.593689313760912,99.02101457118988,17026,2,SRT ลำพูน,SRT Lamphun,stop_times停靠
+2,铁路,17027,SRT เชียงใหม่;SRT Chiang Mai,18.78298829436565,99.01661708950996,17027,2,SRT เชียงใหม่,SRT Chiang Mai,stop_times停靠
+2,铁路,17028,SRT ลำนารายณ์;SRT Lam Narai,15.220050689292524,101.13954931497574,17028,2,SRT ลำนารายณ์,SRT Lam Narai,stop_times停靠
+2,铁路,17029,SRT ชุมทางบัวใหญ่;SRT Bua Yai Junction,15.5860342727882,102.42706999182701,17029,2,SRT ชุมทางบัวใหญ่,SRT Bua Yai Junction,stop_times停靠
+2,铁路,17030,SRT เมืองพล;SRT Muang Phon,15.81969643883509,102.60045602917671,17030,2,SRT เมืองพล,SRT Muang Phon,stop_times停靠
+2,铁路,17031,SRT บ้านไผ่;SRT Ban Phai,16.059654001722066,102.7253732085228,17031,2,SRT บ้านไผ่,SRT Ban Phai,stop_times停靠
+2,铁路,17032,SRT ขอนแก่น;SRT Khon Kaen,16.42696251023095,102.82556980848312,17032,2,SRT ขอนแก่น,SRT Khon Kaen,stop_times停靠
+2,铁路,17033,SRT น้ำพอง;SRT Nam Phong,16.709430065076617,102.86128208041191,17033,2,SRT น้ำพอง,SRT Nam Phong,stop_times停靠
+2,铁路,17034,SRT กุมภวาปี;SRT Kumphawapi,17.122327650549593,102.94811993837357,17034,2,SRT กุมภวาปี,SRT Kumphawapi,stop_times停靠
+2,铁路,17035,SRT อุดรธานี;SRT Udon Thani,17.404415646618638,102.80558064579964,17035,2,SRT อุดรธานี,SRT Udon Thani,stop_times停靠
+2,铁路,17037,SRT หนองคาย;SRT Nong Khai,17.8645984732489,102.73096024990082,17037,2,SRT หนองคาย,SRT Nong Khai,stop_times停靠
+2,铁路,17038,SRT หนองตม;SRT Nong Tom,17.09999971445244,100.16347199678421,17038,2,SRT หนองตม,SRT Nong Tom,stop_times停靠
+2,铁路,17039,SRT พิชัย;SRT Pichai,17.288925540160058,100.08827358484268,17039,2,SRT พิชัย,SRT Pichai,stop_times停靠
+2,铁路,17040,SRT แม่เมาะ;SRT Mae Mo,18.261425137049052,99.70706194639206,17040,2,SRT แม่เมาะ,SRT Mae Mo,stop_times停靠
+2,铁路,17041,SRT ปากน้ำโพ;SRT Pak Nam Pho,15.70404400363913,100.15407219529152,17041,2,SRT ปากน้ำโพ,SRT Pak Nam Pho,stop_times停靠
+2,铁路,17042,SRT บ้านกรูด;SRT Ban Krut,11.348942745086966,99.55621048808098,17042,2,SRT บ้านกรูด,SRT Ban Krut,stop_times停靠
+2,铁路,17046,SRT อุบลราชธานี;SRT Ubon Ratchathani,15.20055340627695,104.85847100615501,17046,2,SRT อุบลราชธานี,SRT Ubon Ratchathani,stop_times停靠
+2,铁路,17048,SRT กันทรารมย์;SRT Kanthararom,15.107251871458024,104.57852214574814,17048,2,SRT กันทรารมย์,SRT Kanthararom,stop_times停靠

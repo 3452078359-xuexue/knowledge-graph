@@ -1,0 +1,8255 @@
+[
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "61c867ebad90",
+  "externalIds": [
+   "zone:amap:贵安新区"
+  ],
+  "id": "zone_07edc7d964",
+  "name": "贵安新区",
+  "zoneType": "产业新区",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:花溪大学城",
+   "amap:贵安新区",
+   "amap_regeo:花溪大学城"
+  ],
+  "h3Cells": [
+   "88400c0409fffff",
+   "88400c040bfffff",
+   "88400c0413fffff",
+   "88400c041dfffff",
+   "88400c0443fffff",
+   "88400c0451fffff",
+   "88400c0453fffff",
+   "88400c0455fffff",
+   "88400c0457fffff",
+   "88400c0459fffff",
+   "88400c045bfffff",
+   "88400c045dfffff",
+   "88400c0481fffff",
+   "88400c0483fffff",
+   "88400c0485fffff",
+   "88400c0487fffff",
+   "88400c0489fffff",
+   "88400c048bfffff",
+   "88400c048dfffff",
+   "88400c0491fffff",
+   "88400c0493fffff",
+   "88400c0495fffff",
+   "88400c0497fffff",
+   "88400c0499fffff",
+   "88400c049bfffff",
+   "88400c049dfffff",
+   "88400c04a1fffff",
+   "88400c04a3fffff",
+   "88400c04a7fffff",
+   "88400c04abfffff",
+   "88400c04adfffff",
+   "88400c04b1fffff",
+   "88400c04b3fffff",
+   "88400c04b5fffff",
+   "88400c04b7fffff",
+   "88400c04b9fffff",
+   "88400c04bbfffff",
+   "88400c04bdfffff",
+   "88400c04c1fffff",
+   "88400c04c3fffff",
+   "88400c04c5fffff",
+   "88400c04c7fffff",
+   "88400c04cbfffff",
+   "88400c04cdfffff",
+   "88400c04d1fffff",
+   "88400c04d3fffff",
+   "88400c04d5fffff",
+   "88400c04d7fffff",
+   "88400c04d9fffff",
+   "88400c04ddfffff",
+   "88400c04e3fffff",
+   "88400c04ebfffff",
+   "88400c0599fffff",
+   "88400c059bfffff",
+   "88400c0613fffff",
+   "88400c0619fffff",
+   "88400c061bfffff",
+   "88400c0631fffff",
+   "88400c0633fffff",
+   "88400c0653fffff",
+   "88400c0657fffff",
+   "88400c0683fffff",
+   "88400c0685fffff",
+   "88400c0689fffff",
+   "88400c068bfffff",
+   "88400c068dfffff",
+   "88400c0691fffff",
+   "88400c0693fffff",
+   "88400c0695fffff",
+   "88400c0697fffff",
+   "88400c0699fffff",
+   "88400c069bfffff",
+   "88400c06a1fffff",
+   "88400c06a3fffff",
+   "88400c06a5fffff",
+   "88400c06a7fffff",
+   "88400c06a9fffff",
+   "88400c06abfffff",
+   "88400c06adfffff",
+   "88400c06b1fffff",
+   "88400c06b5fffff",
+   "88400c06b7fffff",
+   "88400c06b9fffff",
+   "88400c06bbfffff",
+   "88400c06bdfffff",
+   "88400c06c1fffff",
+   "88400c06c3fffff",
+   "88400c06c5fffff",
+   "88400c06c7fffff",
+   "88400c06c9fffff",
+   "88400c06cbfffff",
+   "88400c06cdfffff",
+   "88400c06d5fffff",
+   "88400c06dbfffff",
+   "88400c06ddfffff",
+   "88400c06e1fffff",
+   "88400c06e3fffff",
+   "88400c06e5fffff",
+   "88400c06e7fffff",
+   "88400c06e9fffff",
+   "88400c06ebfffff",
+   "88400c06edfffff",
+   "88400c3027fffff",
+   "88400c3101fffff",
+   "88400c3105fffff",
+   "88400c3109fffff",
+   "88400c310dfffff",
+   "88400c3111fffff",
+   "88400c3113fffff",
+   "88400c3115fffff",
+   "88400c3117fffff",
+   "88400c311bfffff",
+   "88400c3121fffff",
+   "88400c3123fffff",
+   "88400c3127fffff",
+   "88400c3129fffff",
+   "88400c312dfffff",
+   "88400c3133fffff",
+   "88400c3135fffff",
+   "88400c3137fffff",
+   "88400c313dfffff",
+   "88400c3141fffff",
+   "88400c3149fffff",
+   "88400c3151fffff",
+   "88400c3155fffff",
+   "88400c315dfffff",
+   "88400c3163fffff",
+   "88400c3167fffff",
+   "88400c3169fffff",
+   "88400c316bfffff",
+   "88400c316dfffff",
+   "88400c31c5fffff",
+   "88400c31cdfffff",
+   "88400c31e5fffff",
+   "88400c31e9fffff",
+   "88400c31edfffff",
+   "88400c3303fffff",
+   "88400c330bfffff",
+   "88400c330dfffff",
+   "88400c3323fffff",
+   "88400c3325fffff",
+   "88400c3349fffff",
+   "88400c3351fffff",
+   "88400c336dfffff",
+   "88400c3a19fffff",
+   "88400c3a49fffff",
+   "88400c3a53fffff",
+   "88400c3a5bfffff",
+   "88400c3ad5fffff",
+   "88400c3ad9fffff",
+   "88400c3addfffff",
+   "88400ca925fffff",
+   "88400ca937fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0633fffff",
+   "cell:88400c0497fffff",
+   "cell:88400c06e1fffff",
+   "cell:88400c06c7fffff",
+   "cell:88400c04ebfffff"
+  ],
+  "cellCount": 153,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "b010831fed1d",
+  "externalIds": [
+   "zone:amap:花溪公园/十里河滩"
+  ],
+  "id": "zone_dfebf59aee",
+  "name": "花溪公园/十里河滩",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:花溪公园/十里河滩",
+   "amap:花溪大学城",
+   "amap:近贵阳恒大童世界 · 花溪夜郎谷",
+   "amap_regeo:徐家冲",
+   "amap_regeo:清水江路",
+   "amap_regeo:石板"
+  ],
+  "h3Cells": [
+   "88400c0083fffff",
+   "88400c008bfffff",
+   "88400c0091fffff",
+   "88400c0093fffff",
+   "88400c0099fffff",
+   "88400c009bfffff",
+   "88400c009dfffff",
+   "88400c00b1fffff",
+   "88400c00b5fffff",
+   "88400c00b7fffff",
+   "88400c00b9fffff",
+   "88400c00bdfffff",
+   "88400c00d1fffff",
+   "88400c00d3fffff",
+   "88400c00d5fffff",
+   "88400c00d7fffff",
+   "88400c00d9fffff",
+   "88400c00dbfffff",
+   "88400c00ddfffff",
+   "88400c0281fffff",
+   "88400c0283fffff",
+   "88400c0287fffff",
+   "88400c028bfffff",
+   "88400c0291fffff",
+   "88400c0293fffff",
+   "88400c0295fffff",
+   "88400c0297fffff",
+   "88400c0299fffff",
+   "88400c029bfffff",
+   "88400c029dfffff",
+   "88400c02b1fffff",
+   "88400c02b3fffff",
+   "88400c02b9fffff",
+   "88400c02bbfffff",
+   "88400c02bdfffff",
+   "88400c02d1fffff",
+   "88400c02d3fffff",
+   "88400c02d5fffff",
+   "88400c02d7fffff",
+   "88400c02d9fffff",
+   "88400c02dbfffff",
+   "88400c02ddfffff",
+   "88400c0403fffff",
+   "88400c0407fffff",
+   "88400c040dfffff",
+   "88400c0415fffff",
+   "88400c0417fffff",
+   "88400c0431fffff",
+   "88400c0435fffff",
+   "88400c0439fffff",
+   "88400c043bfffff",
+   "88400c043dfffff",
+   "88400c0441fffff",
+   "88400c0445fffff",
+   "88400c0447fffff",
+   "88400c0449fffff",
+   "88400c044dfffff",
+   "88400c0461fffff",
+   "88400c0463fffff",
+   "88400c0465fffff",
+   "88400c0467fffff",
+   "88400c0469fffff",
+   "88400c046bfffff",
+   "88400c046dfffff",
+   "88400c0541fffff",
+   "88400c0543fffff",
+   "88400c0545fffff",
+   "88400c0547fffff",
+   "88400c0549fffff",
+   "88400c054bfffff",
+   "88400c054dfffff",
+   "88400c0559fffff",
+   "88400c055bfffff",
+   "88400c055dfffff",
+   "88400c0625fffff",
+   "88400c0627fffff",
+   "88400c062dfffff",
+   "88400c0641fffff",
+   "88400c0645fffff",
+   "88400c0661fffff",
+   "88400c0665fffff",
+   "88400c0667fffff",
+   "88400c0669fffff",
+   "88400c066bfffff",
+   "88400c066dfffff",
+   "88400c0711fffff",
+   "88400c0713fffff",
+   "88400c0717fffff",
+   "88400c0719fffff",
+   "88400c071bfffff",
+   "88400c0721fffff",
+   "88400c0723fffff",
+   "88400c0725fffff",
+   "88400c0727fffff",
+   "88400c0729fffff",
+   "88400c072bfffff",
+   "88400c072dfffff",
+   "88400c0731fffff",
+   "88400c0733fffff",
+   "88400c0735fffff",
+   "88400c0737fffff",
+   "88400c0739fffff",
+   "88400c073bfffff",
+   "88400c073dfffff",
+   "88400c0745fffff",
+   "88400c0749fffff",
+   "88400c074dfffff",
+   "88400c0751fffff",
+   "88400c0753fffff",
+   "88400c0757fffff",
+   "88400c0759fffff",
+   "88400c075bfffff",
+   "88400c075dfffff",
+   "88400c0761fffff",
+   "88400c0765fffff",
+   "88400c0767fffff",
+   "88400c0769fffff",
+   "88400c076dfffff",
+   "88400c0e4bfffff",
+   "88400c1537fffff",
+   "88400c15a5fffff",
+   "88400c15adfffff",
+   "88400c15b7fffff",
+   "88400c15e5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c044dfffff",
+   "cell:88400c02d7fffff",
+   "cell:88400c0739fffff",
+   "cell:88400c02d3fffff",
+   "cell:88400c0625fffff"
+  ],
+  "cellCount": 124,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "32ce3909d4b4",
+  "externalIds": [
+   "zone:amap:白云公园/白云地区"
+  ],
+  "id": "zone_1f779d7377",
+  "name": "白云公园/白云地区",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:白云公园/白云地区",
+   "amap_regeo:云峰大道",
+   "amap_regeo:龚家寨"
+  ],
+  "h3Cells": [
+   "88400c0db7fffff",
+   "88400c7001fffff",
+   "88400c7003fffff",
+   "88400c7005fffff",
+   "88400c7007fffff",
+   "88400c7009fffff",
+   "88400c700dfffff",
+   "88400c7013fffff",
+   "88400c7015fffff",
+   "88400c7017fffff",
+   "88400c7019fffff",
+   "88400c701bfffff",
+   "88400c701dfffff",
+   "88400c7021fffff",
+   "88400c7023fffff",
+   "88400c702bfffff",
+   "88400c7035fffff",
+   "88400c7037fffff",
+   "88400c703dfffff",
+   "88400c7047fffff",
+   "88400c704bfffff",
+   "88400c7051fffff",
+   "88400c7053fffff",
+   "88400c7055fffff",
+   "88400c7057fffff",
+   "88400c7059fffff",
+   "88400c705bfffff",
+   "88400c705dfffff",
+   "88400c706bfffff",
+   "88400c7081fffff",
+   "88400c7083fffff",
+   "88400c7085fffff",
+   "88400c7087fffff",
+   "88400c7089fffff",
+   "88400c708bfffff",
+   "88400c708dfffff",
+   "88400c7099fffff",
+   "88400c709dfffff",
+   "88400c70c1fffff",
+   "88400c70c3fffff",
+   "88400c70c5fffff",
+   "88400c70c7fffff",
+   "88400c70c9fffff",
+   "88400c70cbfffff",
+   "88400c70cdfffff",
+   "88400c70d1fffff",
+   "88400c70d3fffff",
+   "88400c70d5fffff",
+   "88400c70d7fffff",
+   "88400c70d9fffff",
+   "88400c70ddfffff",
+   "88400c70e1fffff",
+   "88400c70e3fffff",
+   "88400c70e9fffff",
+   "88400c70ebfffff",
+   "88400c70edfffff",
+   "88400c7233fffff",
+   "88400c7237fffff",
+   "88400c7285fffff",
+   "88400c7289fffff",
+   "88400c728bfffff",
+   "88400c7293fffff",
+   "88400c72a1fffff",
+   "88400c72a3fffff",
+   "88400c72a5fffff",
+   "88400c72a7fffff",
+   "88400c72a9fffff",
+   "88400c72adfffff",
+   "88400c72b5fffff",
+   "88400c72b7fffff",
+   "88400c72c3fffff",
+   "88400c72c7fffff",
+   "88400c72cbfffff",
+   "88400c72d1fffff",
+   "88400c72d3fffff",
+   "88400c72d5fffff",
+   "88400c72d7fffff",
+   "88400c72ddfffff",
+   "88400c72e1fffff",
+   "88400c72e3fffff",
+   "88400c72e5fffff",
+   "88400c72e7fffff",
+   "88400c72ebfffff",
+   "88400c72edfffff",
+   "88400c7625fffff",
+   "88400c7627fffff",
+   "88400c7711fffff",
+   "88400c7719fffff",
+   "88400c771bfffff",
+   "88400c7751fffff",
+   "88400c7753fffff",
+   "88400c7757fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7293fffff",
+   "cell:88400c70d9fffff",
+   "cell:88400c70e9fffff",
+   "cell:88400c7751fffff",
+   "cell:88400c70ddfffff"
+  ],
+  "cellCount": 92,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "82da42ba311c",
+  "externalIds": [
+   "zone:amap:龙洞堡机场/东客站"
+  ],
+  "id": "zone_ebdbd4fa37",
+  "name": "龙洞堡机场/东客站",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:龙洞堡机场/东客站"
+  ],
+  "h3Cells": [
+   "88400c0021fffff",
+   "88400c0023fffff",
+   "88400c0025fffff",
+   "88400c0027fffff",
+   "88400c0035fffff",
+   "88400c0103fffff",
+   "88400c0111fffff",
+   "88400c0113fffff",
+   "88400c0115fffff",
+   "88400c0117fffff",
+   "88400c011bfffff",
+   "88400c011dfffff",
+   "88400c0131fffff",
+   "88400c0133fffff",
+   "88400c0137fffff",
+   "88400c0139fffff",
+   "88400c013bfffff",
+   "88400c0181fffff",
+   "88400c0183fffff",
+   "88400c0185fffff",
+   "88400c0187fffff",
+   "88400c0189fffff",
+   "88400c018bfffff",
+   "88400c018dfffff",
+   "88400c01a1fffff",
+   "88400c01a3fffff",
+   "88400c01a5fffff",
+   "88400c01a7fffff",
+   "88400c01a9fffff",
+   "88400c01abfffff",
+   "88400c01adfffff",
+   "88400c01b1fffff",
+   "88400c01b5fffff",
+   "88400c01b7fffff",
+   "88400c01b9fffff",
+   "88400c01bdfffff",
+   "88400c01c1fffff",
+   "88400c01c3fffff",
+   "88400c01c5fffff",
+   "88400c01c7fffff",
+   "88400c01c9fffff",
+   "88400c01cbfffff",
+   "88400c01cdfffff",
+   "88400c01d5fffff",
+   "88400c01e1fffff",
+   "88400c01e3fffff",
+   "88400c01e5fffff",
+   "88400c01e7fffff",
+   "88400c01e9fffff",
+   "88400c01ebfffff",
+   "88400c01edfffff",
+   "88400c0853fffff",
+   "88400c0a81fffff",
+   "88400c0a83fffff",
+   "88400c0a85fffff",
+   "88400c0a89fffff",
+   "88400c0a8bfffff",
+   "88400c0a8dfffff",
+   "88400c0a91fffff",
+   "88400c0a93fffff",
+   "88400c0a95fffff",
+   "88400c0a99fffff",
+   "88400c0a9bfffff",
+   "88400c0a9dfffff",
+   "88400c0aa9fffff",
+   "88400c0aadfffff",
+   "88400c0ab9fffff",
+   "88400c0ac3fffff",
+   "88400c0ac5fffff",
+   "88400c0ac9fffff",
+   "88400c0acbfffff",
+   "88400c0ad1fffff",
+   "88400c0ad3fffff",
+   "88400c0ad5fffff",
+   "88400c0ad7fffff",
+   "88400c0adbfffff",
+   "88400c0ae1fffff",
+   "88400c0ae3fffff",
+   "88400c0ae7fffff",
+   "88400c0ae9fffff",
+   "88400c0aebfffff",
+   "88400c0f41fffff",
+   "88400c0f49fffff",
+   "88400c0f4bfffff",
+   "88400c0f4dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c01a5fffff",
+   "cell:88400c01a7fffff",
+   "cell:88400c0a99fffff",
+   "cell:88400c0ad7fffff",
+   "cell:88400c01e7fffff"
+  ],
+  "cellCount": 85,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9d378b20ed75",
+  "externalIds": [
+   "zone:amap:石板"
+  ],
+  "id": "zone_8d7273ad2a",
+  "name": "石板",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:石板",
+   "amap:花溪公园/十里河滩",
+   "amap_regeo:石板"
+  ],
+  "h3Cells": [
+   "88400c0421fffff",
+   "88400c0423fffff",
+   "88400c0425fffff",
+   "88400c0427fffff",
+   "88400c0429fffff",
+   "88400c042bfffff",
+   "88400c042dfffff",
+   "88400c0433fffff",
+   "88400c0437fffff",
+   "88400c04e1fffff",
+   "88400c04e5fffff",
+   "88400c04e7fffff",
+   "88400c04e9fffff",
+   "88400c04edfffff",
+   "88400c0503fffff",
+   "88400c0509fffff",
+   "88400c050bfffff",
+   "88400c0511fffff",
+   "88400c0513fffff",
+   "88400c0515fffff",
+   "88400c0517fffff",
+   "88400c0519fffff",
+   "88400c051bfffff",
+   "88400c051dfffff",
+   "88400c0531fffff",
+   "88400c0533fffff",
+   "88400c0535fffff",
+   "88400c0537fffff",
+   "88400c053bfffff",
+   "88400c0551fffff",
+   "88400c0553fffff",
+   "88400c0555fffff",
+   "88400c0557fffff",
+   "88400c0583fffff",
+   "88400c0585fffff",
+   "88400c0587fffff",
+   "88400c058bfffff",
+   "88400c058dfffff",
+   "88400c05a5fffff",
+   "88400c05a9fffff",
+   "88400c05abfffff",
+   "88400c05adfffff",
+   "88400c05c1fffff",
+   "88400c05c3fffff",
+   "88400c05c5fffff",
+   "88400c05c7fffff",
+   "88400c05c9fffff",
+   "88400c05cbfffff",
+   "88400c05cdfffff",
+   "88400c05d1fffff",
+   "88400c05d9fffff",
+   "88400c05ddfffff",
+   "88400c05e1fffff",
+   "88400c05e3fffff",
+   "88400c05e5fffff",
+   "88400c05e7fffff",
+   "88400c05e9fffff",
+   "88400c05ebfffff",
+   "88400c05edfffff",
+   "88400c0ec3fffff",
+   "88400c0ecbfffff",
+   "88400c0ed1fffff",
+   "88400c0ed3fffff",
+   "88400c0ed5fffff",
+   "88400c0ed9fffff",
+   "88400c0eddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0517fffff",
+   "cell:88400c05cbfffff",
+   "cell:88400c05e9fffff",
+   "cell:88400c05cdfffff",
+   "cell:88400c05c1fffff"
+  ],
+  "cellCount": 66,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "e5c136384097",
+  "externalIds": [
+   "zone:amap:贵阳东站/新添寨/乌当地区"
+  ],
+  "id": "zone_e4ba79490b",
+  "name": "贵阳东站/新添寨/乌当地区",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:贵阳东站/新添寨/乌当地区",
+   "amap_regeo:东风",
+   "amap_regeo:新添寨",
+   "amap_regeo:未来方舟"
+  ],
+  "h3Cells": [
+   "88400c0817fffff",
+   "88400c0823fffff",
+   "88400c0827fffff",
+   "88400c082dfffff",
+   "88400c0831fffff",
+   "88400c0833fffff",
+   "88400c0835fffff",
+   "88400c0837fffff",
+   "88400c0839fffff",
+   "88400c083bfffff",
+   "88400c083dfffff",
+   "88400c0883fffff",
+   "88400c0885fffff",
+   "88400c0891fffff",
+   "88400c0897fffff",
+   "88400c089dfffff",
+   "88400c08a1fffff",
+   "88400c08a3fffff",
+   "88400c08a5fffff",
+   "88400c08a7fffff",
+   "88400c08adfffff",
+   "88400c08b1fffff",
+   "88400c08b5fffff",
+   "88400c08b9fffff",
+   "88400c08bbfffff",
+   "88400c08bdfffff",
+   "88400c08c5fffff",
+   "88400c08edfffff",
+   "88400c0983fffff",
+   "88400c0987fffff",
+   "88400c0989fffff",
+   "88400c0999fffff",
+   "88400c099bfffff",
+   "88400c099dfffff",
+   "88400c09c3fffff",
+   "88400c09c9fffff",
+   "88400c09cbfffff",
+   "88400c09d1fffff",
+   "88400c09d3fffff",
+   "88400c09ddfffff",
+   "88400c0d25fffff",
+   "88400c0d61fffff",
+   "88400c0d6dfffff",
+   "88400c7203fffff",
+   "88400c720bfffff",
+   "88400c7215fffff",
+   "88400c7219fffff",
+   "88400c721dfffff",
+   "88400c7239fffff",
+   "88400c723bfffff",
+   "88400c7249fffff",
+   "88400c724bfffff",
+   "88400c724dfffff",
+   "88400c7255fffff",
+   "88400c725dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d6dfffff",
+   "cell:88400c0835fffff",
+   "cell:88400c0831fffff",
+   "cell:88400c083bfffff",
+   "cell:88400c0d61fffff"
+  ],
+  "cellCount": 55,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5de082268ac3",
+  "externalIds": [
+   "zone:amap:观山湖世纪城/地质博物馆"
+  ],
+  "id": "zone_d08524e777",
+  "name": "观山湖世纪城/地质博物馆",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:观山湖世纪城/地质博物馆",
+   "amap:观山湖会展城/金融城",
+   "amap:诚信南路",
+   "amap:龙泉苑街",
+   "amap_regeo:金华镇",
+   "amap_regeo:龙泉苑街"
+  ],
+  "h3Cells": [
+   "88400c0c13fffff",
+   "88400c0c17fffff",
+   "88400c0c1bfffff",
+   "88400c0c3bfffff",
+   "88400c0c81fffff",
+   "88400c0c83fffff",
+   "88400c0c85fffff",
+   "88400c0c89fffff",
+   "88400c0c8bfffff",
+   "88400c0c8dfffff",
+   "88400c0ca5fffff",
+   "88400c0ca7fffff",
+   "88400c0cb1fffff",
+   "88400c0cb3fffff",
+   "88400c0cb5fffff",
+   "88400c0cb7fffff",
+   "88400c0cb9fffff",
+   "88400c0cbbfffff",
+   "88400c0cc1fffff",
+   "88400c0cc3fffff",
+   "88400c0cc5fffff",
+   "88400c0cc7fffff",
+   "88400c0ccbfffff",
+   "88400c0ccdfffff",
+   "88400c0cd5fffff",
+   "88400c0ce3fffff",
+   "88400c0cebfffff",
+   "88400c0d9bfffff",
+   "88400c0ea7fffff",
+   "88400c3921fffff",
+   "88400c3929fffff",
+   "88400c392dfffff",
+   "88400c3949fffff",
+   "88400c394bfffff",
+   "88400c3951fffff",
+   "88400c3959fffff",
+   "88400c3961fffff",
+   "88400c3965fffff",
+   "88400c3967fffff",
+   "88400c396dfffff",
+   "88400c3b07fffff",
+   "88400c3b15fffff",
+   "88400c3b23fffff",
+   "88400c3b2bfffff",
+   "88400c3b35fffff",
+   "88400c3b37fffff",
+   "88400c3b39fffff",
+   "88400c7649fffff",
+   "88400c764bfffff",
+   "88400c7651fffff",
+   "88400c7653fffff",
+   "88400c7659fffff",
+   "88400c765bfffff",
+   "88400c765dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0ca7fffff",
+   "cell:88400c0c81fffff",
+   "cell:88400c0d9bfffff",
+   "cell:88400c3965fffff",
+   "cell:88400c0ce3fffff"
+  ],
+  "cellCount": 54,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "4125d688cb0e",
+  "externalIds": [
+   "zone:amap:城关"
+  ],
+  "id": "zone_58514568e1",
+  "name": "城关",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:城关",
+   "amap:开阳 · 近云开广场 · 开阳县汽车客运站",
+   "amap:开阳 · 近开阳站 · 云开广场",
+   "amap:开阳 · 近开阳站 · 开阳县城乡规划馆",
+   "amap:开阳 · 近西江越农庄 · 云开广场",
+   "amap:近云开广场",
+   "amap:近云开广场 · 6+1科技馆",
+   "amap:近云开广场 · 启铃广场",
+   "amap:近云开广场 · 开洲大厦",
+   "amap:近云开广场 · 开阳县汽车客运站",
+   "amap:近云开广场 · 开阳站",
+   "amap:近云开广场 · 杭州丝绸",
+   "amap:近云开广场 · 西江越农庄",
+   "amap:近云开广场 · 贝贝游乐场",
+   "amap:近云开广场 · 顺舟画廊",
+   "amap:近开阳乐悠游海洋主题乐园(万象君汇店)",
+   "amap:近开阳县历史文化博览公园 · 开阳站",
+   "amap:近开阳站 · 云开广场",
+   "amap:近开阳站 · 开阳快铁站前广场",
+   "amap:近环湖公园 · 海翔开元大厦",
+   "amap_regeo:城关"
+  ],
+  "h3Cells": [
+   "88400ea249fffff",
+   "88400eb001fffff",
+   "88400eb003fffff",
+   "88400eb007fffff",
+   "88400eb00bfffff",
+   "88400eb015fffff",
+   "88400eb01dfffff",
+   "88400eb027fffff",
+   "88400eb02bfffff",
+   "88400eb031fffff",
+   "88400eb033fffff",
+   "88400eb035fffff",
+   "88400eb037fffff",
+   "88400eb039fffff",
+   "88400eb03bfffff",
+   "88400eb03dfffff",
+   "88400eb087fffff",
+   "88400eb089fffff",
+   "88400eb0a1fffff",
+   "88400eb0a3fffff",
+   "88400eb0a5fffff",
+   "88400eb0a7fffff",
+   "88400eb0a9fffff",
+   "88400eb0adfffff",
+   "88400eb0b5fffff",
+   "88400eb0c1fffff",
+   "88400eb0c3fffff",
+   "88400eb0c5fffff",
+   "88400eb0e1fffff",
+   "88400eb0e3fffff",
+   "88400eb0e5fffff",
+   "88400eb0e7fffff",
+   "88400eb0e9fffff",
+   "88400eb0ebfffff",
+   "88400eb0edfffff",
+   "88400eb189fffff",
+   "88400eb191fffff",
+   "88400eb195fffff",
+   "88400eb197fffff",
+   "88400eb199fffff",
+   "88400eb19bfffff",
+   "88400eb19dfffff",
+   "88400eb1b9fffff",
+   "88400eb1c3fffff",
+   "88400eb1cbfffff",
+   "88400eb1d1fffff",
+   "88400eb1d3fffff",
+   "88400eb1d5fffff",
+   "88400eb1d7fffff",
+   "88400eb1d9fffff",
+   "88400eb1dbfffff",
+   "88400eb1ddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb1dbfffff",
+   "cell:88400eb1d9fffff",
+   "cell:88400eb033fffff",
+   "cell:88400eb0e5fffff",
+   "cell:88400eb031fffff"
+  ],
+  "cellCount": 52,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "710af7e91402",
+  "externalIds": [
+   "zone:amap:扎佐镇"
+  ],
+  "id": "zone_c871634e68",
+  "name": "扎佐镇",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap_regeo:扎佐镇"
+  ],
+  "h3Cells": [
+   "88400c6141fffff",
+   "88400c614dfffff",
+   "88400c6325fffff",
+   "88400c6327fffff",
+   "88400c6329fffff",
+   "88400c632dfffff",
+   "88400c6361fffff",
+   "88400c6363fffff",
+   "88400c6365fffff",
+   "88400c7883fffff",
+   "88400c788bfffff",
+   "88400c7891fffff",
+   "88400c7893fffff",
+   "88400c7895fffff",
+   "88400c7897fffff",
+   "88400c7899fffff",
+   "88400c789bfffff",
+   "88400c789dfffff",
+   "88400c78c1fffff",
+   "88400c78c5fffff",
+   "88400c78c7fffff",
+   "88400c78c9fffff",
+   "88400c78cdfffff",
+   "88400c78d1fffff",
+   "88400c78d3fffff",
+   "88400c78d7fffff",
+   "88400c78d9fffff",
+   "88400c78dbfffff",
+   "88400c78e1fffff",
+   "88400c78e9fffff",
+   "88400c78ebfffff",
+   "88400c7a81fffff",
+   "88400c7a83fffff",
+   "88400c7a85fffff",
+   "88400c7a87fffff",
+   "88400c7aa1fffff",
+   "88400c7aa5fffff",
+   "88400c7aa7fffff",
+   "88400c7aa9fffff",
+   "88400c7aabfffff",
+   "88400c7aadfffff",
+   "88400c7ab1fffff",
+   "88400c7ab3fffff",
+   "88400c7ab5fffff",
+   "88400c7ab9fffff",
+   "88400c7abdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c78c7fffff",
+   "cell:88400c78c1fffff",
+   "cell:88400c7a87fffff",
+   "cell:88400c7ab1fffff",
+   "cell:88400c7ab9fffff"
+  ],
+  "cellCount": 46,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "976272690548",
+  "externalIds": [
+   "zone:amap:观山湖会展城/金融城"
+  ],
+  "id": "zone_acb394079f",
+  "name": "观山湖会展城/金融城",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:观山湖会展城/金融城",
+   "amap:诚信南路",
+   "amap_regeo:龙泉苑街"
+  ],
+  "h3Cells": [
+   "88400c0d81fffff",
+   "88400c0d83fffff",
+   "88400c0d85fffff",
+   "88400c0d87fffff",
+   "88400c0d8bfffff",
+   "88400c0d95fffff",
+   "88400c0d97fffff",
+   "88400c0d9dfffff",
+   "88400c0da1fffff",
+   "88400c0da3fffff",
+   "88400c0da7fffff",
+   "88400c0dabfffff",
+   "88400c0db1fffff",
+   "88400c0db3fffff",
+   "88400c0db5fffff",
+   "88400c0db9fffff",
+   "88400c0dbbfffff",
+   "88400c0dbdfffff",
+   "88400c0dd7fffff",
+   "88400c7601fffff",
+   "88400c7603fffff",
+   "88400c7605fffff",
+   "88400c7607fffff",
+   "88400c7609fffff",
+   "88400c760dfffff",
+   "88400c7619fffff",
+   "88400c761dfffff",
+   "88400c7629fffff",
+   "88400c762bfffff",
+   "88400c762dfffff",
+   "88400c763dfffff",
+   "88400c7641fffff",
+   "88400c7643fffff",
+   "88400c7647fffff",
+   "88400c764dfffff",
+   "88400c7655fffff",
+   "88400c7661fffff",
+   "88400c7663fffff",
+   "88400c7665fffff",
+   "88400c7667fffff",
+   "88400c766dfffff",
+   "88400c7749fffff",
+   "88400c7759fffff",
+   "88400c775bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0dabfffff",
+   "cell:88400c766dfffff",
+   "cell:88400c0d87fffff",
+   "cell:88400c0d97fffff",
+   "cell:88400c764dfffff"
+  ],
+  "cellCount": 44,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "03ba5ad694d4",
+  "externalIds": [
+   "zone:amap:永靖"
+  ],
+  "id": "zone_3f636add57",
+  "name": "永靖",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离21.7公里",
+   "amap:息烽 · 距开阳中心直线距离21.8公里",
+   "amap:息烽 · 距开阳中心直线距离21.9公里",
+   "amap:息烽 · 距开阳中心直线距离22.2公里",
+   "amap:息烽 · 距开阳中心直线距离22.3公里",
+   "amap:息烽 · 距开阳中心直线距离22.5公里",
+   "amap:息烽 · 距开阳中心直线距离22.8公里",
+   "amap:息烽 · 距开阳中心直线距离22.9公里",
+   "amap:息烽 · 距开阳中心直线距离22公里",
+   "amap:息烽 · 距开阳中心直线距离23.1公里",
+   "amap:息烽 · 距开阳中心直线距离23.2公里",
+   "amap:息烽 · 距开阳中心直线距离23.3公里",
+   "amap:息烽 · 距开阳中心直线距离23.4公里",
+   "amap:息烽 · 距开阳中心直线距离23.5公里",
+   "amap:息烽 · 距开阳中心直线距离23公里",
+   "amap:永靖",
+   "amap_regeo:永靖"
+  ],
+  "h3Cells": [
+   "88400ea40dfffff",
+   "88400ea441fffff",
+   "88400ea443fffff",
+   "88400ea445fffff",
+   "88400ea447fffff",
+   "88400ea449fffff",
+   "88400ea44bfffff",
+   "88400ea44dfffff",
+   "88400ea45dfffff",
+   "88400ea461fffff",
+   "88400ea463fffff",
+   "88400ea469fffff",
+   "88400ea46bfffff",
+   "88400ea46dfffff",
+   "88400ea601fffff",
+   "88400ea605fffff",
+   "88400ea607fffff",
+   "88400ea60bfffff",
+   "88400ea613fffff",
+   "88400ea617fffff",
+   "88400ea619fffff",
+   "88400ea61dfffff",
+   "88400ea621fffff",
+   "88400ea623fffff",
+   "88400ea625fffff",
+   "88400ea627fffff",
+   "88400ea629fffff",
+   "88400ea62bfffff",
+   "88400ea62dfffff",
+   "88400ea631fffff",
+   "88400ea635fffff",
+   "88400ea637fffff",
+   "88400ea63bfffff",
+   "88400ea63dfffff",
+   "88400ea657fffff",
+   "88400ea661fffff",
+   "88400ea663fffff",
+   "88400ea715fffff",
+   "88400ea719fffff",
+   "88400ea753fffff",
+   "88400ea75bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea623fffff",
+   "cell:88400ea62bfffff",
+   "cell:88400ea605fffff",
+   "cell:88400ea449fffff",
+   "cell:88400ea627fffff"
+  ],
+  "cellCount": 41,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "2b6a8fbaac82",
+  "externalIds": [
+   "zone:amap:龙岗"
+  ],
+  "id": "zone_e8d25b5947",
+  "name": "龙岗",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近紫江广场 · 羊场客运站",
+   "amap:近羊场客运站 · 小玩佳乐园",
+   "amap:龙岗",
+   "amap_regeo:龙岗"
+  ],
+  "h3Cells": [
+   "88400c4127fffff",
+   "88400c4811fffff",
+   "88400c481bfffff",
+   "88400c4853fffff",
+   "88400c4855fffff",
+   "88400c4857fffff",
+   "88400c4a07fffff",
+   "88400c4a35fffff",
+   "88400c4a37fffff",
+   "88400c4a3bfffff",
+   "88400c4a87fffff",
+   "88400c4a89fffff",
+   "88400c4a8dfffff",
+   "88400c4a9dfffff",
+   "88400c4aa1fffff",
+   "88400c4aa3fffff",
+   "88400c4aa5fffff",
+   "88400c4aa7fffff",
+   "88400c4aa9fffff",
+   "88400c4aabfffff",
+   "88400c4aadfffff",
+   "88400c4ab1fffff",
+   "88400c4ab7fffff",
+   "88400c4ab9fffff",
+   "88400c4abdfffff",
+   "88400c4ac7fffff",
+   "88400c4acbfffff",
+   "88400c4acdfffff",
+   "88400c4ad5fffff",
+   "88400c4ae1fffff",
+   "88400c4ae3fffff",
+   "88400c4ae5fffff",
+   "88400c4ae7fffff",
+   "88400c4ae9fffff",
+   "88400c4aebfffff",
+   "88400c4aedfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4ae1fffff",
+   "cell:88400c4aedfffff",
+   "cell:88400c4aa9fffff",
+   "cell:88400c4ae3fffff",
+   "cell:88400c4ae7fffff"
+  ],
+  "cellCount": 36,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a81645f1dc40",
+  "externalIds": [
+   "zone:amap:小寨坝"
+  ],
+  "id": "zone_c6e9ab7d40",
+  "name": "小寨坝",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:小寨坝",
+   "amap_regeo:小寨坝"
+  ],
+  "h3Cells": [
+   "88400ea421fffff",
+   "88400ea423fffff",
+   "88400ea425fffff",
+   "88400ea429fffff",
+   "88400ea42dfffff",
+   "88400ea435fffff",
+   "88400ea43dfffff",
+   "88400ea467fffff",
+   "88400ea511fffff",
+   "88400ea515fffff",
+   "88400ea517fffff",
+   "88400ea519fffff",
+   "88400ea51bfffff",
+   "88400ea51dfffff",
+   "88400ea523fffff",
+   "88400ea531fffff",
+   "88400ea533fffff",
+   "88400ea535fffff",
+   "88400ea539fffff",
+   "88400ea53bfffff",
+   "88400ea53dfffff",
+   "88400ea543fffff",
+   "88400ea547fffff",
+   "88400ea553fffff",
+   "88400ea557fffff",
+   "88400ea58dfffff",
+   "88400ea5c3fffff",
+   "88400ea5cbfffff",
+   "88400ea5e1fffff",
+   "88400ea5e5fffff",
+   "88400ea5e9fffff",
+   "88400ea5ebfffff",
+   "88400ea5edfffff",
+   "88400eaed9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea511fffff",
+   "cell:88400ea519fffff",
+   "cell:88400ea51dfffff",
+   "cell:88400ea531fffff",
+   "cell:88400ea553fffff"
+  ],
+  "cellCount": 34,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9dc246d4e9ce",
+  "externalIds": [
+   "zone:amap:大山洞"
+  ],
+  "id": "zone_8d20c72f9a",
+  "name": "大山洞",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:云峰大道",
+   "amap:大山洞",
+   "amap:白云公园/白云地区",
+   "amap:艳山红",
+   "amap:龚家寨",
+   "amap_regeo:云峰大道",
+   "amap_regeo:大山洞",
+   "amap_regeo:艳山红",
+   "amap_regeo:龚家寨"
+  ],
+  "h3Cells": [
+   "88400c709bfffff",
+   "88400c7541fffff",
+   "88400c7543fffff",
+   "88400c7549fffff",
+   "88400c754bfffff",
+   "88400c754dfffff",
+   "88400c7559fffff",
+   "88400c755dfffff",
+   "88400c7701fffff",
+   "88400c7703fffff",
+   "88400c7705fffff",
+   "88400c7707fffff",
+   "88400c7709fffff",
+   "88400c770dfffff",
+   "88400c7715fffff",
+   "88400c7717fffff",
+   "88400c7721fffff",
+   "88400c7723fffff",
+   "88400c7725fffff",
+   "88400c7727fffff",
+   "88400c7729fffff",
+   "88400c772bfffff",
+   "88400c772dfffff",
+   "88400c7731fffff",
+   "88400c7733fffff",
+   "88400c7735fffff",
+   "88400c7737fffff",
+   "88400c7739fffff",
+   "88400c773bfffff",
+   "88400c773dfffff",
+   "88400c7747fffff",
+   "88400c7763fffff",
+   "88400c776bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7747fffff",
+   "cell:88400c754dfffff",
+   "cell:88400c770dfffff",
+   "cell:88400c7709fffff",
+   "cell:88400c7707fffff"
+  ],
+  "cellCount": 33,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9e1cafee721e",
+  "externalIds": [
+   "zone:amap:近九庄红军坟 · 徐家祠堂"
+  ],
+  "id": "zone_8d87731efa",
+  "name": "近九庄红军坟 · 徐家祠堂",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:近九庄红军坟 · 徐家祠堂"
+  ],
+  "h3Cells": [
+   "884008d003fffff",
+   "884008d00bfffff",
+   "884008d011fffff",
+   "884008d015fffff",
+   "884008d017fffff",
+   "884008d025fffff",
+   "884008d027fffff",
+   "884008d029fffff",
+   "884008d02bfffff",
+   "884008d031fffff",
+   "884008d035fffff",
+   "884008d037fffff",
+   "884008d039fffff",
+   "884008d03bfffff",
+   "884008d03dfffff",
+   "884008d11bfffff",
+   "884008d181fffff",
+   "884008d183fffff",
+   "884008d185fffff",
+   "884008d187fffff",
+   "884008d1c1fffff",
+   "884008d1c3fffff",
+   "884008d1c7fffff",
+   "884008d1c9fffff",
+   "884008d1cbfffff",
+   "884008d1cdfffff",
+   "884008d1d1fffff",
+   "884008d1d5fffff",
+   "884008d1d9fffff",
+   "884008d1dbfffff",
+   "884008d1ddfffff",
+   "884008d1e1fffff",
+   "884008d1e3fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:884008d037fffff",
+   "cell:884008d1cbfffff",
+   "cell:884008d1ddfffff",
+   "cell:884008d185fffff",
+   "cell:884008d1c3fffff"
+  ],
+  "cellCount": 33,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "f5d4914b6e1f",
+  "externalIds": [
+   "zone:amap:六广"
+  ],
+  "id": "zone_dcfb615d34",
+  "name": "六广",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:六广",
+   "amap:近六广河大峡谷 · 滨江广场",
+   "amap_regeo:六广"
+  ],
+  "h3Cells": [
+   "88400c6c33fffff",
+   "88400c6c37fffff",
+   "88400c6c81fffff",
+   "88400c6c87fffff",
+   "88400c6c8dfffff",
+   "88400c6ca1fffff",
+   "88400c6ca3fffff",
+   "88400c6ca5fffff",
+   "88400c6ca7fffff",
+   "88400c6ca9fffff",
+   "88400c6cabfffff",
+   "88400c6cadfffff",
+   "88400c6cb1fffff",
+   "88400c6cb5fffff",
+   "88400c6cb9fffff",
+   "88400c6cbdfffff",
+   "88400c6ce5fffff",
+   "88400c6cedfffff",
+   "88400c6d81fffff",
+   "88400c6d83fffff",
+   "88400c6d87fffff",
+   "88400c6d8dfffff",
+   "88400c6d91fffff",
+   "88400c6d95fffff",
+   "88400c6d99fffff",
+   "88400c6d9bfffff",
+   "88400c6d9dfffff",
+   "88400c6dc3fffff",
+   "88400c6dd3fffff",
+   "88400c6dd7fffff",
+   "88400c6dd9fffff",
+   "88400c6ddbfffff",
+   "88400c6dddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6ca5fffff",
+   "cell:88400c6dd3fffff",
+   "cell:88400c6d99fffff",
+   "cell:88400c6d8dfffff",
+   "cell:88400c6d87fffff"
+  ],
+  "cellCount": 33,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "028d4393a9a9",
+  "externalIds": [
+   "zone:amap:近峰驿广场 · 迪乐尼儿童游乐园"
+  ],
+  "id": "zone_a09d02db40",
+  "name": "近峰驿广场 · 迪乐尼儿童游乐园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近峰驿广场 · 迪乐尼儿童游乐园"
+  ],
+  "h3Cells": [
+   "88400c2859fffff",
+   "88400c285bfffff",
+   "88400c2a17fffff",
+   "88400c2a81fffff",
+   "88400c2a83fffff",
+   "88400c2a85fffff",
+   "88400c2a87fffff",
+   "88400c2a89fffff",
+   "88400c2a8dfffff",
+   "88400c2aa1fffff",
+   "88400c2aa3fffff",
+   "88400c2aa5fffff",
+   "88400c2aa7fffff",
+   "88400c2aa9fffff",
+   "88400c2aabfffff",
+   "88400c2aadfffff",
+   "88400c2ab9fffff",
+   "88400c2abdfffff",
+   "88400c2ac1fffff",
+   "88400c2ac3fffff",
+   "88400c2ac5fffff",
+   "88400c2ac7fffff",
+   "88400c2acdfffff",
+   "88400c2ad5fffff",
+   "88400c2ae1fffff",
+   "88400c2ae3fffff",
+   "88400c2ae5fffff",
+   "88400c2ae7fffff",
+   "88400c2ae9fffff",
+   "88400c2aebfffff",
+   "88400c2aedfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c2ae3fffff",
+   "cell:88400c2aa9fffff",
+   "cell:88400c2ac3fffff",
+   "cell:88400c2ac5fffff",
+   "cell:88400c2aebfffff"
+  ],
+  "cellCount": 31,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "adf41976f669",
+  "externalIds": [
+   "zone:amap:双流"
+  ],
+  "id": "zone_a1349c79b8",
+  "name": "双流",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:双流",
+   "amap_regeo:双流"
+  ],
+  "h3Cells": [
+   "88400eb421fffff",
+   "88400eb423fffff",
+   "88400eb425fffff",
+   "88400eb427fffff",
+   "88400eb42bfffff",
+   "88400eb42dfffff",
+   "88400eb467fffff",
+   "88400eb501fffff",
+   "88400eb503fffff",
+   "88400eb507fffff",
+   "88400eb509fffff",
+   "88400eb511fffff",
+   "88400eb515fffff",
+   "88400eb519fffff",
+   "88400eb51bfffff",
+   "88400eb51dfffff",
+   "88400eb523fffff",
+   "88400eb529fffff",
+   "88400eb52bfffff",
+   "88400eb53dfffff",
+   "88400eb543fffff",
+   "88400eb547fffff",
+   "88400eb551fffff",
+   "88400eb555fffff",
+   "88400eb55bfffff",
+   "88400eb56bfffff",
+   "88400eb5c1fffff",
+   "88400eb5c5fffff",
+   "88400eb5c9fffff",
+   "88400eb5edfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb51dfffff",
+   "cell:88400eb503fffff",
+   "cell:88400eb515fffff",
+   "cell:88400eb529fffff",
+   "cell:88400eb5c9fffff"
+  ],
+  "cellCount": 30,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "37f21724f7f3",
+  "externalIds": [
+   "zone:amap:贵阳北站/高新区"
+  ],
+  "id": "zone_9f14d02586",
+  "name": "贵阳北站/高新区",
+  "zoneType": "产业新区",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:观山湖会展城/金融城",
+   "amap:贵阳北站/高新区",
+   "amap_regeo:龙泉苑街"
+  ],
+  "h3Cells": [
+   "88400c0c27fffff",
+   "88400c0c37fffff",
+   "88400c0d13fffff",
+   "88400c0d33fffff",
+   "88400c0d37fffff",
+   "88400c0d89fffff",
+   "88400c0d8dfffff",
+   "88400c0da9fffff",
+   "88400c0dadfffff",
+   "88400c0dc1fffff",
+   "88400c0dc3fffff",
+   "88400c0dc5fffff",
+   "88400c0dc7fffff",
+   "88400c0dc9fffff",
+   "88400c0dcbfffff",
+   "88400c0dcdfffff",
+   "88400c0dd5fffff",
+   "88400c0dddfffff",
+   "88400c0de1fffff",
+   "88400c0de3fffff",
+   "88400c0de5fffff",
+   "88400c0de7fffff",
+   "88400c0de9fffff",
+   "88400c0debfffff",
+   "88400c0dedfffff",
+   "88400c72d9fffff",
+   "88400c72dbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0dc7fffff",
+   "cell:88400c72d9fffff",
+   "cell:88400c0dd5fffff",
+   "cell:88400c0dddfffff",
+   "cell:88400c0dc5fffff"
+  ],
+  "cellCount": 27,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c0c363143fd6",
+  "externalIds": [
+   "zone:amap:近耕心田园 · 杉坝村法治文化广场"
+  ],
+  "id": "zone_3e5917d26d",
+  "name": "近耕心田园 · 杉坝村法治文化广场",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近耕心田园 · 杉坝村法治文化广场"
+  ],
+  "h3Cells": [
+   "88400c61b3fffff",
+   "88400c61b7fffff",
+   "88400c6e25fffff",
+   "88400c6e2dfffff",
+   "88400c6e65fffff",
+   "88400c6f03fffff",
+   "88400c6f07fffff",
+   "88400c6f09fffff",
+   "88400c6f0dfffff",
+   "88400c6f11fffff",
+   "88400c6f13fffff",
+   "88400c6f15fffff",
+   "88400c6f19fffff",
+   "88400c6f1bfffff",
+   "88400c6f39fffff",
+   "88400c6f41fffff",
+   "88400c6f43fffff",
+   "88400c6f47fffff",
+   "88400c6f4bfffff",
+   "88400c6f51fffff",
+   "88400c6f53fffff",
+   "88400c6f55fffff",
+   "88400c6f57fffff",
+   "88400c6f5dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6f19fffff",
+   "cell:88400c6f1bfffff",
+   "cell:88400c6f13fffff",
+   "cell:88400c61b7fffff",
+   "cell:88400c6f57fffff"
+  ],
+  "cellCount": 24,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9fa73a92c199",
+  "externalIds": [
+   "zone:amap:久长村"
+  ],
+  "id": "zone_7e7db5320e",
+  "name": "久长村",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap_regeo:久长",
+   "amap_regeo:久长村"
+  ],
+  "h3Cells": [
+   "88400c6a01fffff",
+   "88400c6a03fffff",
+   "88400c6a0bfffff",
+   "88400c6a11fffff",
+   "88400c6a15fffff",
+   "88400c6a17fffff",
+   "88400c6a19fffff",
+   "88400c6a1dfffff",
+   "88400c6a39fffff",
+   "88400c6a53fffff",
+   "88400c6a61fffff",
+   "88400c6a65fffff",
+   "88400c6a67fffff",
+   "88400c6a69fffff",
+   "88400c6a6bfffff",
+   "88400c6a6dfffff",
+   "88400c6b51fffff",
+   "88400c6b55fffff",
+   "88400c6b5bfffff",
+   "88400c7991fffff",
+   "88400c7993fffff",
+   "88400c7995fffff",
+   "88400c7997fffff",
+   "88400c79b3fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6a67fffff",
+   "cell:88400c7995fffff",
+   "cell:88400c7997fffff",
+   "cell:88400c6a6bfffff",
+   "cell:88400c6b51fffff"
+  ],
+  "cellCount": 24,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "58a117791d5d",
+  "externalIds": [
+   "zone:amap:近龙祥真人CS生态露营休闲山庄(白云区店) · 灵官庙"
+  ],
+  "id": "zone_247e5b2ca5",
+  "name": "近龙祥真人CS生态露营休闲山庄(白云区店) · 灵官庙",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:近龙祥真人CS生态露营休闲山庄(白云区店) · 灵官庙"
+  ],
+  "h3Cells": [
+   "88400c7115fffff",
+   "88400c7117fffff",
+   "88400c7131fffff",
+   "88400c7133fffff",
+   "88400c7135fffff",
+   "88400c7137fffff",
+   "88400c713bfffff",
+   "88400c713dfffff",
+   "88400c71a9fffff",
+   "88400c71adfffff",
+   "88400c71e1fffff",
+   "88400c71e3fffff",
+   "88400c71e7fffff",
+   "88400c71e9fffff",
+   "88400c71ebfffff",
+   "88400c71edfffff",
+   "88400c7ac1fffff",
+   "88400c7ac3fffff",
+   "88400c7ac9fffff",
+   "88400c7ad3fffff",
+   "88400c7ad9fffff",
+   "88400c7adbfffff",
+   "88400c7addfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c71a9fffff",
+   "cell:88400c7ac9fffff",
+   "cell:88400c7137fffff",
+   "cell:88400c71e1fffff",
+   "cell:88400c713bfffff"
+  ],
+  "cellCount": 23,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "54a02ceb758a",
+  "externalIds": [
+   "zone:amap:近永温客运站 · 三块石广场"
+  ],
+  "id": "zone_cfa098ba78",
+  "name": "近永温客运站 · 三块石广场",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近永温客运站 · 三块石广场"
+  ],
+  "h3Cells": [
+   "88400ea043fffff",
+   "88400ea047fffff",
+   "88400ea049fffff",
+   "88400ea04dfffff",
+   "88400ea055fffff",
+   "88400ea05dfffff",
+   "88400ea061fffff",
+   "88400ea06dfffff",
+   "88400ea221fffff",
+   "88400ea223fffff",
+   "88400ea227fffff",
+   "88400ea229fffff",
+   "88400ea22bfffff",
+   "88400ea22dfffff",
+   "88400ea235fffff",
+   "88400ea267fffff",
+   "88400ea311fffff",
+   "88400ea313fffff",
+   "88400ea317fffff",
+   "88400ea319fffff",
+   "88400ea31bfffff",
+   "88400ea339fffff",
+   "88400ea355fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea31bfffff",
+   "cell:88400ea311fffff",
+   "cell:88400ea313fffff",
+   "cell:88400ea317fffff",
+   "cell:88400ea223fffff"
+  ],
+  "cellCount": 23,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "910c10cc007b",
+  "externalIds": [
+   "zone:amap:花溪大学城"
+  ],
+  "id": "zone_a912f947fb",
+  "name": "花溪大学城",
+  "zoneType": "大学城",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:花溪大学城",
+   "amap:贵安新区",
+   "amap_regeo:花溪大学城"
+  ],
+  "h3Cells": [
+   "88400c044bfffff",
+   "88400c0601fffff",
+   "88400c0603fffff",
+   "88400c0605fffff",
+   "88400c0607fffff",
+   "88400c060bfffff",
+   "88400c060dfffff",
+   "88400c0611fffff",
+   "88400c0615fffff",
+   "88400c0617fffff",
+   "88400c061dfffff",
+   "88400c0621fffff",
+   "88400c0623fffff",
+   "88400c0629fffff",
+   "88400c062bfffff",
+   "88400c0635fffff",
+   "88400c0637fffff",
+   "88400c0639fffff",
+   "88400c063bfffff",
+   "88400c063dfffff",
+   "88400c0655fffff",
+   "88400c0663fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0637fffff",
+   "cell:88400c063bfffff",
+   "cell:88400c061dfffff",
+   "cell:88400c0635fffff",
+   "cell:88400c0617fffff"
+  ],
+  "cellCount": 22,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "719c48fdc495",
+  "externalIds": [
+   "zone:amap:近扎佐云丰泽水上乐园 · 扎佐街道"
+  ],
+  "id": "zone_bec60619cf",
+  "name": "近扎佐云丰泽水上乐园 · 扎佐街道",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近扎佐云丰泽水上乐园 · 扎佐街道"
+  ],
+  "h3Cells": [
+   "88400c6341fffff",
+   "88400c6343fffff",
+   "88400c6345fffff",
+   "88400c6347fffff",
+   "88400c6349fffff",
+   "88400c634bfffff",
+   "88400c634dfffff",
+   "88400c71a1fffff",
+   "88400c71a3fffff",
+   "88400c71a5fffff",
+   "88400c71a7fffff",
+   "88400c71abfffff",
+   "88400c71b5fffff",
+   "88400c71bdfffff",
+   "88400c7a89fffff",
+   "88400c7a8bfffff",
+   "88400c7a91fffff",
+   "88400c7a93fffff",
+   "88400c7a99fffff",
+   "88400c7a9bfffff",
+   "88400c7ad5fffff",
+   "88400c7ad7fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7a9bfffff",
+   "cell:88400c7a91fffff",
+   "cell:88400c7a99fffff",
+   "cell:88400c71a7fffff",
+   "cell:88400c7ad7fffff"
+  ],
+  "cellCount": 22,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "800ae22b1a9d",
+  "externalIds": [
+   "zone:amap:近流长镇没量坑红军烈士纪念碑 · 磨盘山"
+  ],
+  "id": "zone_b2ad1997e6",
+  "name": "近流长镇没量坑红军烈士纪念碑 · 磨盘山",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:近流长镇没量坑红军烈士纪念碑 · 磨盘山"
+  ],
+  "h3Cells": [
+   "884008d849fffff",
+   "884008da01fffff",
+   "884008da0dfffff",
+   "884008da21fffff",
+   "884008da23fffff",
+   "884008da25fffff",
+   "884008da27fffff",
+   "884008da29fffff",
+   "884008da2dfffff",
+   "884008da61fffff",
+   "884008da63fffff",
+   "884008da69fffff",
+   "884008da6bfffff",
+   "884008da6dfffff",
+   "884008db0bfffff",
+   "884008db11fffff",
+   "884008db19fffff",
+   "884008db1bfffff",
+   "884008db1dfffff",
+   "884008db51fffff",
+   "884008db53fffff",
+   "884008db57fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:884008db19fffff",
+   "cell:884008db1bfffff",
+   "cell:884008db53fffff",
+   "cell:884008da29fffff",
+   "cell:884008db51fffff"
+  ],
+  "cellCount": 22,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "aaa3564fc5da",
+  "externalIds": [
+   "zone:amap:未来方舟地区"
+  ],
+  "id": "zone_880cd75ebb",
+  "name": "未来方舟地区",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:未来方舟地区",
+   "amap_regeo:东山",
+   "amap_regeo:未来方舟"
+  ],
+  "h3Cells": [
+   "88400c0899fffff",
+   "88400c089bfffff",
+   "88400c08cbfffff",
+   "88400c08d3fffff",
+   "88400c08d7fffff",
+   "88400c08d9fffff",
+   "88400c0a97fffff",
+   "88400c0ab1fffff",
+   "88400c0ab3fffff",
+   "88400c0ab5fffff",
+   "88400c0ab7fffff",
+   "88400c0abbfffff",
+   "88400c0abdfffff",
+   "88400c0f01fffff",
+   "88400c0f09fffff",
+   "88400c0f45fffff",
+   "88400c0f47fffff",
+   "88400c0f65fffff",
+   "88400c0f69fffff",
+   "88400c0f6bfffff",
+   "88400c0f6dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0a97fffff",
+   "cell:88400c0abbfffff",
+   "cell:88400c08d3fffff",
+   "cell:88400c0f01fffff",
+   "cell:88400c0f09fffff"
+  ],
+  "cellCount": 21,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "51e4d62d8ab0",
+  "externalIds": [
+   "zone:amap:中曹"
+  ],
+  "id": "zone_0c6979a7af",
+  "name": "中曹",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:中曹",
+   "amap:小河转盘/万科",
+   "amap:花溪公园/十里河滩",
+   "amap_regeo:中曹",
+   "amap_regeo:漓江路"
+  ],
+  "h3Cells": [
+   "88400c0501fffff",
+   "88400c0505fffff",
+   "88400c0507fffff",
+   "88400c050dfffff",
+   "88400c0521fffff",
+   "88400c0523fffff",
+   "88400c0525fffff",
+   "88400c0527fffff",
+   "88400c0529fffff",
+   "88400c052bfffff",
+   "88400c052dfffff",
+   "88400c0561fffff",
+   "88400c0563fffff",
+   "88400c0567fffff",
+   "88400c0569fffff",
+   "88400c056bfffff",
+   "88400c0e1bfffff",
+   "88400c0ec1fffff",
+   "88400c0ec5fffff",
+   "88400c0ec9fffff",
+   "88400c0ecdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c052dfffff",
+   "cell:88400c0525fffff",
+   "cell:88400c0529fffff",
+   "cell:88400c0505fffff",
+   "cell:88400c0521fffff"
+  ],
+  "cellCount": 21,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "0af0be7aaf57",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离22.1公里"
+  ],
+  "id": "zone_4c66b8ec09",
+  "name": "息烽 · 距开阳中心直线距离22.1公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离22.1公里"
+  ],
+  "h3Cells": [
+   "88400c692dfffff",
+   "88400c6965fffff",
+   "88400c6967fffff",
+   "88400c6969fffff",
+   "88400c696dfffff",
+   "88400ea64bfffff",
+   "88400ea651fffff",
+   "88400ea653fffff",
+   "88400ea659fffff",
+   "88400ea65bfffff",
+   "88400ea65dfffff",
+   "88400eb483fffff",
+   "88400eb487fffff",
+   "88400eb4a1fffff",
+   "88400eb4abfffff",
+   "88400eb4b1fffff",
+   "88400eb4b3fffff",
+   "88400eb4b7fffff",
+   "88400eb4b9fffff",
+   "88400eb4bbfffff",
+   "88400eb4bdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb4b7fffff",
+   "cell:88400eb4b3fffff",
+   "cell:88400ea64bfffff",
+   "cell:88400ea659fffff",
+   "cell:88400ea65dfffff"
+  ],
+  "cellCount": 21,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "bf1f370eaeb3",
+  "externalIds": [
+   "zone:amap:近回水石林 · 息烽县多滨洞旅游景区"
+  ],
+  "id": "zone_26ce0bd665",
+  "name": "近回水石林 · 息烽县多滨洞旅游景区",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近回水石林 · 息烽县多滨洞旅游景区"
+  ],
+  "h3Cells": [
+   "884008d089fffff",
+   "884008d091fffff",
+   "884008d093fffff",
+   "884008d099fffff",
+   "884008d09bfffff",
+   "884008d0c3fffff",
+   "884008d0d3fffff",
+   "884008d0d7fffff",
+   "884008d0ddfffff",
+   "884008d2b3fffff",
+   "884008d549fffff",
+   "884008d54dfffff",
+   "884008d705fffff",
+   "884008d721fffff",
+   "884008d725fffff",
+   "884008d727fffff",
+   "884008d729fffff",
+   "884008d72dfffff",
+   "884008d761fffff",
+   "884008d765fffff",
+   "884008d76dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:884008d0d3fffff",
+   "cell:884008d099fffff",
+   "cell:884008d72dfffff",
+   "cell:884008d725fffff",
+   "cell:884008d09bfffff"
+  ],
+  "cellCount": 21,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d5aa6c02f6ef",
+  "externalIds": [
+   "zone:amap:近贵州中医药大学时珍学院 · 中国阳明文化园"
+  ],
+  "id": "zone_89d8098fa0",
+  "name": "近贵州中医药大学时珍学院 · 中国阳明文化园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近贵州中医药大学时珍学院 · 中国阳明文化园"
+  ],
+  "h3Cells": [
+   "88400c6009fffff",
+   "88400c6041fffff",
+   "88400c6047fffff",
+   "88400c6049fffff",
+   "88400c604dfffff",
+   "88400c6051fffff",
+   "88400c6055fffff",
+   "88400c6059fffff",
+   "88400c605bfffff",
+   "88400c6215fffff",
+   "88400c6227fffff",
+   "88400c6233fffff",
+   "88400c62a9fffff",
+   "88400c62adfffff",
+   "88400c62e1fffff",
+   "88400c62e3fffff",
+   "88400c62e5fffff",
+   "88400c62e7fffff",
+   "88400c62e9fffff",
+   "88400c62ebfffff",
+   "88400c631bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c62adfffff",
+   "cell:88400c605bfffff",
+   "cell:88400c6009fffff",
+   "cell:88400c6055fffff",
+   "cell:88400c62ebfffff"
+  ],
+  "cellCount": 21,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "7ea6a5e8f7c3",
+  "externalIds": [
+   "zone:amap:青岩古镇"
+  ],
+  "id": "zone_47577bfafd",
+  "name": "青岩古镇",
+  "zoneType": "历史街区",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:青岩",
+   "amap:青岩古镇",
+   "amap_regeo:青岩"
+  ],
+  "h3Cells": [
+   "88400c064bfffff",
+   "88400c064dfffff",
+   "88400c0659fffff",
+   "88400c1415fffff",
+   "88400c1431fffff",
+   "88400c1433fffff",
+   "88400c1437fffff",
+   "88400c1481fffff",
+   "88400c1483fffff",
+   "88400c1487fffff",
+   "88400c148bfffff",
+   "88400c14b3fffff",
+   "88400c14b5fffff",
+   "88400c14b9fffff",
+   "88400c14bdfffff",
+   "88400c1583fffff",
+   "88400c1593fffff",
+   "88400c159bfffff",
+   "88400c15c1fffff",
+   "88400ca965fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c1487fffff",
+   "cell:88400c1593fffff",
+   "cell:88400c1437fffff",
+   "cell:88400c1481fffff",
+   "cell:88400c064dfffff"
+  ],
+  "cellCount": 20,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "0b7a5eb8e826",
+  "externalIds": [
+   "zone:amap:龙泉苑街"
+  ],
+  "id": "zone_3b92dfb1af",
+  "name": "龙泉苑街",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:观山湖世纪城/地质博物馆",
+   "amap:观山湖会展城/金融城",
+   "amap:贵阳北站/高新区",
+   "amap:龙泉苑街",
+   "amap_regeo:龙泉苑街"
+  ],
+  "h3Cells": [
+   "88400c0c31fffff",
+   "88400c0c33fffff",
+   "88400c0c87fffff",
+   "88400c0ca1fffff",
+   "88400c0ca3fffff",
+   "88400c0ca9fffff",
+   "88400c0cabfffff",
+   "88400c0cadfffff",
+   "88400c0cbdfffff",
+   "88400c0ce1fffff",
+   "88400c0ce5fffff",
+   "88400c0ce7fffff",
+   "88400c0ce9fffff",
+   "88400c0cedfffff",
+   "88400c0d99fffff",
+   "88400c0dd1fffff",
+   "88400c0dd3fffff",
+   "88400c0dd9fffff",
+   "88400c0ddbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0ca9fffff",
+   "cell:88400c0ce5fffff",
+   "cell:88400c0cabfffff",
+   "cell:88400c0ce7fffff",
+   "cell:88400c0cadfffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "966170b54959",
+  "externalIds": [
+   "zone:amap:金华镇"
+  ],
+  "id": "zone_0c4a62cd85",
+  "name": "金华镇",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:金华镇",
+   "amap_regeo:金华镇"
+  ],
+  "h3Cells": [
+   "88400c0c91fffff",
+   "88400c0c93fffff",
+   "88400c0c95fffff",
+   "88400c0c97fffff",
+   "88400c0c99fffff",
+   "88400c0c9bfffff",
+   "88400c0cd3fffff",
+   "88400c390dfffff",
+   "88400c3941fffff",
+   "88400c3943fffff",
+   "88400c3945fffff",
+   "88400c3947fffff",
+   "88400c394dfffff",
+   "88400c3955fffff",
+   "88400c3957fffff",
+   "88400c3963fffff",
+   "88400c3969fffff",
+   "88400c396bfffff",
+   "88400c3b25fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c93fffff",
+   "cell:88400c394dfffff",
+   "cell:88400c0c95fffff",
+   "cell:88400c396bfffff",
+   "cell:88400c0c97fffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "36cddfb9d9e2",
+  "externalIds": [
+   "zone:amap:青岩"
+  ],
+  "id": "zone_22291387f1",
+  "name": "青岩",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:青岩",
+   "amap:青岩古镇",
+   "amap_regeo:青岩"
+  ],
+  "h3Cells": [
+   "88400c1411fffff",
+   "88400c1417fffff",
+   "88400c1485fffff",
+   "88400c1489fffff",
+   "88400c148dfffff",
+   "88400c14a1fffff",
+   "88400c14a3fffff",
+   "88400c14a7fffff",
+   "88400c14a9fffff",
+   "88400c14abfffff",
+   "88400c14adfffff",
+   "88400c14c3fffff",
+   "88400c14e1fffff",
+   "88400c14e3fffff",
+   "88400c14e7fffff",
+   "88400c14e9fffff",
+   "88400c14ebfffff",
+   "88400c15d3fffff",
+   "88400c16b7fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c1485fffff",
+   "cell:88400c14e3fffff",
+   "cell:88400c148dfffff",
+   "cell:88400c14a9fffff",
+   "cell:88400c14a3fffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d88e6e54c6bc",
+  "externalIds": [
+   "zone:amap:龚家寨"
+  ],
+  "id": "zone_9d7168eb33",
+  "name": "龚家寨",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:白云公园/白云地区",
+   "amap:龚家寨",
+   "amap_regeo:大山洞",
+   "amap_regeo:龚家寨"
+  ],
+  "h3Cells": [
+   "88400c70dbfffff",
+   "88400c7281fffff",
+   "88400c7283fffff",
+   "88400c7287fffff",
+   "88400c7291fffff",
+   "88400c7295fffff",
+   "88400c7297fffff",
+   "88400c729dfffff",
+   "88400c72abfffff",
+   "88400c72b1fffff",
+   "88400c72b3fffff",
+   "88400c72b9fffff",
+   "88400c72bbfffff",
+   "88400c72bdfffff",
+   "88400c7761fffff",
+   "88400c7765fffff",
+   "88400c7767fffff",
+   "88400c7769fffff",
+   "88400c776dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7297fffff",
+   "cell:88400c776dfffff",
+   "cell:88400c72bbfffff",
+   "cell:88400c7769fffff",
+   "cell:88400c72bdfffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "6ba67a71a4c0",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离26.9公里"
+  ],
+  "id": "zone_d29a42fad7",
+  "name": "息烽 · 距开阳中心直线距离26.9公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离26.9公里"
+  ],
+  "h3Cells": [
+   "88400eac49fffff",
+   "88400eae03fffff",
+   "88400eae07fffff",
+   "88400eae15fffff",
+   "88400eae21fffff",
+   "88400eae23fffff",
+   "88400eae27fffff",
+   "88400eae29fffff",
+   "88400eae2bfffff",
+   "88400eae2dfffff",
+   "88400eae31fffff",
+   "88400eae35fffff",
+   "88400eae39fffff",
+   "88400eae3bfffff",
+   "88400eae3dfffff",
+   "88400eaf11fffff",
+   "88400eaf19fffff",
+   "88400eaf1bfffff",
+   "88400eaf5bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eae23fffff",
+   "cell:88400eac49fffff",
+   "cell:88400eae3dfffff",
+   "cell:88400eaf11fffff",
+   "cell:88400eae07fffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c7ba68f05fae",
+  "externalIds": [
+   "zone:amap:近修文县卧龙山庄(贵阳) · 中国阳明文化园"
+  ],
+  "id": "zone_0157a6d12d",
+  "name": "近修文县卧龙山庄(贵阳) · 中国阳明文化园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近修文县卧龙山庄(贵阳) · 中国阳明文化园",
+   "amap:近修文县卧龙山庄(贵阳) · 幸福村银杏树林"
+  ],
+  "h3Cells": [
+   "88400c6065fffff",
+   "88400c606dfffff",
+   "88400c6103fffff",
+   "88400c6109fffff",
+   "88400c610bfffff",
+   "88400c6111fffff",
+   "88400c6115fffff",
+   "88400c6119fffff",
+   "88400c611dfffff",
+   "88400c6143fffff",
+   "88400c614bfffff",
+   "88400c6151fffff",
+   "88400c6153fffff",
+   "88400c6157fffff",
+   "88400c615bfffff",
+   "88400c6331fffff",
+   "88400c6333fffff",
+   "88400c6337fffff",
+   "88400c633bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c610bfffff",
+   "cell:88400c6151fffff",
+   "cell:88400c611dfffff",
+   "cell:88400c633bfffff",
+   "cell:88400c6119fffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d3fb6ed8b2ac",
+  "externalIds": [
+   "zone:amap:久长"
+  ],
+  "id": "zone_d5bef9ba92",
+  "name": "久长",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:久长",
+   "amap:久长村",
+   "amap:近久长客运站 · 迪乐尼主题乐园",
+   "amap:近黔坤御庭中心广场 · 金鸡山",
+   "amap_regeo:久长",
+   "amap_regeo:久长村"
+  ],
+  "h3Cells": [
+   "88400c6a05fffff",
+   "88400c6a07fffff",
+   "88400c6a09fffff",
+   "88400c6a0dfffff",
+   "88400c6a21fffff",
+   "88400c6a25fffff",
+   "88400c6a29fffff",
+   "88400c6a2bfffff",
+   "88400c6a43fffff",
+   "88400c6a47fffff",
+   "88400c6a49fffff",
+   "88400c6a4bfffff",
+   "88400c6a51fffff",
+   "88400c6a55fffff",
+   "88400c6a63fffff",
+   "88400c6b19fffff",
+   "88400c6b53fffff",
+   "88400c6b57fffff",
+   "88400c799bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6a63fffff",
+   "cell:88400c6a0dfffff",
+   "cell:88400c6a05fffff",
+   "cell:88400c6a09fffff",
+   "cell:88400c6a21fffff"
+  ],
+  "cellCount": 19,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "374ef4e3305c",
+  "externalIds": [
+   "zone:amap:二桥"
+  ],
+  "id": "zone_fd30b00606",
+  "name": "二桥",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:二桥",
+   "amap:湘雅村",
+   "amap:老客车站/客车站",
+   "amap:花果园地区",
+   "amap:贵阳市延安西路32号",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:二桥",
+   "amap_regeo:北京路",
+   "amap_regeo:湘雅村",
+   "amap_regeo:老客车站/客车站",
+   "amap_regeo:花果园"
+  ],
+  "h3Cells": [
+   "88400c0c01fffff",
+   "88400c0c03fffff",
+   "88400c0c05fffff",
+   "88400c0c09fffff",
+   "88400c0c0bfffff",
+   "88400c0c0dfffff",
+   "88400c0c11fffff",
+   "88400c0c15fffff",
+   "88400c0c19fffff",
+   "88400c0c1dfffff",
+   "88400c0c43fffff",
+   "88400c0c53fffff",
+   "88400c0c55fffff",
+   "88400c0c57fffff",
+   "88400c0c63fffff",
+   "88400c0ea1fffff",
+   "88400c0ea5fffff",
+   "88400c0eadfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c43fffff",
+   "cell:88400c0c03fffff",
+   "cell:88400c0c19fffff",
+   "cell:88400c0c55fffff",
+   "cell:88400c0c1dfffff"
+  ],
+  "cellCount": 18,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8cd362122578",
+  "externalIds": [
+   "zone:amap:二戈寨村"
+  ],
+  "id": "zone_663f374e4e",
+  "name": "二戈寨村",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap_regeo:二戈寨",
+   "amap_regeo:二戈寨村"
+  ],
+  "h3Cells": [
+   "88400c0081fffff",
+   "88400c0085fffff",
+   "88400c0087fffff",
+   "88400c008dfffff",
+   "88400c00a1fffff",
+   "88400c00a3fffff",
+   "88400c00a5fffff",
+   "88400c00a9fffff",
+   "88400c00abfffff",
+   "88400c00adfffff",
+   "88400c00e3fffff",
+   "88400c00e7fffff",
+   "88400c0191fffff",
+   "88400c019dfffff",
+   "88400c01d1fffff",
+   "88400c01d7fffff",
+   "88400c01dbfffff",
+   "88400c0e69fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c00a9fffff",
+   "cell:88400c008dfffff",
+   "cell:88400c00a1fffff",
+   "cell:88400c00e3fffff",
+   "cell:88400c0085fffff"
+  ],
+  "cellCount": 18,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "379085924dac",
+  "externalIds": [
+   "zone:amap:近楠木渡镇客车站 · 楠木渡镇广场"
+  ],
+  "id": "zone_969a048464",
+  "name": "近楠木渡镇客车站 · 楠木渡镇广场",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近楠木渡镇客车站 · 楠木渡镇广场"
+  ],
+  "h3Cells": [
+   "88400eab01fffff",
+   "88400eab03fffff",
+   "88400eab05fffff",
+   "88400eab07fffff",
+   "88400eab09fffff",
+   "88400eab0bfffff",
+   "88400eab0dfffff",
+   "88400eab21fffff",
+   "88400eab29fffff",
+   "88400eab2bfffff",
+   "88400eab2dfffff",
+   "88400eab31fffff",
+   "88400eab35fffff",
+   "88400eab39fffff",
+   "88400eab57fffff",
+   "88400eab61fffff",
+   "88400eab63fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eab01fffff",
+   "cell:88400eab05fffff",
+   "cell:88400eab0dfffff",
+   "cell:88400eab63fffff",
+   "cell:88400eab03fffff"
+  ],
+  "cellCount": 17,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "e2e72057d6d4",
+  "externalIds": [
+   "zone:amap:近大塘湖度假村 · 乐旺河"
+  ],
+  "id": "zone_b591840d5e",
+  "name": "近大塘湖度假村 · 乐旺河",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近大塘湖度假村 · 乐旺河"
+  ],
+  "h3Cells": [
+   "88400e84a1fffff",
+   "88400e84a5fffff",
+   "88400e84a7fffff",
+   "88400e8587fffff",
+   "88400e8589fffff",
+   "88400e8593fffff",
+   "88400e8595fffff",
+   "88400e8597fffff",
+   "88400e859dfffff",
+   "88400e85b9fffff",
+   "88400e85bbfffff",
+   "88400e85c3fffff",
+   "88400e85c7fffff",
+   "88400e85dbfffff",
+   "88400e85ddfffff",
+   "88400eba4dfffff",
+   "88400eba6dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400e8597fffff",
+   "cell:88400e8595fffff",
+   "cell:88400e859dfffff",
+   "cell:88400e85bbfffff",
+   "cell:88400e8593fffff"
+  ],
+  "cellCount": 17,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "235156a2cb5c",
+  "externalIds": [
+   "zone:amap:近修文老客车站 · 中国阳明文化园"
+  ],
+  "id": "zone_2e2dec75db",
+  "name": "近修文老客车站 · 中国阳明文化园",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 近修文老客车站 · 中国阳明文化园",
+   "amap:修文 · 近修文老客车站 · 龙冈广场",
+   "amap:近中国阳明文化园 · 修文老客车站",
+   "amap:近中国阳明文化园 · 王阳明纪念馆",
+   "amap:近中国阳明文化园 · 玩易窝遗址公园",
+   "amap:近修文老客车站 · 中国阳明文化园",
+   "amap:近修文老客车站 · 修文县人口文化广场",
+   "amap:近修文老客车站 · 龙冈广场",
+   "amap:近健康主题公园 · 贵州中医药大学时珍学院"
+  ],
+  "h3Cells": [
+   "88400c6003fffff",
+   "88400c600bfffff",
+   "88400c6011fffff",
+   "88400c6015fffff",
+   "88400c6017fffff",
+   "88400c601dfffff",
+   "88400c6031fffff",
+   "88400c6033fffff",
+   "88400c6039fffff",
+   "88400c603bfffff",
+   "88400c603dfffff",
+   "88400c6057fffff",
+   "88400c60e1fffff",
+   "88400c60e5fffff",
+   "88400c60e9fffff",
+   "88400c60edfffff",
+   "88400c61d9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6003fffff",
+   "cell:88400c601dfffff",
+   "cell:88400c600bfffff",
+   "cell:88400c6057fffff",
+   "cell:88400c6039fffff"
+  ],
+  "cellCount": 17,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c440ac9c0259",
+  "externalIds": [
+   "zone:amap:近百花湖风景区 · 朱昌客运站"
+  ],
+  "id": "zone_bbff915d91",
+  "name": "近百花湖风景区 · 朱昌客运站",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:近百花湖风景区 · 朱昌客运站"
+  ],
+  "h3Cells": [
+   "88400c745bfffff",
+   "88400c745dfffff",
+   "88400c7613fffff",
+   "88400c7615fffff",
+   "88400c7617fffff",
+   "88400c7631fffff",
+   "88400c7633fffff",
+   "88400c7637fffff",
+   "88400c7639fffff",
+   "88400c763bfffff",
+   "88400c76c5fffff",
+   "88400c76cdfffff",
+   "88400c76e1fffff",
+   "88400c76e5fffff",
+   "88400c76e9fffff",
+   "88400c76edfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c76edfffff",
+   "cell:88400c76e5fffff",
+   "cell:88400c76e1fffff",
+   "cell:88400c76c5fffff",
+   "cell:88400c7639fffff"
+  ],
+  "cellCount": 16,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5773c718fe6c",
+  "externalIds": [
+   "zone:amap:温泉镇"
+  ],
+  "id": "zone_6b88686ab4",
+  "name": "温泉镇",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离20.4公里",
+   "amap:温泉镇",
+   "amap_regeo:温泉镇"
+  ],
+  "h3Cells": [
+   "88400ea0a5fffff",
+   "88400ea183fffff",
+   "88400ea185fffff",
+   "88400ea187fffff",
+   "88400ea191fffff",
+   "88400ea195fffff",
+   "88400ea199fffff",
+   "88400ea19dfffff",
+   "88400ea1a5fffff",
+   "88400ea1abfffff",
+   "88400ea1b3fffff",
+   "88400ea1b5fffff",
+   "88400ea1b7fffff",
+   "88400ea1b9fffff",
+   "88400ea1bbfffff",
+   "88400eaf59fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea183fffff",
+   "cell:88400ea199fffff",
+   "cell:88400ea19dfffff",
+   "cell:88400ea1b5fffff",
+   "cell:88400ea185fffff"
+  ],
+  "cellCount": 16,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "3ba9ac7693a6",
+  "externalIds": [
+   "zone:amap:卫城"
+  ],
+  "id": "zone_44e93cc721",
+  "name": "卫城",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:卫城",
+   "amap_regeo:卫城"
+  ],
+  "h3Cells": [
+   "8840089341fffff",
+   "8840089343fffff",
+   "8840089345fffff",
+   "8840089347fffff",
+   "884008934bfffff",
+   "884008934dfffff",
+   "8840089351fffff",
+   "8840089355fffff",
+   "8840089357fffff",
+   "8840089359fffff",
+   "884008935bfffff",
+   "88400c29a1fffff",
+   "88400c29a7fffff",
+   "88400c29a9fffff",
+   "88400c29adfffff",
+   "88400c29b7fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:8840089341fffff",
+   "cell:884008934bfffff",
+   "cell:88400c29a7fffff",
+   "cell:8840089343fffff",
+   "cell:8840089347fffff"
+  ],
+  "cellCount": 16,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "74cb8053014b",
+  "externalIds": [
+   "zone:amap:近右二村 · 湖畔人家"
+  ],
+  "id": "zone_2296dcf7af",
+  "name": "近右二村 · 湖畔人家",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近右二村 · 湖畔人家"
+  ],
+  "h3Cells": [
+   "88400c2049fffff",
+   "88400c204dfffff",
+   "88400c2221fffff",
+   "88400c2223fffff",
+   "88400c2225fffff",
+   "88400c2227fffff",
+   "88400c2229fffff",
+   "88400c222dfffff",
+   "88400c2265fffff",
+   "88400c2267fffff",
+   "88400c2319fffff",
+   "88400c231bfffff",
+   "88400c2351fffff",
+   "88400c2357fffff",
+   "88400c2359fffff",
+   "88400c235bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c204dfffff",
+   "cell:88400c2225fffff",
+   "cell:88400c2049fffff",
+   "cell:88400c222dfffff",
+   "cell:88400c2223fffff"
+  ],
+  "cellCount": 16,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9265e625e3dc",
+  "externalIds": [
+   "zone:amap:近红枫湖风景区 · 中国农业公园"
+  ],
+  "id": "zone_b9630c382c",
+  "name": "近红枫湖风景区 · 中国农业公园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近红枫湖风景区 · 中国农业公园"
+  ],
+  "h3Cells": [
+   "88400c206dfffff",
+   "88400c2159fffff",
+   "88400c215dfffff",
+   "88400c2303fffff",
+   "88400c2307fffff",
+   "88400c2311fffff",
+   "88400c2313fffff",
+   "88400c2315fffff",
+   "88400c231dfffff",
+   "88400c232bfffff",
+   "88400c2331fffff",
+   "88400c2333fffff",
+   "88400c2335fffff",
+   "88400c2339fffff",
+   "88400c233bfffff",
+   "88400c233dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c2313fffff",
+   "cell:88400c2307fffff",
+   "cell:88400c232bfffff",
+   "cell:88400c2339fffff",
+   "cell:88400c233bfffff"
+  ],
+  "cellCount": 16,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "3f61ae8a386f",
+  "externalIds": [
+   "zone:amap:沙冲"
+  ],
+  "id": "zone_722274289e",
+  "name": "沙冲",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:兴关",
+   "amap:小河转盘/万科",
+   "amap:沙冲",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap:营盘路",
+   "amap:解放路",
+   "amap:遵义路",
+   "amap_regeo:兴关",
+   "amap_regeo:沙冲",
+   "amap_regeo:清水江路",
+   "amap_regeo:漓江路",
+   "amap_regeo:营盘路",
+   "amap_regeo:解放路",
+   "amap_regeo:遵义路"
+  ],
+  "h3Cells": [
+   "88400c0c49fffff",
+   "88400c0e03fffff",
+   "88400c0e07fffff",
+   "88400c0e15fffff",
+   "88400c0e17fffff",
+   "88400c0e21fffff",
+   "88400c0e23fffff",
+   "88400c0e27fffff",
+   "88400c0e29fffff",
+   "88400c0e2bfffff",
+   "88400c0e2dfffff",
+   "88400c0e39fffff",
+   "88400c0e3bfffff",
+   "88400c0e3dfffff",
+   "88400c0eedfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0e27fffff",
+   "cell:88400c0e23fffff",
+   "cell:88400c0e21fffff",
+   "cell:88400c0c49fffff",
+   "cell:88400c0e15fffff"
+  ],
+  "cellCount": 15,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "405de0138cae",
+  "externalIds": [
+   "zone:amap:近白马峪营地 · 白马峪温泉康养度假区"
+  ],
+  "id": "zone_13e8bd594a",
+  "name": "近白马峪营地 · 白马峪温泉康养度假区",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近白马峪营地 · 白马峪温泉康养度假区"
+  ],
+  "h3Cells": [
+   "88400c6b65fffff",
+   "88400eb41bfffff",
+   "88400eb489fffff",
+   "88400eb4c1fffff",
+   "88400eb4cbfffff",
+   "88400eb4cdfffff",
+   "88400eb4d1fffff",
+   "88400eb4dbfffff",
+   "88400eb4ddfffff",
+   "88400eb6a3fffff",
+   "88400eb6a7fffff",
+   "88400eb6b3fffff",
+   "88400eb6b5fffff",
+   "88400eb6b7fffff",
+   "88400eb6b9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb6b5fffff",
+   "cell:88400eb6a3fffff",
+   "cell:88400eb6b3fffff",
+   "cell:88400eb6b7fffff",
+   "cell:88400c6b65fffff"
+  ],
+  "cellCount": 15,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "43d809d1cb0a",
+  "externalIds": [
+   "zone:amap:近鑫运溶洞庄园 · 开阳顶方乐家寨度假中心"
+  ],
+  "id": "zone_e73369dec0",
+  "name": "近鑫运溶洞庄园 · 开阳顶方乐家寨度假中心",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近鑫运溶洞庄园 · 开阳顶方乐家寨度假中心"
+  ],
+  "h3Cells": [
+   "88400eb043fffff",
+   "88400eb049fffff",
+   "88400eb04bfffff",
+   "88400eb04dfffff",
+   "88400eb055fffff",
+   "88400eb069fffff",
+   "88400eb06bfffff",
+   "88400eb221fffff",
+   "88400eb235fffff",
+   "88400eb237fffff",
+   "88400eb239fffff",
+   "88400eb23bfffff",
+   "88400eb23dfffff",
+   "88400eb2e5fffff",
+   "88400eb31bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb055fffff",
+   "cell:88400eb04bfffff",
+   "cell:88400eb2e5fffff",
+   "cell:88400eb237fffff",
+   "cell:88400eb043fffff"
+  ],
+  "cellCount": 15,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "49300177d651",
+  "externalIds": [
+   "zone:amap:近王庄客运站 · 华联万家购物中心(王庄店)"
+  ],
+  "id": "zone_b3b2ebc80c",
+  "name": "近王庄客运站 · 华联万家购物中心(王庄店)",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近王庄客运站 · 华联万家购物中心(王庄店)"
+  ],
+  "h3Cells": [
+   "8840089045fffff",
+   "8840089049fffff",
+   "884008904dfffff",
+   "8840089061fffff",
+   "8840089063fffff",
+   "8840089065fffff",
+   "8840089069fffff",
+   "8840089221fffff",
+   "8840089223fffff",
+   "8840089225fffff",
+   "8840089227fffff",
+   "8840089311fffff",
+   "8840089313fffff",
+   "8840089319fffff",
+   "884008931bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:8840089045fffff",
+   "cell:8840089069fffff",
+   "cell:8840089313fffff",
+   "cell:8840089227fffff",
+   "cell:8840089063fffff"
+  ],
+  "cellCount": 15,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "2b5e3c709c8b",
+  "externalIds": [
+   "zone:amap:息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园"
+  ],
+  "id": "zone_1f2d4a769d",
+  "name": "息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 近中国工农红军南渡乌江纪念碑 · 流长镇前奔梨园"
+  ],
+  "h3Cells": [
+   "884008d80dfffff",
+   "884008d821fffff",
+   "884008d829fffff",
+   "884008d82dfffff",
+   "884008d845fffff",
+   "884008d865fffff",
+   "884008d867fffff",
+   "884008d86bfffff",
+   "884008d86dfffff",
+   "884008d951fffff",
+   "884008d953fffff",
+   "884008d955fffff",
+   "884008d957fffff",
+   "884008d959fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:884008d867fffff",
+   "cell:884008d86dfffff",
+   "cell:884008d865fffff",
+   "cell:884008d80dfffff",
+   "cell:884008d957fffff"
+  ],
+  "cellCount": 14,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "831520d3633b",
+  "externalIds": [
+   "zone:amap:小河转盘/万科"
+  ],
+  "id": "zone_93bc29ba51",
+  "name": "小河转盘/万科",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:小河转盘/万科",
+   "amap_regeo:沙冲",
+   "amap_regeo:清水江路",
+   "amap_regeo:漓江路"
+  ],
+  "h3Cells": [
+   "88400c0e01fffff",
+   "88400c0e05fffff",
+   "88400c0e09fffff",
+   "88400c0e0dfffff",
+   "88400c0e11fffff",
+   "88400c0e13fffff",
+   "88400c0e61fffff",
+   "88400c0e63fffff",
+   "88400c0e65fffff",
+   "88400c0e67fffff",
+   "88400c0e6dfffff",
+   "88400c0ee9fffff",
+   "88400c0f59fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0e0dfffff",
+   "cell:88400c0e01fffff",
+   "cell:88400c0e09fffff",
+   "cell:88400c0e05fffff",
+   "cell:88400c0e61fffff"
+  ],
+  "cellCount": 13,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "f69fce296dcf",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离25.3公里"
+  ],
+  "id": "zone_df0125c0cf",
+  "name": "息烽 · 距开阳中心直线距离25.3公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离25.3公里"
+  ],
+  "h3Cells": [
+   "88400ea459fffff",
+   "88400ea45bfffff",
+   "88400ea633fffff",
+   "88400ea6a9fffff",
+   "88400ea6adfffff",
+   "88400ea6c5fffff",
+   "88400ea6e1fffff",
+   "88400ea6e3fffff",
+   "88400ea6e5fffff",
+   "88400ea6e7fffff",
+   "88400ea6e9fffff",
+   "88400ea6ebfffff",
+   "88400ea6edfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea6e1fffff",
+   "cell:88400ea633fffff",
+   "cell:88400ea6e9fffff",
+   "cell:88400ea6e5fffff",
+   "cell:88400ea459fffff"
+  ],
+  "cellCount": 13,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "535ea07a8a35",
+  "externalIds": [
+   "zone:amap:宅吉路"
+  ],
+  "id": "zone_ad47a85421",
+  "name": "宅吉路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:中华北路",
+   "amap:北京路",
+   "amap:大营坡(商圈)",
+   "amap:宅吉村",
+   "amap:宅吉路",
+   "amap:市北路",
+   "amap:沙河",
+   "amap:贵乌路",
+   "amap:贵阳东站/新添寨/乌当地区",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:大营坡(商圈)",
+   "amap_regeo:宅吉村",
+   "amap_regeo:宅吉路",
+   "amap_regeo:市北路"
+  ],
+  "h3Cells": [
+   "88400c0d01fffff",
+   "88400c0d03fffff",
+   "88400c0d05fffff",
+   "88400c0d07fffff",
+   "88400c0d0bfffff",
+   "88400c0d2bfffff",
+   "88400c0d31fffff",
+   "88400c0d35fffff",
+   "88400c0d39fffff",
+   "88400c0d51fffff",
+   "88400c0d55fffff",
+   "88400c0d57fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d51fffff",
+   "cell:88400c0d55fffff",
+   "cell:88400c0d57fffff",
+   "cell:88400c0d0bfffff",
+   "cell:88400c0d39fffff"
+  ],
+  "cellCount": 12,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "11d6530dbc59",
+  "externalIds": [
+   "zone:amap:漓江路"
+  ],
+  "id": "zone_d2ae5adaf6",
+  "name": "漓江路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:清水江路",
+   "amap:漓江路",
+   "amap:花溪公园/十里河滩",
+   "amap_regeo:中曹",
+   "amap_regeo:清水江路",
+   "amap_regeo:漓江路"
+  ],
+  "h3Cells": [
+   "88400c0095fffff",
+   "88400c0097fffff",
+   "88400c00b3fffff",
+   "88400c00bbfffff",
+   "88400c0565fffff",
+   "88400c056dfffff",
+   "88400c0e19fffff",
+   "88400c0e1dfffff",
+   "88400c0e51fffff",
+   "88400c0e53fffff",
+   "88400c0e59fffff",
+   "88400c0e5bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0e51fffff",
+   "cell:88400c0565fffff",
+   "cell:88400c0097fffff",
+   "cell:88400c0e1dfffff",
+   "cell:88400c0e59fffff"
+  ],
+  "cellCount": 12,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "886ca286e582",
+  "externalIds": [
+   "zone:amap:徐家冲"
+  ],
+  "id": "zone_8dc66209d3",
+  "name": "徐家冲",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:徐家冲",
+   "amap:花溪公园/十里河滩",
+   "amap_regeo:徐家冲"
+  ],
+  "h3Cells": [
+   "88400c0701fffff",
+   "88400c0703fffff",
+   "88400c0707fffff",
+   "88400c0709fffff",
+   "88400c070bfffff",
+   "88400c070dfffff",
+   "88400c0715fffff",
+   "88400c071dfffff",
+   "88400c0741fffff",
+   "88400c0747fffff",
+   "88400c0763fffff",
+   "88400c076bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0715fffff",
+   "cell:88400c071dfffff",
+   "cell:88400c0703fffff",
+   "cell:88400c0707fffff",
+   "cell:88400c0763fffff"
+  ],
+  "cellCount": 12,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "f82f3d33e4f0",
+  "externalIds": [
+   "zone:amap:修文 · 近贵阳桃源河景区 · 朵芳阁桃源河温泉"
+  ],
+  "id": "zone_00036ed2c6",
+  "name": "修文 · 近贵阳桃源河景区 · 朵芳阁桃源河温泉",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 近贵阳桃源河景区 · 朵芳阁桃源河温泉"
+  ],
+  "h3Cells": [
+   "88400c7901fffff",
+   "88400c7905fffff",
+   "88400c7929fffff",
+   "88400c7941fffff",
+   "88400c7945fffff",
+   "88400c7947fffff",
+   "88400c795dfffff",
+   "88400c7961fffff",
+   "88400c7965fffff",
+   "88400c7969fffff",
+   "88400c796bfffff",
+   "88400c796dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c796bfffff",
+   "cell:88400c7947fffff",
+   "cell:88400c795dfffff",
+   "cell:88400c7941fffff",
+   "cell:88400c7969fffff"
+  ],
+  "cellCount": 12,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5aea7faad829",
+  "externalIds": [
+   "zone:amap:近南江大峡谷 · 南江大峡谷漂流"
+  ],
+  "id": "zone_b0cc8a100c",
+  "name": "近南江大峡谷 · 南江大峡谷漂流",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近南江大峡谷 · 南江大峡谷漂流"
+  ],
+  "h3Cells": [
+   "88400c4d21fffff",
+   "88400c4d25fffff",
+   "88400c4d29fffff",
+   "88400c4d2bfffff",
+   "88400c4d31fffff",
+   "88400c4d39fffff",
+   "88400c4d3bfffff",
+   "88400c4d3dfffff",
+   "88400eb211fffff",
+   "88400eb21bfffff",
+   "88400eb251fffff",
+   "88400eb253fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4d3bfffff",
+   "cell:88400c4d21fffff",
+   "cell:88400c4d2bfffff",
+   "cell:88400c4d25fffff",
+   "cell:88400c4d39fffff"
+  ],
+  "cellCount": 12,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "954497b673d1",
+  "externalIds": [
+   "zone:amap:清镇 · 近红枫湖小三亚 · 大坡观海艺术村"
+  ],
+  "id": "zone_96bf11980c",
+  "name": "清镇 · 近红枫湖小三亚 · 大坡观海艺术村",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近红枫湖小三亚 · 大坡观海艺术村",
+   "amap:近红枫湖小三亚 · 大坡观海艺术村"
+  ],
+  "h3Cells": [
+   "88400c2141fffff",
+   "88400c2143fffff",
+   "88400c2145fffff",
+   "88400c2149fffff",
+   "88400c214bfffff",
+   "88400c214dfffff",
+   "88400c2169fffff",
+   "88400c216bfffff",
+   "88400c2327fffff",
+   "88400c232dfffff",
+   "88400c3893fffff",
+   "88400c389bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c2141fffff",
+   "cell:88400c2169fffff",
+   "cell:88400c216bfffff",
+   "cell:88400c232dfffff",
+   "cell:88400c2149fffff"
+  ],
+  "cellCount": 12,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "dd71b1c84db8",
+  "externalIds": [
+   "zone:amap:开阳 · 近峰糖关"
+  ],
+  "id": "zone_48d8097799",
+  "name": "开阳 · 近峰糖关",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:开阳 · 近峰糖关"
+  ],
+  "h3Cells": [
+   "88400c4881fffff",
+   "88400c488dfffff",
+   "88400c48a3fffff",
+   "88400c48b5fffff",
+   "88400c48bdfffff",
+   "88400c48e7fffff",
+   "88400c4993fffff",
+   "88400c499bfffff",
+   "88400c49dbfffff",
+   "88400eb241fffff",
+   "88400eb245fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c48b5fffff",
+   "cell:88400c48a3fffff",
+   "cell:88400c48e7fffff",
+   "cell:88400c49dbfffff",
+   "cell:88400c499bfffff"
+  ],
+  "cellCount": 11,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "74aea30fa93e",
+  "externalIds": [
+   "zone:amap:近五朵莲花 · 白虎山"
+  ],
+  "id": "zone_28d2164e66",
+  "name": "近五朵莲花 · 白虎山",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近五朵莲花 · 白虎山"
+  ],
+  "h3Cells": [
+   "88400c6121fffff",
+   "88400c6125fffff",
+   "88400c6127fffff",
+   "88400c612bfffff",
+   "88400c612dfffff",
+   "88400c6131fffff",
+   "88400c6135fffff",
+   "88400c6139fffff",
+   "88400c613dfffff",
+   "88400c6ac3fffff",
+   "88400c6ac5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6139fffff",
+   "cell:88400c6131fffff",
+   "cell:88400c6121fffff",
+   "cell:88400c6125fffff",
+   "cell:88400c6127fffff"
+  ],
+  "cellCount": 11,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "6a5549be50bc",
+  "externalIds": [
+   "zone:amap:近修文老客车站 · 贵州中医药大学时珍学院"
+  ],
+  "id": "zone_b39ea7e676",
+  "name": "近修文老客车站 · 贵州中医药大学时珍学院",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近修文老客车站 · 贵州中医药大学时珍学院"
+  ],
+  "h3Cells": [
+   "88400c6013fffff",
+   "88400c6019fffff",
+   "88400c601bfffff",
+   "88400c6053fffff",
+   "88400c60c1fffff",
+   "88400c60c9fffff",
+   "88400c60cdfffff",
+   "88400c62a1fffff",
+   "88400c62a5fffff",
+   "88400c62a7fffff",
+   "88400c62abfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6053fffff",
+   "cell:88400c6019fffff",
+   "cell:88400c62abfffff",
+   "cell:88400c62a7fffff",
+   "cell:88400c60cdfffff"
+  ],
+  "cellCount": 11,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a35906267246",
+  "externalIds": [
+   "zone:amap:清镇 · 近红枫湖风景区 · 红枫湖亚高原水上运动基地"
+  ],
+  "id": "zone_567683f5e5",
+  "name": "清镇 · 近红枫湖风景区 · 红枫湖亚高原水上运动基地",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近红枫湖风景区 · 红枫湖亚高原水上运动基地",
+   "amap:近吉洋庄园 · 红枫湖风景区",
+   "amap:近红枫湖风景区 · 华城兴隆度假村",
+   "amap:近红枫湖风景区-侗寨 · 红枫湖风景名胜区苗寨"
+  ],
+  "h3Cells": [
+   "88400c2301fffff",
+   "88400c2305fffff",
+   "88400c2309fffff",
+   "88400c230bfffff",
+   "88400c230dfffff",
+   "88400c2329fffff",
+   "88400c2347fffff",
+   "88400c2361fffff",
+   "88400c2363fffff",
+   "88400c2367fffff",
+   "88400c3a93fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c2329fffff",
+   "cell:88400c230dfffff",
+   "cell:88400c2305fffff",
+   "cell:88400c2301fffff",
+   "cell:88400c2367fffff"
+  ],
+  "cellCount": 11,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c2144fa54146",
+  "externalIds": [
+   "zone:amap:青龙"
+  ],
+  "id": "zone_ecccf14871",
+  "name": "青龙",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇",
+   "amap:清镇 · 近四季贵州极地冒险水世界 · 时光贵州古镇",
+   "amap:清镇 · 近天主堂 · 辰艺水景",
+   "amap:清镇 · 近广大城文化体育公园 · 清镇市麓浮宫",
+   "amap:清镇 · 近时光贵州古镇 · 四季贵州极地冒险水世界",
+   "amap:清镇 · 近贵州工商职业大学 · 中环国际大厦E区",
+   "amap:近云岭1号财富中心 · 贵天大厦",
+   "amap:近新华路步行街 · 人民广场",
+   "amap:近时光贵州古镇 · 清镇市社会客车站",
+   "amap:近时光贵州古镇 · 贵州省清镇市奇石博物馆",
+   "amap:近杭州丝绸馆 · 贵州工商职业大学",
+   "amap:近桔子儿童游乐园(塔峰路店) · 亚华山庄",
+   "amap:近清镇市旅游集散中心 · 清镇市社会客车站",
+   "amap:近清镇市社会客车站 · 清镇市旅游集散中心",
+   "amap:近渝州清足阁 · 人民广场",
+   "amap:近渝州清足阁 · 时光贵州古镇",
+   "amap:近红枫湖旅游度假村 · 贵州工商职业大学",
+   "amap:近红枫湖旅游度假村 · 贵州电力职业技术学院",
+   "amap:近茶马古镇 · 红枫湖旅游度假村",
+   "amap:近贵州工商职业大学 · 中环国际大厦E区",
+   "amap:近贵州工商职业大学 · 时光贵州古镇",
+   "amap:近贵州工商职业大学 · 渝州清足阁",
+   "amap:近贵州省清镇市奇石博物馆 · 渝州清足阁",
+   "amap_regeo:青龙"
+  ],
+  "h3Cells": [
+   "88400c3813fffff",
+   "88400c3817fffff",
+   "88400c3819fffff",
+   "88400c38c1fffff",
+   "88400c38c3fffff",
+   "88400c38c5fffff",
+   "88400c38c7fffff",
+   "88400c38e1fffff",
+   "88400c38e9fffff",
+   "88400c38ebfffff",
+   "88400c38edfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c3817fffff",
+   "cell:88400c38e9fffff",
+   "cell:88400c38c5fffff",
+   "cell:88400c3819fffff",
+   "cell:88400c3813fffff"
+  ],
+  "cellCount": 11,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "18a64bad090e",
+  "externalIds": [
+   "zone:amap:近玄圃台 · 灵达渡假村"
+  ],
+  "id": "zone_2283bde01e",
+  "name": "近玄圃台 · 灵达渡假村",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:近玄圃台 · 灵达渡假村"
+  ],
+  "h3Cells": [
+   "88400c7681fffff",
+   "88400c7683fffff",
+   "88400c7685fffff",
+   "88400c7687fffff",
+   "88400c768bfffff",
+   "88400c7695fffff",
+   "88400c76a3fffff",
+   "88400c76abfffff",
+   "88400c76b1fffff",
+   "88400c76bdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7687fffff",
+   "cell:88400c768bfffff",
+   "cell:88400c76abfffff",
+   "cell:88400c7681fffff",
+   "cell:88400c7683fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "76470054dd07",
+  "externalIds": [
+   "zone:amap:近百花湖星苑 · 贩卖日落百花湖营地"
+  ],
+  "id": "zone_34710b2bc4",
+  "name": "近百花湖星苑 · 贩卖日落百花湖营地",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:近百花湖星苑 · 贩卖日落百花湖营地"
+  ],
+  "h3Cells": [
+   "88400c7689fffff",
+   "88400c768dfffff",
+   "88400c76c1fffff",
+   "88400c76c3fffff",
+   "88400c76c7fffff",
+   "88400c76cbfffff",
+   "88400c76d5fffff",
+   "88400c76ddfffff",
+   "88400c76e3fffff",
+   "88400c76ebfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c76c7fffff",
+   "cell:88400c7689fffff",
+   "cell:88400c768dfffff",
+   "cell:88400c76ebfffff",
+   "cell:88400c76e3fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9253615691e5",
+  "externalIds": [
+   "zone:amap:近黄龙洞 · 油栎林白鹭群"
+  ],
+  "id": "zone_a09956ad29",
+  "name": "近黄龙洞 · 油栎林白鹭群",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:近黄龙洞 · 油栎林白鹭群"
+  ],
+  "h3Cells": [
+   "88400c1401fffff",
+   "88400c1405fffff",
+   "88400c1421fffff",
+   "88400c1423fffff",
+   "88400c1427fffff",
+   "88400c1429fffff",
+   "88400c142bfffff",
+   "88400c142dfffff",
+   "88400c1435fffff",
+   "88400c15c9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c1423fffff",
+   "cell:88400c1429fffff",
+   "cell:88400c142bfffff",
+   "cell:88400c1435fffff",
+   "cell:88400c1405fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "4a144a6c9773",
+  "externalIds": [
+   "zone:amap:近猴耳天坑·极限酷玩公园 · 猴耳洞"
+  ],
+  "id": "zone_cc79ee29f9",
+  "name": "近猴耳天坑·极限酷玩公园 · 猴耳洞",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近猴耳天坑·极限酷玩公园 · 猴耳洞"
+  ],
+  "h3Cells": [
+   "88400eb113fffff",
+   "88400eb1a9fffff",
+   "88400eb1c1fffff",
+   "88400eb1c5fffff",
+   "88400eb1c7fffff",
+   "88400eb1e1fffff",
+   "88400eb1e3fffff",
+   "88400eb1e5fffff",
+   "88400eb1e9fffff",
+   "88400eb1edfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb1e9fffff",
+   "cell:88400eb1e3fffff",
+   "cell:88400eb1e1fffff",
+   "cell:88400eb1c5fffff",
+   "cell:88400eb113fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a6b1e865e3ca",
+  "externalIds": [
+   "zone:amap:近南江水上欢乐园 · 溯溪公园"
+  ],
+  "id": "zone_b8481f4422",
+  "name": "近南江水上欢乐园 · 溯溪公园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近南江水上欢乐园 · 溯溪公园"
+  ],
+  "h3Cells": [
+   "88400eb213fffff",
+   "88400eb287fffff",
+   "88400eb289fffff",
+   "88400eb28bfffff",
+   "88400eb28dfffff",
+   "88400eb295fffff",
+   "88400eb29dfffff",
+   "88400eb2c1fffff",
+   "88400eb2c3fffff",
+   "88400eb2d5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb289fffff",
+   "cell:88400eb295fffff",
+   "cell:88400eb2d5fffff",
+   "cell:88400eb29dfffff",
+   "cell:88400eb287fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "62e2d79bedb0",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离24.5公里"
+  ],
+  "id": "zone_4c0b2067b0",
+  "name": "息烽 · 距开阳中心直线距离24.5公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离24.5公里"
+  ],
+  "h3Cells": [
+   "88400c6949fffff",
+   "88400c694dfffff",
+   "88400c6b23fffff",
+   "88400c6b27fffff",
+   "88400c6b2bfffff",
+   "88400c6b2dfffff",
+   "88400c6b3dfffff",
+   "88400c6b63fffff",
+   "88400eb491fffff",
+   "88400eb493fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6949fffff",
+   "cell:88400c694dfffff",
+   "cell:88400c6b63fffff",
+   "cell:88400c6b2bfffff",
+   "cell:88400c6b27fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a82c15d1897f",
+  "externalIds": [
+   "zone:amap:息烽 · 近南山天沐温泉 · 天龙观"
+  ],
+  "id": "zone_377f617181",
+  "name": "息烽 · 近南山天沐温泉 · 天龙观",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 近南山天沐温泉 · 天龙观"
+  ],
+  "h3Cells": [
+   "88400c6865fffff",
+   "88400c686dfffff",
+   "88400c6941fffff",
+   "88400c6945fffff",
+   "88400c694bfffff",
+   "88400c6959fffff",
+   "88400c696bfffff",
+   "88400c6b33fffff",
+   "88400c6b35fffff",
+   "88400c6b37fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6865fffff",
+   "cell:88400c686dfffff",
+   "cell:88400c6959fffff",
+   "cell:88400c694bfffff",
+   "cell:88400c6945fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "31a0601fa06e",
+  "externalIds": [
+   "zone:amap:近贵州修文苏格兰牧场 · 骑马游乐场"
+  ],
+  "id": "zone_562f103b1b",
+  "name": "近贵州修文苏格兰牧场 · 骑马游乐场",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近贵州修文苏格兰牧场 · 骑马游乐场"
+  ],
+  "h3Cells": [
+   "88400c7887fffff",
+   "88400c78a1fffff",
+   "88400c78a3fffff",
+   "88400c78a5fffff",
+   "88400c78a9fffff",
+   "88400c78abfffff",
+   "88400c78adfffff",
+   "88400c78bdfffff",
+   "88400c78e5fffff",
+   "88400c79dbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c78abfffff",
+   "cell:88400c7887fffff",
+   "cell:88400c78a5fffff",
+   "cell:88400c78bdfffff",
+   "cell:88400c78a3fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "bccc2328af05",
+  "externalIds": [
+   "zone:amap:近河南海润德游泳池水设备 · 中国阳明文化园"
+  ],
+  "id": "zone_779cc487a9",
+  "name": "近河南海润德游泳池水设备 · 中国阳明文化园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近河南海润德游泳池水设备 · 中国阳明文化园"
+  ],
+  "h3Cells": [
+   "88400c6023fffff",
+   "88400c6027fffff",
+   "88400c6035fffff",
+   "88400c6117fffff",
+   "88400c611bfffff",
+   "88400c6189fffff",
+   "88400c61c3fffff",
+   "88400c61c7fffff",
+   "88400c61c9fffff",
+   "88400c61d1fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6027fffff",
+   "cell:88400c6189fffff",
+   "cell:88400c6023fffff",
+   "cell:88400c61c9fffff",
+   "cell:88400c61c7fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "b3bbd6e64998",
+  "externalIds": [
+   "zone:amap:近照壁山 · 乌鸡坡"
+  ],
+  "id": "zone_bc3d14ca9b",
+  "name": "近照壁山 · 乌鸡坡",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近照壁山 · 乌鸡坡"
+  ],
+  "h3Cells": [
+   "88400c6107fffff",
+   "88400c610dfffff",
+   "88400c6145fffff",
+   "88400c6147fffff",
+   "88400c6161fffff",
+   "88400c6163fffff",
+   "88400c6165fffff",
+   "88400c6169fffff",
+   "88400c616dfffff",
+   "88400c6a5bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6a5bfffff",
+   "cell:88400c6163fffff",
+   "cell:88400c6161fffff",
+   "cell:88400c6165fffff",
+   "cell:88400c6145fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "66dd5868453e",
+  "externalIds": [
+   "zone:amap:近红军杨顺清墓 · 清镇市卫城镇客车站"
+  ],
+  "id": "zone_f416f861d2",
+  "name": "近红军杨顺清墓 · 清镇市卫城镇客车站",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近红军杨顺清墓 · 清镇市卫城镇客车站"
+  ],
+  "h3Cells": [
+   "884008930dfffff",
+   "8840089321fffff",
+   "884008932dfffff",
+   "8840089361fffff",
+   "8840089363fffff",
+   "8840089365fffff",
+   "8840089367fffff",
+   "8840089369fffff",
+   "884008936bfffff",
+   "884008936dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:884008936bfffff",
+   "cell:884008936dfffff",
+   "cell:8840089321fffff",
+   "cell:884008932dfffff",
+   "cell:8840089363fffff"
+  ],
+  "cellCount": 10,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "b718785bbec1",
+  "externalIds": [
+   "zone:amap:未来方舟"
+  ],
+  "id": "zone_e9a8fda449",
+  "name": "未来方舟",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:东山",
+   "amap:未来方舟",
+   "amap:未来方舟地区",
+   "amap_regeo:东山",
+   "amap_regeo:未来方舟"
+  ],
+  "h3Cells": [
+   "88400c08dbfffff",
+   "88400c0d4dfffff",
+   "88400c0f21fffff",
+   "88400c0f25fffff",
+   "88400c0f27fffff",
+   "88400c0f29fffff",
+   "88400c0f2dfffff",
+   "88400c0f63fffff",
+   "88400c0f67fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f2dfffff",
+   "cell:88400c0f21fffff",
+   "cell:88400c08dbfffff",
+   "cell:88400c0f25fffff",
+   "cell:88400c0f27fffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "76051a2e8dad",
+  "externalIds": [
+   "zone:amap:东山"
+  ],
+  "id": "zone_4c33416cdc",
+  "name": "东山",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:东山",
+   "amap:喷水池/太平路",
+   "amap:大营坡(商圈)",
+   "amap:宝山北路/宝山南路",
+   "amap:月亮岩",
+   "amap:未来方舟地区",
+   "amap_regeo:东山",
+   "amap_regeo:大营坡(商圈)",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:文昌北路",
+   "amap_regeo:月亮岩",
+   "amap_regeo:未来方舟"
+  ],
+  "h3Cells": [
+   "88400c0f05fffff",
+   "88400c0f07fffff",
+   "88400c0f0dfffff",
+   "88400c0f23fffff",
+   "88400c0f2bfffff",
+   "88400c0f31fffff",
+   "88400c0f35fffff",
+   "88400c0f39fffff",
+   "88400c0f3dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f2bfffff",
+   "cell:88400c0f31fffff",
+   "cell:88400c0f39fffff",
+   "cell:88400c0f3dfffff",
+   "cell:88400c0f07fffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c366d1ee3cef",
+  "externalIds": [
+   "zone:amap:近百花湖青悠里湖畔露营基地 · 林樾听溪露营基地"
+  ],
+  "id": "zone_93a3ed0d88",
+  "name": "近百花湖青悠里湖畔露营基地 · 林樾听溪露营基地",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:近百花湖青悠里湖畔露营基地 · 林樾听溪露营基地"
+  ],
+  "h3Cells": [
+   "88400c2b41fffff",
+   "88400c2b4dfffff",
+   "88400c2b69fffff",
+   "88400c39a5fffff",
+   "88400c7691fffff",
+   "88400c7699fffff",
+   "88400c769bfffff",
+   "88400c769dfffff",
+   "88400c76d9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c39a5fffff",
+   "cell:88400c7699fffff",
+   "cell:88400c2b41fffff",
+   "cell:88400c769dfffff",
+   "cell:88400c76d9fffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d4cf01ede1ab",
+  "externalIds": [
+   "zone:amap:新添寨"
+  ],
+  "id": "zone_d7f53f2092",
+  "name": "新添寨",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap_regeo:新添寨"
+  ],
+  "h3Cells": [
+   "88400c0887fffff",
+   "88400c08abfffff",
+   "88400c08b3fffff",
+   "88400c08b7fffff",
+   "88400c0d65fffff",
+   "88400c7241fffff",
+   "88400c7243fffff",
+   "88400c725bfffff",
+   "88400c726bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d65fffff",
+   "cell:88400c725bfffff",
+   "cell:88400c726bfffff",
+   "cell:88400c08b7fffff",
+   "cell:88400c08b3fffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "118d6d3b1844",
+  "externalIds": [
+   "zone:amap:近开阳高寨风电场0215观景台"
+  ],
+  "id": "zone_029c60d428",
+  "name": "近开阳高寨风电场0215观景台",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近开阳高寨风电场0215观景台"
+  ],
+  "h3Cells": [
+   "88400c4a29fffff",
+   "88400c4a45fffff",
+   "88400c4a65fffff",
+   "88400c4a67fffff",
+   "88400c4a69fffff",
+   "88400c5991fffff",
+   "88400c5995fffff",
+   "88400c599bfffff",
+   "88400c59bbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4a67fffff",
+   "cell:88400c4a45fffff",
+   "cell:88400c599bfffff",
+   "cell:88400c4a29fffff",
+   "cell:88400c59bbfffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d9c64c50c8f1",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离29.2公里"
+  ],
+  "id": "zone_3728d8a171",
+  "name": "息烽 · 距开阳中心直线距离29.2公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离29.2公里"
+  ],
+  "h3Cells": [
+   "88400c6911fffff",
+   "88400c6915fffff",
+   "88400c6933fffff",
+   "88400c693bfffff",
+   "88400c693dfffff",
+   "88400c69c5fffff",
+   "88400c69e1fffff",
+   "88400c69e9fffff",
+   "88400c69ebfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c69e1fffff",
+   "cell:88400c6915fffff",
+   "cell:88400c693bfffff",
+   "cell:88400c69e9fffff",
+   "cell:88400c6911fffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "4a9b05835c88",
+  "externalIds": [
+   "zone:amap:清镇 · 近大湾露营 · 蒙安部落露营基地"
+  ],
+  "id": "zone_04a6cf04df",
+  "name": "清镇 · 近大湾露营 · 蒙安部落露营基地",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近大湾露营 · 蒙安部落露营基地"
+  ],
+  "h3Cells": [
+   "88400c2201fffff",
+   "88400c2203fffff",
+   "88400c2209fffff",
+   "88400c223dfffff",
+   "88400c2247fffff",
+   "88400c224dfffff",
+   "88400c2255fffff",
+   "88400c2263fffff",
+   "88400c226bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c226bfffff",
+   "cell:88400c2203fffff",
+   "cell:88400c223dfffff",
+   "cell:88400c2201fffff",
+   "cell:88400c2247fffff"
+  ],
+  "cellCount": 9,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "2d9fb09190c1",
+  "externalIds": [
+   "zone:amap:中天花园"
+  ],
+  "id": "zone_79be719d58",
+  "name": "中天花园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:中天花园",
+   "amap_regeo:中天花园",
+   "amap_regeo:沙河",
+   "amap_regeo:贵乌路"
+  ],
+  "h3Cells": [
+   "88400c0893fffff",
+   "88400c0d21fffff",
+   "88400c0d45fffff",
+   "88400c0d47fffff",
+   "88400c0d63fffff",
+   "88400c0d67fffff",
+   "88400c0d69fffff",
+   "88400c0d6bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d47fffff",
+   "cell:88400c0d69fffff",
+   "cell:88400c0d6bfffff",
+   "cell:88400c0d45fffff",
+   "cell:88400c0d67fffff"
+  ],
+  "cellCount": 8,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "364c2080777b",
+  "externalIds": [
+   "zone:amap:二戈寨"
+  ],
+  "id": "zone_31a6541fc6",
+  "name": "二戈寨",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:二戈寨",
+   "amap_regeo:二戈寨",
+   "amap_regeo:二戈寨村",
+   "amap_regeo:清水江路"
+  ],
+  "h3Cells": [
+   "88400c00a7fffff",
+   "88400c0193fffff",
+   "88400c0195fffff",
+   "88400c0197fffff",
+   "88400c019bfffff",
+   "88400c0e45fffff",
+   "88400c0e49fffff",
+   "88400c0e4dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c00a7fffff",
+   "cell:88400c019bfffff",
+   "cell:88400c0193fffff",
+   "cell:88400c0e4dfffff",
+   "cell:88400c0e45fffff"
+  ],
+  "cellCount": 8,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "0597ce96183b",
+  "externalIds": [
+   "zone:amap:清水江路"
+  ],
+  "id": "zone_a5c8c1b5ac",
+  "name": "清水江路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:小河转盘/万科",
+   "amap:清水江路",
+   "amap:漓江路",
+   "amap_regeo:二戈寨",
+   "amap_regeo:二戈寨村",
+   "amap_regeo:清水江路",
+   "amap_regeo:漓江路"
+  ],
+  "h3Cells": [
+   "88400c0e0bfffff",
+   "88400c0e41fffff",
+   "88400c0e43fffff",
+   "88400c0e47fffff",
+   "88400c0e55fffff",
+   "88400c0e57fffff",
+   "88400c0e5dfffff",
+   "88400c0e6bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0e0bfffff",
+   "cell:88400c0e55fffff",
+   "cell:88400c0e57fffff",
+   "cell:88400c0e47fffff",
+   "cell:88400c0e43fffff"
+  ],
+  "cellCount": 8,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "184b63179e94",
+  "externalIds": [
+   "zone:amap:近凤凰寨旅游点 · 舍凤凰寨"
+  ],
+  "id": "zone_50950a5de9",
+  "name": "近凤凰寨旅游点 · 舍凤凰寨",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近凤凰寨旅游点 · 舍凤凰寨"
+  ],
+  "h3Cells": [
+   "88400c4d85fffff",
+   "88400c4d87fffff",
+   "88400c4d8dfffff",
+   "88400c4da1fffff",
+   "88400c4da9fffff",
+   "88400c4dabfffff",
+   "88400c4de1fffff",
+   "88400c4de3fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4da1fffff",
+   "cell:88400c4dabfffff",
+   "cell:88400c4de1fffff",
+   "cell:88400c4d8dfffff",
+   "cell:88400c4de3fffff"
+  ],
+  "cellCount": 8,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "6dcd42d2caec",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离28.1公里"
+  ],
+  "id": "zone_5cf6a1e9f6",
+  "name": "息烽 · 距开阳中心直线距离28.1公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离28.1公里"
+  ],
+  "h3Cells": [
+   "88400c6829fffff",
+   "88400c682dfffff",
+   "88400c6867fffff",
+   "88400c6951fffff",
+   "88400c6953fffff",
+   "88400c6955fffff",
+   "88400c6957fffff",
+   "88400c695bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6953fffff",
+   "cell:88400c6957fffff",
+   "cell:88400c682dfffff",
+   "cell:88400c695bfffff",
+   "cell:88400c6867fffff"
+  ],
+  "cellCount": 8,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "3542db6b05e8",
+  "externalIds": [
+   "zone:amap:花果园地区"
+  ],
+  "id": "zone_f611bf0004",
+  "name": "花果园地区",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:狮峰路",
+   "amap:花果园",
+   "amap:花果园地区",
+   "amap_regeo:二桥",
+   "amap_regeo:湘雅村",
+   "amap_regeo:花果园",
+   "amap_regeo:解放路"
+  ],
+  "h3Cells": [
+   "88400c0c47fffff",
+   "88400c0c51fffff",
+   "88400c0c59fffff",
+   "88400c0c5bfffff",
+   "88400c0c5dfffff",
+   "88400c0e37fffff",
+   "88400c0ee5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c47fffff",
+   "cell:88400c0c5dfffff",
+   "cell:88400c0c51fffff",
+   "cell:88400c0e37fffff",
+   "cell:88400c0c5bfffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8c0b5d114cad",
+  "externalIds": [
+   "zone:amap:市北路"
+  ],
+  "id": "zone_5ce81303b8",
+  "name": "市北路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:市北路",
+   "amap_regeo:宅吉村",
+   "amap_regeo:宅吉路",
+   "amap_regeo:市北路"
+  ],
+  "h3Cells": [
+   "88400c0c25fffff",
+   "88400c0d11fffff",
+   "88400c0d15fffff",
+   "88400c0d17fffff",
+   "88400c0d19fffff",
+   "88400c0d1dfffff",
+   "88400c0d53fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d19fffff",
+   "cell:88400c0d1dfffff",
+   "cell:88400c0d53fffff",
+   "cell:88400c0d11fffff",
+   "cell:88400c0c25fffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "71b87defe194",
+  "externalIds": [
+   "zone:amap:火车站/沙冲路/鸿通城购物中心"
+  ],
+  "id": "zone_860e860c69",
+  "name": "火车站/沙冲路/鸿通城购物中心",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:市南路",
+   "amap_regeo:沙冲"
+  ],
+  "h3Cells": [
+   "88400c0e31fffff",
+   "88400c0e33fffff",
+   "88400c0e35fffff",
+   "88400c0f43fffff",
+   "88400c0f51fffff",
+   "88400c0f55fffff",
+   "88400c0f5dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0e31fffff",
+   "cell:88400c0e35fffff",
+   "cell:88400c0f55fffff",
+   "cell:88400c0f51fffff",
+   "cell:88400c0f43fffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "1257ea72d1ad",
+  "externalIds": [
+   "zone:amap:近碧桂园·茶马古镇凤凰台"
+  ],
+  "id": "zone_56e20d71ea",
+  "name": "近碧桂园·茶马古镇凤凰台",
+  "zoneType": "历史街区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近碧桂园·茶马古镇凤凰台"
+  ],
+  "h3Cells": [
+   "88400c380bfffff",
+   "88400c381dfffff",
+   "88400c3851fffff",
+   "88400c3853fffff",
+   "88400c3857fffff",
+   "88400c3859fffff",
+   "88400c3aadfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c381dfffff",
+   "cell:88400c3853fffff",
+   "cell:88400c3aadfffff",
+   "cell:88400c3859fffff",
+   "cell:88400c3857fffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "cc589c8a880f",
+  "externalIds": [
+   "zone:amap:近开阳云山茶海 · 云上Home One露营基地"
+  ],
+  "id": "zone_6baa63693a",
+  "name": "近开阳云山茶海 · 云上Home One露营基地",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近开阳云山茶海 · 云上Home One露营基地"
+  ],
+  "h3Cells": [
+   "88400c4c81fffff",
+   "88400c4c85fffff",
+   "88400c4ca1fffff",
+   "88400c4ca5fffff",
+   "88400c4cadfffff",
+   "88400c4ce3fffff",
+   "88400c4cebfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4ca1fffff",
+   "cell:88400c4ce3fffff",
+   "cell:88400c4c85fffff",
+   "cell:88400c4cebfffff",
+   "cell:88400c4cadfffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "f22b8c7f5aeb",
+  "externalIds": [
+   "zone:amap:近南江大峡谷 · 峰糖关"
+  ],
+  "id": "zone_1efe765bf3",
+  "name": "近南江大峡谷 · 峰糖关",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近南江大峡谷 · 峰糖关"
+  ],
+  "h3Cells": [
+   "88400c4891fffff",
+   "88400c4897fffff",
+   "88400c4d09fffff",
+   "88400c4d0dfffff",
+   "88400c4d41fffff",
+   "88400c4d43fffff",
+   "88400c4d4bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4d43fffff",
+   "cell:88400c4d4bfffff",
+   "cell:88400c4d41fffff",
+   "cell:88400c4891fffff",
+   "cell:88400c4d0dfffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "693f4fafac46",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离21.5公里"
+  ],
+  "id": "zone_dea6c135d0",
+  "name": "息烽 · 距开阳中心直线距离21.5公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离21.5公里"
+  ],
+  "h3Cells": [
+   "88400ea193fffff",
+   "88400ea197fffff",
+   "88400eae41fffff",
+   "88400eae45fffff",
+   "88400eae61fffff",
+   "88400eae65fffff",
+   "88400eae6dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eae6dfffff",
+   "cell:88400ea197fffff",
+   "cell:88400eae45fffff",
+   "cell:88400eae65fffff",
+   "cell:88400eae61fffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8f7043d1be9b",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离28公里"
+  ],
+  "id": "zone_5587f3f382",
+  "name": "息烽 · 距开阳中心直线距离28公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离28公里"
+  ],
+  "h3Cells": [
+   "88400c6901fffff",
+   "88400c6905fffff",
+   "88400c6907fffff",
+   "88400c6909fffff",
+   "88400c690bfffff",
+   "88400c690dfffff",
+   "88400c691dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c691dfffff",
+   "cell:88400c6905fffff",
+   "cell:88400c690dfffff",
+   "cell:88400c690bfffff",
+   "cell:88400c6901fffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d8c3e05e29ec",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离21.7公里"
+  ],
+  "id": "zone_71d4bf3d83",
+  "name": "息烽 · 距开阳中心直线距离21.7公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离21.5公里",
+   "amap:息烽 · 距开阳中心直线距离21.7公里",
+   "amap:息烽 · 距开阳中心直线距离21.8公里"
+  ],
+  "h3Cells": [
+   "88400ea609fffff",
+   "88400ea60dfffff",
+   "88400ea641fffff",
+   "88400ea643fffff",
+   "88400ea647fffff",
+   "88400ea66bfffff",
+   "88400eb593fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea60dfffff",
+   "cell:88400ea647fffff",
+   "cell:88400ea641fffff",
+   "cell:88400ea643fffff",
+   "cell:88400eb593fffff"
+  ],
+  "cellCount": 7,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "e3a44cb6c05e",
+  "externalIds": [
+   "zone:amap:黔灵公园/省政府"
+  ],
+  "id": "zone_e905481bc0",
+  "name": "黔灵公园/省政府",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:黔灵公园/省政府",
+   "amap_regeo:二桥"
+  ],
+  "h3Cells": [
+   "88400c0c07fffff",
+   "88400c0c23fffff",
+   "88400c0c2bfffff",
+   "88400c0c35fffff",
+   "88400c0c39fffff",
+   "88400c0c3dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c07fffff",
+   "cell:88400c0c35fffff",
+   "cell:88400c0c3dfffff",
+   "cell:88400c0c39fffff",
+   "cell:88400c0c23fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c6c4d2ceb175",
+  "externalIds": [
+   "zone:amap:北京路"
+  ],
+  "id": "zone_10662a26ec",
+  "name": "北京路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:中华北路",
+   "amap:北京路",
+   "amap:友谊路",
+   "amap:喷水池",
+   "amap:喷水池/太平路",
+   "amap:大营坡(商圈)",
+   "amap:宅吉路",
+   "amap:宝山北路/宝山南路",
+   "amap:市北路",
+   "amap:延安中路",
+   "amap:普陀路",
+   "amap:永乐路",
+   "amap:环城北路",
+   "amap:贵乌路",
+   "amap:贵开路",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:中华北路",
+   "amap_regeo:北京路",
+   "amap_regeo:宅吉路",
+   "amap_regeo:市北路",
+   "amap_regeo:永乐路",
+   "amap_regeo:环城北路",
+   "amap_regeo:贵乌路"
+  ],
+  "h3Cells": [
+   "88400c0c21fffff",
+   "88400c0c29fffff",
+   "88400c0c2dfffff",
+   "88400c0c65fffff",
+   "88400c0c67fffff",
+   "88400c0d59fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d59fffff",
+   "cell:88400c0c65fffff",
+   "cell:88400c0c67fffff",
+   "cell:88400c0c29fffff",
+   "cell:88400c0c2dfffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c338c0ec1c25",
+  "externalIds": [
+   "zone:amap:近贵阳杉杉奥特莱斯广场"
+  ],
+  "id": "zone_bef9bedb4b",
+  "name": "近贵阳杉杉奥特莱斯广场",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近贵阳杉杉奥特莱斯广场"
+  ],
+  "h3Cells": [
+   "88400c3821fffff",
+   "88400c3825fffff",
+   "88400c382bfffff",
+   "88400c382dfffff",
+   "88400c3953fffff",
+   "88400c395bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c395bfffff",
+   "cell:88400c382dfffff",
+   "cell:88400c3953fffff",
+   "cell:88400c382bfffff",
+   "cell:88400c3821fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "517a6d3c6f13",
+  "externalIds": [
+   "zone:amap:近扰绕露营基地 · 高坡扰绕村梯田"
+  ],
+  "id": "zone_4597d796f4",
+  "name": "近扰绕露营基地 · 高坡扰绕村梯田",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:近扰绕露营基地 · 高坡扰绕村梯田"
+  ],
+  "h3Cells": [
+   "88400c1461fffff",
+   "88400c1469fffff",
+   "88400c146bfffff",
+   "88400c146dfffff",
+   "88400c1711fffff",
+   "88400c1715fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c146bfffff",
+   "cell:88400c1461fffff",
+   "cell:88400c1469fffff",
+   "cell:88400c146dfffff",
+   "cell:88400c1711fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9c29a521773a",
+  "externalIds": [
+   "zone:amap:近青龙十里画廊旅游区 · 水东文化广场"
+  ],
+  "id": "zone_a7641c6b43",
+  "name": "近青龙十里画廊旅游区 · 水东文化广场",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近青龙十里画廊旅游区 · 水东文化广场"
+  ],
+  "h3Cells": [
+   "88400c4d81fffff",
+   "88400c4d8bfffff",
+   "88400c4d95fffff",
+   "88400c4d9bfffff",
+   "88400c4db9fffff",
+   "88400c4dd7fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4d81fffff",
+   "cell:88400c4dd7fffff",
+   "cell:88400c4db9fffff",
+   "cell:88400c4d8bfffff",
+   "cell:88400c4d95fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9ed701f3fa50",
+  "externalIds": [
+   "zone:amap:近南江大峡谷 · 凤凰寨旅游点"
+  ],
+  "id": "zone_057c126128",
+  "name": "近南江大峡谷 · 凤凰寨旅游点",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近凤凰寨旅游点 · 南江大峡谷",
+   "amap:近南江大峡谷 · 凤凰寨旅游点",
+   "amap:近南江大峡谷 · 舍凤凰寨"
+  ],
+  "h3Cells": [
+   "88400c4d33fffff",
+   "88400c4da5fffff",
+   "88400c4dc5fffff",
+   "88400c4de5fffff",
+   "88400c4de7fffff",
+   "88400c4dedfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4de5fffff",
+   "cell:88400c4d33fffff",
+   "cell:88400c4dedfffff",
+   "cell:88400c4de7fffff",
+   "cell:88400c4da5fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "e50553d47573",
+  "externalIds": [
+   "zone:amap:修文 · 近珍珠岛度假村 · 迪乐尼主题乐园"
+  ],
+  "id": "zone_80bb0cd70d",
+  "name": "修文 · 近珍珠岛度假村 · 迪乐尼主题乐园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 近珍珠岛度假村 · 迪乐尼主题乐园"
+  ],
+  "h3Cells": [
+   "88400c6849fffff",
+   "88400c684bfffff",
+   "88400c6857fffff",
+   "88400c6a27fffff",
+   "88400c6b13fffff",
+   "88400c6b1bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6b1bfffff",
+   "cell:88400c6b13fffff",
+   "cell:88400c684bfffff",
+   "cell:88400c6a27fffff",
+   "cell:88400c6849fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "db20c7e69181",
+  "externalIds": [
+   "zone:amap:近中国阳明文化园 · 贵州中医药大学时珍学院"
+  ],
+  "id": "zone_41786aa596",
+  "name": "近中国阳明文化园 · 贵州中医药大学时珍学院",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 近中国阳明文化园 · 中国阳明文化园龙场悟道园",
+   "amap:近中国阳明文化园",
+   "amap:近中国阳明文化园 · 修文老客车站",
+   "amap:近中国阳明文化园 · 李宁(凯悦鑫城店)",
+   "amap:近中国阳明文化园 · 贵州中医药大学时珍学院"
+  ],
+  "h3Cells": [
+   "88400c6001fffff",
+   "88400c600dfffff",
+   "88400c6063fffff",
+   "88400c6069fffff",
+   "88400c606bfffff",
+   "88400c6317fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6001fffff",
+   "cell:88400c600dfffff",
+   "cell:88400c606bfffff",
+   "cell:88400c6063fffff",
+   "cell:88400c6317fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "df92a59a5a13",
+  "externalIds": [
+   "zone:amap:近青岗岭"
+  ],
+  "id": "zone_4e0d3f128d",
+  "name": "近青岗岭",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近青岗岭"
+  ],
+  "h3Cells": [
+   "884008c253fffff",
+   "884008c257fffff",
+   "884008d521fffff",
+   "884008d527fffff",
+   "884008d563fffff",
+   "884008d567fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:884008d527fffff",
+   "cell:884008d563fffff",
+   "cell:884008d521fffff",
+   "cell:884008c257fffff",
+   "cell:884008d567fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "b2ea7967010b",
+  "externalIds": [
+   "zone:amap:近贵州森林野生动物园-白虎山 · 金鸡山"
+  ],
+  "id": "zone_e6b2799d90",
+  "name": "近贵州森林野生动物园-白虎山 · 金鸡山",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近贵州森林野生动物园-白虎山 · 金鸡山"
+  ],
+  "h3Cells": [
+   "88400c6a59fffff",
+   "88400c78b1fffff",
+   "88400c78b3fffff",
+   "88400c78b5fffff",
+   "88400c78b9fffff",
+   "88400c78bbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c78b5fffff",
+   "cell:88400c78b1fffff",
+   "cell:88400c78b9fffff",
+   "cell:88400c6a59fffff",
+   "cell:88400c78bbfffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "15396a97649b",
+  "externalIds": [
+   "zone:amap:近幸福村银杏树林 · 中国阳明文化园"
+  ],
+  "id": "zone_ce28aefd77",
+  "name": "近幸福村银杏树林 · 中国阳明文化园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近幸福村银杏树林 · 中国阳明文化园"
+  ],
+  "h3Cells": [
+   "88400c6021fffff",
+   "88400c6025fffff",
+   "88400c6029fffff",
+   "88400c602dfffff",
+   "88400c6061fffff",
+   "88400c6067fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c602dfffff",
+   "cell:88400c6029fffff",
+   "cell:88400c6067fffff",
+   "cell:88400c6021fffff",
+   "cell:88400c6025fffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5f24fca5a924",
+  "externalIds": [
+   "zone:amap:近清镇市卫城镇客车站 · 镇西卫城垣遗址"
+  ],
+  "id": "zone_22af7edfee",
+  "name": "近清镇市卫城镇客车站 · 镇西卫城垣遗址",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近清镇市卫城镇客车站 · 镇西卫城垣遗址",
+   "amap_regeo:卫城"
+  ],
+  "h3Cells": [
+   "8840089349fffff",
+   "88400c2985fffff",
+   "88400c29a3fffff",
+   "88400c29abfffff",
+   "88400c29b9fffff",
+   "88400c29bdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:8840089349fffff",
+   "cell:88400c29a3fffff",
+   "cell:88400c29abfffff",
+   "cell:88400c2985fffff",
+   "cell:88400c29bdfffff"
+  ],
+  "cellCount": 6,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8c5b576c66be",
+  "externalIds": [
+   "zone:amap:大营坡(商圈)"
+  ],
+  "id": "zone_798a36d63f",
+  "name": "大营坡(商圈)",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:大营坡(商圈)",
+   "amap:大营路",
+   "amap:沙河",
+   "amap:贵乌路",
+   "amap:贵阳东站/新添寨/乌当地区",
+   "amap_regeo:东山",
+   "amap_regeo:中天花园",
+   "amap_regeo:大营坡(商圈)",
+   "amap_regeo:大营路",
+   "amap_regeo:未来方舟",
+   "amap_regeo:沙河",
+   "amap_regeo:贵乌路"
+  ],
+  "h3Cells": [
+   "88400c0d0dfffff",
+   "88400c0d41fffff",
+   "88400c0d43fffff",
+   "88400c0d49fffff",
+   "88400c0d4bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d43fffff",
+   "cell:88400c0d4bfffff",
+   "cell:88400c0d41fffff",
+   "cell:88400c0d49fffff",
+   "cell:88400c0d0dfffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a007877527e6",
+  "externalIds": [
+   "zone:amap:诚信南路"
+  ],
+  "id": "zone_36098bddce",
+  "name": "诚信南路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:观山湖会展城/金融城",
+   "amap:诚信南路"
+  ],
+  "h3Cells": [
+   "88400c0d91fffff",
+   "88400c0d93fffff",
+   "88400c7645fffff",
+   "88400c7669fffff",
+   "88400c766bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7645fffff",
+   "cell:88400c7669fffff",
+   "cell:88400c0d93fffff",
+   "cell:88400c0d91fffff",
+   "cell:88400c766bfffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "23a63874929b",
+  "externalIds": [
+   "zone:amap:云峰大道"
+  ],
+  "id": "zone_1b44a04335",
+  "name": "云峰大道",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:云峰大道",
+   "amap:白云公园/白云地区",
+   "amap:艳山红",
+   "amap_regeo:云峰大道",
+   "amap_regeo:大山洞",
+   "amap_regeo:艳山红"
+  ],
+  "h3Cells": [
+   "88400c770bfffff",
+   "88400c771dfffff",
+   "88400c7743fffff",
+   "88400c7755fffff",
+   "88400c775dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c770bfffff",
+   "cell:88400c7755fffff",
+   "cell:88400c775dfffff",
+   "cell:88400c7743fffff",
+   "cell:88400c771dfffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5ae1f53389a5",
+  "externalIds": [
+   "zone:amap:近南江大峡谷 · 南江盐泉小镇"
+  ],
+  "id": "zone_f12f026dcf",
+  "name": "近南江大峡谷 · 南江盐泉小镇",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近南江大峡谷 · 南江盐泉小镇"
+  ],
+  "h3Cells": [
+   "88400c4d19fffff",
+   "88400c4d1bfffff",
+   "88400c4d51fffff",
+   "88400c4d57fffff",
+   "88400c4d59fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4d19fffff",
+   "cell:88400c4d59fffff",
+   "cell:88400c4d51fffff",
+   "cell:88400c4d57fffff",
+   "cell:88400c4d1bfffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "922248b527f0",
+  "externalIds": [
+   "zone:amap:近溯溪公园 · 开阳县长官司老汪葡萄园"
+  ],
+  "id": "zone_16e6aed3a6",
+  "name": "近溯溪公园 · 开阳县长官司老汪葡萄园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近溯溪公园 · 开阳县长官司老汪葡萄园"
+  ],
+  "h3Cells": [
+   "88400eb299fffff",
+   "88400eb2d1fffff",
+   "88400eb2d7fffff",
+   "88400eb2d9fffff",
+   "88400eb2ddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb2ddfffff",
+   "cell:88400eb2d1fffff",
+   "cell:88400eb2d9fffff",
+   "cell:88400eb2d7fffff",
+   "cell:88400eb299fffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "c227e59485c3",
+  "externalIds": [
+   "zone:amap:近贵州中医药大学时珍学院"
+  ],
+  "id": "zone_78084feb10",
+  "name": "近贵州中医药大学时珍学院",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近贵州中医药大学时珍学院"
+  ],
+  "h3Cells": [
+   "88400c604bfffff",
+   "88400c605dfffff",
+   "88400c6235fffff",
+   "88400c6237fffff",
+   "88400c623dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c623dfffff",
+   "cell:88400c605dfffff",
+   "cell:88400c6235fffff",
+   "cell:88400c6237fffff",
+   "cell:88400c604bfffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "88c577703cf1",
+  "externalIds": [
+   "zone:amap:扎佐街道"
+  ],
+  "id": "zone_3e39da4906",
+  "name": "扎佐街道",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:扎佐街道",
+   "amap:近扎佐街道",
+   "amap:近扎佐街道 · 扎佐供销社消费品综合市场",
+   "amap:近扎佐街道 · 扎佐客运站",
+   "amap:近扎佐街道 · 永升大厦",
+   "amap:近扎佐街道 · 沐子",
+   "amap:近扎佐街道 · 贵州森林野生动物园",
+   "amap:近海创Ai英语训练中心(木兮文创书店)",
+   "amap:近贵州森林野生动物园 · 扎佐街道",
+   "amap_regeo:扎佐镇"
+  ],
+  "h3Cells": [
+   "88400c78c3fffff",
+   "88400c78cbfffff",
+   "88400c78d5fffff",
+   "88400c78ddfffff",
+   "88400c7ab7fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7ab7fffff",
+   "cell:88400c78ddfffff",
+   "cell:88400c78c3fffff",
+   "cell:88400c78cbfffff",
+   "cell:88400c78d5fffff"
+  ],
+  "cellCount": 5,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "f50b58bf082b",
+  "externalIds": [
+   "zone:amap:宝山北路/宝山南路"
+  ],
+  "id": "zone_a8367ca7d1",
+  "name": "宝山北路/宝山南路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:东山",
+   "amap:中华北路",
+   "amap:北京路",
+   "amap:友谊路",
+   "amap:喷水池/太平路",
+   "amap:团坡",
+   "amap:大十字/小十字/省人民医院",
+   "amap:大营坡(商圈)",
+   "amap:大营路",
+   "amap:宅吉路",
+   "amap:宝山北路/宝山南路",
+   "amap:护国路",
+   "amap:文昌北路",
+   "amap:普陀路",
+   "amap:未来方舟地区",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap:省府路",
+   "amap:西湖路",
+   "amap:贵乌路",
+   "amap:贵开路",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:东山",
+   "amap_regeo:中华北路",
+   "amap_regeo:团坡",
+   "amap_regeo:大营坡(商圈)",
+   "amap_regeo:大营路",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:市南路",
+   "amap_regeo:文昌北路"
+  ],
+  "h3Cells": [
+   "88400c0f03fffff",
+   "88400c0f0bfffff",
+   "88400c0f37fffff",
+   "88400c0f3bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f3bfffff",
+   "cell:88400c0f37fffff",
+   "cell:88400c0f0bfffff",
+   "cell:88400c0f03fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8ac19a0c3b53",
+  "externalIds": [
+   "zone:amap:解放路"
+  ],
+  "id": "zone_09e74d7994",
+  "name": "解放路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:兴关",
+   "amap:市南路",
+   "amap:新华路",
+   "amap:沙冲",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap:解放路",
+   "amap:遵义路",
+   "amap:青云路",
+   "amap_regeo:市南路",
+   "amap_regeo:新华路",
+   "amap_regeo:解放路",
+   "amap_regeo:遵义路",
+   "amap_regeo:青云路"
+  ],
+  "h3Cells": [
+   "88400c0c4dfffff",
+   "88400c0f19fffff",
+   "88400c0f53fffff",
+   "88400c0f5bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c4dfffff",
+   "cell:88400c0f19fffff",
+   "cell:88400c0f5bfffff",
+   "cell:88400c0f53fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "54167cf708cb",
+  "externalIds": [
+   "zone:amap:白云南路"
+  ],
+  "id": "zone_4025172182",
+  "name": "白云南路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:白云公园/白云地区",
+   "amap:白云南路",
+   "amap_regeo:大山洞",
+   "amap_regeo:艳山红"
+  ],
+  "h3Cells": [
+   "88400c0da5fffff",
+   "88400c7299fffff",
+   "88400c729bfffff",
+   "88400c7741fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c729bfffff",
+   "cell:88400c7741fffff",
+   "cell:88400c0da5fffff",
+   "cell:88400c7299fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "0556dcca79da",
+  "externalIds": [
+   "zone:amap:近腊梅花院 · 同心广场"
+  ],
+  "id": "zone_4aee7afce2",
+  "name": "近腊梅花院 · 同心广场",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:近腊梅花院 · 同心广场"
+  ],
+  "h3Cells": [
+   "88400c4427fffff",
+   "88400c4519fffff",
+   "88400c45c1fffff",
+   "88400c45d1fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c45d1fffff",
+   "cell:88400c4519fffff",
+   "cell:88400c4427fffff",
+   "cell:88400c45c1fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "129084274c4c",
+  "externalIds": [
+   "zone:amap:近乌当区紫钧休闲度假庄园"
+  ],
+  "id": "zone_620ad6a45e",
+  "name": "近乌当区紫钧休闲度假庄园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近乌当区紫钧休闲度假庄园"
+  ],
+  "h3Cells": [
+   "88400c40adfffff",
+   "88400c418bfffff",
+   "88400c419bfffff",
+   "88400c41ddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c40adfffff",
+   "cell:88400c419bfffff",
+   "cell:88400c418bfffff",
+   "cell:88400c41ddfffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a9a9d1ce4871",
+  "externalIds": [
+   "zone:amap:近香火岩景区 · 水东文化广场"
+  ],
+  "id": "zone_8e0c19eea5",
+  "name": "近香火岩景区 · 水东文化广场",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近香火岩景区 · 水东文化广场"
+  ],
+  "h3Cells": [
+   "88400c4d89fffff",
+   "88400c4dc3fffff",
+   "88400c4dd5fffff",
+   "88400c4dddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4dd5fffff",
+   "cell:88400c4dc3fffff",
+   "cell:88400c4d89fffff",
+   "cell:88400c4dddfffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "1826216a7ac9",
+  "externalIds": [
+   "zone:amap:开阳 · 近青龙十里画廊旅游区 · 香火岩景区"
+  ],
+  "id": "zone_4515002f6f",
+  "name": "开阳 · 近青龙十里画廊旅游区 · 香火岩景区",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:开阳 · 近青龙十里画廊旅游区 · 香火岩景区",
+   "amap:近夫子蜂文化园 · 水头湾度假乐园",
+   "amap:近香火岩景区 · 青龙十里画廊旅游区"
+  ],
+  "h3Cells": [
+   "88400c4ce1fffff",
+   "88400c4ce7fffff",
+   "88400c4dd1fffff",
+   "88400c4dd9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4dd1fffff",
+   "cell:88400c4dd9fffff",
+   "cell:88400c4ce7fffff",
+   "cell:88400c4ce1fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "fa32d3366fcc",
+  "externalIds": [
+   "zone:amap:近开阳站 · 开阳快铁站前广场"
+  ],
+  "id": "zone_fa2d8ee262",
+  "name": "近开阳站 · 开阳快铁站前广场",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近开阳站 · 开阳快铁站前广场"
+  ],
+  "h3Cells": [
+   "88400eb011fffff",
+   "88400eb013fffff",
+   "88400eb017fffff",
+   "88400eb0c9fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400eb017fffff",
+   "cell:88400eb013fffff",
+   "cell:88400eb011fffff",
+   "cell:88400eb0c9fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "054dd919daab",
+  "externalIds": [
+   "zone:amap:近南江大峡谷 · 十里画廊"
+  ],
+  "id": "zone_2d117e08eb",
+  "name": "近南江大峡谷 · 十里画廊",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近南江大峡谷 · 十里画廊"
+  ],
+  "h3Cells": [
+   "88400c4d01fffff",
+   "88400c4d11fffff",
+   "88400c4d15fffff",
+   "88400c4d1dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4d15fffff",
+   "cell:88400c4d11fffff",
+   "cell:88400c4d1dfffff",
+   "cell:88400c4d01fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "20b724e075a6",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离19.1公里"
+  ],
+  "id": "zone_08f47a55a7",
+  "name": "息烽 · 距开阳中心直线距离19.1公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离19.1公里",
+   "amap:息烽 · 距开阳中心直线距离19公里"
+  ],
+  "h3Cells": [
+   "88400ea189fffff",
+   "88400ea18dfffff",
+   "88400ea1c3fffff",
+   "88400ea1d5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea189fffff",
+   "cell:88400ea1c3fffff",
+   "cell:88400ea18dfffff",
+   "cell:88400ea1d5fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "36d18e231804",
+  "externalIds": [
+   "zone:amap:修文"
+  ],
+  "id": "zone_84a4bfb126",
+  "name": "修文",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文"
+  ],
+  "h3Cells": [
+   "88400c6859fffff",
+   "88400c6a23fffff",
+   "88400c6a31fffff",
+   "88400c6a35fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6a35fffff",
+   "cell:88400c6a23fffff",
+   "cell:88400c6859fffff",
+   "cell:88400c6a31fffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "14a28e7481f9",
+  "externalIds": [
+   "zone:amap:修文 · 距开阳中心直线距离23.3公里"
+  ],
+  "id": "zone_dcf6ccd4a7",
+  "name": "修文 · 距开阳中心直线距离23.3公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 距开阳中心直线距离23.3公里"
+  ],
+  "h3Cells": [
+   "88400c790bfffff",
+   "88400c7919fffff",
+   "88400c791dfffff",
+   "88400c79edfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c790bfffff",
+   "cell:88400c791dfffff",
+   "cell:88400c7919fffff",
+   "cell:88400c79edfffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "3cfe95ab3616",
+  "externalIds": [
+   "zone:amap:近贵阳清镇吾悦广场(清州大道店)"
+  ],
+  "id": "zone_d2b6433fdc",
+  "name": "近贵阳清镇吾悦广场(清州大道店)",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近清镇市社会客车站 · 清镇市旅游集散中心",
+   "amap:清镇 · 近阳光市场 · 大脸猫儿童乐园",
+   "amap:近张端望墓 · 阳光市场",
+   "amap:近清镇市社会客车站 · 清镇市旅游集散中心",
+   "amap:近贵阳清镇吾悦广场(清州大道店)",
+   "amap:近阳光市场 · 大脸猫儿童乐园",
+   "amap:近阳光市场 · 巢凤寺"
+  ],
+  "h3Cells": [
+   "88400c3815fffff",
+   "88400c3839fffff",
+   "88400c383bfffff",
+   "88400c383dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c3815fffff",
+   "cell:88400c3839fffff",
+   "cell:88400c383bfffff",
+   "cell:88400c383dfffff"
+  ],
+  "cellCount": 4,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "4f5f40274d0a",
+  "externalIds": [
+   "zone:amap:瑞金路"
+  ],
+  "id": "zone_cf7cdf05fc",
+  "name": "瑞金路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:中华北路",
+   "amap:中华南路",
+   "amap:公园路",
+   "amap:兴关",
+   "amap:大十字/小十字/省人民医院",
+   "amap:大西门",
+   "amap:市府路",
+   "amap:恒峰",
+   "amap:新华路",
+   "amap:新路口",
+   "amap:沙冲",
+   "amap:河滨",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:浣沙桥/浣沙路",
+   "amap:狮峰路",
+   "amap:瑞金路",
+   "amap:神奇路",
+   "amap:花果园",
+   "amap:花果园地区",
+   "amap:解放路",
+   "amap:贵惠路",
+   "amap:遵义路",
+   "amap:青云路",
+   "amap:飞山街",
+   "amap_regeo:大西门",
+   "amap_regeo:河滨",
+   "amap_regeo:瑞金路",
+   "amap_regeo:解放路",
+   "amap_regeo:贵惠路",
+   "amap_regeo:遵义路"
+  ],
+  "h3Cells": [
+   "88400c0c45fffff",
+   "88400c0c69fffff",
+   "88400c0f13fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c69fffff",
+   "cell:88400c0c45fffff",
+   "cell:88400c0f13fffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "91cdb9db8cda",
+  "externalIds": [
+   "zone:amap:艳山红"
+  ],
+  "id": "zone_37b837d328",
+  "name": "艳山红",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520113",
+  "aliases": [
+   "amap:白云公园/白云地区",
+   "amap:白云南路",
+   "amap:艳山红",
+   "amap_regeo:云峰大道",
+   "amap_regeo:大山洞",
+   "amap_regeo:艳山红",
+   "amap_regeo:龚家寨"
+  ],
+  "h3Cells": [
+   "88400c7745fffff",
+   "88400c774bfffff",
+   "88400c774dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7745fffff",
+   "cell:88400c774bfffff",
+   "cell:88400c774dfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8b527acc6897",
+  "externalIds": [
+   "zone:amap:近贵阳职业技术学院(清镇校区)"
+  ],
+  "id": "zone_595f739539",
+  "name": "近贵阳职业技术学院(清镇校区)",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520115",
+  "aliases": [
+   "amap:近贵阳职业技术学院(清镇校区)"
+  ],
+  "h3Cells": [
+   "88400c3805fffff",
+   "88400c3829fffff",
+   "88400c3855fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c3805fffff",
+   "cell:88400c3829fffff",
+   "cell:88400c3855fffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "6b3aaec0b6fe",
+  "externalIds": [
+   "zone:amap:近贵阳杉杉奥特莱斯广场 · 四季桂生态园"
+  ],
+  "id": "zone_ef29ec73cb",
+  "name": "近贵阳杉杉奥特莱斯广场 · 四季桂生态园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近贵阳杉杉奥特莱斯广场 · 四季桂生态园"
+  ],
+  "h3Cells": [
+   "88400c3827fffff",
+   "88400c39c9fffff",
+   "88400c39cdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c39c9fffff",
+   "cell:88400c3827fffff",
+   "cell:88400c39cdfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "77178f7b45b9",
+  "externalIds": [
+   "zone:amap:羊昌"
+  ],
+  "id": "zone_595dc3e37c",
+  "name": "羊昌",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:贵阳 · 距开阳中心直线距离26.2公里",
+   "amap:贵阳 · 距开阳中心直线距离26.6公里",
+   "amap_regeo:羊昌"
+  ],
+  "h3Cells": [
+   "88400c45e7fffff",
+   "88400c4e99fffff",
+   "88400c4ed3fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4ed3fffff",
+   "cell:88400c4e99fffff",
+   "cell:88400c45e7fffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "46b10b3aa883",
+  "externalIds": [
+   "zone:amap:息烽 · 近息烽温泉 · 樱花谷"
+  ],
+  "id": "zone_2858386776",
+  "name": "息烽 · 近息烽温泉 · 樱花谷",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 近息烽温泉 · 樱花谷",
+   "amap_regeo:温泉镇"
+  ],
+  "h3Cells": [
+   "88400ea0adfffff",
+   "88400ea18bfffff",
+   "88400ea1d3fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400ea18bfffff",
+   "cell:88400ea1d3fffff",
+   "cell:88400ea0adfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a81547c1fe7d",
+  "externalIds": [
+   "zone:amap:开阳 · 近开阳高寨风电场0215观景台"
+  ],
+  "id": "zone_465eb19af8",
+  "name": "开阳 · 近开阳高寨风电场0215观景台",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:开阳 · 近开阳高寨风电场0215观景台"
+  ],
+  "h3Cells": [
+   "88400c4a41fffff",
+   "88400c4a43fffff",
+   "88400c4a4bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4a41fffff",
+   "cell:88400c4a43fffff",
+   "cell:88400c4a4bfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "1816557992e4",
+  "externalIds": [
+   "zone:amap:修文 · 距开阳中心直线距离25.5公里"
+  ],
+  "id": "zone_a5a13e4f0a",
+  "name": "修文 · 距开阳中心直线距离25.5公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 距开阳中心直线距离25.5公里"
+  ],
+  "h3Cells": [
+   "88400c7825fffff",
+   "88400c791bfffff",
+   "88400c79cdfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c791bfffff",
+   "cell:88400c7825fffff",
+   "cell:88400c79cdfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d5c94ea60749",
+  "externalIds": [
+   "zone:amap:近景阳森林公园 · 飞龙观"
+  ],
+  "id": "zone_d9c82dbc40",
+  "name": "近景阳森林公园 · 飞龙观",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近景阳森林公园 · 飞龙观"
+  ],
+  "h3Cells": [
+   "88400c636dfffff",
+   "88400c7a95fffff",
+   "88400c7abbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7abbfffff",
+   "cell:88400c7a95fffff",
+   "cell:88400c636dfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "1515e29e0453",
+  "externalIds": [
+   "zone:amap:近中国阳明文化园 · 修文老客车站"
+  ],
+  "id": "zone_61d437bf24",
+  "name": "近中国阳明文化园 · 修文老客车站",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近中国阳明文化园 · 修文老客车站"
+  ],
+  "h3Cells": [
+   "88400c6005fffff",
+   "88400c6007fffff",
+   "88400c602bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6007fffff",
+   "cell:88400c602bfffff",
+   "cell:88400c6005fffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "4a1338f0ab76",
+  "externalIds": [
+   "zone:amap:近贵阳幼儿师范高等专科学校 · 时光贵州古镇"
+  ],
+  "id": "zone_dd9280ff58",
+  "name": "近贵阳幼儿师范高等专科学校 · 时光贵州古镇",
+  "zoneType": "历史街区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近时光贵州古镇 · 恐龙小镇·欢乐王国",
+   "amap:清镇 · 近时光贵州古镇 · 贵州建设职业技术学院",
+   "amap:清镇 · 近时光贵州古镇 · 贵州装备制造职业学院",
+   "amap:清镇 · 近贵阳幼儿师范高等专科学校 · 时光贵州古镇",
+   "amap:近时光贵州古镇 · 嗨玩迪动漫城(时光贵州店)",
+   "amap:近时光贵州古镇 · 四季贵州山地温泉水世界",
+   "amap:近时光贵州古镇 · 贵州建设职业技术学院",
+   "amap:近时光贵州古镇 · 贵阳幼儿师范高等专科学校",
+   "amap:近贵州工业职业技术大学 · 时光贵州古镇",
+   "amap:近贵阳幼儿师范高等专科学校 · 时光贵州古镇"
+  ],
+  "h3Cells": [
+   "88400c39d1fffff",
+   "88400c39d9fffff",
+   "88400c39dbfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c39d1fffff",
+   "cell:88400c39d9fffff",
+   "cell:88400c39dbfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "e9e7331ab08f",
+  "externalIds": [
+   "zone:amap:近贵州电力职业技术学院 · 红枫湖旅游度假村"
+  ],
+  "id": "zone_1d8c12aee0",
+  "name": "近贵州电力职业技术学院 · 红枫湖旅游度假村",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近贵州电力职业技术学院 · 红枫湖旅游度假村"
+  ],
+  "h3Cells": [
+   "88400c2365fffff",
+   "88400c38d5fffff",
+   "88400c38d7fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c2365fffff",
+   "cell:88400c38d5fffff",
+   "cell:88400c38d7fffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "2fd13269692f",
+  "externalIds": [
+   "zone:amap:近四季贵州极地冒险水世界 · 时光贵州古镇"
+  ],
+  "id": "zone_6eea2c9079",
+  "name": "近四季贵州极地冒险水世界 · 时光贵州古镇",
+  "zoneType": "历史街区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近贵阳清镇吾悦广场(清州大道店) · 清镇市城市规划展示厅",
+   "amap:近四季贵州山地温泉水世界",
+   "amap:近四季贵州极地冒险水世界",
+   "amap:近四季贵州极地冒险水世界 · 时光贵州古镇"
+  ],
+  "h3Cells": [
+   "88400c3837fffff",
+   "88400c39cbfffff",
+   "88400c39ddfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c3837fffff",
+   "cell:88400c39cbfffff",
+   "cell:88400c39ddfffff"
+  ],
+  "cellCount": 3,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "68cbc944fe7b",
+  "externalIds": [
+   "zone:amap:中华北路"
+  ],
+  "id": "zone_419c42bcb7",
+  "name": "中华北路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:中华北路",
+   "amap:中华南路",
+   "amap:公园路",
+   "amap:北京路",
+   "amap:喷水池",
+   "amap:喷水池/太平路",
+   "amap:大十字/小十字/省人民医院",
+   "amap:大西门",
+   "amap:宅吉路",
+   "amap:市北路",
+   "amap:市府路",
+   "amap:延安中路",
+   "amap:文昌北路",
+   "amap:瑞金路",
+   "amap:省府路",
+   "amap:飞山街",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:中华北路",
+   "amap_regeo:公园路",
+   "amap_regeo:北京路",
+   "amap_regeo:市北路",
+   "amap_regeo:省府路"
+  ],
+  "h3Cells": [
+   "88400c0c6dfffff",
+   "88400c0d5bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c6dfffff",
+   "cell:88400c0d5bfffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8cdab8d39c52",
+  "externalIds": [
+   "zone:amap:湘雅村"
+  ],
+  "id": "zone_f1b3f5f833",
+  "name": "湘雅村",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:湘雅村",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap:花果园地区",
+   "amap:解放路",
+   "amap:贵惠路",
+   "amap_regeo:湘雅村",
+   "amap_regeo:花果园",
+   "amap_regeo:解放路"
+  ],
+  "h3Cells": [
+   "88400c0c41fffff",
+   "88400c0c4bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c41fffff",
+   "cell:88400c0c4bfffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "85346fea7098",
+  "externalIds": [
+   "zone:amap:兴关"
+  ],
+  "id": "zone_6274012860",
+  "name": "兴关",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:兴关",
+   "amap:新华路",
+   "amap:沙冲",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap:营盘路",
+   "amap:解放路",
+   "amap:遵义路",
+   "amap:青云路",
+   "amap_regeo:兴关",
+   "amap_regeo:新华路",
+   "amap_regeo:营盘路",
+   "amap_regeo:解放路"
+  ],
+  "h3Cells": [
+   "88400c0e25fffff",
+   "88400c0f1bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f1bfffff",
+   "cell:88400c0e25fffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "a7ec4b4def53",
+  "externalIds": [
+   "zone:amap:金竹"
+  ],
+  "id": "zone_edca0aae0b",
+  "name": "金竹",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:金竹",
+   "amap_regeo:石板"
+  ],
+  "h3Cells": [
+   "88400c0539fffff",
+   "88400c053dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0539fffff",
+   "cell:88400c053dfffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "8b5030b9ae4e",
+  "externalIds": [
+   "zone:amap:息烽 · 距开阳中心直线距离28.5公里"
+  ],
+  "id": "zone_fd40203445",
+  "name": "息烽 · 距开阳中心直线距离28.5公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520122",
+  "aliases": [
+   "amap:息烽 · 距开阳中心直线距离28.5公里"
+  ],
+  "h3Cells": [
+   "88400c6825fffff",
+   "88400c6919fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c6919fffff",
+   "cell:88400c6825fffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "912ec4fb1791",
+  "externalIds": [
+   "zone:amap:近扎佐云丰泽水上乐园 · 景阳森林公园"
+  ],
+  "id": "zone_4a8e2372b0",
+  "name": "近扎佐云丰泽水上乐园 · 景阳森林公园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近扎佐云丰泽水上乐园 · 景阳森林公园"
+  ],
+  "h3Cells": [
+   "88400c630dfffff",
+   "88400c7a97fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7a97fffff",
+   "cell:88400c630dfffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5ff8995c5c19",
+  "externalIds": [
+   "zone:amap:近贵州工商职业大学 · 老马河湿地公园"
+  ],
+  "id": "zone_6dfe55dbf0",
+  "name": "近贵州工商职业大学 · 老马河湿地公园",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近贵州交通职业大学 · 恐龙小镇·欢乐王国",
+   "amap:近时光贵州古镇 · 贵州工商职业大学",
+   "amap:近贵州交通职业大学 · 恐龙小镇·欢乐王国",
+   "amap:近贵州工商职业大学 · 老马河湿地公园"
+  ],
+  "h3Cells": [
+   "88400c3885fffff",
+   "88400c388dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c388dfffff",
+   "cell:88400c3885fffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "73458d2f349e",
+  "externalIds": [
+   "zone:amap:清镇 · 近时光贵州古镇 · 贵阳清镇吾悦广场(清州大道店)"
+  ],
+  "id": "zone_65edcb8068",
+  "name": "清镇 · 近时光贵州古镇 · 贵阳清镇吾悦广场(清州大道店)",
+  "zoneType": "历史街区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:清镇 · 近时光贵州古镇 · 贵阳清镇吾悦广场(清州大道店)"
+  ],
+  "h3Cells": [
+   "88400c3831fffff",
+   "88400c3833fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c3831fffff",
+   "cell:88400c3833fffff"
+  ],
+  "cellCount": 2,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "7ac08e59a8f9",
+  "externalIds": [
+   "zone:amap:浣沙桥/浣沙路"
+  ],
+  "id": "zone_1f34624a16",
+  "name": "浣沙桥/浣沙路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:二桥",
+   "amap:大十字/小十字/省人民医院",
+   "amap:浣沙桥/浣沙路",
+   "amap:狮峰路",
+   "amap:花果园",
+   "amap:花果园地区",
+   "amap:贵阳市延安西路32号",
+   "amap_regeo:二桥",
+   "amap_regeo:浣沙桥/浣沙路",
+   "amap_regeo:花果园"
+  ],
+  "h3Cells": [
+   "88400c0c6bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c6bfffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "2299f7cd6518",
+  "externalIds": [
+   "zone:amap:中华南路"
+  ],
+  "id": "zone_bc09dfc675",
+  "name": "中华南路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:中华北路",
+   "amap:中华南路",
+   "amap:喷水池",
+   "amap:大十字/小十字/省人民医院",
+   "amap:市府路",
+   "amap:护国路",
+   "amap:文昌北路",
+   "amap:新华路",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:瑞金路",
+   "amap:省府路",
+   "amap:西湖路",
+   "amap:遵义路",
+   "amap_regeo:中华南路",
+   "amap_regeo:护国路",
+   "amap_regeo:瑞金路"
+  ],
+  "h3Cells": [
+   "88400c0f17fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f17fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "6b7e1f56b11f",
+  "externalIds": [
+   "zone:amap:贵乌路"
+  ],
+  "id": "zone_815aadccca",
+  "name": "贵乌路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap_regeo:宅吉路",
+   "amap_regeo:沙河",
+   "amap_regeo:贵乌路"
+  ],
+  "h3Cells": [
+   "88400c0d09fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d09fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "299762bf90d5",
+  "externalIds": [
+   "zone:amap:老客车站/客车站"
+  ],
+  "id": "zone_c2171086bc",
+  "name": "老客车站/客车站",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:中华北路",
+   "amap:北京路",
+   "amap:喷水池",
+   "amap:喷水池/太平路",
+   "amap:大十字/小十字/省人民医院",
+   "amap:延安中路",
+   "amap:浣沙桥/浣沙路",
+   "amap:老客车站/客车站",
+   "amap:贵阳市延安西路32号",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:延安中路",
+   "amap_regeo:浣沙桥/浣沙路",
+   "amap_regeo:老客车站/客车站"
+  ],
+  "h3Cells": [
+   "88400c0c61fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0c61fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "587befd8e58c",
+  "externalIds": [
+   "zone:amap:贵开路"
+  ],
+  "id": "zone_920aa66b6c",
+  "name": "贵开路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:北京路",
+   "amap:喷水池/太平路",
+   "amap:大营坡(商圈)",
+   "amap:大营路",
+   "amap:宅吉路",
+   "amap:沙河",
+   "amap:贵乌路",
+   "amap:贵开路",
+   "amap:黔灵公园/省政府",
+   "amap_regeo:大营坡(商圈)",
+   "amap_regeo:贵乌路",
+   "amap_regeo:贵开路"
+  ],
+  "h3Cells": [
+   "88400c0d5dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0d5dfffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "304954f13f21",
+  "externalIds": [
+   "zone:amap:虎门巷"
+  ],
+  "id": "zone_1490d577c5",
+  "name": "虎门巷",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520103",
+  "aliases": [
+   "amap:中华北路",
+   "amap:北京路",
+   "amap:友谊路",
+   "amap:喷水池",
+   "amap:喷水池/太平路",
+   "amap:宝山北路/宝山南路",
+   "amap:延安中路",
+   "amap:文昌北路",
+   "amap:普陀路",
+   "amap:虎门巷",
+   "amap:贵乌路",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:普陀路",
+   "amap_regeo:虎门巷"
+  ],
+  "h3Cells": [
+   "88400c0f33fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f33fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "b3becef50196",
+  "externalIds": [
+   "zone:amap:新华路"
+  ],
+  "id": "zone_21a13afa5e",
+  "name": "新华路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:兴关",
+   "amap:市南路",
+   "amap:新华路",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:瑞金路",
+   "amap:神奇路",
+   "amap:西湖路",
+   "amap:解放路",
+   "amap:遵义路",
+   "amap:青云路",
+   "amap_regeo:新华路",
+   "amap_regeo:瑞金路",
+   "amap_regeo:青云路"
+  ],
+  "h3Cells": [
+   "88400c0f11fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f11fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "d24176efff80",
+  "externalIds": [
+   "zone:amap:南浦路"
+  ],
+  "id": "zone_1dda086790",
+  "name": "南浦路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:南浦路",
+   "amap:团坡",
+   "amap:宝山北路/宝山南路",
+   "amap:市南路",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap:西湖路",
+   "amap:解放路",
+   "amap_regeo:南浦路",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:市南路"
+  ],
+  "h3Cells": [
+   "88400c0f1dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f1dfffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "42b1f4d78bb9",
+  "externalIds": [
+   "zone:amap:市南路"
+  ],
+  "id": "zone_69b885dbb9",
+  "name": "市南路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:宝山北路/宝山南路",
+   "amap:市南路",
+   "amap:未来方舟地区",
+   "amap:火车站/沙冲路/鸿通城购物中心",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:市南路",
+   "amap_regeo:解放路"
+  ],
+  "h3Cells": [
+   "88400c0f57fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f57fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5ebc7a672f58",
+  "externalIds": [
+   "zone:amap:西湖路"
+  ],
+  "id": "zone_2b70a6eb58",
+  "name": "西湖路",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520102",
+  "aliases": [
+   "amap:宝山北路/宝山南路",
+   "amap:文昌北路",
+   "amap:新华路",
+   "amap:河滨公园/甲秀楼/筑城广场",
+   "amap:西湖路",
+   "amap_regeo:宝山北路/宝山南路",
+   "amap_regeo:文昌北路",
+   "amap_regeo:西湖路"
+  ],
+  "h3Cells": [
+   "88400c0f15fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c0f15fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "72393e2e44be",
+  "externalIds": [
+   "zone:amap:近摆龙梯田 · 花溪高坡云顶花海"
+  ],
+  "id": "zone_584814d59c",
+  "name": "近摆龙梯田 · 花溪高坡云顶花海",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520111",
+  "aliases": [
+   "amap:近摆龙梯田 · 花溪高坡云顶花海"
+  ],
+  "h3Cells": [
+   "88400c174dfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c174dfffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "9965ca2d3846",
+  "externalIds": [
+   "zone:amap:贵阳 · 距开阳中心直线距离26.3公里"
+  ],
+  "id": "zone_a503c7511a",
+  "name": "贵阳 · 距开阳中心直线距离26.3公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:贵阳 · 距开阳中心直线距离26.3公里",
+   "amap_regeo:羊昌"
+  ],
+  "h3Cells": [
+   "88400c45a5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c45a5fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "6ced376dc54a",
+  "externalIds": [
+   "zone:amap:贵阳 · 距开阳中心直线距离25.2公里"
+  ],
+  "id": "zone_f7c0c3e297",
+  "name": "贵阳 · 距开阳中心直线距离25.2公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:贵阳 · 距开阳中心直线距离25.2公里"
+  ],
+  "h3Cells": [
+   "88400c4e09fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4e09fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "f71fa8dbe756",
+  "externalIds": [
+   "zone:amap:贵阳 · 距开阳中心直线距离24.8公里"
+  ],
+  "id": "zone_d19a34a0e0",
+  "name": "贵阳 · 距开阳中心直线距离24.8公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:贵阳 · 距开阳中心直线距离24.8公里"
+  ],
+  "h3Cells": [
+   "88400c4e61fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4e61fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "fffafa24113a",
+  "externalIds": [
+   "zone:amap:距离区域中心驾车43公里 · 近羊昌花画小镇"
+  ],
+  "id": "zone_9d02252263",
+  "name": "距离区域中心驾车43公里 · 近羊昌花画小镇",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520112",
+  "aliases": [
+   "amap:距离区域中心驾车43公里 · 近羊昌花画小镇"
+  ],
+  "h3Cells": [
+   "88400c7b4bfffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7b4bfffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "761d3f136af2",
+  "externalIds": [
+   "zone:amap:近羊场客运站 · 小玩佳乐园"
+  ],
+  "id": "zone_5e8d670ac3",
+  "name": "近羊场客运站 · 小玩佳乐园",
+  "zoneType": "交通枢纽片区",
+  "locatedInAdminArea": "admin_520121",
+  "aliases": [
+   "amap:近羊场客运站 · 小玩佳乐园"
+  ],
+  "h3Cells": [
+   "88400c4a17fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c4a17fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "ce511f035c69",
+  "externalIds": [
+   "zone:amap:修文 · 距开阳中心直线距离25.8公里"
+  ],
+  "id": "zone_f5cceec01f",
+  "name": "修文 · 距开阳中心直线距离25.8公里",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:修文 · 距开阳中心直线距离25.8公里",
+   "amap:修文 · 距开阳中心直线距离25.9公里"
+  ],
+  "h3Cells": [
+   "88400c7821fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7821fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "45f8ea4e3f28",
+  "externalIds": [
+   "zone:amap:近贵州森林野生动物园 · 扎佐街道"
+  ],
+  "id": "zone_4acb884d35",
+  "name": "近贵州森林野生动物园 · 扎佐街道",
+  "zoneType": "商圈",
+  "locatedInAdminArea": "admin_520123",
+  "aliases": [
+   "amap:近贵州森林野生动物园 · 扎佐街道",
+   "amap_regeo:扎佐镇"
+  ],
+  "h3Cells": [
+   "88400c7889fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c7889fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ },
+ {
+  "sourceId": "src_grid_derive",
+  "batchId": "grid-20260915",
+  "dataQuality": "needs_review",
+  "createdAt": "2026-09-16",
+  "updatedAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "contentHash": "5f862e7cf7de",
+  "externalIds": [
+   "zone:amap:近四季贵州山地温泉水世界 · 时光贵州古镇"
+  ],
+  "id": "zone_29ff5c0c16",
+  "name": "近四季贵州山地温泉水世界 · 时光贵州古镇",
+  "zoneType": "历史街区",
+  "locatedInAdminArea": "admin_520181",
+  "aliases": [
+   "amap:近四季贵州山地温泉水世界 · 时光贵州古镇"
+  ],
+  "h3Cells": [
+   "88400c38e5fffff"
+  ],
+  "anchorPoiIds": [
+   "cell:88400c38e5fffff"
+  ],
+  "cellCount": 1,
+  "geoPrecision": "none",
+  "fieldSources": [],
+  "fieldUpdatedAt": []
+ }
+]

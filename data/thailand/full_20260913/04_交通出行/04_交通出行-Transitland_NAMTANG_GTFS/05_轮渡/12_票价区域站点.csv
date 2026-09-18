@@ -1,0 +1,74 @@
+﻿交通类型代码,交通类型中文,zone_id,stop_id,stop_name,stop_name_泰文,stop_name_英文,票价规则引用次数,映射状态
+4,轮渡,92,92,ท่าเรือสาทร;Sathon (Taksin) Pier,ท่าเรือสาทร,Sathon (Taksin) Pier,58,已匹配stops.zone_id
+4,轮渡,93,93,ท่าเรือโอเรียนเต็ล (ปิดปรับปรุง);Prietal Pier (Close),ท่าเรือโอเรียนเต็ล (ปิดปรับปรุง),Prietal Pier (Close),58,已匹配stops.zone_id
+4,轮渡,94,94,ท่าเรือสี่พระยา;Si Phraya Pier,ท่าเรือสี่พระยา,Si Phraya Pier,58,已匹配stops.zone_id
+4,轮渡,95,95,ท่าเรือกรมเจ้าท่า;Marine Department Pier,ท่าเรือกรมเจ้าท่า,Marine Department Pier,58,已匹配stops.zone_id
+4,轮渡,96,96,ท่าเรือราชวงศ์;Rajchawongse Pier,ท่าเรือราชวงศ์,Rajchawongse Pier,58,已匹配stops.zone_id
+4,轮渡,97,97,ท่าเรือสะพานพุทธ;Memorial Bridge Pier,ท่าเรือสะพานพุทธ,Memorial Bridge Pier,58,已匹配stops.zone_id
+4,轮渡,98,98,ท่าเรือปากคลองตลาด (ยอดพิมาน);YodpimanRiver Walk Pier,ท่าเรือปากคลองตลาด (ยอดพิมาน),YodpimanRiver Walk Pier,58,已匹配stops.zone_id
+4,轮渡,99,99,ท่าเรือราชินี;Rajinee Pier,ท่าเรือราชินี,Rajinee Pier,58,已匹配stops.zone_id
+4,轮渡,101,101,ท่าเรือท่าช้าง;Tha Chang Pier,ท่าเรือท่าช้าง,Tha Chang Pier,58,已匹配stops.zone_id
+4,轮渡,102,102,ท่าเรือพรานนก (วังหลัง);Wang Lang Pier,ท่าเรือพรานนก (วังหลัง),Wang Lang Pier,58,已匹配stops.zone_id
+4,轮渡,103,103,ท่าเรือรถไฟ;Thonburi Railway Pier,ท่าเรือรถไฟ,Thonburi Railway Pier,58,已匹配stops.zone_id
+4,轮渡,104,104,ท่าเรือพระปิ่นเกล้า;Phra Pin Klao Bridge Pier,ท่าเรือพระปิ่นเกล้า,Phra Pin Klao Bridge Pier,58,已匹配stops.zone_id
+4,轮渡,105,105,ท่าเรือพระอาทิตย์;Phra Arthit Pier,ท่าเรือพระอาทิตย์,Phra Arthit Pier,58,已匹配stops.zone_id
+4,轮渡,106,106,ท่าเรือสะพานพระราม 8;Rama 8 Bridge Pier,ท่าเรือสะพานพระราม 8,Rama 8 Bridge Pier,58,已匹配stops.zone_id
+4,轮渡,107,107,ท่าเรือเทเวศน์;Thewej Pier,ท่าเรือเทเวศน์,Thewej Pier,58,已匹配stops.zone_id
+4,轮渡,108,108,ท่าเรือสะพานกรุงธน (ซังฮี้);Krung Thon Bridge (Sang Hi) Pier,ท่าเรือสะพานกรุงธน (ซังฮี้),Krung Thon Bridge (Sang Hi) Pier,58,已匹配stops.zone_id
+4,轮渡,109,109,ท่าพายัพ;Payap Pier,ท่าพายัพ,Payap Pier,58,已匹配stops.zone_id
+4,轮渡,110,110,ท่าเรือกรมชลประทานสามเสน;Irrigation Department Pier,ท่าเรือกรมชลประทานสามเสน,Irrigation Department Pier,58,已匹配stops.zone_id
+4,轮渡,111,111,ท่าเรือเขียวไข่กา;Kheaw Khai ka Pier,ท่าเรือเขียวไข่กา,Kheaw Khai ka Pier,58,已匹配stops.zone_id
+4,轮渡,112,112,ท่าเรือเกียกกาย;Kaik Kai Pier,ท่าเรือเกียกกาย,Kaik Kai Pier,58,已匹配stops.zone_id
+4,轮渡,113,113,ท่าเรือวัดสร้อยทอง;Wat Soi Thong Pier,ท่าเรือวัดสร้อยทอง,Wat Soi Thong Pier,58,已匹配stops.zone_id
+4,轮渡,114,114,ท่าเรือสะพานพระราม 7;Rama 7 Bridge Pier,ท่าเรือสะพานพระราม 7,Rama 7 Bridge Pier,58,已匹配stops.zone_id
+4,轮渡,115,115,ท่าเรือพิบูลย์สงคราม 1;Pibulsongklam 1 Pier,ท่าเรือพิบูลย์สงคราม 1,Pibulsongklam 1 Pier,58,已匹配stops.zone_id
+4,轮渡,116,116,ท่าเรือวัดเขมา (ปิดปรับปรุง);Wat Khema Pier (Close),ท่าเรือวัดเขมา (ปิดปรับปรุง),Wat Khema Pier (Close),58,已匹配stops.zone_id
+4,轮渡,117,117,ท่าเรือวัดตึก;Wat Tuek Pier,ท่าเรือวัดตึก,Wat Tuek Pier,58,已匹配stops.zone_id
+4,轮渡,118,118,ท่าเรือวัดเขียน;Wat Kien Pier,ท่าเรือวัดเขียน,Wat Kien Pier,58,已匹配stops.zone_id
+4,轮渡,119,119,ท่าเรือสะพานพระราม 5;Rama 5 Bridge Pier,ท่าเรือสะพานพระราม 5,Rama 5 Bridge Pier,58,已匹配stops.zone_id
+4,轮渡,120,120,ท่านนทบุรี;Nonthaburi Pier,ท่านนทบุรี,Nonthaburi Pier,58,已匹配stops.zone_id
+4,轮渡,121,121,ท่าเรือวัดวรจรรยาวาส;Wat Worachanyawas Pier,ท่าเรือวัดวรจรรยาวาส,Wat Worachanyawas Pier,58,已匹配stops.zone_id
+4,轮渡,122,122,ท่าเรือวัดราชสิงขร;Wat Rajchasingkorn Pier,ท่าเรือวัดราชสิงขร,Wat Rajchasingkorn Pier,58,已匹配stops.zone_id
+4,轮渡,171,171,ท่าเรือผ่านฟ้าลีลาศ;Panfa Leelard Pier,ท่าเรือผ่านฟ้าลีลาศ,Panfa Leelard Pier,56,已匹配stops.zone_id
+4,轮渡,172,172,ท่าเรือตลาดโบ๊เบ๊;Bobae Market Pier,ท่าเรือตลาดโบ๊เบ๊,Bobae Market Pier,56,已匹配stops.zone_id
+4,轮渡,173,173,ท่าเรือสะพานเจริญผล;Charoen Phon Bridge Pier,ท่าเรือสะพานเจริญผล,Charoen Phon Bridge Pier,56,已匹配stops.zone_id
+4,轮渡,174,174,ท่าเรือสะพานหัวช้าง;Saphan Hua Chang Pier,ท่าเรือสะพานหัวช้าง,Saphan Hua Chang Pier,56,已匹配stops.zone_id
+4,轮渡,175,175,ท่าเรือประตูน้ำ;Pratunam Pier,ท่าเรือประตูน้ำ,Pratunam Pier,56,已匹配stops.zone_id
+4,轮渡,176,176,ท่าเรือชิดลม;Chidlom Pier,ท่าเรือชิดลม,Chidlom Pier,56,已匹配stops.zone_id
+4,轮渡,177,177,ท่าเรือสะพานวิทยุ;Witthayu Bridge Pier,ท่าเรือสะพานวิทยุ,Witthayu Bridge Pier,56,已匹配stops.zone_id
+4,轮渡,178,178,ท่าเรือนานาเหนือ;Nana Nuea Pier,ท่าเรือนานาเหนือ,Nana Nuea Pier,56,已匹配stops.zone_id
+4,轮渡,179,179,ท่าเรือนานาชาติ;Nana Chard Pier,ท่าเรือนานาชาติ,Nana Chard Pier,56,已匹配stops.zone_id
+4,轮渡,180,180,ท่าเรืออโศก;Asok Pier,ท่าเรืออโศก,Asok Pier,56,已匹配stops.zone_id
+4,轮渡,181,181,ท่าเรือมศว.ประสานมิตร;Prasan Mit Pier,ท่าเรือมศว.ประสานมิตร,Prasan Mit Pier,56,已匹配stops.zone_id
+4,轮渡,182,182,ท่าเรืออิตัลไทย;Ital-Thai Tower Pier,ท่าเรืออิตัลไทย,Ital-Thai Tower Pier,56,已匹配stops.zone_id
+4,轮渡,183,183,ท่าเรือสุเหร่าบ้านดอน;Baan Don Mosque Pier,ท่าเรือสุเหร่าบ้านดอน,Baan Don Mosque Pier,56,已匹配stops.zone_id
+4,轮渡,184,184,ท่าเรือทองหล่อ;Thong Lo Pier,ท่าเรือทองหล่อ,Thong Lo Pier,56,已匹配stops.zone_id
+4,轮渡,185,185,ท่าเรือชาญอิสระ;Charn Issara Pier,ท่าเรือชาญอิสระ,Charn Issara Pier,56,已匹配stops.zone_id
+4,轮渡,186,186,ท่าเรือร.ร.วิจิตร;Vijit School Pier,ท่าเรือร.ร.วิจิตร,Vijit School Pier,56,已匹配stops.zone_id
+4,轮渡,187,187,ท่าเรือสะพานคลองตัน;Klong Tan Pier,ท่าเรือสะพานคลองตัน,Klong Tan Pier,56,已匹配stops.zone_id
+4,轮渡,188,188,ท่าเรือราม 1;Ram 1 Pier,ท่าเรือราม 1,Ram 1 Pier,56,已匹配stops.zone_id
+4,轮渡,189,189,ท่าเรือเดอะมอลล์ 3;The Mall 3 Pier,ท่าเรือเดอะมอลล์ 3,The Mall 3 Pier,56,已匹配stops.zone_id
+4,轮渡,190,190,ท่าเรือรามคำแหง 29;Ramkhamhaeng 29 Pier,ท่าเรือรามคำแหง 29,Ramkhamhaeng 29 Pier,56,已匹配stops.zone_id
+4,轮渡,191,191,ท่าเรือวัดเทพลีลา;Wat Thepleela Pier,ท่าเรือวัดเทพลีลา,Wat Thepleela Pier,56,已匹配stops.zone_id
+4,轮渡,192,192,ท่าเรือม.รามคำแหง;Ramkhamhaeng University Pier,ท่าเรือม.รามคำแหง,Ramkhamhaeng University Pier,56,已匹配stops.zone_id
+4,轮渡,193,193,ท่าเรือสะพานมิตรมหาดไทย;Saphan Mit Mahat Thai Pier,ท่าเรือสะพานมิตรมหาดไทย,Saphan Mit Mahat Thai Pier,56,已匹配stops.zone_id
+4,轮渡,194,194,ท่าเรือวัดกลาง;Wat Klang Pier Pier,ท่าเรือวัดกลาง,Wat Klang Pier Pier,56,已匹配stops.zone_id
+4,轮渡,195,195,ท่าเรือเดอะมอลล์บางกะปิ;The Mall Bang Kapi Pier,ท่าเรือเดอะมอลล์บางกะปิ,The Mall Bang Kapi Pier,56,已匹配stops.zone_id
+4,轮渡,196,196,ท่าเรือบางกะปิ;Bang Kapi Pier,ท่าเรือบางกะปิ,Bang Kapi Pier,56,已匹配stops.zone_id
+4,轮渡,197,197,ท่าเรือวัดศรีบุญเรือง;Wat Sriboonreung Pier,ท่าเรือวัดศรีบุญเรือง,Wat Sriboonreung Pier,56,已匹配stops.zone_id
+4,轮渡,303,303,ท่าเรือประตูน้ำภาษีเจริญ;Phasi Charoen Dam Pier,ท่าเรือประตูน้ำภาษีเจริญ,Phasi Charoen Dam Pier,28,已匹配stops.zone_id
+4,轮渡,304,304,ท่าเรืออู่รถเมล์สาย 9;Bus Line 9 Pier,ท่าเรืออู่รถเมล์สาย 9,Bus Line 9 Pier,28,已匹配stops.zone_id
+4,轮渡,305,305,ท่าเรือสะพานประชารัฐ;Phracharat Bridge Pier,ท่าเรือสะพานประชารัฐ,Phracharat Bridge Pier,28,已匹配stops.zone_id
+4,轮渡,306,306,ท่าเรือสะพานตากสิน - เพชรเกษม;Taksin-Phet Kasem Pier,ท่าเรือสะพานตากสิน - เพชรเกษม,Taksin-Phet Kasem Pier,28,已匹配stops.zone_id
+4,轮渡,307,307,ท่าเรือวัดอ่างแแก้ว;Wat Angkeaw Pier,ท่าเรือวัดอ่างแแก้ว,Wat Angkeaw Pier,28,已匹配stops.zone_id
+4,轮渡,308,308,ท่าเรือเพชรเกษม 31;Phet Kasem 31 Pier,ท่าเรือเพชรเกษม 31,Phet Kasem 31 Pier,28,已匹配stops.zone_id
+4,轮渡,309,309,ท่าเรือวัดรางบัว;Wat Rangbua Pier,ท่าเรือวัดรางบัว,Wat Rangbua Pier,28,已匹配stops.zone_id
+4,轮渡,310,310,ท่าเรือเพชรเกษม 35;Phet Kasem 35 Pier,ท่าเรือเพชรเกษม 35,Phet Kasem 35 Pier,28,已匹配stops.zone_id
+4,轮渡,311,311,ท่าเรือเพชรเกษม 37;Phet Kasem 37 Pier,ท่าเรือเพชรเกษม 37,Phet Kasem 37 Pier,28,已匹配stops.zone_id
+4,轮渡,312,312,ท่าเรือเพชรเกษม 39;Phet Kasem 39 Pier,ท่าเรือเพชรเกษม 39,Phet Kasem 39 Pier,28,已匹配stops.zone_id
+4,轮渡,313,313,ท่าเรือวัดนิมมานรดี;Wat Nimmanoradee Pier,ท่าเรือวัดนิมมานรดี,Wat Nimmanoradee Pier,28,已匹配stops.zone_id
+4,轮渡,314,314,ท่าเรือเกษตร - บางแค;Kaset-Bangkae Pier,ท่าเรือเกษตร - บางแค,Kaset-Bangkae Pier,28,已匹配stops.zone_id
+4,轮渡,315,315,ท่าเรือสะพานกาญจนาภิเษก;Kanchanaphisek Bridge Pier,ท่าเรือสะพานกาญจนาภิเษก,Kanchanaphisek Bridge Pier,28,已匹配stops.zone_id
+4,轮渡,316,316,ท่าเรือวัดม่วง;Wat Muang Pier,ท่าเรือวัดม่วง,Wat Muang Pier,28,已匹配stops.zone_id
+4,轮渡,317,317,ท่าเรือเพชรเกษม 69;Phet Kasem 69 Pier,ท่าเรือเพชรเกษม 69,Phet Kasem 69 Pier,28,已匹配stops.zone_id
+4,轮渡,13948,13948,ท่าเรือวัดใหม่ช่องลม;Wat Mai Chong Lom Pier,ท่าเรือวัดใหม่ช่องลม,Wat Mai Chong Lom Pier,56,已匹配stops.zone_id

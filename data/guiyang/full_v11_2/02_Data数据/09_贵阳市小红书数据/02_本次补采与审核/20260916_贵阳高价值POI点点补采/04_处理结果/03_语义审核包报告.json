@@ -1,0 +1,14 @@
+{
+  "reviewEntities": 169,
+  "reviewPosts": 2140,
+  "riskTotals": {
+    "分店上下文不足": 707,
+    "攻略清单": 662,
+    "疑似营销": 224,
+    "疑似协同营销": 82,
+    "经营状态": 6
+  },
+  "rawCaptureModified": false,
+  "processedTextEmojiRemoved": true,
+  "graphWritten": false
+}

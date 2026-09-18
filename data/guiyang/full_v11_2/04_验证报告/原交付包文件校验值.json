@@ -1,0 +1,16 @@
+{
+  "01_Schema/CityTourism.schema": "77fdbf65c89c461363055fae537c56c7969f152beaf1cbc6e513bc3b375a8508",
+  "01_Schema/parsed.json": "3b9f20982992b745acc4feb4bbf76bdfe420784f2784f06cf64898ae1a799fd6",
+  "01_Schema/schema.json": "0bbb7fe8a179ec7c2d6f5f6a731838e90d07724a07180cd83756d12e68d82111",
+  "01_Schema/城市知识图谱技术设计.md": "2c74bba2c3a93e37a316b36e68da7dcef52ca5b0d02401b8339345b77f7eb61e",
+  "02_原始数据/amap_food_pois_full.json": "a5d742a4ac1248fba09c41e896db4ece81fc78b5f3aabc3b1fd143f57f956cb1",
+  "02_原始数据/collection_summary.json": "aa3205e4cfc365e9418f265cb7956fa208436d5e7aa4aaae8e9c93b0ebd1dad8",
+  "02_原始数据/entity_id_map.json": "9d607095b285cc2a0f2702637866d8b1706139ecbf5385d2d1a590ff8211910e",
+  "02_原始数据/source_policy.json": "50f634e3d173fbc25160f5eec16e9855131cd444480d408d3f440c8cc49c2c32",
+  "03_标准化数据/data.json": "219c072e81a58ebd1fe37e89c3dd61e64f58764f8f4c6a8f3abdbb5f39eb917c",
+  "04_图谱导入/graph_data.json": "cbf6651f56481d971b8683560cd81104476766e422896d98ca59a5042a4f0dcb",
+  "04_图谱导入/project_metadata.json": "8b2551bf7114189cce5e432392a6a9c764944e44c73e8ecc043371f02c06156c",
+  "05_构建与验证/outside_framework_points.json": "ab5c602856c2536ebb3d698e47f04910e63d6a90b4e5c8b80e5cbc2bccb07206",
+  "05_构建与验证/validation_report.json": "2d3edc4529288ae25fe9830e7045efbac086d951300e2eafec8859da831efe0d",
+  "README.md": "2d291c241f717620f46a39f8ac3debff2bb1477ea1cff68647129b44cb9834b8"
+}

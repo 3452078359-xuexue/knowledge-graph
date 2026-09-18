@@ -1,0 +1,9 @@
+﻿步骤,操作,说明
+1,先看分类统计,打开03_分类统计.csv，确认每种交通类型的数据规模及是否包含票价。
+2,按文件夹读取,01至05为当前存在的交通类型；99_未分类保存源数据关联异常或未被引用记录。
+3,按主键关联,route_id→trip_id→stop_times；shape_id连接轨迹；service_id连接日历。
+4,计算票价,fare_rules.fare_id连接fare_attributes.fare_id；origin_id/destination_id连接stops.zone_id，不是stop_id；route_id允许为空。
+5,名称使用原则,原始泰文/英文是事实源；中文展示名只对少量已核验线路补充，未核验名称不机器翻译。
+6,Excel打开,所有CSV均使用UTF-8 BOM，避免泰文和中文乱码；标识字段按文本处理更安全。
+7,理解时效,这是静态GTFS快照，不代表车辆实时位置、实时发车或当前售票系统价格。
+8,保护API Key,数据集、脚本和CSV均不保存Key；运行时只读取TRANSITLAND_API_KEY环境变量。

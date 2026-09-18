@@ -1,0 +1,595 @@
+{
+  "name": "贵州城市知识图谱",
+  "currentCity": "贵阳市",
+  "projectId": "guiyang_city_tourism_v11_amap_food_r35",
+  "version": "11.2.0-amap-food-fields",
+  "generatedAt": "2026-09-16T22:52:33.196425-07:00",
+  "schema": {
+    "entityTypes": 30,
+    "properties": 1098,
+    "declaredRelations": 18
+  },
+  "graph": {
+    "nodes": 96753,
+    "relations": 398717,
+    "relation_counts": {
+      "COLLECTED_IN": 96722,
+      "DESCRIBES": 208,
+      "EVIDENCE_FOR": 2417,
+      "HasFacility": 17,
+      "LineHasRoute": 372,
+      "NextStop": 7701,
+      "REF_ADMIN_SCOPE": 40086,
+      "REF_APPLICABLE_ADMIN_AREA": 17,
+      "REF_BELONGS_TO_LINE": 372,
+      "REF_DOMINANT_ZONE": 2409,
+      "REF_EVIDENCE_ID": 154,
+      "REF_LOCATED_IN_ADMIN_AREA": 52779,
+      "REF_LOCATED_IN_SCENIC_AREA": 233,
+      "REF_LOCATED_IN_ZONE": 29396,
+      "REF_MATCHED_INTENT": 54,
+      "REF_MATCHED_SCENARIO": 27,
+      "REF_ORIGIN_SCENIC_AREA": 5,
+      "REF_PARENT_ADMIN_AREA": 156,
+      "REF_PARENT_CELL": 11297,
+      "REF_ROOT_ADMIN_AREA": 208,
+      "REF_ROOT_SCENIC_AREA": 154,
+      "REF_SPATIAL_FACILITY": 1596,
+      "REF_TARGET_ADMIN_AREA": 19,
+      "REF_TOWNSHIP_ID": 4451,
+      "REVIEW_OF": 50,
+      "RelatedKnowledge": 116,
+      "RouteStopsAt": 8073,
+      "RouteVisits": 4,
+      "RouteVisitsScenicArea": 4,
+      "SOURCED_FROM": 139603,
+      "SUPPORTED_BY": 17
+    },
+    "map_counts": {
+      "Accommodation": 4741,
+      "Area": 1744,
+      "FoodAndBeverage": 24238,
+      "ScenicArea": 13,
+      "TransitFacility": 5273,
+      "TransitStop": 1938
+    }
+  },
+  "sourcePolicy": {
+    "food": "AMap only; business.rating >= 3.5; no Dianping alignment",
+    "accommodation": "Ctrip level-1 list + level-2 details; AMap only supplements missing/conflicting spatial fields",
+    "other_business": "existing verified baseline, including AMap where already allowed"
+  },
+  "tabularExports": [
+    {
+      "entityType": "Spatial*",
+      "entityTypes": [
+        "City",
+        "AdminArea",
+        "Zone",
+        "GeoCell",
+        "PlaceAlias"
+      ],
+      "chineseName": "贵阳市空间行政区数据结构化总表",
+      "recordCount": 53446,
+      "relationCount": 178426,
+      "officialAdminReviewRows": 157,
+      "fieldDictionaryRows": 164,
+      "sheetCount": 9,
+      "sourcePolicy": "官方行政区参照、高德空间标签与 H3 派生网格；CSV 全量，XLSX 对大表分层抽样审阅",
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市空间行政区数据_结构化总表.xlsx"
+    },
+    {
+      "entityType": "Accommodation",
+      "chineseName": "携程酒店明细表",
+      "recordCount": 4796,
+      "columnCount": 74,
+      "sourcePolicy": "携程一级列表与二级详情；高德仅补缺失或冲突的空间字段",
+      "encoding": "UTF-8 BOM",
+      "file": "02_Data数据/04_贵阳市酒店数据/贵阳市携程酒店数据.csv"
+    },
+    {
+      "entityType": "FoodAndBeverage",
+      "chineseName": "高德美食关键字段补全表",
+      "recordCount": 24238,
+      "columnCount": 50,
+      "sourcePolicy": "仅高德评分>=3.5；电话/标签/照片读取现有show_fields结果；街道由精确坐标逆地理编码；父名称只按稳定ID查询",
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市美食POI_评分3.5以上_关键字段补全_24238家.xlsx"
+    },
+    {
+      "entityType": "Transit*",
+      "entityTypes": [
+        "TransitHub",
+        "TransitLine",
+        "TransitRoute",
+        "TransitStop",
+        "TransitFacility",
+        "TransportFareRule"
+      ],
+      "chineseName": "贵阳市交通数据结构化总表",
+      "recordCount": 9604,
+      "relationCount": 53457,
+      "fieldDictionaryRows": 254,
+      "sheetCount": 9,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据；字段顺序与 Schema 对齐；关系单独展开",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通数据_结构化总表.xlsx"
+    },
+    {
+      "entityType": "Scenic*",
+      "entityTypes": [
+        "ScenicArea",
+        "Area",
+        "Route",
+        "Facility"
+      ],
+      "chineseName": "贵阳市景区数据结构化总表",
+      "recordCount": 1821,
+      "relationCount": 8652,
+      "knowledgeUnitCount": 16,
+      "fieldDictionaryRows": 195,
+      "sheetCount": 10,
+      "sourcePolicy": "景区实体与关系、百度百科稳定知识、高德空间核验分别成表；rejected 不参与对外查询",
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区数据_结构化总表.xlsx"
+    }
+  ],
+  "datasets": [
+    {
+      "group": "贵阳市空间行政区数据",
+      "entityType": "City",
+      "chineseName": "城市",
+      "recordCount": 1,
+      "sourcePolicy": "官方行政区参照、高德空间标签与 H3 派生网格",
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市城市数据.json"
+    },
+    {
+      "group": "贵阳市空间行政区数据",
+      "entityType": "AdminArea",
+      "chineseName": "行政区",
+      "recordCount": 157,
+      "sourcePolicy": "官方行政区参照、高德空间标签与 H3 派生网格",
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市行政区数据.json"
+    },
+    {
+      "group": "贵阳市空间行政区数据",
+      "entityType": "Zone",
+      "chineseName": "商圈片区",
+      "recordCount": 171,
+      "sourcePolicy": "官方行政区参照、高德空间标签与 H3 派生网格",
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市商圈片区数据.json"
+    },
+    {
+      "group": "贵阳市空间行政区数据",
+      "entityType": "GeoCell",
+      "chineseName": "H3空间网格",
+      "recordCount": 13011,
+      "sourcePolicy": "官方行政区参照、高德空间标签与 H3 派生网格",
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市H3空间网格数据.json"
+    },
+    {
+      "group": "贵阳市空间行政区数据",
+      "entityType": "PlaceAlias",
+      "chineseName": "地名别名索引",
+      "recordCount": 40106,
+      "sourcePolicy": "官方行政区参照、高德空间标签与 H3 派生网格",
+      "file": "02_Data数据/01_贵阳市空间行政区数据/贵阳市地名别名索引数据.json"
+    },
+    {
+      "group": "贵阳市景区数据",
+      "entityType": "ScenicArea",
+      "chineseName": "景区",
+      "recordCount": 20,
+      "sourcePolicy": "高德景区 POI、百度百科公开词条及已核验基线",
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区数据.json"
+    },
+    {
+      "group": "贵阳市景区数据",
+      "entityType": "Area",
+      "chineseName": "子景点",
+      "recordCount": 1783,
+      "sourcePolicy": "高德景区 POI、百度百科公开词条及已核验基线",
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景点数据.json"
+    },
+    {
+      "group": "贵阳市景区数据",
+      "entityType": "Route",
+      "chineseName": "游览路线",
+      "recordCount": 1,
+      "sourcePolicy": "高德景区 POI、百度百科公开词条及已核验基线",
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市游览路线数据.json"
+    },
+    {
+      "group": "贵阳市景区数据",
+      "entityType": "Facility",
+      "chineseName": "景区设施",
+      "recordCount": 17,
+      "sourcePolicy": "高德景区 POI、百度百科公开词条及已核验基线",
+      "file": "02_Data数据/02_贵阳市景区数据/贵阳市景区设施数据.json"
+    },
+    {
+      "group": "贵阳市美食数据",
+      "entityType": "FoodAndBeverage",
+      "chineseName": "美食POI",
+      "recordCount": 24238,
+      "sourcePolicy": "仅高德 POI；business.rating >= 3.5；关键字段按 Web 服务 API 回填；不与大众点评对齐",
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市美食POI数据.json"
+    },
+    {
+      "group": "贵阳市美食数据",
+      "entityType": "Dish",
+      "chineseName": "菜品",
+      "recordCount": 5,
+      "sourcePolicy": "仅高德 POI；business.rating >= 3.5；不与大众点评对齐",
+      "file": "02_Data数据/03_贵阳市美食数据/贵阳市菜品数据.json"
+    },
+    {
+      "group": "贵阳市酒店数据",
+      "entityType": "Accommodation",
+      "chineseName": "酒店住宿",
+      "recordCount": 4796,
+      "sourcePolicy": "携程一级列表与二级详情；高德仅补缺失或冲突的空间字段",
+      "file": "02_Data数据/04_贵阳市酒店数据/贵阳市酒店住宿数据.json"
+    },
+    {
+      "group": "贵阳市交通数据",
+      "entityType": "TransitHub",
+      "chineseName": "交通枢纽",
+      "recordCount": 4,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通枢纽数据.json"
+    },
+    {
+      "group": "贵阳市交通数据",
+      "entityType": "TransitLine",
+      "chineseName": "公交线路",
+      "recordCount": 302,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市公交线路数据.json"
+    },
+    {
+      "group": "贵阳市交通数据",
+      "entityType": "TransitRoute",
+      "chineseName": "交通路线",
+      "recordCount": 372,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通路线数据.json"
+    },
+    {
+      "group": "贵阳市交通数据",
+      "entityType": "TransitStop",
+      "chineseName": "公交站点",
+      "recordCount": 3630,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市公交站点数据.json"
+    },
+    {
+      "group": "贵阳市交通数据",
+      "entityType": "TransitFacility",
+      "chineseName": "交通设施",
+      "recordCount": 5279,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通设施数据.json"
+    },
+    {
+      "group": "贵阳市交通数据",
+      "entityType": "TransportFareRule",
+      "chineseName": "交通票价规则",
+      "recordCount": 17,
+      "sourcePolicy": "本地交通数据与已核验高德交通设施数据",
+      "file": "02_Data数据/05_贵阳市交通数据/贵阳市交通票价规则数据.json"
+    },
+    {
+      "group": "贵阳市购物商品数据",
+      "entityType": "Shopping",
+      "chineseName": "购物场所",
+      "recordCount": 0,
+      "sourcePolicy": "当前已核验图谱基线；空实体文件也保留以对应 Schema",
+      "file": "02_Data数据/06_贵阳市购物商品数据/贵阳市购物场所数据.json"
+    },
+    {
+      "group": "贵阳市购物商品数据",
+      "entityType": "Product",
+      "chineseName": "旅游商品",
+      "recordCount": 0,
+      "sourcePolicy": "当前已核验图谱基线；空实体文件也保留以对应 Schema",
+      "file": "02_Data数据/06_贵阳市购物商品数据/贵阳市旅游商品数据.json"
+    },
+    {
+      "group": "贵阳市知识问答数据",
+      "entityType": "KnowledgeUnit",
+      "chineseName": "知识单元",
+      "recordCount": 154,
+      "sourcePolicy": "已核验知识单元、FAQ、意图与游客场景",
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市知识单元数据.json"
+    },
+    {
+      "group": "贵阳市知识问答数据",
+      "entityType": "FAQ",
+      "chineseName": "常见问答",
+      "recordCount": 54,
+      "sourcePolicy": "已核验知识单元、FAQ、意图与游客场景",
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市常见问答数据.json"
+    },
+    {
+      "group": "贵阳市知识问答数据",
+      "entityType": "Intent",
+      "chineseName": "查询意图",
+      "recordCount": 54,
+      "sourcePolicy": "已核验知识单元、FAQ、意图与游客场景",
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市查询意图数据.json"
+    },
+    {
+      "group": "贵阳市知识问答数据",
+      "entityType": "Scenario",
+      "chineseName": "游客场景",
+      "recordCount": 27,
+      "sourcePolicy": "已核验知识单元、FAQ、意图与游客场景",
+      "file": "02_Data数据/07_贵阳市知识问答数据/贵阳市游客场景数据.json"
+    },
+    {
+      "group": "贵阳市数据治理数据",
+      "entityType": "DataSource",
+      "chineseName": "数据来源",
+      "recordCount": 12,
+      "sourcePolicy": "来源、批次、证据、动态覆盖、审核与原始回答",
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市数据来源数据.json"
+    },
+    {
+      "group": "贵阳市数据治理数据",
+      "entityType": "CollectionBatch",
+      "chineseName": "采集批次",
+      "recordCount": 19,
+      "sourcePolicy": "来源、批次、证据、动态覆盖、审核与原始回答",
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市采集批次数据.json"
+    },
+    {
+      "group": "贵阳市数据治理数据",
+      "entityType": "SourceEvidence",
+      "chineseName": "来源证据",
+      "recordCount": 2417,
+      "sourcePolicy": "来源、批次、证据、动态覆盖、审核与原始回答",
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市来源证据数据.json"
+    },
+    {
+      "group": "贵阳市数据治理数据",
+      "entityType": "DynamicOverride",
+      "chineseName": "动态覆盖",
+      "recordCount": 0,
+      "sourcePolicy": "来源、批次、证据、动态覆盖、审核与原始回答",
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市动态覆盖数据.json"
+    },
+    {
+      "group": "贵阳市数据治理数据",
+      "entityType": "ReviewItem",
+      "chineseName": "审核任务",
+      "recordCount": 50,
+      "sourcePolicy": "来源、批次、证据、动态覆盖、审核与原始回答",
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市审核任务数据.json"
+    },
+    {
+      "group": "贵阳市数据治理数据",
+      "entityType": "RawSourceAnswer",
+      "chineseName": "原始来源回答",
+      "recordCount": 56,
+      "sourcePolicy": "来源、批次、证据、动态覆盖、审核与原始回答",
+      "file": "02_Data数据/08_贵阳市数据治理数据/贵阳市原始来源回答数据.json"
+    }
+  ],
+  "foodFieldEnrichment": {
+    "source": "高德 Web 服务 API",
+    "records": 24238,
+    "uniqueReverseGeocodedCoordinates": 24041,
+    "coverage": {
+      "telephone": {
+        "count": 18017,
+        "total": 24238,
+        "percent": 74.33
+      },
+      "recommendedDishes": {
+        "count": 13757,
+        "total": 24238,
+        "percent": 56.76
+      },
+      "cuisine": {
+        "count": 24238,
+        "total": 24238,
+        "percent": 100.0
+      },
+      "businessArea": {
+        "count": 11468,
+        "total": 24238,
+        "percent": 47.31
+      },
+      "platformTags": {
+        "count": 24238,
+        "total": 24238,
+        "percent": 100.0
+      },
+      "picture": {
+        "count": 22752,
+        "total": 24238,
+        "percent": 93.87
+      },
+      "township": {
+        "count": 24231,
+        "total": 24238,
+        "percent": 99.97
+      },
+      "townshipAdcode": {
+        "count": 24231,
+        "total": 24238,
+        "percent": 99.97
+      },
+      "parentPoiId": {
+        "count": 13540,
+        "total": 24238,
+        "percent": 55.86
+      },
+      "parentPoiName": {
+        "count": 11875,
+        "total": 24238,
+        "percent": 48.99
+      },
+      "parentPoiTypecode": {
+        "count": 11875,
+        "total": 24238,
+        "percent": 48.99
+      },
+      "indoorBuildingPoiId": {
+        "count": 169,
+        "total": 24238,
+        "percent": 0.7
+      },
+      "indoorBuildingPoiName": {
+        "count": 0,
+        "total": 24238,
+        "percent": 0.0
+      },
+      "indoorFloor": {
+        "count": 169,
+        "total": 24238,
+        "percent": 0.7
+      },
+      "indoorTrueFloor": {
+        "count": 169,
+        "total": 24238,
+        "percent": 0.7
+      }
+    },
+    "parentNamesNotInferred": true,
+    "validationReport": "04_验证报告/贵阳市高德美食关键字段补全报告.json"
+  },
+  "transportTabularExport": {
+    "entities": 9604,
+    "relations": 53457,
+    "fieldDictionaryRows": 254,
+    "csvEncoding": "UTF-8 BOM",
+    "validationPassed": true,
+    "validationReport": "04_验证报告/贵阳市交通结构化表格验证报告.json"
+  },
+  "scenicTabularExport": {
+    "entities": 1821,
+    "relations": 8652,
+    "knowledgeUnits": 16,
+    "amapRegistryRows": 24,
+    "baikeQualityRows": 10,
+    "csvEncoding": "UTF-8 BOM",
+    "validationPassed": true,
+    "validationReport": "04_验证报告/贵阳市景区结构化表格验证报告.json"
+  },
+  "spatialTabularExport": {
+    "entities": 53446,
+    "relations": 178426,
+    "fieldDictionaryRows": 164,
+    "officialAdminVerified": 157,
+    "h3Resolutions": {
+      "7": 1714,
+      "8": 11297
+    },
+    "adminAmbiguousCells": 276,
+    "aliasesWithR8AndR9": 40106,
+    "csvEncoding": "UTF-8 BOM",
+    "workbookPolicy": "City/AdminArea/Zone/官方审核全量；GeoCell/PlaceAlias/关系分层样本；CSV 保留全量",
+    "validationPassed": true,
+    "validationReport": "04_验证报告/贵阳市空间行政区结构化表格验证报告.json",
+    "independentReview": "04_验证报告/贵阳市空间行政区结构化表格独立复核.json"
+  },
+  "sourceBackups": [
+    {
+      "sourceType": "Xiaohongshu",
+      "chineseName": "贵阳市小红书帖子、点点 AI 与 POI 审核来源备份",
+      "status": "not_loaded_into_graph",
+      "fileCount": 7,
+      "formalPosts": 2145,
+      "batchPosts": 1246,
+      "formalBatchOverlap": 123,
+      "distinctPostIdsAcrossLayers": 3268,
+      "formalPoiRows": 282,
+      "batchQuestions": 20,
+      "referencePostRecords": 1454,
+      "candidateRows": 626,
+      "evidenceRows": 1018,
+      "path": "02_Data数据/09_贵阳市小红书数据",
+      "manifest": "02_Data数据/09_贵阳市小红书数据/小红书数据备份清单.json",
+      "workingCopyAudit": {
+        "changedFiles": 1,
+        "formalPoiMissingColumn": "外文/地图名",
+        "originalSourceRetained": true
+      },
+      "cleanedDerivedLayer": {
+        "status": "validated_not_loaded_into_graph",
+        "path": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji",
+        "fileCount": 7,
+        "recordCountAcrossFiles": 6791,
+        "rowsChanged": 5110,
+        "cellsChanged": 8671,
+        "emojiSequencesRemovedExcludingKeycaps": 50085,
+        "platformTokensRemoved": 7461,
+        "specialCharactersRemoved": 475,
+        "keycapsConverted": 5084,
+        "residualCounts": {
+          "emoji": 0,
+          "platformTokens": 0,
+          "specialCharacters": 0,
+          "residualControls": 0
+        },
+        "evidenceFragmentsMatched": {
+          "matched": 606,
+          "totalNonEmpty": 606
+        },
+        "sourceFilesOverwritten": false,
+        "validationReport": "04_验证报告/贵阳市小红书去除Emoji清洗验证报告.json"
+      }
+    }
+  ],
+  "xiaohongshuSourceBackup": {
+    "status": "not_loaded_into_graph",
+    "purpose": "后续 POI 语义审核、游客需求和帖子证据关系构建",
+    "foodEntityPolicy": "当前 FoodAndBeverage 仍仅使用高德事实数据；小红书尚未与美食实体对齐",
+    "candidatePolicy": "候选表不是正式实体；需实体消歧和证据审核后才能挂图",
+    "validationReport": "04_验证报告/贵阳市小红书来源备份验证报告.json",
+    "workingCopyAudit": {
+      "auditedAt": "2026-09-16T22:52:33.196425-07:00",
+      "initialSnapshotEntriesRemainInFilesArray": true,
+      "changedFiles": [
+        {
+          "key": "formal_poi",
+          "destination": "01_正式数据_当前唯一版/01_贵州省贵阳市旅游推荐_POI总表.csv",
+          "changeOccurredBeforeEmojiCleaning": true,
+          "initialSnapshotSha256": "f3ac9a69c5482b4a5f8875b77a41dc1695199f1ef8b84528899cd29749f1d416",
+          "currentWorkingCopySha256": "3ba840f9466fedc4a8ca9312dc53e2ba6b3a3e11c6aa8d675b844362b3e2c132",
+          "originalSourceSha256": "f3ac9a69c5482b4a5f8875b77a41dc1695199f1ef8b84528899cd29749f1d416",
+          "initialColumns": 12,
+          "currentColumns": 11,
+          "missingColumnsComparedWithOriginal": [
+            "外文/地图名"
+          ],
+          "commonColumnContentChanged": false,
+          "policy": "保留用户/外部编辑，本次不恢复、不覆盖；原始 12 列文件仍在 sourcePath"
+        }
+      ]
+    },
+    "emojiCleanedDerivedLayer": {
+      "status": "validated_not_loaded_into_graph",
+      "path": "02_Data数据/09_贵阳市小红书数据/03_清洗派生/20260916_去除Emoji",
+      "fileCount": 7,
+      "recordCountAcrossFiles": 6791,
+      "rowsChanged": 5110,
+      "cellsChanged": 8671,
+      "emojiSequencesRemovedExcludingKeycaps": 50085,
+      "platformTokensRemoved": 7461,
+      "specialCharactersRemoved": 475,
+      "keycapsConverted": 5084,
+      "residualCounts": {
+        "emoji": 0,
+        "platformTokens": 0,
+        "specialCharacters": 0,
+        "residualControls": 0
+      },
+      "evidenceFragmentsMatched": {
+        "matched": 606,
+        "totalNonEmpty": 606
+      },
+      "sourceFilesOverwritten": false,
+      "validationReport": "04_验证报告/贵阳市小红书去除Emoji清洗验证报告.json"
+    }
+  }
+}

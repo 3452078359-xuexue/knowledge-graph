@@ -1,0 +1,37 @@
+﻿交通类型代码,交通类型中文,route_id,service_id,trip_id,trip_headsign,direction_id,shape_id,wheelchair_accessible,trip_headsign_泰文,trip_headsign_英文
+1,地铁,4,1,242,เตาปูน;Tao Poon,1,222,1,เตาปูน,Tao Poon
+1,地铁,4,1,243,คลองบางไผ่;Khlong Bang Phai,0,223,1,คลองบางไผ่,Khlong Bang Phai
+1,地铁,4,2,244,เตาปูน;Tao Poon,1,222,1,เตาปูน,Tao Poon
+1,地铁,4,2,245,คลองบางไผ่;Khlong Bang Phai,0,223,1,คลองบางไผ่,Khlong Bang Phai
+1,地铁,3,1,257,เตาปูน;Tao Poon,1,227,1,เตาปูน,Tao Poon
+1,地铁,3,1,261,หลักสอง;Luk Song,0,226,1,หลักสอง,Luk Song
+1,地铁,3,2,262,หลักสอง (วันเสาร์);Luk Song (Saturday),0,226,1,หลักสอง (วันเสาร์),Luk Song (Saturday)
+1,地铁,3,2,263,เตาปูน (วันเสาร์);Tao Poon (Saturday),1,227,1,เตาปูน (วันเสาร์),Tao Poon (Saturday)
+1,地铁,3,1,5272,MRT ท่าพระ (วันเสาร์);MRT Tha Phra (Saturday),0,1822,1,MRT ท่าพระ (วันเสาร์),MRT Tha Phra (Saturday)
+1,地铁,3,1,5273,MRT เตาปูน;MRT Tao Poon,1,1823,1,MRT เตาปูน,MRT Tao Poon
+1,地铁,3,1,5284,บางหว้า;Band Wa,1,1834,1,บางหว้า,Band Wa
+1,地铁,3,1,5285,เตาปูน;Toa Poon,1,1835,1,เตาปูน,Toa Poon
+1,地铁,3,1,5286,บางหว้า;ฺBang Wa,0,1836,1,บางหว้า,
+1,地铁,3,2,5287,หลักสอง (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Luk Song (Sunday and Public Holiday),1,1837,1,หลักสอง (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Luk Song (Sunday and Public Holiday)
+1,地铁,2224,3,6873,สำโรง;Samrong,0,3434,1,สำโรง,Samrong
+1,地铁,2224,3,6874,ลาดพร้าว;Lat Phrao,1,3435,2,ลาดพร้าว,Lat Phrao
+1,地铁,2436,3,6893,มีนบุรี;Min Buri,0,3456,2,มีนบุรี,Min Buri
+1,地铁,2436,3,6894,MRT ศูนย์ราชการนนทบุรี;MRT Nonthaburi Civic Centre,1,3457,2,MRT ศูนย์ราชการนนทบุรี,MRT Nonthaburi Civic Centre
+1,地铁,3,2,7862,เตาปูน (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Tao Poon (Sunday and Public Holiday),1,4472,2,เตาปูน (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Tao Poon (Sunday and Public Holiday)
+1,地铁,3,2,7863,หลักสอง (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Luk Song (Sunday and Public Holiday),1,4473,2,หลักสอง (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Luk Song (Sunday and Public Holiday)
+1,地铁,3,2,7864,เตาปูน (วันเสาร์);Tao Poon (Saturday),1,4474,2,เตาปูน (วันเสาร์),Tao Poon (Saturday)
+1,地铁,3,1,7865,เตาปูน (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Tao Poon (Sunday and Public Holiday),1,4475,2,เตาปูน (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Tao Poon (Sunday and Public Holiday)
+1,地铁,3,2,7866,ท่าพระ (วันเสาร์);Tha Phra (Saturday),0,4476,2,ท่าพระ (วันเสาร์),Tha Phra (Saturday)
+1,地铁,3,2,7867,ท่าพระ (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Tha Phra (Sunday and Public Holiday),0,4477,2,ท่าพระ (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Tha Phra (Sunday and Public Holiday)
+1,地铁,3,2,7869,เตาปูน (วันเสาร์);Tao Poon (Saturday),1,4479,2,เตาปูน (วันเสาร์),Tao Poon (Saturday)
+1,地铁,3,2,7870,เตาปูน (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Tao Poon (Sunday and Public Holiday),1,4480,2,เตาปูน (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Tao Poon (Sunday and Public Holiday)
+1,地铁,3,2,7871,บางหว้า (วันเสาร์);Bang Wa (Saturday),0,4481,2,บางหว้า (วันเสาร์),Bang Wa (Saturday)
+1,地铁,3,2,7872,บางหว้า (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Bang Wa (Sunday and Public Holiday),0,4482,2,บางหว้า (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Bang Wa (Sunday and Public Holiday)
+1,地铁,3,2,7873,บางหว้า (วันเสาร์);Bang Wa (Saturday),1,4483,2,บางหว้า (วันเสาร์),Bang Wa (Saturday)
+1,地铁,3,1,7874,หลักสอง;Lak Song,0,4484,2,หลักสอง,Lak Song
+1,地铁,3,2,7875,หลักสอง (วันเสาร์);Lak Song (Saturday),0,4485,2,หลักสอง (วันเสาร์),Lak Song (Saturday)
+1,地铁,3,2,7876,หลักสอง (วันอาทิตย์และวันหยุดนักขัตฤกษ์);Lak Song (Sunday and Public Holiday),0,4486,2,หลักสอง (วันอาทิตย์และวันหยุดนักขัตฤกษ์),Lak Song (Sunday and Public Holiday)
+1,地铁,2436,2,7913,MRT ทะเลสาบเมืองทองธานี;MRT Lake Muang Thong Thani,0,4523,2,MRT ทะเลสาบเมืองทองธานี,MRT Lake Muang Thong Thani
+1,地铁,2436,2,7914,MRT สถานีเมืองทองธานี;MRT Muang Thong Thani,1,4524,2,MRT สถานีเมืองทองธานี,MRT Muang Thong Thani
+1,地铁,2436,1,7915,MRT ทะเลสาบเมืองทองธานี;MRT Lake Muang Thong Thani,0,4525,2,MRT ทะเลสาบเมืองทองธานี,MRT Lake Muang Thong Thani
+1,地铁,2436,1,7916,MRT สถานีเมืองทองธานี;MRT Muang Thong Thani,1,4526,2,MRT สถานีเมืองทองธานี,MRT Muang Thong Thani

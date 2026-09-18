@@ -1,0 +1,253 @@
+{
+  "generatedAt": "2026-09-16T20:33:12.044677-07:00",
+  "source": {
+    "fullData": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/03_图谱导入/贵阳市全部标准化数据.json",
+    "graphData": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/03_图谱导入/贵阳市知识图谱节点关系数据.json",
+    "schema": "[LOCAL_HOME]/Desktop/贵州城市知识图谱/01_Schema/贵州城市知识图谱Schema解析.json"
+  },
+  "workbook": {
+    "file": "贵阳市交通数据_结构化总表.xlsx",
+    "bytes": 7757348,
+    "sha256": "7240e36438b38d07e18c75963b6ef19c9295943323c5659acac7eebdbecc522a",
+    "sheets": [
+      "交通摘要",
+      "交通枢纽",
+      "公交线路",
+      "交通路线",
+      "公交站点",
+      "交通设施",
+      "票价规则",
+      "关系明细",
+      "字段字典"
+    ]
+  },
+  "entities": {
+    "TransitHub": {
+      "chineseName": "交通枢纽",
+      "records": 4,
+      "columns": 49,
+      "csv": "贵阳市交通枢纽结构化表.csv",
+      "coordinateComplete": 0,
+      "h3Complete": 0,
+      "spatialFacilityReferences": 4,
+      "dataQuality": {
+        "needs_review": 4
+      }
+    },
+    "TransitLine": {
+      "chineseName": "公交线路",
+      "records": 302,
+      "columns": 34,
+      "csv": "贵阳市公交线路结构化表.csv",
+      "coordinateComplete": 0,
+      "h3Complete": 0,
+      "spatialFacilityReferences": 0,
+      "dataQuality": {
+        "needs_review": 302
+      }
+    },
+    "TransitRoute": {
+      "chineseName": "交通路线",
+      "records": 372,
+      "columns": 38,
+      "csv": "贵阳市交通路线结构化表.csv",
+      "coordinateComplete": 0,
+      "h3Complete": 0,
+      "spatialFacilityReferences": 0,
+      "dataQuality": {
+        "needs_review": 372
+      }
+    },
+    "TransitStop": {
+      "chineseName": "公交站点",
+      "records": 3630,
+      "columns": 45,
+      "csv": "贵阳市公交站点结构化表.csv",
+      "coordinateComplete": 2038,
+      "h3Complete": 2038,
+      "spatialFacilityReferences": 1592,
+      "dataQuality": {
+        "needs_review": 3630
+      }
+    },
+    "TransitFacility": {
+      "chineseName": "交通设施",
+      "records": 5279,
+      "columns": 55,
+      "csv": "贵阳市交通设施结构化表.csv",
+      "coordinateComplete": 5273,
+      "h3Complete": 5273,
+      "spatialFacilityReferences": 0,
+      "dataQuality": {
+        "needs_review": 5279
+      }
+    },
+    "TransportFareRule": {
+      "chineseName": "票价规则",
+      "records": 17,
+      "columns": 33,
+      "csv": "贵阳市交通票价规则结构化表.csv",
+      "coordinateComplete": 0,
+      "h3Complete": 0,
+      "spatialFacilityReferences": 0,
+      "dataQuality": {
+        "needs_review": 17
+      }
+    }
+  },
+  "totals": {
+    "entities": 9604,
+    "relations": 53457,
+    "fieldDictionaryRows": 254,
+    "relationCounts": {
+      "COLLECTED_IN": 9604,
+      "LineHasRoute": 372,
+      "NextStop": 7701,
+      "REF_APPLICABLE_ADMIN_AREA": 17,
+      "REF_BELONGS_TO_LINE": 372,
+      "REF_LOCATED_IN_ADMIN_AREA": 8797,
+      "REF_SPATIAL_FACILITY": 1596,
+      "RouteStopsAt": 8073,
+      "SOURCED_FROM": 16925
+    }
+  },
+  "validation": {
+    "passed": true,
+    "checksPassed": 24,
+    "checksTotal": 24,
+    "checks": [
+      {
+        "name": "工作表完整",
+        "passed": true,
+        "detail": [
+          "交通摘要",
+          "交通枢纽",
+          "公交线路",
+          "交通路线",
+          "公交站点",
+          "交通设施",
+          "票价规则",
+          "关系明细",
+          "字段字典"
+        ]
+      },
+      {
+        "name": "交通枢纽行列数",
+        "passed": true,
+        "detail": "4 rows / 49 cols"
+      },
+      {
+        "name": "交通枢纽字段顺序",
+        "passed": true,
+        "detail": "49 fields"
+      },
+      {
+        "name": "交通枢纽CSV行数",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "公交线路行列数",
+        "passed": true,
+        "detail": "302 rows / 34 cols"
+      },
+      {
+        "name": "公交线路字段顺序",
+        "passed": true,
+        "detail": "34 fields"
+      },
+      {
+        "name": "公交线路CSV行数",
+        "passed": true,
+        "detail": "302"
+      },
+      {
+        "name": "交通路线行列数",
+        "passed": true,
+        "detail": "372 rows / 38 cols"
+      },
+      {
+        "name": "交通路线字段顺序",
+        "passed": true,
+        "detail": "38 fields"
+      },
+      {
+        "name": "交通路线CSV行数",
+        "passed": true,
+        "detail": "372"
+      },
+      {
+        "name": "公交站点行列数",
+        "passed": true,
+        "detail": "3630 rows / 45 cols"
+      },
+      {
+        "name": "公交站点字段顺序",
+        "passed": true,
+        "detail": "45 fields"
+      },
+      {
+        "name": "公交站点CSV行数",
+        "passed": true,
+        "detail": "3630"
+      },
+      {
+        "name": "交通设施行列数",
+        "passed": true,
+        "detail": "5279 rows / 55 cols"
+      },
+      {
+        "name": "交通设施字段顺序",
+        "passed": true,
+        "detail": "55 fields"
+      },
+      {
+        "name": "交通设施CSV行数",
+        "passed": true,
+        "detail": "5279"
+      },
+      {
+        "name": "票价规则行列数",
+        "passed": true,
+        "detail": "17 rows / 33 cols"
+      },
+      {
+        "name": "票价规则字段顺序",
+        "passed": true,
+        "detail": "33 fields"
+      },
+      {
+        "name": "票价规则CSV行数",
+        "passed": true,
+        "detail": "17"
+      },
+      {
+        "name": "关系表行数",
+        "passed": true,
+        "detail": "53457"
+      },
+      {
+        "name": "字段字典行数",
+        "passed": true,
+        "detail": "254"
+      },
+      {
+        "name": "摘要公式",
+        "passed": true,
+        "detail": "32"
+      },
+      {
+        "name": "交通实体ID唯一",
+        "passed": true,
+        "detail": "9604"
+      },
+      {
+        "name": "关系源全部存在",
+        "passed": true,
+        "detail": "53457"
+      }
+    ],
+    "failures": []
+  },
+  "preview": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/transport_structured_20260916/previews/贵阳市交通结构化总表_摘要预览.png"
+}

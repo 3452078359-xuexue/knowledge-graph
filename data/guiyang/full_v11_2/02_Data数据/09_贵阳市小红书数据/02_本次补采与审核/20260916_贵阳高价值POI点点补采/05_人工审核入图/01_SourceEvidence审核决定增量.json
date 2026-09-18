@@ -1,0 +1,9 @@
+{
+  "datasetName": "贵阳市小红书人工审核SourceEvidence决定增量",
+  "city": "贵阳市",
+  "entityType": "SourceEvidence",
+  "recordCount": 0,
+  "sourcePolicy": "仅接收人工明确裁决；不自动修改基础POI；完整帖子正文仍留在本地帖子库。",
+  "generatedAt": "2026-09-17 04:41:09",
+  "records": []
+}

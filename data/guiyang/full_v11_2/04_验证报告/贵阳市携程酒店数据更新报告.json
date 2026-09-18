@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-09-17T02:17:48.731Z",
+  "source": {
+    "directory": "[LOCAL_HOME]/Desktop/贵阳携程酒店-全部数据表-20260915",
+    "primaryTable": "[LOCAL_HOME]/Desktop/贵阳携程酒店-全部数据表-20260915/01_最终统一主表/贵阳城市知识图谱_携程酒店_A_C统一POI详情.csv",
+    "rows": 4796
+  },
+  "output": {
+    "records": 4796,
+    "columns": 74,
+    "districtPopulated": 4795,
+    "coordinatePopulated": 4795,
+    "h3Populated": 4795,
+    "insideGuiyangMapCandidates": 4741,
+    "outsideProjectCoordinates": 54,
+    "unresolvedCoordinates": 1,
+    "amapPoiFallbackAccepted": 5,
+    "districtCorrectedByAmap": 6,
+    "amenitiesPopulated": 4770,
+    "descriptionsPopulated": 3484,
+    "telephonesPopulated": 4790
+  },
+  "qualityRules": [
+    "携程一级列表与二级详情按平台酒店ID合并",
+    "携程BD09坐标转换为项目统一GCJ02后派生H3 R9/R7",
+    "对携程district为空的173家调用高德逆地理编码；另对6家区县与网格冲突酒店复核并纠正",
+    "6家携程详情页失效酒店使用高德住宿POI搜索；5家保留待复核匹配，1家不强行匹配",
+    "高德不会覆盖携程评分、点评、简介、政策、设施或图片字段"
+  ],
+  "sha256": {
+    "csv": "d84670433f36f3e867801a158e26bebec6a85d8d359dbd25f4c1e6afa921c62d",
+    "json": "d577051e6ae84df572cd143c4a8ec82f38e45b48b50cf4fa7c73b51d4549d63d"
+  },
+  "graphSync": {
+    "version": "11.1.0-ctrip-hotel-detail",
+    "placeAlias": 4741,
+    "mapEligible": 4741,
+    "csvJsonCellMismatches": 0
+  }
+}

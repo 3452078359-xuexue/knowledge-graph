@@ -1,0 +1,5 @@
+{
+  "food": "AMap only; business.rating >= 3.5; no Dianping alignment",
+  "accommodation": "Ctrip only",
+  "other_business": "existing verified baseline, including AMap where already allowed"
+}

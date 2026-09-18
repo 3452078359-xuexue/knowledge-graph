@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "xlsx_zip_intact": true,
+    "sheet_names_exact": true,
+    "sheet_rows_exact": true,
+    "csv_rows_exact": true,
+    "report_passed": true,
+    "report_hash_matches": true,
+    "formula_count_expected": true
+  },
+  "workbook": {
+    "path": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/outputs/01a09fcc-e18b-7263-b908-c316ad04e02a/贵阳市空间行政区数据_结构化总表.xlsx",
+    "bytes": 1897631,
+    "sha256": "3547bc6bdce0d0a03e697a4f69a9e6e4475778d38b6f7d20b5a663cb5385da21",
+    "sheetRows": {
+      "城市": 2,
+      "行政区": 158,
+      "商圈片区": 172,
+      "H3网格样本": 3715,
+      "地名别名样本": 3248,
+      "关系汇总样本": 1571,
+      "官方区划审核": 158,
+      "字段字典": 165
+    },
+    "formulaCount": 12
+  },
+  "csvRows": {
+    "贵阳市城市结构化表.csv": 1,
+    "贵阳市行政区结构化表.csv": 157,
+    "贵阳市商圈片区结构化表.csv": 171,
+    "贵阳市H3空间网格结构化表.csv": 13011,
+    "贵阳市地名别名索引结构化表.csv": 40106,
+    "贵阳市空间行政区关系明细表.csv": 178426,
+    "贵阳市官方行政区审核表.csv": 157
+  }
+}

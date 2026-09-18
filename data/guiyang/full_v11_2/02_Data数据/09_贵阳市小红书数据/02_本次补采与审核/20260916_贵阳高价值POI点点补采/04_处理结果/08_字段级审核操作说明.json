@@ -1,0 +1,43 @@
+{
+  "purpose": "逐帖、逐字段人工裁决；本表不直接修改基础 POI。",
+  "rowCount": 2140,
+  "acceptedDecisionRequirements": {
+    "直接指向实体": "是",
+    "分店确认": "是或不适用",
+    "游客亲历": "是",
+    "独立用户": "是",
+    "可用体验断言": "是",
+    "目标字段": "必须属于可用字段范围且存在于目标实体 Schema",
+    "断言值": "非空",
+    "连续引文": "必须能在本地完整帖子正文中逐字定位（仅忽略空白差异）",
+    "审核决定": "采纳",
+    "审核人和审核时间": "均非空",
+    "机器风险": "若标记营销或协同营销，风险复核结论必须为误报并写审核说明"
+  },
+  "decisions": [
+    "采纳",
+    "驳回"
+  ],
+  "safeFieldAllowlist": {
+    "FoodAndBeverage": [
+      "visitorDemandScenarios",
+      "ugcPoiSubtype",
+      "ugcLocationDescription"
+    ],
+    "Accommodation": [
+      "visitorDemandScenarios",
+      "ugcPoiSubtype",
+      "ugcLocationDescription"
+    ],
+    "ScenicArea": [
+      "visitorDemandScenarios",
+      "ugcPoiSubtype",
+      "ugcLocationDescription"
+    ],
+    "TransitHub": [
+      "accessGuide"
+    ]
+  },
+  "multiClaimRule": "同一帖子支持多个字段时复制该行，证据序号改为2、3……；每行只写一个字段与一个断言。",
+  "graphPolicy": "只有 apply_guiyang_xhs_review_decisions.py 校验通过后才生成 SourceEvidence 决定增量；仍不自动改写基础 POI。"
+}

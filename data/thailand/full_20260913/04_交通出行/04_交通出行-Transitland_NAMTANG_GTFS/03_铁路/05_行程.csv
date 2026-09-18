@@ -1,0 +1,200 @@
+﻿交通类型代码,交通类型中文,route_id,service_id,trip_id,trip_headsign,direction_id,shape_id,wheelchair_accessible,trip_headsign_泰文,trip_headsign_英文
+2,铁路,6,3,89,กรุงเทพ;Bangkok,1,78,2,กรุงเทพ,Bangkok
+2,铁路,8,3,90,กรุงเทพ;Bangkok,1,79,2,กรุงเทพ,Bangkok
+2,铁路,10,3,91,กรุงเทพ;Bangkok,1,80,2,กรุงเทพ,Bangkok
+2,铁路,12,3,92,เชียงราก;Chiang Rak,0,81,2,เชียงราก,Chiang Rak
+2,铁路,13,3,93,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,82,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,24,3,94,นครปฐม;Nakhon Pathom,0,83,2,นครปฐม,Nakhon Pathom
+2,铁路,25,3,95,กรุงเทพ;Bangkok,1,84,2,กรุงเทพ,Bangkok
+2,铁路,26,3,96,นครปฐม;Nakhon Pathom,0,85,2,นครปฐม,Nakhon Pathom
+2,铁路,27,3,97,กรุงเทพ;Bangkok,1,86,2,กรุงเทพ,Bangkok
+2,铁路,28,3,98,นครปฐม;Nakhon Pathom,0,87,2,นครปฐม,Nakhon Pathom
+2,铁路,29,3,99,กรุงเทพ;Bangkok,1,88,2,กรุงเทพ,Bangkok
+2,铁路,30,3,100,นครปฐม;Nakhon Pathom,0,89,2,นครปฐม,Nakhon Pathom
+2,铁路,31,3,101,กรุงเทพ;Bangkok,1,90,2,กรุงเทพ,Bangkok
+2,铁路,34,3,102,ม.ธรรมศาสตร์;Thammasat University,0,91,2,ม.ธรรมศาสตร์,Thammasat University
+2,铁路,35,3,103,กรุงเทพ;Bangkok,1,92,2,กรุงเทพ,Bangkok
+2,铁路,37,3,104,กรุงเทพ;Bangkok,1,93,2,กรุงเทพ,Bangkok
+2,铁路,44,3,105,โพรงมะเดื่อ;Phrong Madua,0,94,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,47,3,106,โพรงมะเดื่อ;Phrong Madua,0,95,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,48,3,107,โพรงมะเดื่อ;Phrong Madua,0,96,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,50,3,108,โพรงมะเดื่อ;Phrong Madua,0,97,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,52,3,109,โพรงมะเดื่อ;Phrong Madua,0,98,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,53,3,110,กรุงเทพ;Bangkok,1,99,2,กรุงเทพ,Bangkok
+2,铁路,54,3,111,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,100,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,55,3,112,กรุงเทพ;Bangkok,1,101,2,กรุงเทพ,Bangkok
+2,铁路,56,3,113,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,102,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,57,3,114,กรุงเทพ;Bangkok,1,103,2,กรุงเทพ,Bangkok
+2,铁路,58,3,115,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,104,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,59,3,116,กรุงเทพ;Bangkok,1,105,2,กรุงเทพ,Bangkok
+2,铁路,60,3,117,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,106,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,61,3,118,กรุงเทพ;Bangkok,1,107,2,กรุงเทพ,Bangkok
+2,铁路,83,3,119,โพรงมะเดื่อ;Phrong Madua,0,108,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,85,3,120,โพรงมะเดื่อ;Phrong Madua,0,109,2,โพรงมะเดื่อ,Phrong Madua
+2,铁路,88,3,121,กรุงเทพ;Bangkok,1,110,2,กรุงเทพ,Bangkok
+2,铁路,89,3,122,พระจอมเกล้า;Pra Chom Klao,0,111,2,พระจอมเกล้า,Pra Chom Klao
+2,铁路,90,3,123,กรุงเทพ;Bangkok,1,112,2,กรุงเทพ,Bangkok
+2,铁路,100,3,126,กรุงเทพ;Bangkok,1,113,2,กรุงเทพ,Bangkok
+2,铁路,101,3,127,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,114,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,102,3,128,กรุงเทพ;Bangkok,1,115,2,กรุงเทพ,Bangkok
+2,铁路,103,3,129,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,116,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,68,3,130,ลพบุรี;Lop Buri,0,117,2,ลพบุรี,Lop Buri
+2,铁路,73,5,133,นวนคร;Nava Nakhon,0,118,2,นวนคร,Nava Nakhon
+2,铁路,74,5,134,กรุงเทพ;Bangkok,1,119,2,กรุงเทพ,Bangkok
+2,铁路,77,5,137,เชียงราก;Chiang Rak,0,120,2,เชียงราก,Chiang Rak
+2,铁路,78,5,138,กรุงเทพ;Bangkok,1,121,2,กรุงเทพ,Bangkok
+2,铁路,79,5,139,นวนคร;Nava Nakhon,0,122,2,นวนคร,Nava Nakhon
+2,铁路,81,5,140,นวนคร;Nava Nakhon,0,123,2,นวนคร,Nava Nakhon
+2,铁路,91,5,141,หัวตะเข้;Hua Takhe,1,124,2,หัวตะเข้,Hua Takhe
+2,铁路,92,5,142,กรุงเทพ;Bangkok,1,125,2,กรุงเทพ,Bangkok
+2,铁路,93,5,143,หัวตะเข้;Hua Takhe,0,126,2,หัวตะเข้,Hua Takhe
+2,铁路,94,5,144,กรุงเทพ;Bangkok,1,127,2,กรุงเทพ,Bangkok
+2,铁路,96,5,145,พระจอมเกล้า;Pra Chom Klao,0,128,2,พระจอมเกล้า,Pra Chom Klao
+2,铁路,97,5,146,กรุงเทพ;Bangkok,1,129,2,กรุงเทพ,Bangkok
+2,铁路,66,7,147,เชียงราก;Chiang Rak,0,130,2,เชียงราก,Chiang Rak
+2,铁路,67,7,148,กรุงเทพ;Bangkok,1,131,2,กรุงเทพ,Bangkok
+2,铁路,95,7,149,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,132,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,64,6,151,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,133,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,65,6,152,กรุงเทพ;Bangkok,1,134,2,กรุงเทพ,Bangkok
+2,铁路,62,1,153,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,135,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,63,1,154,กรุงเทพ;Bangkok,1,136,2,กรุงเทพ,Bangkok
+2,铁路,43,3,155,กรุงเทพ;Bangkok,1,137,2,กรุงเทพ,Bangkok
+2,铁路,45,3,156,ธนบุรี;Thon Buri,1,138,2,ธนบุรี,Thon Buri
+2,铁路,46,3,157,ธนบุรี;Thon Buri,1,139,2,ธนบุรี,Thon Buri
+2,铁路,49,3,158,ธนบุรี;Thon Buri,1,140,2,ธนบุรี,Thon Buri
+2,铁路,51,3,159,ธนบุรี;Thon Buri,1,141,2,ธนบุรี,Thon Buri
+2,铁路,69,3,160,กรุงเทพ;Bangkok,1,142,2,กรุงเทพ,Bangkok
+2,铁路,84,3,161,ธนบุรี;Thon Buri,1,143,2,ธนบุรี,Thon Buri
+2,铁路,86,3,162,กรุงเทพ;Bangkok,1,144,2,กรุงเทพ,Bangkok
+2,铁路,80,5,163,กรุงเทพ;Bangkok,1,145,2,กรุงเทพ,Bangkok
+2,铁路,82,5,164,กรุงเทพ;Bangkok,1,146,2,กรุงเทพ,Bangkok
+2,铁路,7,3,165,รังสิต;Rangsit,0,147,2,รังสิต,Rangsit
+2,铁路,9,3,166,รังสิต;Rangsit,0,148,2,รังสิต,Rangsit
+2,铁路,11,3,167,รังสิต;Rangsit,0,149,2,รังสิต,Rangsit
+2,铁路,14,3,168,รังสิต;Rangsit,0,150,2,รังสิต,Rangsit
+2,铁路,15,3,169,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,151,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,16,3,170,เชียงราก;Chiang Rak,0,152,2,เชียงราก,Chiang Rak
+2,铁路,17,3,171,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,153,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,18,3,172,รังสิต;Rangsit,0,154,2,รังสิต,Rangsit
+2,铁路,20,3,174,รังสิต;Rangsit,0,156,2,รังสิต,Rangsit
+2,铁路,21,3,175,กรุงเทพ;Bangkok,1,157,2,กรุงเทพ,Bangkok
+2,铁路,22,3,176,รังสิต;Rangsit,0,158,2,รังสิต,Rangsit
+2,铁路,23,3,177,กรุงเทพ;Bangkok,1,159,2,กรุงเทพ,Bangkok
+2,铁路,36,3,178,ม.ธรรมศาสตร์;Thammasat University,0,160,2,ม.ธรรมศาสตร์,Thammasat University
+2,铁路,38,3,179,ม.ธรรมศาสตร์;Thammasat University,0,161,2,ม.ธรรมศาสตร์,Thammasat University
+2,铁路,42,3,180,รังสิต;Rangsit,0,162,2,รังสิต,Rangsit
+2,铁路,39,3,181,กรุงเทพ;Bangkok,1,163,2,กรุงเทพ,Bangkok
+2,铁路,40,3,182,รังสิต;Rangsit,0,164,2,รังสิต,Rangsit
+2,铁路,41,3,183,กรุงเทพ;Bangkok,1,165,2,กรุงเทพ,Bangkok
+2,铁路,72,3,184,รังสิต;Rangsit,0,166,2,รังสิต,Rangsit
+2,铁路,87,3,185,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,167,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,105,3,186,ศาลายา;Sala Ya,0,168,2,ศาลายา,Sala Ya
+2,铁路,106,3,187,ธนบุรี;Thon Buri,1,169,2,ธนบุรี,Thon Buri
+2,铁路,107,3,188,ศาลายา;Sala Ya,0,170,2,ศาลายา,Sala Ya
+2,铁路,108,3,189,ธนบุรี;Thon Buri,1,171,2,ธนบุรี,Thon Buri
+2,铁路,109,3,190,ศาลายา;Sala Ya,0,172,2,ศาลายา,Sala Ya
+2,铁路,110,3,191,ธนบุรี;Thon Buri,1,173,2,ธนบุรี,Thon Buri
+2,铁路,111,3,192,ศาลายา;Sala Ya,0,219,2,ศาลายา,Sala Ya
+2,铁路,112,3,193,ธนบุรี;Thon Buri,1,174,2,ธนบุรี,Thon Buri
+2,铁路,113,3,194,ศาลายา;Sala Ya,0,175,2,ศาลายา,Sala Ya
+2,铁路,114,3,195,ธนบุรี;Thon Buri,1,176,2,ธนบุรี,Thon Buri
+2,铁路,223,3,196,วงเวียนใหญ่;Wongwian Yai,1,177,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,224,3,197,มหาชัย;Maha Chai,0,178,2,มหาชัย,Maha Chai
+2,铁路,225,3,198,วงเวียนใหญ่;Wongwian Yai,1,179,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,226,3,199,มหาชัย;Maha Chai,0,180,2,มหาชัย,Maha Chai
+2,铁路,227,3,200,วงเวียนใหญ่;Wongwian Yai,1,181,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,228,3,201,มหาชัย;Maha Chai,0,182,2,มหาชัย,Maha Chai
+2,铁路,229,3,202,วงเวียนใหญ่;Wongwian Yai,1,183,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,230,3,203,มหาชัย;Maha Chai,0,184,2,มหาชัย,Maha Chai
+2,铁路,231,3,204,วงเวียนใหญ่;Wongwian Yai,1,185,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,232,3,205,มหาชัย;Maha Chai,0,186,2,มหาชัย,Maha Chai
+2,铁路,233,3,206,วงเวียนใหญ่;Wongwian Yai,1,187,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,234,3,207,มหาชัย;Maha Chai,0,188,2,มหาชัย,Maha Chai
+2,铁路,235,3,208,วงเวียนใหญ่;Wongwian Yai,1,189,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,236,3,209,มหาชัย;Maha Chai,0,190,2,มหาชัย,Maha Chai
+2,铁路,237,3,210,วงเวียนใหญ่;Wongwian Yai,1,191,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,238,3,211,มหาชัย;Maha Chai,0,192,2,มหาชัย,Maha Chai
+2,铁路,213,3,212,วงเวียนใหญ่;Wongwian Yai,1,193,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,214,3,213,มหาชัย;Maha Chai,0,194,2,มหาชัย,Maha Chai
+2,铁路,215,3,214,วงเวียนใหญ่;Wongwian Yai,1,195,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,216,3,215,มหาชัย;Maha Chai,0,196,2,มหาชัย,Maha Chai
+2,铁路,217,3,216,วงเวียนใหญ่;Wongwian Yai,1,197,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,218,3,217,มหาชัย;Maha Chai,0,198,2,มหาชัย,Maha Chai
+2,铁路,219,3,218,วงเวียนใหญ่;Wongwian Yai,1,199,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,220,3,219,มหาชัย;Maha Chai,0,200,2,มหาชัย,Maha Chai
+2,铁路,221,3,220,วงเวียนใหญ่;Wongwian Yai,1,201,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,222,3,221,มหาชัย;Maha Chai,0,202,2,มหาชัย,Maha Chai
+2,铁路,239,3,222,วงเวียนใหญ่;Wongwian Yai,1,203,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,240,3,223,มหาชัย;Maha Chai,0,204,2,มหาชัย,Maha Chai
+2,铁路,241,3,224,วงเวียนใหญ่;Wongwian Yai,1,205,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,242,3,225,มหาชัย;Maha Chai,0,206,2,มหาชัย,Maha Chai
+2,铁路,243,3,226,วงเวียนใหญ่;Wongwian Yai,1,207,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,244,3,227,มหาชัย;Maha Chai,0,208,2,มหาชัย,Maha Chai
+2,铁路,245,3,228,วงเวียนใหญ่;Wongwian Yai,1,209,2,วงเวียนใหญ่,Wongwian Yai
+2,铁路,246,3,229,มหาชัย;Maha Chai,0,210,2,มหาชัย,Maha Chai
+2,铁路,247,3,230,บ้านแหลม;Ban Laem,1,211,2,บ้านแหลม,Ban Laem
+2,铁路,248,3,231,แม่กลอง;Mae Klong,0,212,2,แม่กลอง,Mae Klong
+2,铁路,249,3,232,บ้านแหลม;Ban Laem,1,213,2,บ้านแหลม,Ban Laem
+2,铁路,250,3,233,แม่กลอง;Mae Klong,0,214,2,แม่กลอง,Mae Klong
+2,铁路,251,3,234,บ้านแหลม;Ban Laem,1,215,2,บ้านแหลม,Ban Laem
+2,铁路,252,3,235,แม่กลอง;Mae Klong,0,216,2,แม่กลอง,Mae Klong
+2,铁路,253,3,236,บ้านแหลม;Ban Laem,1,217,2,บ้านแหลม,Ban Laem
+2,铁路,254,3,237,แม่กลอง;Mae Klong,0,218,2,แม่กลอง,Mae Klong
+2,铁路,5,1,238,พญาไท;Phaya Thai,1,220,1,พญาไท,Phaya Thai
+2,铁路,5,1,239,สุวรรณภูมิ;Suvarnabhumi Airport,0,221,1,สุวรรณภูมิ,Suvarnabhumi Airport
+2,铁路,5,2,240,พญาไท;Phaya Thai,1,220,1,พญาไท,Phaya Thai
+2,铁路,5,2,241,สุวรรณภูมิ;Suvarnabhumi Airport,0,221,1,สุวรรณภูมิ,Suvarnabhumi Airport
+2,铁路,1075,6,2761,กรุงเทพ;Bangkok,1,136,2,กรุงเทพ,Bangkok
+2,铁路,1074,6,2762,คลองหลวงแพ่ง;Khlong Luang Phaeng,0,135,2,คลองหลวงแพ่ง,Khlong Luang Phaeng
+2,铁路,2143,1,5808,เชียงราก;Chiang Rak,1,2358,2,เชียงราก,Chiang Rak
+2,铁路,2145,1,5813,รังสิต;Rangsit,1,2363,2,รังสิต,Rangsit
+2,铁路,2146,1,5814,รังสิต;Rangsit,1,2364,2,รังสิต,Rangsit
+2,铁路,2147,1,5815,รังสิต;Rangsit,1,2365,2,รังสิต,Rangsit
+2,铁路,2159,1,5861,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2411,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2160,1,5862,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2412,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2161,1,5863,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2413,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2163,1,5864,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2414,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2164,1,5869,อุบลราชธานี;Ubonratchathani,1,2419,2,อุบลราชธานี,Ubonratchathani
+2,铁路,2166,1,5870,หนองคาย;Nong Khai,1,2420,2,หนองคาย,Nong Khai
+2,铁路,2167,1,5871,อุบลราชธานี;Ubon Ratchathani,1,2421,2,อุบลราชธานี,Ubon Ratchathani
+2,铁路,2168,1,5872,หนองคาย;Nong Khai,1,2422,2,หนองคาย,Nong Khai
+2,铁路,2169,1,5873,อุบลราชธานี;Ubon Ratchathani,1,2423,2,อุบลราชธานี,Ubon Ratchathani
+2,铁路,2171,1,5878,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2428,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,19,1,5879,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2429,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,19,1,5880,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2430,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2172,1,5881,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2431,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2173,1,5882,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2432,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2174,1,5883,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2433,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2175,1,5884,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2434,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2176,1,5885,สุราษฎร์ธานี;Surat Thani,1,2435,2,สุราษฎร์ธานี,Surat Thani
+2,铁路,2177,1,5886,นครปฐม;Nakhon Pathom,1,2436,2,นครปฐม,Nakhon Pathom
+2,铁路,2179,1,5887,นครปฐม;Krung Thep Aphiwat - Trang,1,2437,2,นครปฐม,Krung Thep Aphiwat - Trang
+2,铁路,2180,1,5888,นครปฐม;Nakhon Pathom,1,2438,2,นครปฐม,Nakhon Pathom
+2,铁路,2181,1,5889,นครปฐม;Nakhon Pathom,1,2439,2,นครปฐม,Nakhon Pathom
+2,铁路,2276,1,6246,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,2796,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2338,3,6521,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,3071,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2339,3,6522,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),1,3072,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2340,1,6523,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),1,3073,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2341,1,6524,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),1,3074,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2342,1,6525,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),1,3075,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2731,3,7925,เชียงใหม่;Chiang Mai,0,4535,2,เชียงใหม่,Chiang Mai
+2,铁路,83,3,7926,ราชบุรี;Ratchaburi,0,4536,2,ราชบุรี,Ratchaburi
+2,铁路,2732,3,7927,ชุมทางแก่งคอย;Kaeng Khoi Junction,0,4537,2,ชุมทางแก่งคอย,Kaeng Khoi Junction
+2,铁路,2733,3,7928,อุบลราชธานี;Ubon Ratchathani,0,4538,2,อุบลราชธานี,Ubon Ratchathani
+2,铁路,2177,3,7929,ชุมทางหาดใหญ่;Hat Yai Junction,0,4539,2,ชุมทางหาดใหญ่,Hat Yai Junction
+2,铁路,2340,1,7930,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),1,4540,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2178,3,7931,สุไหงโก-ลก;Su-Ngai Kolok,0,4541,2,สุไหงโก-ลก,Su-Ngai Kolok
+2,铁路,2734,3,7932,เชียงใหม่;Chiang Mai,0,4542,2,เชียงใหม่,Chiang Mai
+2,铁路,2341,3,7933,SRT กรุงเทพอภิวัฒน์;SRT Bangkok (Krung Thep Aphiwat),1,4543,2,SRT กรุงเทพอภิวัฒน์,SRT Bangkok (Krung Thep Aphiwat)
+2,铁路,2735,3,7934,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),0,4544,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2736,3,7935,หนองคาย;Nong Khai,0,4545,2,หนองคาย,Nong Khai
+2,铁路,2737,3,7936,กรุงเทพอภิวัฒน์;Bangkok (Krung Thep Aphiwat),0,4546,2,กรุงเทพอภิวัฒน์,Bangkok (Krung Thep Aphiwat)
+2,铁路,2738,1,7937,รังสิต;Rangsit,1,4547,2,รังสิต,Rangsit
+2,铁路,2739,1,7938,รังสิต;Rangsit,1,4548,2,รังสิต,Rangsit
+2,铁路,2740,1,7939,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,4549,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,28,3,7940,SRT สุไหงโก-ลก;SRT Su-Ngai Kolok,0,4550,2,SRT สุไหงโก-ลก,SRT Su-Ngai Kolok
+2,铁路,29,3,7941,SRT กรุงเทพอภิวัฒน์;SRT Bangkok (Krung Thep Aphiwat),1,4551,2,SRT กรุงเทพอภิวัฒน์,SRT Bangkok (Krung Thep Aphiwat)
+2,铁路,2181,3,7942,SRT สุราษฎร์ธานี;SRT Surat Thani,0,4552,2,SRT สุราษฎร์ธานี,SRT Surat Thani
+2,铁路,2741,1,7943,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,4553,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2742,1,7944,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,4554,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat
+2,铁路,2743,1,7945,กรุงเทพอภิวัฒน์;Krung Thep Aphiwat,1,4555,2,กรุงเทพอภิวัฒน์,Krung Thep Aphiwat

@@ -1,0 +1,29 @@
+{
+  "plannedQuestions": 216,
+  "successfulQuestions": 184,
+  "p0": {
+    "planned": 116,
+    "collected": 116,
+    "complete": true,
+    "questionsWithReviewEvidence": 98,
+    "directEvidenceQuestionHitRate": 0.8448,
+    "explicitNoSource": 10,
+    "explicitNoSourceRate": 0.0862,
+    "pendingEvidence": 1093,
+    "pendingEvidencePerQuestion": 9.42,
+    "nonCampaignAuthors": 1002,
+    "nonCampaignAuthorsPerQuestion": 8.64
+  },
+  "p1Gate": "全部通过：可以启动P1",
+  "sampleMetricsPassed": true,
+  "semanticSpotCheckEligible": true,
+  "p1Eligible": true,
+  "gatePolicy": {
+    "minimumP0Sample": 30,
+    "minimumDirectEvidenceQuestionHitRate": 0.55,
+    "maximumExplicitNoSourceRate": 0.4,
+    "minimumPendingEvidencePerQuestion": 3,
+    "minimumNonCampaignAuthorsPerQuestion": 2,
+    "semanticSpotCheckRequiredBeforeP1": true
+  }
+}

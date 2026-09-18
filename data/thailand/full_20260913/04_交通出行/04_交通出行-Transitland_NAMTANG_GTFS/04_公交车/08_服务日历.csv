@@ -1,0 +1,4 @@
+﻿交通类型代码,交通类型中文,service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+3,公交车,1,1,1,1,1,1,0,0,20230101,20261231
+3,公交车,2,0,0,0,0,0,1,1,20230101,20261231
+3,公交车,3,1,1,1,1,1,1,1,20230101,20261231

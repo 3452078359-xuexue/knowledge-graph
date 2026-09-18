@@ -1,0 +1,6 @@
+﻿交通类型代码,交通类型中文,route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_long_name_泰文,route_long_name_英文,中文展示名,中文名状态,中文名依据URL
+0,有轨电车与轻轨,1,BTSC,Sukhumvit,สายสุขุมวิท (สายสีเขียวอ่อน);Sukhumvit (Light green Line),รถไฟฟ้าบีทีเอส สุขุมวิท (สีเขียวอ่อน);Bangkok mass Transit System light green Line,0,65b724,สายสุขุมวิท (สายสีเขียวอ่อน),Sukhumvit (Light green Line),BTS素坤逸线（浅绿色线）,公开常见中文名（非官方）,https://zh.wikipedia.org/wiki/素坤逸线
+0,有轨电车与轻轨,2,BTSC,Silom,สายสีลม (สายสีเขียวแก่);Silom (Dark green Line),รถไฟฟ้าบีทีเอส สายสีลม (สีเขียวแก่);Bangkok mass Transit System Dark green Line,0,246B5B,สายสีลม (สายสีเขียวแก่),Silom (Dark green Line),BTS是隆线（深绿色线）,公开常见中文名（非官方）,https://zh.wikipedia.org/wiki/是隆线
+0,有轨电车与轻轨,2025,BTSC,Gold,สายสีทอง [สีทอง];Gold Line,รถไฟฟ้าบีทีเอส สายสีทอง [สีทอง];Bangkok mass Transit System Gold Line,0,A3862A,สายสีทอง [สีทอง],Gold Line,,未提供中文；保留泰文/英文原名,
+0,有轨电车与轻轨,2026,SRTET,Red,สายสีแดงเข้ม;Dark Red Line,รถไฟฟ้าชานเมือง สายสีแดงเข้ม;State Railway of Thailand Red Line,0,e10506,สายสีแดงเข้ม,Dark Red Line,,未提供中文；保留泰文/英文原名,
+0,有轨电车与轻轨,2027,SRTET,Red,สายสีแดงอ่อน;Light Red Line,รถไฟฟ้าชานเมือง สายสีแดงอ่อน;State Railway of Thailand Red Line,0,fd5353,สายสีแดงอ่อน,Light Red Line,,未提供中文；保留泰文/英文原名,

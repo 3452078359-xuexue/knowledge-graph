@@ -1,0 +1,108 @@
+﻿交通类型代码,交通类型中文,zone_id,stop_id,stop_name,stop_name_泰文,stop_name_英文,票价规则引用次数,映射状态
+1,地铁,329,329,MRT สีลม;MRT Si Lom,MRT สีลม,MRT Si Lom,76,已匹配stops.zone_id
+1,地铁,330,330,MRT บางพลู;MRT Bang Phlu,MRT บางพลู,MRT Bang Phlu,32,已匹配stops.zone_id
+1,地铁,331,331,MRT เตาปูน;MRT Tao Poon,MRT เตาปูน,MRT Tao Poon,108,已匹配stops.zone_id
+1,地铁,332,332,MRT ไทรม้า;MRT Sai Ma,MRT ไทรม้า,MRT Sai Ma,32,已匹配stops.zone_id
+1,地铁,333,333,MRT คลองเตย;MRT Khlong Toei,MRT คลองเตย,MRT Khlong Toei,76,已匹配stops.zone_id
+1,地铁,334,334,MRT บางซื่อ;MRT BANG SUE,MRT บางซื่อ,MRT BANG SUE,76,已匹配stops.zone_id
+1,地铁,335,335,MRT บางซ่อน;MRT Bang Son,MRT บางซ่อน,MRT Bang Son,32,已匹配stops.zone_id
+1,地铁,336,336,MRT ลุมพินี;MRT Lumphini,MRT ลุมพินี,MRT Lumphini,76,已匹配stops.zone_id
+1,地铁,337,337,MRT สามย่าน;MRT Sam Yan,MRT สามย่าน,MRT Sam Yan,76,已匹配stops.zone_id
+1,地铁,338,338,MRT บางกระสอ;MRT Bang Krasor,MRT บางกระสอ,MRT Bang Krasor,32,已匹配stops.zone_id
+1,地铁,339,339,MRT พหลโยธิน;MRT Phahon Yothin,MRT พหลโยธิน,MRT Phahon Yothin,76,已匹配stops.zone_id
+1,地铁,340,340,MRT ลาดพร้าว;MRT Lat Phrao,MRT ลาดพร้าว,MRT Lat Phrao,76,已匹配stops.zone_id
+1,地铁,341,341,MRT สุขุมวิท;MRT Sukhumvit,MRT สุขุมวิท,MRT Sukhumvit,76,已匹配stops.zone_id
+1,地铁,342,342,MRT สุทธิสาร;MRT Sutthisan,MRT สุทธิสาร,MRT Sutthisan,76,已匹配stops.zone_id
+1,地铁,343,343,MRT หัวลำโพง;MRT Hua Lamphong,MRT หัวลำโพง,MRT Hua Lamphong,76,已匹配stops.zone_id
+1,地铁,344,344,MRT ห้วยขวาง;MRT Huai Khwang,MRT ห้วยขวาง,MRT Huai Khwang,76,已匹配stops.zone_id
+1,地铁,345,345,MRT เพชรบุรี;MRT Phetchaburi,MRT เพชรบุรี,MRT Phetchaburi,76,已匹配stops.zone_id
+1,地铁,346,346,MRT กำแพงเพชร;MRT Kamphaeng Phet,MRT กำแพงเพชร,MRT Kamphaeng Phet,76,已匹配stops.zone_id
+1,地铁,347,347,MRT วงศ์สว่าง;MRT Wong Sawang,MRT วงศ์สว่าง,MRT Wong Sawang,32,已匹配stops.zone_id
+1,地铁,348,348,MRT คลองบางไผ่;MRT Khlong Bang Phai,MRT คลองบางไผ่,MRT Khlong Bang Phai,32,已匹配stops.zone_id
+1,地铁,349,349,MRT บางรักใหญ่;MRT Bang Rak Yai,MRT บางรักใหญ่,MRT Bang Rak Yai,32,已匹配stops.zone_id
+1,地铁,350,350,MRT พระรามเก้า;MRT Phra Ram 9,MRT พระรามเก้า,MRT Phra Ram 9,76,已匹配stops.zone_id
+1,地铁,351,351,MRT รัชดาภิเษก;MRT Ratchadaphisek,MRT รัชดาภิเษก,MRT Ratchadaphisek,76,已匹配stops.zone_id
+1,地铁,352,352,MRT สวนจตุจักร;MRT Chatuchak Park,MRT สวนจตุจักร,MRT Chatuchak Park,76,已匹配stops.zone_id
+1,地铁,353,353,MRT ตลาดบางใหญ่;MRT Talad Bang Yai,MRT ตลาดบางใหญ่,MRT Talad Bang Yai,32,已匹配stops.zone_id
+1,地铁,354,354,MRT แยกติวานนท์;MRT Yeak Tiwanon,MRT แยกติวานนท์,MRT Yeak Tiwanon,32,已匹配stops.zone_id
+1,地铁,355,355,MRT สามแยกบางใหญ่;MRT Sam Yeak Bang Yai,MRT สามแยกบางใหญ่,MRT Sam Yeak Bang Yai,32,已匹配stops.zone_id
+1,地铁,356,356,MRT กระทรวงสาธารณสุข;MRT Ministry of Public Health,MRT กระทรวงสาธารณสุข,MRT Ministry of Public Health,32,已匹配stops.zone_id
+1,地铁,357,357,MRT บางรักน้อยท่าอิฐ;MRT Bang Rak Noi Tha It,MRT บางรักน้อยท่าอิฐ,MRT Bang Rak Noi Tha It,32,已匹配stops.zone_id
+1,地铁,358,358,MRT สะพานพระนั่งเกล้า;MRT Phra Nang Klao Bridge,MRT สะพานพระนั่งเกล้า,MRT Phra Nang Klao Bridge,32,已匹配stops.zone_id
+1,地铁,359,359,MRT ศูนย์ราชการนนทบุรี;MRT Nonthaburi Civic Center,MRT ศูนย์ราชการนนทบุรี,MRT Nonthaburi Civic Center,96,已匹配stops.zone_id
+1,地铁,360,360,MRT ศูนย์วัฒนธรรมแห่งประเทศไทย;MRT Thailand Cultural Centre,MRT ศูนย์วัฒนธรรมแห่งประเทศไทย,MRT Thailand Cultural Centre,76,已匹配stops.zone_id
+1,地铁,361,361,MRT ศูนย์การประชุมแห่งชาติสิริกิติ์;MRT Queen Sirikit National Convention Centre,MRT ศูนย์การประชุมแห่งชาติสิริกิติ์,MRT Queen Sirikit National Convention Centre,76,已匹配stops.zone_id
+1,地铁,362,362,MRT แยกนนทบุรี 1;MRT Yeak Nonthaburi 1,MRT แยกนนทบุรี 1,MRT Yeak Nonthaburi 1,32,已匹配stops.zone_id
+1,地铁,13624,13624,MRT วัดมังกร;MRT wat Mangkon,MRT วัดมังกร,MRT wat Mangkon,76,已匹配stops.zone_id
+1,地铁,13625,13625,MRT สามยอด;MRT Sam Yot,MRT สามยอด,MRT Sam Yot,76,已匹配stops.zone_id
+1,地铁,13626,13626,MRT สนามไชย;MRT Sanam Chai,MRT สนามไชย,MRT Sanam Chai,76,已匹配stops.zone_id
+1,地铁,13627,13627,MRT อิสรภาพ;MRT Itsaraphap,MRT อิสรภาพ,MRT Itsaraphap,76,已匹配stops.zone_id
+1,地铁,13628,13628,MRT ท่าพระ;MRT Tha Phra,MRT ท่าพระ,MRT Tha Phra,76,已匹配stops.zone_id
+1,地铁,13632,13632,MRT บางไผ่;MRT Bangphai,MRT บางไผ่,MRT Bangphai,76,已匹配stops.zone_id
+1,地铁,13633,13633,MRT บางหว้า;MRT Bangwa,MRT บางหว้า,MRT Bangwa,76,已匹配stops.zone_id
+1,地铁,13634,13634,MRT เพชรเกษม 48;MRT phetkasem 48,MRT เพชรเกษม 48,MRT phetkasem 48,76,已匹配stops.zone_id
+1,地铁,13635,13635,MRT ภาษีเจริญ;MRT Phasi Charoen,MRT ภาษีเจริญ,MRT Phasi Charoen,76,已匹配stops.zone_id
+1,地铁,13636,13636,MRT บางแค;MRT Bang Khae,MRT บางแค,MRT Bang Khae,76,已匹配stops.zone_id
+1,地铁,13637,13637,MRT หลักสอง;MRT lak Song,MRT หลักสอง,MRT lak Song,76,已匹配stops.zone_id
+1,地铁,13642,13642,MRT บางโพ;MRT Bang Pho,MRT บางโพ,MRT Bang Pho,76,已匹配stops.zone_id
+1,地铁,13643,13643,MRT บางอ้อ;MRT Bang O,MRT บางอ้อ,MRT Bang O,76,已匹配stops.zone_id
+1,地铁,13644,13644,MRT บางพลัด;MRT Bang Phlat,MRT บางพลัด,MRT Bang Phlat,76,已匹配stops.zone_id
+1,地铁,13645,13645,MRT สิรินธร;MRT Sirindhorn,MRT สิรินธร,MRT Sirindhorn,76,已匹配stops.zone_id
+1,地铁,13646,13646,MRT บางยี่ขัน;MRT Bang Yi Khan,MRT บางยี่ขัน,MRT Bang Yi Khan,76,已匹配stops.zone_id
+1,地铁,13647,13647,MRT บางขุนนนท์;MRT Bang Khun Non,MRT บางขุนนนท์,MRT Bang Khun Non,76,已匹配stops.zone_id
+1,地铁,13648,13648,MRT ไฟฉาย;MRT Fai Chai,MRT ไฟฉาย,MRT Fai Chai,76,已匹配stops.zone_id
+1,地铁,13649,13649,MRT จรัญฯ 13;MRT Charan 13,MRT จรัญฯ 13,MRT Charan 13,76,已匹配stops.zone_id
+1,地铁,14117,14117,MRT สำโรง;MRT Samrong,MRT สำโรง,MRT Samrong,46,已匹配stops.zone_id
+1,地铁,14118,14118,MRT ลาดพร้าว;MRT Lad Phrao,MRT ลาดพร้าว,MRT Lad Phrao,46,已匹配stops.zone_id
+1,地铁,14119,14119,MRT ภาวนา;MRT Phawana,MRT ภาวนา,MRT Phawana,46,已匹配stops.zone_id
+1,地铁,14121,14121,MRT ลาดพร้าว 71;MRT Lad Phrao 71,MRT ลาดพร้าว 71,MRT Lad Phrao 71,46,已匹配stops.zone_id
+1,地铁,14122,14122,MRT ลาดพร้าว 83;MRT Lad Phrao 83,MRT ลาดพร้าว 83,MRT Lad Phrao 83,46,已匹配stops.zone_id
+1,地铁,14123,14123,MRT มหาดไทย;MRT Mahat Thai,MRT มหาดไทย,MRT Mahat Thai,46,已匹配stops.zone_id
+1,地铁,14124,14124,MRT ลาดพร้าว 101;MRT Lad Phrao 101,MRT ลาดพร้าว 101,MRT Lad Phrao 101,46,已匹配stops.zone_id
+1,地铁,14125,14125,MRT บางกะปิ;MRT Bang Kapi,MRT บางกะปิ,MRT Bang Kapi,46,已匹配stops.zone_id
+1,地铁,14126,14126,MRT แยกลำสาลี;MRT Yaek Lam Sali,MRT แยกลำสาลี,MRT Yaek Lam Sali,46,已匹配stops.zone_id
+1,地铁,14127,14127,MRT ศรีกรีฑา;MRT Si Kritha,MRT ศรีกรีฑา,MRT Si Kritha,46,已匹配stops.zone_id
+1,地铁,14128,14128,MRT หัวหมาก;MRT Hua Mak,MRT หัวหมาก,MRT Hua Mak,46,已匹配stops.zone_id
+1,地铁,14129,14129,MRT กลันตัน;MRT Kalantan,MRT กลันตัน,MRT Kalantan,46,已匹配stops.zone_id
+1,地铁,14130,14130,MRT ศรีนุช;MRT Si Nut,MRT ศรีนุช,MRT Si Nut,46,已匹配stops.zone_id
+1,地铁,14131,14131,MRT ศรีนครินทร์ 38;MRT Srinagarindra 38,MRT ศรีนครินทร์ 38,MRT Srinagarindra 38,46,已匹配stops.zone_id
+1,地铁,14132,14132,MRT สวนหลวง ร.9;MRT Suan Luang Rama IX,MRT สวนหลวง ร.9,MRT Suan Luang Rama IX,46,已匹配stops.zone_id
+1,地铁,14133,14133,MRT ศรีอุดม;MRT Si Udom,MRT ศรีอุดม,MRT Si Udom,46,已匹配stops.zone_id
+1,地铁,14134,14134,MRT ศรีเอี่ยม;MRT Si Iam,MRT ศรีเอี่ยม,MRT Si Iam,46,已匹配stops.zone_id
+1,地铁,14135,14135,MRT ศรีลาซาล;MRT Si La Salle,MRT ศรีลาซาล,MRT Si La Salle,46,已匹配stops.zone_id
+1,地铁,14136,14136,MRT ศรีแบริ่ง;MRT Si Bearing,MRT ศรีแบริ่ง,MRT Si Bearing,46,已匹配stops.zone_id
+1,地铁,14137,14137,MRT ศรีด่าน;MRT Si Dan,MRT ศรีด่าน,MRT Si Dan,46,已匹配stops.zone_id
+1,地铁,14138,14138,MRT ศรีเทพา;MRT Si Thepha,MRT ศรีเทพา,MRT Si Thepha,46,已匹配stops.zone_id
+1,地铁,14139,14139,MRT ทิพวัล;MRT Thipphawan,MRT ทิพวัล,MRT Thipphawan,46,已匹配stops.zone_id
+1,地铁,14393,14393,MRT โชคชัย4;MRT Chok Chai 4,MRT โชคชัย4,MRT Chok Chai 4,46,已匹配stops.zone_id
+1,地铁,14622,14622,MRT แคราย;MRT Khaerai,MRT แคราย,MRT Khaerai,64,已匹配stops.zone_id
+1,地铁,14623,14623,MRT สนามบินน้ำ;MRT Sanambin Nam,MRT สนามบินน้ำ,MRT Sanambin Nam,64,已匹配stops.zone_id
+1,地铁,14624,14624,MRT สามัคคี;MRT Samakkhi,MRT สามัคคี,MRT Samakkhi,64,已匹配stops.zone_id
+1,地铁,14625,14625,MRT กรมชลประทาน;MRT Royal Irrigation Department,MRT กรมชลประทาน,MRT Royal Irrigation Department,64,已匹配stops.zone_id
+1,地铁,14626,14626,MRT แยกปากเกร็ด;MRT Pakkret,MRT แยกปากเกร็ด,MRT Pakkret,64,已匹配stops.zone_id
+1,地铁,14627,14627,MRT เลี่ยงเมืองปากเกร็ด;MRT Pakkret Bypass,MRT เลี่ยงเมืองปากเกร็ด,MRT Pakkret Bypass,64,已匹配stops.zone_id
+1,地铁,14628,14628,MRT สถานีแจ้งวัฒนะ – ปากเกร็ด 28;MRT Chaeng Watthana-Pak Kret 28,MRT สถานีแจ้งวัฒนะ – ปากเกร็ด 28,MRT Chaeng Watthana-Pak Kret 28,64,已匹配stops.zone_id
+1,地铁,14629,14629,MRT สถานีศรีรัช;MRT Si Rat,MRT สถานีศรีรัช,MRT Si Rat,64,已匹配stops.zone_id
+1,地铁,14630,14630,MRT สถานีเมืองทองธานี;MRT Muang Thong Thani,MRT สถานีเมืองทองธานี,MRT Muang Thong Thani,64,已匹配stops.zone_id
+1,地铁,14631,14631,MRT แจ้งวัฒนะ 14;MRT Chaeng Watthana 14,MRT แจ้งวัฒนะ 14,MRT Chaeng Watthana 14,64,已匹配stops.zone_id
+1,地铁,14632,14632,MRT ศูนย์ราชการเฉลิมพระเกียรติ;MRT Chaloem Phrakiat Government Center,MRT ศูนย์ราชการเฉลิมพระเกียรติ,MRT Chaloem Phrakiat Government Center,64,已匹配stops.zone_id
+1,地铁,14633,14633,MRT โทรคมนาคมห่งชาติ;MRT National Telecom,MRT โทรคมนาคมห่งชาติ,MRT National Telecom,64,已匹配stops.zone_id
+1,地铁,14634,14634,MRT หลักสี่;MRT Kak Si,MRT หลักสี่,MRT Kak Si,64,已匹配stops.zone_id
+1,地铁,14635,14635,MRT ราชภัฏพระนคร;MRT Phranakhon Rajabhat,MRT ราชภัฏพระนคร,MRT Phranakhon Rajabhat,64,已匹配stops.zone_id
+1,地铁,14636,14636,MRT วัดพระศรีมหาธาตุ;MRT,MRT วัดพระศรีมหาธาตุ,MRT,64,已匹配stops.zone_id
+1,地铁,14637,14637,MRT รามอินทรา 3;MRT Ram Inthra 3,MRT รามอินทรา 3,MRT Ram Inthra 3,64,已匹配stops.zone_id
+1,地铁,14638,14638,MRT ลาดปลาเค้า;MRT Lat Pla Khao,MRT ลาดปลาเค้า,MRT Lat Pla Khao,64,已匹配stops.zone_id
+1,地铁,14639,14639,MRT รามอินทรา กม.4;MRT Ram Inthra Kor Mor 4,MRT รามอินทรา กม.4,MRT Ram Inthra Kor Mor 4,64,已匹配stops.zone_id
+1,地铁,14640,14640,MRT มัยลาภ;MRT Maiyalap,MRT มัยลาภ,MRT Maiyalap,64,已匹配stops.zone_id
+1,地铁,14641,14641,MRT วัชรพล;MRT Vacharaphol,MRT วัชรพล,MRT Vacharaphol,64,已匹配stops.zone_id
+1,地铁,14642,14642,MRT รามอินทรา กม.6;MRT Ram Inthra Kor Mor 6,MRT รามอินทรา กม.6,MRT Ram Inthra Kor Mor 6,64,已匹配stops.zone_id
+1,地铁,14643,14643,MRT คู้บอน;MRT Khu Bon,MRT คู้บอน,MRT Khu Bon,64,已匹配stops.zone_id
+1,地铁,14644,14644,MRT รามอินทรา กม.9;MRT Ram Inthra Kor Mor 9,MRT รามอินทรา กม.9,MRT Ram Inthra Kor Mor 9,64,已匹配stops.zone_id
+1,地铁,14645,14645,MRT วงแหวนรามอินทรา;MRT Outer Ring Road-Ram Inthra,MRT วงแหวนรามอินทรา,MRT Outer Ring Road-Ram Inthra,64,已匹配stops.zone_id
+1,地铁,14646,14646,MRT นพรัตน์;MRT Nopparat,MRT นพรัตน์,MRT Nopparat,64,已匹配stops.zone_id
+1,地铁,14647,14647,MRT บางชัน;MRT Bang Chan,MRT บางชัน,MRT Bang Chan,64,已匹配stops.zone_id
+1,地铁,14648,14648,MRT เศรษฐบุตรบำเพ็ญ;MRT Setthabutbamphen,MRT เศรษฐบุตรบำเพ็ญ,MRT Setthabutbamphen,64,已匹配stops.zone_id
+1,地铁,14649,14649,MRT ตลาดมีนบุรี;MRT Min Buri Market,MRT ตลาดมีนบุรี,MRT Min Buri Market,64,已匹配stops.zone_id
+1,地铁,14650,14650,MRT มีนบุรี;MRT Min Buri,MRT มีนบุรี,MRT Min Buri,64,已匹配stops.zone_id
+1,地铁,16936,16936,MRT อิมแพ็ค เมืองทองธานี;MRT Impact Muang Thong Thani,MRT อิมแพ็ค เมืองทองธานี,MRT Impact Muang Thong Thani,64,已匹配stops.zone_id
+1,地铁,16937,16937,MRT ทะเลสาบเมืองทองธานี;MRT Lake Muang Thong Thani,MRT ทะเลสาบเมืองทองธานี,MRT Lake Muang Thong Thani,64,已匹配stops.zone_id

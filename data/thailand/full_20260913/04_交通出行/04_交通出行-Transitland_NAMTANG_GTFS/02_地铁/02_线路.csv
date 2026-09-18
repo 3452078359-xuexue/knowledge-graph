@@ -1,0 +1,5 @@
+﻿交通类型代码,交通类型中文,route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_long_name_泰文,route_long_name_英文,中文展示名,中文名状态,中文名依据URL
+1,地铁,3,BEM,Blue,สายเฉลิมรัชมงคล (สีน้ำเงิน);Blue Line,รถไฟฟ้ามหานคร สายเฉลิมรัชมงคล (สีน้ำเงิน);Mass Rapid Transit Blue line,1,1964B7,สายเฉลิมรัชมงคล (สีน้ำเงิน),Blue Line,差隆拉差蒙坤线（Chaloem Ratchamongkhon；MRT蓝线）,官方罗马化名＋非官方中文音译＋颜色别名,https://www.mrta.co.th/en/chaloem-ratchamongkhon-line
+1,地铁,4,BEM,Purple,สายฉลองรัชธรรม (สีม่วง);Purple Line,รถไฟฟ้ามหานคร สายฉลองรัชธรรม (สีม่วง);Mass Rapid Transit Purple line,1,660066,สายฉลองรัชธรรม (สีม่วง),Purple Line,查隆拉差当线（Chalong Ratchadham；MRT紫线）,官方罗马化名＋非官方中文音译＋颜色别名,https://www.mrta.co.th/en/chalong-ratchadham
+1,地铁,2224,MRTA,Yellow,สายลาดพร้าว–ศรีนครินทร์–สำโรง (สายสีเหลือง);Yellow Line,รถไฟฟ้ามหานคร รถไฟฟ้ามหานคร (สายสีเหลือง);Mass Rapid Transit MRT Yellow Line,1,FFE547,สายลาดพร้าว–ศรีนครินทร์–สำโรง (สายสีเหลือง),Yellow Line,,未提供中文；保留泰文/英文原名,
+1,地铁,2436,MRTA,Pink,สายแคราย - มีนบุรี (สายสีชมพู);Pink Line,รถไฟฟ้ามหานคร รถไฟฟ้าแคราย - มีนบุรี (สายสีชมพู);Mass Rapid Transit MRT Pink Line,1,cd4692,สายแคราย - มีนบุรี (สายสีชมพู),Pink Line,,未提供中文；保留泰文/英文原名,

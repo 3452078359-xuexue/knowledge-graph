@@ -1,0 +1,37 @@
+{
+ "generatedAt": "2026-09-17",
+ "droppedTotal": 8423,
+ "keptTotal": 25,
+ "detail": [
+  {
+   "relationType": "COLLECTED_IN",
+   "count": 1770,
+   "redundantWith": "实体的 batchId 字段（注意 id 写法不同：字段作 amap-tourism-spatial-20260826，边作 batch_amap_tourism_spatial_20260826，指同一批次）",
+   "reason": "该类型不在 CityTourism.schema 声明的 18 条关系内；它表达的是属性不是关系。保留会让同一份信息在属性与边上各存一遍，两者不一致时没有仲裁规则，且遍历「这个景点连到什么」会返回一堆 DataSource 与 CollectionBatch。"
+  },
+  {
+   "relationType": "REF_LOCATED_IN_ADMIN_AREA",
+   "count": 1769,
+   "redundantWith": "实体的 locatedInAdminArea 字段（实测 1,769/1,769 完全同值）",
+   "reason": "该类型不在 CityTourism.schema 声明的 18 条关系内；它表达的是属性不是关系。保留会让同一份信息在属性与边上各存一遍，两者不一致时没有仲裁规则，且遍历「这个景点连到什么」会返回一堆 DataSource 与 CollectionBatch。"
+  },
+  {
+   "relationType": "REF_LOCATED_IN_SCENIC_AREA",
+   "count": 195,
+   "redundantWith": "实体的 locatedInScenicArea 字段（实测 195/195 完全同值）",
+   "reason": "该类型不在 CityTourism.schema 声明的 18 条关系内；它表达的是属性不是关系。保留会让同一份信息在属性与边上各存一遍，两者不一致时没有仲裁规则，且遍历「这个景点连到什么」会返回一堆 DataSource 与 CollectionBatch。"
+  },
+  {
+   "relationType": "REF_LOCATED_IN_ZONE",
+   "count": 1132,
+   "redundantWith": "实体的 locatedInZone 字段（实测 1,132/1,132 完全同值）",
+   "reason": "该类型不在 CityTourism.schema 声明的 18 条关系内；它表达的是属性不是关系。保留会让同一份信息在属性与边上各存一遍，两者不一致时没有仲裁规则，且遍历「这个景点连到什么」会返回一堆 DataSource 与 CollectionBatch。"
+  },
+  {
+   "relationType": "SOURCED_FROM",
+   "count": 3557,
+   "redundantWith": "实体的 sourceId 字段 + fieldSources（grid_derive 已记于 locatedInAdminArea/locatedInZone 的字段级来源）",
+   "reason": "该类型不在 CityTourism.schema 声明的 18 条关系内；它表达的是属性不是关系。保留会让同一份信息在属性与边上各存一遍，两者不一致时没有仲裁规则，且遍历「这个景点连到什么」会返回一堆 DataSource 与 CollectionBatch。"
+  }
+ ]
+}

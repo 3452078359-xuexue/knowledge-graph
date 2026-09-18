@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-09-17 11:30:00",
+  "plannedQuestions": 216,
+  "strictlyCompletedQuestions": 184,
+  "p0": {
+    "planned": 116,
+    "completed": 116,
+    "status": "已完成"
+  },
+  "p1": {
+    "planned": 100,
+    "completed": 68,
+    "remaining": 32,
+    "remainingQuestionRange": [
+      "GYTRAVEL-HV-20260916-0185",
+      "GYTRAVEL-HV-20260916-0216"
+    ],
+    "remainingBusinessType": "住宿酒店",
+    "resumePolicy": "保留同一问题表、输出目录与basename，priority=P1 断点续跑；已严格完成项自动跳过。"
+  },
+  "foodLayers": [
+    {
+      "questionRange": "0117-0131",
+      "questions": 15,
+      "directEvidenceHits": 15,
+      "explicitNoSource": 0,
+      "nonCampaignEvidencePerQuestion": 9.33,
+      "nonCampaignAuthorsPerQuestion": 8.8,
+      "questionsBelowThreeCandidates": 2
+    },
+    {
+      "questionRange": "0132-0146",
+      "questions": 15,
+      "directEvidenceHits": 12,
+      "explicitNoSource": 5,
+      "nonCampaignEvidencePerQuestion": 8.13,
+      "nonCampaignAuthorsPerQuestion": 7.47,
+      "questionsBelowThreeCandidates": 3
+    },
+    {
+      "questionRange": "0147-0161",
+      "questions": 15,
+      "directEvidenceHits": 12,
+      "explicitNoSource": 8,
+      "nonCampaignEvidencePerQuestion": 6.33,
+      "nonCampaignAuthorsPerQuestion": 6.13,
+      "questionsBelowThreeCandidates": 6
+    },
+    {
+      "questionRange": "0162-0176",
+      "questions": 15,
+      "directEvidenceHits": 14,
+      "explicitNoSource": 10,
+      "nonCampaignEvidencePerQuestion": 3.73,
+      "nonCampaignAuthorsPerQuestion": 3.73,
+      "questionsBelowThreeCandidates": 8
+    }
+  ],
+  "foodP1Total": {
+    "questions": 60,
+    "directEvidenceHits": 53,
+    "explicitNoSource": 23,
+    "nonCampaignEvidence": 413,
+    "nonCampaignAuthors": 392,
+    "nonCampaignEvidencePerQuestion": 6.88,
+    "nonCampaignAuthorsPerQuestion": 6.53,
+    "questionsBelowThreeCandidates": 19,
+    "decision": "P1餐饮已全量完成；收益随优先级连续下降，后续更低价值餐饮不再主动逐店采集，改为用户查询或字段缺口触发。"
+  },
+  "hotelPilot": {
+    "questionRange": "0177-0184",
+    "questions": 8,
+    "directEvidenceHits": 7,
+    "explicitNoSource": 1,
+    "nonCampaignEvidence": 51,
+    "nonCampaignAuthors": 47,
+    "nonCampaignEvidencePerQuestion": 6.38,
+    "nonCampaignAuthorsPerQuestion": 5.88,
+    "questionsBelowThreeCandidates": 2,
+    "decision": "样本收益达标，剩余32家酒店值得续采；本轮因页面连续未通过稳定性门槛安全暂停，而非因收益不达标。"
+  },
+  "safety": {
+    "basePoiFieldsModified": false,
+    "sourceEvidenceAccepted": 0,
+    "fullPostBodiesWrittenToGraph": false,
+    "browserFailureSentQuestion": false,
+    "lowValueAbsenceMeansClosed": false
+  },
+  "designConclusion": "使用评分、评论量、业务价值、空间可定位性和证据缺口做采集排序是科学的；这些指标只决定先问谁，不能证明推荐排名。逐实体问答必须按业务类型分别观察边际收益，并在无来源率上升、独立候选下降或浏览器风控出现时停止。"
+}

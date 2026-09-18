@@ -1,0 +1,1371 @@
+{
+  "formatVersion": "baidu-baike-poi-quality-report-v2",
+  "generatedAt": "2026-09-15T19:11:23-07:00",
+  "targetsFile": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/targets.json",
+  "targetsHash": "sha256:5984a1682d6de37f6d2b708218a5e83720e80399050975d21eaa1e8b339062aa",
+  "qualityGateScriptHash": "sha256:e48787e48d2c06970510f193f9c699d5ef271f4f02a5da183e899729f03bfc11",
+  "region": {
+    "province": "贵州省",
+    "city": "贵阳市"
+  },
+  "method": {
+    "capture_and_identity_are_separate": true,
+    "geography_is_a_hard_gate": true,
+    "volatile_facts_auto_import": false,
+    "known_external_conflicts_are_preserved": true,
+    "district_policy": "require evidence when supplied; an absent district may be overridden only by an exact reviewed lemma ID plus city/name evidence, and remains a warning",
+    "legal_short_page_policy": "allow only when ID, identity, geography, type and catalog coverage pass"
+  },
+  "summary": {
+    "case_count": 10,
+    "decision_counts": {
+      "accepted": 8,
+      "incomplete_no_entry": 2
+    },
+    "warning_counts": {},
+    "benchmark_passed": true,
+    "benchmark_failures": [],
+    "false_accepts_prevented": 0,
+    "short_valid_entries_rescued": 0,
+    "accepted_case_count": 8,
+    "stable_ready_count": 8,
+    "full_traceability_ready_count": 8,
+    "kb_readiness": "ready"
+  },
+  "results": [
+    {
+      "case_id": "direct_kongxuetang",
+      "target_id": "scenic_amap_B03530RNBF",
+      "requested_name": "贵阳孔学堂",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/02_贵阳孔学堂.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "贵阳孔学堂",
+        "final_url": "https://baike.baidu.com/item/%E8%B4%B5%E9%98%B3%E5%AD%94%E5%AD%A6%E5%A0%82/14187940",
+        "canonical_lemma_id": "14187940",
+        "catalog_count": 6,
+        "body_heading_count": 6,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 6476,
+        "knowledge_chars": 2369,
+        "anti_crawl": false,
+        "content_hash": "sha256:30001af283861f02c3f1d8263f752e9b29e8b141a4a1a5ffb41da47cdb567031"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "贵阳孔学堂"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市"
+          ],
+          "location_values": [],
+          "evidence": "贵阳孔学堂坐落在贵州省贵阳市南郊，东毗大成山，西临花溪河，俯瞰国家级湿地公园花溪十里河滩，总占地1320余亩，建筑面积近15万平方米，按功能划分为“公众教化区”，“ 中华文化国际研修园 ”和“文化创意产业园”，由民营企业捐资15亿元人民币建设。孔学堂是贵州省高端的文化学术交流平台和传习研修基地。 孔学堂 坚持“创造性转化、创新性发展”方针，以传承弘扬中华优秀传统文化，培育践行 社会主义核心价值观 为宗旨。自2013年1月1日正式对外开放以来，邀请海内外名家举办传统文化公益讲座，每年达100余场；开设“领导干部历史文化讲座”；举办“开笔礼”、“成人礼”、“中华婚礼”、“敬老礼”、“9.28祭孔大典”等典礼活动以及春节、清明、端午、中秋、重阳、“ 二十四节气 ”等民俗文化活动；开展“溪山踏歌行”系列演出、“溪山翰迹”书画创作展出等文化艺术交流活动；为青少年开展了琴、棋、书、画、诗、礼等“六艺培训”；与国内多所著名高校及海内外学术机构建立合作交流机制，广泛开展阳明洞会讲、孔学堂四季论辩大会等重大学术交流、研讨活动。 孔学堂一期公众教化区起于棂星门，过泮桥，拾阶渐上，经 大成门 、礼仪广场、大"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "孔学堂",
+            "文化"
+          ]
+        },
+        "expected_lemma_id": "14187940"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 17,
+          "unique_asset_ids": 17,
+          "unique_sources": 17,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 2,
+          "top_sections": [
+            {
+              "section": "贵州孔学堂简介",
+              "count": 13
+            },
+            {
+              "section": "建筑特色",
+              "count": 4
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "0元",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "09:00-17:00",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/02_贵阳孔学堂.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 6,
+          "mapped_reference_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "14187940",
+          "block_count": 22,
+          "content_hash": "sha256:41a8a9151d7f08f35855cd7ded9d968bcadf173c114cd142f906784d5515f05f"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/02_贵阳孔学堂.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "14187940",
+          "reference_count": 6,
+          "mapped_reference_count": 5,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "direct_guanshanhu_park",
+      "target_id": "scenic_amap_B03530OZ78",
+      "requested_name": "观山湖公园",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/03_观山湖公园.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "观山湖公园",
+        "final_url": "https://baike.baidu.com/item/%E8%A7%82%E5%B1%B1%E6%B9%96%E5%85%AC%E5%9B%AD/2594823",
+        "canonical_lemma_id": "2594823",
+        "catalog_count": 17,
+        "body_heading_count": 17,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 3714,
+        "knowledge_chars": 1916,
+        "anti_crawl": false,
+        "content_hash": "sha256:11a0b4ac1d84fe7b05c20729ba678923fd389d54d154cca638af4559e6e4243e"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "观山湖公园"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市",
+            "观山湖区"
+          ],
+          "location_values": [
+            "贵阳市观山湖区观山大桥南北两侧"
+          ],
+          "evidence": "贵阳市观山湖区观山大桥南北两侧 观山湖公园位于 贵州省 贵阳市 观山湖区 观山大桥南北两侧，总占地面积约327.72公顷，由观山湖和金华湖组成生态湿地水体，素有“区域之心、新城绿肺”之称。公园毗邻行政机构、会议中心及高端住宅区，是观山湖区政治文化集散中心及绿道系统的重要一环，承担生态体验示范作用，串联省博物馆、贵阳国际生态会议中心等地标建筑。园内设有紫竹门、慈竹门等八处以竹命名的主次入口，配套停车场5处共1203个车位，地铁1号线直达并设四个方向出入口，208、209路等多条公交线路经停。 公园始建于2008年，2010年12月31日正式对外开放，依托原金华农场旧址及观山水库改建而成，2011年起通过移植优选苗木形成樱花大道、雪松大道等四季景观。现园内共有植物600余种，栖息白鹭、黑天鹅等野生动物，设有塑胶健身步道、大联欢广场及580平方米儿童攀爬网等设施，配套智慧管理系统实现数跑大道、数博记忆园等智慧服务功能。 园内建有贵州省首个区县级生态文明展览馆，累计接待游客超18万人次，举办生态教育及音乐会等活动近百场。2025年承办Z纪元银河左岸音乐节、 亚洲青年攀岩锦标赛 及国际攀联世界杯"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "公园"
+          ]
+        },
+        "expected_lemma_id": "2594823"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 4,
+          "unique_asset_ids": 4,
+          "unique_sources": 4,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": [
+            {
+              "section": "特色景观大道",
+              "count": 4
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "免费",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "全年 6:30-22:00",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/03_观山湖公园.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 21,
+          "mapped_reference_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "2594823",
+          "block_count": 35,
+          "content_hash": "sha256:847cf33bee2aa8cd513e1bd97efe411891015d899d88b24d8a0a15f5a744caf8"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/03_观山湖公园.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "2594823",
+          "reference_count": 21,
+          "mapped_reference_count": 21,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "support_wudang_district",
+      "target_id": "admin_520112",
+      "requested_name": "乌当区",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/04_乌当区_支撑香纸沟与情人谷.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "乌当区",
+        "final_url": "https://baike.baidu.com/item/%E4%B9%8C%E5%BD%93%E5%8C%BA/3852433",
+        "canonical_lemma_id": "3852433",
+        "catalog_count": 28,
+        "body_heading_count": 28,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 12371,
+        "knowledge_chars": 8118,
+        "anti_crawl": false,
+        "content_hash": "sha256:dde862a7083d353c1063f99e78d527931e3b8ab2ef83740b91703f429bc9a319"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "乌当区"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市",
+            "乌当区"
+          ],
+          "location_values": [
+            "520112",
+            "市辖区",
+            "贵州省贵阳市",
+            "贵州省中部"
+          ],
+          "evidence": "520112 市辖区 贵州省贵阳市 贵州省中部 乌当区，隶属 贵州省 贵阳市 ，位于贵州中部，地处贵阳市东北部。东临 南明区 、南融 云岩区 、西接 观山湖区 和 白云区 、北连 开阳县 。乌当区总面积686平方千米，截至2024年末，乌当区下辖5个街道、6个镇和2个民族乡。截至2024年末，乌当区常住人口数为37.22万人。 乌当区与 贵州双龙航空港经济区 、 贵阳综合保税区 联袂成带，是贵阳市东部产业新区建设的核心区，具有承载中心城区拓展、中高端产业转移的广阔空间。 乌当区是贵阳市城区组团之一，是贵州省首批经济强区（县）。境内有贵阳御温泉、保利国际温泉、泉天下国际俱乐部、香纸沟、相思河等旅游景点。 2025年，乌当区全年实现生产总值249.07亿元，城镇、农村居民人均可支配收入分别增长4%、5.3%。"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "辖区",
+            "乌当区"
+          ]
+        },
+        "expected_lemma_id": "3852433"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 5,
+          "unique_asset_ids": 0,
+          "unique_sources": 5,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": [
+            {
+              "section": "景点",
+              "count": 4
+            },
+            {
+              "section": "历史沿革",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/04_乌当区_支撑香纸沟与情人谷.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 19,
+          "mapped_reference_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "3852433",
+          "block_count": 378,
+          "content_hash": "sha256:9c507bd1e768cf54d1fc0ab5e1c9d1eeecfe2e9c2b4d6a4fce585b05d4a4bdeb"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/04_乌当区_支撑香纸沟与情人谷.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "3852433",
+          "reference_count": 19,
+          "mapped_reference_count": 19,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "support_huaxi_district",
+      "target_id": "admin_520111",
+      "requested_name": "花溪区",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/05_花溪区_支撑十里河滩.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "花溪区",
+        "final_url": "https://baike.baidu.com/item/%E8%8A%B1%E6%BA%AA%E5%8C%BA/7649490",
+        "canonical_lemma_id": "7649490",
+        "catalog_count": 36,
+        "body_heading_count": 36,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 16334,
+        "knowledge_chars": 10666,
+        "anti_crawl": false,
+        "content_hash": "sha256:1d84f5c5b1ba682887554b29042c595180a4aeba8d466d6b34fd8b2ab40bc160"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "花溪区"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市",
+            "花溪区"
+          ],
+          "location_values": [
+            "520111",
+            "市辖区",
+            "贵州省 贵阳市",
+            "贵州中部",
+            "贵州省"
+          ],
+          "evidence": "520111 市辖区 贵州省 贵阳市 贵州中部 贵州省 花溪区（Huaxi District），原名花仡佬 ，是中国 贵州省 贵阳市 辖区，位于东经106°27′—106°52′，北纬26°11′—26°34′ ，地处黔中腹地， 贵阳市 南部，东邻黔南州 龙里县 、西接 贵安新区 。全区土地面积964.32平方公里 ，截至2024年年末常住人口106.59万人。截至2025年3月，下辖4镇6乡9个街道 ，全区有汉族、苗族、布依族等44个民族 。方言为贵阳次方言、惠水次方言 [49 ] ，区政府驻 贵筑街道 明珠大道192号。 花溪区属于亚热带高原季风湿润气候 [48 ] ，地貌以山地和丘陵为主，为典型的 喀斯特 地质地区 。秦代属且兰县， 东晋 属晋乐县。清康熙二十六年（1687年）置贵筑县，县署驻贵阳城西南隅，新贵县原辖地全归贵筑县。1949年11月，贵筑县隶属贵阳专署。1958年２月， 贵筑县 撤销。1993年，小河镇划归贵阳市小河经济技术开发区管辖。2012年，撤办事处建新型社区。2021年3月，党武镇改为党武街道 。花溪区素有“高原明珠”的美誉，有十里河滩国家城市湿地公园、孔学"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "辖区",
+            "花溪区"
+          ]
+        },
+        "expected_lemma_id": "7649490"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 10,
+          "unique_asset_ids": 4,
+          "unique_sources": 10,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": [
+            {
+              "section": "社会保障",
+              "count": 4
+            },
+            {
+              "section": "历史沿革",
+              "count": 2
+            },
+            {
+              "section": "地方特产",
+              "count": 2
+            },
+            {
+              "section": "综述",
+              "count": 1
+            },
+            {
+              "section": "民族文化",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/05_花溪区_支撑十里河滩.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 54,
+          "mapped_reference_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            47,
+            48,
+            49,
+            52,
+            53,
+            54
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "7649490",
+          "block_count": 268,
+          "content_hash": "sha256:f6d4428e1ca215b10f7f228c05aa3b95ebcc7aa73cba33708b1a3240e874c938"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/05_花溪区_支撑十里河滩.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "7649490",
+          "reference_count": 54,
+          "mapped_reference_count": 51,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "direct_guiyang_forest_park",
+      "target_id": "scenic_amap_B035301FIE",
+      "requested_name": "贵阳森林公园",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/06_贵阳森林公园.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "贵阳森林公园",
+        "final_url": "https://baike.baidu.com/item/%E8%B4%B5%E9%98%B3%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD",
+        "canonical_lemma_id": "5243511",
+        "catalog_count": 7,
+        "body_heading_count": 7,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 4548,
+        "knowledge_chars": 1656,
+        "anti_crawl": false,
+        "content_hash": "sha256:d2440c0526a87df6a21389ca512b992ac0fd7decb65af8c9b1b90792df8a7002"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "贵阳森林公园"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市",
+            "南明区"
+          ],
+          "location_values": [
+            "贵州省贵阳市南明区"
+          ],
+          "evidence": "贵州省贵阳市南明区 贵阳森林公园，位于贵州省贵阳市 南明区 图云关，距 贵阳市 仅2.5公里，山势绵亘，土地肥沃，延绵数十公里，总面积达3900亩，其中森林覆盖面积占90%，画眉、猫头鹰、野鸡、 松鼠 、穿山甲、刺猬、獐、野兔、黄鼠狼、泥猪等野生动物生活其间，亚热带湿润温和型气候，开放时间为周一至周日00:00-24:00。 贵阳森林公园，公园还保存着许多崖刻碑石，附近原有关帝庙、接官厅及纪恩、可憩二亭，沿途矗立石雕牌坊20余座，最著者是旌表 杨芳 的\"万里封侯\"坊，由于它林木种类众多，成林时间久，面积广袤，泉水潺潺，珍禽出没，蝉鸣鸟语，芳草馨香而有“贵阳八景之一”的美誉，并跻冠于全国城市森林公园之首。于一九九九年被列为“中国名园”。"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "森林公园",
+            "公园"
+          ]
+        },
+        "expected_lemma_id": "5243511"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 11,
+          "unique_asset_ids": 11,
+          "unique_sources": 11,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 1,
+          "top_sections": [
+            {
+              "section": "文化景点",
+              "count": 5
+            },
+            {
+              "section": "发展历史",
+              "count": 4
+            },
+            {
+              "section": "交通信息",
+              "count": 2
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "免费",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "全年:周一至周日 00:00-24:00",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/06_贵阳森林公园.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 2,
+          "mapped_reference_indices": [
+            1,
+            2
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "5243511",
+          "block_count": 35,
+          "content_hash": "sha256:358d838532fbdc3d8b1d5d4723f0dc4d0fbd8bd8967ffdae081a9fa6fa7d5606"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/06_贵阳森林公园.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "5243511",
+          "reference_count": 2,
+          "mapped_reference_count": 2,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "direct_nanjiang_canyon",
+      "target_id": "scenic_amap_B035301FVE",
+      "requested_name": "南江大峡谷",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/07_南江大峡谷.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "南江大峡谷",
+        "final_url": "https://baike.baidu.com/item/%E5%8D%97%E6%B1%9F%E5%A4%A7%E5%B3%A1%E8%B0%B7",
+        "canonical_lemma_id": "6898948",
+        "catalog_count": 30,
+        "body_heading_count": 30,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 9298,
+        "knowledge_chars": 5583,
+        "anti_crawl": false,
+        "content_hash": "sha256:b374dce06288a63cb07983dcf1fe20ccabfa975f1991f395ef766dbb85ead08a"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "南江大峡谷"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵阳",
+            "开阳县"
+          ],
+          "location_values": [
+            "贵阳市开阳县南江乡龙广村",
+            "贵州省贵阳市"
+          ],
+          "evidence": "贵阳市开阳县南江乡龙广村 贵州省贵阳市 南江大峡谷地处贵州高原中部的开阳县，距省会贵阳五十四公里。以发育典型、气势宏大的喀斯峡谷风光和类型多样、姿态万千的瀑布群落为特色，风乐旖旎，景象万千。 峡谷全长四十多公里，峭峰顶立，最深处达三百九十八米，经有关专家完成的科学考察结果显示：南江峡谷地层古老，河谷深切，为典型的低中山峡谷地貌景观，十分壮丽优美。峡谷内有自然景观80余处，各种姿态瀑布40多条，位于小南江的奢香瀑布，落差达一百五十余米。公园景区现已开发十八点四公里，旅游者可顺江在碧玉般的江水中进行惊险刺激的漂流，也可漫步于峭壁 栈道 ，浓荫小路，还可穿越典型的喀斯物原始森林。峭壁上藏酋猴，猕猴在攀缘嬉戏，河中鸳鸯、野鸭畅游，鱼儿成群可见，江上鱼鹰白鹭小鸟飞翔，野趣盎然…… 南江大峡谷已具备了建立生态旅游示范区丰富的自然资源，每晚的民族歌舞文化让您流连忘返，别具特色的木桶植物精汽浴，天然泉水游泳池，惟妙惟肖的释牟尼佛，弥勒佛以及忽隐忽现众多佛像构成的万佛山，户外烧烤，跨江溜索更让您心旷神怡。"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "峡谷",
+            "景区"
+          ]
+        },
+        "expected_lemma_id": "6898948"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 13,
+          "unique_asset_ids": 12,
+          "unique_sources": 13,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 1,
+          "top_sections": [
+            {
+              "section": "资源特色",
+              "count": 8
+            },
+            {
+              "section": "景区殊荣",
+              "count": 4
+            },
+            {
+              "section": "火车",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "68元",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "全年全天开放；南江大峡谷漂流（5月-10月）8:30-17:00",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/07_南江大峡谷.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 3,
+          "mapped_reference_indices": [
+            1
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "6898948",
+          "block_count": 81,
+          "content_hash": "sha256:519c4aa0edbfc0bd3d036e7185f67dfdd433497753f070221f61cb981fab9389"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/07_南江大峡谷.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "6898948",
+          "reference_count": 3,
+          "mapped_reference_count": 1,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "support_papermaking_heritage",
+      "target_id": "support_heritage_papermaking_1911993",
+      "requested_name": "皮纸制作技艺",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/08_皮纸制作技艺_支撑香纸沟.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "皮纸制作技艺",
+        "final_url": "https://baike.baidu.com/item/%E7%9A%AE%E7%BA%B8%E5%88%B6%E4%BD%9C%E6%8A%80%E8%89%BA/1911993",
+        "canonical_lemma_id": "1911993",
+        "catalog_count": 6,
+        "body_heading_count": 6,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 3772,
+        "knowledge_chars": 1681,
+        "anti_crawl": false,
+        "content_hash": "sha256:dc36860a44797466fa5a0f842beb8fbd05b6ff5dec65e382ea41dda961726b9f"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "皮纸制作技艺"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市"
+          ],
+          "location_values": [],
+          "evidence": "皮纸制作技艺是贵州省传统手工技艺，作为中国古代四大发明之一 造纸术 的重要传承，2006年被列入第一批 国家级非物质文化遗产名录 （遗产编号Ⅷ-67），主要分布于贵阳市、 丹寨县 和 贞丰县 。该技艺以竹、构皮为原料，包含伐竹蒸煮、抄纸晒晾等数十道工序，产品涵盖白皮纸及云龙皱褶、花草纸等彩色纸，具有绵韧、耐水特性 。 丹寨县 石桥村 （苗族聚居区）完整保留古法造纸工艺，其白皮纸制作流程与《 天工开物 》记载一致，需经斩楮漂塘、煮料抄纸等工序 。贵阳市 香纸沟 布依族 竹纸源自明代洪武年间，保留72道古法工序；贞丰县小屯白绵纸创于清代咸丰时期，采用72道工序生产 。核心技艺依赖匠人经验，如山桠皮雁皮纸需凭眼观手感调控捞纸深度 。 2009年 王兴武 成为国家级传承人，其研发的迎春纸通过检验，应用于古籍修复领域 。丹寨县石桥黔山古法造纸专业合作社于2011年被评为国家级非遗生产性保护示范基地 。"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "传统手工技艺",
+            "非物质文化遗产"
+          ]
+        },
+        "expected_lemma_id": "1911993"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 7,
+          "unique_asset_ids": 7,
+          "unique_sources": 7,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": [
+            {
+              "section": "工艺特征",
+              "count": 4
+            },
+            {
+              "section": "传承意义",
+              "count": 3
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/08_皮纸制作技艺_支撑香纸沟.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 13,
+          "mapped_reference_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "1911993",
+          "block_count": 17,
+          "content_hash": "sha256:4af2151ddde0a6aa2d2c1bd07c04c18c3b94f0aa64da306b964b7a2d254dec71"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/08_皮纸制作技艺_支撑香纸沟.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "1911993",
+          "reference_count": 13,
+          "mapped_reference_count": 13,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "support_quancheng_wuyun",
+      "target_id": "support_rural_tourism_17613015",
+      "requested_name": "泉城五韵",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/09_泉城五韵_支撑情人谷香纸沟.md",
+      "expected_decision": "accepted",
+      "decision": "accepted",
+      "decision_reason": "capture, identity, geography and type gates passed",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "OK",
+        "reason": "ok",
+        "page_title": "泉城五韵",
+        "final_url": "https://baike.baidu.com/item/%E6%B3%89%E5%9F%8E%E4%BA%94%E9%9F%B5/17613015",
+        "canonical_lemma_id": "17613015",
+        "catalog_count": 7,
+        "body_heading_count": 7,
+        "catalog_coverage": 1.0,
+        "markdown_chars": 6123,
+        "knowledge_chars": 3666,
+        "anti_crawl": false,
+        "content_hash": "sha256:56d3df04996768d9fe121b21d3c6616e94ae926c27018a347e57312a4b0243b9"
+      },
+      "identity": {
+        "name": {
+          "status": "exact",
+          "matched_alias": "泉城五韵"
+        },
+        "geography": {
+          "status": "match",
+          "hits": [
+            "贵州省",
+            "贵阳市",
+            "乌当区"
+          ],
+          "location_values": [
+            "贵州省贵阳市乌当区"
+          ],
+          "evidence": "贵州省贵阳市乌当区 泉城五韵是 贵州省 贵阳市 乌当区 打造的乡村旅游示范点，由情韵·阿栗、醉韵·偏坡、美韵·渡寨、福韵·王岗、古韵·陇脚五个村寨组成，分布于 高新路街道 、 偏坡乡 和 新堡乡 ，属亚热带季风湿润气候区。 各村依托特色资源差异化发展： 阿栗村 以杨梅种植和情人谷景区构建现代观光农业；偏坡乡保留97% 布依族 人口，刺绣工艺为省级非物质文化遗产；渡寨以“播娜摩”簸箕画闻名； 王岗村 传承布依庖汤宴席； 陇脚村 延续土法造纸技艺（国家级非遗）。 乌当区通过政府投资1350.3万元撬动社会资金完善旅游设施，按 4A级景区 标准提升接待能力，建成游客中心、停车场等基础设施。 2010年5月至8月接待游客38.33万人次，旅游收入1819.29万元；偏坡村获“ 全国乡村旅游重点村 ”称号。乌当税务部门通过税收政策扶持非遗传承，支持 姊妹箫 、 蜡染 等非遗产业发展。"
+        },
+        "entity_type": {
+          "status": "match",
+          "hits": [
+            "乡村旅游示范点",
+            "乡村旅游"
+          ]
+        },
+        "expected_lemma_id": "17613015"
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 9,
+          "unique_asset_ids": 4,
+          "unique_sources": 9,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": [
+            {
+              "section": "基本概况",
+              "count": 4
+            },
+            {
+              "section": "情韵·阿栗",
+              "count": 1
+            },
+            {
+              "section": "醉韵·偏坡",
+              "count": 1
+            },
+            {
+              "section": "美韵·渡寨",
+              "count": 1
+            },
+            {
+              "section": "福韵·王岗",
+              "count": 1
+            },
+            {
+              "section": "古韵·陇脚",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/09_泉城五韵_支撑情人谷香纸沟.raw.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "reference_count": 8,
+          "mapped_reference_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "17613015",
+          "block_count": 30,
+          "content_hash": "sha256:bbd938b993fe3f3725c2a492d73f6b4ad5ee26a6b2feac044450bc70d4a5e13e"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/accepted/09_泉城五韵_支撑情人谷香纸沟.references.json",
+          "exists": true,
+          "valid": true,
+          "errors": [],
+          "canonical_lemma_id": "17613015",
+          "reference_count": 8,
+          "mapped_reference_count": 8,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": true,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": true,
+      "warnings": [],
+      "legacy_capture_would_accept": true,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "rejected_shilihetan_missing_entry",
+      "target_id": "scenic_amap_B03530OTGJ",
+      "requested_name": "贵阳市十里河滩国家湿地公园",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/rejected/01_贵阳市十里河滩国家湿地公园.md",
+      "expected_decision": "incomplete_no_entry",
+      "decision": "incomplete_no_entry",
+      "decision_reason": "no canonical lemma ID or Baidu error page",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "INCOMPLETE",
+        "reason": "canonical lemma ID not found; content chars 119 < 2000",
+        "page_title": "百度百科错误页",
+        "final_url": "https://baike.baidu.com/error.html?status=404&uri=/item/%E8%B4%B5%E9%98%B3%E5%B8%82%E5%8D%81%E9%87%8C%E6%B2%B3%E6%BB%A9%E5%9B%BD%E5%AE%B6%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD",
+        "canonical_lemma_id": "",
+        "catalog_count": 0,
+        "body_heading_count": 1,
+        "catalog_coverage": 0.0,
+        "markdown_chars": 753,
+        "knowledge_chars": 103,
+        "anti_crawl": false,
+        "content_hash": "sha256:eb14ecb0851c1f02e850dd5526e834fe3cdd3138178cb8c9462e1525f714d2e9"
+      },
+      "identity": {
+        "name": {
+          "status": "none",
+          "matched_alias": ""
+        },
+        "geography": {
+          "status": "missing",
+          "hits": [],
+          "location_values": [],
+          "evidence": ""
+        },
+        "entity_type": {
+          "status": "missing",
+          "hits": []
+        },
+        "expected_lemma_id": ""
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 0,
+          "unique_asset_ids": 0,
+          "unique_sources": 0,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": []
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/rejected/01_贵阳市十里河滩国家湿地公园.raw.json",
+          "exists": true,
+          "valid": false,
+          "errors": [
+            "canonical lemma ID missing",
+            "raw正文块为空"
+          ],
+          "reference_count": 0,
+          "mapped_reference_indices": [],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "",
+          "block_count": 0,
+          "content_hash": "sha256:24dc046af052c27779c536fb563406f26dbb111ee1056fa79f15646a6d9d2296"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/rejected/01_贵阳市十里河滩国家湿地公园.references.json",
+          "exists": true,
+          "valid": false,
+          "errors": [
+            "canonical lemma ID missing"
+          ],
+          "canonical_lemma_id": "",
+          "reference_count": 0,
+          "mapped_reference_count": 0,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": false,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": false,
+      "warnings": [],
+      "legacy_capture_would_accept": false,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    },
+    {
+      "case_id": "rejected_huaxi_wetland_missing_entry",
+      "target_id": "scenic_amap_B03530OTGJ",
+      "requested_name": "花溪国家城市湿地公园",
+      "evidence_path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/rejected/01_花溪国家城市湿地公园_支撑十里河滩.md",
+      "expected_decision": "incomplete_no_entry",
+      "decision": "incomplete_no_entry",
+      "decision_reason": "no canonical lemma ID or Baidu error page",
+      "benchmark_pass": true,
+      "capture": {
+        "status": "INCOMPLETE",
+        "reason": "canonical lemma ID not found; content chars 119 < 1600",
+        "page_title": "百度百科错误页",
+        "final_url": "https://baike.baidu.com/error.html?status=404&uri=/item/%E8%8A%B1%E6%BA%AA%E5%9B%BD%E5%AE%B6%E5%9F%8E%E5%B8%82%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD",
+        "canonical_lemma_id": "",
+        "catalog_count": 0,
+        "body_heading_count": 1,
+        "catalog_coverage": 0.0,
+        "markdown_chars": 696,
+        "knowledge_chars": 103,
+        "anti_crawl": false,
+        "content_hash": "sha256:6438f1fee7286f5233b1fed6e9f2f9fa2bacd6806c06211e2b9e985005bd27b0"
+      },
+      "identity": {
+        "name": {
+          "status": "none",
+          "matched_alias": ""
+        },
+        "geography": {
+          "status": "missing",
+          "hits": [],
+          "location_values": [],
+          "evidence": ""
+        },
+        "entity_type": {
+          "status": "missing",
+          "hits": []
+        },
+        "expected_lemma_id": ""
+      },
+      "cleanliness": {
+        "video_recommendation_noise_count": 0,
+        "video_recommendation_noise_samples": [],
+        "citation_marker_count": 0,
+        "media": {
+          "sidecar_exists": true,
+          "count": 0,
+          "unique_asset_ids": 0,
+          "unique_sources": 0,
+          "duplicate_asset_ids": 0,
+          "empty_caption_count": 0,
+          "suspect_thumbnail_url_count": 0,
+          "top_sections": []
+        }
+      },
+      "volatile_facts": {
+        "policy": "hold_from_auto_import",
+        "facts": {
+          "ticket_price": {
+            "basic_info": "",
+            "section": ""
+          },
+          "opening_hours": {
+            "basic_info": "",
+            "section": ""
+          }
+        },
+        "conflicts": []
+      },
+      "baseline_conflicts": [],
+      "traceability": {
+        "raw": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/rejected/01_花溪国家城市湿地公园_支撑十里河滩.raw.json",
+          "exists": true,
+          "valid": false,
+          "errors": [
+            "canonical lemma ID missing",
+            "raw正文块为空"
+          ],
+          "reference_count": 0,
+          "mapped_reference_indices": [],
+          "format_version": "baidu-baike-raw-v1",
+          "canonical_lemma_id": "",
+          "block_count": 0,
+          "content_hash": "sha256:24dc046af052c27779c536fb563406f26dbb111ee1056fa79f15646a6d9d2296"
+        },
+        "references": {
+          "path": "[LOCAL_HOME]/Desktop/city_knowledge/v2/baike_scenic_v10_3/evidence/rejected/01_花溪国家城市湿地公园_支撑十里河滩.references.json",
+          "exists": true,
+          "valid": false,
+          "errors": [
+            "canonical lemma ID missing"
+          ],
+          "canonical_lemma_id": "",
+          "reference_count": 0,
+          "mapped_reference_count": 0,
+          "unresolved_indices": []
+        }
+      },
+      "stable_knowledge_ready": false,
+      "volatile_fact_ready": false,
+      "full_traceability_ready": false,
+      "warnings": [],
+      "legacy_capture_would_accept": false,
+      "false_accept_prevented": false,
+      "short_valid_rescued": false
+    }
+  ]
+}

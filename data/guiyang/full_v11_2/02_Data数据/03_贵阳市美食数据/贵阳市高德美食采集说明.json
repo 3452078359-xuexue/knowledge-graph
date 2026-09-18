@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-16T07:50:21.976Z",
+  "api": "AMap POI Search 2.0 /v5/place/polygon",
+  "types": "050000",
+  "showFields": "business,children,indoor,navi,photos",
+  "queryLimitStrategy": "0.05-degree framework tiles; recursively split every 200-hit tile; final fallback partitions by observed 6-digit food typecodes",
+  "pageSize": 25,
+  "maxPagesPerQuery": 8,
+  "initialTileCount": 359,
+  "completedTiles": 891,
+  "remainingTiles": 268,
+  "completionCounts": {
+    "complete": 691,
+    "split": 200
+  },
+  "unresolvedSaturatedCount": 0,
+  "uniqueGuiyangFoodPois": 37169,
+  "newApiCallsThisRun": 1200,
+  "networkCallsLifetime": 4687,
+  "stopped": true,
+  "stopReason": "LOCAL_CALL_CAP:本次新增调用达到安全上限 1200",
+  "fieldsRequested": [
+    "business",
+    "children",
+    "indoor",
+    "navi",
+    "photos"
+  ],
+  "output": "[LOCAL_HOME]/Documents/ChatGPT/贵州旅游知识库数据采集项目/.codex_work/amap_food_full_20260916/amap_food_pois_full.json"
+}

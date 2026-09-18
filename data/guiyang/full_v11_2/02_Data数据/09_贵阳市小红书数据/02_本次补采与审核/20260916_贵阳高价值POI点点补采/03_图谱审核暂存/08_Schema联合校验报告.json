@@ -1,0 +1,18 @@
+{
+  "baseRecordCount": 96753,
+  "mergedRecordCount": 99262,
+  "validatedFieldCount": 3084160,
+  "stagingCounts": {
+    "RawSourceAnswer": 184,
+    "SourceEvidence": 2140,
+    "ReviewItem": 184,
+    "CollectionBatch": 1
+  },
+  "duplicateIds": [],
+  "safetyErrors": [],
+  "schemaErrorCount": 0,
+  "schemaWarningCount": 0,
+  "schemaErrors": [],
+  "schemaWarnings": [],
+  "passed": true
+}

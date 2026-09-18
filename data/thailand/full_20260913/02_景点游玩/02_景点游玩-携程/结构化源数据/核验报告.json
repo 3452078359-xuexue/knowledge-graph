@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-08-30T19:31:08-07:00",
+  "passed": true,
+  "checks": 1132,
+  "errors": [],
+  "unique_records": 99,
+  "main_local_sights": 60,
+  "main_detail_ok": 60,
+  "pages_collected": 10,
+  "raw_card_count": 100,
+  "historical_failure_events": 0,
+  "notes": [
+    "离线核验实际保存的字段与精选来源数据，不是重新联网采集。",
+    "字段缺失不自动判定失败；完整率详见质量报告。"
+  ]
+}

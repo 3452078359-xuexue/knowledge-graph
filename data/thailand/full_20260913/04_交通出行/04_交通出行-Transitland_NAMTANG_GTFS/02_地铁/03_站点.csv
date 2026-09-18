@@ -1,0 +1,108 @@
+﻿交通类型代码,交通类型中文,stop_id,stop_name,stop_lat,stop_lon,zone_id,wheelchair_boarding,stop_name_泰文,stop_name_英文,分类依据
+1,地铁,329,MRT สีลม;MRT Si Lom,13.729364088500606,100.53735221272413,329,1,MRT สีลม,MRT Si Lom,stop_times停靠＋fare_rules票价区域
+1,地铁,330,MRT บางพลู;MRT Bang Phlu,13.87584835220433,100.43378419342285,330,1,MRT บางพลู,MRT Bang Phlu,stop_times停靠＋fare_rules票价区域
+1,地铁,331,MRT เตาปูน;MRT Tao Poon,13.80612994914501,100.53079784013575,331,1,MRT เตาปูน,MRT Tao Poon,stop_times停靠＋fare_rules票价区域
+1,地铁,332,MRT ไทรม้า;MRT Sai Ma,13.870481389574424,100.46668230323559,332,1,MRT ไทรม้า,MRT Sai Ma,stop_times停靠＋fare_rules票价区域
+1,地铁,333,MRT คลองเตย;MRT Khlong Toei,13.722291546570295,100.55398527114322,333,1,MRT คลองเตย,MRT Khlong Toei,stop_times停靠＋fare_rules票价区域
+1,地铁,334,MRT บางซื่อ;MRT BANG SUE,13.802980633284573,100.53913704799047,334,1,MRT บางซื่อ,MRT BANG SUE,stop_times停靠＋fare_rules票价区域
+1,地铁,335,MRT บางซ่อน;MRT Bang Son,13.820054230209303,100.53242664295837,335,1,MRT บางซ่อน,MRT Bang Son,stop_times停靠＋fare_rules票价区域
+1,地铁,336,MRT ลุมพินี;MRT Lumphini,13.72541093103132,100.54649983835961,336,1,MRT ลุมพินี,MRT Lumphini,stop_times停靠＋fare_rules票价区域
+1,地铁,337,MRT สามย่าน;MRT Sam Yan,13.732497754635276,100.52942653037083,337,1,MRT สามย่าน,MRT Sam Yan,stop_times停靠＋fare_rules票价区域
+1,地铁,338,MRT บางกระสอ;MRT Bang Krasor,13.861650310455301,100.50465852728662,338,1,MRT บางกระสอ,MRT Bang Krasor,stop_times停靠＋fare_rules票价区域
+1,地铁,339,MRT พหลโยธิน;MRT Phahon Yothin,13.81315174006896,100.56090243174354,339,1,MRT พหลโยธิน,MRT Phahon Yothin,stop_times停靠＋fare_rules票价区域
+1,地铁,340,MRT ลาดพร้าว;MRT Lat Phrao,13.80645406488398,100.57291228208642,340,1,MRT ลาดพร้าว,MRT Lat Phrao,stop_times停靠＋fare_rules票价区域
+1,地铁,341,MRT สุขุมวิท;MRT Sukhumvit,13.737667585785157,100.56146914988385,341,1,MRT สุขุมวิท,MRT Sukhumvit,stop_times停靠＋fare_rules票价区域
+1,地铁,342,MRT สุทธิสาร;MRT Sutthisan,13.79007138976821,100.57412763024426,342,1,MRT สุทธิสาร,MRT Sutthisan,stop_times停靠＋fare_rules票价区域
+1,地铁,343,MRT หัวลำโพง;MRT Hua Lamphong,13.737621412224208,100.51711157131334,343,1,MRT หัวลำโพง,MRT Hua Lamphong,stop_times停靠＋fare_rules票价区域
+1,地铁,344,MRT ห้วยขวาง;MRT Huai Khwang,13.778672431506712,100.5735792858343,344,1,MRT ห้วยขวาง,MRT Huai Khwang,stop_times停靠＋fare_rules票价区域
+1,地铁,345,MRT เพชรบุรี;MRT Phetchaburi,13.749330410827774,100.56348938507715,345,1,MRT เพชรบุรี,MRT Phetchaburi,stop_times停靠＋fare_rules票价区域
+1,地铁,346,MRT กำแพงเพชร;MRT Kamphaeng Phet,13.797776427705719,100.54817118695642,346,1,MRT กำแพงเพชร,MRT Kamphaeng Phet,stop_times停靠＋fare_rules票价区域
+1,地铁,347,MRT วงศ์สว่าง;MRT Wong Sawang,13.8298162742186,100.52649906982305,347,1,MRT วงศ์สว่าง,MRT Wong Sawang,stop_times停靠＋fare_rules票价区域
+1,地铁,348,MRT คลองบางไผ่;MRT Khlong Bang Phai,13.892498384213935,100.40826519165242,348,1,MRT คลองบางไผ่,MRT Khlong Bang Phai,stop_times停靠＋fare_rules票价区域
+1,地铁,349,MRT บางรักใหญ่;MRT Bang Rak Yai,13.876679385770029,100.44491667819702,349,1,MRT บางรักใหญ่,MRT Bang Rak Yai,stop_times停靠＋fare_rules票价区域
+1,地铁,350,MRT พระรามเก้า;MRT Phra Ram 9,13.757346212856078,100.56529956528175,350,1,MRT พระรามเก้า,MRT Phra Ram 9,stop_times停靠＋fare_rules票价区域
+1,地铁,351,MRT รัชดาภิเษก;MRT Ratchadaphisek,13.798852429578533,100.57460091158899,351,1,MRT รัชดาภิเษก,MRT Ratchadaphisek,stop_times停靠＋fare_rules票价区域
+1,地铁,352,MRT สวนจตุจักร;MRT Chatuchak Park,13.802765780123295,100.55374975777596,352,1,MRT สวนจตุจักร,MRT Chatuchak Park,stop_times停靠＋fare_rules票价区域
+1,地铁,353,MRT ตลาดบางใหญ่;MRT Talad Bang Yai,13.881152559514522,100.40927930915939,353,1,MRT ตลาดบางใหญ่,MRT Talad Bang Yai,stop_times停靠＋fare_rules票价区域
+1,地铁,354,MRT แยกติวานนท์;MRT Yeak Tiwanon,13.83954337914116,100.51497252362412,354,1,MRT แยกติวานนท์,MRT Yeak Tiwanon,stop_times停靠＋fare_rules票价区域
+1,地铁,355,MRT สามแยกบางใหญ่;MRT Sam Yeak Bang Yai,13.874732269204042,100.41936401768855,355,1,MRT สามแยกบางใหญ่,MRT Sam Yeak Bang Yai,stop_times停靠＋fare_rules票价区域
+1,地铁,356,MRT กระทรวงสาธารณสุข;MRT Ministry of Public Health,13.848482093508665,100.51472396023978,356,1,MRT กระทรวงสาธารณสุข,MRT Ministry of Public Health,stop_times停靠＋fare_rules票价区域
+1,地铁,357,MRT บางรักน้อยท่าอิฐ;MRT Bang Rak Noi Tha It,13.874894864958879,100.45599172271444,357,1,MRT บางรักน้อยท่าอิฐ,MRT Bang Rak Noi Tha It,stop_times停靠＋fare_rules票价区域
+1,地铁,358,MRT สะพานพระนั่งเกล้า;MRT Phra Nang Klao Bridge,13.87031880846791,100.48023913729526,358,1,MRT สะพานพระนั่งเกล้า,MRT Phra Nang Klao Bridge,stop_times停靠＋fare_rules票价区域
+1,地铁,359,MRT ศูนย์ราชการนนทบุรี;MRT Nonthaburi Civic Center,13.860188545828612,100.51299446229038,359,1,MRT ศูนย์ราชการนนทบุรี,MRT Nonthaburi Civic Center,stop_times停靠＋fare_rules票价区域
+1,地铁,360,MRT ศูนย์วัฒนธรรมแห่งประเทศไทย;MRT Thailand Cultural Centre,13.766350295819956,100.57044258535915,360,1,MRT ศูนย์วัฒนธรรมแห่งประเทศไทย,MRT Thailand Cultural Centre,stop_times停靠＋fare_rules票价区域
+1,地铁,361,MRT ศูนย์การประชุมแห่งชาติสิริกิติ์;MRT Queen Sirikit National Convention Centre,13.722940829088454,100.55969748266985,361,1,MRT ศูนย์การประชุมแห่งชาติสิริกิติ์,MRT Queen Sirikit National Convention Centre,stop_times停靠＋fare_rules票价区域
+1,地铁,362,MRT แยกนนทบุรี 1;MRT Yeak Nonthaburi 1,13.865954703122492,100.49425593758342,362,1,MRT แยกนนทบุรี 1,MRT Yeak Nonthaburi 1,stop_times停靠＋fare_rules票价区域
+1,地铁,13624,MRT วัดมังกร;MRT wat Mangkon,13.742316211089031,100.50968617200851,13624,1,MRT วัดมังกร,MRT wat Mangkon,stop_times停靠＋fare_rules票价区域
+1,地铁,13625,MRT สามยอด;MRT Sam Yot,13.746940800015208,100.50316840410233,13625,1,MRT สามยอด,MRT Sam Yot,stop_times停靠＋fare_rules票价区域
+1,地铁,13626,MRT สนามไชย;MRT Sanam Chai,13.743462596573167,100.49480527639389,13626,1,MRT สนามไชย,MRT Sanam Chai,stop_times停靠＋fare_rules票价区域
+1,地铁,13627,MRT อิสรภาพ;MRT Itsaraphap,13.73928607881357,100.4845954477787,13627,1,MRT อิสรภาพ,MRT Itsaraphap,stop_times停靠＋fare_rules票价区域
+1,地铁,13628,MRT ท่าพระ;MRT Tha Phra,13.729326490169472,100.47423541545868,13628,1,MRT ท่าพระ,MRT Tha Phra,stop_times停靠＋fare_rules票价区域
+1,地铁,13632,MRT บางไผ่;MRT Bangphai,13.72460775123359,100.46525001525879,13632,1,MRT บางไผ่,MRT Bangphai,stop_times停靠＋fare_rules票价区域
+1,地铁,13633,MRT บางหว้า;MRT Bangwa,13.720193781409932,100.45721277594566,13633,1,MRT บางหว้า,MRT Bangwa,stop_times停靠＋fare_rules票价区域
+1,地铁,13634,MRT เพชรเกษม 48;MRT phetkasem 48,13.715439681497774,100.44560551643372,13634,1,MRT เพชรเกษม 48,MRT phetkasem 48,stop_times停靠＋fare_rules票价区域
+1,地铁,13635,MRT ภาษีเจริญ;MRT Phasi Charoen,13.712934262070236,100.43440863490105,13635,1,MRT ภาษีเจริญ,MRT Phasi Charoen,stop_times停靠＋fare_rules票价区域
+1,地铁,13636,MRT บางแค;MRT Bang Khae,13.711871111894,100.422374904156,13636,1,MRT บางแค,MRT Bang Khae,stop_times停靠＋fare_rules票价区域
+1,地铁,13637,MRT หลักสอง;MRT lak Song,13.7108509522363,100.409520417452,13637,1,MRT หลักสอง,MRT lak Song,stop_times停靠＋fare_rules票价区域
+1,地铁,13642,MRT บางโพ;MRT Bang Pho,13.806364492522052,100.52101984620094,13642,1,MRT บางโพ,MRT Bang Pho,stop_times停靠＋fare_rules票价区域
+1,地铁,13643,MRT บางอ้อ;MRT Bang O,13.798858888246771,100.5097371339798,13643,1,MRT บางอ้อ,MRT Bang O,stop_times停靠＋fare_rules票价区域
+1,地铁,13644,MRT บางพลัด;MRT Bang Phlat,13.792337685669436,100.50483539700508,13644,1,MRT บางพลัด,MRT Bang Phlat,stop_times停靠＋fare_rules票价区域
+1,地铁,13645,MRT สิรินธร;MRT Sirindhorn,13.783617718286708,100.49298539757729,13645,1,MRT สิรินธร,MRT Sirindhorn,stop_times停靠＋fare_rules票价区域
+1,地铁,13646,MRT บางยี่ขัน;MRT Bang Yi Khan,13.777411299701747,100.48537328839302,13646,1,MRT บางยี่ขัน,MRT Bang Yi Khan,stop_times停靠＋fare_rules票价区域
+1,地铁,13647,MRT บางขุนนนท์;MRT Bang Khun Non,13.763115721173635,100.47336235642433,13647,1,MRT บางขุนนนท์,MRT Bang Khun Non,stop_times停靠＋fare_rules票价区域
+1,地铁,13648,MRT ไฟฉาย;MRT Fai Chai,13.755216632191079,100.46949461102486,13648,1,MRT ไฟฉาย,MRT Fai Chai,stop_times停靠＋fare_rules票价区域
+1,地铁,13649,MRT จรัญฯ 13;MRT Charan 13,13.740067715996924,100.47086656093597,13649,1,MRT จรัญฯ 13,MRT Charan 13,stop_times停靠＋fare_rules票价区域
+1,地铁,14117,MRT สำโรง;MRT Samrong,13.645030229086506,100.59654951095581,14117,2,MRT สำโรง,MRT Samrong,stop_times停靠＋fare_rules票价区域
+1,地铁,14118,MRT ลาดพร้าว;MRT Lad Phrao,13.8069401336131,100.574804842472,14118,2,MRT ลาดพร้าว,MRT Lad Phrao,stop_times停靠＋fare_rules票价区域
+1,地铁,14119,MRT ภาวนา;MRT Phawana,13.800123514180948,100.58418184518814,14119,2,MRT ภาวนา,MRT Phawana,stop_times停靠＋fare_rules票价区域
+1,地铁,14121,MRT ลาดพร้าว 71;MRT Lad Phrao 71,13.7870757876341,100.607570707798,14121,2,MRT ลาดพร้าว 71,MRT Lad Phrao 71,stop_times停靠＋fare_rules票价区域
+1,地铁,14122,MRT ลาดพร้าว 83;MRT Lad Phrao 83,13.7836372555455,100.613683462143,14122,2,MRT ลาดพร้าว 83,MRT Lad Phrao 83,stop_times停靠＋fare_rules票价区域
+1,地铁,14123,MRT มหาดไทย;MRT Mahat Thai,13.7783204559004,100.623175799847,14123,2,MRT มหาดไทย,MRT Mahat Thai,stop_times停靠＋fare_rules票价区域
+1,地铁,14124,MRT ลาดพร้าว 101;MRT Lad Phrao 101,13.7745717919502,100.629908144474,14124,2,MRT ลาดพร้าว 101,MRT Lad Phrao 101,stop_times停靠＋fare_rules票价区域
+1,地铁,14125,MRT บางกะปิ;MRT Bang Kapi,13.769064611612139,100.63972905278206,14125,2,MRT บางกะปิ,MRT Bang Kapi,stop_times停靠＋fare_rules票价区域
+1,地铁,14126,MRT แยกลำสาลี;MRT Yaek Lam Sali,13.761681556131094,100.64562991261482,14126,2,MRT แยกลำสาลี,MRT Yaek Lam Sali,stop_times停靠＋fare_rules票价区域
+1,地铁,14127,MRT ศรีกรีฑา;MRT Si Kritha,13.75025742080337,100.64484670758247,14127,2,MRT ศรีกรีฑา,MRT Si Kritha,stop_times停靠＋fare_rules票价区域
+1,地铁,14128,MRT หัวหมาก;MRT Hua Mak,13.736037045647997,100.64116671681404,14128,2,MRT หัวหมาก,MRT Hua Mak,stop_times停靠＋fare_rules票价区域
+1,地铁,14129,MRT กลันตัน;MRT Kalantan,13.72516144583676,100.64178630709648,14129,2,MRT กลันตัน,MRT Kalantan,stop_times停靠＋fare_rules票价区域
+1,地铁,14130,MRT ศรีนุช;MRT Si Nut,13.710972120856676,100.64417749643326,14130,2,MRT ศรีนุช,MRT Si Nut,stop_times停靠＋fare_rules票价区域
+1,地铁,14131,MRT ศรีนครินทร์ 38;MRT Srinagarindra 38,13.701064751157066,100.64646542072296,14131,2,MRT ศรีนครินทร์ 38,MRT Srinagarindra 38,stop_times停靠＋fare_rules票价区域
+1,地铁,14132,MRT สวนหลวง ร.9;MRT Suan Luang Rama IX,13.690763458088195,100.64707696437836,14132,2,MRT สวนหลวง ร.9,MRT Suan Luang Rama IX,stop_times停靠＋fare_rules票价区域
+1,地铁,14133,MRT ศรีอุดม;MRT Si Udom,13.676588996149277,100.64604967832565,14133,2,MRT ศรีอุดม,MRT Si Udom,stop_times停靠＋fare_rules票价区域
+1,地铁,14134,MRT ศรีเอี่ยม;MRT Si Iam,13.667652313716815,100.64504116773605,14134,2,MRT ศรีเอี่ยม,MRT Si Iam,stop_times停靠＋fare_rules票价区域
+1,地铁,14135,MRT ศรีลาซาล;MRT Si La Salle,13.654964717834146,100.64210683107376,14135,2,MRT ศรีลาซาล,MRT Si La Salle,stop_times停靠＋fare_rules票价区域
+1,地铁,14136,MRT ศรีแบริ่ง;MRT Si Bearing,13.643438951767221,100.63621670007706,14136,2,MRT ศรีแบริ่ง,MRT Si Bearing,stop_times停靠＋fare_rules票价区域
+1,地铁,14137,MRT ศรีด่าน;MRT Si Dan,13.633051726577063,100.63008785247803,14137,2,MRT ศรีด่าน,MRT Si Dan,stop_times停靠＋fare_rules票价区域
+1,地铁,14138,MRT ศรีเทพา;MRT Si Thepha,13.629991513396405,100.62255620956421,14138,2,MRT ศรีเทพา,MRT Si Thepha,stop_times停靠＋fare_rules票价区域
+1,地铁,14139,MRT ทิพวัล;MRT Thipphawan,13.636685352415956,100.6099283695221,14139,2,MRT ทิพวัล,MRT Thipphawan,stop_times停靠＋fare_rules票价区域
+1,地铁,14393,MRT โชคชัย4;MRT Chok Chai 4,13.794411153503168,100.59441849589348,14393,2,MRT โชคชัย4,MRT Chok Chai 4,stop_times停靠＋fare_rules票价区域
+1,地铁,14622,MRT แคราย;MRT Khaerai,13.8627158701009,100.520602762699,14622,2,MRT แคราย,MRT Khaerai,stop_times停靠＋fare_rules票价区域
+1,地铁,14623,MRT สนามบินน้ำ;MRT Sanambin Nam,13.8740667913817,100.516327321529,14623,2,MRT สนามบินน้ำ,MRT Sanambin Nam,stop_times停靠＋fare_rules票价区域
+1,地铁,14624,MRT สามัคคี;MRT Samakkhi,13.8892838101952,100.510565936565,14624,2,MRT สามัคคี,MRT Samakkhi,stop_times停靠＋fare_rules票价区域
+1,地铁,14625,MRT กรมชลประทาน;MRT Royal Irrigation Department,13.898511440324569,100.50709247589111,14625,2,MRT กรมชลประทาน,MRT Royal Irrigation Department,stop_times停靠＋fare_rules票价区域
+1,地铁,14626,MRT แยกปากเกร็ด;MRT Pakkret,13.906293712734822,100.50541341304779,14626,2,MRT แยกปากเกร็ด,MRT Pakkret,stop_times停靠＋fare_rules票价区域
+1,地铁,14627,MRT เลี่ยงเมืองปากเกร็ด;MRT Pakkret Bypass,13.9065345450271,100.5155374109745,14627,2,MRT เลี่ยงเมืองปากเกร็ด,MRT Pakkret Bypass,stop_times停靠＋fare_rules票价区域
+1,地铁,14628,MRT สถานีแจ้งวัฒนะ – ปากเกร็ด 28;MRT Chaeng Watthana-Pak Kret 28,13.904197810312567,100.52925020456314,14628,2,MRT สถานีแจ้งวัฒนะ – ปากเกร็ด 28,MRT Chaeng Watthana-Pak Kret 28,stop_times停靠＋fare_rules票价区域
+1,地铁,14629,MRT สถานีศรีรัช;MRT Si Rat,13.900583961313483,100.53998708724976,14629,2,MRT สถานีศรีรัช,MRT Si Rat,stop_times停靠＋fare_rules票价区域
+1,地铁,14630,MRT สถานีเมืองทองธานี;MRT Muang Thong Thani,13.897446532249862,100.5483703315258,14630,2,MRT สถานีเมืองทองธานี,MRT Muang Thong Thani,stop_times停靠＋fare_rules票价区域
+1,地铁,14631,MRT แจ้งวัฒนะ 14;MRT Chaeng Watthana 14,13.893309226781366,100.56009292602539,14631,2,MRT แจ้งวัฒนะ 14,MRT Chaeng Watthana 14,stop_times停靠＋fare_rules票价区域
+1,地铁,14632,MRT ศูนย์ราชการเฉลิมพระเกียรติ;MRT Chaloem Phrakiat Government Center,13.890779679829011,100.56730672717094,14632,2,MRT ศูนย์ราชการเฉลิมพระเกียรติ,MRT Chaloem Phrakiat Government Center,stop_times停靠＋fare_rules票价区域
+1,地铁,14633,MRT โทรคมนาคมห่งชาติ;MRT National Telecom,13.887577022864512,100.575602799654,14633,2,MRT โทรคมนาคมห่งชาติ,MRT National Telecom,stop_times停靠＋fare_rules票价区域
+1,地铁,14634,MRT หลักสี่;MRT Kak Si,13.884158202806777,100.58260336518288,14634,2,MRT หลักสี่,MRT Kak Si,stop_times停靠＋fare_rules票价区域
+1,地铁,14635,MRT ราชภัฏพระนคร;MRT Phranakhon Rajabhat,13.879921712262163,100.58927401900291,14635,2,MRT ราชภัฏพระนคร,MRT Phranakhon Rajabhat,stop_times停靠＋fare_rules票价区域
+1,地铁,14636,MRT วัดพระศรีมหาธาตุ;MRT,13.874840164986763,100.59707522392273,14636,2,MRT วัดพระศรีมหาธาตุ,MRT,stop_times停靠＋fare_rules票价区域
+1,地铁,14637,MRT รามอินทรา 3;MRT Ram Inthra 3,13.870956345239533,100.60255900025368,14637,2,MRT รามอินทรา 3,MRT Ram Inthra 3,stop_times停靠＋fare_rules票价区域
+1,地铁,14638,MRT ลาดปลาเค้า;MRT Lat Pla Khao,13.86280571095533,100.61775639653206,14638,2,MRT ลาดปลาเค้า,MRT Lat Pla Khao,stop_times停靠＋fare_rules票价区域
+1,地铁,14639,MRT รามอินทรา กม.4;MRT Ram Inthra Kor Mor 4,13.858331854580559,100.62605783343315,14639,2,MRT รามอินทรา กม.4,MRT Ram Inthra Kor Mor 4,stop_times停靠＋fare_rules票价区域
+1,地铁,14640,MRT มัยลาภ;MRT Maiyalap,13.854998541184237,100.6322430074215,14640,2,MRT มัยลาภ,MRT Maiyalap,stop_times停靠＋fare_rules票价区域
+1,地铁,14641,MRT วัชรพล;MRT Vacharaphol,13.849265390687453,100.6428337097168,14641,2,MRT วัชรพล,MRT Vacharaphol,stop_times停靠＋fare_rules票价区域
+1,地铁,14642,MRT รามอินทรา กม.6;MRT Ram Inthra Kor Mor 6,13.845207958650015,100.65019369125366,14642,2,MRT รามอินทรา กม.6,MRT Ram Inthra Kor Mor 6,stop_times停靠＋fare_rules票价区域
+1,地铁,14643,MRT คู้บอน;MRT Khu Bon,13.840548855956863,100.65876334905624,14643,2,MRT คู้บอน,MRT Khu Bon,stop_times停靠＋fare_rules票价区域
+1,地铁,14644,MRT รามอินทรา กม.9;MRT Ram Inthra Kor Mor 9,13.833787912663162,100.6674537062645,14644,2,MRT รามอินทรา กม.9,MRT Ram Inthra Kor Mor 9,stop_times停靠＋fare_rules票价区域
+1,地铁,14645,MRT วงแหวนรามอินทรา;MRT Outer Ring Road-Ram Inthra,13.824482179076428,100.67706674337387,14645,2,MRT วงแหวนรามอินทรา,MRT Outer Ring Road-Ram Inthra,stop_times停靠＋fare_rules票价区域
+1,地铁,14646,MRT นพรัตน์;MRT Nopparat,13.816551306514578,100.68549424409866,14646,2,MRT นพรัตน์,MRT Nopparat,stop_times停靠＋fare_rules票价区域
+1,地铁,14647,MRT บางชัน;MRT Bang Chan,13.812719908133074,100.7027918100357,14647,2,MRT บางชัน,MRT Bang Chan,stop_times停靠＋fare_rules票价区域
+1,地铁,14648,MRT เศรษฐบุตรบำเพ็ญ;MRT Setthabutbamphen,13.812683443127948,100.7124799489975,14648,2,MRT เศรษฐบุตรบำเพ็ญ,MRT Setthabutbamphen,stop_times停靠＋fare_rules票价区域
+1,地铁,14649,MRT ตลาดมีนบุรี;MRT Min Buri Market,13.812514141243762,100.72568714618683,14649,2,MRT ตลาดมีนบุรี,MRT Min Buri Market,stop_times停靠＋fare_rules票价区域
+1,地铁,14650,MRT มีนบุรี;MRT Min Buri,13.808439138019946,100.73256030678749,14650,2,MRT มีนบุรี,MRT Min Buri,stop_times停靠＋fare_rules票价区域
+1,地铁,16936,MRT อิมแพ็ค เมืองทองธานี;MRT Impact Muang Thong Thani,13.9109007259292,100.544325560331,16936,2,MRT อิมแพ็ค เมืองทองธานี,MRT Impact Muang Thong Thani,stop_times停靠＋fare_rules票价区域
+1,地铁,16937,MRT ทะเลสาบเมืองทองธานี;MRT Lake Muang Thong Thani,13.918305080465617,100.5456505715847,16937,2,MRT ทะเลสาบเมืองทองธานี,MRT Lake Muang Thong Thani,stop_times停靠＋fare_rules票价区域

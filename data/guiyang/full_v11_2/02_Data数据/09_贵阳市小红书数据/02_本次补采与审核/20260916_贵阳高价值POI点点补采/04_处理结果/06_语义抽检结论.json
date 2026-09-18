@@ -1,0 +1,58 @@
+{
+  "sampleEntities": 17,
+  "samplePostExcerptsReviewed": 77,
+  "reviewedBusinessTypes": [
+    "FoodAndBeverage",
+    "Accommodation",
+    "ScenicArea",
+    "TransitHub"
+  ],
+  "sourceEvidenceAccepted": 0,
+  "basePoiFieldsModified": false,
+  "p1EligibleNow": true,
+  "p1EligibilityMeaning": "仅允许按小批次继续采集 P1；不代表帖子、AI答案、评分、热度或经营状态已获准写入图谱稳定字段。",
+  "finalReviewConclusion": "P0 116/116 严格完成。跨业务抽检覆盖分店消歧、无来源、正文缺失、协同营销、别名、正负体验、攻略捎带、跨区行程、异地同名和交通枢纽消歧；发现的规则缺口均已转化为排除或待审通道，样本支持启动受控 P1。",
+  "confirmedDesignStrengths": [
+    "无名称直接命中的同街区帖子被排除",
+    "正文抓取失败时不生成 SourceEvidence",
+    "连锁分店缺少位置上下文时不自动归属",
+    "正面与负面体验均保留在审核候选中",
+    "异地同名景点不会仅凭名称命中进入证据层",
+    "跨区行程按来源标记，不再把整题有效证据一并删除",
+    "交通枢纽只允许形成接驳与到离场景候选，不从攻略提及推导热度"
+  ],
+  "confirmedDesignDefectsAndFixes": [
+    {
+      "defect": "同日模板化软广会被误当多篇独立体验",
+      "fix": "增加近重复组、同日同标签簇、同作者多帖和疑似协同营销标记；从 P1 闸门有效证据中剔除"
+    },
+    {
+      "defect": "实体更名或地图名称变体会被严格全名匹配误杀",
+      "fix": "增加弱名称锚点加地址/分店上下文的待审核通道；别名候选不计入 P1 有效证据"
+    },
+    {
+      "defect": "其他店铺的闭店文字会误触发目标实体经营风险",
+      "fix": "经营状态词必须和目标名称出现在同一语义句段，并补充打围、围挡、装修等词"
+    },
+    {
+      "defect": "历史沿革中的陈年更名会被误标为当前经营风险",
+      "fix": "明确早于核查日三年以上且带年份的改名、迁址事件作为历史沿革，不触发当前风险"
+    },
+    {
+      "defect": "都匀、兴义等地同名景点会因名称直接命中混入贵阳实体",
+      "fix": "空间型实体增加异地同名排除和行政区冲突待审；同时豁免明确以贵阳目标作比较主体的标题"
+    }
+  ],
+  "p1RunPolicy": "每批最多15题；出现验证码、登录风险、来源正文不完整或范围污染立即停止；每批完成后重跑同一套暂存、语义审核和Schema校验。",
+  "p1Progress": {
+    "completed": 68,
+    "planned": 100,
+    "foodCompleted": 60,
+    "hotelPilotCompleted": 8,
+    "hotelRemaining": 32,
+    "pauseReason": "页面断连后连续两次未通过稳定输入门槛；均未发送问题，断点可续。",
+    "foodDecision": "P1餐饮已全量完成；尾层无游客来源率升高、候选数连续下降，后续更低价值餐饮改为按需触发。",
+    "hotelDecision": "酒店样本收益达标，页面恢复后可继续断点采集。"
+  },
+  "publicationPolicy": "src_xhs.publishable=否；抽检通过也只允许后续形成字段级 SourceEvidence，不能直接覆盖 POI 稳定事实或计算热度。"
+}

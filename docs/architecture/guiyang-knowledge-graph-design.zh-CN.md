@@ -1,0 +1,479 @@
+# 贵阳城市旅游知识图谱 · 技术设计
+
+> 版本日期 2026-09-16。文中所有数字均为实测，注明「实测」的可按第十章复现。
+
+---
+
+## 外部技术依据：Uber H3
+
+本项目的网格设计参考 Isaac Brodsky 于 2018 年发布的 Uber Engineering 文章 [H3: Uber’s Hexagonal Hierarchical Spatial Index](https://www.uber.com/us/en/blog/h3/)，并以 [H3 官方文档](https://h3geo.org/docs/) 的现行 API 和分辨率统计为准。该来源是工程文章而非同行评审论文；仓库仅保存引用、技术摘要和项目映射，不复制网页全文。
+
+H3 为本项目提供层级空间单元、邻域枚举和集合压缩能力，但不替代精确距离、行政区边界判定、POI 身份解析或业务排序。完整引用、分辨率数据、坐标系约束和本地实现差异见 [`docs/references/h3-spatial-index.md`](../references/h3-spatial-index.md)。
+
+## 零、这份文档是什么
+
+给三类人看：
+
+- **接手数据建设的人** —— 看第三、四、七、八章，知道数据往哪挂、挂之前要过哪几道闸
+- **接手查询服务的人** —— 看第五、六章，知道三类游客问法各走哪条路
+- **做技术判断的人** —— 看第四章末与第九章，知道哪些约束是方法本身的边界，补不了
+
+不写的：部署、运维、前端。
+
+---
+
+## 一、整体架构
+
+```
+                        游客提问
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+   类型1 经纬度        类型2 地名/地址      类型3 店名
+        │                  │                  │
+        │             地名索引 PlaceAlias      │
+        │             27,981 条 · 一跳到格      │
+        │                  │                  │
+        └──────────► 空间骨架 GeoCell ◄────────┘
+                    R8 11,297 + R7 1,714
+                           │
+                    ┌──────┴──────┐
+              召回层（底图）      详情层（图谱）
+              80,609 POI         30,769 POI
+                    └──────┬──────┘
+                    POI 身份映射层
+                    poi_identity.json
+```
+
+**三个产物互不依赖，可分别重建：**
+
+| 产物 | 内容 | 重建耗时 |
+|---|---|---|
+| `grid/framework_bundle.json` | 空间框架 41,323 条 | 分钟级 |
+| `retrieval.py` 内存索引 | 检索索引 80,609 POI | **423ms** |
+| `grid/poi_identity.json` | 跨源身份映射 30,769 条 | 秒级 |
+
+**框架里没有一条 POI 实体。** POI 的属性一律留在 POI 上，格子只承载空间归属与密度信号。
+
+---
+
+## 二、Schema 总览
+
+`CityTourism.schema`（OpenSPG DSL）：**30 实体 · 1,098 属性 · 18 关系**
+
+| 分组 | 实体数 | 属性数 | 实体 |
+|---|---|---|---|
+| 空间骨架 | 5 | 164 | City / AdminArea / Zone / GeoCell / PlaceAlias |
+| POI | 8 | 418 | ScenicArea / Area / Facility / FoodAndBeverage / Accommodation / Shopping / Dish / Product |
+| 交通 | 7 | 281 | TransitHub / TransitLine / TransitRoute / TransitStop / TransitFacility / TransportFareRule / Route |
+| 数据治理 | 6 | 132 | DataSource / CollectionBatch / SourceEvidence / DynamicOverride / ReviewItem / RawSourceAnswer |
+| 语义 | 4 | 103 | KnowledgeUnit / FAQ / Intent / Scenario |
+
+**类型系统只有 Text / Float / Integer** —— 平台上限。所以没有原生日期、枚举、数组类型：
+日期用 `YYYY-MM-DD` 文本、枚举靠 `constraint: Enum="..."`、数组靠 `constraint: MultiValue`。
+
+---
+
+## 三、空间骨架四层
+
+```
+City（贵阳市）
+  └─ AdminArea 157    1 市 + 10 区县 + 146 街道乡镇
+       └─ GeoCell 13,011    R8 主层 + R7 粗筛层
+            ├─ Zone 171     商圈/美食聚集区，是格子的标签不是划分
+            └─ PlaceAlias 27,981   地名 → 格子的入口
+```
+
+### 划分 vs 标注 —— 两种完全不同的关系
+
+| | AdminArea → GeoCell | GeoCell → Zone |
+|---|---|---|
+| 性质 | **划分** | **标注** |
+| 覆盖 | 100%，不重不漏 | 21%（2,390/11,297） |
+| 依据 | 官方边界 | 从 POI 推定 |
+| 能不能没有 | 不能 | 能，且**大多数格子本就不该有** |
+
+**79% 的格子没有商圈是事实不是缺口** —— 其中 78% 在开阳/清镇/息烽/修文四个农村县，那里本来就不属于任何商圈。实测地图厂商自己对这些格子也只有 **0.4%** 给得出商圈名。
+
+### 商圈判定的四级证据
+
+| 方式 | 依据 | 置信 | 格数 |
+|---|---|---|---|
+| POI标签众数 | 格内 POI 自带商圈字段，占比 ≥60% | 即实际占比 | 531 |
+| 逆地理编码 | 格中心点问厂商接口 | 固定 0.85 | 182 |
+| 邻格传播 | 3 环内同区已标注格推出 | 0.75^k | 1,677 |
+| 人工确认 | 复核过 | 1.0 | **0** |
+| 未判定 | 以上都不成立，**必须留空** | — | 8,907 |
+
+邻格传播的留出验证准确率**只有 66%** —— 只可用于召回兜底，不得用于统计。
+「人工确认」这条路至今 0 条，是整个框架里唯一从未被走通的环节。
+
+---
+
+## 四、骨架层与派生层契约
+
+**这是后期挂数据最重要的约定。** GeoCell 40 个字段分三类，寿命完全不同：
+
+| 层 | 字段数 | 何时变 | 字段 |
+|---|---|---|---|
+| **骨架层** | 7 | 永不变（区划调整除外） | id / h3Resolution / 中心经纬 / parentCell / locatedInAdminArea / adminAssignMethod |
+| **街镇族** | 5 | 只依赖格心坐标，一次补齐 | township / townshipAdcode / townshipSource / townshipId / townshipRegistryStatus |
+| **派生层** | 20 | **每次挂数据重算** | poiCount / categoryMix / dominantCategory / poiSourceMix / adminPurity / adminPoiMix / adminEvidence / collectionCoverage / dominantZone / zoneConfidence / zoneAssignMethod / zoneEvidence / zoneAliasesSeen / landmarkNames / clusterLandmarks / … |
+| 维护字段 | 8 | 由灌数器维护 | sourceId / batchId / dataQuality / externalIds / createdAt / updatedAt / lastSeenAt / contentHash |
+
+**贵阳全域边界内的 R8 与其 R7 父格必须完整建成骨架，包括 poiCount=0 的格子** ——
+否则尚未采到数据的县域会在后续增量挂载时被误判成市域外。
+
+### H3 的选型：三个实测约束
+
+**为什么用 H3 而不是 S2/Geohash/R树/四叉树：**
+
+| 维度 | H3 | S2/Geohash | 实测 |
+|---|---|---|---|
+| k 环各向异性 | **1.05–1.20** | √2 = 1.414 | 六边形更接近圆 |
+| id 一维局部性 | **无** | 有 | 相邻格 id 差 5,662 万，与距离不单调 |
+| 层级严格嵌套 | **否** | 是 | 26.2% 子格顶点落在父格多边形外 |
+| 五边形特例 | 全球 12 个 | 无 | 贵阳 R7/R8 **都不碰** |
+
+**判断：我们的主查询是 k 环邻域不是 bbox 范围扫描，所以放弃 id 局部性零代价。**
+S2/Geohash 的核心优势是 id 可做 B+树 range scan；我们用内存哈希精确查，用不上。
+**但若将来要落到 B+树或分布式 KV 上做 range scan，这个选型必须重新评估。**
+
+### 三个必须知道的 H3 语义坑
+
+**① 面积守恒 ≠ 几何嵌套。**
+7 个 R9 子格的面积之和精确等于 R8 父格（比值 1.000000），但 **26.2% 的子格顶点落在父格多边形之外**。
+
+后果：`cell_to_parent(latlng_to_cell(lat,lng,9), 8)` 与 `latlng_to_cell(lat,lng,8)` 对 **7.15% 的 POI 给出不同的格**。
+k=0 查询时召回差 **7.54%**（k≥1 时邻格吸收大半）。
+
+**全仓统一到 `latlng_to_cell(lat, lng, 8)` 直接落格，不经 R9 上卷。**
+
+**② 半径换算 k 环的常数。**
+R8 边长（外接圆半径）**531.4m**，格心间距 **920.4m**。覆盖半径 r 需要：
+
+```python
+k = ceil((r + 531.4) / 920.4)
+```
+
+加一个边长，是因为距离 r 处的 POI 可能落在格心远至 `r + 外接圆半径` 的那个格里。
+早先按 `ceil(r/461)` 取（461 是格心到边中距，不是边长），r=3000m 时取 169 格而实际只需 **61 格**，多扫 2.8 倍。
+
+**③ 格心判定的固有误差。**
+格心落在行政区边界内即归属该区。实测 **2.17%** 的 POI 因此落错行政区，集中在 114 个边界格。
+
+**分区统计必须按 POI 逐条计，不得按格子汇总。**
+
+---
+
+## 五、地名索引
+
+**27,981 条 · 99.72% 带格子（一跳定位）**
+
+### 数据模型
+
+```
+alias              甲秀楼              游客说出口的名字
+normalizedAlias    甲秀楼              去行政后缀的主名
+targetType         ScenicArea
+targetId           sa_412694
+resolveMode        点半径              ★「附近」按哪种语义算
+targetCell         88400c0f15fffff    R8 格，一跳到位
+targetCellR9       89400c0f147ffff
+priority           99                 同名多候选排序
+mentionCount       748                真实语料提及次数
+adminScope         admin_520100       同名消歧
+```
+
+### 四种解析语义 —— 用错一种答案就是错的
+
+| 方式 | 适用 | 「附近」怎么算 | 条数 |
+|---|---|---|---|
+| **点半径** | 单个 POI | 以 targetCell 为中心算 k 环 | 27,249 |
+| **片区格集** | 商圈 | 取 `Zone.h3Cells`，按需外扩一环 | 416 |
+| **辖区格集** | 行政区 | 取 `AdminArea.boundaryH3Cells`，常上千格 | 312 |
+| **地理编码兜底** | 图谱无实体的地名 | 厂商地理编码给坐标，按点半径处理 | 4 |
+
+**辖区格集只能答「XX 区有什么」，不能答「XX 区附近有什么」** ——
+实测开阳县 2,864 格，**100% 的召回离参照点 2km 开外**。
+
+兜底为什么必要：「喷水池」真实语料提及 **450 次**，但在厂商数据里没有独立商圈实体，
+只作为平台别名挂在 5 个相邻商圈上、优先级相同无法消歧，只能靠地理编码取坐标。
+
+### 解析算法 —— 取第一个能定位的，不是取优先级最高的
+
+```python
+for h in sorted(候选, key=lambda x: -x["priority"]):
+    if not h["targetCell"]:
+        continue                     # 这个候选定位不了，继续往下落
+    return 按 resolveMode 展开格集
+```
+
+实测「花果园」最高优先候选是花果园街道（prio 65），但该街道在厂商数据里尚未单独划界、**名下 0 格**；
+降序落到商圈候选（prio 55）才拿得到格子。不兜底，8 个无格街镇名下的 16 条地名全部解析失败。
+
+### 锚点选取按 POI 密度，不按几何重心
+
+`辖区格集` / `片区格集` 的 `targetCell` 取**格集内 POI 最多的格**。
+
+几何重心有两个毛病：凹形辖区的重心可能落在格集外；只看形状不看内容。
+实测街镇格集补全后重心漂移中位 0.95km、最远 7.14km，锚点会落到零 POI 格上。
+
+---
+
+## 六、检索链路
+
+`retrieval.py` —— 空间粗筛 → 文本/空间融合 → 精排。**索引全量重建 423ms。**
+
+### 三层索引
+
+| 层 | 结构 | 规模 |
+|---|---|---|
+| 空间 | `dict[h3_cell] → [poi_idx]` 哈希 | 4,269 个非空格 |
+| 文本 | 字符二元组倒排 + IDF | 110,190 词项 / 659,955 postings |
+| 精确名 | `dict[归一名] → [poi_idx]` | — |
+
+**中文不分词，用字符二元组。** POI 名大量是专名与生造词（「但家香酥鸭」「黔爽公交星光市集」），分词器会切错，bigram 对专名天然友好。
+
+### 查询路由 —— 谁强谁驱动
+
+这是厂商 query planner 做的事，**不是固定「先空间后文本」**：
+
+| 查询形态 | 驱动 | 理由 |
+|---|---|---|
+| 稀有词（店名、地标名） | **倒排驱动** 再按距离排 | 实测「蜜雪冰城」在 k=0 的 504 个候选里**一家都没有** |
+| 品类词 / 无文本 | **空间驱动** 再在圈内挑 | 品类词 postings 太长，倒排驱动等于全库扫 |
+
+实测 5 个指名查询在空间粗筛候选集里**命中 0–1 个**。固定单向流水线答不了「XX 在哪」。
+
+### 三路精排
+
+```
+score = 0.65×(1-w) × 文本  +  0.35×(1-w) × 距离  +  w × 重要度      w = 0.20
+```
+
+公开资料普遍只提前两路。第三路是必需的 —— 实测「黔灵山」文本相似度分不开
+黔灵山公园 / 黔灵山路 / 黔灵山隧道，只有**类型先验 + 真实热度**能分开。
+
+### 两处按本地实测改掉的教科书做法
+
+**① 半径不固定，按「凑够 N 个候选」反推 k。**
+实测同样 1km 半径：大十字 **1,358** 家，乌当新添寨 **0** 家。固定半径在市中心淹人、在郊区空手。
+
+**② 距离衰减尺度 d0 取「第 topk 近」，不取候选集中位距离。**
+实测「火锅」候选 866 家遍布全市，中位距离 9,980m，`1/(1+d/d0)` 对 30m 和 2000m 几乎给同一个值 ——
+距离信号被压平，近处的店排到远处后面。改后区分度 **0.163 → 0.655**。
+
+### 其他必需的工程细节
+
+- **逐环递增只枚举新增的那一环**。每轮调 `grid_disk` 是从头枚举整盘，k=12 时枚举约 2,200 次而实际只需 469 次。实测空格 p95 **1.31 → 0.90ms**
+- **噪声名不进倒排**。「地面停车场」146 个、「招呼站」119 个同名，进倒排会让任何模糊查询都撞上它们
+- **同名折叠**。实测「甲秀南路」三个路段各占一席，把前五挤掉三席
+
+---
+
+## 七、POI 身份层
+
+**两库逻辑统一、物理分离。**
+
+| | 召回层（底图） | 详情层（图谱） |
+|---|---|---|
+| 规模 | 80,609 | 30,769 POI |
+| 字段 | 17 | 33 |
+| 角色 | 求**全**，全带坐标 | 求**厚** |
+
+**两库 id 空间交集为 0**，靠外部标识对齐。
+
+### 身份三件套（schema 已有，不需新建映射表）
+
+| 字段 | 作用 | 填充率 |
+|---|---|---|
+| `externalIds` | 跨源去重键，形如 `amap:B0FFH...`，MultiValue | **100%** |
+| `identityStatus` | source_only / provisional_match / confirmed_match / ambiguous | — |
+| `identityResolutionMethod` | 8 个取值，含 `shared_external_id` | — |
+
+### 判定规则（`POI身份判定规则.md`）
+
+| 层 | 条件 | 判定 | 实测 |
+|---|---|---|---|
+| R1 | `externalIds` 含 `amap:X` 且 X 在底图 | `confirmed_match` | **23,590** |
+| R2 | 含 `amap:X` 但底图没有 | `source_only` | 2,075 |
+| R3 | 无 amap id，名称+区县双侧唯一 | **`provisional_match`**，必须进复核 | 2 |
+| R4 | 其余 | `source_only` | 5,102 |
+
+**三条硬约束：**
+
+1. `poiUid` 不得重新铸造 —— 重导时必须先按 `externalIds` 查重命中已有实体
+2. **名称匹配结果不得写回 `externalIds`** —— 写回去，下次运行会当成共享外部 ID 自动升级为 confirmed，暂定悄悄变成确认且无从追溯
+3. `provisional_match` / `ambiguous` 下游一律不得当 `confirmed_match` 用
+
+**名称归一化禁止去括号** —— 「蜜雪冰城(狮峰路店)」与「蜜雪冰城(普陀路店)」是两家店，
+去括号会把 78 家门店压成一个名字然后整片误配。
+
+### 高德美食关键字段补全
+
+高德 POI 搜索 2.0 的 v5 接口使用 `show_fields=business,children,indoor,navi,photos`，不是旧 v3 写法的 `extensions=all`。当前 24,238 家评分不低于 3.5 的美食记录按以下规则挂载：
+
+- `business.tel` → `telephone`；`business.tag` → `recommendedDishes`；`keytag/rectag` → `cuisine`；`business_area` → `businessArea`；`photos` → `picture`
+- `parent` → `parentPoiId`，再按稳定 ID 查询 `parentPoiName/type/typecode`。查询不到就留空，不从地址中的商场词样推断
+- `indoor.cpid` 与 `parent` 分开保存。实测两者同时存在的 169 家，ID 全部不同，混成一个字段会丢失层级语义
+- `township/towncode` 必须对 POI 自身的 GCJ-02 精确坐标做逆地理编码；若只继承 R8 格中心结果，必须明确标为 `网格中心继承`，不能冒充点位级核验
+- 空值表示接口未返回，不表示商家没有该属性。针对缺电话/商圈/tag/照片的 63 个样本再次调用 ID 详情接口，四类新增值均为 0，因此不做无收益的全量重查
+
+高德公开接口没有可靠的营业/倒闭状态；这些实体继续保持 `needs_review`，不得仅凭 POI 仍可检索就声称商家当前营业。
+
+---
+
+## 八、数据治理机制
+
+### 三时间戳分离
+
+| 字段 | 含义 |
+|---|---|
+| `createdAt` | 首次入库 |
+| `updatedAt` | **内容变更时刻，不是抓取时刻** |
+| `lastSeenAt` | 最近抓到 |
+
+`contentHash` 未变时**只推进 `lastSeenAt`，不推进 `updatedAt`** ——
+否则重复抓取会把「最近更新」刷屏，人工复核队列被无变化记录淹没。
+
+**指纹必须覆盖全部业务字段（含关系）。** 曾经只算 3 个字段其中一个恒为 None，
+40 个字段里只看 2 个；也曾把关系排除在外，导致「第一遍灌实体、第二遍补关系」时第二遍被整个吞掉。
+
+实测：重复构建 **41,323 条记录，`updatedAt` 零变动**。
+
+### 对外闸门：`dataQuality`
+
+```
+ingestable | needs_review | rejected | archived
+```
+
+置为 `ingestable` 必须同时满足四条，全部可机器判定：
+
+1. `lastVerifiedAt` 非空
+2. 每个对外字段的 `fieldSources` 指向的 `DataSource.publishable=是`
+3. 该字段有**断言级** `SourceEvidence`（带 field 与 quote），词条级证据不算
+4. `updatedAt` 不晚于 `lastVerifiedAt` —— 核验后又变过的自动退回
+
+`archived` 为软删除：引用保留，仅从对外查询过滤。
+**`referencedBy` 为 0 才可硬删**，否则一律软删 —— 删一个景区平均波及 34 条引用。
+
+### 其他
+
+- `lastVerifiedAt` + `verifiedBy` —— 「核过没有」独立于「抓到过」
+- `DataSource.refreshDays` / `trustedFields` / `forbiddenFields` —— 每个源的刷新周期与可写字段
+- `CollectionBatch` —— `plannedCount` / `collectedCount` / `coverageRatio` / `gridPass`（粗网格/细网格/人工/补采）
+- `DynamicOverride` —— 仲裁顺序 `authorityLevel` > `priority` > `updatedAt`，不靠迭代顺序
+
+---
+
+## 九、已知限制（方法本身的边界，补不了）
+
+| 限制 | 量化 | 性质 |
+|---|---|---|
+| 街道乡镇无官方边界 | 厂商对**任何**街镇都不提供 polyline | 硬约束 |
+| 8 个街镇名下 0 格 | 其中 6 个是主城口径滞后，逆编码解决不了 | 硬约束 |
+| 格心判定误差 | **2.17%** POI 落错行政区 | 中心包含法固有 |
+| 市外边界格 | **423 格（6.18%）**格心经逆编码确认在贵阳市外，散落 38 个外市乡镇 | 简化 polyline 固有 |
+| 街镇覆盖上限 | **96.2%**，非 100% | 上一条的后果 |
+| 类型系统 | 只有 Text / Float / Integer | 平台上限 |
+| 人工确认环节 | **0 条**，从未走通 | 流程缺失 |
+
+### 两处曾经写错、现已更正的判断
+
+**① 「密度断崖必然是漏采」—— 不成立。**
+三轮 132 格抽样，真缺口率约 **17%**（单轮 11.7% 与 24.1%，置信区间重叠），其余约八成厂商自己也返回 0 个 POI。
+但**少数派不可忽略**：抽出的真缺口多为农家乐、风味馆、烧烤等旅游餐饮，正是最需要的品类。
+`collectionCoverage` 的正确用法是**分诊而非定论**。
+
+**② 「不补商圈是因为有覆盖风险」—— 理由错了。**
+实际覆盖数 ≈ 0（把「符合条件数」当成了「会被覆盖数」）。
+**不补商圈的理由是无收益**（厂商命中率 0.4%），不是有风险。
+
+---
+
+## 十、验证体系
+
+### 四件套
+
+```bash
+python3 lint_schema.py                              # schema 自检
+python3 validate_data.py grid/framework_bundle.json # 数据校验
+python3 grid/audit_grid.py                          # 网格审核 26 项
+python3 grid/verify_framework.py                    # 框架核实 17 项
+```
+
+**当前状态：**
+
+```
+schema   30 实体 · 1,098 属性 · 0 error · 10 warn
+数据     41,323 条 / 1,047,943 字段 · 0 error · 0 warn
+网格审核 26/26 · 框架核实 17/17
+测试     20 套全绿
+```
+
+### 20 套场景测试
+
+| 类别 | 测试 |
+|---|---|
+| 存储与演化 | negative_test 32 · test_storage · test_fusion 6 · test_delete 7 · test_evolution 9 · test_ops 9 |
+| 问答与运营 | test_usage 10 · test_answer 13 · test_review 10 · test_recall 7 |
+| 空间 | test_geo 6 · test_nearby 11 · test_coverage 19 · test_itinerary 10 |
+| 场景 | test_landmark_query 7 · test_trending 8 |
+| **查询入口** | **test_q1_coord 8 · test_q2_placename 22 · test_q3_shopname 18** |
+| 检索基准 | test_retrieval 8 |
+
+### 一条测量纪律
+
+**绝对延迟数字随机器状态漂移一倍以上** —— 实测同一份代码在 load average 0.5 与 2.5 下，
+类型1 的 p95 分别是 0.94ms 与 2.1ms。
+
+**比较两个实现孰优孰劣必须 A/B 同跑**，不能拿两次不同时间的测量相减。
+
+### 一条设计纪律
+
+**验收标准不得是被测缺陷的同义反复。**
+
+`audit_grid` 曾有两条「不变量」：「有街镇的格子必有 POI」「无 POI 的格子不应有街镇」。
+它们不是不变量，是旧采集脚本 `poiCount>0` 过滤的同义反复 —— 断言的正是那个缺陷本身。
+保留它们，等于把 bug 固化成验收标准。已退役，换成 4 条真不变量。
+
+---
+
+## 十一、文件清单
+
+### 核心
+
+| 文件 | 内容 |
+|---|---|
+| `CityTourism.schema` | 30 实体 · 1,098 属性 · 18 关系 |
+| `parsed.json` | schema 解析产物，供校验器使用 |
+| `retrieval.py` | 检索链路 |
+| `grid/framework_bundle.json` | 空间框架交付包 41,323 条 |
+| `grid/poi_identity.json` | POI 跨源身份映射 30,769 条 |
+
+### 建格管线（按顺序）
+
+```
+grid/build_grid.py          多边形填充 → geocells.json
+grid/enrich_grid.py         POI 落格、密度、品类
+grid/fill_township.py       街镇补全（默认空跑，--commit 才写）
+grid/mark_township_lag.py   口径滞后标记
+grid/build_framework.py     geocells.json → framework_*.json（挂 townshipId、算指纹）
+grid/build_place_alias.py   ─┐
+grid/merge_user_aliases.py   ├ 地名索引三步
+grid/finalize_alias.py      ─┘
+```
+
+### 说明文档
+
+| 文件 | 内容 |
+|---|---|
+| `城市网格设计与数据挂载.md` | 网格设计与数据挂载指南 |
+| `POI身份判定规则.md` | 跨源身份判定规则 v1 |
+| `街镇补全方法.md` | 街镇补全方法 v2（经红队检验） |
+| 本文件 | 技术设计总览 |
+
+### 已停用
+
+`grid/regeo.py` —— 三处会写坏数据，运行即报错退出，原实现注释保留供追溯。

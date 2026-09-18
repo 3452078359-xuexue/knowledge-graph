@@ -1,0 +1,153 @@
+{
+  "schema": "thai-tourism.schema.v4",
+  "supersedes": "thai-tourism.schema.v3",
+  "purpose": "面向中国游客赴泰的国家级旅游知识图谱。v4 经 5 路标准评审(schema.org/Wikidata/SKOS/PROV/属性图) + 对抗收敛。",
+  "coordinateSystem": "WGS84 / EPSG:4326",
+
+  "designLaws": [
+    "科学规范只落在『有实际回报的接口处』(inScheme/altLabel/exactMatch/observedAt/双轨票价)，不追求形式完备的论文式本体。",
+    "三条落地铁律高于一切:FalkorDB 可查 · 管道能灌 · 游客可用。",
+    "判别维度升关系类型的双触发判据:只要(1)参与热路径选边 或 (2)改变路径/闭包语义 → 升具名边;否则留边属性。",
+    "溯源与时序分层惰性:胜出值内联供快读;只有真冲突属性旁挂 Claim;不做全量双时序、不铺满 PROV 活动图。"
+  ],
+
+  "changesFromV3": {
+    "MUST_已改": [
+      "新增 Event/Festival 一等类(泼水节/水灯节;三种时间语义分离)。",
+      "Dish/LocalProduct/HeritageItem 从 Concept 提升为一等类 CulturalItem;dish 走 SERVES、audience 走 SUITABLE_FOR,消除 SERVES↔TAGGED_AS 双通道。",
+      "PART_OF 拆为 PART_OF_ADMIN / CONTAINED_IN / IN_ZONE(具名边)。",
+      "地点分类单一真相:Place.category 粗粒度带索引为唯一权威;细类经 Concept(place_category) 派生。去掉 placeType/place_category 双轨。",
+      "半静态可规划数据回收进图:OpeningHoursSpecification、双轨 PriceSpecification、AggregateRating 快照、image、ContactPoint、acceptedPaymentMethod。",
+      "选择性 reify:仅价/时/名/评分挂 Claim(带 property/value/observedAt/isSelected/confidence/evidenceLevel);其余内联。",
+      "SAME_AS→RESOLVES_TO(有向 非canonical→canonical 函数式星型;导出 skos:exactMatch;非规范记录移出主查询空间,标签隔离 :Candidate)。"
+    ],
+    "SHOULD_已改": [
+      "ConceptScheme 升一等资源(inScheme;authority/version/langCoverage);Concept 增 altLabel/hiddenLabel、多值 broader;cuisine+dish 合并、细类经 TAGGED_AS。",
+      "summary/Content 多语贯穿(map<lang>+inLanguage);DERIVED_FROM 加 method/model/runId 轻量溯源。",
+      "popularityScore 等派生值 materialized(computedAt/method/inputs),独立时间轴,不与来源断言混挂。",
+      "区域型 Place 增可选 boundaryRef/GeoShape 面几何(点检索用 centroid、包含判断用面)。"
+    ],
+    "LATER_延后": [
+      "destination/zone 从 category 移除,先做角色(TAGGED_AS/INCLUDES/PART_OF 指向 AdminArea 或 POI 簇),确有营销身份再升轻量 Collection 类;zone 若准行政并入 AdministrativeArea.specialType。",
+      "Product/Offer 与 Itinerary 精细分工(daytour/package 引用 Itinerary 而非复制);增 bookability。",
+      "对外维护 v4→schema.org crosswalk 供 JSON-LD 导出(非阻塞)。"
+    ]
+  },
+
+  "commonFields": {
+    "id": {"type": "string", "required": true, "description": "不可变代理主键 TH-<class>-<key>"},
+    "labels": {"type": "string[]", "description": "图库标签,规范实体含 :Canonical,来源候选含 :Candidate 以隔离查询空间"},
+    "countryCode": {"type": "string", "required": true},
+    "name": {"type": "map<lang,string>", "description": "BCP-47 多语名 {zh,en,th,...}"},
+    "aliases": {"type": "array<{lang,value,kind}>"},
+    "location": {"type": "geopoint", "description": "点坐标 WGS84;区域型另见 boundaryRef"},
+    "boundaryRef": {"type": "string", "description": "面几何(GeoShape/geojson要素),区域/景区/zone 用"},
+    "geohash": {"type": "string"},
+    "summary": {"type": "map<lang,string>"},
+    "image": {"type": "array<{url,role,copyright}>", "description": "主图+图集+版权"},
+    "recordStatus": {"type": "enum", "values": ["active", "pending_review", "rejected"]},
+    "lifecycleStatus": {"type": "enum", "values": ["operational", "seasonal", "temporarily_closed", "closed", "moved", "historical"], "description": "当前世界状态(单一权威)"},
+    "validFrom": {"type": "date", "description": "记录版本 valid-time"},
+    "validTo": {"type": "date"},
+    "businessRefId": {"type": "string", "description": "实时业务库引用:仅实时房价/排队/临时关闭"}
+  },
+
+  "timeAxes_四条正交_不可互替": {
+    "lifecycleStatus": "对象当前世界状态(operational/seasonal/closed...)",
+    "validFrom_validTo": "记录版本有效期(valid-time)",
+    "observedAt_recordedAt": "事务时间,仅落在 Claim/派生值溯源层(append-only),不给每个节点",
+    "Event.startDate_recurrence": "事件发生时间(节庆几号/是否递归),独立"
+  },
+
+  "coreClasses": {
+    "Place": {
+      "description": "占据空间、可定位、可到访的物理要素。分类单一真相=category(带索引热路径权威)。",
+      "category": ["attraction", "dining", "lodging", "retail", "entertainment", "transport_hub", "facility"],
+      "fields": {
+        "category": {"type": "enum", "required": true, "description": "唯一权威业态判别,建索引;更细子类经 TAGGED_AS→Concept(place_category) 派生"},
+        "openingHours": {"type": "array<{dayOfWeek,opens,closes,validThrough}>", "description": "结构化营业时间(半静态入图);今日临时变动走 businessRefId"},
+        "openSeason": {"type": "string"}, "closedUntil": {"type": "date"},
+        "priceLevel": {"type": "enum", "values": ["1", "2", "3", "4"]},
+        "aggregateRating": {"type": "{ratingValue,reviewCount,ratingSource,computedAt}", "description": "评分快照,定期重算"},
+        "contactPoint": {"type": "{telephone,website,social[]}"},
+        "acceptedPaymentMethod": {"type": "string[]", "description": "Alipay/WeChat/PromptPay/card/cash"},
+        "accessibility": {"type": "map<key,bool>", "description": "无障碍布尔facet,内联带索引(非低效标签边)"},
+        "recommendedStayMinutes": {"type": "int"},
+        "popularityScore": {"type": "{value,computedAt,method,inputs}", "description": "materialized 派生值,独立时间轴"}
+      }
+    },
+    "AdministrativeArea": {
+      "description": "法定行政区(递归,单列)。",
+      "fields": {
+        "adminLevel": {"type": "enum", "values": ["country", "region", "province", "district", "subdistrict", "village"], "required": true},
+        "dopaCode": {"type": "string"}, "isoCode": {"type": "string"},
+        "specialType": {"type": "enum", "values": ["metropolis", "special_city", "municipality"]},
+        "centroid": {"type": "geopoint"}
+      }
+    },
+    "Event": {
+      "description": "★新增。带日期/可递归的时间性发生(泼水节/水灯节/庙会/演出/季节市集)。判据:潜水=Activity(可反复做),泼水节=Event(递归节庆)。",
+      "fields": {
+        "eventType": {"type": "enum", "values": ["festival", "ceremony", "market", "performance", "seasonal"]},
+        "startDate": {"type": "date"}, "endDate": {"type": "date"},
+        "recurrence": {"type": "string", "description": "RRULE,如每年泼水节"},
+        "eventStatus": {"type": "enum", "values": ["scheduled", "postponed", "cancelled"]}
+      }
+    },
+    "CulturalItem": {
+      "description": "★新增(从 Concept 提升)。可挂图/坐标/独立断言的文化/餐饮/特产实体。",
+      "culturalType": ["dish", "local_product", "heritage"],
+      "fields": {
+        "culturalType": {"type": "enum", "required": true},
+        "spiceLevel": {"type": "string"}, "dietary": {"type": "string[]", "description": "清真/含猪肉/素 等提示,须事实依据"}
+      }
+    },
+    "Agent": {"description": "经营主体/组织", "fields": {"agentType": {"type": "string"}, "contactPoint": {"type": "{telephone,website,social[]}"}}},
+    "Product": {"description": "可售单元(门票/房型/接驳/套餐)。实时价走 businessRefId,静态票价用 priceSpec", "fields": {"productType": {"type": "enum", "values": ["ticket", "room", "transfer", "package", "daytour"]}, "priceSpec": {"type": "array<{price,currency,priceType,audience,validThrough}>", "description": "双轨:THB+可派生CNY;外国人/本地;成人/儿童"}, "bookingUrl": {"type": "string"}}},
+    "Activity": {"description": "可反复做的体验做法(跳岛/SPA/丛林飞跃/做饭课)", "fields": {"activityType": {"type": "string"}, "durationMinutes": {"type": "int"}}},
+    "Content": {"description": "知识资源", "fields": {"contentType": {"type": "enum", "values": ["knowledge", "faq", "practical", "summary"]}, "inLanguage": {"type": "string"}, "body": {"type": "map<lang,text>"}, "question": {"type": "string"}, "practicalType": {"type": "enum", "values": ["visa", "currency", "tipping", "payment", "weather_season", "safety", "transport_tip", "etiquette", "emergency", "sim_network"]}}},
+    "Source": {"description": "事实来源", "fields": {"sourceType": {"type": "enum", "values": ["xiaohongshu_post", "google_places", "official_site", "tat", "editorial", "field_check"]}, "url": {"type": "string"}, "capturedAt": {"type": "datetime"}}},
+    "Claim": {"description": "★选择性 reify:仅价/时/名/评分等真冲突属性旁挂,承载竞争值+来源+时间。快读路径永不碰。", "fields": {"onEntity": {"type": "ref"}, "property": {"type": "string"}, "value": {"type": "any"}, "observedAt": {"type": "datetime", "description": "对齐 prov:generatedAtTime"}, "isSelected": {"type": "bool"}, "confidence": {"type": "float"}, "evidenceLevel": {"type": "enum", "values": ["official", "verified", "cross_supported", "ugc"]}}},
+    "Concept": {"description": "受控词表术语(纯分类/情境,不承载实体级事实)", "fields": {"prefLabel": {"type": "map<lang,string>"}, "altLabel": {"type": "array<{lang,value}>", "description": "俗名/错拼,消解与检索用"}, "hiddenLabel": {"type": "array<{lang,value}>"}, "audience": {"type": "string", "description": "scheme=scenario:首次/亲子/带老人/情侣"}, "constraints": {"type": "string"}}},
+    "ConceptScheme": {"description": "★升一等。词表族,加词表族=加 ConceptScheme 零改 schema。", "fields": {"schemeKey": {"type": "string", "description": "place_category/cuisine/scenario/audience/season/theme/amenity/heritage_style..."}, "authority": {"type": "string", "description": "TAT官方 / 小红书UGC / 内部"}, "version": {"type": "string"}, "langCoverage": {"type": "string[]"}, "license": {"type": "string"}}},
+    "Collection": {"description": "(LATER) 策展聚合/角色:目的地/旅游片区。与 Place 平行,不占几何不变式。先可用角色替代。", "fields": {"collectionType": {"type": "enum", "values": ["destination", "zone", "themed_list"]}}},
+    "Itinerary": {"description": "多日行程", "fields": {"dayCount": {"type": "int"}}},
+    "RouteSegment": {"description": "行程中一段移动/一条交通服务", "fields": {"segmentType": {"type": "string"}}}
+  },
+
+  "relations": {
+    "PART_OF_ADMIN": {"from": ["AdministrativeArea"], "to": ["AdministrativeArea"], "description": "行政递归,支持传递闭包/上卷。与运营/片区口径隔离(两套口径永不互推)"},
+    "CONTAINED_IN": {"from": ["Place"], "to": ["Place"], "description": "运营包含(岛→湾、mall→店)"},
+    "IN_ZONE": {"from": ["Place"], "to": ["Collection"], "description": "属于旅游片区/聚合"},
+    "LOCATED_IN": {"from": ["Place", "Event"], "to": ["AdministrativeArea"], "props": {"isPrimary": "bool", "matchMethod": "enum[point_in_polygon,nearest_fallback,text,manual]", "confidence": "float"}},
+    "ZONE_SPANS": {"from": ["Collection"], "to": ["AdministrativeArea"], "description": "聚合跨越的府县声明"},
+    "OPERATED_BY": {"from": ["Place", "Product", "Activity", "Event"], "to": ["Agent"]},
+    "OFFERS": {"from": ["Agent", "Place"], "to": ["Product"], "props": {"channelRole": "string"}},
+    "APPLIES_TO": {"from": ["Product"], "to": ["Place", "Activity", "Event"], "props": {"role": "enum[ticket,room,transfer,coverage]"}},
+    "HOSTS": {"from": ["Place", "Collection"], "to": ["Activity", "Event"]},
+    "SERVES": {"from": ["Place"], "to": ["CulturalItem"], "props": {"role": "enum[dish,local_product]", "isSignature": "bool"}, "note": "若 SERVES_DISH/SELLS_PRODUCT 成独立热查询再拆"},
+    "CONNECTS": {"from": ["RouteSegment"], "to": ["Place"], "props": {"role": "enum[start,end,stop]", "order": "int"}},
+    "INCLUDES": {"from": ["Itinerary", "Product", "Collection"], "to": ["Place", "Activity", "Event", "Product", "RouteSegment"], "props": {"dayNumber": "int", "order": "int", "quantity": "int", "optional": "bool"}},
+    "ABOUT": {"from": ["Content"], "to": ["*"]},
+    "APPLIES_INFO_TO": {"from": ["Content"], "to": ["AdministrativeArea", "Collection", "Place"], "description": "practical 信息作用范围(签证→国,择季→zone)"},
+    "DERIVED_FROM": {"from": ["Content", "Claim"], "to": ["Source"], "props": {"evidenceLevel": "enum[official,verified,cross_supported,ugc]", "confidence": "float", "method": "string", "model": "string", "runId": "string"}},
+    "SUITABLE_FOR": {"from": ["Place", "Activity", "Event", "Product", "Itinerary"], "to": ["Concept"], "props": {"score": "float", "reason": "string"}, "note": "to=Concept(scheme=scenario/audience)"},
+    "TAGGED_AS": {"from": ["*"], "to": ["Concept"], "props": {"weight": "float"}, "note": "仅 theme/place_category(派生)/scenario 等软标签;amenity/accessibility 已内联为属性;dish/audience 已移到 SERVES/SUITABLE_FOR。查询锚定 Place 属性,不从热 Concept 起遍历"},
+    "IN_SCHEME": {"from": ["Concept"], "to": ["ConceptScheme"]},
+    "BROADER": {"from": ["Concept"], "to": ["Concept"], "description": "同 scheme 层级(可多值);跨 scheme 用 exactMatch/broadMatch"},
+    "RESOLVES_TO": {"from": ["Place", "Agent", "CulturalItem"], "to": ["Place", "Agent", "CulturalItem"], "props": {"confidence": "float", "method": "string", "resolvedBy": "string"}, "description": "★实体消解:有向 非canonical(:Candidate)→canonical,函数式星型,不物化传递闭包;导出 skos:exactMatch"},
+    "NEARBY": {"from": ["Place"], "to": ["Place"], "props": {"meters": "float"}, "description": "由坐标派生的邻近(原 RELATED_TO 中语义已知者升为具名边)"},
+    "SIMILAR_TO": {"from": ["Place", "Activity", "CulturalItem"], "to": ["Place", "Activity", "CulturalItem"], "props": {"score": "float"}},
+    "RELATED_TO": {"from": ["*"], "to": ["*"], "props": {"type": "string", "reason": "string"}, "description": "兜底关联(推荐等)"}
+  },
+
+  "maintenance": {
+    "entityResolution": "原始来源建 :Place:Candidate(移出主查询空间) → RESOLVES_TO(有向函数式) → :Place:Canonical;热查询 MATCH(:Canonical) 剪枝。解决多源同一地点与214同名。",
+    "assertionProvenance": "价/时/名/评分等冲突属性:胜出值内联(isSelected)供快读,竞争值旁挂 Claim(property/value/observedAt);其余属性直接落值不 reify。",
+    "staticVsRealtime": "半静态可规划信息(营业时间/静态票价/评分快照/图片/联系/支付)入图;仅实时房价/排队/临时关闭走 businessRefId。",
+    "vocabularyDriven": "加业态/菜系/客群词表族 = 加 ConceptScheme + Concept,schema 不动。",
+    "geocoding": "WGS84 不做GCJ-02纠偏;LOCATED_IN 由 point-in-polygon,海岸/岛屿落界外 nearest_fallback + pending_review。",
+    "identity": "id 不可变;dopaCode/坐标为可变属性;跨源 join 用 dopaCode/Place ID + 生效期。",
+    "geometry": "点检索用 location/centroid;包含/范围判断用 boundaryRef 面几何(区域/景区/zone)。"
+  }
+}

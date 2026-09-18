@@ -1,0 +1,33 @@
+.DS_Store
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.inspect.ndjson
+*.log
+__pycache__/
+*.py[cod]
+
+# 本地采集运行态和认证资料
+**/*API_KEY*
+**/*api_key*
+**/*私密*
+**/*密钥*
+**/*cookie*
+**/*session*
+**/*browser-profile*
+**/.xhs*
+**/原始响应_临时缓存/**
+**/失败截图/**
+
+# 不公开的内容与平台原始数据
+**/*帖子知识库*
+**/*评论*.csv
+**/*问答.jsonl
+**/*原始采集数据*
+**/*动态价格*

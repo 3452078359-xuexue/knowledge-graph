@@ -1,0 +1,41 @@
+{
+  "snapshotDate": "2026-09-17",
+  "repository": "https://github.com/3452078359-xuexue/knowledge-graph",
+  "scope": "public-safe",
+  "guiyang": {
+    "schema": {
+      "entities": 30,
+      "properties": 1098,
+      "declaredRelations": 18
+    },
+    "localGraph": {
+      "nodes": 96753,
+      "relations": 398717,
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    "publishedRecords": {
+      "City": 1,
+      "AdminArea": 157,
+      "GeoCellR7": 1714,
+      "GeoCellR8": 11297
+    }
+  },
+  "thailand": {
+    "localCatalogFiles": 257,
+    "publishedAdministrativeRecords": {
+      "ADM0": 1,
+      "ADM1": 77,
+      "ADM2": 928,
+      "ADM3": 7436
+    }
+  },
+  "excludedFromPublicRepository": [
+    "credentials_and_browser_state",
+    "raw_platform_api_responses",
+    "social_post_and_review_full_text",
+    "dynamic_price_snapshots",
+    "proprietary_full_poi_exports",
+    "files_over_github_operational_limits"
+  ]
+}
